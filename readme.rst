@@ -1,5 +1,5 @@
 Firefly III
-========
+===========
 
 I have no idea where this text ends up.
 

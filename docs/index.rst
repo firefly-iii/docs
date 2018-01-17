@@ -1,10 +1,9 @@
 Firefly III documentation
-==================================================
+=========================
 
 Here you will find everything you want to know about Firefly III, the self-hosted personal finances manager.
 
 .. toctree::
-   :maxdepth: 4
-   :glob:
-
-   *
+   :maxdepth: 2
+   
+   about
