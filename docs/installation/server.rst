@@ -1,9 +1,10 @@
+==================
 Self-hosted server
-------------------
+==================
 If you have your own (virtual) web server you can use this guide to install Firefly III. You will some ingredients prepared already.
 
 Ingredients
-~~~~~~~~~~~
+-----------
 You need a working LAMP, LEMP or WAMP stack. If you don't have one, search the web to find out how to get one. Make sure you're running PHP 7.1. There are many tutorials that will help you install one. For example:
 
 1. `A guide to install a LAMP stack <https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu>`_
@@ -15,9 +16,10 @@ If you wish to use another database such as SQLite or Postgres, please check out
 You need a (MySQL) database and matching credentials. Firefly III creates its own tables.
 
 Preparing your server
-~~~~~~~~~~~~~~~~~~~~~
+---------------------
 
-**Extra packages**
+Extra packages
+~~~~~~~~~~~~~~
 
 Install the following PHP modules:
 
@@ -30,7 +32,8 @@ Install the following PHP modules:
 
 You can search the web to find out how to install these modules. Some may be installed already depending on your system. Use ``phpinfo()`` to find out.
 
-**Installing composer**
+Installing composer
+~~~~~~~~~~~~~~~~~~~
 
 If you have sudo rights (try ``sudo ls``) you can install composer using the following command:
 
@@ -49,9 +52,10 @@ If you have no sudo rights, you can simply `download composer <https://getcompos
 This concludes the server preparations. If you're having trouble with (parts of) this step, please check out the FAQ.
 
 Installing Firefly III
-~~~~~~~~~~~~~~~~~~~~~~
+----------------------
 
-**Main command**
+Main command
+~~~~~~~~~~~~
 
 Browse to ``/var/www`` which is probably the directory where your web server is configured to find its files.
 
@@ -66,11 +70,13 @@ You should replace ``<latest>`` with the latest version, which you can find on t
 
 If this gives an error because of access rights, prepend the command with ``sudo``. We'll fix the access rights later.
 
-**Configuration**
+Configuration
+~~~~~~~~~~~~~
 
 In the ``firefly-iii`` directory you will find a `.env` file. Open this file using your favorite editor. There are instructions what to do in this file.
 
-**Initialize the database**
+Initialize the database
+~~~~~~~~~~~~~~~~~~~~~~~
 
 This step is very important, because Firefly III needs a database to work with and it will tell you whether or not your configuration is correct. Run the following command in the Firefly III directory.
 
@@ -83,17 +89,20 @@ Now you should be able to visit `http://localhost/firefly-iii/ <http://localhost
 If you're having trouble with (parts of) this step, please check out the FAQ.
 
 Accessing Firefly III
-~~~~~~~~~~~~~~~~~~~~~
+---------------------
 
-**Browsing to site**
+Browsing to site
+~~~~~~~~~~~~~~~~
 
 Browsing to the site should be easy. You should see a login screen.
 
-**Registering an account**
+Registering an account
+~~~~~~~~~~~~~~~~~~~~~~
 
 You cannot login yet. Click on "Register a new account" and fill in the form.
 
-**Your first accounts**
+Your first accounts
+~~~~~~~~~~~~~~~~~~~
 
 You will be logged in automatically. Follow the instructions and you are done!
 

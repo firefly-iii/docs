@@ -17,4 +17,7 @@ Here you will find everything you want to know about Firefly III, the self-hoste
    :maxdepth: 2
    :caption: Installation
    
-   installation
+   ./installation/demo.rst
+   ./installation/server.rst
+   ./installation/docker.rst
+   ./installation/hosted.rst

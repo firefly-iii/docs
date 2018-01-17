@@ -1,13 +1,15 @@
+======
 Docker
-------
+======
 There are several ways of installing Firefly III using Docker, which will be detailed below. If you're new to Docker or are not sure how to use Docker please thread carefully.
 
 
 Straight from Docker Hub
-~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------
 If you do this, you should already have a MySQL database running somewhere. For example, when you have one central MySQL database for all of your docker containers.
 
-**Create some volumes**
+Create some volumes
+~~~~~~~~~~~~~~~~~~~
 
 These are used to persistently store uploaded files and exported data.
 
@@ -17,7 +19,8 @@ These are used to persistently store uploaded files and exported data.
    docker volume create firefly_iii_upload
 
 
-**Start the container**
+Start the container
+~~~~~~~~~~~~~~~~~~~
 
 Run this Docker command. Make sure that you edit the command to match your own database. You should really change the FF_APP_KEY as well. It should be a random string of exactly 32 characters.
 
@@ -37,7 +40,8 @@ Run this Docker command. Make sure that you edit the command to match your own d
 
 That should fire up a Docker container with Firefly III inside of it. If you visit it, it will say "Be right back". Continue below.
 
-**Initialize your database**
+Initialize your database
+~~~~~~~~~~~~~~~~~~~~~~~~
 
 Find out what the container ID is by running 
 
@@ -56,7 +60,8 @@ Then, to get it going, initialize the database like so:
 
 You can then visit `http://localhost <http://localhost>`_ and register a new account.
 
-**Upgrade**
+Upgrade
+~~~~~~~
 
 To upgrade, stop your container using 
 
@@ -75,13 +80,15 @@ And then start it again by running the command under "Start the container".
 If you're having trouble with (parts of) this step, please check out the FAQ.
 
 Docker Hub with automatic updates via docker compose
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------------------------------
 
-**Download compose file**
+Download compose file
+~~~~~~~~~~~~~~~~~~~~~
 
 Download the compose file located in `the Github repository <https://github.com/firefly-iii/firefly-iii/blob/master/docker-compose.yml>`_.
 
-**Edit the file**
+Edit the file
+~~~~~~~~~~~~~
 
 Modify the following variables in the docker compose file. Keep in mind that `MYSQL_PASSWORD` and `FF_DB_PASSWORD` have to be **identical**.
 
@@ -91,7 +98,8 @@ Also keep in mind that ``FF_APP_KEY`` must be *exactly* 32 characters long.
  * ``FF_DB_PASSWORD``
  * ``FF_APP_KEY``
 
-**Start the container**
+Start the container
+~~~~~~~~~~~~~~~~~~~
 
 Run the following command:
 
@@ -99,7 +107,8 @@ Run the following command:
    
    docker-compose -f docker-compose.yml up -d
 
-**Initialize the database**
+Initialize the database
+~~~~~~~~~~~~~~~~~~~~~~~
 
 If this is the first time you're running Firefly III then you must initialize the database. Use the following commands to do so:
 
@@ -109,20 +118,23 @@ If this is the first time you're running Firefly III then you must initialize th
    docker-compose exec firefly_iii_app php artisan firefly:upgrade-database
    docker-compose exec firefly_iii_app php artisan firefly:verify
 
-**Surf to Firefly III**
+Surf to Firefly III
+~~~~~~~~~~~~~~~~~~~
 
 You can now visit Firefly III at `http://localhost <http://localhost>`_ or `http://docker-ip:port <http://docker-ip:port>`_ if it is running on a custom port.
 
-**Update**
+Update
+~~~~~~
 
 To update the container just run ``docker-compose restart firefly-app``. You can even add this command to a chrontab.
 
 If you're having trouble with (parts of) this step, please check out the FAQ.
 
 Docker Hub with automatic updates via run/pull
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+----------------------------------------------
 
-**Run command**
+Run command
+~~~~~~~~~~~
 
 Use the following run commands as a template. Change the following variables in the command you see in the block below. Keep in mind that ``MYSQL_PASSWORD`` and ``FF_DB_PASSWORD`` have to be *identical*.
 
@@ -161,7 +173,8 @@ Then run the commands:
    -v firefly_iii_upload:/var/www/firefly-iii/storage/upload \
    jc5x/firefly-iii
 
-**Initialize the database**
+Initialize the database
+~~~~~~~~~~~~~~~~~~~~~~~
 
 If this is the first time you're running Firefly III then you must initialize the database. Use the following commands to do so:
 
@@ -171,18 +184,20 @@ If this is the first time you're running Firefly III then you must initialize th
    docker-compose exec firefly_iii_app php artisan firefly:upgrade-database
    docker-compose exec firefly_iii_app php artisan firefly:verify
 
-**Surf to Firefly III**
+Surf to Firefly III
+~~~~~~~~~~~~~~~~~~~
 
 You can now visit Firefly III at `http://localhost` or `http://docker-ip:port` if it is running on a custom port.
 
-**Update**
+Update
+~~~~~~
 
 To update the container just run ``docker stop firefly-app && docker pull jc5x/firefly-iii && docker start firefly-app``. You can even add this command to a chrontab.
 
 If you're having trouble with (parts of) this step, please check out the FAQ.
 
 Docker and reverse proxies
-~~~~~~~~~~~~~~~~~~~~~~~~~~
+--------------------------
 
 In the ``.env`` file you will find a variable called ``TRUSTED_PROXIES`` which must be set to either the reverse proxy machine or simply ``**``. Set ``APP_URL`` to the URL you wish Firefly III to be on (ie. the proxy). For example:
 
