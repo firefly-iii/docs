@@ -1,0 +1,4 @@
+Authors
+-------
+
+* James Cole
