@@ -7,7 +7,11 @@ Here you will find everything you want to know about Firefly III, the self-hoste
    :maxdepth: 2
    :caption: About
    
-   about
+   ./about/introduction.rst
+   ./about/purpose.rst
+   ./about/features.rst
+   ./about/who-for.rst
+   ./about/grand-theory.rst
 
 .. toctree::
    :maxdepth: 2
