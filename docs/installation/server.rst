@@ -1,11 +1,9 @@
 Self-hosted server
 ------------------
-This guide focuses on the installation of `Firefly III <https://github.com/firefly-iii/firefly-iii>`_ only. The guide is just three steps! Check out the FAQ when things are not working.
+If you have your own (virtual) web server you can use this guide to install Firefly III. You will some ingredients prepared already.
 
-There are also instructions for Docker and third party hosters such as Sandstorm.
-
-Prerequisites
-~~~~~~~~~~~~~
+Ingredients
+~~~~~~~~~~~
 You need a working LAMP, LEMP or WAMP stack. If you don't have one, search the web to find out how to get one. Make sure you're running PHP 7.1. There are many tutorials that will help you install one. For example:
 
 1. `A guide to install a LAMP stack <https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu>`_
@@ -13,6 +11,8 @@ You need a working LAMP, LEMP or WAMP stack. If you don't have one, search the w
 3. `A guide to install PHP7.1 on a Raspberry Pi <https://raspberrypi.stackexchange.com/questions/70388/how-to-install-php-7-1>`_
 
 If you wish to use another database such as SQLite or Postgres, please check out the FAQ.
+
+You need a (MySQL) database and matching credentials. Firefly III creates its own tables.
 
 Preparing your server
 ~~~~~~~~~~~~~~~~~~~~~
@@ -28,7 +28,7 @@ Install the following PHP modules:
 * PHP Zip
 * PHP GD
 
-You can search the web to find out how to install these modules. Some may be installed already depending on your system.
+You can search the web to find out how to install these modules. Some may be installed already depending on your system. Use ``phpinfo()`` to find out.
 
 **Installing composer**
 
@@ -46,7 +46,7 @@ Verify the installation of composer using the following command.
 
 If you have no sudo rights, you can simply `download composer <https://getcomposer.org/download/>`_ with the instructions under the header "manual download". Use ``php composer.phar`` instead of ``composer``.
 
-This concludes the server preparations!
+This concludes the server preparations. If you're having trouble with (parts of) this step, please check out the FAQ.
 
 Installing Firefly III
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -80,6 +80,8 @@ This step is very important, because Firefly III needs a database to work with a
 
 Now you should be able to visit `http://localhost/firefly-iii/ <http://localhost/firefly-iii/public>`_ and see Firefly III.
 
+If you're having trouble with (parts of) this step, please check out the FAQ.
+
 Accessing Firefly III
 ~~~~~~~~~~~~~~~~~~~~~
 
@@ -95,6 +97,4 @@ You cannot login yet. Click on "Register a new account" and fill in the form.
 
 You will be logged in automatically. Follow the instructions and you are done!
 
-----
-
-Any questions or things not working? Check out the FAQ.
+If you're having trouble with (parts of) this step, please check out the FAQ.

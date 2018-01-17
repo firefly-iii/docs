@@ -5,6 +5,12 @@ Here you will find everything you want to know about Firefly III, the self-hoste
 
 .. toctree::
    :maxdepth: 2
+   :caption: About
    
    about
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Installation
+   
    installation
