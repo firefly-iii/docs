@@ -1,12 +1,13 @@
+================
 The grand theory
-----------------
+================
 
 This is a description of how Firefly III works. The "grand theory". 
 
 Firefly III has been built around how I manage my finances. Please read this carefully so we match on how to do things.
 
 The general idea
-~~~~~~~~~~~~~~~~
+----------------
 
 After being a grownup for a while I noticed I was living from paycheck to paycheck. I could not save money. At the end of my money, I still had a part of the month to cover.
 
@@ -26,7 +27,7 @@ This procedure allowed me to program a very simple tool (the original "Firefly")
 In those early, exciting days, all I did was live from the 1st to the 31st of the month. This helped me save a lot of money already. The rest of Firefly III's features have been built around this idea.
 
 The next step
-~~~~~~~~~~~~~
+-------------
 
 To keep on top of your finances (using Firefly III), you must be *aware* of your finances. This is the reason Firefly III features very little "automation".
 Firefly III won't create your rent payment automatically. It won't try to predict expenses. There are no shortcuts. Except for the import-feature, Firefly III will

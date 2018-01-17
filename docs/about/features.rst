@@ -1,5 +1,6 @@
+========
 Features
---------
+========
 Most importantly...
 
 * Firefly III runs on your own server, so you are fully in control of your data. It will not contact other sites or servers
