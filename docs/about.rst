@@ -1,7 +1,3 @@
-=====
-About
-=====
-
 .. include:: ./about/introduction.rst
 
 .. include:: ./about/purpose.rst
