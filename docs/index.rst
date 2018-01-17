@@ -7,3 +7,4 @@ Here you will find everything you want to know about Firefly III, the self-hoste
    :maxdepth: 2
    
    about
+   installation

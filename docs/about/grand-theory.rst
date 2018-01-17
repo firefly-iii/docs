@@ -1,7 +1,7 @@
 The grand theory
 ----------------
 
-This is the full description of how Firefly III works. The "grand theory". 
+This is a description of how Firefly III works. The "grand theory". 
 
 Firefly III has been built around how I manage my finances. Please read this carefully so we match on how to do things.
 
