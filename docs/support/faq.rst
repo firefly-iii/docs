@@ -1,4 +1,4 @@
-.. _linking-pages:
+.. _faq:
 
 ===
 FAQ
@@ -6,13 +6,16 @@ FAQ
 
 This page is empty.
 
+.. _faq_docker:
 Docker
 ------
-This section is empty. See :ref:`linking-pages`
+This section is empty. See :ref:`faq`
 
 Self-hosted (VM)
 ----------------
 This section is empty.
+
+See :ref:`faq_docker`
 
 Third-party hosted
 ------------------

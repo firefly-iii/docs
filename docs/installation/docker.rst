@@ -78,7 +78,7 @@ Then run:
 
 And then start it again by running the command under "Start the container".
 
-If you're having trouble with (parts of) this step, please check out the FAQ. :doc:`linking-pages`
+If you're having trouble with (parts of) this step, please check out the FAQ. :ref:`faq`
 
 Docker Hub with automatic updates via docker compose
 ----------------------------------------------------
