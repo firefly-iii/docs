@@ -22,7 +22,7 @@ You should also indicate how often this bill has to be paid:
 
 Bills are triggered when you create an expense with certain words in the description, with an amount in the pre-set range or going to a specific :ref:`expense account <accounts>`. When triggered, the transaction and the bill are connected and the bill will be marked as "paid". At least, for this period. Bills can be set to be expected every week, month or year.
 
-This works in two ways: Firefly checks transactions within a certain range (amount), and it checks for keywords in the description and in the expense account.
+This works in two ways: Firefly III checks transactions within a certain range (amount), and it checks for keywords in the description and in the expense account.
 
 When you create a transaction with the following properties, it will match to this bill:
 

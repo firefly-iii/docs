@@ -4,7 +4,7 @@
 Rules
 =====
 
-Firefly contains a powerful rule engine that can automatically update your transactions when they are created or when they are changed. It works by combining "triggers" with "actions". This is especially useful when you're importing data and you wish all transactions to be updated at once. Or perhaps, you are too lazy to set the correct budget and category all the time.
+Firefly III contains a powerful rule engine that can automatically update your transactions when they are created or when they are changed. It works by combining "triggers" with "actions". This is especially useful when you're importing data and you wish all transactions to be updated at once. Or perhaps, you are too lazy to set the correct budget and category all the time.
 
 Rule groups
 -----------
