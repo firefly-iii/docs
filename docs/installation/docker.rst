@@ -23,7 +23,7 @@ These are used to persistently store uploaded files and exported data.
 Start the container
 ~~~~~~~~~~~~~~~~~~~
 
-Run this Docker command. Make sure that you edit the command to match your own database. You should really change the FF_APP_KEY as well. It should be a random string of exactly 32 characters.
+Run this Docker command. Make sure that you edit the command to match your own database. You should really change the ``FF_APP_KEY`` as well. It should be a random string of *exactly* 32 characters.
 
 .. code-block:: bash
 
@@ -78,7 +78,7 @@ Then run:
 
 And then start it again by running the command under "Start the container".
 
-If you're having trouble with (parts of) this step, please check out the FAQ. :ref:`faq`
+If you're having trouble with (parts of) this step, please check out the :ref:`faq` or the :ref:`faqdocker`
 
 Docker Hub with automatic updates via docker compose
 ----------------------------------------------------

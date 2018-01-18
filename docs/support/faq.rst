@@ -6,7 +6,8 @@ FAQ
 
 This page is empty.
 
-.. _faq_docker:
+.. _faqdocker:
+
 Docker
 ------
 This section is empty. See :ref:`faq`
