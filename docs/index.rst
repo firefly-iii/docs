@@ -60,6 +60,7 @@ You can find Firefly III on `GitHub <https://github.com/firefly-iii/firefly-iii>
    ./advanced/bills.rst
    ./advanced/reports.rst
    ./advanced/rules.rst
+   ./advanced/splits.rst
    ./advanced/links.rst
 
 .. toctree::
