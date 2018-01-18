@@ -17,17 +17,17 @@ To do so, use the button to create a new piggy bank. Fill in the details and sel
 Screenshots
 -----------
 
-.. figure:: https://firefly-iii.org/static/docs/piggies-overview.png
+.. figure:: https://firefly-iii.org/static/docs/4.7.0/piggies-overview.png
    :alt: List of three piggy banks
 
    The three piggy banks from the example are listed in Firefly III as you can see here.
 
-.. figure:: https://firefly-iii.org/static/docs/piggies-create.png
+.. figure:: https://firefly-iii.org/static/docs/4.7.0/piggies-create.png
    :alt: Create piggy bank.
 
    The screen to create a piggy bank is pretty straight forward.
 
-.. figure:: https://firefly-iii.org/static/docs/piggies-account.png
+.. figure:: https://firefly-iii.org/static/docs/4.7.0/piggies-account.png
    :alt: List of three piggy banks and the account
 
    You can see I have divided almost all my savings over these three piggy banks.

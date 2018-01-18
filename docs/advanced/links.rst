@@ -24,27 +24,27 @@ You can remove or reverse a link once it has been created.
 Screenshots
 -----------
 
-.. figure:: https://firefly-iii.org/static/docs/links-inward.png
+.. figure:: https://firefly-iii.org/static/docs/4.7.0/links-inward.png
    :alt: Inward link of transaction
 
    The "Lunch with client" expense is reimbursed by your boss in transaction "Lunch reimbursement".
 
-.. figure:: https://firefly-iii.org/static/docs/links-inward.png
+.. figure:: https://firefly-iii.org/static/docs/4.7.0/links-inward.png
    :alt: Outward link of transaction
 
    Vice versa, "Lunch reimbursement" reimburses you for "Lunch with client".
 
-.. figure:: https://firefly-iii.org/static/docs/links-dropdown.png
+.. figure:: https://firefly-iii.org/static/docs/4.7.0/links-dropdown.png
    :alt: Dropdown menu to create a link
 
    Select "Link transaction" to create a link.
 
-.. figure:: https://firefly-iii.org/static/docs/links-modal.png
+.. figure:: https://firefly-iii.org/static/docs/4.7.0/links-modal.png
    :alt: Modal dialog to create a link
 
    Use this modal to create a new link
 
-.. figure:: https://firefly-iii.org/static/docs/links-change.png
+.. figure:: https://firefly-iii.org/static/docs/4.7.0/links-change.png
    :alt: You can delete the link or make the transactions switch positions.
 
    You can delete the link or make the transactions switch positions.

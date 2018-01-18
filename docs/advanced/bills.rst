@@ -33,17 +33,17 @@ When you create a transaction with the following properties, it will match to th
 Screenshots
 -----------
 
-.. figure:: https://firefly-iii.org/static/docs/bills-transactions.png
+.. figure:: https://firefly-iii.org/static/docs/4.7.0/bills-transactions.png
    :alt: Match of bill
 
    The matched bill will be visible in your transaction lists.
 
-.. figure:: https://firefly-iii.org/static/docs/bills-frontpage.png
+.. figure:: https://firefly-iii.org/static/docs/4.7.0/bills-frontpage.png
    :alt: Example of bills
 
    The front page of Firefly III will also start showing the bills.
 
-.. figure:: https://firefly-iii.org/static/docs/bills-show.png
+.. figure:: https://firefly-iii.org/static/docs/4.7.0/bills-show.png
    :alt: Example of bill
 
    Individual bills will end up looking like this picture (under Money Management, then Bills)
