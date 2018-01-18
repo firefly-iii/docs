@@ -1,7 +1,7 @@
-.. _categories:
+.. _currencies:
 
 ==========
-Categories
+Currencies
 ==========
 
 This page is empty.

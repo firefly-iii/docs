@@ -1,3 +1,5 @@
+.. _importcsv:
+
 ================
 Import CSV files
 ================

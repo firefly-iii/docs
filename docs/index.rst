@@ -50,6 +50,7 @@ You can find Firefly III on `GitHub <https://github.com/firefly-iii/firefly-iii>
    ./concepts/budgets.rst
    ./concepts/categories.rst
    ./concepts/tags.rst
+   ./concepts/currencies.rst
 
 .. toctree::
    :maxdepth: 1
