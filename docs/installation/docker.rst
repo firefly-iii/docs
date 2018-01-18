@@ -19,6 +19,7 @@ These are used to persistently store uploaded files and exported data.
    docker volume create firefly_iii_upload
 
 
+
 Start the container
 ~~~~~~~~~~~~~~~~~~~
 
@@ -77,7 +78,7 @@ Then run:
 
 And then start it again by running the command under "Start the container".
 
-If you're having trouble with (parts of) this step, please check out the FAQ.
+If you're having trouble with (parts of) this step, please check out the FAQ. :doc:`linking-pages`
 
 Docker Hub with automatic updates via docker compose
 ----------------------------------------------------
@@ -201,7 +202,7 @@ Docker and reverse proxies
 
 In the ``.env`` file you will find a variable called ``TRUSTED_PROXIES`` which must be set to either the reverse proxy machine or simply ``**``. Set ``APP_URL`` to the URL you wish Firefly III to be on (ie. the proxy). For example:
 
-.. code-block:: code
+.. code-block:: bash
 
    # ...
    APP_URL=https://firefly.example.com
@@ -223,7 +224,7 @@ On the command line, this would be:
 
 If you wish to enable SSL as well, Firefly III (or rather Laravel) respects the HTTP header `X-Forwarded-Proto`. Add this to your vhost file:
 
-.. code-block:: code
+.. code-block:: bash
    
    RequestHeader set X-Forwarded-Proto "https"
 
