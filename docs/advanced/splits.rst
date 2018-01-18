@@ -4,9 +4,9 @@
 Splitting transactions
 ======================
 
-A `transaction <transactions>` is a very simple thing. Money moves from A to B. It doesn't matter if this is an expense, your salary or you moving money around: *money moves from A to B*:
+A :ref:`transaction <transactions>` is a very simple thing. Money moves from A to B. It doesn't matter if this is an expense, your salary or you moving money around: *money moves from A to B*:
 
-You can read more about this on the page about `transactions <transactions>`.
+You can read more about this on the page about :ref:`transactions <transactions>`.
 
 Firefly III stores each financial transaction in "journals". Each journal contains two "transactions". One takes money (-250 from your bank account) and the other one puts it into another account (+250 for Amazon.com). You can verify this by counting. There are always twice as many "transactions" as there are "transaction journals" in your database.
 
@@ -31,6 +31,11 @@ Screenshots
    :alt: Button to split a transaction
    
    Click the button to split a new transaction
+
+.. figure:: https://firefly-iii.org/static/docs/4.7.0/split-create-button.png
+   :alt: Alternative button to split.
+   
+   You can also check this checkbox when you're creating a new transaction.
 
 
 .. figure:: https://firefly-iii.org/static/docs/4.7.0/split-add.png

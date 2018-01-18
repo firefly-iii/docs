@@ -49,7 +49,7 @@ Verify the installation of composer using the following command.
 
 If you have no sudo rights, you can simply `download composer <https://getcomposer.org/download/>`_ with the instructions under the header "manual download". Use ``php composer.phar`` instead of ``composer``.
 
-This concludes the server preparations. If you're having trouble with (parts of) this step, please check out the FAQ.
+This concludes the server preparations. If you're having trouble with (parts of) this step, please check out the :ref:`Server FAQ <faqselfhosted>`.
 
 Installing Firefly III
 ----------------------
@@ -86,7 +86,7 @@ This step is very important, because Firefly III needs a database to work with a
 
 Now you should be able to visit `http://localhost/firefly-iii/ <http://localhost/firefly-iii/public>`_ and see Firefly III.
 
-If you're having trouble with (parts of) this step, please check out the FAQ.
+If you're having trouble with (parts of) this step, please check out the :ref:`Server FAQ <faqselfhosted>`.
 
 Accessing Firefly III
 ---------------------
@@ -106,4 +106,4 @@ Your first accounts
 
 You will be logged in automatically. Follow the instructions and you are done!
 
-If you're having trouble with (parts of) this step, please check out the FAQ.
+If you're having trouble with (parts of) this step, please check out the :ref:`Server FAQ <faqselfhosted>`.
