@@ -25,6 +25,23 @@ You can find Firefly III on `GitHub <https://github.com/firefly-iii/firefly-iii>
    ./installation/hosted.rst
 
 .. toctree::
+   :maxdepth: 2
+   :caption: Support
+
+   ./support/using.rst
+   ./support/faq.rst
+   ./support/features.rst
+   ./support/bugs.rst
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Import and export
+
+   ./import/csv.rst
+   ./import/spectre.rst
+   ./import/export.rst
+
+.. toctree::
    :maxdepth: 1
    :caption: Concepts
    
@@ -43,23 +60,6 @@ You can find Firefly III on `GitHub <https://github.com/firefly-iii/firefly-iii>
    ./advanced/reports.rst
    ./advanced/rules.rst
    ./advanced/links.rst
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Import and export
-
-   ./import/csv.rst
-   ./import/spectre.rst
-   ./import/export.rst
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Support
-
-   ./support/using.rst
-   ./support/faq.rst
-   ./support/features.rst
-   ./support/bugs.rst
 
 .. toctree::
    :maxdepth: 1
