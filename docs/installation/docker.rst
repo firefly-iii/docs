@@ -18,7 +18,7 @@ These are used to persistently store uploaded files and exported data.
    docker volume create firefly_iii_export
    docker volume create firefly_iii_upload
 
-
+If you're having trouble with (parts of) this step, please check out the :ref:`Docker FAQ <faqdocker>`
 
 Start the container
 ~~~~~~~~~~~~~~~~~~~
@@ -61,6 +61,8 @@ Then, to get it going, initialize the database like so:
 
 You can then visit `http://localhost <http://localhost>`_ and register a new account.
 
+If you're having trouble with (parts of) this step, please check out the :ref:`Docker FAQ <faqdocker>`
+
 Upgrade
 ~~~~~~~
 
@@ -78,7 +80,7 @@ Then run:
 
 And then start it again by running the command under "Start the container".
 
-If you're having trouble with (parts of) this step, please check out the :ref:`faq` or the :ref:`faqdocker`
+If you're having trouble with (parts of) this step, please check out the :ref:`Docker FAQ <faqdocker>`
 
 Docker Hub with automatic updates via docker compose
 ----------------------------------------------------
@@ -119,17 +121,21 @@ If this is the first time you're running Firefly III then you must initialize th
    docker-compose exec firefly_iii_app php artisan firefly:upgrade-database
    docker-compose exec firefly_iii_app php artisan firefly:verify
 
+If you're having trouble with (parts of) this step, please check out the :ref:`Docker FAQ <faqdocker>`
+
 Surf to Firefly III
 ~~~~~~~~~~~~~~~~~~~
 
 You can now visit Firefly III at `http://localhost <http://localhost>`_ or `http://docker-ip:port <http://docker-ip:port>`_ if it is running on a custom port.
+
+If you're having trouble with (parts of) this step, please check out the :ref:`Docker FAQ <faqdocker>`
 
 Update
 ~~~~~~
 
 To update the container just run ``docker-compose restart firefly-app``. You can even add this command to a chrontab.
 
-If you're having trouble with (parts of) this step, please check out the FAQ.
+If you're having trouble with (parts of) this step, please check out the :ref:`Docker FAQ <faqdocker>`
 
 Docker Hub with automatic updates via run/pull
 ----------------------------------------------
@@ -195,7 +201,7 @@ Update
 
 To update the container just run ``docker stop firefly-app && docker pull jc5x/firefly-iii && docker start firefly-app``. You can even add this command to a chrontab.
 
-If you're having trouble with (parts of) this step, please check out the FAQ.
+If you're having trouble with (parts of) this step, please check out the :ref:`Docker FAQ <faqdocker>`
 
 Docker and reverse proxies
 --------------------------
@@ -228,4 +234,6 @@ If you wish to enable SSL as well, Firefly III (or rather Laravel) respects the 
    
    RequestHeader set X-Forwarded-Proto "https"
 
-If you're having trouble with (parts of) this step, please check out the FAQ.
+If you're having trouble with (parts of) this step, please check out the :ref:`Docker FAQ <faqdocker>`
+
+
