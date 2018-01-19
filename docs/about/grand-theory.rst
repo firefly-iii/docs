@@ -1,3 +1,5 @@
+.. _grandtheory:
+
 ================
 The grand theory
 ================

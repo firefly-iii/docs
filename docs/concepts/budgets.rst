@@ -4,7 +4,6 @@
 Budgets
 =======
 
-
 Once you start creating :ref:`transactions <transactions>` you start to realise that in a month, the same kind of stuff always comes back. For example:
 
 * Bills
