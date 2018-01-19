@@ -12,7 +12,7 @@ Firefly III supports `Sandstorm.io <https://sandstorm.io/>`_. You can find Firef
 Heroku
 ------
 
-Firefly III supports [Heroku](https://heroku.com//). You can `deploy Firefly III in Heroku <https://heroku.com/deploy?template=https://github.com/firefly-iii/firefly-iii/tree/master>`_ after you register for a (free) account.
+Firefly III supports `Heroku <https://heroku.com/>`_. You can `deploy Firefly III in Heroku <https://heroku.com/deploy?template=https://github.com/firefly-iii/firefly-iii/tree/master>`_ after you register for a (free) account.
 
 Softaculous
 -----------

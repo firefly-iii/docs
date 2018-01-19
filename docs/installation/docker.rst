@@ -78,7 +78,13 @@ Then run:
 
    docker pull jc5x/firefly-iii:latest
 
-And then start it again by running the command under "Start the container".
+And then start it again by running the command under "Start the container". Before you visit it again, upgrade the database:
+
+.. code-block:: bash
+
+   docker exec -it <container> php artisan migrate
+   docker exec -it <container> php artisan firefly:upgrade-database
+   docker exec -it <container> php artisan firefly:verify
 
 If you're having trouble with (parts of) this step, please check out the :ref:`Docker FAQ <faqdocker>`
 
@@ -93,7 +99,7 @@ Download the compose file located in `the Github repository <https://github.com/
 Edit the file
 ~~~~~~~~~~~~~
 
-Modify the following variables in the docker compose file. Keep in mind that `MYSQL_PASSWORD` and `FF_DB_PASSWORD` have to be **identical**.
+Modify the following variables in the docker compose file. Keep in mind that ``MYSQL_PASSWORD`` and ``FF_DB_PASSWORD`` have to be **identical**.
 
 Also keep in mind that ``FF_APP_KEY`` must be *exactly* 32 characters long.
 
@@ -133,7 +139,13 @@ If you're having trouble with (parts of) this step, please check out the :ref:`D
 Update
 ~~~~~~
 
-To update the container just run ``docker-compose restart firefly-app``. You can even add this command to a chrontab.
+To update the container just run ``docker-compose restart firefly-app``. You can even add this command to a chrontab. Before you visit it again, upgrade the database:
+
+.. code-block:: bash
+
+   docker exec -it <container> php artisan migrate
+   docker exec -it <container> php artisan firefly:upgrade-database
+   docker exec -it <container> php artisan firefly:verify
 
 If you're having trouble with (parts of) this step, please check out the :ref:`Docker FAQ <faqdocker>`
 
@@ -194,12 +206,18 @@ If this is the first time you're running Firefly III then you must initialize th
 Surf to Firefly III
 ~~~~~~~~~~~~~~~~~~~
 
-You can now visit Firefly III at `http://localhost` or `http://docker-ip:port` if it is running on a custom port.
+You can now visit Firefly III at ``http://localhost`` or ``http://docker-ip:port`` if it is running on a custom port.
 
 Update
 ~~~~~~
 
-To update the container just run ``docker stop firefly-app && docker pull jc5x/firefly-iii && docker start firefly-app``. You can even add this command to a chrontab.
+To update the container just run ``docker stop firefly-app && docker pull jc5x/firefly-iii && docker start firefly-app``. You can even add this command to a chrontab. Before you visit it again, upgrade the database:
+
+.. code-block:: bash
+
+   docker exec -it <container> php artisan migrate
+   docker exec -it <container> php artisan firefly:upgrade-database
+   docker exec -it <container> php artisan firefly:verify
 
 If you're having trouble with (parts of) this step, please check out the :ref:`Docker FAQ <faqdocker>`
 

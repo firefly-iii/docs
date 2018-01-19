@@ -11,7 +11,7 @@ You need a working LAMP, LEMP or WAMP stack. If you don't have one, search the w
 2. `A guide to update to PHP 7.1 <https://www.digitalocean.com/community/questions/how-do-i-update-my-lamp-stack-to-php7>`_
 3. `A guide to install PHP7.1 on a Raspberry Pi <https://raspberrypi.stackexchange.com/questions/70388/how-to-install-php-7-1>`_
 
-If you wish to use another database such as SQLite or Postgres, please check out the FAQ.
+If you wish to use another database such as SQLite or Postgres, please check out the :ref:`Server FAQ <faqselfhosted>`.
 
 You need a (MySQL) database and matching credentials. Firefly III creates its own tables.
 
@@ -47,7 +47,7 @@ Verify the installation of composer using the following command.
 
    composer -v
 
-If you have no sudo rights, you can simply `download composer <https://getcomposer.org/download/>`_ with the instructions under the header "manual download". Use ``php composer.phar`` instead of ``composer``.
+If you have no sudo rights, you can simply `download composer <https://getcomposer.org/download/>`_ with the instructions under the header "manual download". Use ``php composer.phar`` instead of ``composer`` in the instructions ahead.
 
 This concludes the server preparations. If you're having trouble with (parts of) this step, please check out the :ref:`Server FAQ <faqselfhosted>`.
 
