@@ -50,7 +50,7 @@ Transactions have a few useful fields:
 * The amount (duh)
 * The date
 * The accounts involved (from and to)
-* .. and some meta-information.
+* \.\. and some meta-information.
 
 In Firefly, a transaction can be a withdrawal, a deposit or a transfer. Beyond the obvious, they are slightly different from one another:
 
