@@ -113,4 +113,16 @@ Answer be here
 
 Third-party hosted
 ------------------
+
 This section is empty.
+
+
+.. _faqimport:
+
+Importing data
+--------------
+
+The import times out!
+~~~~~~~~~~~~~~~~~~~~~
+
+Answer be here.
