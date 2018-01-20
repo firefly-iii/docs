@@ -11,4 +11,4 @@ You can send the bug info `to me by email <mailto:thegrumpydictator@gmail.com>`_
 Errors in translations
 ----------------------
 
-If you see a spelling error, grammatical error or a weird translation in your language, please join `the CrowdIn <https://crowdin.com/project/firefly-iii> project`_. There, you can submit your translations and fixes. The GitHub repository will download these automatically and they will be included in the next release.
+If you see a spelling error, grammatical error or a weird translation in your language, please join `the CrowdIn project <https://crowdin.com/project/firefly-iii>`_. There, you can submit your translations and fixes. The GitHub repository will download these automatically and they will be included in the next release.
