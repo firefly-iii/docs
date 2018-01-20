@@ -17,7 +17,7 @@ However, often an expense tells a story. Just take grocery receipts for example.
 .. graphviz::
 
    digraph foo {
-      graph [fontname = "helvetica", fontsize=11];
+      graph [fontname = "helvetica", fontsize=11,bgcolor=transparent];
       subgraph cluster_0 {
          label = "Groceries\n- €4,24";
          node [fontname = "helvetica", fontsize=11, shape=rounded, style=filled];
@@ -37,7 +37,7 @@ Likewise, your salary may have multiple components. Your have a base salary. But
 .. graphviz::
 
    digraph foo {
-      graph [fontname = "helvetica", fontsize=11];
+      graph [fontname = "helvetica", fontsize=11,bgcolor=transparent];
       subgraph cluster_0 {
          label = "Salary\n- €1066,03";
          node [fontname = "helvetica", fontsize=11, shape=rounded, style=filled];
