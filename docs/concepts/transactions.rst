@@ -103,9 +103,27 @@ This way, Firefly III tries to stay true to what a financial transaction is, whi
 
 However, often an expense tells a story. Just take grocery receipts for example. It's one expense sure, but it consists of many parts. And when you buy aspirin and bread at the same time, you might want to split the expense over two budgets, medication and groceries. A single expense would make you lose information.
 
-Likewise, your salary may have multiple components. Your base salary may be 1200. Minus 200 for taxes. Plus 100 bonus. Etc. All that information is lost when you only support singular, unsplitted deposit, like Firefly III usually does.
+Likewise, your salary may have multiple components. Your base salary may be 1200. Minus 200 for taxes. Plus 100 bonus. Etc. All that information is lost when you enter it using a singular, unsplitted deposit.
 
-However, any time you create a deposit, transfer or a withdrawal, Firefly III allows you to **split** a transaction into multiple parts. When you do this, you can:
+.. graphviz::
+
+   digraph foo {
+      graph [fontname = "helvetica", fontsize=11,bgcolor=transparent];
+      subgraph cluster_0 {
+         label = "Groceries\n- €4,24";
+         node [fontname = "helvetica", fontsize=11, shape=rounded, style=filled];
+         edge [fontname = "helvetica", fontsize=11];
+         
+         a[label="- € 2,95", color=grey33, fontcolor=red, fontname = "helvetica bold",style=dashed, shape=ellipse];
+         b[label="- € 1,29", color=grey33, fontcolor=red, fontname = "helvetica bold",style=dashed, shape=ellipse];
+         c[label="Super Market", color=burlywood1];
+         a -> c[label="Aspirin"];
+         b -> c[label="Bread"];
+    }
+      
+   }
+
+Any time you create a deposit, transfer or a withdrawal, Firefly III allows you to **split** a transaction into multiple parts. When you do this, you can:
 
 - Assign part of an expense to a budget;
 - Assign different revenue accounts to parts of of a deposit.
