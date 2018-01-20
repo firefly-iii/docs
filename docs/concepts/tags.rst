@@ -4,7 +4,7 @@
 Tags
 ====
 
-Tags are an extension of :ref:`categories <categories>` and meant to expand on the meta-data included in a `transaction <transactions>`. You can add multiple tags to a transaction.
+Tags are an extension of :ref:`categories <categories>` and meant to expand on the meta-data included in a :ref:`transaction <transactions>`. You can add multiple tags to a transaction.
 
 Tags can be useful to group expenses together, possibly in another context than your categories. For examples, tags might include:
 
