@@ -9,4 +9,4 @@ You can send any request `to me by email <mailto:thegrumpydictator@gmail.com>`_ 
 Roadmap and release schedule
 ----------------------------
 
-There is no formal roadmap for Firefly III. However, I try to release a new version of Firefly III every month. Check out the `mile stones on GitHub <https://github.com/firefly-iii/firefly-iii/milestones>`_ to see what is being considered for future versions.
+There is no formal roadmap for Firefly III. However, I try to release a new version of Firefly III every month. Check out the `milestones on GitHub <https://github.com/firefly-iii/firefly-iii/milestones>`_ to see what is being considered for future versions.
