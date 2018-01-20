@@ -6,6 +6,19 @@ Links
 
 More often than not a transaction isn't just "a transaction" but a connected to some other transactions. Maybe you've been reimbursed money by your boss. Maybe an expense is paid back to you by an friend. Or perhaps a friend paid you back for something or other.
 
+.. graphviz::
+
+   digraph foo {
+      graph [fontname = "helvetica"]; 
+      node [fontname = "helvetica", fontsize=11, style=filled, shape=rounded];
+      edge [fontname = "helvetica", fontsize=11];
+      rankdir="LR";
+      a[label="Lunch with client", color=coral1];
+      b[label="Reimbursment from boss", color=darkseagreen3]
+
+      a -> b[label="is reimbursed by"]
+   }
+
 In Firefly III you can store these links between transactions. By default, four link types are available. You can see these under Administration > Transaction links configuration.
 
 * Is paid for by
@@ -14,6 +27,19 @@ In Firefly III you can store these links between transactions. By default, four 
 * Relates to
 
 These links work both ways. When transaction A is be refunded by transaction B, B is noted to refund A.
+
+.. graphviz::
+
+   digraph foo {
+      graph [fontname = "helvetica"]; 
+      node [fontname = "helvetica", fontsize=11, style=filled, shape=rounded];
+      edge [fontname = "helvetica", fontsize=11];
+      rankdir="LR";
+      a[label="Reimbursment from boss", color=darkseagreen3]
+      b[label="Lunch with client", color=coral1];
+
+      a -> b[label="reimburses"]
+   }
 
 You can also add your own link types if you want to.
 
