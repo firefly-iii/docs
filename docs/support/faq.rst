@@ -12,15 +12,10 @@ Docker
 .. contents::
    :local:
 
-Question one
-~~~~~~~~~~~~
+I have a question that is not in the FAQ?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Text be here.
-
-Question two
-~~~~~~~~~~~~
-
-Text be here.
+Please send your question `to me by email <mailto:thegrumpydictator@gmail.com>`_ or `open a ticket on GitHub <https://github.com/firefly-iii/firefly-iii/issues>`_.
 
 .. _faqselfhosted:
 
@@ -108,21 +103,33 @@ When I login, I get "Page has expired"
 
 Answer be here
 
+I have a question that is not in the FAQ?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Please send your question `to me by email <mailto:thegrumpydictator@gmail.com>`_ or `open a ticket on GitHub <https://github.com/firefly-iii/firefly-iii/issues>`_.
 
 .. _faqthirdparty:
 
 Third-party hosted
 ------------------
 
-This section is empty.
+.. contents::
+   :local:
 
+I have a question that is not in the FAQ?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. _faqimport:
+Please send your question `to me by email <mailto:thegrumpydictator@gmail.com>`_ or `open a ticket on GitHub <https://github.com/firefly-iii/firefly-iii/issues>`_.
 
 Importing data
 --------------
 
-The import times out!
-~~~~~~~~~~~~~~~~~~~~~
+.. contents::
+   :local:
 
-Answer be here.
+.. _faqimport:
+
+I have a question that is not in the FAQ?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Please send your question `to me by email <mailto:thegrumpydictator@gmail.com>`_ or `open a ticket on GitHub <https://github.com/firefly-iii/firefly-iii/issues>`_.
