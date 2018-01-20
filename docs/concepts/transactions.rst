@@ -9,7 +9,7 @@ A transaction is a very simple thing. Money moves from A to B. It doesn't matter
 .. graphviz::
 
    digraph foo {
-      graph [fontname = "helvetica"]; 
+      graph [fontname = "helvetica",bgcolor=transparent]; 
       node [fontname = "helvetica", fontsize=11, style=filled, shape=rounded];
       edge [fontname = "helvetica", fontsize=11];
       rankdir="LR";
@@ -22,7 +22,7 @@ A transaction is a very simple thing. Money moves from A to B. It doesn't matter
 .. graphviz::
 
    digraph foo {
-      graph [fontname = "helvetica"]; 
+      graph [fontname = "helvetica",bgcolor=transparent]; 
       node [fontname = "helvetica", fontsize=11, shape=rounded, style=filled];
       edge [fontname = "helvetica", fontsize=11];
       rankdir="LR";
@@ -37,7 +37,7 @@ In Firefly III and most other systems this is stored using a "`double-entry book
 .. graphviz::
 
    digraph foo {
-      graph [fontname = "helvetica"]; 
+      graph [fontname = "helvetica",bgcolor=transparent]; 
       node [fontname = "helvetica", fontsize=11, shape=rounded, style=filled];
       edge [fontname = "helvetica", fontsize=11];
       a[label="Your boss", color=orange]
@@ -52,7 +52,7 @@ In Firefly III and most other systems this is stored using a "`double-entry book
 .. graphviz::
 
    digraph foo {
-      graph [fontname = "helvetica"]; 
+      graph [fontname = "helvetica",bgcolor=transparent]; 
       node [fontname = "helvetica", fontsize=11, shape=rounded, style=filled];
       edge [fontname = "helvetica", fontsize=11];
       a[label="Checking Account", color=deepskyblue]

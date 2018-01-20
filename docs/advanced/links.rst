@@ -9,7 +9,7 @@ More often than not a transaction isn't just "a transaction" but a connected to 
 .. graphviz::
 
    digraph foo {
-      graph [fontname = "helvetica"]; 
+      graph [fontname = "helvetica",bgcolor=transparent]; 
       node [fontname = "helvetica", fontsize=11, style=filled, shape=rounded];
       edge [fontname = "helvetica", fontsize=11];
       rankdir="LR";
@@ -31,7 +31,7 @@ These links work both ways. When transaction A is be refunded by transaction B, 
 .. graphviz::
 
    digraph foo {
-      graph [fontname = "helvetica"]; 
+      graph [fontname = "helvetica",bgcolor=transparent]; 
       node [fontname = "helvetica", fontsize=11, style=filled, shape=rounded];
       edge [fontname = "helvetica", fontsize=11];
       rankdir="LR";
