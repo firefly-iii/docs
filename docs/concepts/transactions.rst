@@ -9,18 +9,27 @@ A transaction is a very simple thing. Money moves from A to B. It doesn't matter
 .. graphviz::
 
    digraph foo {
+      graph [fontname = "helvetica"]; 
+      node [fontname = "helvetica", fontsize=11, style=filled, shape=rounded];
+      edge [fontname = "helvetica", fontsize=11];
       rankdir="LR";
-      "Savings Account" -> "€ 200,-";
-      "€ 200,-" -> "Checking account";
-   }
+      a[label="Checking Account", color=deepskyblue];
+      b[label="Savings Account", color=dodgerblue3]
 
+      a -> b[label="€ 200,-"]
+   }
 
 .. graphviz::
 
    digraph foo {
+      graph [fontname = "helvetica"]; 
+      node [fontname = "helvetica", fontsize=11, shape=rounded, style=filled];
+      edge [fontname = "helvetica", fontsize=11];
       rankdir="LR";
-      "Checking Account" -> "€ 14,95";
-      "€ 14,95" -> "Supermarket";
+      a[label="Checking Account", color=deepskyblue];
+      b[label="Super Market",color=burlywood1]
+
+      a -> b[label="€ 14,95"]
    }
 
 In Firefly III and most other systems this is stored using a "`double-entry bookkeeping system <http://en.wikipedia.org/wiki/Double-entry_bookkeeping_system>`_". You get money and your boss loses it. You spend money and the Supermarket "earns" it:
@@ -28,16 +37,30 @@ In Firefly III and most other systems this is stored using a "`double-entry book
 .. graphviz::
 
    digraph foo {
-      rankdir="LR";
-      "JobGiver Inc.\n- € 1000,-" -> "You\n+€ 1000,-";
+      graph [fontname = "helvetica"]; 
+      node [fontname = "helvetica", fontsize=11, shape=rounded, style=filled];
+      edge [fontname = "helvetica", fontsize=11];
+      a[label="Your boss", color=orange]
+      b[label="- € 1000,-", color=grey33, fontcolor=red, fontname = "helvetica bold",style=dashed, shape=ellipse];
+      a -> b
+      c[label="Checking account", color=deepskyblue];
+      d[label="+ € 1000,-", color=grey33, fontcolor=darkgreen, fontname = "helvetica bold",style=dashed, shape=ellipse]
+      c -> d[dir=back];
    }
 
 
 .. graphviz::
 
    digraph foo {
-      rankdir="LR";
-      "Checking Account\n- € 14,95" -> "Supermarket\n+€ 14,95";
+      graph [fontname = "helvetica"]; 
+      node [fontname = "helvetica", fontsize=11, shape=rounded, style=filled];
+      edge [fontname = "helvetica", fontsize=11];
+      a[label="Checking Account", color=deepskyblue]
+      b[label="- € 14,95", color=grey33, fontcolor=red, fontname = "helvetica bold",style=dashed, shape=ellipse];
+      a -> b
+      c[label="Super Market", color=burlywood1];
+      d[label="+ € 14,95", color=grey33, fontcolor=darkgreen, fontname = "helvetica bold",style=dashed, shape=ellipse]
+      c -> d[dir=back];
    }
 
 Each transaction is stored twice. Once as a loss (for one party), and once as a profit (for the other party). This seems pretty pointless, and technically it is. But it was designed back when clerks could be fraudulent and this double-entry system stopped fraud. In these modern days it is useful to check if all records are straight.
