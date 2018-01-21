@@ -141,8 +141,8 @@ You can now visit Firefly III at `http://localhost <http://localhost>`_ or `http
 
 If you're having trouble with (parts of) this step, please check out the :ref:`Docker FAQ <faqdocker>`
 
-Update
-~~~~~~
+Upgrade
+~~~~~~~
 
 To update the container just run ``docker-compose restart firefly-app``. You can even add this command to a chrontab. Before you visit it again, upgrade the database:
 
@@ -213,8 +213,8 @@ Surf to Firefly III
 
 You can now visit Firefly III at ``http://localhost`` or ``http://docker-ip:port`` if it is running on a custom port.
 
-Update
-~~~~~~
+Upgrade
+~~~~~~~
 
 To update the container just run ``docker stop firefly-app && docker pull jc5x/firefly-iii && docker start firefly-app``. You can even add this command to a chrontab. Before you visit it again, upgrade the database:
 
