@@ -1,31 +1,13 @@
-Firefly III
-===========
+Firefly III documentation
+=========================
 
-I have no idea where this text ends up.
+These are the source files for the official [Firefly III documentation](http://firefly-iii.readthedocs.io/en/latest/) on ReadTheDocs. Feel free to create a pull request if you spot a mistake.
 
-Features
+See also
 --------
 
-- Be awesome
-- Make things faster
-
-Installation
-------------
-
-Clearly this is an installation section
-
-Contribute
-----------
-
-More text should follow.
-
-- Issue Tracker: github.com/firefly-iii/firefly-iii/issues
-- Source Code: github.com/firefly-iii/firefly-iii
-
-Support
--------
-
-If you are having issues, please let me know.
+- [Firefly III Issue Tracker](https://github.com/firefly-iii/firefly-iii/issues)
+- [Firefly III Source Code](https://github.com/firefly-iii/firefly-iii)
 
 License
 -------
