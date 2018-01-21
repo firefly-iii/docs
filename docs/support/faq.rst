@@ -4,26 +4,20 @@
 FAQ
 ===
 
+.. contents::
+   :local:
+
 .. _faqdocker:
 
 Docker
 ------
 
-.. contents::
-   :local:
-
-I have a question that is not in the FAQ?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Please send your question `to me by email <mailto:thegrumpydictator@gmail.com>`_ or `open a ticket on GitHub <https://github.com/firefly-iii/firefly-iii/issues>`_.
+*No FAQ entries yet.*
 
 .. _faqselfhosted:
 
 Self-hosted (VM)
 ----------------
-
-.. contents::
-   :local:
 
 I have to access Firefly III through /public/ and it gives me a warning?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -82,7 +76,7 @@ If you run Apache, open the ``httpd.conf`` or ``apache2.conf`` configuration fil
 
 Find the line that starts with ``<Directory /var/www>``. If you see ``/``, keep looking!
 
-You will see the text `AllowOverride None` right below it. Change it to `AllowOverride All`.
+You will see the text ``AllowOverride None`` right below it. Change it to ``AllowOverride All``.
 
 Also run the following commands:
 
@@ -113,21 +107,22 @@ Please send your question `to me by email <mailto:thegrumpydictator@gmail.com>`_
 Third-party hosted
 ------------------
 
-.. contents::
-   :local:
+*No FAQ entries yet.*
 
-I have a question that is not in the FAQ?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Please send your question `to me by email <mailto:thegrumpydictator@gmail.com>`_ or `open a ticket on GitHub <https://github.com/firefly-iii/firefly-iii/issues>`_.
+.. _faqimport:
 
 Importing data
 --------------
 
-.. contents::
-   :local:
+I'm getting prompted by Salt Edge to request test access. Am I doing it wrong?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. _faqimport:
+`Salt Edge <https://www.saltedge.com/>`_ doesn't just let you import data. Once you have created an account and set up Firefly III to import data from their systems you can only import test data at first. You'll have `to contact them <https://www.saltedge.com/test_access>`_ to get your account upgraded.
+
+This is a bit annoying, having to jump through hoops to get Salt Edge access, but it's the best I can do. Since Firefly III is open source software I cannot share my secret keys. They would be out on the street. So, each user has to get their own access to Salt Edge.
+
+Other questions
+---------------
 
 I have a question that is not in the FAQ?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
