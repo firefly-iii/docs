@@ -30,6 +30,14 @@ When you create a transaction with the following properties, it will match to th
 * Expense account: "Land lord"
 * Description: "Rent"
 
+The date of a bill
+------------------
+
+When you create a bill you also have to fill in the (first) date you expect the bill to hit. This date is purely cosmetic and will be used to inform you when the bill can be expected. For example:
+
+* A monthly bill, on the 3rd day of the month, will hit: 3 Jan, 3 Feb, 3 Mar, etc.
+* A weekly bill, starting on 15 Jan, will hit: 15 Jan, 22 Jan, 29 Jan, 5 Feb, etc.
+
 Screenshots
 -----------
 
