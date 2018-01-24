@@ -33,6 +33,7 @@ You can find Firefly III on `GitHub <https://github.com/firefly-iii/firefly-iii>
    ./support/faq.rst
    ./support/features.rst
    ./support/bugs.rst
+   ./support/contribute.rst
 
 .. toctree::
    :maxdepth: 1
