@@ -136,7 +136,7 @@ Go to the ``firefly-iii`` folder and run these commands:
    rm -rf vendor/
    composer install --no-scripts --no-dev
    composer install --no-dev
-   php artisan migrate --env=production # Answer yes when asked.
+   php artisan migrate --env=production --force
    php artisan cache:clear
    php artisan firefly:upgrade-database
    php artisan firefly:verify
