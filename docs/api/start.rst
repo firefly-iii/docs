@@ -20,13 +20,15 @@ Errors
 System errors are represented using the following notation. All errors are in English, regardless of the user's preferred language.
 
 .. code-block:: json
+   
    {
        "message": "Error message is here",
        "exception": "ErrorException",
        "line": 190,
        "file": "/firefly-iii/some-file.php",
        "trace": []
-}
+   }
+
 
 Of course, when debug is *disabled* this error will be not be very descriptive:
 
@@ -40,6 +42,7 @@ Of course, when debug is *disabled* this error will be not be very descriptive:
 Validation errors (when submitting data) are formatted using the following notation. All errors are in English, regardless of the user's preferred language.
 
 .. code-block:: json
+   
    {
        "message": "The given data was invalid.",
        "errors": {
