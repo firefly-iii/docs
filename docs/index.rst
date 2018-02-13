@@ -65,6 +65,12 @@ You can find Firefly III on `GitHub <https://github.com/firefly-iii/firefly-iii>
    ./advanced/splits.rst
    ./advanced/links.rst
    ./advanced/reconcile.rst
+   
+.. toctree::
+   :maxdepth: 1
+   :caption: API
+   
+   ./api/start.rst
 
 .. toctree::
    :maxdepth: 1
