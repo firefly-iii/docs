@@ -216,6 +216,24 @@ This is a bit annoying, having to jump through hoops to get Salt Edge access, bu
 Other questions
 ---------------
 
+I keep getting redirected to the index after editing something
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you're running Firefly III in a reverse proxy environment, please check if you have the following configuration:
+
+.. code-block:: bash
+   
+   Referrer-Policy: strict-origin 
+
+
+If this is the case, please change it to:
+
+.. code-block:: bash
+   
+   Referrer-Policy: same-origin
+
+That should solve it.
+
 I have a question that is not in the FAQ?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
