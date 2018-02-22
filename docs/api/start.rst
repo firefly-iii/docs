@@ -82,3 +82,4 @@ Validation errors (when submitting data) are formatted using the following notat
    }
 
 
+Information about the end points can be found in their respective pages (to the left in the index).
