@@ -46,7 +46,7 @@ System errors are represented using the following notation. All errors are in En
    }
 
 
-Of course, when debug is *disabled* this error will be not be very descriptive:
+Of course, when debug is *disabled* this error will not be very descriptive:
 
 .. code-block:: json
    

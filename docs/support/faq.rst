@@ -91,7 +91,7 @@ Then you are ready to install the database in PostgreSQL:
 I see a white page and nothing else?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Check out the log files in ``storage/logs`` to see what is going on. Please open a ticker if you are not sure what to do. If the logs are empty  Firefly III cannot write to them. Make sure that the web server has write access to this directory. If the logs still remain empty, do you have a the ``vendor`` directory in your Firefly III root? If not, run the Composer commands.
+Check out the log files in ``storage/logs`` to see what is going on. Please open a ticker if you are not sure what to do. If the logs are empty  Firefly III cannot write to them. Make sure that the web server has write access to this directory. If the logs still remain empty, do you have a ``vendor`` directory in your Firefly III root? If not, run the Composer commands.
 
 I get a 404?
 ~~~~~~~~~~~~

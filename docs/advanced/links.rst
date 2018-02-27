@@ -26,7 +26,7 @@ In Firefly III you can store these links between transactions. By default, four 
 * Is reimbursed by
 * Relates to
 
-These links work both ways. When transaction A is be refunded by transaction B, B is noted to refund A.
+These links work both ways. When transaction A is been refunded by transaction B, B is noted to refund A.
 
 .. graphviz::
 
