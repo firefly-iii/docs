@@ -57,7 +57,7 @@ Likewise, your salary may have multiple components. Your have a base salary. But
 Any time you create a deposit, transfer or a withdrawal, Firefly III allows you to **split** a transaction into multiple parts. When you do this, you can:
 
 - Assign part of an expense to a budget;
-- Assign different revenue accounts to parts of of a deposit.
+- Assign different revenue accounts to parts of a deposit.
 - Categorize money differently.
 
 You can split your entire groceries-receipt into small "sub"-transactions, or you can specify each component of your salary. There are many more examples to think of.

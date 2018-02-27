@@ -65,7 +65,7 @@ In Firefly III and most other systems this is stored using a "`double-entry book
 
 Each transaction is stored twice. Once as a loss (for one party), and once as a profit (for the other party). This seems pretty pointless, and technically it is. But it was designed back when clerks could be fraudulent and this double-entry system stopped fraud. In these modern days it is useful to check if all records are straight.
 
-It is also useful when transferring money back and forth between your own :ref:`accounts <accounts>`. This is the same as spending money. It's all moving money around. This helps maintaining the internal consistency of the database.
+It is also useful when transferring money back and forth between your own :ref:`accounts <accounts>`. This is the same as spending money. It's all moving money around. This helps maintain the internal consistency of the database.
 
 Transactions have a few useful fields:
 
@@ -126,7 +126,7 @@ Likewise, your salary may have multiple components. Your base salary may be 1200
 Any time you create a deposit, transfer or a withdrawal, Firefly III allows you to **split** a transaction into multiple parts. When you do this, you can:
 
 - Assign part of an expense to a budget;
-- Assign different revenue accounts to parts of of a deposit.
+- Assign different revenue accounts to parts of a deposit.
 - Categorize money differently.
 
 You can split your entire groceries-receipt into small "sub"-transactions. You can specify each component of your salary.
