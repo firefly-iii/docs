@@ -71,6 +71,8 @@ You can find Firefly III on `GitHub <https://github.com/firefly-iii/firefly-iii>
    :caption: API
    
    ./api/start.rst
+   ./api/about.rst
+   ./api/accounts.rst
 
 .. toctree::
    :maxdepth: 1

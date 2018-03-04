@@ -179,7 +179,7 @@ Then run the commands:
    -e MYSQL_PASSWORD=firefly_db_secret \
    -e MYSQL_RANDOM_ROOT_PASSWORD=yes \
    -v firefly_iii_db:/var/lib/mysql \
-   mysql:8
+   mysql:latest
 
 .. code-block:: bash
    
