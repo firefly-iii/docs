@@ -31,6 +31,7 @@ And then start it again by running the command under "Start the container". Befo
    docker exec -it <container> php artisan migrate
    docker exec -it <container> php artisan firefly:upgrade-database
    docker exec -it <container> php artisan firefly:verify
+   docker exec -it <container> php artisan passport:install
 
 If you're having trouble with (parts of) this step, please check out the :ref:`Docker FAQ <faqdocker>`
 
@@ -45,6 +46,7 @@ To update the container just run ``docker-compose restart firefly-app``. You can
    docker exec -it <container> php artisan migrate
    docker exec -it <container> php artisan firefly:upgrade-database
    docker exec -it <container> php artisan firefly:verify
+   docker exec -it <container> php artisan passport:install
 
 If you're having trouble with (parts of) this step, please check out the :ref:`Docker FAQ <faqdocker>`
 
@@ -59,6 +61,7 @@ To update the container just run ``docker stop firefly-app && docker pull jc5x/f
    docker exec -it <container> php artisan migrate
    docker exec -it <container> php artisan firefly:upgrade-database
    docker exec -it <container> php artisan firefly:verify
+   docker exec -it <container> php artisan passport:install
 
 If you're having trouble with (parts of) this step, please check out the :ref:`Docker FAQ <faqdocker>`
 
@@ -94,6 +97,7 @@ Then, run the following commands to finish the upgrade:
    php artisan cache:clear
    php artisan firefly:upgrade-database
    php artisan firefly:verify
+   php artisan passport:install
    cd ..
 
 To make sure your webserver serves you the new Firefly III:
@@ -140,5 +144,6 @@ Go to the ``firefly-iii`` folder and run these commands:
    php artisan cache:clear
    php artisan firefly:upgrade-database
    php artisan firefly:verify
+   php artisan passport:install
 
 If you're having trouble with (parts of) this step, please check out the :ref:`FAQ <faq>`
