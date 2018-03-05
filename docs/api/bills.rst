@@ -123,7 +123,7 @@ Optional fields:
 Update bill
 -----------
 
-``PUT /api/v1/accounts/<id>``
+``PUT /api/v1/bills/<id>``
 
 The same requirements as for the new bill apply.
 
