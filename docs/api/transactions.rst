@@ -120,7 +120,6 @@ Use the ``include`` parameter to include related objects. These parameters can b
 * ``include=piggy_bank_events``. Includes the related piggy bank events of the transaction. These some times appear with transfers.
 * ``include=journal_meta``. Include meta data related to the transaction.
 * ``include=tags``. Include tags.
-* ``include=transactions``. Include transactions.
 
 Create transaction
 --------------
