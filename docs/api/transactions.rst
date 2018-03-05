@@ -186,6 +186,6 @@ The same rules as above apply, with some noteable exceptions:
 Delete transaction
 ------------------
 
-``DELETE /api/v1/accounts/<id>``
+``DELETE /api/v1/transactions/<id>``
 
 Will delete the transaction and any splits it might have. Other data is not removed.
