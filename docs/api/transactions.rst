@@ -156,8 +156,8 @@ To submit actual transaction data, use the following format. The ``*`` must be a
 Required transaction fields:
 
 * ``transactions[*][amount]``. The amount of the transaction. Must be positive.
-* ``transactions[*][source_id]`` or ``transactions[*][source_name]``. The source account of the transaction. Must be an existing asset account for transfers and withdrawals. May be a new revenue account for deposits. You can leave both blank in a deposit to create a cash deposit.
-* ``transactions[*][destination_id]``or ``transactions[*][destination_name]``. The destination account of the transaction. Must be an existing asset account for transfers and deposits. May both be blank for a cash withdrawal, or create a new expense account for withdrawals (fill in only the name).
+* ``transactions[*][source_id]`` OR ``transactions[*][source_name]``. The source account of the transaction. Must be an existing asset account for transfers and withdrawals. May be a new revenue account for deposits. You can leave both blank in a deposit to create a cash deposit.
+* ``transactions[*][destination_id]`` OR ``transactions[*][destination_name]``. The destination account of the transaction. Must be an existing asset account for transfers and deposits. May both be blank for a cash withdrawal, or create a new expense account for withdrawals (fill in only the name).
 * ``transactions[*][description]``. Not actually mandatory until you submit more than 1 transaction. Must be different from the global description. Cannot be the same as other transactions in your submission.
 * ``transactions[*][currency_id]`` or ``transactions[*][currency_code]``. Indicates the currency of the transaction.
 
