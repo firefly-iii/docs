@@ -133,7 +133,7 @@ If this is the first time you're running Firefly III then you must initialize th
    docker-compose exec firefly_iii_app php artisan migrate --seed
    docker-compose exec firefly_iii_app php artisan firefly:upgrade-database
    docker-compose exec firefly_iii_app php artisan firefly:verify
-   docker exec -it <container> php artisan passport:install
+   docker-compose exec firefly_iii_app php artisan passport:install
 
 If you're having trouble with (parts of) this step, please check out the :ref:`Docker FAQ <faqdocker>`
 
