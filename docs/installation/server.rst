@@ -19,6 +19,12 @@ If you wish to use another database such as SQLite or Postgres, please check out
 
 You need a (MySQL) database and matching credentials. Firefly III creates its own tables.
 
+Several users have created specific guides for their OS and database combination. Please note that I can't help you if these guides are wrong or outdated.
+
+1. `CentOS 7, with nginx and PHP 7.2 <https://www.reddit.com/r/FireflyIII/comments/825n4l/centos_7_nginx_installation_guide/>`_
+
+
+
 Preparing your server
 ---------------------
 
