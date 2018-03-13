@@ -4,7 +4,7 @@
 Currencies
 ==========
 
-Firefly III supports as many currencies as you like. By default it ships with a variety of currencies, amongst which also crypto currencies, which Firefly III also supports.
+Firefly III supports as many currencies as you like. By default it ships with a variety of currencies, including crypto currencies.
 
 You can add your own currencies if you're missing one.
 
@@ -12,7 +12,7 @@ You can add your own currencies if you're missing one.
 Adding currencies
 -----------------
 
-Under Options > Preferences you will find the "Currencies" page. When you are an admin, you will see the button "Create a new currency". You should enter some details such as the name, the $ymbol of the currency and of course the currency code (preferrably according to the `ISO 4217 <https://www.currency-iso.org/dam/downloads/lists/list_one.xml>`_).
+Under Options > Preferences you will find the "Currencies" page. When you are an admin, you will see the button "Create a new currency". You should enter some details such as the name, the $ymbol of the currency and of course the currency code (preferrably according to the `ISO 4217 <https://www.currency-iso.org/dam/downloads/lists/list_one.xml>`_ standard).
 
 Currencies have decimal places. Most have 2, like the Euro. Notable exceptions are Bitcoin (8) and the Mauritanian ouguiya (no decimals). Both are supported by Firefly III. Bitcoin is present by default.
 
