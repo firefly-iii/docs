@@ -53,7 +53,9 @@ There are several `tutorials online <https://www.digitalocean.com/community/tuto
 I want to use SQLite?
 ~~~~~~~~~~~~~~~~~~~~~
 
-There is not much to it. Open your ``.env`` file and find the lines that begin with ``DB_``. These define your database connection. Leave ``DB_CONNECTION``. Delete the rest.
+There is not much to it. However, be warned. SQLite support is best-effort and it's not an efficient database driver for Firefly III. I strongly advice against it. Having said that:
+
+Open your ``.env`` file and find the lines that begin with ``DB_``. These define your database connection. Leave ``DB_CONNECTION``. Delete the rest.
 
 .. code-block:: bash
    
@@ -212,6 +214,17 @@ I'm getting prompted by Salt Edge to request test access. Am I doing it wrong?
 `Salt Edge <https://www.saltedge.com/>`_ doesn't just let you import data. Once you have created an account and set up Firefly III to import data from their systems you can only import test data at first. You'll have `to contact them <https://www.saltedge.com/test_access>`_ to get your account upgraded.
 
 This is a bit annoying, having to jump through hoops to get Salt Edge access, but it's the best I can do. Since Firefly III is open source software I cannot share my secret keys. They would be out on the street. So, each user has to get their own access to Salt Edge.
+
+Why can't I import data from [insert bank here]?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+There are several reasons why you might not be able to import data from [insert bank here], except when you use the CSV import option.
+
+1. First, I don't have the resources to build import-code all of the banks that are out there. Most countries have between 10 and 30 consumer banks and it's barely doable to maintain just a few.
+2. Secondly, most banks don't offer secure methods to download transactions. Mint.com and other cloud-based tools will happily accept your username and password. And people happily give them!
+
+
+1. First, realize that most banks are supported through Spectre / Salt Edge. This is far from per
 
 Other questions
 ---------------

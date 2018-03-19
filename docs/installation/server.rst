@@ -17,7 +17,7 @@ You need a working LAMP, LEMP or WAMP stack. If you don't have one, search the w
 
 If you wish to use another database such as SQLite or Postgres, please check out the :ref:`Server FAQ <faqselfhosted>`.
 
-You need a (MySQL) database and matching credentials. Firefly III creates its own tables.
+You need a (MySQL) database and credentials for a user that can access that database. Firefly III creates its own tables. Avoid using the root user.
 
 Several users have created specific guides for their OS and database combination. Please note that I can't help you if these guides are wrong or outdated.
 
