@@ -195,6 +195,16 @@ I get 'Error: call to undefined function numfmt_create()'?
 
 Make sure you have installed and enabled the PHP intl extension.
 
+I run SELinux and I don't want to disable it. Now what?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Reddit user  `bousquetfrederic <https://www.reddit.com/user/bousquetfrederic>`_ shares `their solution <https://www.reddit.com/r/FireflyIII/comments/84bf0p/selinux_vs_fireflyiii/>`_:
+
+.. code-block:: bash
+   
+   sudo semanage fcontext -a -t httpd_sys_rw_content_t "/path/to/firefly-iii/storage(/.*)?"
+   sudo restorecon -R /path/to/firefly-iii/storage
+
 
 .. _faqthirdparty:
 
