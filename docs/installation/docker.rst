@@ -266,3 +266,9 @@ If you wish to enable SSL as well, Firefly III (or rather Laravel) respects the 
 If you're having trouble with (parts of) this step, please check out the :ref:`Docker FAQ <faqdocker>`
 
 
+Supported Docker environment variables
+--------------------------------------
+
+There are many environment variables that you can set in Firefly III. Just check out the `default docker env file <https://github.com/firefly-iii/firefly-iii/blob/master/.env.docker>`_ that lists them all. Each value within ${BRACKETS} can be replaced on the command line.
+
+
