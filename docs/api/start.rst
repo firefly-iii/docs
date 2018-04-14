@@ -11,6 +11,13 @@ Authentication
 
 The API uses OAuth2 tokens. You can create them in your profile when logged in.
 
+OAuth2 end points are:
+
+- ``/oauth/authorize``
+- ``/oauth/token``
+
+
+
 Data formatting
 ---------------
 The following pages will tell you about all the end points and how they work. As a convention all data is presented using the `JSON API <http://jsonapi.org/>`_ standard. A notable exception is the "about" end-point which presents its data slightly differently.
