@@ -1,6 +1,6 @@
-============
+=======
 Upgrade
-============
+=======
 
 Firefly III has had a long and stormy history. There are many ways of installing Firefly III, so there are many ways to upgrade.
 
