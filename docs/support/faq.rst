@@ -31,6 +31,14 @@ I have found a security related issue!
 
 Please :ref:`contact me asap <security>`.
 
+
+I get an error about "proc_close" being disabled?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The ``proc_close`` method (part of PHP) is disabled in some cases due to security concerns. This is not fatal for Firefly III, but it means you must do the upgrade yourself. 
+
+Please checkout the :ref:`installation instructions <installself>` and :ref:`upgrade instructions <upgrading>` for your particular type of installation.
+
 .. _faqdocker:
 
 Docker
@@ -256,12 +264,6 @@ If this is the case, please change it to:
    Referrer-Policy: same-origin
 
 That should solve it.
-
-I get an error about "proc_close" being disabled?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-The `proc_close` method (part of PHP) is disabled in some cases due to security concerns. This is not fatal for Firefly III but it means you must do the upgrade yourself. Please checkout the Installation and Upgrade instructions for your particular type of installation.
-
 
 I have a question that is not in the FAQ?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

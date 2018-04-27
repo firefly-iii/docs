@@ -1,3 +1,5 @@
+.. _installself:
+
 ==================
 Self-hosted server
 ==================
