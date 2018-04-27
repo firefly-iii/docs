@@ -32,12 +32,18 @@ I have found a security related issue!
 Please :ref:`contact me asap <security>`.
 
 
-I get an error about "proc_close" being disabled?
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I get an error during the automatic installation and upgrade?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The ``proc_close`` method (part of PHP) is disabled in some cases due to security concerns. This is not fatal for Firefly III, but it means you must do the upgrade yourself. 
+A few errors may pop up during the automatic installation and upgrade routine:
 
-Please checkout the :ref:`installation instructions <installself>` and :ref:`upgrade instructions <upgrading>` for your particular type of installation.
+* ``proc_close``: The ``proc_close`` method (part of PHP) is disabled in some cases due to security concerns.
+* Open base dir restriction is sometimes enabled for security purposes.
+* Other error messages.
+
+These errors are not fatal for Firefly III, but they mean you must do the upgrade yourself. 
+
+Please checkout the :ref:`installation instructions <installself>` and :ref:`upgrade instructions <upgrading   >` for your particular type of installation.
 
 .. _faqdocker:
 
