@@ -109,6 +109,18 @@ I see a white page and nothing else?
 
 Check out the log files in ``storage/logs`` to see what is going on. Please open a ticker if you are not sure what to do. If the logs are empty  Firefly III cannot write to them. Make sure that the web server has write access to this directory. If the logs still remain empty, do you have a ``vendor`` directory in your Firefly III root? If not, run the Composer commands.
 
+If the pages remain empty, make sure you have enabled the rewrite module in Apache. If you're running nginx, use this as the "location" config:
+
+.. code-block:: bash
+   
+   location / {
+        try_files $uri $uri/ /index.php?$query_string;
+        autoindex on;
+        sendfile off;
+   }
+
+
+
 I get a 404?
 ~~~~~~~~~~~~
 
@@ -242,13 +254,17 @@ This is a bit annoying, having to jump through hoops to get Salt Edge access, bu
 Why can't I import data from [insert bank here]?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-There are several reasons why you might not be able to import data from [insert bank here], except when you use the CSV import option.
+There are several reasons why you might not be able to import data from [insert bank here], except when you use the CSV import option. 
 
-1. First, I don't have the resources to build import-code all of the banks that are out there. Most countries have between 10 and 30 consumer banks and it's barely doable to maintain just a few.
-2. Secondly, most banks don't offer secure methods to download transactions. Mint.com and other cloud-based tools will happily accept your username and password. And people happily give them!
+Unfortunately, I don't have the resources to build import-code for all of the banks that are out there. Most countries have between 10 and 30 consumer banks and it's barely doable to maintain just a few. I do have the wish to support many banks, but I must do so through other services.
 
+Most banks don't actually offer secure methods to download transactions. Mint.com and other cloud-based tools will ask for your bank username and password. I would not want to build such import routines.
 
-1. First, realize that most banks are supported through Spectre / Salt Edge. This is far from per
+I get an error about openssl_pkey_export?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+It means your machine has no proper configuration file for OpenSSL, or it cannot be found. Please check out `this issue <https://github.com/firefly-iii/firefly-iii/issues/1384>`_ for tips and tricks.
+
 
 Other questions
 ---------------
