@@ -39,6 +39,8 @@ Install the following PHP modules:
 * PHP Curl
 * PHP Zip
 * PHP GD
+* PHP XML
+* PHP MBString
 
 You can search the web to find out how to install these modules. Some may be installed already depending on your system. Use ``phpinfo()`` to find out.
 
