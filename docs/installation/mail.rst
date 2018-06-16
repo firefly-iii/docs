@@ -16,7 +16,7 @@ Firefly III can send you an email for specific notable events. These includes bu
    MAIL_PASSWORD=null
    MAIL_ENCRYPTION=null
 
-The first thing you'll want to update is the ``MAIL_DRIVER``. The mail driver indicates the system that is used for mailing. Firefly III supports the following mail systems: smtp, sendmail, mailgun, mandrill, ses, sparkpost, log, array.
+The first thing you'll want to update is the ``MAIL_DRIVER``. The mail driver indicates the system that is used for mailing. Firefly III supports the following mail systems: smtp, sendmail, mailgun, mandrill, sparkpost and log.
 
 The Firefly III administration pages (located at ``/admin``) contain a test button that will send a test message.
 
@@ -35,16 +35,20 @@ Uses the built-in sendmail configuration. If you choose this, you can leave the 
 mailgun
 -------
 
-Mailgun is an API that can send email. Their service allows for 10,000 free messages each month. To configure these, fill in the ``MAILGUN_DOMAIN`` and ``MAILGUN_SECRET`` values in your ``.env`` file.
+`Mailgun <https://www.mailgun.com/>`_ is an API that can send email. Their service allows for 10,000 free messages each month. To configure these, fill in the ``MAILGUN_DOMAIN`` and ``MAILGUN_SECRET`` values in your ``.env`` file. Please note that I haven't actually tested this.
 
 mandrill
+--------
 
-ses
+`Mandrill <https://www.mandrill.com/>`_ is a paid service by MailChimp. Find the ``MANDRILL_SECRET`` and fill it in. That should be enough to enable email over Mandrill. Please note that I haven't actually tested this. 
 
 
 sparkpost
+---------
+`Sparkpost <https://www.sparkpost.com/>`_ is another paid service. Find the ``SPARKPOST_SECRET`` to configure sending email over Sparkpost. Please note that I haven't actually tested this. 
+
 
 log
+---
 
-
-array
+The default value will store messages in your log files instead of sending them.
