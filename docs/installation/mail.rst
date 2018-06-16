@@ -22,6 +22,8 @@ The Firefly III administration pages (located at ``/admin``) contain a test butt
 
 Make sure that you *always* change the ``MAIL_FROM`` address. If this is wrong, mail might never work!
 
+If you use Docker, you can always set these values using environment variables.
+
 smtp
 ----
 
