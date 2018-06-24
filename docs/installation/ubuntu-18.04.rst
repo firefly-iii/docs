@@ -4,6 +4,17 @@ Firefly III install on Ubuntu 18.04
 Prepare the the server
 ~~~~~~~~~~~~~~~~~~~~~~
 
+These instructions will install Firefly III on Ubuntu 18.04. It includes setup for:
+
+- PHP 7.2
+- Nginx
+- MariaDB
+- Securing an Ubuntu server
+- Securing Maria DB
+- Let's Encrypt
+- Logrotate
+- Fail2Ban
+
 We will update and setup the default locale's on the server, and enable
 the auto security updates. I haven't seen any issues by enabling the
 auto security updates so far. In most cases you would want to review the
@@ -548,6 +559,8 @@ Example config:
         maxage 60
     }
 
+Finish
+~~~~~~~~~~~~~~~
 Now reboot the server and the services should start as normal. Go to
 your Firefly III page and run through the first steps. That should be
 it!
