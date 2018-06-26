@@ -9,6 +9,14 @@ Self-hosted server
 
 If you have your own (virtual) web server you can use this guide to install Firefly III. You will some ingredients prepared already.
 
+Several users have written ready-made tutorials for the OS and system of your choice.
+
+* `Ubuntu Server 16.04LTS with nginx and PHP 7.2 <https://www.reddit.com/r/FireflyIII/comments/8thxuu/fireflyiii_on_ubuntu_server_1604lts_nginx_php72/>`_
+* `CentOS 7 with nginx and PHP 7.2 <https://www.reddit.com/r/FireflyIII/comments/825n4l/centos_7_nginx_installation_guide/>`_
+* `Ubuntu Server 18.04 with nginx and PHP 7.2 <https://gist.github.com/philthynz/ec04833a8e39c7f7d1b0d33cb4197a95>`_
+
+
+
 Ingredients
 -----------
 You need a working LAMP, LEMP or WAMP stack. If you don't have one, search the web to find out how to get one. Make sure you're running PHP 7.1. There are many tutorials that will help you install one. For example:
