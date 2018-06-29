@@ -27,8 +27,8 @@ You need a (MySQL) database and credentials for a user that can access that data
 
 Several users have created specific guides for their OS and database combination
 
-1. `CentOS 7, with nginx and PHP 7.2 <https://www.reddit.com/r/FireflyIII/comments/825n4l/centos_7_nginx_installation_guide/>`_
-2. `Ubuntu Server 16.04LTS with nginx and PHP 7.2 <https://www.reddit.com/r/FireflyIII/comments/8thxuu/fireflyiii_on_ubuntu_server_1604lts_nginx_php72/>`_
+1. `CentOS 7, with nginx and PHP 7.2 <https://old.reddit.com/r/FireflyIII/comments/825n4l/centos_7_nginx_installation_guide/>`_
+2. `Ubuntu Server 16.04LTS with nginx and PHP 7.2 <https://old.reddit.com/r/FireflyIII/comments/8thxuu/fireflyiii_on_ubuntu_server_1604lts_nginx_php72/>`_
 3. `Ubuntu Server 18.04 with nginx and PHP 7.2 <https://gist.github.com/philthynz/ec04833a8e39c7f7d1b0d33cb4197a95>`_
 
 
