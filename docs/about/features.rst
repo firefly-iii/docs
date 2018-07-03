@@ -6,6 +6,7 @@ Most importantly...
 * Firefly III runs on your own server, so you are fully in control of your data. It will not contact other sites or servers
 * You can :ref:`import from over 2500 financial providers <importspectre>`, in 55 countries when you enable the `Spectre API <https://www.saltedge.com/solutions_for_finapps>`_
 * You can :ref:`import CSV files <importcsv>` from practically any bank
+* You can :ref:`import from bunq <importbunq>`
 * If you feel you’re missing something you :ref:`can just ask me <contact>` and I’ll add it!
 
 But actually, it features:
@@ -23,6 +24,7 @@ But actually, it features:
 * Organize transactions :ref:`using categories <categories>`
 * Save towards a goal :ref:`using piggy banks <piggies>`
 * Predict and anticipate :ref:`bills <bills>`
+* Create :ref:`recurring transactions to manage your money <recurring>`
 * View :ref:`income and expense reports <reports>`
 * :ref:`Rule based transaction handling <rules>` with the ability to create your own rules
 * The ability to :ref:`export data <export>` so you can move to another system

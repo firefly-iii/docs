@@ -4,19 +4,33 @@
 Introduction
 ============
 
-Firefly III is currently being fitted with an API. You're currently viewing the documentation for Firefly III version 4.7.1, in which the API is at version 0.1. This API is very much in **beta** and may work in unexpected or undocumented ways.
+Firefly III is currently being fitted with an API. This API is very much in **beta** and may work in unexpected or undocumented ways.
 
 Authentication
 --------------
 
-The API uses OAuth2 tokens. You can create them in your profile when logged in.
+The API uses the OAuth2 workflow. You need to create OAuth2 Clients in your profile when logged in.
 
-OAuth2 end points are:
+.. figure:: https://firefly-iii.org/static/docs/4.7.5/api-tokens.png
+   :alt: Your OAuth2 Clients as they would be visible in your profile
+   
+   Your OAuth2 Clients as they would be visible in your profile
+
+These clients have a secret (visible in the screenshot). The secret can be exchanged for an access token. The access token is used to access the API.
+
+Firefly III offers the following end points that can be used in applications that support the OAuth2 workflow, such as Postman.
 
 - ``/oauth/authorize``
 - ``/oauth/token``
 
+.. figure:: https://firefly-iii.org/static/docs/4.7.5/api-postman.png
+   :alt: Here is the OAuth2 screen from Postman.
+   
+   Here is the OAuth2 screen from Postman.
 
+Here you see how Postman would use the secret to get an access token. What you can build in OAuth2 is out of the scope of this document.
+
+Here is only presented what Firefly III offers you *once* you have managed to get an access token.
 
 Data formatting
 ---------------

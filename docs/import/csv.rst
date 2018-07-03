@@ -68,26 +68,33 @@ Each of these combinations will now be linked to "Albert Heijn". I can do this w
    Map individual cells to a specific entry in your Firefly III database
 
 
-Save your configuration
------------------------
-
-Once you have set up everything, you are ready to import your data. Firefly III will offer you to download your configuration file.
-
-You should do so. If the import fails for any reason you can upload the configuration file and everything will be set up just the way you like it.
-
-.. figure:: https://firefly-iii.org/static/docs/4.7.0/import-start.png
-   :alt: Start import
-   
-   Before you start the import, you should download the configuration file.
-
+Once you press start, the import will run. This could take a while. 
 
 Running the import
 ------------------
 
-Once you press start, the import will run. This could take a while. 
+Once you have set up everything, you are ready to import your data. You can see what is happening while the import is running:
+
+.. figure:: https://firefly-iii.org/static/docs/4.7.5/import-progress.png
+   :alt: The import is running
+   
+   The import is running...
+
+
+
+Finishing up
+------------
+
+.. figure:: https://firefly-iii.org/static/docs/4.7.5/import-finished.png
+   :alt: The import is done
+   
+   The import is done!
+
 
 
 Once the import is complete, you can find the results under the linked :ref:`tag <tags>`.
+
+You can download the configuration file. This will prevent you from having to start ALL over when the import fails. If you download from common banks, these files can be shared in the `configuration center <https://github.com/firefly-iii/import-configurations/wiki>`_ where other users may benefit from them as well.
 
 
 Import over command line
@@ -115,7 +122,7 @@ The command then becomes:
 
    php artisan firefly:create-import file.csv config.json --start --token=<token>
 
-You can read more about this command in the help text
+You can read more about this command in the help text.
 
 .. code-block:: bash
 

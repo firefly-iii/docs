@@ -23,3 +23,8 @@ AMPPS
 -----
 
 Firefly III is featured in `AMPPS <https://www.ampps.com/>`_. You can download AMPPS for Windows, Linux and Mac and Firefly III will be available as a package there.
+
+YunoHost
+--------
+
+Anmol Sharma has made a package for Firefly III on YunoHost. `You can install it from the YunoHost website <https://install-app.yunohost.org/?app=firefly-iii>`_.

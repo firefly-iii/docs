@@ -5,7 +5,7 @@ Transactions
 ============
 
 List
------
+----
 
 ``GET /api/v1/transactions``
 
@@ -122,7 +122,7 @@ Use the ``include`` parameter to include related objects. These parameters can b
 * ``include=tags``. Include tags.
 
 Create transaction
---------------
+------------------
 
 ``POST /api/v1/transactions``
 

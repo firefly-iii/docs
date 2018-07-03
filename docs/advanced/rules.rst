@@ -11,6 +11,8 @@ Rule groups
 
 Rules are divided over rule groups. Each rule group has rules in a specific order. You can set rule groups to stop processing other rule (groups).
 
+Rules can be set to be "strict" or not. If a rule is set to be strict, EACH trigger must match. If a rule is not scrict, ANY trigger must match.
+
 
 Triggers
 --------
@@ -21,6 +23,8 @@ A rule must spring into action at the right time! This is decided by triggers th
 * When the description is something specific
 * When the amount is above *X*.
 * When the budget is *X*.
+
+Rules can be set to be "strict" or not. If a rule is set to be strict, EACH trigger must match. If a rule is not scrict, ANY trigger must match.
 
 Actions
 -------
@@ -40,7 +44,7 @@ Screenshots
 .. figure:: https://firefly-iii.org/static/docs/4.7.0/rules-meta.png
    :alt: Meta data of a rule
 
-   A new rule can be given some basic information
+   A new rule can be given some basic information.
 
 .. figure:: https://firefly-iii.org/static/docs/4.7.0/rules-triggers.png
    :alt: Set the triggers

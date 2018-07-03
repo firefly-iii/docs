@@ -29,11 +29,17 @@ Asset accounts have one main currency. My personal bank accounts are in Euro. Bu
 Creating transactions
 ---------------------
 
-When you try to create a transaction in Euro's on an asset account that in US Dollars, you must set the amount in both USD and EUR. Firefly III will suggest an exchange rate, based on the excellent `fixer.io API <http://fixer.io/>`_. However, you can change both amounts. Banks often use exchange rates that are less in your favour.
+When you try to create a transaction in Euro's on an asset account that in US Dollars, you must set the amount in both USD and EUR. Firefly III will suggest an exchange rate, based on the `fixer.io API <http://fixer.io/>`_. However, you can change both amounts. Banks often use exchange rates that are less in your favour.
 
 Creating transfers
 ------------------
+
 When you create a transfer between an account in EUR and USD (or other currencies) you must also indicate the amount transferred in both currencies. Firefly III will support you in this by suggesting exchange rates.
+
+Exchange rates
+--------------
+
+Due to changes in the Fixer IO API, you need a valid API key in your ``.env`` file, as well as a paid account to exchange currencies for anything else than EUR.
 
 Screenshots
 -----------

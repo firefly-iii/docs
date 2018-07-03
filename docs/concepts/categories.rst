@@ -20,8 +20,6 @@ But there is also income (:ref:`deposits <transactions>`) that you might want to
 
 Each transaction can be given a category. This will show you what you spent your money on, or where it is coming from. Firefly III allows you to dynamically create and manage categories. Fancy charts will show you how your money is divided over categories. There is a :ref:`category report <reportcategory>` that can show you exactly what is happening within a category.
 
-Firefly III also features [budgets]({{ 'guide-budgets.html' | absolute_url }}). These are also interesting and useful, but [slightly different]({{ 'guide-categories-budgets.html' | absolute_url }}).
-
 The difference between categories and budgets
 ---------------------------------------------
 
