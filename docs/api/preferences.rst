@@ -7,9 +7,9 @@ Preferences
 List
 ----
 
-``GET /api/v1/X``
+``GET /api/v1/preferences``
 
-Returns a list of the users transactions. 
+Returns a list of the users preferences. 
 
 Example return
 ~~~~~~~~~~~~~~
@@ -18,64 +18,41 @@ Example return
    
    {
     "data": [
-    }
+        {
+            "type": "preferences",
+            "id": "5",
+            "attributes": {
+                "updated_at": "2018-07-07T16:07:59+02:00",
+                "created_at": "2018-07-07T16:07:59+02:00",
+                "name": "language",
+                "data": "en_US"
+            },
+            "links": {
+                "self": "https://demo.firefly-iii.org/api/v1/preferences/5"
+            }
+        }
+    ]
    }
 
-Notable about this return are the following aspects:
+Notable about this return is that each preference may have another type. There are arrays, integers and strings. This list is not paginated.
 
-* These
+Get a preference
+----------------
 
-Parameters
-~~~~~~~~~~
+``GET /api/v1/preferences/<id>``
 
-* ``parameter``. Bla bla bla
-
-The list is paginated. Use ``page`` to get the next page or use the links from ``links``. 
-
-Get X
----------------
-
-``GET /api/v1/X/<id>``
-
-Returns X.
+Returns a single preference.
 
 Parameters
 ~~~~~~~~~~
 
-Use the ``include`` parameter to include related objects. These parameters can be combined (use a comma).
+Use the ``include`` parameter to include related objects.
 
-* ``include=X``. Includes the X.
+* ``include=user``. Includes the user the preference belongs to. This is always you.
 
-Create X
-------------------
+Update a preference
+-------------------
 
-``POST /api/v1/X``
+``PUT /api/v1/preferences/<id>``
 
-Creates a new X. 
-
-Parameters
-~~~~~~~~~~
-
-Required global fields
-
-* ``X``. Bla bla
-
-Optional global fields
-
-* ``X``. Bla bla
-
-Update X
-------------------
-
-``PUT /api/v1/X/<id>``
-
-The same rules as above apply, with some noteable exceptions:
-
-* Bla 
-
-Delete X
-------------------
-
-``DELETE /api/v1/X/<id>``
-
-Will delete the X. Other data is not removed.
+Update a preference. The only required field is ``data``, which contains the new preference.
