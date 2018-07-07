@@ -7,9 +7,9 @@ Currency Exchange Rates
 List
 ----
 
-``GET /api/v1/X``
+``GET /api/v1/cer``
 
-Returns a list of the users transactions. 
+Get a currency exchange rate.
 
 Example return
 ~~~~~~~~~~~~~~
@@ -17,65 +17,40 @@ Example return
 .. code-block:: json
    
    {
-    "data": [
-    }
+    "data": {
+        "type": "currency_exchange_rates",
+        "id": "1",
+        "attributes": {
+            "updated_at": "2018-07-07T19:01:30+02:00",
+            "created_at": "2018-07-07T19:01:30+02:00",
+            "rate": 1.175912
+        },
+        "links": {
+            "0": {
+                "rel": "self",
+                "uri": "/currency_exchange_rates/1"
+            },
+            "self": "https://demo.firefly-iii.org/api/v1/currency_exchange_rates/1"
+        },
+        "relationships": {
+            "from_currency": {},
+            "to_currency": {}
+        }
+    },
+    "included": []
    }
+   
 
 Notable about this return are the following aspects:
 
-* These
+* The rate is included for the given date and currencies (see below). Firefly III relies on the Fixer IO API to do currency exchange rates. Out of the box (the free tier) it only supports from EUR to USD.
+* Missing in the output above are the from and to currency. They are mentioned but I haven't included the actual objects in the documentation.
 
 Parameters
 ~~~~~~~~~~
 
-* ``parameter``. Bla bla bla
+* ``from``. Currency code for the source currency, such as ``EUR`` or ``GBP``.
+* ``to``. Currency code for the destination currency, such as ``EUR`` or ``GBP``.
+* ``date``. The date you wish the currency exhange rate of.
 
-The list is paginated. Use ``page`` to get the next page or use the links from ``links``. 
-
-Get X
----------------
-
-``GET /api/v1/X/<id>``
-
-Returns X.
-
-Parameters
-~~~~~~~~~~
-
-Use the ``include`` parameter to include related objects. These parameters can be combined (use a comma).
-
-* ``include=X``. Includes the X.
-
-Create X
-------------------
-
-``POST /api/v1/X``
-
-Creates a new X. 
-
-Parameters
-~~~~~~~~~~
-
-Required global fields
-
-* ``X``. Bla bla
-
-Optional global fields
-
-* ``X``. Bla bla
-
-Update X
-------------------
-
-``PUT /api/v1/X/<id>``
-
-The same rules as above apply, with some noteable exceptions:
-
-* Bla 
-
-Delete X
-------------------
-
-``DELETE /api/v1/X/<id>``
-
-Will delete the X. Other data is not removed.
+The default values are ``EUR``, ``USD``, and today's date.
