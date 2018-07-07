@@ -4,8 +4,8 @@
 Currency Exchange Rates
 =======================
 
-List
-----
+Get rate
+--------
 
 ``GET /api/v1/cer``
 
