@@ -68,6 +68,7 @@ You can find Firefly III on `GitHub <https://github.com/firefly-iii/firefly-iii>
    ./api/about.rst
    ./api/accounts.rst
    ./api/attachments.rst
+   ./api/available_budgets.rst
    ./api/bills.rst
    ./api/transactions.rst
    ./api/users.rst
