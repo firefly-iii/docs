@@ -7,9 +7,9 @@ Budgets
 List
 ----
 
-``GET /api/v1/X``
+``GET /api/v1/budgets``
 
-Returns a list of the users transactions. 
+Returns a list of the users budgets. 
 
 Example return
 ~~~~~~~~~~~~~~
@@ -18,64 +18,87 @@ Example return
    
    {
     "data": [
+        {
+            "type": "budgets",
+            "id": "2",
+            "attributes": {
+                "updated_at": "2018-07-07T16:07:59+02:00",
+                "created_at": "2018-07-07T16:07:59+02:00",
+                "active": true,
+                "name": "Bills"
+            },
+            "links": {
+                "0": {
+                    "rel": "self",
+                    "uri": "/budgets/2"
+                },
+                "self": "https://demo.firefly-iii.org/api/v1/budgets/2"
+            }
+        }
+    ],
+    "included": [],
+    "meta": {
+        "pagination": {
+            "total": 2,
+            "count": 2,
+            "per_page": 50,
+            "current_page": 1,
+            "total_pages": 1
+        }
+    },
+    "links": {
+        "self": "https://demo.firefly-iii.org/api/v1/budgets?&page=1",
+        "first": "https://demo.firefly-iii.org/api/v1/budgets?&page=1",
+        "last": "https://demo.firefly-iii.org/api/v1/budgets?&page=1"
     }
    }
-
-Notable about this return are the following aspects:
-
-* These
+   
 
 Parameters
 ~~~~~~~~~~
 
-* ``parameter``. Bla bla bla
-
 The list is paginated. Use ``page`` to get the next page or use the links from ``links``. 
 
-Get X
----------------
+Get a budget
+------------
 
-``GET /api/v1/X/<id>``
+``GET /api/v1/budgets/<id>``
 
-Returns X.
+Returns a single budget.
 
 Parameters
 ~~~~~~~~~~
 
 Use the ``include`` parameter to include related objects. These parameters can be combined (use a comma).
 
-* ``include=X``. Includes the X.
+* ``include=user``. Includes the user.
+* ``include=transactions``. Includes the transactions linked to the budget.
 
-Create X
-------------------
+Create a budget
+---------------
 
-``POST /api/v1/X``
+``POST /api/v1/budgets``
 
-Creates a new X. 
+Creates a new budget. 
 
 Parameters
 ~~~~~~~~~~
 
 Required global fields
 
-* ``X``. Bla bla
+* ``name``. Name of the new budget.
+* ``active``. Is the budget active? Submit ``0`` or ``1``.
 
-Optional global fields
+Update a budget
+---------------
 
-* ``X``. Bla bla
+``PUT /api/v1/budgets/<id>``
 
-Update X
-------------------
+The same rules as above apply.
 
-``PUT /api/v1/X/<id>``
+Delete a budget
+---------------
 
-The same rules as above apply, with some noteable exceptions:
+``DELETE /api/v1/budgets/<id>``
 
-* Bla 
-
-Delete X
-------------------
-
-``DELETE /api/v1/X/<id>``
-
-Will delete the X. Other data is not removed.
+Will delete the budget. Other data is not removed.
