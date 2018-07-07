@@ -131,7 +131,7 @@ Optional global fields
 * ``notes``. Any extra notes.
 
 Update a journal link
-------------------
+---------------------
 
 ``PUT /api/v1/journal_links/<id>``
 

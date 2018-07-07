@@ -88,8 +88,8 @@ Use the ``include`` parameter to include related objects. These parameters can b
 * ``include=user``. Includes the user. Is included by default. Is always you.
 
 
-Create a new rule grouo
------------------
+Create a new rule group
+-----------------------
 
 ``POST /api/v1/rule_groups``
 
