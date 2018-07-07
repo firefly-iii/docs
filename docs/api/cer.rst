@@ -43,7 +43,7 @@ Example return
 
 Notable about this return are the following aspects:
 
-* The rate is included for the given date and currencies (see below). Firefly III relies on the Fixer IO API to do currency exchange rates. Out of the box (the free tier) it only supports from EUR to USD.
+* The rate is included for the given date and currencies (see below). Firefly III relies on the Fixer IO API to do currency exchange rates. Out of the box (the free tier) it only supports from EUR to some other currencies.
 * Missing in the output above are the from and to currency. They are mentioned but I haven't included the actual objects in the documentation.
 
 Parameters
