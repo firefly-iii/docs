@@ -81,6 +81,7 @@ You can find Firefly III on `GitHub <https://github.com/firefly-iii/firefly-iii>
    ./api/preferences.rst
    ./api/recurrences.rst
    ./api/rules.rst
+   ./api/rule_groups.rst
    ./api/transactions.rst
    ./api/users.rst
 
