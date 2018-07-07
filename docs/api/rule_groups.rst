@@ -74,7 +74,7 @@ Parameters
 The list is paginated. Use ``page`` to get the next page or use the links from ``links``. 
 
 Get a rule group
-----------
+----------------
 
 ``GET /api/v1/rule_groups/<id>``
 
