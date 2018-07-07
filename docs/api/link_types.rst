@@ -4,12 +4,14 @@
 Link Types
 ==========
 
+Link types are the types of links you can create between transactions. Examples include "is paid by" / "pays for" and many others.
+ 
 List
 ----
 
-``GET /api/v1/X``
+``GET /api/v1/link_types``
 
-Returns a list of the users transactions. 
+Returns a list of the system's link types. 
 
 Example return
 ~~~~~~~~~~~~~~
@@ -18,64 +20,80 @@ Example return
    
    {
     "data": [
+        {
+            "type": "link_types",
+            "id": "3",
+            "attributes": {
+                "updated_at": "2018-07-07T18:07:57+02:00",
+                "created_at": "2018-07-07T18:07:57+02:00",
+                "name": "Paid",
+                "inward": "is (partially) paid for by",
+                "outward": "(partially) pays for",
+                "editable": 0
+            },
+            "links": {
+                "0": {
+                    "rel": "self",
+                    "uri": "/link_types/3"
+                },
+                "self": "https://demo.firefly-iii.org/api/v1/link_types/3"
+            }
+        }
+    ],
+    "meta": {
+        "pagination": {
+            "total": 4,
+            "count": 4,
+            "per_page": 50,
+            "current_page": 1,
+            "total_pages": 1
+        }
+    },
+    "links": {
+        "self": "https://demo.firefly-iii.org/api/v1/link_types?&page=1",
+        "first": "https://demo.firefly-iii.org/api/v1/link_types?&page=1",
+        "last": "https://demo.firefly-iii.org/api/v1/link_types?&page=1"
     }
    }
 
-Notable about this return are the following aspects:
-
-* These
-
 Parameters
 ~~~~~~~~~~
-
-* ``parameter``. Bla bla bla
 
 The list is paginated. Use ``page`` to get the next page or use the links from ``links``. 
 
-Get X
+Get a link type
 ---------------
 
-``GET /api/v1/X/<id>``
+``GET /api/v1/link_types/<id>``
 
-Returns X.
+Returns a single link type.
 
-Parameters
-~~~~~~~~~~
+Create a new link type
+----------------------
 
-Use the ``include`` parameter to include related objects. These parameters can be combined (use a comma).
+``POST /api/v1/link_types``
 
-* ``include=X``. Includes the X.
-
-Create X
-------------------
-
-``POST /api/v1/X``
-
-Creates a new X. 
+Creates a new link type. 
 
 Parameters
 ~~~~~~~~~~
 
 Required global fields
 
-* ``X``. Bla bla
+* ``name``. Name of the link type.
+* ``outward``. The outward description.
+* ``outward``. The outward description.
 
-Optional global fields
-
-* ``X``. Bla bla
-
-Update X
+Update a link type
 ------------------
 
-``PUT /api/v1/X/<id>``
+``PUT /api/v1/link_types/<id>``
 
-The same rules as above apply, with some noteable exceptions:
+The same rules as above apply.
 
-* Bla 
-
-Delete X
+Delete a link type
 ------------------
 
-``DELETE /api/v1/X/<id>``
+``DELETE /api/v1/link_types/<id>``
 
-Will delete the X. Other data is not removed.
+Will delete the link types. Transactions linked under this type will lose their connection.
