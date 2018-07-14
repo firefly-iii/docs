@@ -80,8 +80,8 @@ Other parameters you can use are:
 * ``start=YYYY-MM-DD``. Limits the list to a specific start date. No earlier budget limits will be returned.
 * ``end=YYYY-MM-DD``. Limits the list to a specific start date. No later budget limits will be returned.
 
-Get a budget
-------------
+Get a budget limit
+------------------
 
 ``GET /api/v1/budget_limits/<id>``
 
@@ -94,8 +94,8 @@ Use the ``include`` parameter to include related object(s).
 
 * ``include=budget``. Includes the associated budget. Is included by default.
 
-Create a budget
----------------
+Create a budget limit
+---------------------
 
 ``POST /api/v1/budget_limits``
 
@@ -111,15 +111,15 @@ Required global fields
 * ``start_date``. The start date of the budget limit. So the start of the period in which you wish to budget.
 * ``end_date``. The end date of the budget limit. So the end of the period in which you wish to budget.
 
-Update a budget
----------------
+Update a budget limit
+---------------------
 
 ``PUT /api/v1/budget_limits/<id>``
 
 The same rules as above apply.
 
-Delete a budget
----------------
+Delete a budget limit
+---------------------
 
 ``DELETE /api/v1/budget_limits/<id>``
 
