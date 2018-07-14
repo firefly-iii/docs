@@ -4,6 +4,8 @@
 Budgets
 =======
 
+This API endpoint can be used to manage your budgets. To set the amount of a budget, in a specific period, use :ref:`the budget limit end point<api_budget_limits>`.
+
 List
 ----
 
@@ -74,12 +76,14 @@ Use the ``include`` parameter to include related objects. These parameters can b
 * ``include=user``. Includes the user.
 * ``include=transactions``. Includes the transactions linked to the budget.
 
+To set the amount of a budget, in a specific period, use :ref:`the budget limit end point<api_budget_limits>`.
+
 Create a budget
 ---------------
 
 ``POST /api/v1/budgets``
 
-Creates a new budget. 
+Creates a new budget. To set the amount of a budget, in a specific period, use :ref:`the budget limit end point<api_budget_limits>`.
 
 Parameters
 ~~~~~~~~~~
@@ -94,11 +98,11 @@ Update a budget
 
 ``PUT /api/v1/budgets/<id>``
 
-The same rules as above apply.
+The same rules as above apply. To set the amount of a budget, in a specific period, use :ref:`the budget limit end point<api_budget_limits>`.
 
 Delete a budget
 ---------------
 
 ``DELETE /api/v1/budgets/<id>``
 
-Will delete the budget. Other data is not removed.
+Will delete the budget. Other data is not removed. Budget limits are deleted as well.
