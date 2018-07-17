@@ -6,12 +6,17 @@ Recurring transactions
 
 Firefly III features the ability to automatically create transactions (so you don't have to). These are called recurring transactions. 
 
-An RT consists of two sets of data you need to fill in before it'll work as expected. You must also set up a cron job to fire, so Firefly III can create your transactions.
+An RT consists of two sets of data you need to fill in before it'll work as expected.
+
+You must also set up a cron job to fire, so Firefly III can create your transactions. See the instructions on the bottom of the page.
 
 Information for the recurring transaction
 -----------------------------------------
 
 A recurring transaction needs meta data, such as a title and a description. You must also indicate if the recurring transaction is active and whether your `rules <rules>` should apply. The first date the recurring transaction should fire should be a date in the future.
+
+.. image:: https://firefly-iii.org/static/docs/4.7.5.1/recurrence-mandatory.png
+   :alt: Mandatory information for a recurring transaction.
 
 The repetition can be set to the following options:
 
@@ -40,17 +45,41 @@ Information for the transaction itself
 
 These are all the fields you would expect in normal transactions:
 
+.. image:: https://firefly-iii.org/static/docs/4.7.5.1/transaction-mandatory.png
+   :alt: Mandatory information for a recurring transaction.
+
 - The type of transaction.
 - The description, the amount (and currency), and the source and destination accounts.
+
+Optional information includes:
+
 - The foreign currency and amount, if you want to.
 - The category, budget, piggy bank and tags.
 
 If you wish to link a bill to the transaction, make sure that the option to apply rules is checked and that the new transaction would match this rule.
 
+
 API
 ---
 
-Recurring transactions are also supported through the API.
+Recurring transactions are also supported :ref:`through the API <_api_recurrences>`.
+
+Cron job
+--------
+
+In order to actually create the transactions, Firefly III requires a cron job to be running on your server. It must be set up to run every minute. The Docker container should launch a cron job itself. If you are hosting yourself, you can easily set up a new cron job using `crontab` and simply Googling for "cronjob linux".
+
+The content of the job is as follows. Make sure you change ``/var/www/firefly-iii`` to the actual path of your Firefly III installation.
+
+.. code-block:: bash
+   
+   * * * * * cd /var/www/firefly-iii && php artisan schedule:run >> /dev/null 2>&1
+   
+
+Just wait patiently and the cron job will create the transactions during the night.
+
+Solutions for other hosting providers such as Scriptaculous, Heroku and Sandstorm are coming!
+
 
 Screenshots
 -----------
