@@ -105,6 +105,8 @@ Use the ``include`` parameter to include related objects. These parameters can b
 
 The list of transaction can be very long. It is paginated according to the users preferences (usually 50). Use ``page`` for pagination. Piggy banks are not paginated.
 
+The list of transactions can also be limited by using the `start` and `end` date parameter.
+
 Create account
 --------------
 

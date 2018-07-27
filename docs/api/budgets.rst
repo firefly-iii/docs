@@ -78,6 +78,8 @@ Use the ``include`` parameter to include related objects. These parameters can b
 
 To set the amount of a budget, in a specific period, use :ref:`the budget limit end point<api_budget_limits>`.
 
+The list of transaction can be very long. It is paginated according to the users preferences (usually 50). Use ``page`` for pagination.  This list can also be limited by using the `start` and `end` date parameter.
+
 Create a budget
 ---------------
 
