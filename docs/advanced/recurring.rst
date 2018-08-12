@@ -10,6 +10,8 @@ An RT consists of two sets of data you need to fill in before it'll work as expe
 
 You must also set up a cron job to fire, so Firefly III can create your transactions. See the instructions on the bottom of the page.
 
+If you have set up email correctly, Firefly III will automatically email you an overview of the transactions it has created.
+
 Information for the recurring transaction
 -----------------------------------------
 

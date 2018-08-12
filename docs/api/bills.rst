@@ -115,6 +115,8 @@ Required fields:
 * ``skip``. How often the bill is skipped. Normally you would submit ``0`` (for example for every month). Max is 31.
 * ``automatch``. If the bill will automatch new transactions. Can be ``0`` or ``1``.
 * ``active``. If the bill is active. Can be ``0`` or ``1``.
+* ``currency_id``. The currency of the new bill. This refers to the internal ID of the currency within Firefly III. This field is mandatory when ``currency_code`` is not present.
+* ``currency_code``. The currency of the new code, as a three-letter code (``USD``, ``EUR``, etc). This field is mandatory when ``currency_id`` is not present.
 
 Optional fields:
 
