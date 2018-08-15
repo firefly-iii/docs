@@ -27,7 +27,7 @@ If you use Docker, you can always set these values using environment variables.
 smtp
 ----
 
-SMTP is the de-facto standard for sending email. If you want to use GMail or Outlook as mail system, set the driver to ``stmp``. Make sure you change the host, port and credentials and of course, ``MAIL_ENCRYPTION`` must be ``null``, ``ssl`` or ``tls``, depending on your provider.
+SMTP is the de-facto standard for sending email. If you want to use GMail or Outlook as mail system, set the driver to ``smtp``. Make sure you change the host, port and credentials and of course, ``MAIL_ENCRYPTION`` must be ``null``, ``ssl`` or ``tls``, depending on your provider.
 
 sendmail
 --------
@@ -37,7 +37,7 @@ Uses the built-in sendmail configuration. If you choose this, you can leave the 
 mailgun
 -------
 
-`Mailgun <https://www.mailgun.com/>`_ is an API that can send email. Their service allows for 10,000 free messages each month. To configure these, fill in the ``MAILGUN_DOMAIN`` and ``MAILGUN_SECRET`` values in your ``.env`` file. Please note that I haven't actually tested this.
+`Mailgun <https://www.mailgun.com/>`_ is an API that can send emails. Their service allows for 10,000 free messages each month. To configure these, fill in the ``MAILGUN_DOMAIN`` and ``MAILGUN_SECRET`` values in your ``.env`` file. Please note that I haven't actually tested this.
 
 mandrill
 --------
