@@ -8,7 +8,7 @@ Firefly III features the ability to automatically create transactions (so you do
 
 An RT consists of two sets of data you need to fill in before it'll work as expected.
 
-You must also set up a cron job to fire, so Firefly III can create your transactions. See the instructions on the bottom of the page.
+You must also set up a cron job to fire, so Firefly III can create your transactions. :ref:`There is a special page about this <cronjobs>`.
 
 If you have set up email correctly, Firefly III will automatically email you an overview of the transactions it has created.
 

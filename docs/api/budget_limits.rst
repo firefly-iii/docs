@@ -66,7 +66,7 @@ Example return
         "first": "https://demo.firefly-iii.org/api/v1/budget_limits?budget_id=0&page=1",
         "last": "https://demo.firefly-iii.org/api/v1/budget_limits?budget_id=0&page=1"
     }
-}
+   }
    
 
 Parameters
