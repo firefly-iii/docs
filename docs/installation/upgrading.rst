@@ -45,10 +45,10 @@ To update the container just run ``docker-compose pull firefly_iii_app && docker
 
 .. code-block:: bash
 
-   docker exec -it <container> php artisan migrate
-   docker exec -it <container> php artisan firefly:upgrade-database
-   docker exec -it <container> php artisan firefly:verify
-   docker exec -it <container> php artisan passport:install
+   docker-compose exec firefly_iii_app php artisan migrate --seed
+   docker-compose exec firefly_iii_app php artisan firefly:upgrade-database
+   docker-compose exec firefly_iii_app php artisan firefly:verify
+   docker-compose exec firefly_iii_app php artisan passport:install
 
 Some users have reported that this might not work: simply pulling the image won't make Docker use it. A solution could be to remove everything, and then launch Firefly III again:
 
