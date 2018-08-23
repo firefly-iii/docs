@@ -50,6 +50,15 @@ To update the container just run ``docker-compose pull firefly_iii_app && docker
    docker exec -it <container> php artisan firefly:verify
    docker exec -it <container> php artisan passport:install
 
+Some users have reported that this might not work: simply pulling the image won't make Docker use it. A solution could be to remove everything, and then launch Firefly III again:
+
+.. code-block:: bash
+
+   # don't do this:
+   docker-compose rm -f firefly_iii_app
+   
+Problem is that this will also delete your volumes, and your volumes contain your uploads, attachments and other system files. So be very careful! For more information, please read `this GitHub ticket <https://github.com/firefly-iii/firefly-iii/issues/1628>`_.
+
 If you're having trouble with (parts of) this step, please check out the :ref:`Docker FAQ <faqdocker>`
 
 
