@@ -41,7 +41,7 @@ If you're having trouble with (parts of) this step, please check out the :ref:`D
 Docker Hub via docker compose
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To update the container just run ``docker-compose restart firefly-app``. You can even add this command to a chrontab. Before you visit it again, upgrade the database:
+To update the container just run ``docker-compose pull firefly_iii_app && docker-compose restart firefly_iii_app``. You can even add this command to a chrontab. Before you visit it again, upgrade the database:
 
 .. code-block:: bash
 

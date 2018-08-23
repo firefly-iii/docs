@@ -221,7 +221,7 @@ You can now visit Firefly III at ``http://localhost`` or ``http://docker-ip:port
 Upgrade
 ~~~~~~~
 
-To update the container just run ``docker stop firefly-app && docker pull jc5x/firefly-iii && docker start firefly-app``. You can even add this command to a chrontab. Before you visit it again, upgrade the database:
+To update the container just run ``docker stop firefly_iii_app && docker pull jc5x/firefly-iii && docker start firefly_iii_app``. You can even add this command to a chrontab. Before you visit it again, upgrade the database:
 
 .. code-block:: bash
 
