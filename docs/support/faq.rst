@@ -269,6 +269,11 @@ It means your machine has no proper configuration file for OpenSSL, or it cannot
 Other questions
 ---------------
 
+I can't seem to get https working with Caddy
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Make sure you set ``TRUSTED_PROXIES`` to ``**``. See also `this issue <https://github.com/firefly-iii/firefly-iii/issues/1632>`_ on GitHub.
+
 I keep getting redirected to the index after editing something
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
