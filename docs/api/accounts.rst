@@ -9,7 +9,7 @@ List
 
 ``GET /api/v1/accounts``
 
-Returns a list of the users accounts. 
+Returns a list of the users accounts. This includes the user's liabilities, because these are also accounts.
 
 Example return
 ~~~~~~~~~~~~~~
@@ -81,6 +81,14 @@ Add ``type`` to filter the list down:
 * ``type=revenue``. Return all revenue accounts.
 * ``type=special``. Returns the cash account, initial balance accounts, reconciliation accounts and other accounts that are usually hidden from the user.
 * ``type=hidden``. Same list, except for the cash account.
+* ``type=liability``. All liability accounts.
+* ``type=liabilities``. All liability accounts.
+* ``type=debt``. All debts
+* ``type=loan``. All loans
+* ``type=mortgage``. All mortgages.
+* ``type=credit_card``. All liabilities of type "credit card". Not to be confused with asset accounts marked as being a credit card.
+* ``type=creditcard``. All liabilities of type "credit card". Not to be confused with asset accounts marked as being a credit card.
+* ``type=cc``. All liabilities of type "credit card". Not to be confused with asset accounts marked as being a credit card.
 * ``type=*``. Returns a specific type, when it exists.
 
 Unknown types or invalid choices result in all accounts being returned.
@@ -105,7 +113,7 @@ Use the ``include`` parameter to include related objects. These parameters can b
 
 The list of transaction can be very long. It is paginated according to the users preferences (usually 50). Use ``page`` for pagination. Piggy banks are not paginated.
 
-The list of transactions can also be limited by using the `start` and `end` date parameter.
+The list of transactions can also be limited by using the `start` and `end` date parameter. It's formatted ``YYYY-MM-DD``.
 
 Create account
 --------------
@@ -121,9 +129,10 @@ Parameters
 Required parameters:
 
 * ``name``. Required. Name of the new account.
-* ``type``. Type of the new account. Can be ``asset``, ``expense`` or ``revenue``.
-* ``currency_id`` OR ``currency_code`` field. Refers to the preferred currency of the new account. Firefly III must know about the currency.
+* ``type``. Type of the new account. Can be ``asset``, ``expense``, ``revenue`` or ``liability``.
+* ``currency_id`` OR ``currency_code`` field. Refers to the preferred currency of the new account. Firefly III must know about the currency so the ID must exist or the currency code must be known.
 * ``active``. If account is active. Must be ``0`` or ``1``.
+* ``include_net_worth``. If the net worth must include this account.
 * ``account_role``. Mandatory when ``type=asset``. Can have the following values:
 
    1) ``defaultAsset`` for default asset accounts.
@@ -134,11 +143,19 @@ Required parameters:
 * ``cc_type``. Required when ``account_role=ccAsset``. Must be of the value ``monthlyFull``.
 * ``cc_monthly_payment_date``. Required when ``account_role=ccAsset``. Defines when the credit card is paid every month. When in doubt, use the first of the month.
 
+If you set ``type=liability`` the following fields will magically become mandatory:
+
+* ``liability_type``. Can be ``loan``, ``debt``, ``mortgage`` or ``credit card`` (case sensitive).
+* ``liability_amount``. Initial amount of this liability. Must be a positive number.
+* ``liability_start_date``. Start date of liability. Cannot be in the future.
+* ``interest``. Interest percentage on liability. Must be between ``0`` and ``100``.
+* ``interest_period``. Period over which the interest is calculated. Can be ``daily``, ``monthly`` or ``yearly``.
+
 
 Optional and extra parameters:
 
 * ``iban``. Not required. IBAN of the new account. Must be unique, and a valid IBAN.
-* ``opening_balance`` and ``opening_balance_date``. The initial balance for the new account plus the date it applies to. Only applies to asset accounts.
+* ``opening_balance`` and ``opening_balance_date``. The initial balance for the new account plus the date it applies to. Only applies to asset accounts. Will be ignored otherwise.
 * ``bic``. The BIC of the account.
 * ``virtual_balance``. Amount of virtual balance.
 * ``account number``. Account number (not IBAN) related to the account. Must be unique.
