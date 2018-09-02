@@ -30,7 +30,7 @@ And then start it again by running the command under "Start the container". Befo
 
 .. code-block:: bash
 
-   docker exec -it <container> php artisan migrate
+   docker exec -it <container> php artisan migrate --seed
    docker exec -it <container> php artisan firefly:upgrade-database
    docker exec -it <container> php artisan firefly:verify
    docker exec -it <container> php artisan passport:install
@@ -69,7 +69,7 @@ To update the container just run ``docker stop firefly-app && docker pull jc5x/f
 
 .. code-block:: bash
 
-   docker exec -it <container> php artisan migrate
+   docker exec -it <container> php artisan migrate --seed
    docker exec -it <container> php artisan firefly:upgrade-database
    docker exec -it <container> php artisan firefly:verify
    docker exec -it <container> php artisan passport:install
@@ -106,6 +106,7 @@ Then, run the following commands to finish the upgrade:
    rm -rf bootstrap/cache/*
    php artisan migrate --env=production # Answer yes when asked.
    php artisan cache:clear
+   php artisan migrate --seed
    php artisan firefly:upgrade-database
    php artisan firefly:verify
    php artisan passport:install
@@ -153,6 +154,7 @@ Go to the ``firefly-iii`` folder and run these commands:
    composer install --no-dev
    php artisan migrate --env=production --force
    php artisan cache:clear
+   php artisan migrate --seed
    php artisan firefly:upgrade-database
    php artisan firefly:verify
    php artisan passport:install
