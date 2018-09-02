@@ -45,7 +45,14 @@ Likewise, if you deposit cash into an asset account, don't mention a revenue acc
 
 Revenue accounts
 ----------------
+
 Another type of account is the revenue account. A revenue account belongs to anyone or any company that sends you money. These may be your employer, parents or friends. Possibly these are clients or the government.
+
+Liabilities
+-----------
+
+Firefly III supports liabilities such as debts and loans, that you can track using Firefly III.
+
 
 
 ------------
