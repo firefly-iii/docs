@@ -64,6 +64,32 @@ This means that the Document Root of your webserver is configured wrong. You sho
 
 There are several `tutorials online <https://www.digitalocean.com/community/tutorials/how-to-move-an-apache-web-root-to-a-new-location-on-ubuntu-16-04>`_ that explain how to change your document root.
 
+I am using nginx and want to expose Firefly III under /budget/
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The following snippet might help:
+
+.. code-block:: bash
+
+   location ^~ /firefly-iii/ {
+      deny all;
+   }
+   
+   location ^~ /budget {
+      alias /var/www/firefly-iii/public;
+      try_files $uri $uri/ @budget;
+      
+      location ~* \.php(?:$|/) {
+         include snippets/fastcgi-php.conf;
+         fastcgi_param SCRIPT_FILENAME $request_filename;
+         fastcgi_param modHeadersAvailable true; #Avoid sending the security headers twice
+         fastcgi_pass unix:/run/php/php7.2-fpm.sock;
+      }
+   }
+   
+   location @budget {
+      rewrite ^/budget/(.*)$ /budget/index.php/$1 last;
+   }
+
 I want to use SQLite?
 ~~~~~~~~~~~~~~~~~~~~~
 
