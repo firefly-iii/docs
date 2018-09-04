@@ -265,6 +265,17 @@ I get an error about openssl_pkey_export?
 
 It means your machine has no proper configuration file for OpenSSL, or it cannot be found. Please check out `this issue <https://github.com/firefly-iii/firefly-iii/issues/1384>`_ for tips and tricks.
 
+Why can't I import duplicate transactions?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Firefly III can recognise two different types of duplicate transactions. It will refuse to either of them.
+
+When you import from a certain source and a specific expense is an exact duplicate of an earlier imported expense, Firefly III will refuse to import the transaction. An exact duplicate transaction is a transaction where *every* field is equal to another transaction. For example, if you import the same CSV file twice, or when you import from Spectre but you reset your settings in the meantime. 
+
+You can only import such transactions if you add unique data, such as another column that identifies the actual transaction (an ID or something). Make sure you map this column to the "external ID"-field.
+
+Firefly III can also recognise duplicate transfers over different files.
+
 
 Other questions
 ---------------
