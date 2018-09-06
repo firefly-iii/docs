@@ -104,7 +104,6 @@ Then, run the following commands to finish the upgrade:
    
    cd firefly-iii-updated
    rm -rf bootstrap/cache/*
-   php artisan migrate --env=production # Answer yes when asked.
    php artisan cache:clear
    php artisan migrate --seed
    php artisan firefly:upgrade-database
@@ -152,7 +151,7 @@ Go to the ``firefly-iii`` folder and run these commands:
    rm -rf vendor/
    composer install --no-scripts --no-dev
    composer install --no-dev
-   php artisan migrate --env=production --force --seed
+   php artisan migrate --seed
    php artisan cache:clear
    php artisan firefly:upgrade-database
    php artisan firefly:verify
