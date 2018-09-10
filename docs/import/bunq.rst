@@ -4,7 +4,7 @@
 Import from bunq
 ================
 
-bunq (https://www.bunq.com/) is a Dutch, internationally active mobile bank, headquartered in Amsterdam, Netherlands. bunq offers personal and business accounts and focuses on ease of use transaction accounts.[1]
+`bunq <https://www.bunq.com/>`  is a Dutch, internationally active mobile bank, headquartered in Amsterdam, Netherlands. bunq offers personal and business accounts.[1]
 
 Firefly III supports the bunq API. Although support is in beta and may not be perfect, it works surprisingly well.
 
