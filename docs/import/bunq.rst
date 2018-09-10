@@ -4,6 +4,8 @@
 Import from bunq
 ================
 
+`bunq <https://www.bunq.com/>`  is a Dutch, internationally active mobile bank, headquartered in Amsterdam, Netherlands. bunq offers personal and business accounts.[1]
+
 Firefly III supports the bunq API. Although support is in beta and may not be perfect, it works surprisingly well.
 
 First time
@@ -25,3 +27,5 @@ Importing data
 --------------
 
 Once you've selected your accounts, the import will run. 
+
+[1] https://en.wikipedia.org/wiki/Bunq
