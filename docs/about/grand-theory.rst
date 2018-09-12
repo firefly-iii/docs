@@ -35,5 +35,10 @@ To keep on top of your finances (using Firefly III), you must be *aware* of your
 Firefly III won't create your rent payment automatically. It won't try to predict expenses. There are no shortcuts. Except for the import-feature, Firefly III will
 not create or update transactions for you.
 
-If you're serious about changing your financial habits, you should enter each transaction manually. Feel the impact of each penny you spend, and before you
-know it you'll spend a lot less of them.
+If you're serious about changing your financial habits, you should enter each transaction manually. Feel the impact of each penny you spend, and before you know it you'll spend a lot less of them.
+
+
+But I get paid every two weeks / every forthnight / once in a blue moon?
+------------------------------------------------------------------------
+
+My method of managing money works whatever your boss' payment schedule is. Move your salary to a different account (step 1 above) any time you get it and wait for the start of the month.
