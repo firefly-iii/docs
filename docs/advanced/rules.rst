@@ -71,7 +71,7 @@ Screenshots
 
    Option to run a rule on transactions.
 
-.. figure:: https://firefly-iii.org/static/docs/4.7.6.2/apply-rule.png
+.. figure:: https://firefly-iii.org/static/docs/4.7.6.2/apply-rule-group.png
    :alt: Option to run a rule group on transactions.
 
    Option to run a rule group on transactions.
