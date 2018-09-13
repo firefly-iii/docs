@@ -261,7 +261,13 @@ If you wish to enable SSL as well, Firefly III (or rather Laravel) respects the 
 
 .. code-block:: bash
    
-   RequestHeader set X-Forwarded-Proto "https"
+   RequestHeader set X-Forwarded-Proto "https" 
+   
+If you are using Nginx add the following to your location block:
+
+.. code-block:: bash
+
+   proxy_set_header X-Forwarded-Proto $scheme;
 
 If you're having trouble with (parts of) this step, please check out the :ref:`Docker FAQ <faqdocker>`
 
