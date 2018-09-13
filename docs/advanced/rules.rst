@@ -41,6 +41,12 @@ Combined, this gives you a lot of power over your financial data.
 
 You cannot fire other rules from a rule.
 
+Apply rules
+-----------
+
+You can apply your rules to existing transactions. On the rule-overview (page ``/rules``), either use the "on/off"-icon or the ellipsis menu in a rule group to apply entire rule groups or individual rules to your transactions. See for some screenshots below.
+
+
 Screenshots
 -----------
 
@@ -59,3 +65,14 @@ Screenshots
    :alt: Set the actions
 
    Then decide on the actions to take.
+
+.. figure:: https://firefly-iii.org/static/docs/4.7.6.2/apply-rule.png
+   :alt: Option to run a rule on transactions.
+
+   Option to run a rule on transactions.
+
+.. figure:: https://firefly-iii.org/static/docs/4.7.6.2/apply-rule.png
+   :alt: Option to run a rule group on transactions.
+
+   Option to run a rule group on transactions.
+
