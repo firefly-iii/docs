@@ -64,7 +64,7 @@ If you wish to link a bill to the transaction, make sure that the option to appl
 API
 ---
 
-Recurring transactions are also supported :ref:`through the API <_api_recurrences>`.
+Recurring transactions are also supported :ref:`through the API <api_recurrences>`.
 
 Cron job
 --------

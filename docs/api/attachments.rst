@@ -36,7 +36,7 @@ Example return
         }
     ],
     }
-   }
+   
 
 Notable about this return are the following aspects:
 

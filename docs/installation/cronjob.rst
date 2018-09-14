@@ -4,8 +4,6 @@
 Cron jobs
 =========
 
-**This code will only start working in a next version of Firefly III.**
-
 Firefly III supports a feature that requires you to run a cron job: :ref:`recurring transactions <recurring>`. If Firefly III is to actually create these recurring transactions for you, someone or something must check every single day if a new transaction is due to be created.
 
 Now, if you had to do that all by yourself it would kind of defeat the point, right? So you set up something called a "cron job".

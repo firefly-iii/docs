@@ -43,7 +43,7 @@ A few errors may pop up during the automatic installation and upgrade routine:
 
 These errors are not fatal for Firefly III, but they mean you must do the upgrade yourself. 
 
-Please checkout the :ref:`installation instructions <installself>` and :ref:`upgrade instructions <upgrading   >` for your particular type of installation.
+Please checkout the :ref:`installation instructions <installself>` and :ref:`upgrade instructions <upgrading>` for your particular type of installation.
 
 .. _faqdocker:
 
@@ -65,7 +65,7 @@ This means that the Document Root of your webserver is configured wrong. You sho
 There are several `tutorials online <https://www.digitalocean.com/community/tutorials/how-to-move-an-apache-web-root-to-a-new-location-on-ubuntu-16-04>`_ that explain how to change your document root.
 
 I am using nginx and want to expose Firefly III under /budget/
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 The following snippet might help:
 
 .. code-block:: bash
@@ -289,7 +289,7 @@ Most banks don't actually offer secure methods to download transactions. Mint.co
 I get an error about openssl_pkey_export?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-It means your machine has no proper configuration file for OpenSSL, or it cannot be found. Please check out `this issue <https://github.com/firefly-iii/firefly-iii/issues/1384>`_ for tips and tricks.
+It means your machine has no proper configuration file for OpenSSL, or it cannot be found. Please check out `this GitHub issue <https://github.com/firefly-iii/firefly-iii/issues/1384>`_ for tips and tricks.
 
 Why can't I import duplicate transactions?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

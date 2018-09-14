@@ -40,6 +40,7 @@ Example return
                 "amount": 1500
             },
         }
+      ]
    }
 
 Parameters
