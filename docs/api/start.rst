@@ -36,7 +36,7 @@ Data formatting
 ---------------
 The following pages will tell you about all the end points and how they work. As a convention all data is presented using the `JSON API <http://jsonapi.org/>`_ standard. A notable exception is the "about" end-point which presents its data slightly differently.
 
-When you submit a request (POST or PUT) with dates in them, format them as ``YYYY-MM-DD``.
+Every request should have a ``Accept: application/json`` header. When you submit a request (POST or PUT) with dates in them, format them as ``YYYY-MM-DD``.
 
 The "about"-end point uses a simple key-value system grouped under the data key. Here's an example.
 
