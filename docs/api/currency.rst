@@ -95,6 +95,6 @@ The same rules as above apply.
 Delete a currency
 -----------------
 
-``DELETE /api/v1/X/<id>``
+``DELETE /api/v1/currencies/<id>``
 
 Will delete the currency. To do so, the user must have the ``owner``-role and the currency must not be used in the system any more. Other data is not removed.
