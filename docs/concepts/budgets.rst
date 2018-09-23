@@ -27,7 +27,7 @@ Firefly III also features :ref:`categories <categories>`. These are also interes
 The difference between budgets and categories
 ---------------------------------------------
 
-If you can save money every month on a certain subject, it's a budget. Groceries are budget. Bills are a budget. If you travel by train occasionally, it's not a budget.
+If you try to save money every month on a certain subject, it's a budget. Groceries are budget. Bills are a budget. If you travel by train occasionally, it's not a budget.
 
 First and foremost: a :ref:`category <categories>` is "incidental". You don't buy new furniture every month but you might want to keep track of such expenses. Or you don't care about costs for public traffic (budget-wise) but a category would be nice.
 
