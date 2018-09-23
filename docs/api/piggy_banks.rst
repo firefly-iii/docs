@@ -121,6 +121,6 @@ The same rules as above apply.
 Delete the piggy bank
 ---------------------
 
-``DELETE /api/v1/X/<id>``
+``DELETE /api/v1/piggy_banks/<id>``
 
 Will delete the piggy bank. Other data is not removed.
