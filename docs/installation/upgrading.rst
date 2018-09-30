@@ -125,12 +125,13 @@ If you get 500 errors or other problems, you may have to set the correct access 
    sudo chown -R www-data:www-data firefly-iii
    sudo chmod -R 775 firefly-iii/storage
 
-Make sure you remove any old PHP7.0 packages or at least, make sure they are not used by Apache and/or nginx. To disable PHP 7.0 in Apache, you can use:
+Make sure you remove any old PHP7.0 or PHP7.1 packages or at least, make sure they are not used by Apache and/or nginx. To disable PHP 7.0 or PHP7.1 in Apache, you can use:
 
 .. code-block:: bash
    
    sudo a2dismod php7.0
-   sudo a2enmod php7.1
+   sudo a2dismod php7.1
+   sudo a2enmod php7.2
    sudo service apache2 restart
 
 This assumes you run Apache and your OS package manager can handle multiple PHP versions (not all of them do this). Other commands can be found using a search engine.
