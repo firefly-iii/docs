@@ -15,11 +15,11 @@ If you have your own (virtual) web server you can use this guide to install Fire
 
 Ingredients
 -----------
-You need a working LAMP, LEMP or WAMP stack. If you don't have one, search the web to find out how to get one. Make sure you're running PHP 7.1. There are many tutorials that will help you install one. For example:
+You need a working LAMP, LEMP or WAMP stack. If you don't have one, search the web to find out how to get one. Make sure you're running PHP 7.2. There are many tutorials that will help you install one. Here are some Google queries to help you.
 
-1. `A guide to install a LAMP stack <https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu>`_
-2. `A guide to update to PHP 7.1 <https://www.digitalocean.com/community/questions/how-do-i-update-my-lamp-stack-to-php7>`_
-3. `A guide to install PHP7.1 on a Raspberry Pi <https://raspberrypi.stackexchange.com/questions/70388/how-to-install-php-7-1>`_
+1. `Install a LAMP stack with PHP 7.2 <https://www.google.com/search?q=lamp+stack+php+7.2>`_
+2. `Upgrade Ubuntu PHP 7.2 <https://www.google.com/search?q=upgrade+ubuntu+php+7.2>`_
+3. `PHP 7.2 raspberry pi <https://www.google.nl/search?q=PHP+7.2+raspberry+pi>`_
 
 If you wish to use another database such as SQLite or Postgres, please check out the :ref:`Server FAQ <faqselfhosted>`.
 
