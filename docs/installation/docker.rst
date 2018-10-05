@@ -151,10 +151,10 @@ To update the container just run ``docker-compose pull firefly_iii_app && docker
 
 .. code-block:: bash
 
-   docker exec -it <container> php artisan migrate
-   docker exec -it <container> php artisan firefly:upgrade-database
-   docker exec -it <container> php artisan firefly:verify
-   docker exec -it <container> php artisan passport:install
+    docker-compose exec -T firefly_iii_app php artisan migrate
+    docker-compose exec -T firefly_iii_app php artisan firefly:upgrade-database
+    docker-compose exec -T firefly_iii_app php artisan firefly:verify
+    docker-compose exec -T firefly_iii_app php artisan passport:install
 
 If you're having trouble with (parts of) this step, please check out the :ref:`Docker FAQ <faqdocker>`
 
