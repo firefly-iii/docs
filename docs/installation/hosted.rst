@@ -14,6 +14,11 @@ Heroku
 
 Firefly III supports `Heroku <https://heroku.com/>`_. You can `deploy Firefly III in Heroku <https://heroku.com/deploy?template=https://github.com/firefly-iii/firefly-iii/tree/master>`_ after you register for a (free) account.
 
+Considerations when using Heroku
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Heroku uses what is called an "ephemeral file system" and it will not be able to store attachments. They will be deleted after some time. Don't use Firefly III on Heroku in combination with sensitive or rare file attachments.
+
 Softaculous
 -----------
 
