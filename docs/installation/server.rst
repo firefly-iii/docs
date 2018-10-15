@@ -86,7 +86,12 @@ Enter the following command.
 
 You should replace ``<latest>`` with the latest version, which you can find on the `Github release list <https://github.com/firefly-iii/firefly-iii/releases>`_.
 
-If this gives an error because of access rights, prepend the command with ``sudo``. We'll fix the access rights later.
+If this gives an error because of access rights, prepend the command with ``sudo``. Then fix the access rights:
+
+.. code-block:: bash
+   
+   sudo chown -R www-data:www-data firefly-iii
+   sudo chmod -R 775 firefly-iii/storage
 
 Configuration
 ~~~~~~~~~~~~~
