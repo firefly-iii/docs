@@ -177,7 +177,7 @@ Then run the commands:
 .. code-block:: bash
 
    docker run \
-   --name=firefly_iii_app \
+   --name=firefly_iii_db \
    -e MYSQL_DATABASE=firefly_iii_db \
    -e MYSQL_USER=firefly_db \
    -e MYSQL_PASSWORD=firefly_db_secret \
