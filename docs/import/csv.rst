@@ -8,6 +8,8 @@ Firefly III can import data from CSV files. It uses a very clever system inspire
 
 Please note there is a :ref:`FAQ about the import process <faqimport>` as well.
 
+Before you continue reading the "how to" below, check out the **best practices** at the bottom of this page as well!
+
 Select a file
 -------------
 
@@ -127,4 +129,52 @@ You can read more about this command in the help text.
 .. code-block:: bash
 
    php artisan help firefly:create-import
+
+Best practices
+--------------
+
+So you want to import data into Firefly III? And you have a CSV file from your banks? Or several? Well, here are some tips and tricks to help you get started.
+
+- First of all, create all of the accounts (including their IBANs) that you have. Any savings account, checking account, anything. Make sure you include closed accounts too. 
+- Then, under "Expense accounts", create entries for the places you send money to. The top 10 will do. Think about shops, magazine subscriptions, water, gas, power, internet company, anything. 
+- Under "Revenue accounts", create entries for the accounts that give you money. Your boss, the government, your friends perhaps?
+
+Then, start the import process as it is described on this page.
+
+- Use the "map this value" checkbox for any textual value except the description and the notes. Thank me later.
+- Try a few lines at a time to see if it works OK. Firefly III will not import duplicates so don't worry.
+- Check out the section on :ref:`rules <rules>` to learn how to auto-organise everything.
+
+The final tip about importing in Firefly III is:
+
+- Don't.
+
+I'm actually serious. Just wait for the first day of the next month and start entering all your transactions by hand. It will give you more insight in your finances than you thought possible. I could know, my first transaction in Firefly III is from the 1st of Januari 2013(!) and I never imported a single line. 
+
+Remember: you can't change the past and if you're making financial mistakes as we speak writing them down will help already.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
