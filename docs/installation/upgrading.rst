@@ -34,6 +34,7 @@ And then start it again by running the command under "Start the container". Befo
    docker exec -it <container> php artisan firefly:upgrade-database
    docker exec -it <container> php artisan firefly:verify
    docker exec -it <container> php artisan passport:install
+   docker exec -it <container> php artisan cache:clear
 
 If you're having trouble with (parts of) this step, please check out the :ref:`Docker FAQ <faqdocker>`
 
@@ -49,6 +50,7 @@ To update the container just run ``docker-compose pull firefly_iii_app && docker
    docker-compose exec firefly_iii_app php artisan firefly:upgrade-database
    docker-compose exec firefly_iii_app php artisan firefly:verify
    docker-compose exec firefly_iii_app php artisan passport:install
+   docker-compose exec firefly_iii_app php artisan cache:clear
 
 Some users have reported that this might not work: simply pulling the image won't make Docker use it. A solution could be to remove everything, and then launch Firefly III again:
 
@@ -73,6 +75,7 @@ To update the container just run ``docker stop firefly-app && docker pull jc5x/f
    docker exec -it <container> php artisan firefly:upgrade-database
    docker exec -it <container> php artisan firefly:verify
    docker exec -it <container> php artisan passport:install
+   docker exec -it <container> php artisan cache:clear
 
 If you're having trouble with (parts of) this step, please check out the :ref:`Docker FAQ <faqdocker>`
 
@@ -109,6 +112,7 @@ Then, run the following commands to finish the upgrade:
    php artisan firefly:upgrade-database
    php artisan firefly:verify
    php artisan passport:install
+   php artisan cache:clear
    cd ..
 
 To make sure your webserver serves you the new Firefly III:
@@ -157,5 +161,6 @@ Go to the ``firefly-iii`` folder and run these commands:
    php artisan firefly:upgrade-database
    php artisan firefly:verify
    php artisan passport:install
+   php artisan cache:clear
 
 If you're having trouble with (parts of) this step, please check out the :ref:`FAQ <faq>`

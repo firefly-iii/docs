@@ -302,6 +302,8 @@ You can only import such transactions if you add unique data, such as another co
 
 Firefly III can also recognise duplicate transfers over different files.
 
+If you delete the transaction, Firefly III will *still* not import the transaction. This is by design. A lot of users have banks that insert dummy lines into their CSV files. Once deleted, these lines must stay deleted, even when you import them again. So if you are testing your import, please be ready to remove lines from the database.
+
 
 Other questions
 ---------------

@@ -66,6 +66,7 @@ Then, to get it going, initialize the database like so:
    docker exec -it <container> php artisan firefly:upgrade-database
    docker exec -it <container> php artisan firefly:verify
    docker exec -it <container> php artisan passport:install
+   docker exec -it <container> php artisan cache:clear
 
 You can then visit `http://localhost <http://localhost>`_ and register a new account.
 
@@ -94,6 +95,7 @@ Upgrade the database with these commands:
    docker exec -it <container> php artisan firefly:upgrade-database
    docker exec -it <container> php artisan firefly:verify
    docker exec -it <container> php artisan passport:install
+   docker exec -it <container> php artisan cache:clear
 
 Then you can visit the container again.
 
@@ -143,6 +145,7 @@ If this is the first time you're running Firefly III then you must initialize th
    docker-compose exec firefly_iii_app php artisan firefly:upgrade-database
    docker-compose exec firefly_iii_app php artisan firefly:verify
    docker-compose exec firefly_iii_app php artisan passport:install
+   docker-compose exec firefly_iii_app php artisan cache:clear
 
 Surf to Firefly III
 ~~~~~~~~~~~~~~~~~~~
@@ -162,6 +165,7 @@ To update the container just run ``docker-compose pull firefly_iii_app && docker
     docker-compose exec -T firefly_iii_app php artisan firefly:upgrade-database
     docker-compose exec -T firefly_iii_app php artisan firefly:verify
     docker-compose exec -T firefly_iii_app php artisan passport:install
+    docker-compose exec -T firefly_iii_app php artisan cache:clear
 
 If you're having trouble with (parts of) this step, please check out the :ref:`Docker FAQ <faqdocker>`
 
@@ -239,6 +243,7 @@ If this is the first time you're running Firefly III then you must initialize th
    docker-compose exec firefly_iii_app php artisan firefly:upgrade-database
    docker-compose exec firefly_iii_app php artisan firefly:verify
    docker-compose exec firefly_iii_app php artisan passport:install
+   docker-compose exec firefly_iii_app php artisan cache:clear
 
 Surf to Firefly III
 ~~~~~~~~~~~~~~~~~~~
@@ -256,6 +261,7 @@ To update the container just run ``docker stop firefly_iii_app && docker pull jc
    docker exec -it <container> php artisan firefly:upgrade-database
    docker exec -it <container> php artisan firefly:verify
    docker exec -it <container> php artisan passport:install
+   docker-compose exec firefly_iii_app php artisan cache:clear
 
 If you're having trouble with (parts of) this step, please check out the :ref:`Docker FAQ <faqdocker>`
 
