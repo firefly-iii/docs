@@ -173,7 +173,7 @@ Update an account. The requirements to the data submitted are equal to that of t
 * You cannot change ownership of the account through the API.
 * Any fields you leave empty, or do not include, will be blanked out or removed.
 
-The result, when succesfull, will be the updated account.
+The result, when successful, will be the updated account.
 
 Delete account
 --------------
