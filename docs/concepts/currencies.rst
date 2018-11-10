@@ -8,13 +8,17 @@ Firefly III supports as many currencies as you like. By default it ships with a 
 
 You can add your own currencies if you're missing one.
 
+Currencies are disabled by default, meaning that you cannot use them when creating asset accounts or transactions. You must enable them first. I did this because the list is growing longer and longer, and it clutters the user interface.
+
 
 Adding currencies
 -----------------
 
 Under Options > Preferences you will find the "Currencies" page. When you are an admin, you will see the button "Create a new currency". You should enter some details such as the name, the $ymbol of the currency and of course the currency code (preferrably according to the `ISO 4217 <https://www.currency-iso.org/dam/downloads/lists/list_one.xml>`_ standard).
 
-Currencies have decimal places. Most have 2, like the Euro. Notable exceptions are Bitcoin (8) and the Mauritanian ouguiya (no decimals). Both are supported by Firefly III. Bitcoin is present by default.
+Currencies have decimal places. Most have 2, like the Euro. Notable exceptions are Bitcoin (8) and the Mauritanian ouguiya (no decimals). Both are supported by Firefly III. Bitcoin is present by default, but not enabled.
+
+New currencies added through this form will be enabled for use.
 
 Set the default currency
 ------------------------

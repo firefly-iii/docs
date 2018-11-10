@@ -69,13 +69,17 @@ Each of these combinations will now be linked to "Albert Heijn". I can do this w
    
    Map individual cells to a specific entry in your Firefly III database
 
+Mapping asset accounts
+~~~~~~~~~~~~~~~~~~~~~~
 
-Once you press start, the import will run. This could take a while. 
+Take extra care in mapping your asset accounts to the entries in your CSV file. Take the time to match IBAN's, account numbers and account names to the appropriate accounts in your Firefly III database. If you do this right, Firefly III will automatically create transfers between asset accounts.
+
+
 
 Running the import
 ------------------
 
-Once you have set up everything, you are ready to import your data. You can see what is happening while the import is running:
+Once you have set up everything, you are ready to import your data. This could take a while. You can see what is happening while the import is running:
 
 .. figure:: https://firefly-iii.org/static/docs/4.7.5/import-progress.png
    :alt: The import is running

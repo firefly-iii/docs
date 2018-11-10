@@ -28,7 +28,8 @@ Example return
                 "code": "AUD",
                 "symbol": "A$",
                 "decimal_places": 2,
-                "default": false
+                "default": false.
+                "enabled": true,
             },
             "links": {
                 "0": {
@@ -83,7 +84,8 @@ Required global fields
 * ``code``. Currency code of the new currency. See `ISO 4217 <https://en.wikipedia.org/wiki/ISO_4217>`_.
 * ``symbol``. Symbol for the currency, like $ or €.
 * ``decimal_places``. Number of decimal places of currency.
-* ``default``. Should the new currency be the new default currency? Accepts ``true`` or ``false``. 
+* ``default``. Should the new currency be the new default currency? Accepts ``1`` or ``0``. 
+* ``enabled``. Should the new currency be enabled? Accepts ``1`` or ``0``. 
 
 Update a currency
 -----------------

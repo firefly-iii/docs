@@ -6,6 +6,8 @@ Introduction
 
 Firefly III is currently being fitted with an API. This API is very much in **beta** and may work in unexpected or undocumented ways.
 
+And yes, I am working on a Swagger document.
+
 Authentication
 --------------
 
