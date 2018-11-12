@@ -4,6 +4,9 @@
 Import CSV files
 ================
 
+.. contents::
+   :local:
+
 Firefly III can import data from CSV files. It uses a very clever system inspired by `Atlassian JIRA <https://www.atlassian.com/software/jira>`_ to do so. On this page I will assume you have a CSV file from your bank available, and you want to import this file into Firefly III. Well, first go to "Import and export" and select "Import data". Click on "Import a file".
 
 Please note there is a :ref:`FAQ about the import process <faqimport>` as well.
@@ -74,6 +77,12 @@ Mapping asset accounts
 
 Take extra care in mapping your asset accounts to the entries in your CSV file. Take the time to match IBAN's, account numbers and account names to the appropriate accounts in your Firefly III database. If you do this right, Firefly III will automatically create transfers between asset accounts.
 
+Detecting duplicate transactions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Firefly III automatically detects duplicate lines in your files and will refuse to import them. This behavior is also present when you delete the transaction; it will not be imported again. This is by design. 
+
+Firefly III can also detect duplicates *over different files*. This behavior can be useful when you're importing two CSV files: ``account_A.csv`` and ``account_B.csv``. If it so happens that a transaction is mentioned in both files (so it goes from A to B in one file and from B to A in the other) it will still not be imported. This happens when every detail is the same (amount, date, description, accounts).
 
 
 Running the import
