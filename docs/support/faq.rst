@@ -258,6 +258,12 @@ Reddit user  `bousquetfrederic <https://www.reddit.com/user/bousquetfrederic>`_ 
    sudo restorecon -R /path/to/firefly-iii/storage
 
 
+I am trying to upgrade but I get "Foreign key constraint is incorrectly formed"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This could happen when you upgrade a Firefly III installation with MySQL. The cause is that the tables used by Firefly III are stored under the "MyISAM" engine while Firefly III assumes these are stored using the "InnoDB" engine. To fix this, use a program like Sequel Pro or phpMyAdmin and change the engine of all your Firefly III tables to "InnoDB", *before* you try to upgrade.
+
+
 .. _faqthirdparty:
 
 Third-party hosted

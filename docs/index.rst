@@ -36,6 +36,7 @@ You can find Firefly III on `GitHub <https://github.com/firefly-iii/firefly-iii>
    ./import/csv.rst
    ./import/spectre.rst
    ./import/bunq.rst
+   ./import/fints.rst
    ./import/export.rst
 
 .. toctree::
