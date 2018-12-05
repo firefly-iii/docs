@@ -115,6 +115,37 @@ Now you should be able to visit `http://localhost/firefly-iii/ <http://localhost
 
 If you're having trouble with (parts of) this step, please check out the :ref:`Server FAQ <faqselfhosted>`.
 
+
+Pre php 7.2
+~~~~~~~~~~~~~~~~~~~
+
+For those of you unable to upgrade yet to php 7.2 you can run this command to install the last compatible version before this mandated requiredment:
+
+.. code-block:: bash
+
+   composer create-project grumpydictator/firefly-iii --no-dev --prefer-dist firefly-iii-downgrade 4.7.6
+   
+If downgrading make sure to point your webserver to the new location and copy over the .env file. E.g.
+
+.. code-block:: bash
+
+   cp firefly-iii/.env firefly-iii-downgrade/.env
+   
+You may need to reverse the last migration (don't do this in the downgrade)
+
+.. code-block:: bash
+   
+   php artisan migrate:rollback --step=1
+   
+Rerun the check
+
+.. code-block:: bash
+   
+   php artisan migrate:refresh --seed
+   php artisan firefly:upgrade-database
+   php artisan firefly:verify
+   php artisan passport:install
+   
 Accessing Firefly III
 ---------------------
 
