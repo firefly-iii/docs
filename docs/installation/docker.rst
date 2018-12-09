@@ -221,7 +221,7 @@ Then, to start Firefly III itself:
    --name=firefly_iii_app \
    --link=firefly_iii_db \
    -e FF_DB_HOST=firefly_iii_db \
-   - e FF_DB_CONNECTION=pgsql \
+   -e FF_DB_CONNECTION=pgsql \
    -e FF_DB_NAME=firefly \
    -e FF_DB_USER=firefly \
    -e FF_DB_PASSWORD=firefly \
@@ -239,11 +239,11 @@ If this is the first time you're running Firefly III then you must initialize th
 
 .. code-block:: bash
    
-   docker-compose exec firefly_iii_app php artisan migrate --seed
-   docker-compose exec firefly_iii_app php artisan firefly:upgrade-database
-   docker-compose exec firefly_iii_app php artisan firefly:verify
-   docker-compose exec firefly_iii_app php artisan passport:install
-   docker-compose exec firefly_iii_app php artisan cache:clear
+   docker exec firefly_iii_app php artisan migrate --seed
+   docker exec firefly_iii_app php artisan firefly:upgrade-database
+   docker exec firefly_iii_app php artisan firefly:verify
+   docker exec firefly_iii_app php artisan passport:install
+   docker exec firefly_iii_app php artisan cache:clear
 
 Surf to Firefly III
 ~~~~~~~~~~~~~~~~~~~
