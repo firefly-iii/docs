@@ -1,7 +1,7 @@
 .. _api_recurrences:
 
 ======================
-Recurring Transcations
+Recurring Transactions
 ======================
 
 List
