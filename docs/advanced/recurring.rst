@@ -71,12 +71,7 @@ Cron job
 
 In order to actually create the transactions, Firefly III requires a cron job to be running on your server. It must be set up to run every minute. The Docker container should launch a cron job itself. If you are hosting yourself, you can easily set up a new cron job using `crontab` and simply Googling for "cronjob linux".
 
-The content of the job is as follows. Make sure you change ``/var/www/firefly-iii`` to the actual path of your Firefly III installation.
-
-.. code-block:: bash
-   
-   * * * * * cd /var/www/firefly-iii && php artisan schedule:run >> /dev/null 2>&1
-   
+To set up the cron job, please check out the following page :ref:`with more information <cronjobs>`.
 
 Just wait patiently and the cron job will create the transactions during the night.
 
