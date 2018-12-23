@@ -74,7 +74,7 @@ If you get "cannot be NULL"-errors or "field unavailable"-errors or something li
 Example configuration
 ~~~~~~~~~~~~~~~~~~~~~
 
-The following configuration will allow you to connect to Forum System's excellent `example LDAP server<http://www.forumsys.com/tutorials/integration-how-to/ldap/online-ldap-test-server/>`_. If you configure your Firefly III system, you can login with user "einstein" with password "password".
+The following configuration will allow you to connect to Forum System's excellent `example LDAP server <http://www.forumsys.com/tutorials/integration-how-to/ldap/online-ldap-test-server/>`_. If you configure your Firefly III system, you can login with user "einstein" with password "password".
 
 .. code-block:: bash
 

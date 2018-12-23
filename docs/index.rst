@@ -68,26 +68,6 @@ You can find Firefly III on `GitHub <https://github.com/firefly-iii/firefly-iii>
    :caption: API
    
    ./api/start.rst
-   ./api/about.rst
-   ./api/accounts.rst
-   ./api/attachments.rst
-   ./api/bills.rst
-   ./api/available_budgets.rst
-   ./api/budgets.rst
-   ./api/budget_limits.rst
-   ./api/categories.rst
-   ./api/cer.rst
-   ./api/configuration.rst
-   ./api/currency.rst
-   ./api/journal_links.rst
-   ./api/link_types.rst
-   ./api/piggy_banks.rst
-   ./api/preferences.rst
-   ./api/recurrences.rst
-   ./api/rules.rst
-   ./api/rule_groups.rst
-   ./api/transactions.rst
-   ./api/users.rst
 
 .. toctree::
    :maxdepth: 2
