@@ -31,9 +31,7 @@ In those early, exciting days, all I did was live from the 1st to the 31st of th
 The next step
 -------------
 
-To keep on top of your finances (using Firefly III), you must be *aware* of your finances. This is the reason Firefly III features very little "automation".
-Firefly III won't create your rent payment automatically. It won't try to predict expenses. There are no shortcuts. Except for the import-feature, Firefly III will
-not create or update transactions for you.
+To keep on top of your finances (using Firefly III), you must be *aware* of your finances. This is the reason Firefly III features very little "automation". Firefly III won't create your rent payment automatically. It won't try to predict expenses. There are no shortcuts. Except for the import-feature, Firefly III will not create or update transactions for you.
 
 If you're serious about changing your financial habits, you should enter each transaction manually. Feel the impact of each penny you spend, and before you know it you'll spend a lot less of them.
 

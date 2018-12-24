@@ -9,10 +9,6 @@ Self-hosted server
 
 If you have your own (virtual) web server you can use this guide to install Firefly III. You will some ingredients prepared already.
 
-
-
-
-
 Ingredients
 -----------
 You need a working LAMP, LEMP or WAMP stack. If you don't have one, search the web to find out how to get one. Make sure you're running PHP 7.2. There are many tutorials that will help you install one. Here are some Google queries to help you.

@@ -14,68 +14,35 @@ Docker
 
 Upgrade straight from Docker Hub
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-To upgrade, stop your container using 
+To upgrade, stop and remove your container using these commands:
 
 .. code-block:: bash
 
    docker stop <container>
+   docker rm <container>
 
-Then run:
+To find out which container is Firefly III, run ``docker container ls -a``.
 
 .. code-block:: bash
 
    docker pull jc5x/firefly-iii:latest
 
-And then start it again by running the command under "Start the container". Before you visit it again, upgrade the database:
+And then create it again by running the command from the :ref:`installation guide <installdocker>`. The container should upgrade itself so it can take some time for it to start. You should save the command you've used to start the container for easier upgrade.
 
-.. code-block:: bash
-
-   docker exec -it <container> php artisan migrate --seed
-   docker exec -it <container> php artisan firefly:upgrade-database
-   docker exec -it <container> php artisan firefly:verify
-   docker exec -it <container> php artisan passport:install
-   docker exec -it <container> php artisan cache:clear
-
-If you're having trouble with (parts of) this step, please check out the :ref:`Docker FAQ <faqdocker>`
+If you're having trouble with (parts of) this step, please check out the :ref:`Docker FAQ <faqdocker>`.
 
 
 Docker Hub via docker compose
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-To update the container just run ``docker-compose pull firefly_iii_app && docker-compose restart firefly_iii_app``. You can even add this command to a chrontab. Before you visit it again, upgrade the database:
+To update the container run these commands:
 
 .. code-block:: bash
 
-   docker-compose exec firefly_iii_app php artisan migrate --seed
-   docker-compose exec firefly_iii_app php artisan firefly:upgrade-database
-   docker-compose exec firefly_iii_app php artisan firefly:verify
-   docker-compose exec firefly_iii_app php artisan passport:install
-   docker-compose exec firefly_iii_app php artisan cache:clear
-
-Some users have reported that this might not work: simply pulling the image won't make Docker use it. A solution could be to remove everything, and then launch Firefly III again:
-
-.. code-block:: bash
-
-   # don't do this:
-   docker-compose rm -f firefly_iii_app
-   
-Problem is that this will also delete your volumes, and your volumes contain your uploads, attachments and other system files. So be very careful! For more information, please read `this GitHub ticket <https://github.com/firefly-iii/firefly-iii/issues/1628>`_.
-
-If you're having trouble with (parts of) this step, please check out the :ref:`Docker FAQ <faqdocker>`
-
-
-Docker Hub via run/pull
-~~~~~~~~~~~~~~~~~~~~~~~
-
-To update the container just run ``docker stop firefly-app && docker pull jc5x/firefly-iii && docker start firefly-app``. You can even add this command to a chrontab. Before you visit it again, upgrade the database:
-
-.. code-block:: bash
-
-   docker exec -it <container> php artisan migrate --seed
-   docker exec -it <container> php artisan firefly:upgrade-database
-   docker exec -it <container> php artisan firefly:verify
-   docker exec -it <container> php artisan passport:install
-   docker exec -it <container> php artisan cache:clear
+   docker-compose stop firefly_iii_app
+   docker-compose rm
+   docker-compose pull firefly_iii_app
+   docker-compose -f docker-compose.yml up -d
 
 If you're having trouble with (parts of) this step, please check out the :ref:`Docker FAQ <faqdocker>`
 

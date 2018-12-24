@@ -11,10 +11,9 @@ When you create a bill, you tell Firefly III in what range you expect the bill t
 * Minimum amount: 700,-
 * Maximum amount: 800,-
 
-You also input the title of the bill and some keywords to look out for:
+You also input the title of the bill:
 
 * Description: Monthly rent
-* Matches on: ``landlord``, ``rent``, ``monthly``
 
 You should also indicate how often this bill has to be paid:
 

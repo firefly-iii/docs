@@ -47,6 +47,11 @@ To make a link with another transaction, go to the overview of a transaction and
 
 You can remove or reverse a link once it has been created.
 
+Use of links
+------------
+
+It is important to realise that links don't *do* anything. They won't change your transactions, or subtract amounts or anything like that.
+
 Screenshots
 -----------
 

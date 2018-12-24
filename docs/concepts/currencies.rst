@@ -8,7 +8,7 @@ Firefly III supports as many currencies as you like. By default it ships with a 
 
 You can add your own currencies if you're missing one.
 
-Currencies are disabled by default, meaning that you cannot use them when creating asset accounts or transactions. You must enable them first. I did this because the list is growing longer and longer, and it clutters the user interface.
+Currencies are disabled by default, meaning that you cannot use them when creating asset accounts or transactions. You must enable them first.
 
 
 Adding currencies

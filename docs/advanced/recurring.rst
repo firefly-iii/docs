@@ -61,24 +61,11 @@ Optional information includes:
 If you wish to link a bill to the transaction, make sure that the option to apply rules is checked and that the new transaction would match this rule.
 
 
-API
----
-
-Recurring transactions are also supported :ref:`through the API <api_recurrences>`.
-
 Cron job
 --------
 
-In order to actually create the transactions, Firefly III requires a cron job to be running on your server. It must be set up to run every minute. The Docker container should launch a cron job itself. If you are hosting yourself, you can easily set up a new cron job using `crontab` and simply Googling for "cronjob linux".
+In order to actually create the transactions, Firefly III requires a cron job to be running on your server. It must be set up to run every day. The Docker container should launch a cron job itself. If you are hosting yourself, you can easily set up a new cron job using `crontab` and simply Googling for "cronjob linux".
 
 To set up the cron job, please check out the following page :ref:`with more information <cronjobs>`.
 
 Just wait patiently and the cron job will create the transactions during the night.
-
-Solutions for other hosting providers such as Scriptaculous, Heroku and Sandstorm are coming!
-
-
-Screenshots
------------
-
-TODO.

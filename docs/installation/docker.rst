@@ -44,60 +44,9 @@ Run this Docker command to start the Firefly III container. Make sure that you e
    -e FF_DB_PASSWORD=CHANGEME \
    jc5x/firefly-iii:latest
 
-Firefly III assumes MySQL. If you use Postgres, add the following environment variable to the command: ``DB_CONNECTION=pgsql``.
+Firefly III assumes MySQL. If you use Postgres, add the following environment variable to the command: ``DB_CONNECTION=pgsql``. To read more about the environment variables, scroll down below.
 
-When executed this command will fire up a Docker container with Firefly III inside of it. If you visit it, it will say "Be right back". Continue below.
-
-Initialize your database
-~~~~~~~~~~~~~~~~~~~~~~~~
-
-Find out what the container ID is by running:
-
-.. code-block:: bash
-
-   docker container ls
-
-
-Then, to get it going, initialize the database like so:
-
-.. code-block:: bash
-
-   docker exec -it <container> php artisan migrate --seed
-   docker exec -it <container> php artisan firefly:upgrade-database
-   docker exec -it <container> php artisan firefly:verify
-   docker exec -it <container> php artisan passport:install
-   docker exec -it <container> php artisan cache:clear
-
-You can then visit `http://localhost <http://localhost>`_ and register a new account.
-
-If you're having trouble with (parts of) this step, please check out the :ref:`Docker FAQ <faqdocker>`
-
-Upgrade
-~~~~~~~
-
-To upgrade, stop your container using 
-
-.. code-block:: bash
-
-   docker stop <container>
-
-Then run:
-
-.. code-block:: bash
-
-   docker pull jc5x/firefly-iii:latest
-
-Upgrade the database with these commands:
-
-.. code-block:: bash
-
-   docker exec -it <container> php artisan migrate
-   docker exec -it <container> php artisan firefly:upgrade-database
-   docker exec -it <container> php artisan firefly:verify
-   docker exec -it <container> php artisan passport:install
-   docker exec -it <container> php artisan cache:clear
-
-Then you can visit the container again.
+When executed this command will fire up a Docker container with Firefly III inside of it. It may take some time to start.
 
 If you're having trouble with (parts of) this step, please check out the :ref:`Docker FAQ <faqdocker>`
 
@@ -109,7 +58,9 @@ Docker Hub with automatic updates via docker compose
 Download compose file
 ~~~~~~~~~~~~~~~~~~~~~
 
-Download the compose file located in `the Github repository <https://github.com/firefly-iii/firefly-iii/blob/master/docker-compose.yml>`_ and place it somewhere convenient.
+Download the compose file located in `the Github repository <https://github.com/firefly-iii/firefly-iii/blob/master/docker-compose.yml>`_ and place it somewhere convenient. 
+
+Make sure you grab the raw file, and don't copy paste from your browser. The spaces in the file are very important.
 
 Edit the file
 ~~~~~~~~~~~~~
@@ -144,28 +95,12 @@ If this is the first time you're running Firefly III then you must initialize th
    docker-compose exec firefly_iii_app php artisan migrate --seed
    docker-compose exec firefly_iii_app php artisan firefly:upgrade-database
    docker-compose exec firefly_iii_app php artisan firefly:verify
-   docker-compose exec firefly_iii_app php artisan passport:install
    docker-compose exec firefly_iii_app php artisan cache:clear
 
 Surf to Firefly III
 ~~~~~~~~~~~~~~~~~~~
 
 You can now visit Firefly III at `http://localhost <http://localhost>`_ or `http://docker-ip:port <http://docker-ip:port>`_ if it is running on a custom port.
-
-If you're having trouble with (parts of) this step, please check out the :ref:`Docker FAQ <faqdocker>`
-
-Upgrade
-~~~~~~~
-
-To update the container just run ``docker-compose pull firefly_iii_app && docker-compose restart firefly_iii_app``. You can even add this command to a chrontab. Before you visit it again, upgrade the database:
-
-.. code-block:: bash
-
-    docker-compose exec -T firefly_iii_app php artisan migrate
-    docker-compose exec -T firefly_iii_app php artisan firefly:upgrade-database
-    docker-compose exec -T firefly_iii_app php artisan firefly:verify
-    docker-compose exec -T firefly_iii_app php artisan passport:install
-    docker-compose exec -T firefly_iii_app php artisan cache:clear
 
 If you're having trouble with (parts of) this step, please check out the :ref:`Docker FAQ <faqdocker>`
 
@@ -232,36 +167,10 @@ Then, to start Firefly III itself:
    -v firefly_iii_upload:/var/www/firefly-iii/storage/upload \
    jc5x/firefly-iii
 
-Initialize the database
-~~~~~~~~~~~~~~~~~~~~~~~
-
-If this is the first time you're running Firefly III then you must initialize the database. Use the following commands to do so:
-
-.. code-block:: bash
-   
-   docker exec firefly_iii_app php artisan migrate --seed
-   docker exec firefly_iii_app php artisan firefly:upgrade-database
-   docker exec firefly_iii_app php artisan firefly:verify
-   docker exec firefly_iii_app php artisan passport:install
-   docker exec firefly_iii_app php artisan cache:clear
-
 Surf to Firefly III
 ~~~~~~~~~~~~~~~~~~~
 
 You can now visit Firefly III at ``http://localhost`` or ``http://docker-ip:port`` if it is running on a custom port.
-
-Upgrade
-~~~~~~~
-
-To update the container just run ``docker stop firefly_iii_app && docker pull jc5x/firefly-iii && docker start firefly_iii_app``. You can even add this command to a chrontab. Before you visit it again, upgrade the database:
-
-.. code-block:: bash
-
-   docker exec -it <container> php artisan migrate
-   docker exec -it <container> php artisan firefly:upgrade-database
-   docker exec -it <container> php artisan firefly:verify
-   docker exec -it <container> php artisan passport:install
-   docker-compose exec firefly_iii_app php artisan cache:clear
 
 If you're having trouble with (parts of) this step, please check out the :ref:`Docker FAQ <faqdocker>`
 

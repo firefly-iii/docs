@@ -165,29 +165,3 @@ The final tip about importing in Firefly III is:
 I'm actually serious. Just wait for the first day of the next month and start entering all your transactions by hand. It will give you more insight in your finances than you thought possible. I could know, my first transaction in Firefly III is from the 1st of Januari 2013(!) and I never imported a single line. 
 
 Remember: you can't change the past and if you're making financial mistakes as we speak writing them down will help already.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
