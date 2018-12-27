@@ -27,6 +27,8 @@ Several users have created specific guides for their OS and database combination
 2. `Ubuntu Server 16.04LTS with nginx and PHP 7.2 <https://old.reddit.com/r/FireflyIII/comments/8thxuu/fireflyiii_on_ubuntu_server_1604lts_nginx_php72/>`_
 3. `Ubuntu Server 18.04 with nginx and PHP 7.2 <https://gist.github.com/philthynz/ec04833a8e39c7f7d1b0d33cb4197a95>`_
 
+In case you want to use one of the languages that Firefly III is equipped with, make sure you have installed the necessary locales. For Debian / Ubuntu for example, use ``sudo apt install language-pack-nl-base && sudo locale-gen``.
+
 
 Preparing your server
 ---------------------
