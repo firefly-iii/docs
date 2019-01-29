@@ -46,36 +46,41 @@ Amazon Web Services
 -------------------
 AWS EC2 instances can be provisioned with this startup script to setup Firefly immediately: 
 
-.. code-block:: c
-#!/bin/bash
-yum update -y
-amazon-linux-extras install -y lamp-mariadb10.2-php7.2 php7.2
-yum install -y httpd mariadb-server php-intl.x86_64 php-bcmath.x86_64 php-mbstring.x86_64 php-gd.x86_64 php-ldap.x86_64 php-xml.x86_64 php-pecl-zip-1.15.2-3.amzn2.0.1.x86_64
-systemctl start mariadb
-systemctl enable mariadb
-export DATABASE_PASS=secret
-mysql -u root -e "DELETE FROM mysql.user WHERE User='root' AND Host NOT IN ('localhost', '127.0.0.1', '::1')"
-mysql -u root -e "DELETE FROM mysql.user WHERE User=''"
-mysql -u root -e "DELETE FROM mysql.db WHERE Db='test' OR Db='test\_%'"
-mysql -u root -e "CREATE USER IF NOT EXISTS 'homestead'@'localhost' IDENTIFIED BY 'secret'"
-mysql -u root -e "CREATE DATABASE IF NOT EXISTS homestead"
-mysql -u root -e "GRANT ALL PRIVILEGES ON homestead.* TO 'homestead'@'localhost' IDENTIFIED BY 'secret'"
-mysql -u root -e "FLUSH PRIVILEGES"
-mysql -u root -e "UPDATE mysql.user SET Password=PASSWORD('$DATABASE_PASS') WHERE User='root'"
-export COMPOSER_HOME=/home/ec2-user/.composer
-curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
-composer create-project grumpydictator/firefly-iii --no-dev --prefer-dist /var/www/html 4.7.9
-systemctl start httpd
-systemctl enable httpd
-usermod -a -G apache ec2-user
-chown -R ec2-user:apache /var/www
-chmod 2775 /var/www && find /var/www -type d -exec chmod 2775 {} \;
-find /var/www -type f -exec chmod 0664 {} \;
-php /var/www/html/artisan migrate:fresh --seed 
-php /var/www/html/artisan firefly:upgrade-database
-php /var/www/html/artisan firefly:verify
-php /var/www/html/artisan passport:install
+.. code-block:: bash
 
-If you have the AWS CLI installed, then drop that into some file (`firefly`, for example) and run this command to spin up the server: `aws ec2 run-instances --image-id ami-035be7bafff33b6b6 --instance-type t3.small --count 1 --user-data file://firefly --security-group-ids sg-04fc7b50ca1fc9956 --key-name firefly`
+  #!/bin/bash
+  yum update -y
+  amazon-linux-extras install -y lamp-mariadb10.2-php7.2 php7.2
+  yum install -y httpd mariadb-server php-intl.x86_64 php-bcmath.x86_64 php-mbstring.x86_64 php-gd.x86_64 php-ldap.x86_64 php-xml.x86_64 php-pecl-zip-1.15.2-3.amzn2.0.1.x86_64
+  systemctl start mariadb
+  systemctl enable mariadb
+  export DATABASE_PASS=secret
+  mysql -u root -e "DELETE FROM mysql.user WHERE User='root' AND Host NOT IN ('localhost', '127.0.0.1', '::1')"
+  mysql -u root -e "DELETE FROM mysql.user WHERE User=''"
+  mysql -u root -e "DELETE FROM mysql.db WHERE Db='test' OR Db='test\_%'"
+  mysql -u root -e "CREATE USER IF NOT EXISTS 'homestead'@'localhost' IDENTIFIED BY 'secret'"
+  mysql -u root -e "CREATE DATABASE IF NOT EXISTS homestead"
+  mysql -u root -e "GRANT ALL PRIVILEGES ON homestead.* TO 'homestead'@'localhost' IDENTIFIED BY 'secret'"
+  mysql -u root -e "FLUSH PRIVILEGES"
+  mysql -u root -e "UPDATE mysql.user SET Password=PASSWORD('$DATABASE_PASS') WHERE User='root'"
+  export COMPOSER_HOME=/home/ec2-user/.composer
+  curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
+  composer create-project grumpydictator/firefly-iii --no-dev --prefer-dist /var/www/html 4.7.9
+  systemctl start httpd
+  systemctl enable httpd
+  usermod -a -G apache ec2-user
+  chown -R ec2-user:apache /var/www
+  chmod 2775 /var/www && find /var/www -type d -exec chmod 2775 {} \;
+  find /var/www -type f -exec chmod 0664 {} \;
+  php /var/www/html/artisan migrate:fresh --seed 
+  php /var/www/html/artisan firefly:upgrade-database
+  php /var/www/html/artisan firefly:verify
+  php /var/www/html/artisan passport:install
+
+If you have the AWS CLI installed, then drop that into some file (`firefly`, for example) and run this command to spin up the server: 
+
+.. code-block:: bash
+
+  aws ec2 run-instances --image-id ami-035be7bafff33b6b6 --instance-type t3.small --count 1 --user-data file://firefly --security-group-ids sg-04fc7b50ca1fc9956 --key-name firefly
 
 *Please* change the `$DATABASE_PASS` variable before using this script.
