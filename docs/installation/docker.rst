@@ -13,7 +13,7 @@ Straight from Docker Hub
 ------------------------
 With these commands you create one container: the container for Firefly III itself. If you do this, you should already have a MySQL or a Postgres database running somewhere. For example, when you have one central database container for all of your docker containers. Without such a database container, Firefly III will not work.
 
-Docker containers should only do one thing, which is why you need a separata database container.
+Docker containers should only do one thing, which is why you need a separate database container.
 
 Create some volumes
 ~~~~~~~~~~~~~~~~~~~
