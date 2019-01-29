@@ -41,3 +41,35 @@ YunoHost
 --------
 
 Anmol Sharma has made a package for Firefly III on YunoHost. `You can install it from the YunoHost website <https://install-app.yunohost.org/?app=firefly-iii>`_.
+
+Amazon Web Services
+-------------------
+AWS EC2 instances can be provisioned with this startup script to setup Firefly immediately: 
+
+.. code-block:: c
+#!/bin/bash
+yum update -y
+amazon-linux-extras install -y lamp-mariadb10.2-php7.2 php7.2
+yum install -y httpd mariadb-server php-intl.x86_64 php-bcmath.x86_64 php-mbstring.x86_64 php-gd.x86_64 php-ldap.x86_64 php-xml.x86_64 php-pecl-zip-1.15.2-3.amzn2.0.1.x86_64
+systemctl start mariadb
+systemctl enable mariadb
+export DATABASE_PASS=secret
+mysql -u root -e "UPDATE mysql.user SET Password=PASSWORD('$DATABASE_PASS') WHERE User='root'"
+mysql -u root -p"$DATABASE_PASS" -e "DELETE FROM mysql.user WHERE User='root' AND Host NOT IN ('localhost', '127.0.0.1', '::1')"
+mysql -u root -p"$DATABASE_PASS" -e "DELETE FROM mysql.user WHERE User=''"
+mysql -u root -p"$DATABASE_PASS" -e "DELETE FROM mysql.db WHERE Db='test' OR Db='test\_%'"
+mysql -u root -p"$DATABASE_PASS" -e "CREATE USER IF NOT EXISTS 'homestead'@'localhost' IDENTIFIED BY 'secret'"
+mysql -u root -p"$DATABASE_PASS" -e "CREATE DATABASE IF NOT EXISTS homestead"
+mysql -u root -p"$DATABASE_PASS" -e "GRANT ALL PRIVILEGES ON homestead.* TO 'homestead'@'localhost' IDENTIFIED BY 'secret'"
+mysql -u root -p"$DATABASE_PASS" -e "FLUSH PRIVILEGES"
+export COMPOSER_HOME=/home/ec2-user/.composer
+curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
+composer create-project grumpydictator/firefly-iii --no-dev --prefer-dist /var/www/html 4.7.9
+systemctl start httpd
+systemctl enable httpd
+usermod -a -G apache ec2-user
+chown -R ec2-user:apache /var/www
+chmod 2775 /var/www && find /var/www -type d -exec chmod 2775 {} \;
+find /var/www -type f -exec chmod 0664 {} \;
+
+*Please* change the `$DATABASE_PASS` variable before using this script.
