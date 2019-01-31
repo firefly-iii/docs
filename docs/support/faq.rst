@@ -168,7 +168,7 @@ That should fix it!
 I get "Be right back"?
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Answer be here.
+Unfortunately, there is no straight answer without more information. Check out the ``/storage/logs`` directory of your Firefly III installation or check the logs of your Docker instance. The true error will be reported there. If necessary, enable `debug mode <https://github.com/firefly-iii/help/wiki/Enable-debug-logging-and-debug-mode>`_ to collect more log files.
 
 When I login, I get "Page has expired"?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
