@@ -28,8 +28,14 @@ You can change these dates to your liking. There are a few magic words available
 * ``currentMonthEnd``. Will return the end of the current month.
 * ``currentYearStart``. Will return the start of the current year.
 * ``currentYearEnd``. Will return the end of the current year.
+* ``previousMonthStart``. Will return the start of the last month.
+* ``previousMonthEnd``. Will return the end of the last month.
+* ``previousYearStart``. Will return the start of the last year.
+* ``previousYearEnd``. Will return the end of the last year.
 * ``currentFiscalYearStart``. Will return the start of the current fiscal year, if you have set this in your preferences.
 * ``currentFiscalYearEnd``. Will return the end of the current fiscal year, if you have set this in your preferences.
+* ``previousFiscalYearStart``. Will return the start of the last fiscal year, if you have set this in your preferences.
+* ``previousFiscalYearEnd``. Will return the end of the last fiscal year, if you have set this in your preferences.
 
 Available reports
 -----------------
