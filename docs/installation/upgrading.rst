@@ -76,6 +76,7 @@ Then, run the following commands to finish the upgrade:
    rm -rf bootstrap/cache/*
    php artisan cache:clear
    php artisan migrate --seed
+   php artisan firefly:decrypt-all
    php artisan firefly:upgrade-database
    php artisan firefly:verify
    php artisan passport:install
@@ -124,6 +125,7 @@ Go to the ``firefly-iii`` folder and run these commands:
    composer install --no-scripts --no-dev
    composer install --no-dev
    php artisan migrate --seed
+   php artisan firefly:decrypt-all
    php artisan cache:clear
    php artisan firefly:upgrade-database
    php artisan firefly:verify
