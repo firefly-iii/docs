@@ -30,7 +30,7 @@ LDAP
 
 In the following instructions I will refer to environment variables in all caps, like ``EXAMPLE_VARIABLE``.
 
-To enable LDAP authentication first set ``LOGIN_PROVIDER`` to ``adldap``.
+To enable LDAP authentication first set ``LOGIN_PROVIDER`` to ``ldap``.
 
 Connection configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -78,10 +78,14 @@ The following configuration will allow you to connect to Forum System's excellen
 
 .. code-block:: bash
 
-   LOGIN_PROVIDER=adldap
+   LOGIN_PROVIDER=ldap
+   
+   # LDAP connection configuration
+   # OpenLDAP, FreeIPA or ActiveDirectory
    ADLDAP_CONNECTION_SCHEME=OpenLDAP
    ADLDAP_AUTO_CONNECT=true
    
+   # LDAP connection settings
    ADLDAP_CONTROLLERS=ldap.forumsys.com
    ADLDAP_PORT=389
    ADLDAP_TIMEOUT=5
@@ -90,15 +94,22 @@ The following configuration will allow you to connect to Forum System's excellen
    ADLDAP_USE_SSL=false
    ADLDAP_USE_TLS=false
    
-   ADLDAP_ADMIN_USERNAME=
-   ADLDAP_ADMIN_PASSWORD=
+   ADLDAP_ADMIN_USERNAME="cn=read-only-admin,dc=example,dc=com"
+   ADLDAP_ADMIN_PASSWORD=password
    
    ADLDAP_ACCOUNT_PREFIX="uid="
    ADLDAP_ACCOUNT_SUFFIX=",dc=example,dc=com"
-   ADLDAP_ADMIN_ACCOUNT_PREFIX=
-   ADLDAP_ADMIN_ACCOUNT_SUFFIX=
    
+   # LDAP authentication settings.
    ADLDAP_PASSWORD_SYNC=false
    ADLDAP_LOGIN_FALLBACK=false
-   ADLDAP_SYNC_FIELD=uid
 
+   ADLDAP_DISCOVER_FIELD=uid
+   ADLDAP_AUTH_FIELD=uid
+
+   # Will allow SSO if your server provides an AUTH_USER field.
+   WINDOWS_SSO_DISCOVER=samaccountname
+   WINDOWS_SSO_KEY=AUTH_USER
+
+   # field to sync as local username.
+   ADLDAP_SYNC_FIELD=uid
