@@ -50,12 +50,12 @@ Change the ``ADLDAP_BASEDN`` to indicate where the users can be located. If nece
 
 Users type the ``ADLDAP_DISCOVER_FIELD`` into the "User identifier"-box of Firefly III. This could be the distinguishedname, the uid or something else entirely. Firefly III will then use the ``ADLDAP_AUTH_FIELD`` to bind users to itself. The ``ADLDAP_SYNC_FIELD`` finally, will be stored in the user table of Firefly III. My strong suggestion is to keep all of these the same.
 
-If necessary, you can set the following prefixes and suffixes so that the user's LDAP accounts and the administrator account (optional) are properly formatted for use with your LDAP server:
+If necessary, you can set the following prefixes and suffixes so that the user's LDAP accounts are properly formatted for use with your LDAP server:
 
 * ``ADLDAP_ACCOUNT_PREFIX``
 * ``ADLDAP_ACCOUNT_SUFFIX``
-* ``ADLDAP_ADMIN_ACCOUNT_PREFIX``
-* ``ADLDAP_ADMIN_ACCOUNT_SUFFIX``
+
+The administrator account should have these already set in your configuration.
 
 Authentication settings
 ~~~~~~~~~~~~~~~~~~~~~~~

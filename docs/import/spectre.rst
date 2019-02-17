@@ -10,6 +10,8 @@ To get it working in Firefly III you need `an account on their website <https://
 
 As a side note: please realize that Spectre isn't meant for end users, or for tools like Firefly III. Spectre's target audience is large corporations who want to process lots of transactions. But it works and when we all keep quiet about what we use it for nobody will notice.
 
+However, test access is perpetual as far as I know and won't cost you anything.
+
 First use
 ---------
 
