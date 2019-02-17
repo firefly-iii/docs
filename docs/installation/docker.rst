@@ -177,7 +177,7 @@ If you're having trouble with (parts of) this step, please check out the :ref:`D
 Docker and reverse proxies
 --------------------------
 
-In the ``.env`` file you will find a variable called ``TRUSTED_PROXIES`` which must be set to either the reverse proxy machine or simply ``**``. Set ``APP_URL`` to the URL will be on. For example:
+In the ``.env`` file you will find a variable called ``TRUSTED_PROXIES`` which must be set to either the reverse proxy machine or simply ``**``. Set ``APP_URL`` to the URL Firefly III will be on. For example:
 
 .. code-block:: bash
 
@@ -199,7 +199,7 @@ On the command line, this would be:
    -e APP_URL=https://firefly.example.com \
    -e TRUSTED_PROXIES=** \
 
-Keep in mind that the ``APP_URL`` setting does absolutely nothing for your reverse proxy or anything! It's only used to determin the URL of Firefly III when Firefly III is incapable of doing so: when using the command line or when drafting emails. 
+Keep in mind that the ``APP_URL`` setting does absolutely nothing for your reverse proxy or anything! It's only used to determine the URL of Firefly III when Firefly III is incapable of doing so: when using the command line or when drafting emails. 
 
 If you wish to enable SSL as well, Firefly III (or rather Laravel) respects the HTTP header `X-Forwarded-Proto`. Add this to your vhost file:
 
