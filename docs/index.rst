@@ -26,6 +26,7 @@ You can find Firefly III on `GitHub <https://github.com/firefly-iii/firefly-iii>
    ./installation/upgrading.rst
    ./installation/mail.rst
    ./installation/authentication.rst
+   ./installation/analytics.rst
    ./installation/backup.rst
    ./installation/cronjob.rst
 
