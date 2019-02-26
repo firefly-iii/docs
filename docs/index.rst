@@ -19,6 +19,7 @@ You can find Firefly III on `GitHub <https://github.com/firefly-iii/firefly-iii>
    :maxdepth: 1
    :caption: Installation
    
+   ./installation/analytics.rst
    ./installation/demo.rst
    ./installation/server.rst
    ./installation/docker.rst
