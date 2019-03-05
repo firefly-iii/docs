@@ -218,7 +218,4 @@ If you're having trouble with (parts of) this step, please check out the :ref:`D
 
 Supported Docker environment variables
 --------------------------------------
-
-There are many environment variables that you can set in Firefly III. Just check out the `default docker env file <https://github.com/firefly-iii/firefly-iii/blob/master/.env.docker>`_ that lists them all. Each value within ${BRACKETS} can be replaced on the command line.
-
-
+There are many environment variables that you can set in Firefly III. Just check out the `default docker env file <https://github.com/firefly-iii/firefly-iii/blob/master/.deploy/docker/.env.docker>`_ that lists them all. Each value within ${BRACKETS} can be replaced on the command line.
