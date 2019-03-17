@@ -49,6 +49,8 @@ In CSV files, each column contains a specific type of information. However, Fire
 
 Notice how I've set some columns to be "mapped". This can be very useful for stuff like budgets, account names and other indicators.
 
+Make sure you set at least one column to Date, one column to Description and one to Amount.
+
 .. figure:: https://firefly-iii.org/static/docs/4.7.0/import-roles.png
    :alt: Set column roles
    
