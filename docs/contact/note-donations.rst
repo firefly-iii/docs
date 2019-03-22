@@ -4,6 +4,9 @@
 A note on donations
 ===================
 
+.. image:: https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif
+   :target: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=thegrumpydictator%40gmail.com&item_name=Development+of+Firefly+III&currency_code=EUR&source=url
+
 Over the years a humbling amount of people have donated money to me, to aid with the development of Firefly III. I've experimented with several ways of doing so and I seem to hover back to Paypal every time.
 
 Because I feel that you should know this, I want to stress that I don't *need* your donations. It's not because I am super rich or because I make a billion dollars as a Google engineer, but I have a well paying job that I love very much. I'm not telling you this to brag or something but your donation will buy me an extra beer in the pub or pay for some EC2 instances. 
