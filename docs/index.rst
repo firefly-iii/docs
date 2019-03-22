@@ -85,4 +85,5 @@ You can find Firefly III on `GitHub <https://github.com/firefly-iii/firefly-iii>
    :caption: Contact
 
    ./contact/contact.rst
+   ./contact/note-donations.rst
    ./contact/security.rst
