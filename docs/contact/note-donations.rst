@@ -9,7 +9,7 @@ A note on donations
 
 Over the years a humbling amount of people have donated money to me, to aid with the development of Firefly III. I've experimented with several ways of doing so and I seem to hover back to Paypal every time.
 
-Because I feel that you should know this, I want to stress that I don't *need* your donations. It's not because I am super rich or because I make a billion dollars as a Google engineer, but I have a well paying job that I love very much. I'm not telling you this to brag or something, but your donation will buy me an extra beer in the pub or pay for some EC2 instances. I won't pay for my livelyhood.
+Because I feel that you should know this, I want to stress that I don't *need* your donations. It's not because I am super rich or because I make a billion dollars as a Google engineer, but I have a well paying job that I love very much. I'm not telling you this to brag or something, but your donation will buy me an extra beer in the pub or pay for some EC2 instances. It won't pay for my livelyhood.
 
 I want to make clear to you how I use your donations because there are open source software developers who *do* make a living from their donations. People who really need the support to keep doing what they do.
 
