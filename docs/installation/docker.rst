@@ -75,6 +75,7 @@ Keep in mind that ``POSTGRES_PASSWORD`` and ``FF_DB_PASSWORD`` have to be **iden
 
 Also keep in mind that ``FF_APP_KEY`` must be *exactly* 32 characters long.
 
+If you are using a reverse proxy, you might want to set the ``APP_URL`` and ``TRUSTED_PROXIES`` variables (see :ref:`Docker and Reverse Proxies<docker-and-reverse-proxies>`).
 
 Start the container
 ~~~~~~~~~~~~~~~~~~~
@@ -173,6 +174,8 @@ Surf to Firefly III
 You can now visit Firefly III at ``http://localhost`` or ``http://docker-ip:port`` if it is running on a custom port.
 
 If you're having trouble with (parts of) this step, please check out the :ref:`Docker FAQ <faqdocker>`
+
+.. _docker-and-reverse-proxies:
 
 Docker and reverse proxies
 --------------------------
