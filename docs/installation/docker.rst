@@ -44,7 +44,7 @@ Run this Docker command to start the Firefly III container. Make sure that you e
    -e FF_DB_PASSWORD=CHANGEME \
    jc5x/firefly-iii:latest
 
-Firefly III assumes MySQL. If you use Postgres, add the following environment variable to the command: ``DB_CONNECTION=pgsql``. To read more about the environment variables, scroll down below.
+Firefly III assumes MySQL. If you use Postgres, add the following environment variable to the command: ``FF_DB_CONNECTION=pgsql``. To read more about the environment variables, scroll down below.
 
 When executed this command will fire up a Docker container with Firefly III inside of it. It may take some time to start.
 
