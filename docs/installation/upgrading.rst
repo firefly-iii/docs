@@ -134,4 +134,7 @@ If you're having trouble with (parts of) this step, please check out the :ref:`F
 
 Heroku
 ~~~~~~
-Backup the PGS database from Heroku's dashboard, then create a new application (or destroy the database on your existing one), and import the backup by following these instructions: https://devcenter.heroku.com/articles/heroku-postgres-import-export#import
+Backup the PGS database from Heroku's dashboard, then create a new application (or destroy the database on your existing one). Instructions to do so are here: https://devcenter.heroku.com/articles/heroku-postgres-import-export#export
+Spin up your new firefly heroku installation, then import the backup by following these instructions: https://devcenter.heroku.com/articles/heroku-postgres-import-export#import
+
+Firefly will then set itself up, and you should be good to go from right where you left off on your previous installation.
