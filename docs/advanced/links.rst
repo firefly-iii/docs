@@ -60,7 +60,7 @@ Screenshots
 
    The "Lunch with client" expense is reimbursed by your boss in transaction "Lunch reimbursement".
 
-.. figure:: https://firefly-iii.org/static/docs/4.7.0/links-inward.png
+.. figure:: https://firefly-iii.org/static/docs/4.7.0/links-outward.png
    :alt: Outward link of transaction
 
    Vice versa, "Lunch reimbursement" reimburses you for "Lunch with client".
