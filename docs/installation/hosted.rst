@@ -44,7 +44,7 @@ Anmol Sharma has made a package for Firefly III on YunoHost. `You can install it
 
 Amazon Web Services
 -------------------
-AWS EC2 instances can be provisioned with this startup script to setup Firefly immediately: 
+AWS EC2 instances can be provisioned with this startup script to setup Firefly III immediately: 
 
 .. code-block:: bash
 
