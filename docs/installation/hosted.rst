@@ -44,7 +44,7 @@ Anmol Sharma has made a package for Firefly III on YunoHost. `You can install it
 
 Amazon Web Services
 -------------------
-AWS EC2 instances can be provisioned with this startup script to setup Firefly III immediately: 
+AWS EC2 instances can be provisioned with a startup script to setup Firefly III immediately, but first do note: This is far from the recommended solution for provisioning a VPC with an application installed, and may not even work out of the box by the time you read this. Better solutions might involve other tools like Ansible, Chef, or Docker. Below is the simplest way to get this done without any pre-requisits:
 
 .. code-block:: bash
 
@@ -81,6 +81,6 @@ If you have the AWS CLI installed, then drop that into some file (`firefly`, for
 
 .. code-block:: bash
 
-  aws ec2 run-instances --image-id ami-035be7bafff33b6b6 --instance-type t3.small --count 1 --user-data file://firefly --security-group-ids sg-04fc7b50ca1fc9956 --key-name firefly
+  aws ec2 run-instances --image-id ami-035be7bafff33b6b6 --instance-type t3.small --count 1 --user-data file://firefly --security-group-ids sg-yousgidhere --key-name firefly
 
 *Please* change the `$DATABASE_PASS` variable before using this script.
