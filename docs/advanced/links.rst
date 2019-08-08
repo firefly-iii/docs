@@ -43,7 +43,7 @@ These links work both ways. When transaction A has been refunded by transaction 
 
 You can also add your own link types if you want to.
 
-To make a link with another transaction, go to the overview of a transaction and use the "Link transaction" button from the dropdown menu. Select the correct type of link from the dropdown and select the transaction to be linked. Optionally you can add some comments.
+To make a link with another transaction, go to the overview of a transaction and use the "Link transaction" button under the transaction. If the transaction has been split, select the correct split to link. Select the correct type of link from the dropdown and select the transaction to be linked. Optionally you can add some comments.
 
 You can remove or reverse a link once it has been created.
 
@@ -55,22 +55,17 @@ It is important to realise that links don't *do* anything. They won't change you
 Screenshots
 -----------
 
-.. figure:: https://firefly-iii.org/static/docs/4.7.0/links-inward.png
+.. figure:: https://firefly-iii.org/static/docs/4.8.0/links-inward.png
    :alt: Inward link of transaction
 
    The "Lunch with client" expense is reimbursed by your boss in transaction "Lunch reimbursement".
 
-.. figure:: https://firefly-iii.org/static/docs/4.7.0/links-outward.png
+.. figure:: https://firefly-iii.org/static/docs/4.8.0/links-outward.png
    :alt: Outward link of transaction
 
    Vice versa, "Lunch reimbursement" reimburses you for "Lunch with client".
 
-.. figure:: https://firefly-iii.org/static/docs/4.7.0/links-dropdown.png
-   :alt: Dropdown menu to create a link
-
-   Select "Link transaction" to create a link.
-
-.. figure:: https://firefly-iii.org/static/docs/4.7.0/links-modal.png
+.. figure:: https://firefly-iii.org/static/docs/4.8.0/links-modal.png
    :alt: Modal dialog to create a link
 
    Use this modal to create a new link

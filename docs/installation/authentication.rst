@@ -113,3 +113,25 @@ The following configuration will allow you to connect to Forum System's excellen
 
    # field to sync as local username.
    ADLDAP_SYNC_FIELD=uid
+
+
+Two-step authentication
+-----------------------
+
+Two-step authentication, or two-factor authentication (2FA) asks you for an extra code to enter. This adds security, so even when you lose your password your account is still protected.
+
+You can enable it in your profile.
+
+.. figure:: https://firefly-iii.org/static/docs/4.8.0/2fa-enable.png
+   :alt: Button in the account list
+   
+   The button is shown in your list of accounts
+
+If you enable 2FA, you will also see eight backup codes that you should save just in case.
+
+.. figure:: https://firefly-iii.org/static/docs/4.8.0/2fa-codes.png
+   :alt: Button in the account list
+   
+   The button is shown in your list of accounts
+
+To confirm your 2FA settings, submit a code from your Authenticator app.

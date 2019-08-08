@@ -62,11 +62,6 @@ Screenshots
    
    The button is shown in your list of accounts
 
-.. figure:: https://firefly-iii.org/static/docs/4.7.0/reconcile-account-show.png
-   :alt: Reconcile button in account view
-   
-   Each asset account view has the button as well.
-
 .. figure:: https://firefly-iii.org/static/docs/4.7.0/reconcile-set-amounts.png
    :alt: Set amounts and dates
    

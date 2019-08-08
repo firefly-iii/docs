@@ -131,4 +131,3 @@ Any time you create a deposit, transfer or a withdrawal, Firefly III allows you 
 
 You can split your entire groceries-receipt into small "sub"-transactions. You can specify each component of your salary.
 
-Read more about this on the :ref:`page about split transactions <splits>`.

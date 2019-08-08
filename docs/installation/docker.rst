@@ -28,7 +28,7 @@ These are used to persistently store uploaded files and exported data.
 Start the container
 ~~~~~~~~~~~~~~~~~~~
 
-Run this Docker command to start the Firefly III container. Make sure that you edit the environment variables to match your own database. You should really change the ``FF_APP_KEY`` as well. It should be a random string of *exactly* 32 characters.
+Run this Docker command to start the Firefly III container. Make sure that you edit the environment variables to match your own database. You should really change the ``APP_KEY`` as well. It should be a random string of *exactly* 32 characters.
 
 .. code-block:: bash
 
@@ -36,19 +36,36 @@ Run this Docker command to start the Firefly III container. Make sure that you e
    -v firefly_iii_export:/var/www/firefly-iii/storage/export \
    -v firefly_iii_upload:/var/www/firefly-iii/storage/upload \ 
    -p 80:80 \
-   -e FF_APP_ENV=local \
-   -e FF_APP_KEY=S0m3R@nd0mString0f32Ch@rsEx@ct1y \
-   -e FF_DB_HOST=CHANGEME \
-   -e FF_DB_NAME=CHANGEME \
-   -e FF_DB_USER=CHANGEME \
-   -e FF_DB_PASSWORD=CHANGEME \
+   -e APP_ENV=local \
+   -e APP_KEY=REPLACEME \
+   -e DB_HOST=CHANGEME \
+   -e DB_NAME=CHANGEME \
+   -e DB_USER=CHANGEME \
+   -e DB_PASSWORD=CHANGEME \
    jc5x/firefly-iii:latest
 
-Firefly III assumes MySQL. If you use Postgres, add the following environment variable to the command: ``FF_DB_CONNECTION=pgsql``. To read more about the environment variables, scroll down below.
+An alternative to this command is the following:
 
-When executed this command will fire up a Docker container with Firefly III inside of it. It may take some time to start.
+.. code-block:: bash
+   
+   docker run -d \
+   -v firefly_iii_export:/var/www/firefly-iii/storage/export \
+   -v firefly_iii_upload:/var/www/firefly-iii/storage/upload \
+   --env-file .env \
+   -p 80:80 \
+   jc5x/firefly-iii:latest
 
-If you're having trouble with (parts of) this step, please check out the :ref:`Docker FAQ <faqdocker>`
+In this alternative command, you see a reference to a ``.env`` file. You can download `this file <https://raw.githubusercontent.com/firefly-iii/firefly-iii/master/docker-variables.txt>`_ from GitHub. Save it as ``.env`` and fill it in. 
+
+Firefly III assumes that you are running MySQL. If you use Postgres, add the following environment variable to the command: ``FF_DB_CONNECTION=pgsql``, or update the ``.env``-file. To read more about the environment variables, scroll down below.
+
+When executed this command will fire up a Docker container with Firefly III inside of it. It may take some time to start. You can track the progress of the installation using
+
+.. code-block:: bash
+   
+   docker logs -f <container>
+
+If you're having trouble with (parts of) this step, please check out the :ref:`Docker FAQ <faqdocker>`.
 
 Docker Hub with automatic updates via docker compose
 ----------------------------------------------------
@@ -58,24 +75,22 @@ Docker Hub with automatic updates via docker compose
 Download compose file
 ~~~~~~~~~~~~~~~~~~~~~
 
-Download the compose file located in `the Github repository <https://github.com/firefly-iii/firefly-iii/blob/master/docker-compose.yml>`_ and place it somewhere convenient. 
+Download the compose file located in `the Github repository <https://raw.githubusercontent.com/firefly-iii/firefly-iii/master/docker-compose.yml>`_ and place it somewhere convenient. 
 
-Make sure you grab the raw file, and don't copy paste from your browser. The spaces in the file are very important.
+Make sure you grab the raw file, and don't copy paste from your browser. The spaces in the file are very important!
 
-Edit the file
-~~~~~~~~~~~~~
+Configure docker-compose 
+~~~~~~~~~~~~~~~~~~~~~~~~
 
-Modify the following variables in the docker compose file. This is not mandatory but highly recommended for security purposes.
+To configure your Docker compose installation, get `this file <https://raw.githubusercontent.com/firefly-iii/firefly-iii/master/docker-variables.txt>`_ from the GitHub repository and store it as ``.env`` in the directory where the ``docker-compose.yml`` file is. 
 
- * ``POSTGRES_PASSWORD``
- * ``FF_DB_PASSWORD``
- * ``FF_APP_KEY``
+You can edit the file as you see fit, because several features in Firefly III are unlocked using the ``.env`` file.
 
-Keep in mind that ``POSTGRES_PASSWORD`` and ``FF_DB_PASSWORD`` have to be **identical**. ``POSTGRES_PASSWORD`` is used to initialise the database, and ``FF_DB_PASSWORD`` is used to connect to the database. So if these variables are different, it won't run.
+Keep in mind that ``POSTGRES_PASSWORD`` in ``docker-compose.yml`` and ``DB_PASSWORD`` in ``.env`` have to be **identical**. ``POSTGRES_PASSWORD`` is used to initialise the database, and ``DB_PASSWORD`` is used to connect to the database. So if these variables are different, it won't run.
 
-Also keep in mind that ``FF_APP_KEY`` must be *exactly* 32 characters long.
+Also keep in mind that ``APP_KEY`` must be *exactly* 32 characters long.
 
-If you are using a reverse proxy, you might want to set the ``APP_URL`` and ``TRUSTED_PROXIES`` variables (see :ref:`Docker and Reverse Proxies<docker-and-reverse-proxies>`).
+If you are using a reverse proxy, you might want to set the ``TRUSTED_PROXIES`` variables (see :ref:`Docker and Reverse Proxies<docker-and-reverse-proxies>`).
 
 Start the container
 ~~~~~~~~~~~~~~~~~~~
@@ -94,8 +109,8 @@ If this is the first time you're running Firefly III then you must initialize th
 .. code-block:: bash
 
    docker-compose exec firefly_iii_app php artisan migrate --seed
-   docker-compose exec firefly_iii_app php artisan firefly:upgrade-database
-   docker-compose exec firefly_iii_app php artisan firefly:verify
+   docker-compose exec firefly_iii_app php artisan firefly-iii:upgrade-database
+   docker-compose exec firefly_iii_app php artisan firefly-iii:verify
    docker-compose exec firefly_iii_app php artisan cache:clear
 
 Surf to Firefly III
@@ -129,12 +144,12 @@ Use the following run commands as a template.
 Change the following variables in the commands you see in the block below. This is not mandatory but highly recommended.
 
  * ``POSTGRES_PASSWORD`` must be changed to a suitable database password of your choice.
- * ``FF_DB_PASSWORD`` must be equal to this password.
- * ``FF_APP_KEY``
+ * ``DB_PASSWORD`` must be equal to this password.
+ * ``APP_KEY``
 
-Keep in mind that ``POSTGRES_PASSWORD`` and ``FF_DB_PASSWORD`` have to be *identical*. ``POSTGRES_PASSWORD`` is used to initialise the database, and ``FF_DB_PASSWORD`` is used to connect to the database. So if these variables are different, it won't run.
+Keep in mind that ``POSTGRES_PASSWORD`` and ``DB_PASSWORD`` have to be *identical*. ``POSTGRES_PASSWORD`` is used to initialise the database, and ``DB_PASSWORD`` is used to connect to the database. So if these variables are different, it won't run.
 
-Also keep in mind that ``FF_APP_KEY`` must be *exactly* 32 characters long.
+Also keep in mind that ``APP_KEY`` must be *exactly* 32 characters long.
 
 Then run the commands you see here.
 
@@ -156,17 +171,31 @@ Then, to start Firefly III itself:
    docker run -d \
    --name=firefly_iii_app \
    --link=firefly_iii_db \
-   -e FF_DB_HOST=firefly_iii_db \
-   -e FF_DB_CONNECTION=pgsql \
-   -e FF_DB_NAME=firefly \
-   -e FF_DB_USER=firefly \
-   -e FF_DB_PASSWORD=firefly \
-   -e FF_APP_KEY=S0meRandomStr1ngOf32CharsExactly \
-   -e FF_APP_ENV=local \
+   -e DB_HOST=firefly_iii_db \
+   -e DB_CONNECTION=pgsql \
+   -e DB_NAME=firefly \
+   -e DB_USER=firefly \
+   -e DB_PASSWORD=firefly \
+   -e APP_KEY=S0meRandomStr1ngOf32CharsExactly \
+   -e APP_ENV=local \
    -p 80:80 \
    -v firefly_iii_export:/var/www/firefly-iii/storage/export \
    -v firefly_iii_upload:/var/www/firefly-iii/storage/upload \
-   jc5x/firefly-iii
+   jc5x/firefly-iii:latest
+
+An alternative command can be used as well. Like the examples in the sections above, you can use `this file <https://raw.githubusercontent.com/firefly-iii/firefly-iii/master/docker-variables.txt>`_ filled with environment variables instead of the long command line thing.
+
+.. code-block:: bash
+   
+   docker run -d \
+   --name=firefly_iii_app \
+   --link=firefly_iii_db \
+   --env-file .env \
+   -p 80:80 \
+   -v firefly_iii_export:/var/www/firefly-iii/storage/export \
+   -v firefly_iii_upload:/var/www/firefly-iii/storage/upload \
+   jc5x/firefly-iii:latest
+
 
 Surf to Firefly III
 ~~~~~~~~~~~~~~~~~~~
@@ -180,12 +209,11 @@ If you're having trouble with (parts of) this step, please check out the :ref:`D
 Docker and reverse proxies
 --------------------------
 
-In the ``.env`` file you will find a variable called ``TRUSTED_PROXIES`` which must be set to either the reverse proxy machine or simply ``**``. Set ``APP_URL`` to the URL Firefly III will be on. For example:
+In the ``.env`` file you will find a variable called ``TRUSTED_PROXIES`` which must be set to either the reverse proxy machine or simply ``**``. For example:
 
 .. code-block:: bash
 
    # ...
-   APP_URL=https://firefly.example.com
    TRUSTED_PROXIES=**
    # ...
 
@@ -193,16 +221,12 @@ On the command line, this would be:
 
 .. code-block:: bash
 
-   -e FF_DB_HOST=mysql \
-   -e FF_DB_NAME=firefly \
-   -e FF_DB_USER=firefly \
-   -e FF_DB_PASSWORD=somepw \
-   -e FF_APP_KEY=some-secret-string \
-   -e FF_APP_ENV=local \
-   -e APP_URL=https://firefly.example.com \
+   -e DB_HOST=mysql \
+   -e DB_NAME=firefly \
+   -e DB_USER=firefly \
+   -e APP_ENV=local \
+   # ....
    -e TRUSTED_PROXIES=** \
-
-Keep in mind that the ``APP_URL`` setting does absolutely nothing for your reverse proxy or anything! It's only used to determine the URL of Firefly III when Firefly III is incapable of doing so: when using the command line or when drafting emails. 
 
 If you wish to enable SSL as well, Firefly III (or rather Laravel) respects the HTTP header `X-Forwarded-Proto`. Add this to your vhost file:
 
@@ -221,4 +245,6 @@ If you're having trouble with (parts of) this step, please check out the :ref:`D
 
 Supported Docker environment variables
 --------------------------------------
-There are many environment variables that you can set in Firefly III. Just check out the `default docker env file <https://github.com/firefly-iii/firefly-iii/blob/master/.deploy/docker/.env.docker>`_ that lists them all. Each value within ${BRACKETS} can be replaced on the command line.
+There are many environment variables that you can set in Firefly III. Just check out the `example ENV file <https://raw.githubusercontent.com/firefly-iii/firefly-iii/master/docker-variables.txt>`_ that lists them all.
+
+Each value can be used on the command line, or with the ``--env-file .env \`` argument you saw before.

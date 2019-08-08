@@ -3,7 +3,7 @@ Firefly III documentation
 
 Here you will find everything you want to know about Firefly III, the self-hosted personal finances manager.
 
-You can find Firefly III on `GitHub <https://github.com/firefly-iii/firefly-iii>`_.
+You can find the source of Firefly III on `GitHub <https://github.com/firefly-iii/firefly-iii>`_.
 
 .. toctree::
    :maxdepth: 1
@@ -32,14 +32,13 @@ You can find Firefly III on `GitHub <https://github.com/firefly-iii/firefly-iii>
 
 .. toctree::
    :maxdepth: 1
-   :caption: Import and export
+   :caption: Import transactions
 
    ./import/csv.rst
    ./import/spectre.rst
    ./import/bunq.rst
    ./import/fints.rst
    ./import/ynab.rst
-   ./import/export.rst
 
 .. toctree::
    :maxdepth: 1
@@ -61,7 +60,6 @@ You can find Firefly III on `GitHub <https://github.com/firefly-iii/firefly-iii>
    ./advanced/recurring.rst
    ./advanced/reports.rst
    ./advanced/rules.rst
-   ./advanced/splits.rst
    ./advanced/links.rst
    ./advanced/reconcile.rst
    
@@ -86,5 +84,4 @@ You can find Firefly III on `GitHub <https://github.com/firefly-iii/firefly-iii>
    :caption: Contact
 
    ./contact/contact.rst
-   ./contact/note-donations.rst
    ./contact/security.rst

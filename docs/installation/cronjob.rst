@@ -18,7 +18,7 @@ The content of the cron job must be as follows:
 .. code-block:: bash
    
    # cron job for Firefly III
-   0 3 * * * /usr/bin/php /var/www/firefly-iii/artisan firefly:cron
+   0 3 * * * /usr/bin/php /var/www/firefly-iii/artisan firefly-iii:cron
 
 Of course, you must make sure to replace ``/usr/bin/php`` with *your* path to PHP and replace ``/var/www/firefly-iii/`` with the path to *your* Firefly III installation.
 
@@ -40,8 +40,6 @@ Of course you must replace the URL with the URL of your own Firefly III installa
 
 Make IFTTT do it
 ----------------
-
-
 
 If you can't run a cron job, you can always make `If This, Then That (IFTTT) <https://ifttt.com/>`_ do it for you. This will only work if your Firefly III installation can be reached from the internet. Here's what you do.
 
@@ -117,5 +115,46 @@ You will see a final overview
 
 Press Finish, and you're done!
 
+Cron jobs in Docker
+-------------------
+The Docker image does *not* support cron jobs. This is by design, because Docker images should do as little as possible. There are several solutions.
 
+Call the cron job from outside the Docker container
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Use any tool or system to call the URL as documented above.
+
+Call the cron job from the host system
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The command would be something like this:
+
+.. code-block:: bash
+   
+   0 3 * * * docker exec <container> /usr/local/bin/php /var/www/firefly-iii/artisan firefly-iii:cron
+
+Replace ``<container>`` with the container ID or with ``firefly_iii_app`` in case of Docker compose.
+
+Run an image that calls the cron job
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Here's an example:
+
+.. code-block:: bash
+
+   docker create --name=Firefly-Cronjob alpine sh -c "echo \"0 3 * * * wget <Firefly III URL>/cron/run/<TOKEN>\" | crontab - && crond -f -L /dev/stdout"
+   
+
+Of course, replace ``<Firefly III URL>`` with your Firefly III URL and replace ``<TOKEN>`` with your command line token. You can find it in your profile.
+
+Expand the docker-compose file
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: yaml
+
+   cron:
+     image: alpine
+     command: sh -c "echo \"0 3 * * * wget https://<Firefly III URL>/cron/run/<TOKEN>\" | crontab - && crond -f -L /dev/stdout"
+   
+
+Of course too you replace ``<Firefly III URL>`` with your Firefly III URL and replace ``<TOKEN>`` with your command line token. You can find it in your profile.

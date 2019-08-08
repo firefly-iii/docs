@@ -112,8 +112,8 @@ Then you are ready to install the database in SQLite:
 .. code-block:: bash
 
    php artisan migrate --seed
-   php artisan firefly:upgrade-database
-   php artisan firefly:verify
+   php artisan firefly-iii:upgrade-database
+   php artisan firefly-iii:verify
 
 And presto!
 
@@ -127,8 +127,8 @@ Then you are ready to install the database in PostgreSQL:
 .. code-block:: bash
 
    php artisan migrate --seed
-   php artisan firefly:upgrade-database
-   php artisan firefly:verify
+   php artisan firefly-iii:upgrade-database
+   php artisan firefly-iii:verify
 
 I see a white page and nothing else?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
