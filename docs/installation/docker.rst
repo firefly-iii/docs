@@ -110,7 +110,6 @@ If this is the first time you're running Firefly III then you must initialize th
 
    docker-compose exec firefly_iii_app php artisan migrate --seed
    docker-compose exec firefly_iii_app php artisan firefly-iii:upgrade-database
-   docker-compose exec firefly_iii_app php artisan firefly-iii:verify
    docker-compose exec firefly_iii_app php artisan cache:clear
 
 Surf to Firefly III

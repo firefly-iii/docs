@@ -77,7 +77,6 @@ Then, run the following commands to finish the upgrade:
    php artisan cache:clear
    php artisan migrate --seed
    php artisan firefly-iii:upgrade-database
-   php artisan firefly-iii:verify
    php artisan passport:install
    php artisan cache:clear
    cd ..
@@ -127,7 +126,6 @@ Go to the ``firefly-iii`` folder and run these commands:
    php artisan firefly-iii:decrypt-all
    php artisan cache:clear
    php artisan firefly-iii:upgrade-database
-   php artisan firefly-iii:verify
    php artisan passport:install
    php artisan cache:clear
 

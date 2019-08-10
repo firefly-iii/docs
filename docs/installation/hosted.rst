@@ -74,7 +74,6 @@ AWS EC2 instances can be provisioned with a startup script to setup Firefly III 
   find /var/www -type f -exec chmod 0664 {} \;
   php /var/www/html/artisan migrate:fresh --seed 
   php /var/www/html/artisan firefly-iii:upgrade-database
-  php /var/www/html/artisan firefly-iii:verify
   php /var/www/html/artisan passport:install
 
 If you have the AWS CLI installed, then drop that into some file (`firefly`, for example) and run this command to spin up the server: 

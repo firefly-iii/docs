@@ -106,7 +106,6 @@ This step is very important, because Firefly III needs a database to work with a
    
    php artisan migrate:refresh --seed
    php artisan firefly-iii:upgrade-database
-   php artisan firefly-iii:verify
    php artisan passport:install
 
 Now you should be able to visit `http://localhost/firefly-iii/ <http://localhost/firefly-iii/public>`_ and see Firefly III.
