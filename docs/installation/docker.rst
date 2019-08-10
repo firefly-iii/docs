@@ -39,8 +39,8 @@ Run this Docker command to start the Firefly III container. Make sure that you e
    -e APP_ENV=local \
    -e APP_KEY=REPLACEME \
    -e DB_HOST=CHANGEME \
-   -e DB_NAME=CHANGEME \
-   -e DB_USER=CHANGEME \
+   -e DB_DATABASE=CHANGEME \
+   -e DB_USERNAME=CHANGEME \
    -e DB_PASSWORD=CHANGEME \
    jc5x/firefly-iii:latest
 
@@ -173,8 +173,8 @@ Then, to start Firefly III itself:
    --link=firefly_iii_db \
    -e DB_HOST=firefly_iii_db \
    -e DB_CONNECTION=pgsql \
-   -e DB_NAME=firefly \
-   -e DB_USER=firefly \
+   -e DB_DATABASE=firefly \
+   -e DB_USERNAME=firefly \
    -e DB_PASSWORD=firefly \
    -e APP_KEY=S0meRandomStr1ngOf32CharsExactly \
    -e APP_ENV=local \
@@ -222,8 +222,8 @@ On the command line, this would be:
 .. code-block:: bash
 
    -e DB_HOST=mysql \
-   -e DB_NAME=firefly \
-   -e DB_USER=firefly \
+   -e DB_DATABASE=firefly \
+   -e DB_USERNAME=firefly \
    -e APP_ENV=local \
    # ....
    -e TRUSTED_PROXIES=** \
