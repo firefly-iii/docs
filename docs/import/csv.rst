@@ -121,7 +121,7 @@ When you have a CSV file **and** a configuration file, you can run an import ove
 
 .. code-block:: bash
 
-   php artisan firefly-iii:create-import
+   php artisan firefly-iii:csv-import
 
 It has two mandatory arguments:
 
@@ -136,13 +136,13 @@ The command then becomes:
 
 .. code-block:: bash
 
-   php artisan firefly-iii:create-import file.csv config.json --token=<token>
+   php artisan firefly-iii:csv-import file.csv config.json --token=<token>
 
 You can read more about this command in the help text.
 
 .. code-block:: bash
 
-   php artisan help firefly-iii:create-import
+   php artisan help firefly-iii:csv-import
 
 Best practices
 --------------
