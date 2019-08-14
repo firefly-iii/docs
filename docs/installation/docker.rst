@@ -55,7 +55,7 @@ An alternative to this command is the following:
    -p 80:80 \
    jc5x/firefly-iii:latest
 
-In this alternative command, you see a reference to a ``.env`` file. You can download `this file <https://raw.githubusercontent.com/firefly-iii/firefly-iii/master/docker-variables.txt>`_ from GitHub. Save it as ``.env`` and fill it in. 
+In this alternative command, you see a reference to a ``.env`` file. You can download `this file <https://raw.githubusercontent.com/firefly-iii/firefly-iii/master/.env.example>`_ from GitHub. Save it as ``.env`` and fill it in. 
 
 Firefly III assumes that you are running MySQL. If you use Postgres, add the following environment variable to the command: ``FF_DB_CONNECTION=pgsql``, or update the ``.env``-file. To read more about the environment variables, scroll down below.
 
@@ -82,13 +82,15 @@ Make sure you grab the raw file, and don't copy paste from your browser. The spa
 Configure docker-compose 
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-To configure your Docker compose installation, get `this file <https://raw.githubusercontent.com/firefly-iii/firefly-iii/master/docker-variables.txt>`_ from the GitHub repository and store it as ``.env`` in the directory where the ``docker-compose.yml`` file is. 
+To configure your Docker compose installation, get `this file <https://raw.githubusercontent.com/firefly-iii/firefly-iii/master/.env.example>`_ from the GitHub repository and store it as ``.env`` in the directory where the ``docker-compose.yml`` file is. 
 
 You can edit the file as you see fit, because several features in Firefly III are unlocked using the ``.env`` file.
 
 Keep in mind that ``POSTGRES_PASSWORD`` in ``docker-compose.yml`` and ``DB_PASSWORD`` in ``.env`` have to be **identical**. ``POSTGRES_PASSWORD`` is used to initialise the database, and ``DB_PASSWORD`` is used to connect to the database. So if these variables are different, it won't run.
 
 Also keep in mind that ``APP_KEY`` must be *exactly* 32 characters long.
+
+A **mandatory** change is that you must change ``DB_HOST`` to ``firefly_iii_db`` for this to work.
 
 If you are using a reverse proxy, you might want to set the ``TRUSTED_PROXIES`` variables (see :ref:`Docker and Reverse Proxies<docker-and-reverse-proxies>`).
 
@@ -101,16 +103,8 @@ Run the following command:
    
    docker-compose -f docker-compose.yml up -d
 
-Initialize the database
-~~~~~~~~~~~~~~~~~~~~~~~
+It may take a few minutes to launch.
 
-If this is the first time you're running Firefly III then you must initialize the database. Use the following commands to do so:
-
-.. code-block:: bash
-
-   docker-compose exec firefly_iii_app php artisan migrate --seed
-   docker-compose exec firefly_iii_app php artisan firefly-iii:upgrade-database
-   docker-compose exec firefly_iii_app php artisan cache:clear
 
 Surf to Firefly III
 ~~~~~~~~~~~~~~~~~~~
