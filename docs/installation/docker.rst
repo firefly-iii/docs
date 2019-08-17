@@ -176,7 +176,7 @@ Then, to start Firefly III itself:
    -v firefly_iii_upload:/var/www/firefly-iii/storage/upload \
    jc5x/firefly-iii:latest
 
-An alternative command can be used as well. Like the examples in the sections above, you can use `this file <https://raw.githubusercontent.com/firefly-iii/firefly-iii/master/docker-variables.txt>`_ filled with environment variables instead of the long command line thing.
+An alternative command can be used as well. Like the examples in the sections above, you can use `this file <https://raw.githubusercontent.com/firefly-iii/firefly-iii/master/.env.example>`_ filled with environment variables instead of the long command line thing.
 
 .. code-block:: bash
    
@@ -238,6 +238,6 @@ If you're having trouble with (parts of) this step, please check out the :ref:`D
 
 Supported Docker environment variables
 --------------------------------------
-There are many environment variables that you can set in Firefly III. Just check out the `example ENV file <https://raw.githubusercontent.com/firefly-iii/firefly-iii/master/docker-variables.txt>`_ that lists them all.
+There are many environment variables that you can set in Firefly III. Just check out the `example ENV file <https://raw.githubusercontent.com/firefly-iii/firefly-iii/master/.env.example>`_ that lists them all.
 
 Each value can be used on the command line, or with the ``--env-file .env \`` argument you saw before.
