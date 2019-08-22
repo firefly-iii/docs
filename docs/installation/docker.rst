@@ -144,6 +144,8 @@ Keep in mind that ``POSTGRES_PASSWORD`` and ``DB_PASSWORD`` have to be *identica
 
 Also keep in mind that ``APP_KEY`` must be *exactly* 32 characters long.
 
+Additionally, Postgres uses the username as the database name.
+
 Then run the commands you see here.
 
 To start the database:
