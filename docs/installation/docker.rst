@@ -9,8 +9,6 @@ Docker
 
 There are several ways of installing Firefly III using Docker, which will be detailed below. If you're new to Docker or are not sure how to use Docker please thread carefully.
 
-Firefly III requires Linux containers running in your machine.
-
 Straight from Docker Hub
 ------------------------
 With these commands you create one container: the container for Firefly III itself. If you do this, you should already have a MySQL or a Postgres database running somewhere. For example, when you have one central database container for all of your docker containers. Without such a database container, Firefly III will not work.
