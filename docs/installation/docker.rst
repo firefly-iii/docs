@@ -41,14 +41,14 @@ Run this Docker command to start the Firefly III container. Make sure that you e
    -p 80:80 \
    -e APP_KEY=CHANGEME_32_CHARS \
    -e DB_HOST=CHANGEME \
-   -e DB_POST=CHANGEME \
+   -e DB_PORT=5432 \
    -e DB_DATABASE=CHANGEME \
    -e DB_USERNAME=CHANGEME \
    -e DB_PASSWORD=CHANGEME \
    jc5x/firefly-iii:latest
 
 
-Firefly III assumes that you're using PostgreSQL, which a lot of people do. If you use MySQL, add the following environment variable to the command: ``DB_CONNECTION=mysql``.
+Firefly III assumes that you're using PostgreSQL, which a lot of people do. If you use MySQL, add the following environment variable to the command: ``DB_CONNECTION=mysql`` and make sure you change the port, ``DB_PORT=3306``.
 
 When executed this command will fire up a Docker container with Firefly III inside of it. It may take some time to start. If the database is set up properly it will automatically migrate and install a default database and you should be able to surf to your container (usually located at localhost) to use Firefly III.
 
