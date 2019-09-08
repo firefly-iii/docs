@@ -20,11 +20,11 @@ If you're running Firefly III in Docker, make sure you grab:
 
 That way you have everything you need in case of problems.
 
-For example, to backup the database volume in Docker:
+For example, to backup the database volume:
 
 - backup with ``docker run --rm -v "firefly_iii_db:/tmp" -v "$HOME/backups/firefly:/backup" ubuntu tar -czvf /backup/firefly_db.tar /tmp``
 - restore with ``docker run --rm -v "firefly_iii_db:/recover" -v "$HOME/backups/firefly:/backup" ubuntu tar -xvf /backup/firefly_db.tar -C /recover --strip 1``
 
-A word of caution: Check that the volume exists **BEFORE** trying to back it up! If a named volume doesn't exist docker will create an empty one, and the command will backup that empty volume - *wiping out the existing backup*.
+A word of caution: Check that the volume exists **BEFORE** trying to back it up! If a named volume doesn't exist Docker will create an empty one, and the command will backup that empty volume - *wiping out the existing backup*.
 
 To get a better idea of how this works, see Docker's `official documentation <https://docs.docker.com/storage/volumes/#backup-restore-or-migrate-data-volumes>`_.
