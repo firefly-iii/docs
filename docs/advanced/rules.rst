@@ -11,10 +11,9 @@ This is especially useful when you're importing data and you wish all transactio
 Rule groups
 -----------
 
-Rules are divided over rule groups. Each rule group has rules in a specific order. You can set rule groups to stop processing other rule (groups).
+Rules are divided over rule groups. Each rule group has rules in a specific order.
 
-Rules can be set to be "strict" or not. If a rule is set to be strict, EACH trigger must match. If a rule is not scrict, ANY trigger must match.
-
+Rules can be set to be "strict" or not. If a rule is set to be strict, ALL triggers must match for the rule to fire. If a rule is not scrict, ANY trigger is enough.
 
 Triggers
 --------
@@ -26,7 +25,7 @@ A rule must spring into action at the right time! This is decided by triggers th
 * When the amount is above *X*.
 * When the budget is *X*.
 
-Rules can be set to be "strict" or not. If a rule is set to be strict, EACH trigger must match. If a rule is not scrict, ANY trigger must match.
+Rules can be set to be "strict" or not. If a rule is set to be strict, ALL triggers must match for the rule to fire. If a rule is not scrict, ANY trigger is enough.
 
 Actions
 -------
@@ -40,6 +39,16 @@ When the triggers are hit (either ALL or ANY, see the "strict" option), Firefly 
 Combined, this gives you a lot of power over your financial data.
 
 You cannot fire other rules from a rule.
+
+Stop processing
+~~~~~~~~~~~~~~~
+
+When you create a new rule, you can set an option called "stop processing". If you set it, and the rule is triggered, other rules in the group will NOT be processed any more.
+
+For any trigger, you can also set the "stop processing" option. If you do, and the trigger is hit, it will stop processing other triggers in the rule. Whether or not the actions get executed depends on how many triggers were fired so far. If you hit 2 out of 2 when "stop processing" was hit, the actions will fire.
+
+For each action, you can set "stop processing" as well. When you do, any actions after the current one will not fire.
+
 
 Converting to another transaction type
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
