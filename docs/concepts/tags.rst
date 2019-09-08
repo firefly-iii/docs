@@ -13,6 +13,11 @@ Tags can be useful to group expenses together, possibly in another context than 
 
 Or maybe something else entirely. This is up to you.
 
+Mapbox
+------
+
+You can add a `Mapbox <https://www.mapbox.com/>`_ API key to your ``.env`` file which allows you to give tags a location.
+
 Special tags
 ------------
 
