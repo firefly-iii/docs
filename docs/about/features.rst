@@ -18,7 +18,7 @@ The most exciting features are:
   * FinTS
   * bunq
   * Spectre (offering thousands of connected banks)
-  * CVS files 
+  * CSV files 
   * YNAB
 
 Then the things that make you go "yeah OK, makes sense".
