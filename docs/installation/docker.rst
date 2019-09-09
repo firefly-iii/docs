@@ -7,7 +7,7 @@ Docker
 .. contents::
    :local:
 
-There are several ways of installing Firefly III using Docker, which will be detailed below. If you're new to Docker or are not sure how to use Docker please thread carefully.
+There are several ways of installing Firefly III using Docker, which will be detailed below. If you're new to Docker or are not sure how to use Docker please tread carefully.
 
 Straight from Docker Hub
 ------------------------
