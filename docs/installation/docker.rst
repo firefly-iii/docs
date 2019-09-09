@@ -165,6 +165,7 @@ Then, to start Firefly III itself:
    -e DB_HOST=firefly_iii_db \
    -e DB_DATABASE=firefly \
    -e DB_USERNAME=firefly \
+   -e DB_PORT=5432 \
    -e DB_PASSWORD=firefly \
    -e APP_KEY=CHANGEME_32_CHARS \
    -p 80:80 \
@@ -221,6 +222,7 @@ On the command line, this would be something like:
    -e DB_HOST=mysql \
    -e DB_DATABASE=firefly \
    -e DB_USERNAME=firefly \
+   -e DB_PORT=5432 \
    -e DB_PASSWORD=somepw \
    -e APP_KEY=CHANGEME_32_CHARS \
    -e APP_URL=https://firefly.example.com \
