@@ -62,16 +62,16 @@ Docker Hub with automatic updates via docker compose
 Download compose file
 ~~~~~~~~~~~~~~~~~~~~~
 
-Download the compose file located in `the GitHub repository <https://raw.githubusercontent.com/firefly-iii/firefly-iii/master/docker-compose.yml>`_ and place it somewhere convenient. It doesn't really matter where you place it.
+Download `the Docker compose file <https://raw.githubusercontent.com/firefly-iii/firefly-iii/master/docker-compose.yml>`_ located in the GitHub repository and place it somewhere convenient. It doesn't really matter where you place it.
 
 Make sure you grab the raw file, and don't copy paste from your browser. The spaces in the file are very important. So use "Save As".
 
 Download environment variables
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Download the environment variable file from the `GitHub repository <https://raw.githubusercontent.com/firefly-iii/firefly-iii/master/.env.example>`_ and place in the same folder as the ``docker-compose.yml``.
+Download `the environment variable file <https://raw.githubusercontent.com/firefly-iii/firefly-iii/master/.env.example>`_ from the GitHub repository and place in the same folder as the ``docker-compose.yml``.
 
-It is important that you rename the file to ``.env``. You can see in the Docker compose file why this is. There is a reference to it: ``env_file: .env``. If you don't name it ``.env.`` but something else, you must edit the Docker compose file.
+It is **important** that you rename the file to ``.env``. You can see in the Docker compose file why this is. There is a reference to it: ``env_file: .env``. If you don't name it ``.env.`` but something else, you must edit the Docker compose file.
 
 
 Start the container
