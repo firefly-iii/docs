@@ -8,6 +8,8 @@ Import from bunq
 
 Firefly III supports the bunq API. Although support is in beta and may not be perfect, it works surprisingly well.
 
+**Take note!** The bunq API is disabled in Firefly III v4.8.1 and onwards. My apologies for the inconvenience. The bunq API changes often and Firefly III is currently incompatible with their API. I hope to remedy this situation soon. Last update: 14 sept 2019.
+
 First time
 ----------
 

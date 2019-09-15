@@ -37,6 +37,18 @@ You can change these dates to your liking. There are a few magic words available
 * ``previousFiscalYearStart``. Will return the start of the last fiscal year, if you have set this in your preferences.
 * ``previousFiscalYearEnd``. Will return the end of the last fiscal year, if you have set this in your preferences.
 
+You can also replace ``1,2,3`` (which denotes the asset accounts to include in the report) with ``allAssetAccounts`` to include all of your asset accounts in the report.
+
+URL options for budget, category and tag reports
+------------------------------------------------
+
+The URL's for these three report types look something like this: ``/reports/budget/1,2,3/6,7,8/20180101/20180131``. 
+
+As you can see a new parameter has appeared, ``6,7,8`` which indicates with objects the report should be about. These could refer to budgets, tags or categories, depending on the type of report you're viewing.
+
+You can replace this second parameter with ``allBudgets``, ``allCategories`` or ``allTags`` in order to include all of the objects in the report.
+
+
 Available reports
 -----------------
 
