@@ -3,29 +3,8 @@
 
 [![The index of Firefly III](https://firefly-iii.org/static/screenshots/4.7.4/tiny/index.png "The index of Firefly III")](https://firefly-iii.org/static/screenshots/4.7.4/index.png)
 
+[![The account overview of Firefly III](https://firefly-iii.org/static/screenshots/4.7.4/tiny/account.png "The account overview of Firefly III")](https://firefly-iii.org/static/screenshots/4.7.4/account.png)
 
+[![Overview of all budgets](https://firefly-iii.org/static/screenshots/4.7.4/tiny/budget.png "Overview of all budgets")](https://firefly-iii.org/static/screenshots/4.7.4/budget.png)
 
-
-
-   :target: 
-.. |scr2| image:: https://firefly-iii.org/static/screenshots/4.7.4/tiny/account.png
-   :height: 400px
-   :width: 400px
-   :alt: The account overview of Firefly III
-   :target: https://firefly-iii.org/static/screenshots/4.7.4/account.png
-.. |scr3| image:: https://firefly-iii.org/static/screenshots/4.7.4/tiny/budget.png
-   :height: 400px
-   :width: 400px
-   :alt: Overview of all budgets
-   :target: https://firefly-iii.org/static/screenshots/4.7.4/budget.png
-.. |scr4| image:: https://firefly-iii.org/static/screenshots/4.7.4/tiny/category.png
-   :height: 400px
-   :width: 400px
-   :alt: Overview of a category
-   :target: https://firefly-iii.org/static/screenshots/4.7.4/category.png
-
-+---------+---------+
-| |scr1|  | |scr2|  |
-+---------+---------+
-| |scr3|  | |scr4|  |
-+---------+---------+
+[![Overview of a category](https://firefly-iii.org/static/screenshots/4.7.4/tiny/category.png "Overview of a category")](https://firefly-iii.org/static/screenshots/4.7.4/category.png)
