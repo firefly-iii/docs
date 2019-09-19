@@ -1,11 +1,5 @@
-# Home page
+# Official Firefly III documentation
 
-Some text
+Here you will find everything you want to know about Firefly III, the self-hosted personal finances manager.
 
-## Sub page
-
-Some more text
-
-### Sub sub page
-
-Index with capitals
+You can find the source of [Firefly III on GitHub](https://github.com/firefly-iii/firefly-iii).
