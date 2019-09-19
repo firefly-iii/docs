@@ -48,7 +48,6 @@ As you can see a new parameter has appeared, ``6,7,8`` which indicates with obje
 
 You can replace this second parameter with ``allBudgets``, ``allCategories`` or ``allTags`` in order to include all of the objects in the report.
 
-
 Available reports
 -----------------
 
