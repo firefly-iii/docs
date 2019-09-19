@@ -11,7 +11,7 @@ The account overview of Firefly III
 
 Overview of all budgets
 
-[![Overview of all budgets](https://firefly-iii.org/static/screenshots/4.8.1/tiny/budget.png "Overview of all budgets")](https://firefly-iii.org/static/screenshots/4.8.1/budget.png) 
+[![Overview of all budgets](https://firefly-iii.org/static/screenshots/4.8.1/tiny/budgets.png "Overview of all budgets")](https://firefly-iii.org/static/screenshots/4.8.1/budgets.png) 
 
 A financial report in Firefly III
 
