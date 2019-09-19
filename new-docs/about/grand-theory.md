@@ -1,15 +1,8 @@
-.. _grandtheory:
-
-================
-The grand theory
-================
-
 This is a description of how Firefly III works. The "grand theory". 
 
 Firefly III has been built around how I manage my finances. Please read this carefully so we match on how to do things.
 
-The general idea
-----------------
+## The general idea
 
 After being a grownup for a while I noticed I was living from paycheck to paycheck. I could not save money. At the end of my money, I still had a part of the month to cover.
 
@@ -28,15 +21,12 @@ This procedure allowed me to program a very simple tool (the original "Firefly")
 
 In those early, exciting days, all I did was live from the 1st to the 31st of the month. This helped me save a lot of money already. The rest of Firefly III's features have been built around this idea.
 
-The next step
--------------
+## The next step
 
 To keep on top of your finances (using Firefly III), you must be *aware* of your finances. There are no shortcuts. You can use the import function and you can use the recurring transactions, but it won't help you one bit. It just gives you fancy charts. All knowledge and no wisdom.
 
 If you're serious about changing your financial habits, you should enter each transaction manually. Feel the impact of each penny you spend, and before you know it you'll spend a lot less of them.
 
-
-But I get paid every two weeks / every forthnight / once in a blue moon?
-------------------------------------------------------------------------
+## But I get paid every two weeks / every forthnight / once in a blue moon?
 
 My method of managing money works whatever your boss' payment schedule is. Move your salary to a different account (step 1 above) any time you get it and wait for the start of the month.
