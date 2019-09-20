@@ -35,8 +35,8 @@ Keep in mind that weekly bills may fall outside of your expected range. At some 
 
 The front page of Firefly III will also start showing the bills.
 
-[![The bills on the dashboard](https://firefly-iii.org/static/docs/4.8.0/bills-frontpage.png)
+![The bills on the dashboard](https://firefly-iii.org/static/docs/4.8.0/bills-frontpage.png)
 
 Individual bills will end up looking like this picture (under Money Management, then Bills)
 
-[![overview of a bill](https://firefly-iii.org/static/docs/4.7.0/bills-show.png)
+![overview of a bill](https://firefly-iii.org/static/docs/4.7.0/bills-show.png)
