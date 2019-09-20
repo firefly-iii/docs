@@ -8,6 +8,6 @@
 * [Who's it for?](about/who-for.md)
 * [The grand theory](about/grand-theory.md)
     
-## A second page group
+## Advanced stuff
 
-* [Yet another page](another-page.md)
+* [Bills](advanced/bills.md)
