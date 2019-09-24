@@ -26,7 +26,7 @@ Several users have created specific guides for their OS and database combination
 1. `CentOS 7, with nginx and PHP 7.2 <https://old.reddit.com/r/FireflyIII/comments/825n4l/centos_7_nginx_installation_guide/>`_
 2. `Ubuntu Server 16.04LTS with nginx and PHP 7.2 <https://old.reddit.com/r/FireflyIII/comments/8thxuu/fireflyiii_on_ubuntu_server_1604lts_nginx_php72/>`_
 3. `Ubuntu Server 18.04 with nginx and PHP 7.2 <https://gist.github.com/philthynz/ec04833a8e39c7f7d1b0d33cb4197a95>`_
-4. `Ubuntu Server 18.04 with nginx, PHP 7.3 and a self-signed certificate <https://gist.github.com/optimistic5/ca5a4a8593dcdb7360f712d37a0cc657>`_
+4. `Ubuntu Server 18.04 with nginx, PHP 7.3 and a Let's Encrypt certificate <https://gist.github.com/optimistic5/ca5a4a8593dcdb7360f712d37a0cc657>`_
 5. `Raspberry Pi 3, with Docker and Docker compose <https://gist.github.com/josephbadow/588c2ae961231fe338c459127c7d835b>`_
 
 
