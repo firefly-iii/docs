@@ -1,18 +1,18 @@
 "Firefly III" is a (self-hosted) manager for your personal finances. It can help you keep track of your expenses and income, so you can spend less and save more. Firefly III supports the use of budgets, categories and tags. It can import data from external sources and it has many neat financial reports available. Here are some screenshots.
 
 
-The index of Firefly III
+### The index of Firefly III
 
-[![The index of Firefly III](/tiny/index.png "The index of Firefly III")](images/index.png)
+[![The index of Firefly III](images/tiny/index.png "The index of Firefly III")](images/index.png)
 
-The account overview of Firefly III
+### The account overview of Firefly III
 
 [![The account overview of Firefly III](images/tiny/account.png "The account overview of Firefly III")](images/account.png)
 
-Overview of all budgets
+### Overview of all budgets
 
 [![Overview of all budgets](images/tiny/budgets.png "Overview of all budgets")](images/budgets.png) 
 
-A financial report in Firefly III
+### A financial report in Firefly III
 
 [![A financial report in Firefly III](images/tiny/report.png "A financial report in Firefly III")](images/report.png)
