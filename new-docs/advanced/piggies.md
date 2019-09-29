@@ -13,8 +13,6 @@ To do so, use the button to create a new piggy bank. Fill in the details and sel
 Screenshots
 -----------
 
-![List of three piggy banks](images/piggies-overview.png)
-
 ![The three piggy banks from the example are listed in Firefly III as you can see here.](images/piggies-overview.png)
 
 ![The screen to create a piggy bank is pretty straight forward.](images/piggies-create.png)
