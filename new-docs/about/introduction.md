@@ -3,16 +3,16 @@
 
 The index of Firefly III
 
-[![The index of Firefly III](https://firefly-iii.org/static/screenshots/4.8.1/tiny/index.png "The index of Firefly III")](https://firefly-iii.org/static/screenshots/4.8.1/index.png)
+[![The index of Firefly III](/tiny/index.png "The index of Firefly III")](images/index.png)
 
 The account overview of Firefly III
 
-[![The account overview of Firefly III](https://firefly-iii.org/static/screenshots/4.8.1/tiny/account.png "The account overview of Firefly III")](https://firefly-iii.org/static/screenshots/4.8.1/account.png)
+[![The account overview of Firefly III](images/tiny/account.png "The account overview of Firefly III")](images/account.png)
 
 Overview of all budgets
 
-[![Overview of all budgets](https://firefly-iii.org/static/screenshots/4.8.1/tiny/budgets.png "Overview of all budgets")](https://firefly-iii.org/static/screenshots/4.8.1/budgets.png) 
+[![Overview of all budgets](images/tiny/budgets.png "Overview of all budgets")](images/budgets.png) 
 
 A financial report in Firefly III
 
-[![A financial report in Firefly III](https://firefly-iii.org/static/screenshots/4.8.1/tiny/report.png "A financial report in Firefly III")](https://firefly-iii.org/static/screenshots/4.8.1/report.png)
+[![A financial report in Firefly III](images/tiny/report.png "A financial report in Firefly III")](images/report.png)
