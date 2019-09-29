@@ -11,3 +11,4 @@
 ## Advanced stuff
 
 * [Bills](advanced/bills.md)
+* [Links](advanced/links.md)

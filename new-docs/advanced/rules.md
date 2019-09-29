@@ -1,8 +1,4 @@
-.. _rules:
-
-=====
-Rules
-=====
+# Rules
 
 Firefly III contains a powerful rule engine that can automatically update your transactions. It can do this when transactions are created or when they are changed. It works by combining "triggers" with "actions".
 
