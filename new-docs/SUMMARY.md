@@ -13,3 +13,4 @@
 * [Piggy banks](advanced/piggies.md)
 * [Bills](advanced/bills.md)
 * [Links](advanced/links.md)
+* [Reconciling accounts](advanced/reconcile.md)

@@ -1,8 +1,4 @@
-.. _reconclie:
-
-====================
-Reconciling accounts
-====================
+# Reconciling accounts
 
 Although more and more people have access to fancy online banking, a lot of users still receive paper bank statements in the mail, every week or every month.
 
@@ -10,8 +6,7 @@ This means that each transaction must be entered by hand when it occurs, and mus
 
 In the asset account overview, and on the page of an individual asset account, you will find a button with a checkbox in it (✓). This button opens the reconciliation mode.
 
-Match dates and balances
-------------------------
+## Match dates and balances
 
 When reconciling an account, you must first match the amounts and dates on your bank statement, with the input fields in Firefly III. For example:
 
@@ -24,38 +19,31 @@ The goal is to put a checkbox (next to "Amount") for each transaction that is al
 
 Read below to see what to do next.
 
-Transactions not listed on bank statement
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+### Transactions not listed on bank statement
 
 If you have a transaction in Firefly III that is not on your bank statement, it may have been saved with the wrong data. You should remove it from Firefly III, or change it so it matches a known transaction from your bank statements.
 
-Transactions not listed in Firefly III
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+### Transactions not listed in Firefly III
 
 It seems you forgot to enter a transaction! Quickly add it and return to the reconciliation view later.
 
-Amount under "Reconciliation options" is less than zero
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+### Amount under "Reconciliation options" is less than zero
 
 This means that your Firefly III asset account has less money in it than it should have. Perhaps you entered a transaction wrongly or twice. When you press "Store reconciliation" you can let Firefly III create an automated transaction to correct this difference. Of course, if you have simply forgotten to check a transaction or even to *enter* a transaction, you should correct that first!
 
-Amount under "Reconciliation options" is more than zero
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+### Amount under "Reconciliation options" is more than zero
 
 This means that your Firefly III asset account has more money in it than it should have. Maybe you have forgotten a transaction or entered the wrong amount. When you press "Store reconciliation" you can let Firefly III create an automated transaction to correct this difference. Of course, if you have simply forgotten to check a transaction or even to *enter* a transaction, you should correct that first!
 
-Amount under "Reconciliation options" is exactly zero!
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+### Amount under "Reconciliation options" is exactly zero!
 
 Congrats! This means that you and your bank agree on your balance. You can now press "Store reconciliation" to reconcile your account.
 
-Store reconciliation
---------------------
+## Store reconciliation
 
 When you press "Store reconciliation", Firefly III will present you with an overview of what you have just selected and ask you which action to take. You can let Firefly III generate a corrective transaction, or you can choose to ignore the difference. Of course when you ignore the difference, your account balance may still be different from what your bank thinks it is!
 
-Screenshots
------------
+## Screenshots
 
 .. figure:: https://firefly-iii.org/static/docs/4.7.0/reconcile-account-index.png
    :alt: Button in the account list
