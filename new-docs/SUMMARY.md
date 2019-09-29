@@ -10,5 +10,6 @@
     
 ## Advanced stuff
 
+* [Piggy banks](advanced/piggies.md)
 * [Bills](advanced/bills.md)
 * [Links](advanced/links.md)

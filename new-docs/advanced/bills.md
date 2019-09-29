@@ -39,4 +39,4 @@ The front page of Firefly III will also start showing the bills.
 
 Individual bills will end up looking like this picture (under Money Management, then Bills)
 
-![overview of a bill](https://firefly-iii.org/static/docs/4.7.0/bills-show.png)
+![Overview of a bill](https://firefly-iii.org/static/docs/4.7.0/bills-show.png)

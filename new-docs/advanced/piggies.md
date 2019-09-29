@@ -1,8 +1,4 @@
-.. _piggies:
-
-===========
-Piggy banks
-===========
+# Piggy banks
 
 If you want to buy something expensive, you might need to save for it. You can use piggy banks to save money. You can find them under "Money management" > "Piggy banks". A piggy bank is meant to group money on an asset account together.
 
@@ -17,17 +13,10 @@ To do so, use the button to create a new piggy bank. Fill in the details and sel
 Screenshots
 -----------
 
-.. figure:: https://firefly-iii.org/static/docs/4.7.0/piggies-overview.png
-   :alt: List of three piggy banks
+![List of three piggy banks](images/piggies-overview.png)
 
-   The three piggy banks from the example are listed in Firefly III as you can see here.
+![The three piggy banks from the example are listed in Firefly III as you can see here.](images/piggies-overview.png)
 
-.. figure:: https://firefly-iii.org/static/docs/4.7.0/piggies-create.png
-   :alt: Create piggy bank.
+![The screen to create a piggy bank is pretty straight forward.](images/piggies-create.png)
 
-   The screen to create a piggy bank is pretty straight forward.
-
-.. figure:: https://firefly-iii.org/static/docs/4.7.0/piggies-account.png
-   :alt: List of three piggy banks and the account
-
-   You can see I have divided almost all my savings over these three piggy banks.
+![You can see I have divided almost all my savings over these three piggy banks.](images/piggies-account.png)

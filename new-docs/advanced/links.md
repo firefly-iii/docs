@@ -2,7 +2,7 @@
 
 More often than not a transaction isn't just "a transaction" but a connected to some other transactions. Maybe you've been reimbursed money by your boss. Maybe an expense is paid back to you by an friend. Or perhaps a friend paid you back for something or other.
 
-![Link](./images/links1.png)
+![Inward link](./images/links1.png)
 
 In Firefly III you can store these links between transactions. By default, four link types are available. You can see these under Administration > Transaction links configuration.
 
@@ -13,7 +13,7 @@ In Firefly III you can store these links between transactions. By default, four 
 
 These links work both ways. When transaction A has been refunded by transaction B, B is noted to refund A.
 
-![Link](./images/links2.png)
+![Outward link](./images/links2.png)
 
 You can also add your own link types if you want to.
 
