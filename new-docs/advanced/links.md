@@ -27,23 +27,18 @@ It is important to realise that links don't *do* anything. They won't change you
 
 ## Screenshots
 
+*The "Lunch with client" expense is reimbursed by your boss in transaction "Lunch reimbursement":*
 
-.. figure:: https://firefly-iii.org/static/docs/4.8.0/links-inward.png
-   :alt: Inward link of transaction
+![Inward link of transaction](./images/links-inward.png)
 
-   The "Lunch with client" expense is reimbursed by your boss in transaction "Lunch reimbursement".
+*Vice versa, "Lunch reimbursement" reimburses you for "Lunch with client":*
 
-.. figure:: https://firefly-iii.org/static/docs/4.8.0/links-outward.png
-   :alt: Outward link of transaction
+![Outward link of transaction](./images/links-outward.png)
 
-   Vice versa, "Lunch reimbursement" reimburses you for "Lunch with client".
+*Use this modal to create a new link:*
 
-.. figure:: https://firefly-iii.org/static/docs/4.8.0/links-modal.png
-   :alt: Modal dialog to create a link
+![Modal dialog to create a link](./images/links-modal.png)
 
-   Use this modal to create a new link
+*You can delete the link or make the transactions switch positions:*
 
-.. figure:: https://firefly-iii.org/static/docs/4.7.0/links-change.png
-   :alt: You can delete the link or make the transactions switch positions.
-
-   You can delete the link or make the transactions switch positions.
+![Delete or change](./images/links-change.png)
