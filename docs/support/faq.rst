@@ -13,7 +13,7 @@ General questions
 So what is this thing really?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Firefly III is a web application written in PHP 7.2 with a database behind it that can be the tool you use to manage your personal finances. For more information, please read the :ref:`full description <introduction>`.
+Firefly III is a web application written in PHP 7.3 with a database behind it that can be the tool you use to manage your personal finances. For more information, please read the :ref:`full description <introduction>`.
 
 Can I try it first?
 ~~~~~~~~~~~~~~~~~~~
@@ -82,7 +82,7 @@ The following snippet might help:
          include snippets/fastcgi-php.conf;
          fastcgi_param SCRIPT_FILENAME $request_filename;
          fastcgi_param modHeadersAvailable true; #Avoid sending the security headers twice
-         fastcgi_pass unix:/run/php/php7.2-fpm.sock;
+         fastcgi_pass unix:/run/php/php7.3-fpm.sock;
       }
    }
    
@@ -176,7 +176,7 @@ Answer be here
 Can I use it on PHP 5.x?
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
-No. Most code has been written specifically for PHP 7.2 and higher.
+No. Most code has been written specifically for PHP 7.3 and higher.
 
 It is very slow on my server?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -196,7 +196,7 @@ Ensure with `dpkg-reconfigure locales` that the language you want to use is inst
 I get 'Unexpected question mark'?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Firefly III requires PHP 7.2 or higher.
+Firefly III requires PHP 7.3 or higher.
 
 I get 'BCMath' errors?
 ~~~~~~~~~~~~~~~~~~~~~~

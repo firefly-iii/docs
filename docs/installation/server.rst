@@ -11,11 +11,11 @@ If you have your own (virtual) web server you can use this guide to install Fire
 
 Ingredients
 -----------
-You need a working LAMP, LEMP or WAMP stack. If you don't have one, search the web to find out how to get one. Make sure you're running PHP 7.2. There are many tutorials that will help you install one. Here are some Google queries to help you.
+You need a working LAMP, LEMP or WAMP stack. If you don't have one, search the web to find out how to get one. Make sure you're running PHP 7.3. There are many tutorials that will help you install one. Here are some Google queries to help you.
 
-1. `Install a LAMP stack with PHP 7.2 <https://www.google.com/search?q=lamp+stack+php+7.2>`_
-2. `Upgrade Ubuntu PHP 7.2 <https://www.google.com/search?q=upgrade+ubuntu+php+7.2>`_
-3. `PHP 7.2 raspberry pi <https://www.google.nl/search?q=PHP+7.2+raspberry+pi>`_
+1. `Install a LAMP stack with PHP 7.3 <https://www.google.com/search?q=lamp+stack+php+7.3>`_
+2. `Upgrade Ubuntu PHP 7.3 <https://www.google.com/search?q=upgrade+ubuntu+php+7.3>`_
+3. `PHP 7.3 raspberry pi <https://www.google.nl/search?q=PHP+7.3+raspberry+pi>`_
 
 If you wish to use another database such as SQLite or Postgres, please check out the :ref:`Server FAQ <faqselfhosted>`.
 
@@ -23,9 +23,9 @@ You need a (MySQL) database and credentials for a user that can access that data
 
 Several users have created specific guides for their OS and database combination
 
-1. `CentOS 7, with nginx and PHP 7.2 <https://old.reddit.com/r/FireflyIII/comments/825n4l/centos_7_nginx_installation_guide/>`_
-2. `Ubuntu Server 16.04LTS with nginx and PHP 7.2 <https://old.reddit.com/r/FireflyIII/comments/8thxuu/fireflyiii_on_ubuntu_server_1604lts_nginx_php72/>`_
-3. `Ubuntu Server 18.04 with nginx and PHP 7.2 <https://gist.github.com/philthynz/ec04833a8e39c7f7d1b0d33cb4197a95>`_
+1. `CentOS 7, with nginx and PHP 7.3 <https://old.reddit.com/r/FireflyIII/comments/825n4l/centos_7_nginx_installation_guide/>`_
+2. `Ubuntu Server 16.04LTS with nginx and PHP 7.3 <https://old.reddit.com/r/FireflyIII/comments/8thxuu/fireflyiii_on_ubuntu_server_1604lts_nginx_php72/>`_
+3. `Ubuntu Server 18.04 with nginx and PHP 7.3 <https://gist.github.com/philthynz/ec04833a8e39c7f7d1b0d33cb4197a95>`_
 4. `Ubuntu Server 18.04 with nginx, PHP 7.3 and a Let's Encrypt certificate <https://gist.github.com/optimistic5/ca5a4a8593dcdb7360f712d37a0cc657>`_
 5. `Raspberry Pi 3, with Docker and Docker compose <https://gist.github.com/josephbadow/588c2ae961231fe338c459127c7d835b>`_
 
