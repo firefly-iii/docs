@@ -101,7 +101,8 @@ Make sure you remove any old PHP7.0 or PHP7.1 packages or at least, make sure th
    
    sudo a2dismod php7.0
    sudo a2dismod php7.1
-   sudo a2enmod php7.2
+   sudo a2dismod php7.2
+   sudo a2enmod php7.3
    sudo service apache2 restart
 
 This assumes you run Apache and your OS package manager can handle multiple PHP versions (not all of them do this). Other commands can be found using a search engine.
