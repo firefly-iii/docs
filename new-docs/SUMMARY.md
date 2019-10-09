@@ -7,6 +7,17 @@
 * [Features](about/features.md)
 * [Who's it for?](about/who-for.md)
 * [The grand theory](about/grand-theory.md)
+
+## Concepts
+
+* [Transactions](.)
+* [Accounts](concepts/accounts.md)
+* [Budgets](.)
+* [Categories](.)
+* [Tags](.)
+* [Currencies](.)
+
+## Importing data
     
 ## Advanced stuff
 
