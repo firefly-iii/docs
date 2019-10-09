@@ -48,68 +48,53 @@ If you set an action to convert your transaction to a deposit, a transfer or a w
 
 These conversions will *not* be applied to split transactions.
 
-From a deposit to a withdrawal
-    The money will be transferred away from the asset account instead of deposited into it. The "action value" you must provide must be the name of a valid expense account. If it does not exist, it will be created.
+**From a deposit to a withdrawal**
 
-    If you leave the action value blank, the new expense account will be named after the revenue account. So, a deposit from "Your Boss" becomes a withdrawal at "Your Boss".
+The money will be transferred away from the asset account instead of deposited into it. The "action value" you must provide must be the name of a valid expense account. If it does not exist, it will be created.
 
-From a transfer to a withdrawal
-	Firefly III will replace the "destination" asset account with an expense account. So, a transfer from your Checking Account to your Savings Account will be converted into a withdrawal from your Checkings Account to Account X, where X is an expense account. The "action value" you must provide must be the name of a valid expense account. If it does not exist, it will be created.
+If you leave the action value blank, the new expense account will be named after the revenue account. So, a deposit from "Your Boss" becomes a withdrawal at "Your Boss".
 
-	If you leave the action value blank, the new expense account will be named after the original destination asset account.
+**From a transfer to a withdrawal**
 
-From a withdrawal to a deposit
-    The money will be deposited into the asset account instead of withdrawn from it. The "action value" you must provide must be the name of a valid revenue account. If it does not exist, it will be created.
+Firefly III will replace the "destination" asset account with an expense account. So, a transfer from your Checking Account to your Savings Account will be converted into a withdrawal from your Checkings Account to Account X, where X is an expense account. The "action value" you must provide must be the name of a valid expense account. If it does not exist, it will be created.
 
-    If you leave the action value blank, the new revenue account will be named after the original expense account. So, a withdrawal from "Walmart" becomes a deposit from "Walmart".
+If you leave the action value blank, the new expense account will be named after the original destination asset account.
 
-From a transfer to a deposit.
-    Firefly III will replace the "source" asset account with an revenue account. So, a transfer from your Savings Account to your Checking Account will be converted into a deposit into your Checkings Account from Account X, where X is a revenue account. The "action value" you must provide must be the name of a valid revenue account. If it does not exist, it will be created.
+**From a withdrawal to a deposit**
 
-    If you leave the action value blank, the new revenue account will be named after the original source asset account.
+The money will be deposited into the asset account instead of withdrawn from it. The "action value" you must provide must be the name of a valid revenue account. If it does not exist, it will be created.
 
-From a withdrawal to a transfer
-    The money will be moved away from the original asset account, into another asset account. The "action value" you must provide must be the name of a valid destination asset account. If it does not exist, the action will fail.
+If you leave the action value blank, the new revenue account will be named after the original expense account. So, a withdrawal from "Walmart" becomes a deposit from "Walmart".
 
-    If you leave the action value empty, the action will fail.
+**From a transfer to a deposit.**
 
-From a deposit to a transfer
-    The money will be moved into from the original asset account, from another asset account. The "action value" you must provide must be the name of a valid asset account. If it does not exist, the action will fail.
+Firefly III will replace the "source" asset account with an revenue account. So, a transfer from your Savings Account to your Checking Account will be converted into a deposit into your Checkings Account from Account X, where X is a revenue account. The "action value" you must provide must be the name of a valid revenue account. If it does not exist, it will be created.
 
-    If you leave the action value empty, the action will fail.
+If you leave the action value blank, the new revenue account will be named after the original source asset account.
 
-Apply rules
------------
+**From a withdrawal to a transfer**
+
+The money will be moved away from the original asset account, into another asset account. The "action value" you must provide must be the name of a valid destination asset account. If it does not exist, the action will fail.
+
+If you leave the action value empty, the action will fail.
+
+**From a deposit to a transfer**
+The money will be moved into from the original asset account, from another asset account. The "action value" you must provide must be the name of a valid asset account. If it does not exist, the action will fail.
+
+If you leave the action value empty, the action will fail.
+
+## Apply rules
 
 You can apply your rules to existing transactions. On the rule-overview (page ``/rules``), either use the "on/off"-icon or the ellipsis menu in a rule group to apply entire rule groups or individual rules to your transactions. See for some screenshots below.
 
+## Screenshots
 
-Screenshots
------------
+![A new rule can be given some basic information.](images/rules-meta.png)
 
+![First you would set up the triggers for the new rule](images/rules-triggers.png)
 
-.. figure:: https://firefly-iii.org/static/docs/4.7.0/rules-meta.png
-   :alt: Meta data of a rule
+![Then decide on the actions to take.](images/rules-actions.png)
 
-   A new rule can be given some basic information.
+![Option to run a rule on transactions.](images/apply-rule.png)
 
-.. figure:: https://firefly-iii.org/static/docs/4.7.0/rules-triggers.png
-   :alt: Set the triggers
-
-   First you would set up the triggers for the new rule.
-
-.. figure:: https://firefly-iii.org/static/docs/4.7.0/rules-actions.png
-   :alt: Set the actions
-
-   Then decide on the actions to take.
-
-.. figure:: https://firefly-iii.org/static/docs/4.7.6.2/apply-rule.png
-   :alt: Option to run a rule on transactions.
-
-   Option to run a rule on transactions.
-
-.. figure:: https://firefly-iii.org/static/docs/4.7.6.2/apply-rule-group.png
-   :alt: Option to run a rule group on transactions.
-
-   Option to run a rule group on transactions.
-
+![Option to run a rule group on transactions.](images/apply-rule-group.png)
