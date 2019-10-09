@@ -15,3 +15,4 @@
 * [Links](advanced/links.md)
 * [Reconciling accounts](advanced/reconcile.md)
 * [Reports](advanced/reports.md)
+* [Rules](advanced/rules.md)

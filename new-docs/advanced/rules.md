@@ -4,15 +4,13 @@ Firefly III contains a powerful rule engine that can automatically update your t
 
 This is especially useful when you're importing data and you wish all transactions to be updated at once. Or perhaps, you are too lazy to set the correct budget and category all the time so you make a rule to do this for you.
 
-Rule groups
------------
+## Rule groups
 
 Rules are divided over rule groups. Each rule group has rules in a specific order.
 
 Rules can be set to be "strict" or not. If a rule is set to be strict, ALL triggers must match for the rule to fire. If a rule is not scrict, ANY trigger is enough.
 
-Triggers
---------
+## Triggers
 
 A rule must spring into action at the right time! This is decided by triggers that you can set yourself. Here are some notable rule triggers that people use often:
 
@@ -23,8 +21,7 @@ A rule must spring into action at the right time! This is decided by triggers th
 
 Rules can be set to be "strict" or not. If a rule is set to be strict, ALL triggers must match for the rule to fire. If a rule is not scrict, ANY trigger is enough.
 
-Actions
--------
+## Actions
 
 When the triggers are hit (either ALL or ANY, see the "strict" option), Firefly III will execute the associated rule actions. There are many actions available. Notable ones are:
 
@@ -36,8 +33,7 @@ Combined, this gives you a lot of power over your financial data.
 
 You cannot fire other rules from a rule.
 
-Stop processing
-~~~~~~~~~~~~~~~
+### Stop processing
 
 When you create a new rule, you can set an option called "stop processing". If you set it, and the rule is triggered, other rules in the group will NOT be processed any more.
 
@@ -46,13 +42,11 @@ For any trigger, you can also set the "stop processing" option. If you do, and t
 For each action, you can set "stop processing" as well. When you do, any actions after the current one will not fire.
 
 
-Converting to another transaction type
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+### Converting to another transaction type
 
 If you set an action to convert your transaction to a deposit, a transfer or a withdrawal, make sure that you configure the rule action correctly. If you don't do this right the rule action wil *silently* fail and nothing will happen. Here you can read what will happen to your transaction. This is dependent on the original type and the future type of the transaction.
 
 These conversions will *not* be applied to split transactions.
-
 
 From a deposit to a withdrawal
     The money will be transferred away from the asset account instead of deposited into it. The "action value" you must provide must be the name of a valid expense account. If it does not exist, it will be created.
