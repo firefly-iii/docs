@@ -17,3 +17,7 @@
 * [Rules](advanced/rules.md)
 * [Links](advanced/links.md)
 * [Reconciling accounts](advanced/reconcile.md)
+
+## API
+
+* [API](api/api.md)
