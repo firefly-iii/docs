@@ -45,37 +45,16 @@ When you press "Store reconciliation", Firefly III will present you with an over
 
 ## Screenshots
 
-.. figure:: https://firefly-iii.org/static/docs/4.7.0/reconcile-account-index.png
-   :alt: Button in the account list
-   
-   The button is shown in your list of accounts
+![The button is shown in your list of accounts](images/reconcile-account-index.png)
 
-.. figure:: https://firefly-iii.org/static/docs/4.7.0/reconcile-set-amounts.png
-   :alt: Set amounts and dates
-   
-   These dates and amounts must match your bank statement.
+![These dates and amounts must match your bank statement.](images/reconcile-set-amounts.png)
 
-.. figure:: https://firefly-iii.org/static/docs/4.7.0/reconcile-negative-result.png
-   :alt: When the result is negative
-   
-   When the result is negative, your Firefly III asset account is too low on funds.
+![When the result is negative, your Firefly III asset account is too low on funds.](images/reconcile-negative-result.png)
 
-.. figure:: https://firefly-iii.org/static/docs/4.7.0/reconcile-negative-action.png
-   :alt: Correct negative result.
-   
-   When your account is too low on funds, you can allow Firefly III to create a corrective transaction.
+![When your account is too low on funds, you can allow Firefly III to create a corrective transaction.](images/reconcile-negative-action.png)
 
-.. figure:: https://firefly-iii.org/static/docs/4.7.0/reconcile-positive-result.png
-   :alt: Positive result
-   
-   When the result is positive, your Firefly III asset account has too much money in it.
+![When the result is positive, your Firefly III asset account has too much money in it.](images/reconcile-positive-result.png)
 
-.. figure:: https://firefly-iii.org/static/docs/4.7.0/reconcile-positive-action.png
-   :alt: Correct positive result
-   
-   When your account is too full, you can allow Firefly III to create a corrective transaction.
+![When your account is too full, you can allow Firefly III to create a corrective transaction.](images/reconcile-positive-action.png)
 
-.. figure:: https://firefly-iii.org/static/docs/4.7.0/reconcile-neutral-action.png
-   :alt: All is well
-   
-   When there is no mismatch between your bank statements and Firefly III, you don't need to do anything.
+![When there is no mismatch between your bank statements and Firefly III, you don't need to do anything.](images/reconcile-neutral-action.png)
