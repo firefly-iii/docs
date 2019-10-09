@@ -12,7 +12,8 @@
 
 * [Piggy banks](advanced/piggies.md)
 * [Bills](advanced/bills.md)
-* [Links](advanced/links.md)
-* [Reconciling accounts](advanced/reconcile.md)
+* [Recurring transactions](advanced/recurring.md)
 * [Reports](advanced/reports.md)
 * [Rules](advanced/rules.md)
+* [Links](advanced/links.md)
+* [Reconciling accounts](advanced/reconcile.md)

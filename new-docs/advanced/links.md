@@ -27,18 +27,10 @@ It is important to realise that links don't *do* anything. They won't change you
 
 ## Screenshots
 
-*The "Lunch with client" expense is reimbursed by your boss in transaction "Lunch reimbursement":*
+![The "Lunch with client" expense is reimbursed by your boss in transaction "Lunch reimbursement".](./images/links-inward.png)
 
-![Inward link of transaction](./images/links-inward.png)
+![Vice versa, "Lunch reimbursement" reimburses you for "Lunch with client".](./images/links-outward.png)
 
-*Vice versa, "Lunch reimbursement" reimburses you for "Lunch with client":*
+![Use this modal to create a new link](./images/links-modal.png)
 
-![Outward link of transaction](./images/links-outward.png)
-
-*Use this modal to create a new link:*
-
-![Modal dialog to create a link](./images/links-modal.png)
-
-*You can delete the link or make the transactions switch positions:*
-
-![Delete or change](./images/links-change.png)
+![You can delete the link or make the transactions switch positions.](./images/links-change.png)

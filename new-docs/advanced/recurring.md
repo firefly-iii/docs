@@ -1,24 +1,18 @@
-.. _recurring:
-
-======================
-Recurring transactions
-======================
+# Recurring transactions
 
 Firefly III features the ability to automatically create transactions (so you don't have to). These are called recurring transactions. 
 
 An RT consists of two sets of data you need to fill in before it'll work as expected.
 
-You must also set up a cron job to fire, so Firefly III can create your transactions. :ref:`There is a special page about this <cronjobs>`.
+You must also set up a cron job to fire, so Firefly III can create your transactions.
 
 If you have set up email correctly, Firefly III will automatically email you an overview of the transactions it has created.
 
-Information for the recurring transaction
------------------------------------------
+## Information for the recurring transaction
 
-A recurring transaction needs meta data, such as a title and a description. You must also indicate if the recurring transaction is active and whether your `rules <rules>` should apply. The first date the recurring transaction should fire should be a date in the future.
+A recurring transaction needs meta data, such as a title and a description. You must also indicate if the recurring transaction is active and whether your rules should apply. The first date the recurring transaction should fire should be a date in the future.
 
-.. image:: https://firefly-iii.org/static/docs/4.7.5.1/recurrence-mandatory.png
-   :alt: Mandatory information for a recurring transaction.
+![Mandatory information for a recurring transaction.](images/recurrence-mandatory.png)
 
 The repetition can be set to the following options:
 
@@ -42,13 +36,11 @@ If the date the transaction should repeat is in the weekend, Firefly III can aut
 - Create the transaction on the Monday after instead. Please note that your recurring transaction will appear to fire a day late.
 - Simply create the transaction in the weekend.
 
-Information for the transaction itself
---------------------------------------
+## Information for the transaction itself
 
 These are all the fields you would expect in normal transactions:
 
-.. image:: https://firefly-iii.org/static/docs/4.7.5.1/transaction-mandatory.png
-   :alt: Mandatory information for a recurring transaction.
+![Mandatory information for a recurring transaction.](images/transaction-mandatory.png)
 
 - The type of transaction.
 - The description, the amount (and currency), and the source and destination accounts.
@@ -61,11 +53,8 @@ Optional information includes:
 If you wish to link a bill to the transaction, make sure that the option to apply rules is checked and that the new transaction would match this rule.
 
 
-Cron job
---------
+## Cron job
 
 In order to actually create the transactions, Firefly III requires a cron job to be running on your server. It must be set up to run every day. If you are hosting yourself, you can easily set up a new cron job using `crontab` and simply Googling for "cronjob linux".
-
-To set up the cron job, please check out the following page :ref:`with more information <cronjobs>`.
 
 Just wait patiently and the cron job will create the transactions during the night.
