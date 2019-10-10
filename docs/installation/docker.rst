@@ -71,7 +71,7 @@ Download environment variables
 
 Download `the environment variable file <https://raw.githubusercontent.com/firefly-iii/firefly-iii/master/.env.example>`_ from the GitHub repository and place in the same folder as the ``docker-compose.yml``.
 
-It is **important** that you rename the file to ``.env``. You can see in the Docker compose file why this is. There is a reference to it: ``env_file: .env``. If you don't name it ``.env.`` but something else, you must edit the Docker compose file.
+It is **important** that you rename the file to ``.env``. You can see in the Docker compose file why this is. There is a reference to it: ``env_file: .env``. If you don't name it ``.env``, but something else, you must edit the Docker compose file.
 
 
 Start the container
