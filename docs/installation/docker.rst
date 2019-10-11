@@ -31,7 +31,7 @@ These are used to persistently store uploaded files and exported data.
 Start the container
 ~~~~~~~~~~~~~~~~~~~
 
-Run this Docker command to start the Firefly III container. Make sure that you edit the environment variables to match your own database. You should really change the ``APP_KEY`` as well. It should be a random string of *exactly* 32 characters.
+Run this Docker command to start the Firefly III container. Make sure that you edit the environment variables to match your own database. You should really change the ``APP_KEY`` as well. It should be a random string of *exactly* 32 characters. You can generate such an ``APP_KEY`` by using Laravel Artisan CLI: ``php artisan key:generate --show``.
 
 .. code-block:: bash
    
