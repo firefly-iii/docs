@@ -13,9 +13,9 @@ Ingredients
 -----------
 You need a working LAMP, LEMP or WAMP stack. If you don't have one, search the web to find out how to get one. Make sure you're running PHP 7.2. There are many tutorials that will help you install one. Here are some Google queries to help you.
 
-1. `Install a LAMP stack with PHP 7.2 <https://www.google.com/search?q=lamp+stack+php+7.2>`_
-2. `Upgrade Ubuntu PHP 7.2 <https://www.google.com/search?q=upgrade+ubuntu+php+7.2>`_
-3. `PHP 7.2 raspberry pi <https://www.google.nl/search?q=PHP+7.2+raspberry+pi>`_
+1. `Install a LAMP stack with PHP 7.3 <https://www.google.com/search?q=lamp+stack+php+7.3>`_
+2. `Upgrade Ubuntu PHP 7.3 <https://www.google.com/search?q=upgrade+ubuntu+php+7.3>`_
+3. `PHP 7.3 raspberry pi <https://www.google.nl/search?q=PHP+7.3+raspberry+pi>`_
 
 If you wish to use another database such as SQLite or Postgres, please check out the :ref:`Server FAQ <faqselfhosted>`.
 
@@ -28,7 +28,7 @@ Several users have created specific guides for their OS and database combination
 3. `Ubuntu Server 18.04 with nginx and PHP 7.2 <https://gist.github.com/philthynz/ec04833a8e39c7f7d1b0d33cb4197a95>`_
 4. `Ubuntu Server 18.04 with nginx, PHP 7.3 and a Let's Encrypt certificate <https://gist.github.com/optimistic5/ca5a4a8593dcdb7360f712d37a0cc657>`_
 5. `Raspberry Pi 3, with Docker and Docker compose <https://gist.github.com/josephbadow/588c2ae961231fe338c459127c7d835b>`_
-
+6. `Firefly III in FreeBSD (FreeNAS) <https://gist.github.com/Zamana/bdfed1a06ba08467bd3ce92f4715c7fd>`_
 
 In case you want to use one of the languages that Firefly III is equipped with, make sure you have installed the necessary locales. For Debian / Ubuntu for example, use ``sudo apt install language-pack-nl-base && sudo locale-gen``.
 
