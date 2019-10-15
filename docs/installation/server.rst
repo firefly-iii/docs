@@ -29,6 +29,7 @@ Several users have created specific guides for their OS and database combination
 4. `Ubuntu Server 18.04 with nginx, PHP 7.3 and a Let's Encrypt certificate <https://gist.github.com/optimistic5/ca5a4a8593dcdb7360f712d37a0cc657>`_
 5. `Raspberry Pi 3, with Docker and Docker compose <https://gist.github.com/josephbadow/588c2ae961231fe338c459127c7d835b>`_
 6. `Firefly III in FreeBSD (FreeNAS) <https://gist.github.com/Zamana/bdfed1a06ba08467bd3ce92f4715c7fd>`_
+7. `Firefly III in FreeNAS (alternative) <https://forum.freenas-community.org/t/firefly-iii-personal-finance-manager-in-a-jail/45>`_
 
 In case you want to use one of the languages that Firefly III is equipped with, make sure you have installed the necessary locales. For Debian / Ubuntu for example, use ``sudo apt install language-pack-nl-base && sudo locale-gen``.
 
