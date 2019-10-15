@@ -40,5 +40,5 @@ I greatly appreciate any contributions.
 
 ## Docker
 
-The :ref:`Docker guide <installdocker>` would not have been possible without [schoentoon](https://github.com/schoentoon), [elohmeier](https://github.com/elohmeier), [patrickkostjens](https://github.com/patrickkostjens), [pcrash7](https://github.com/crash7), [jleeong](https://github.com/jleeong)
+The Docker guide would not have been possible without [schoentoon](https://github.com/schoentoon), [elohmeier](https://github.com/elohmeier), [patrickkostjens](https://github.com/patrickkostjens), [pcrash7](https://github.com/crash7), [jleeong](https://github.com/jleeong)
 and many others who have gracefully contributed.
