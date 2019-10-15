@@ -20,8 +20,7 @@ There is even a special budget report.
 
 Firefly III also features categories. These are also interesting and useful, but slightly different.
 
-The difference between budgets and categories
----------------------------------------------
+## The difference between budgets and categories
 
 If you try to save money every month on a certain subject, it's a budget. Groceries are budget. Bills are a budget. If you travel by train occasionally, it's not a budget.
 
