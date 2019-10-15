@@ -12,10 +12,10 @@
 
 * [Transactions](.)
 * [Accounts](concepts/accounts.md)
-* [Budgets](.)
-* [Categories](.)
-* [Tags](.)
-* [Currencies](.)
+* [Budgets](concepts/budgets.md)
+* [Categories](concepts/categories.md)
+* [Tags](concepts/tags.md)
+* [Currencies](concepts/currencies.md)
 
 ## Importing data
     
