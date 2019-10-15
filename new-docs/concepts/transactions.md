@@ -8,9 +8,9 @@ A transaction is a very simple thing. Money moves from A to B. It doesn't matter
 
 In Firefly III and most other systems this is stored using a "[double-entry bookkeeping system](http://en.wikipedia.org/wiki/Double-entry_bookkeeping_system>)". You get money and your boss loses it. You spend money and the Supermarket "earns" it:
 
-![Your boss loses money, the supermarket earns it.](images/transaction3.png)
+![Your boss loses money, you earn it.](images/transaction3.png)
 
-![Money spent leaves your account, money earned enters it.](images/transaction4.png)
+![You lose money, the supermarket earns it.](images/transaction4.png)
 
 Each transaction is stored twice. Once as a loss (for one party), and once as a profit (for the other party). This seems pretty pointless, and technically it is. But it was designed back when clerks could be fraudulent and this double-entry system stopped fraud. In these modern days it is useful to check if all records are straight.
 
