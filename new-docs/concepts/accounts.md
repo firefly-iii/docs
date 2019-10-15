@@ -39,7 +39,3 @@ Another type of account is the revenue account. A revenue account belongs to any
 ## Liabilities
 
 Firefly III supports liabilities such as debts and loans, that you can track using Firefly III.
-
----
-
-This concludes all information about accounts in Firefly III. Make sure to check out the page about transactions.
