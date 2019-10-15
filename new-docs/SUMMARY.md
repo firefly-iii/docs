@@ -32,3 +32,8 @@
 ## API
 
 * [API](api/api.md)
+
+## Contact
+
+* [Contact and credits](contact/contact.md)
+* [Security](contact/security.md)

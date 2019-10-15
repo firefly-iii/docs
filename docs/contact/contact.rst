@@ -9,7 +9,7 @@ As mentioned on several pages, you can contact me through email on `thegrumpydic
 
 My PGP key is mentioned on `Keybase.io <https://keybase.io/jc5>`_. The fingerprint is ``90F5 46F1 3B81 B67A 1BAA 5DDD C169 61E6 55E7 4B5E``. You can `verify my key <https://gist.github.com/JC5/e5810692bea4513bd80381f57b2ed03a>`_.
 
-Please note that Firefly III's is licensed under the `GNU General Public License v3.0 <https://github.com/firefly-iii/firefly-iii/blob/master/LICENSE>`_ (or later).
+Please note that Firefly III's is licensed under the `GNU Affero General Public License v3.0 <https://github.com/firefly-iii/firefly-iii/blob/master/LICENSE>`_ (or later).
 
 Credits
 -------
