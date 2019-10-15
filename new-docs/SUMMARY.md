@@ -10,7 +10,7 @@
 
 ## Concepts
 
-* [Transactions](.)
+* [Transactions](concepts/transactions.md)
 * [Accounts](concepts/accounts.md)
 * [Budgets](concepts/budgets.md)
 * [Categories](concepts/categories.md)
