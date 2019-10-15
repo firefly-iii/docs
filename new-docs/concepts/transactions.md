@@ -2,13 +2,13 @@
 
 A transaction is a very simple thing. Money moves from A to B. It doesn't matter if this is an expense, your salary or you moving money around: *money moves from A to B*:
 
-![Income is moving money from your boss to you.](images/transaction1.png)
+![Transferring money from your checking account to your savings account](images/transaction1.png)
 
-![An expense is moving money from you to the supermarket.](images/transaction1.png)
+![An expense is moving money from you to the supermarket.](images/transaction2.png)
 
 In Firefly III and most other systems this is stored using a "[double-entry bookkeeping system](http://en.wikipedia.org/wiki/Double-entry_bookkeeping_system>)". You get money and your boss loses it. You spend money and the Supermarket "earns" it:
 
-![Your boss loses money, the supermarket earns it.](images/transaction4.png)
+![Your boss loses money, the supermarket earns it.](images/transaction3.png)
 
 ![Money spent leaves your account, money earned enters it.](images/transaction4.png)
 
