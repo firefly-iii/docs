@@ -7,6 +7,13 @@
 * [Features](about/features.md)
 * [Who's it for?](about/who-for.md)
 * [The grand theory](about/grand-theory.md)
+* [Demo webiste](about/demo.md)
+
+## Installation
+
+* [Docker](installation/docker.md)
+* [Self-hosted server](installation/self_hosted.md)
+* [Hosted by 3rd parties](installation/third_parties.md)
 
 ## Concepts
 
@@ -17,9 +24,24 @@
 * [Tags](concepts/tags.md)
 * [Currencies](concepts/currencies.md)
 
+## Advanced installation
+
+* [Upgrade instructions](installation/upgrade.md)
+* [Configure email](installation/email.md)
+* [Authentication](installation/authentication.md)
+* [Analytics](installation/analytics.md)
+* [Backup](installation/backup.md)
+* [Cron jobs](installation/cron.md)
+
 ## Importing data
+
+* [CSV files](import/csv.md)
+* [Spectre / Salt Edge](import/spectre.md)
+* [bunq](import/bunq.md)
+* [FinTS](import/fints.md)
+* [YNAB](import/ynab.md)
     
-## Advanced stuff
+## Advanced concepts
 
 * [Piggy banks](advanced/piggies.md)
 * [Bills](advanced/bills.md)
