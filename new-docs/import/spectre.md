@@ -28,7 +28,7 @@ After you have selected the correct accounts, Firefly III will import the data:
 
 ![The import is running...](images/spectre-import-running.png)
 
-![Yay! The import has finished!](images/pectre-import-finished.png)
+![Yay! The import has finished!](images/spectre-import-finished.png)
 
 Once this process is complete you can find the imported transactions in your administration.
 
