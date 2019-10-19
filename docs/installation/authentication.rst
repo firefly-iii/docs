@@ -114,6 +114,48 @@ The following configuration will allow you to connect to Forum System's excellen
    # field to sync as local username.
    ADLDAP_SYNC_FIELD=uid
 
+Example configuration for Active Directory
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The following is an example configuration for Active Directory:
+
+.. code-block:: bash
+
+   LOGIN_PROVIDER=ldap
+   
+   # LDAP connection configuration
+   # OpenLDAP, FreeIPA or ActiveDirectory
+   ADLDAP_CONNECTION_SCHEME=ActiveDirectory
+   ADLDAP_AUTO_CONNECT=true
+   
+   # LDAP connection settings
+   ADLDAP_CONTROLLERS=ldap.example.com
+   ADLDAP_PORT=389
+   ADLDAP_TIMEOUT=5
+   ADLDAP_BASEDN="dc=example,dc=com"
+   ADLDAP_FOLLOW_REFFERALS=false
+   ADLDAP_USE_SSL=false
+   ADLDAP_USE_TLS=false
+   
+   ADLDAP_ADMIN_USERNAME="ldap"
+   ADLDAP_ADMIN_PASSWORD=password
+   
+   #ADLDAP_ACCOUNT_PREFIX=
+   #ADLDAP_ACCOUNT_SUFFIX=
+   
+   # LDAP authentication settings.
+   ADLDAP_PASSWORD_SYNC=false
+   ADLDAP_LOGIN_FALLBACK=false
+
+   ADLDAP_DISCOVER_FIELD=samaccountname
+   ADLDAP_AUTH_FIELD=distinguishedname
+
+   # Will allow SSO if your server provides an AUTH_USER field.
+   WINDOWS_SSO_DISCOVER=samaccountname
+   WINDOWS_SSO_KEY=AUTH_USER
+
+   # field to sync as local username.
+   ADLDAP_SYNC_FIELD=samaccountname
 
 Two-step authentication
 -----------------------
