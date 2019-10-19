@@ -7,7 +7,7 @@
 * [Features](about/features.md)
 * [Who's it for?](about/who-for.md)
 * [The grand theory](about/grand-theory.md)
-* [Demo webiste](about/demo.md)
+* [Demo website](about/demo.md)
 
 ## Installation
 
