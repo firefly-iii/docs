@@ -15,6 +15,13 @@
 * [Self-hosted server](installation/self_hosted.md)
 * [Hosted by 3rd parties](installation/third_parties.md)
 
+## Support
+* [Using Firefly III](support/bugs.md)
+* [FAQ](support/faq.md)
+* [Feature requests and roadmap](support/features.md)
+* [Reporting bugs](support/bugs.md)
+* [Contribute to Firefly III](support/contribute.md)
+
 ## Concepts
 
 * [Transactions](concepts/transactions.md)
