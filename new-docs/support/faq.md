@@ -8,7 +8,7 @@ Firefly III is a web application written in PHP 7.2 with a database behind it th
 
 ### Can I try it first?
 
-[Yes, you can!](https://demo.firefly-iii.org/).
+[Yes, you can!](https://demo.firefly-iii.org/)
 
 ### How can I use it? I don't get it?
 
