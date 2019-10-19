@@ -74,9 +74,7 @@ Enter the URL in the following format:
 
 Of course you must replace the URL with the URL of your own Firefly III installation. The `<token>` value can be found on your `/profile` under the "Command line token" header. This will prevent others from spamming your cron job URL.
 
-
 ![The result of setting up IFTTT](images/ifttt-result.png)
-
 
 Press Finish to finish up. You can change the title of the IFTTT applet into something more descriptive, if you want to.
 
