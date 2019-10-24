@@ -6,7 +6,7 @@ A transaction is a very simple thing. Money moves from A to B. It doesn't matter
 
 ![An expense is moving money from you to the supermarket.](images/transaction2.png)
 
-In Firefly III and most other systems this is stored using a "[double-entry bookkeeping system](http://en.wikipedia.org/wiki/Double-entry_bookkeeping_system>)". You get money and your boss loses it. You spend money and the Supermarket "earns" it:
+In Firefly III and most other systems this is stored using a "[double-entry bookkeeping system](http://en.wikipedia.org/wiki/Double-entry_bookkeeping_system)". You get money and your boss loses it. You spend money and the Supermarket "earns" it:
 
 ![Your boss loses money, you earn it.](images/transaction3.png)
 
