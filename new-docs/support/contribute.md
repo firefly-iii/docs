@@ -18,7 +18,7 @@ Opening a pull request with some changes is always a possibility as well. Keep i
 
 There are two main projects for the translation of Firefly III. They are hosted by CrowdIn, where you must register an account to help out.
 
-* [Firefly III)[https://crowdin.com/project/firefly-iii) itself
+* [Firefly III](https://crowdin.com/project/firefly-iii) itself
 * [The Firefly III help pages](https://crowdin.com/project/firefly-iii-help) (the (?)-icon in the top right corner)
 
 If you see a spelling error, grammatical error or a weird translation in your language, please join the correct projects. There, you can submit your translations and fixes. They are synced to GitHub every so often and included in each new release.
