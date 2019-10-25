@@ -1,6 +1,6 @@
 # Import CSV files
 
-Firefly III can import data from CSV files. It uses a very clever system inspired by [Atlassian JIRA](https://www.atlassian.com/software/jira>) to do so.
+Firefly III can import data from CSV files. It uses a very clever system inspired by [Atlassian JIRA](https://www.atlassian.com/software/jira) to do so.
 
 Before you continue reading the "how to" below, check out the **best practices** at the bottom of this page as well!
 
