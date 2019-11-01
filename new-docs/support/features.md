@@ -15,3 +15,4 @@ Some features are already [on the roadmap](https://github.com/firefly-iii/firefl
 * Sub-accounts, sub-categories, sub-budgets, etc., will not be featured in Firefly III. Generally speaking, these do not add *meaningful* information to your transactions.
 * The ability to share a financial administration with your partner or significant other. Unfortunately, this requires a large change in Firefly III's architecture and functionality. As an alternative, you could share the login details with each other.
 * Firefly III will not support stock accounts, investment tracking, real estate or other features besides basic personal finances. If you're looking for something like that, please check out GNUCash.
+* Firefly III won't support the ability to predict expenses, give you a look into the future or do financial planning. The present is hard enough to manage at the moment.
