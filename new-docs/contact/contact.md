@@ -29,7 +29,7 @@ Firefly III uses the following libraries and tools:
 
 Firefly III is pretty much all grown up. Full test coverage (nerd alert!) is coming.
 
-Questions, ideas, bugs or other things to contribute? [Let me know](https://github.com/firefly-iii/firefly-iii/issues>)! Keep in mind that there is a chance that I say "no". This tends to surprise people, please don't take it personally.
+Questions, ideas, bugs or other things to contribute? [Let me know](https://github.com/firefly-iii/firefly-iii/issues)! Keep in mind that there is a chance that I say "no". This tends to surprise people, please don't take it personally.
 
 If you would like to donate towards the continued development of this tool, you can do so using various methods.
 

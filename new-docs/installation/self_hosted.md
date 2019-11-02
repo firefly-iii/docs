@@ -7,8 +7,8 @@ If you have your own (virtual) web server you can use this guide to install Fire
 You need a working LAMP, LEMP or WAMP stack. If you don't have one, search the web to find out how to get one. Make sure you're running PHP 7.2. There are many tutorials that will help you install one. Here are some Google queries to help you.
 
 1. [Install a LAMP stack with PHP 7.3](https://www.google.com/search?q=lamp+stack+php+7.3)
-2. [Upgrade Ubuntu PHP 7.3](https://www.google.com/search?q=upgrade+ubuntu+php+7.3>)
-3. [PHP 7.3 raspberry pi](https://www.google.nl/search?q=PHP+7.3+raspberry+pi>)
+2. [Upgrade Ubuntu PHP 7.3](https://www.google.com/search?q=upgrade+ubuntu+php+7.3)
+3. [PHP 7.3 raspberry pi](https://www.google.nl/search?q=PHP+7.3+raspberry+pi)
 
 If you wish to use another database such as SQLite or Postgres, please check out the FAQ.
 

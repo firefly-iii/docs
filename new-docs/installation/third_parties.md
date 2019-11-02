@@ -4,7 +4,7 @@ There are several third parties where you can run a Firefly III instance. Keep i
 
 ## Sandstorm.io
 
-Firefly III supports [Sandstorm.io](https://sandstorm.io/). You can find Firefly III in Sandstorm.io by going to the [Sandstorm.io App Market](https://apps.sandstorm.io/app/uws252ya9mep4t77tevn85333xzsgrpgth8q4y1rhknn1hammw70>). Please keep in mind that you need a paid Sandstorm account to be able to run Firefly III, or you must download Sandstorm locally and run it from there.
+Firefly III supports [Sandstorm.io](https://sandstorm.io/). You can find Firefly III in Sandstorm.io by going to the [Sandstorm.io App Market](https://apps.sandstorm.io/app/uws252ya9mep4t77tevn85333xzsgrpgth8q4y1rhknn1hammw70). Please keep in mind that you need a paid Sandstorm account to be able to run Firefly III, or you must download Sandstorm locally and run it from there.
 
 Sandstorm.io no longer offers paid hosting, so you must run Sandstorm locally. 
 
