@@ -20,6 +20,7 @@
 * [Reporting bugs](support/bugs.md)
 * [Contribute to Firefly III](support/contribute.md)
 * [FAQ](support/faq.md)
+* [Error codes](support/error_codes.md)
 
 ## Concepts
 
