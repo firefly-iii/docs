@@ -73,7 +73,7 @@ Enter the following command.
 composer create-project grumpydictator/firefly-iii --no-dev --prefer-dist firefly-iii <latest>
 ```
 
-You should replace `<latest>` with the latest version, which you can find on the [Github release list](https://github.com/firefly-iii/firefly-iii/releases).
+You should replace `<latest>` with the latest version, which you can find on the [Firefly III version page](https://version.firefly-iii.org/).
 
 If this gives an error because of access rights, prepend the command with `sudo`. Then fix the access rights:
 

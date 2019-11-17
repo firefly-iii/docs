@@ -2,6 +2,17 @@
 
 There are several ways of installing Firefly III using Docker, which will be detailed below. If you're new to Docker or are not sure how to use Docker please tread carefully.
 
+## Docker tags
+
+Firefly III has several Docker tags. The instructions always assume `jc5x/firefly-iii:latest`. This is the latest stable release. Other tags are:
+
+* `jc5x/firefly-iii:stable`. Same as `latest`. 
+* `jc5x/firefly-iii:beta`. This tag will also include beta releases.
+* `jc5x/firefly-iii:alpha`. This tag will also include alpha and beta releases.
+* `jc5x/firefly-iii:release-x.x.x`. These are version specific tags and will include alpha, beta and stable releases.
+
+All Docker tags are built for AMR, ARM64 and AMD64.
+
 ## Straight from Docker Hub
 
 The instructions in this section will help you set up a single container.
