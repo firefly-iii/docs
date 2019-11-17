@@ -12,6 +12,7 @@
 ## Installation
 
 * [Docker](installation/docker.md)
+* [Kubernetes](installation/k8n.md)
 * [Self-hosted server](installation/self_hosted.md)
 * [Hosted by 3rd parties](installation/third_parties.md)
 
