@@ -48,6 +48,10 @@
 * [bunq](import/bunq.md)
 * [FinTS](import/fints.md)
 * [YNAB](import/ynab.md)
+
+## Exporting data
+
+* [Exporting data](export/export.md)
     
 ## Advanced concepts
 

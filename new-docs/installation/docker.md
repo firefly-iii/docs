@@ -2,6 +2,8 @@
 
 There are several ways of installing Firefly III using Docker, which will be detailed below. If you're new to Docker or are not sure how to use Docker please tread carefully.
 
+**Frequently Asked Questions** and comments about docker can be found in the FAQ for Docker.
+
 ## Docker tags
 
 Firefly III has several Docker tags. The instructions always assume `jc5x/firefly-iii:latest`. This is the latest stable release. Other tags are:
