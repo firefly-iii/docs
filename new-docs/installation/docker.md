@@ -60,7 +60,7 @@ When executed this command will fire up a Docker container with Firefly III insi
 
 ### Download compose file
 
-Download [the Docker compose file](https://raw.githubusercontent.com/firefly-iii/firefly-iii/master/docker-compose.yml) located in the GitHub repository and place it somewhere convenient. It doesn't really matter where you place it.
+Download [the Docker compose file](https://raw.githubusercontent.com/firefly-iii/docker/master/docker-compose.yml) located in the GitHub repository and place it somewhere convenient. It doesn't really matter where you place it.
 
 Make sure you grab the raw file, and don't copy paste from your browser. The spaces in the file are very important. So use "Save As".
 
