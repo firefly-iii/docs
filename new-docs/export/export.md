@@ -1,6 +1,6 @@
 *This function is available from version 5.0.0-alpha.2 and onwards*
 
-Firefly III allows you to export transactions and other data. You will get CSV files with the data in it.
+Firefly III allows you to export transactions and other data to CSV files.
 
 ## Basic export
 
@@ -12,15 +12,15 @@ If you want more fine-grained control over the export, or if you want to export 
 
 ## Command line
 
-The basic command for the command line is this: `php artisan firefly-iii:export-data`. Again, without a date or other options it will simply export your data in a CSV file called `yyyy_mm_dd_transactions.csv` in your current directory.
+The basic command for the command line is this: `php artisan firefly-iii:export-data`. Without a date or other options it won't do anything. Refer to the options below.
 
-It depends a bit on what you wish to export, what the file name will be.
+What the file name will be depends on what you export. The basic format is like called `yyyy_mm_dd_transactions.csv`.
 
 You can use the following options to configure the export.
 
-* `--start=yyyy-mm-dd`. Start date of the export.
-* `--end=yyyy-mm-dd`. Start date of the export.
-* `--accounts=1,2,3,4`. Only include these asset accounts or liabilities in the export of transactions. Comma separated list of ID's.
+* `--start=yyyy-mm-dd`. Start date of the export. This applies to transactions only.
+* `--end=yyyy-mm-dd`. Start date of the export. This applies to transactions only.
+* `--accounts=1,2,3,4`. Only include these asset accounts or liabilities in the export of transactions. Comma separated list of ID's. This applies to transactions only.
 * `--export_directory=./`. Where to store the files. Must be writeable. Defaults to `./` (the current directory).
 
 
@@ -34,6 +34,6 @@ You can set what to export using the following flags:
 * `--export-rules`. Creates a separate file with all your rules and some meta data.
 * `--export-bills`. Creates a separate file with all your bills and some meta data.
 * `--export-piggies`. Creates a separate file with all your piggy banks and some meta data.
-* `--export-transactions`. If you use any of the flags in this list, transactions **won't be exported** unless you explicitely say so.
+* `--export-transactions`. Creates a separate file with all your transactions and some meta data.
 
 If you add none of these flags, Firefly III will export nothing.
