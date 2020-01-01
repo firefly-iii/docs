@@ -4,6 +4,8 @@ Firefly III can import data from CSV files. It uses a very clever system inspire
 
 Before you continue reading the "how to" below, check out the **best practices** at the bottom of this page as well!
 
+** As outlined [in this Patreon post](https://www.patreon.com/posts/future-updates-30012174), the way Firefly III manages importing data is going to change. That means that the CSV importer will be moved to a new, separate tool. You can already beta-test this tool if you visit this GitHub repository. I would appreciate it if you would test the new importer and let me know what you think. **
+
 ## Select a file
 
 Find your file and upload it. There is no need to upload a "configuration file". You will see what this is for in a later step.

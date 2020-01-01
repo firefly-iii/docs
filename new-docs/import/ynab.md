@@ -1,6 +1,6 @@
 # Import from YNAB
 
-Firefly III supports the YNAB API. Although support is in beta and may not be perfect, it works surprisingly well.
+Firefly III supports the YNAB 5 API. Although support is in beta and may not be perfect, it works surprisingly well.
 
 Support is fairly straight-forward, just follow the instructions. 
 
