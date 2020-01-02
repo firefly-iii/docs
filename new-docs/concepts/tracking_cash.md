@@ -14,7 +14,7 @@ To do this in Firefly III, whenever you withdraw cash you leave the "destination
 
 When you do this the transaction will simply mention *(cash)* and the money is one big withdrawal:
 
-![View a transaction for the (cash) account.](images/cash_built_in_1.png)
+![View a transaction for the (cash) account.](images/cash_built_in_2.png)
 
 This works the other way around as well, if you want to deposit cash into your checking account you just leave the Source Account field empty.
 
