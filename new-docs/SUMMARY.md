@@ -31,6 +31,7 @@
 * [Categories](concepts/categories.md)
 * [Tags](concepts/tags.md)
 * [Currencies](concepts/currencies.md)
+* [Tracking cash](concepts/tracking_cash.md)
 
 ## Advanced installation
 
