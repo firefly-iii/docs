@@ -99,7 +99,7 @@ Use any tool or system to call the URL as documented above.
 The command would be something like this:
 
 ```
-0 3 * * * docker exec <container> /usr/local/bin/php /var/www/firefly-iii/artisan firefly-iii:cron
+0 3 * * * docker exec <container> sudo -u www-data /usr/local/bin/php /var/www/firefly-iii/artisan firefly-iii:cron
 ```
 
 Replace `<container>` with the container ID or with `firefly_iii_app` in case of Docker compose.
