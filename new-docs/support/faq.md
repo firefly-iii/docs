@@ -1,22 +1,27 @@
 # FAQ
 
+People often have the same type of questions. Please find them below. If you open an issue that refers to one of these questions, your issue may be closed.
+
 ## General questions
 
-### So what is this thing really?
+### I have found a security related issue, what do I do?
 
-Firefly III is a web application written in PHP 7.2 with a database behind it that can be the tool you use to manage your personal finances. For more information, please read the full description.
+Please contact me using the details found on [the contact page](https://docs.firefly-iii.org/contact/contact).
 
-### Can I try it first?
+## Financial stuff
 
-[Yes, you can!](https://demo.firefly-iii.org/)
+### What do I do with people who pay me back?
 
-### How can I use it? I don't get it?
+Let's say you have a budget for "Going out", worth € 100. You go out with some friends and you offer to pay the bill, expecting your friends to pay you back later. The total bill is € 120 with your three friends owing you € 90 in total. So although you spent € 120 (overspending your budget with € 20), your actual costs are a mere € 30. What to do?
 
-You must install it yourself on webhosting of your choice, or on a webserver you have access to. The menu on the left has various options to try.
+It's important that Firefly III won't do anything. You can't correct your budget with income, so you budget will appear to have been overspent with € 20. But you can correct this yourself. How exactly is entirely up to you.
 
-### I have found a security related issue!
+1. You increase the budget with € 90 to a total of € 190. This means you still have € 70 to spend (€ 190 - € 120) but your budget is changed.
+2. You edit the expense so it lists € 30 instead of € 120. This means you don't have to change the budget, but also means you ignore the deposits from your friends.
 
-Please contact me asap!
+It's up to you what you do.
+
+## Installation
 
 ### I get an error during the automatic installation and upgrade?
 
@@ -28,13 +33,26 @@ A few errors may pop up during the automatic installation and upgrade routine:
 
 These errors are not fatal for Firefly III, but they mean you must do the upgrade yourself. 
 
-Please checkout the installation instructions and upgrade instructions for your particular type of installation.
+Please checkout the installation instructions and upgrade instructions for your particular type of installation. 
 
 ## Docker
 
 *No FAQ entries yet.*
 
 ## Self-hosted (VM)
+
+### I get syntax errors or other problems when opening Firefly III?
+
+You're probably not running the correct version of PHP, or your Apache / nginx server is not correctly configured for the right PHP version.
+
+You can verify which version of PHP your web server is using by making a file called `phpinfo.php` and accessing it through your webserver:
+
+```php
+<?php
+phpinfo();
+```
+
+That should tell you what you need to know.
 
 ### I have to access Firefly III through /public/ and it gives me a warning?
 
@@ -72,7 +90,7 @@ location @budget {
 
 There is not much to it. However, be warned. SQLite support is best-effort and it's not an efficient database driver for Firefly III. I strongly advice against it. Having said that:
 
-Open your `.env` file and find the lines that begin with `DB_`. These define your database connection. Leave `DB_CONNECTION`. Delete the rest.
+Open your `.env` file and find the lines that begin with `DB_`. These define your database connection. Leave `DB_CONNECTION` and set it to `sqlite`. Delete the rest.
 
 
 ```   
@@ -148,17 +166,13 @@ No. The code has been written specifically for PHP 7.3 and higher.
 
 Raspberry Pi's and other microcomputers are not the most speedy devices. User [ndandanov](https://github.com/ndandanov) has very kindly tested what works best, and found out that [installing PHP OpCache is a very good way to speed up Firefly III](https://github.com/firefly-iii/firefly-iii/issues/1095#issuecomment-356975735).
 
-### I used a default key, can I re-key the database?
-
-If you accidentally used a blank key or used a default value instead of a secure one, [ndandanov](https://github.com/ndandanov) has written a few scripts that should help [you re-encrypt the database](https://github.com/ndandanov/firefly-iii-reencrypt-database).
-
 ### Decimal points are missing, numbers are off?
 
-Ensure with `dpkg-reconfigure locales` that the language you want to use is installed, then reboot Apache or Nginx (webserver).
+Ensure with `dpkg-reconfigure locales` that the language you want to use is installed, then restart Apache or Nginx (webserver).
 
 ### I get 'Unexpected question mark'?
 
-Firefly III requires PHP 7.2 or higher.
+Firefly III requires PHP 7.3 or higher.
 
 ### I get 'BCMath' errors?
 
@@ -226,17 +240,19 @@ This could happen when you upgrade a Firefly III installation with MySQL. The ca
 
 This is a bit annoying, having to jump through hoops to get Salt Edge access, but it's the best I can do. Since Firefly III is open source software I cannot share my secret keys. They would be out on the street. So, each user has to get their own access to Salt Edge.
 
-### Why can't I import data from [insert bank here]?
-
-There are several reasons why you might not be able to import data from [insert bank here], except when you use the CSV import option. 
-
-Unfortunately, I don't have the resources to build import-code for all of the banks that are out there. Most countries have between 10 and 30 consumer banks and it's barely doable to maintain just a few. I do have the wish to support many banks, but I must do so through other services.
-
-Most banks don't actually offer secure methods to download transactions. Mint.com and other cloud-based tools will ask for your bank username and password. I would not want to build such import routines.
-
 ### I get an error about openssl_pkey_export?
 
 It means your machine has no proper configuration file for OpenSSL, or it cannot be found. Please check out [this GitHub issue](https://github.com/firefly-iii/firefly-iii/issues/1384) for tips and tricks.
+
+### Can Firefly III sync with my bank?
+
+Firefly III has a *general purpose* import tool that can import CSV files. There is also a Firefly III API that you can connect to your bank, if you are clever enough to build something in your favorite programming language. 
+
+Firefly III won't be able to sync with your bank out of the box. There are several ways of importing data, but Firefly III isn't connected to [YOUR BANK HERE] and probably never will. Most countries have between 10 and 30 consumer banks and it's barely doable to maintain just a few. I do have the wish to support many banks, but I must do so through other services. 
+
+Unfortunately, I just don't have the time or the resources to build a custom import routine for [YOUR BANK HERE]. If this is something you're specifically looking for, please use Mint or YNAB, or build it yourself.
+
+Keep in mind that most banks don't offer secure ways to download transactions. Providers like Mint.com and YNAB often require your username and password to download transactions.
 
 ### Why can't I import duplicate transactions?
 
