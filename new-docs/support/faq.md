@@ -2,6 +2,8 @@
 
 People often have the same type of questions. Please find them below. If you open an issue that refers to one of these questions, your issue may be closed.
 
+Please refer to the index on your right.
+
 ## General questions
 
 ### I have found a security related issue, what do I do?
@@ -287,6 +289,25 @@ Referrer-Policy: same-origin
 ```
 
 That should solve it.
+
+### I'm running Internet Explorer or Edge and nothing works?
+
+Some (older) browsers may not work with Firefly III. I have no plans to add support.
+
+* Internet Explorer 9 or lower on Windows 7: will not work.
+* Internet Explorer 10 on Windows 7: works, but modern TLS configurations may break your site (just try [the demo site](https://demo.firefly-iii.org/)).
+* Internet Explorer 11 on Windows 7: works.
+* Internet Explorer 11 on Windows 8.1: not tested, but should work.
+* Microsoft Edge on Windows 10: will not work due to Content Security Policy header limitations.
+
+Firefly III features very strict Content Security Policy headers that prevent [XSS](https://en.wikipedia.org/wiki/Cross-site_scripting) attacks. However, these headers are pretty new and fancy and Edge and Internet Explorer aren't. So you might run into issues using those browsers. 
+
+In order to make these browsers work, you *may* change the following environment variable. Edit your `.env` file, or launch your Docker instance with another `-e` added:
+
+`DISABLE_CSP_HEADER=true`
+
+You do this entirely at your own risk, of course.
+
 
 ### I have a question that is not in the FAQ?
 
