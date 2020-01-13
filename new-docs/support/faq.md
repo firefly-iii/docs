@@ -310,7 +310,9 @@ You do this entirely at your own risk, of course.
 
 ### I lost my 2FA token generator, or 2FA has stopped working.
 
-You need to edit the database. Go to the `users` table in your favorite SQL editor, find yourself in the table content and set the value of the `mfa_secret` column to NULL for your user account.
+If 2FA has stopped working, but it worked before, there probably is a time difference between your 2FA client (your phone) and the server that hosts Firefly III. Fix it. Then try again.
+
+If you still wish to disable 2FA because it doesn't work, you need to edit the database. Go to the `users` table in your favorite SQL editor, find yourself in the table content and set the value of the `mfa_secret` column to NULL for your user account.
 
 You can also run this query:
 

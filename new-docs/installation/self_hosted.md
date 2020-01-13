@@ -60,7 +60,7 @@ composer -v
 
 If you have no sudo rights, you can simply [download composer](https://getcomposer.org/download/) with the instructions under the header "manual download". Use `php composer.phar` instead of `composer` in the instructions ahead.
 
-This concludes the server preparations. If you're having trouble with (parts of) this step, please check out the :ref:`Server FAQ <faqselfhosted>`.
+This concludes the server preparations. If you're having trouble with (parts of) this step, please check out the FAQ.
 
 ## Installing Firefly III
 
