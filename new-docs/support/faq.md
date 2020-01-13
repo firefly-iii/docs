@@ -308,6 +308,17 @@ In order to make these browsers work, you *may* change the following environment
 
 You do this entirely at your own risk, of course.
 
+### I lost my 2FA token generator, or 2FA has stopped working.
+
+You need to edit the database. Go to the `users` table in your favorite SQL editor, find yourself in the table content and set the value of the `mfa_secret` column to NULL for your user account.
+
+You can also run this query:
+
+```sql
+update users set mfa_token = NULL where email = "your@email.com"
+``` 
+
+That should allow you to login again without having to submit a 2FA token.
 
 ### I have a question that is not in the FAQ?
 
