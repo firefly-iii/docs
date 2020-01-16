@@ -16,9 +16,9 @@ It means your machine has no proper configuration file for OpenSSL, or it cannot
 
 ## Can Firefly III sync with my bank?
 
-Firefly III has a *general purpose* import tool that can import CSV files. There is also a Firefly III API that you can connect to your bank, if you are clever enough to build something in your favorite programming language. 
+Firefly III has a *general purpose* import tool that can import CSV files. There is also a Firefly III API that you can connect to [YOUR BANK HERE], if you are clever enough to build something in your favorite programming language. 
 
-Firefly III won't be able to sync with your bank out of the box. There are several ways of importing data, but Firefly III isn't connected to [YOUR BANK HERE] and probably never will. Most countries have between 10 and 30 consumer banks and it's barely doable to maintain just a few. I do have the wish to support many banks, but I must do so through other services. 
+Firefly III won't be able to sync with [YOUR BANK HERE] out of the box. There are several ways of importing data, but Firefly III isn't connected to [YOUR BANK HERE] and probably never will. Most countries have between 10 and 30 consumer banks and it's barely doable to maintain just a few. I do have the wish to support many banks, but I must do so through other services. 
 
 Unfortunately, I just don't have the time or the resources to build a custom import routine for [YOUR BANK HERE]. If this is something you're specifically looking for, please use Mint or YNAB, or build it yourself.
 
