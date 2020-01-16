@@ -6,14 +6,10 @@ Please refer to the index on your right.
 
 ## I get 'permission denied' errors on the cache folder
 
-Examples include:
+Some or all pages of your Firefly III show you an error that complains about not being able to write to stuff in the `/storage/cache` directory. Ultimately, this is caused by a permissions issue.
 
-- A
-- B
-- C
+Run the following command:
 
-What you do is:
+* `docker exec -it <container> php artisan cache:clear`
 
-A
-B
-B
+Or browse to the `/flush` page in your installation.

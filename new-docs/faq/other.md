@@ -8,6 +8,14 @@ Please refer to the index on your right.
 
 Make sure you set `TRUSTED_PROXIES` to `**`. See also [this issue](https://github.com/firefly-iii/firefly-iii/issues/1632) on GitHub.
 
+## Auto complete is case sensitive?
+
+This happens when the underlying database is Postgres, which is case sensitive by default. You may run into this when searching for `FLO` doesn't yield `flower`.
+
+There's not much i can do about this. When the auto-complete searches in your database for entries, it may do so in a case-sensitive manner.
+
+The good news is that once the search is over, the result is cached by your browser. These cached entries will be searched for in a case-**in**sensitive manner. 
+
 ## I keep getting redirected to the index after editing something
 
 If you're running Firefly III in a reverse proxy environment, please check if you have the following configuration:
