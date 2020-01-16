@@ -20,8 +20,16 @@
 * [Feature requests and roadmap](support/features.md)
 * [Reporting bugs](support/bugs.md)
 * [Contribute to Firefly III](support/contribute.md)
-* [FAQ](support/faq.md)
 * [Error codes](support/error_codes.md)
+
+## FAQ
+* [General questions](faq/general.md)
+* [Managing your finances](faq/financials.md)
+* [Using Docker](faq/docker.md)
+* [Installing and upgrading](faq/installation.md)
+* [Self-hosting](faq/self_hosted.md)
+* [Importing data](faq/importing.md)
+* [Other questions](faq/other.md)
 
 ## Concepts
 
