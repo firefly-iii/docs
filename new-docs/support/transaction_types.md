@@ -38,12 +38,42 @@ You can make cash deposits and use the cash account (displayed as "(cash)"), lea
 
 ## Transfers
 
-(todo)
+Transfers are internal transactions that don't influence your bottom line.
+
+| From            | To              | Example                                           |
+|-----------------|-----------------|---------------------------------------------------|
+| Asset account   | Asset account   | A transfer from checking to saving or vice versa. | 
+| Loan            | Debt            | A transfer between your liabilities.              |
+| Loan            | Mortgage        | A transfer between your liabilities.              |
+| Loan            | Loan            | A transfer between your liabilities.              |
+| Debt            | Debt            | A transfer between your liabilities.              |
+| Debt            | Mortgage        | A transfer between your liabilities.              |
+| Debt            | Loan            | A transfer between your liabilities.              |
+| Mortgage        | Debt            | A transfer between your liabilities.              |
+| Mortgage        | Mortgage        | A transfer between your liabilities.              |
+| Mortgage        | Loan            | A transfer between your liabilities.              |
 
 ## Opening balance
 
-(todo)
+Opening balance transactions are special transactions that occur when a new account has an initial balance. The money is drawn from a magic account that you can't see. Edit the account itself to change the opening balance.
+
+| From                           | To                             | Example                                 |
+|--------------------------------|--------------------------------|-----------------------------------------|
+| Asset account                  | Hidden opening balance account | Initial negative balance of an account. |
+| Loan                           | Hidden opening balance account | Initial negative balance of an account. |
+| Debt                           | Hidden opening balance account | Initial negative balance of an account. |
+| Mortgage                       | Hidden opening balance account | Initial negative balance of an account. |
+| Hidden opening balance account | Asset account                  | Initial positive balance of an account. |
+| Hidden opening balance account | Loan                           | Initial positive balance of an account. |
+| Hidden opening balance account | Debt                           | Initial positive balance of an account. |
+| Hidden opening balance account | Mortgage                       | Initial positive balance of an account. |
 
 ## Reconciliation
 
-(todo)
+These transactions are also magical, and get created when you reconcile an asset account. It only works on those too.
+
+| From                          |                               |                                                         |
+|-------------------------------|-------------------------------|---------------------------------------------------------|
+| Asset account                 | Hidden reconciliation account | Reconciling an asset account by removing money from it. |
+| Hidden reconciliation account | Asset account                 | Reconciling an asset account by adding money to it.     |
+
