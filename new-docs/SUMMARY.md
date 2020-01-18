@@ -21,6 +21,7 @@
 * [Reporting bugs](support/bugs.md)
 * [Contribute to Firefly III](support/contribute.md)
 * [FAQ](support/faq.md)
+* [Transaction types](support/transaction_types.md)
 * [Error codes](support/error_codes.md)
 
 ## FAQ
