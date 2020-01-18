@@ -85,7 +85,7 @@ You can follow the progress of the installation (it can take a few minutes) by r
 docker container ls -f name=firefly_iii_app
 ```
 
-This will list the Firefly III container. You can see the list starts with a container ID, for example `.`. This container ID is probably different for you. 
+This will list the Firefly III container. You can see the list starts with a container ID, for example `abc1234aab`. This container ID is probably different for you. 
 
 Use the following command to follow the progress. To cancel, press Ctrl-C.
 
@@ -166,7 +166,7 @@ You can follow the progress of the installation (it can take a few minutes) by r
 docker container ls -f name=firefly_iii_app
 ```   
 
-This will list the Firefly III container. You can see the list starts with a container ID, for example `.`. This container ID is probably different for you. 
+This will list the Firefly III container. You can see the list starts with a container ID, for example `abc1234aab`. This container ID is probably different for you. 
 
 Use the following command to follow the progress. To cancel, press Ctrl-C.
 
