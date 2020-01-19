@@ -4,6 +4,25 @@ People often have the same type of questions. Please find them below. If you ope
 
 Please refer to the index on your right.
 
+## How do I enable debug mode?
+
+In debug mode you can see exactly what the error is. This can prove useful when trying to find the source of a bug.
+
+When you host Firefly III yourself, open your `.env` file and find these lines:
+
+* Line that starts with `APP_DEBUG`. Change it to `APP_DEBUG=true`
+* Line that starts with `APP_LOG_LEVEL`. Change it to `APP_LOG_LEVEL=debug`
+
+Go to the map `/firefly-iii/storage/logs`. Delete all files _except_ `.gitignore`.
+
+This will enable debug logging and debug mode.
+
+When you're using Docker, restart your container with the following parameters:
+
+```
+-e APP_DEBUG=true -e APP_LOG_LEVEL=debug
+```
+
 ## I can't seem to get https working with Caddy
 
 Make sure you set `TRUSTED_PROXIES` to `**`. See also [this issue](https://github.com/firefly-iii/firefly-iii/issues/1632) on GitHub.
