@@ -59,6 +59,7 @@
 * [bunq](import/bunq.md)
 * [FinTS](import/fints.md)
 * [YNAB](import/ynab.md)
+* [Other imports](import/others.md)
 
 ## Exporting data
 
