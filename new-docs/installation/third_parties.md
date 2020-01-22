@@ -19,3 +19,7 @@ Firefly III is featured in [Softaculous](https://softaculous.com/). If your (hos
 ## AMPPS
 
 Firefly III is featured in [AMPPS](https://www.ampps.com/). You can download AMPPS for Windows, Linux and Mac and Firefly III will be available as a package there.
+
+## Cloudron
+
+Firefly III is featured in [Cloudron](https://cloudron.io/). You can install a Cloudron server instance and Firefly III will be available in the [App Store](https://cloudron.io/store/org.fireflyiii.cloudronapp.html).
