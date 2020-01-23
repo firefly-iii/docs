@@ -6,7 +6,11 @@ Please refer to the index on your right.
 
 ## I get syntax errors or other problems when opening Firefly III?
 
-You're probably not running the correct version of PHP, or your Apache / nginx server is not correctly configured for the right PHP version.
+You're probably not running the correct version of PHP, or your Apache / nginx server is not correctly configured for the right PHP version. At the moment, you need **PHP 7.3**.
+
+Errors you can expect to see if you're not running **PHP 7.3**:
+
+1. `Syntax error, unexpected )`
 
 You can verify which version of PHP your web server is using by making a file called `phpinfo.php` and accessing it through your webserver:
 
