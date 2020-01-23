@@ -2,7 +2,7 @@
 
 First of all, thanks for suggesting a feature to improve Firefly III. I appreciate your input. 
 
-You can send any request [to me by email](mailto:thegrumpydictator@gmail.com) or [open a ticket on GitHub](https://github.com/firefly-iii/firefly-iii/issues).
+You can send any request [to me by email](mailto:james@firefly-iii.org) or [open a ticket on GitHub](https://github.com/firefly-iii/firefly-iii/issues).
 
 ## Roadmap and release schedule
 

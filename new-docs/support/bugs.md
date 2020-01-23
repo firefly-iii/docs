@@ -4,7 +4,7 @@ First of all: thank you for reporting a bug instead of ditching the tool altoget
 
 If you find a bug, please take the time and see if the demo site is also suffering from this bug. Include as many log files and details as you think are necessary. Bugs have a lot of priority!
 
-You can send the bug info [to me by email](mailto:thegrumpydictator@gmail.com) or by [opening a ticket on GitHub](https://github.com/firefly-iii/firefly-iii/issues).
+You can send the bug info [to me by email](mailto:james@firefly-iii.org) or by [opening a ticket on GitHub](https://github.com/firefly-iii/firefly-iii/issues).
 
 ## Errors in translations
 

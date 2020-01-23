@@ -85,4 +85,4 @@ That should allow you to login again without having to submit a 2FA token.
 
 ## I have a question that is not in the FAQ?
 
-Please send your question [to me by email](mailto:thegrumpydictator@gmail.com) or [open a ticket on GitHub](https://github.com/firefly-iii/firefly-iii/issues).
+Please send your question [to me by email](mailto:james@firefly-iii.org) or [open a ticket on GitHub](https://github.com/firefly-iii/firefly-iii/issues).
