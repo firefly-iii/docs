@@ -31,6 +31,7 @@
 * [Installing and upgrading](faq/installation.md)
 * [Self-hosting](faq/self_hosted.md)
 * [Importing data](faq/importing.md)
+* [Translating Firefly III](faq/translate.md)
 * [Other questions](faq/other.md)
 
 ## Concepts
