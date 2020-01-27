@@ -4,6 +4,20 @@ People often have the same type of questions. Please find them below. If you ope
 
 Please refer to the index on your right.
 
+## I came over from YNAB, I don't get it?
+
+YNAB and Firefly III have a totally different way of working. Please read carefully.
+
+First of all, YNAB works the wrong way around by budgeting the money that comes in instead of the money that goes out. Weird right? They expect you to think of a budget for every coin tossed to you instead of budgeting what you expect to spend like a normal person.
+
+YNAB expects you to put your money into budgets based on whatever money comes in. But that's not how money works.
+
+Firefly III works the right way around. At the start of the month, you decide what you want to spend. 1000,-? 1500,-? Whatever you want! That money is divided over budgets and spent over a monthly period (or whatever period you want).
+
+If everything is OK, your budget should at least match what you earn. So that's easy. But if everything is *better* then OK, you budget **less** than you make and you **save** the rest. You can use the rest of the money to fill piggy banks or donate to me (kidding ;)).
+
+You can read more about this concept on the page about [the grand theory](https://docs.firefly-iii.org/about-firefly-iii/grand-theory). 
+
 ## How do I enable debug mode?
 
 In debug mode you can see exactly what the error is. This can prove useful when trying to find the source of a bug.
