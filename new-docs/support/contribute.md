@@ -4,7 +4,7 @@ First of all: thank you for contributing to Firefly III! It is always nice to ge
 
 ## Bugs
 
-If you find a bug, please take the time and see if the demo site is also suffering from this bug. Include as many log files and details as you think are necessary. Bugs have a lot of priority! You can send the bug info [to me by email](mailto:james@firefly-iii.org) or by [opening a ticket on GitHub](https://github.com/firefly-iii/firefly-iii/issues).
+If you find a bug, please take the time and see if the demo site is also suffering from this bug; include as many log files and details as you think necessary. Bugs have a lot of priority! You can send the bug info [to me by email](mailto:james@firefly-iii.org) or by [opening a ticket on GitHub](https://github.com/firefly-iii/firefly-iii/issues).
 
 When you want to fix a bug yourself, feel free to open a pull request.
 
