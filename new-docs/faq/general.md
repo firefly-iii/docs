@@ -6,7 +6,7 @@ Please refer to the index on your right.
 
 ## What is Firefly III?
 
-Firefly III is a self-hosted manager for your personal finances. It's written in PHP 7.3. 'It's opinionated, which means it follows the mantra that I, the developer like.
+Firefly III is a self-hosted manager for your personal finances. It's written in PHP 7.3. It's opinionated, which means it follows the mantra that I, the developer like.
 
 ## Can I try it?
 
