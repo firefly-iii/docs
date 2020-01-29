@@ -135,9 +135,27 @@ Raspberry Pi's and other microcomputers are not the most speedy devices. User [n
 
 ## Decimal points are missing, numbers are off?
 
-Ensure with `dpkg-reconfigure locales` that the language you want to use is installed, then restart Apache or Nginx (webserver).
+When Firefly III is showing amounts without decimal places or other weird things, or you have gotten a blue warning bar, your server is missing vital locale information. There are packages you must install to make sure Firefly III can format amounts. Heroku doesn't have good support for Chinese. This may not be something I can fix.
 
-Heroku doesn't have good support for Chinese. This may not be something I can fix.
+Ensure with `dpkg-reconfigure` locales that the language you want to use is installed, then reboot Apache or Nginx (webserver) and if necessary, PHP FPM.
+
+In order to make the demo site work (it’s an Ubuntu server) I run these commands:
+
+```
+sudo apt-get install -y language-pack-nl-base
+sudo locale-gen 
+```
+
+You can see which locales your system has by running
+
+```
+locale -a
+```
+
+Depending on your language, a specific list of locales is tried by Firefly III. They can be found on [GitHub](https://github.com/firefly-iii/firefly-iii/tree/master/resources/lang). Open the directory of your language, then open `config.php` and look for the line `locale`.
+
+When it still does not work (did you reboot?) please *[open an issue](https://github.com/firefly-iii/firefly-iii/issues)*.
+
 
 ## I get 'Unexpected question mark'?
 
