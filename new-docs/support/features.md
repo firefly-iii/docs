@@ -16,3 +16,7 @@ Some features are already [on the roadmap](https://github.com/firefly-iii/firefl
 * The ability to share a financial administration with your partner or significant other. Unfortunately, this requires a large change in Firefly III's architecture and functionality. As an alternative, you could share the login details with each other.
 * Firefly III will not support stock accounts, investment tracking, real estate or other features besides basic personal finances. If you're looking for something like that, please check out GNUCash.
 * Firefly III won't support the ability to predict expenses, give you a look into the future or do financial planning. The present is hard enough to manage at the moment.
+
+### If you're not going to implement my idea, could you at least make it optional?
+
+Sometimes I can't or won't implement a certain feature, or change how something works. Let me reassure you this isn't personal or something. We could just disagree on things and that's fine. But instead of offering options for everything I want Firefly III to have [sensible defaults](https://en.wikipedia.org/wiki/Convention_over_configuration).
