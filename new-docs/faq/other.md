@@ -18,6 +18,10 @@ If everything is OK, your budget should at least match what you earn. So that's 
 
 You can read more about this concept on the page about [the grand theory](https://docs.firefly-iii.org/about-firefly-iii/grand-theory). 
 
+## Can I share one administration with multiple users?
+
+Unfortunately not. Each administration is tightly locked to a single user. If you want to share your financial administration with your partner or somebody else, you must share the username and password with them.
+
 ## How do I enable debug mode?
 
 In debug mode you can see exactly what the error is. This can prove useful when trying to find the source of a bug.
