@@ -101,6 +101,15 @@ update users set mfa_token = NULL where email = "your@email.com"
 
 That should allow you to login again without having to submit a 2FA token.
 
+
+## I want the rules to do something they currently don't support.
+
+Just so you know, the Firefly III rule engine is supposed to be basic. That's the goal of the rule engine: to support basic stuff. Although it's *technically* possible to make the rule engine do the most amazing stuff, I don't want to make Firefly III too complicated. So there are some things the rule engine will never be able to do, even though it's something that's not difficult to program:
+
+* Copy values from one field to another.
+* Delete whole transactions.
+* Regular expressions.
+
 ## I have a question that is not in the FAQ?
 
 Please send your question [to me by email](mailto:james@firefly-iii.org) or [open a ticket on GitHub](https://github.com/firefly-iii/firefly-iii/issues).
