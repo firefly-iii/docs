@@ -60,6 +60,10 @@ Firefly III couldn't find one of the transactions you're trying to link. Perhaps
 
 You can't delete other users but yourself, unless you have the owner role.
 
+**200026**
+
+You can't delete the fallback currency. It's required by the system.
+
 ### Firefly III error codes
 
 These start with 3.
