@@ -1,6 +1,6 @@
 # Firefly III API
 
-Firefly III features a JSON API. This API is still in **beta**, and may work in unexpected or undocumented ways.
+Firefly III features a JSON API.
 
 Please visit the [dedicated Swagger documentation](https://api-docs.firefly-iii.org/) where you can read and try the API.
 
