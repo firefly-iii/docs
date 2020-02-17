@@ -13,7 +13,7 @@ Firefly III has several Docker tags. The instructions always assume `jc5x/firefl
 * `jc5x/firefly-iii:alpha`. This tag will also include alpha and beta releases.
 * `jc5x/firefly-iii:release-x.x.x`. These are version specific tags and will include alpha, beta and stable releases.
 
-All Docker tags are built for AMR, ARM64 and AMD64.
+All Docker tags are built for ARM, ARM64 and AMD64.
 
 ## Straight from Docker Hub
 
