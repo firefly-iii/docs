@@ -14,3 +14,12 @@ It's important that Firefly III won't do anything. You can't correct your budget
 2. You edit the expense so it lists € 30 instead of € 120. This means you don't have to change the budget, but also means you ignore the deposits from your friends.
 
 It's up to you what you do. *Personally*, I do nr. 2. It means that Firefly III shows me what I actually spent, and my own income isn't skewed by what people pay me back.
+
+## What should I do when I close a real life asset account?
+
+To close an account in Firefly III, do the following.
+
+1. Make sure the balance is zero by transferring out or withdrawing the final balance.
+2. Edit the account (look for the pencil icon or use the ellipsis-menu) and remove the checkbox next to **Active**.
+
+You can find the inactive asset account on a special page: `/inactive-accounts/asset`.
