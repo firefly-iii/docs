@@ -12,6 +12,10 @@ Firefly III is a self-hosted manager for your personal finances. It's written in
 
 Yes, there is [a demo site](https://demo.firefly-iii.org/) where you can play with a sample administration.
 
+## Is it multi-user?
+
+Yes. For security reasons Firefly III opens up the registration form only for the first user, but anybody can register an account if you enable this under **Administration** > **Configuration**. Keep in mind that you won't be able to *share* your administration.
+
 ## I found a bug, what do I do?
 
 You can contact me [through GitHub](https://github.com/firefly-iii/firefly-iii/) by opening an issue, or use the details found on [the contact page](https://docs.firefly-iii.org/contact/contact).
