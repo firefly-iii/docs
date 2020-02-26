@@ -23,3 +23,7 @@ To close an account in Firefly III, do the following.
 2. Edit the account (look for the pencil icon or use the ellipsis-menu) and remove the checkbox next to **Active**.
 
 You can find the inactive asset account on a special page: `/inactive-accounts/asset`.
+
+## I don't want to enter my budgets every month, can I copy them over?
+
+No. This is on purpose.
