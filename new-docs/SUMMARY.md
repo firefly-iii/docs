@@ -55,9 +55,8 @@
 
 ## Importing data
 
-* [CSV files](import/csv.md)
+* [Introduction](import/introduction.md)
 * [Spectre / Salt Edge](import/spectre.md)
-* [bunq](import/bunq.md)
 * [FinTS](import/fints.md)
 * [YNAB](import/ynab.md)
 * [Other imports](import/others.md)
