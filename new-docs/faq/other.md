@@ -4,6 +4,10 @@ People often have the same type of questions. Please find them below. If you ope
 
 Please refer to the index on your right.
 
+## I lost my two-factor authentication codes, and backup codes.
+
+Open table `users` and find column `mfa_secret` for the user you want to login to. Set the field for `mfa_code` to `NULL` and the login should no longer ask for MFA.
+
 ## I came over from YNAB, I don't get it?
 
 YNAB and Firefly III have a totally different way of working. Please read carefully.
