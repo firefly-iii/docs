@@ -75,6 +75,8 @@ You can't change the trigger dates (like every Tuesday or the 5th of the month).
 
 If you set the budget to "monthly", the budget limit created will also be "monthly". You can't do a daily increase on a monthly budget limit for example.
 
+This routine is multi-currency aware, so it will also work for USD or CAD or whatever exotic currency you have configured. However, due to UI constraints, you only set one auto-budget per currency. You can't set two routines, one for USD and one for EUR.
+
 ## The difference between budgets and categories
 
 If you try to save money every month on a certain subject, it's a budget. Groceries are budget. Bills are a budget. If you travel by train occasionally, it's not a budget.
