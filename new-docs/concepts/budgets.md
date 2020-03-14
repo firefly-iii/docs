@@ -62,6 +62,11 @@ If at any point you spend more than the amount in the budget, the routine will s
 
 6. Month 6, the budget will be set to € 25,-.
 
+### Special attention
+
+This feature will only work when you configure the [cron job](https://docs.firefly-iii.org/advanced-installation/cron) correctly. 
+
+
 ## The difference between budgets and categories
 
 If you try to save money every month on a certain subject, it's a budget. Groceries are budget. Bills are a budget. If you travel by train occasionally, it's not a budget.
