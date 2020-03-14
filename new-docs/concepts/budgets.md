@@ -71,7 +71,9 @@ Just like the "fixed amount" auto-budget settings, these changes will happen on 
 
 ### Special attention
 
-You can't change the trigger dates (like every Tuesday or the 5th of the month). After the amount has been created (on the first of each period or daily) you can freely edit or remove the limit. Firefly III won't stop you. This feature will only work when you configure the [cron job](https://docs.firefly-iii.org/advanced-installation/cron) correctly.
+You can't change the trigger dates (like every Tuesday or the 5th of the month). After the amount has been created (on the first of each period or daily) you can freely edit or remove the limit. Firefly III won't stop you.
+
+This feature will only work when you configure the [cron job](https://docs.firefly-iii.org/advanced-installation/cron) correctly.
 
 If you set the budget to "monthly", the budget limit created will also be "monthly". You can't do a daily increase on a monthly budget limit for example.
 
