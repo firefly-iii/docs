@@ -39,9 +39,7 @@ Other settings will have a similar effect:
 - Half yearly: Firefly III will create a half year long budget limit every six months, twice a year (1st of January, 1st of July). 
 - Yearly: Firefly III will create a year long budget limit every twelve months, once a year (1st of January). 
 
-After the amount has been created (on the first of each period or daily) you can freely edit or remove the limit. Firefly III won't stop you.
 
-You can't change the trigger dates (like every Tuesday or the 5th of the month). They're set in stone.
 
 ### Rollover
 
@@ -52,19 +50,22 @@ If you set it to "monthly", € 25,- Firefly III will behave in the following wa
 1. The first month, the budget will be set to € 25,-.
 2. The second month, the budget will be set to € 50,-.
 3. The third month, € 75,- etc.
-
+    
 If you spend money in your budget, this will be reflected in the budget. For example, with the example budget now at € 75,-, this is what happens when you spend € 19,95:
-
+    
 4. Month 4, the budget will be set to € 80,05: 75 + 25 - 19,95.
 5. Month 5, € 105,05. Same logic.
-
+    
 If at any point you spend more than the amount in the budget, the routine will start over. So if you spend 199,95.
-
+    
 6. Month 6, the budget will be set to € 25,-.
 
 ### Special attention
 
-This feature will only work when you configure the [cron job](https://docs.firefly-iii.org/advanced-installation/cron) correctly. 
+You can't change the trigger dates (like every Tuesday or the 5th of the month). They're set in stone.
+After the amount has been created (on the first of each period or daily) you can freely edit or remove the limit. Firefly III won't stop you.
+This feature will only work when you configure the [cron job](https://docs.firefly-iii.org/advanced-installation/cron) correctly.  
+not daily > month, not other day than the first.
 
 
 ## The difference between budgets and categories
