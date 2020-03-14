@@ -56,7 +56,7 @@ If you spend money in your budget, this will be reflected in the budget. For exa
 - April, the budget will be set to € 80,05: 75 + 25 - 19,95.
 - May, € 105,05. Same logic.
     
-If at any point you spend more than the amount in the budget, the routine will start over. So if you spend 199,95.
+If at any point you spend more than the amount in the budget, the routine will start over. So if you spend 199,95 (which is more than 105,05):
     
 - June, the budget will be set to € 25,- again.
 
