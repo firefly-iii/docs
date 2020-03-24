@@ -11,3 +11,13 @@ What Firefly III collects and sends exactly is different for each version.
 ### Version 5.2.0 and earlier
 
 Collects no telemetry, even when it's enabled.
+
+## What's the UUID?
+
+If you check your log files after the cron job is fired or the telemetry entries are submitted, you might see this:
+
+```
+local.INFO: Result of submission [200]: {"uuid":"1ebfb9f0-6c0b-11ea-9aac-274c8c0cddda"}  
+```
+
+The "uuid" is a unique random reference to your telemetry submission and can be used to debug the process. 

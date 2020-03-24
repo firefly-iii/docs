@@ -12,6 +12,7 @@ Firefly III has several Docker tags. The instructions always assume `jc5x/firefl
 * `jc5x/firefly-iii:beta`. This tag will also include beta releases.
 * `jc5x/firefly-iii:alpha`. This tag will also include alpha and beta releases.
 * `jc5x/firefly-iii:release-x.x.x`. These are version specific tags and will include alpha, beta and stable releases.
+* `jc5x/firefly-iii:develop`. Always the latest develop image. Maybe unstable.
 
 All Docker tags are built for ARM, ARM64 and AMD64.
 
@@ -52,6 +53,8 @@ jc5x/firefly-iii:latest
 
 Firefly III assumes that you're using PostgreSQL, which a lot of people do. If you use MySQL, add the following environment variable to the command: `DB_CONNECTION=mysql` and make sure you change the port, `DB_PORT=3306`.
 
+If you want to run the Docker container as another user, add `--user=`. Possible values are `user`, `user:group`,`uid`, `uid:gid`, `user:gid`, `uid:group`.
+
 When executed this command will fire up a Docker container with Firefly III inside of it. It may take some time to start. If the database is set up properly it will automatically migrate and install a default database and you should be able to surf to your container (usually located at localhost) to use Firefly III.
 
 ## Docker Hub with automatic updates via docker compose
@@ -64,12 +67,13 @@ Download [the Docker compose file](https://raw.githubusercontent.com/firefly-iii
 
 Make sure you grab the raw file, and don't copy paste from your browser. The spaces in the file are very important. So use "Save As".
 
+If you want to any container under another user, add the `user:` key under `image:`, with the same indentation. Possible values are `user`, `user:group`,`uid`, `uid:gid`, `user:gid`, `uid:group`.
+
 ### Download environment variables
 
 Download [the environment variable file](https://raw.githubusercontent.com/firefly-iii/firefly-iii/master/.env.example) from the GitHub repository and place in the same folder as the `docker-compose.yml`.
 
 It is **important** that you rename the file to `.env`. You can see in the Docker compose file why this is. There is a reference to it: `env_file: .env`. If you don't name it `.env`, but something else, you must edit the Docker compose file.
-
 
 ### Start the container
 
@@ -126,6 +130,8 @@ Change the following variables in the commands you see in the block below. This 
  * `APP_KEY`
 
 Keep in mind that `POSTGRES_PASSWORD` and `DB_PASSWORD` have to be *identical*. `POSTGRES_PASSWORD` is used to initialise the database, and `DB_PASSWORD` is used to connect to the database. So if these variables are different, it won't run.
+
+If you want to run the Docker container as another user, add `--user=`. Possible values are `user`, `user:group`,`uid`, `uid:gid`, `user:gid`, `uid:group`.
 
 Also keep in mind that `APP_KEY` must be *exactly* 32 characters long.
 

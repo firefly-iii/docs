@@ -21,6 +21,8 @@ docker pull jc5x/firefly-iii:latest
 
 And then create it again by running the command from the installation guide. The container should upgrade itself so it can take some time for it to start. You should save the command you've used to start the container for easier upgrade.
 
+If you want to run the Docker container as another user, add `--user=`. Possible values are `user`, `user:group`,`uid`, `uid:gid`, `user:gid`, `uid:group`.
+
 ### Docker Hub via docker compose
 
 To update the container run these commands:
@@ -31,6 +33,10 @@ docker-compose rm
 docker-compose pull firefly_iii_app
 docker-compose -f docker-compose.yml up -d
 ```
+
+If you want to any container under another user, add the `user:` key under `image:`, with the same indentation. Possible values are `user`, `user:group`,`uid`, `uid:gid`, `user:gid`, `uid:group`.
+
+if you redownload `docker-compose.yml`, keep in mind that the database version in the Docker composer may have been updated and that this version is not compatible with your current version (ie PostgreSQL 10 vs PostgreSQL 12).
 
 ## Virtual or real server
 
