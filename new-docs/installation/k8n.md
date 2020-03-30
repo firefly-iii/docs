@@ -1,6 +1,6 @@
 # Kubernetes
 
-In the `.deploy/kubernetes` directory of Firefly III (also available [on GitHub](https://github.com/firefly-iii/firefly-iii/tree/master/.deploy/kubernetes)) you will find three YAML files that denote a pretty standard service offering for both Firefly III and an accompanying MySQL database.
+In the `.deploy/kubernetes` directory of Firefly III (also available [on GitHub](https://github.com/firefly-iii/kubernetes)) you will find three YAML files that denote a pretty standard service offering for both Firefly III and an accompanying MySQL database.
 
 *Take care!*
 
