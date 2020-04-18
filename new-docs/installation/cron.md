@@ -99,10 +99,14 @@ Use any tool or system to call the URL as documented above.
 The command would be something like this:
 
 ```
-0 3 * * * docker exec <container> sudo -u www-data /usr/local/bin/php /var/www/firefly-iii/artisan firefly-iii:cron
+0 3 * * * docker exec --user www-data <container> /usr/local/bin/php /var/www/firefly-iii/artisan firefly-iii:cron
 ```
 
-Replace `<container>` with the container ID or with `firefly_iii_app` in case of Docker compose.
+Replace `<container>` with the container ID or with `firefly_iii_app` in case of Docker compose. If you want, you can replace `<container>` with this piece of code that will automatically insert the correct container ID. Keep in mind, it may need some fine tuning!
+
+```
+$(docker container ls -a -f name=firefly --format="{{.ID}}")
+```
 
 ### Run an image that calls the cron job
 
