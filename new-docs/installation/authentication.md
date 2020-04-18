@@ -103,6 +103,48 @@ WINDOWS_SSO_KEY=AUTH_USER
 ADLDAP_SYNC_FIELD=uid
 ```
 
+### Example configuration for FreeIPA
+
+The following is an example configuration for FreeIPA:
+
+```
+LOGIN_PROVIDER=ldap
+
+# LDAP connection configuration
+# OpenLDAP, FreeIPA or ActiveDirectory
+ADLDAP_CONNECTION_SCHEME=FreeIPA
+ADLDAP_AUTO_CONNECT=true
+
+# LDAP connection settings
+ADLDAP_CONTROLLERS=ipa.example.com
+ADLDAP_PORT=389
+ADLDAP_TIMEOUT=5
+ADLDAP_BASEDN="dc=example,dc=com"
+ADLDAP_FOLLOW_REFFERALS=false
+ADLDAP_USE_SSL=false
+ADLDAP_USE_TLS=false
+
+ADLDAP_ADMIN_USERNAME="uid=read-only-admin,cn=users,cn=accounts,dc=example,dc=com"
+ADLDAP_ADMIN_PASSWORD=password
+
+ADLDAP_ACCOUNT_PREFIX="uid="
+ADLDAP_ACCOUNT_SUFFIX=",cn=users,cn=accounts,dc=example,dc=com"
+
+# LDAP authentication settings.
+ADLDAP_PASSWORD_SYNC=false
+ADLDAP_LOGIN_FALLBACK=false
+
+ADLDAP_DISCOVER_FIELD=uid
+ADLDAP_AUTH_FIELD=uid
+
+# Will allow SSO if your server provides an AUTH_USER field.
+WINDOWS_SSO_DISCOVER=samaccountname
+WINDOWS_SSO_KEY=AUTH_USER
+
+# field to sync as local username.
+ADLDAP_SYNC_FIELD=uid
+```
+
 ### Example configuration for Active Directory
 
 The following is an example configuration for Active Directory:
