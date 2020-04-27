@@ -86,7 +86,7 @@ docker-compose -f docker-compose.yml up -d
 You can follow the progress of the installation (it can take a few minutes) by running this command:
 
 ```
-docker container ls -f name=firefly_iii_app
+docker container ls -f name=fireflyiii
 ```
 
 This will list the Firefly III container. You can see the list starts with a container ID, for example `abc1234aab`. This container ID is probably different for you. 
@@ -169,7 +169,7 @@ jc5x/firefly-iii:latest
 You can follow the progress of the installation (it can take a few minutes) by running this command:
 
 ```
-docker container ls -f name=firefly_iii_app
+docker container ls -f name=fireflyiii
 ```   
 
 This will list the Firefly III container. You can see the list starts with a container ID, for example `abc1234aab`. This container ID is probably different for you. 
