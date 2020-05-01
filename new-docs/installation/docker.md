@@ -67,7 +67,7 @@ Download [the Docker compose file](https://raw.githubusercontent.com/firefly-iii
 
 Make sure you grab the raw file, and don't copy paste from your browser. The spaces in the file are very important. So use "Save As".
 
-If you want to any container under another user, add the `user:` key under `image:`, with the same indentation. Possible values are `user`, `user:group`,`uid`, `uid:gid`, `user:gid`, `uid:group`.
+If you want to run any container under another user, add the `user:` key under `image:`, with the same indentation. Possible values are `user`, `user:group`,`uid`, `uid:gid`, `user:gid`, `uid:group`.
 
 ### Download environment variables
 
