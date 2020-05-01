@@ -26,7 +26,7 @@ Firefly III v5.2.0 and later can automatically manage your budgets. Edit or crea
 
 ### Fixed amount
 
-Firefly III will create a new budget limit every selected period. The exacy behavior depends entirely on your settings:
+Firefly III will create a new budget limit every selected period. The exact behavior depends entirely on your settings:
 
 If you set it to "monthly", € 200,- Firefly III will give you an automatic budget limit of € 200,-, valid for one month, every month. This will happen automatically.
 
