@@ -21,6 +21,50 @@ A rule must spring into action at the right time! This is decided by triggers th
 
 Rules can be set to be "strict" or not. If a rule is set to be strict, ALL triggers must match for the rule to fire. If a rule is not scrict, ANY trigger is enough.
 
+All triggers are case-insensitive
+
+### Special triggers
+
+Some triggers require some tinkering before they work the way you might think.
+
+#### Account number / IBAN triggers
+
+These triggers (for both the source and destination accounts) trigger on either the IBAN or the account number.
+
+#### Amount triggers
+
+These triggers are exact. So remember it's "amount less" and NOT "less or the same".
+
+
+#### Date triggers
+
+The date triggers are complex and require your attention. You can use several keywords:
+
+- `today`, `yesterday` or `tomorrow`
+- `start of this week`, `start of this month`, `start of this quarter` or `start of this year`
+- `end of this week`, `end of this month`, `end of this quarter`, `end of this year`
+
+These keywords are not translated. So even when you use Firefly III in Dutch or Russian, you must use the English terminology.
+
+You can also use an absolute date, in this form: `YYYY-MM-DD`. So for the 17th of May 2020, you would use `2020-05-17`.
+
+You can also use relative date indicators, like so:
+
+- `+3d` (in three days)
+- `-2w` (two weeks ago)
+
+You can use `d` for days, `w` for weeks, `m` for months and `y` for years. You can also combine them. To set a date trigger for a year and a half ago, you could do this:
+
+- `-1y -6m`
+
+Notice the **space** between the two.
+
+Likewise, you can mix + and -. To go 11 months back, you could use:
+
+- `-1y +1m`
+
+If your entry is invalid, you can't save the rule.
+
 ## Actions
 
 When the triggers are hit (either ALL or ANY, see the "strict" option), Firefly III will execute the associated rule actions. There are many actions available. Notable ones are:
@@ -33,7 +77,13 @@ Combined, this gives you a lot of power over your financial data.
 
 You cannot fire other rules from a rule.
 
-### Stop processing
+### Special actions
+
+#### Delete transaction
+
+If you use this trigger, the transaction will be deleted. There is no undo.
+
+## Stop processing
 
 When you create a new rule, you can set an option called "stop processing". If you set it, and the rule is triggered, other rules in the group will NOT be processed any more.
 
@@ -42,7 +92,7 @@ For any trigger, you can also set the "stop processing" option. If you do, and t
 For each action, you can set "stop processing" as well. When you do, any actions after the current one will not fire.
 
 
-### Converting to another transaction type
+## Converting to another transaction type
 
 If you set an action to convert your transaction to a deposit, a transfer or a withdrawal, make sure that you configure the rule action correctly. If you don't do this right the rule action wil *silently* fail and nothing will happen. Here you can read what will happen to your transaction. This is dependent on the original type and the future type of the transaction.
 
