@@ -22,7 +22,7 @@ There is a page under Administration, Telemetry (`/admin/telemetry`) that shows 
 
 ## Can I see the collected telemetry and influence it?
 
-If telemetry is collected, the page under Administration, Telemetry (`/admin/telemetry/view`) that shows you how many records have been collected. You can view all records, but they are read-only. There are several options to manage the telemetry data.
+If telemetry is collected, there is a page under Administration, Telemetry (`/admin/telemetry/view`) that shows you how many records have been collected. You can view all records, but they are read-only. There are several options to manage the telemetry data.
 
 - You can submit the data, not having to wait on the cron job.
 - You can delete all (submitted) records.
