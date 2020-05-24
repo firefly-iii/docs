@@ -8,7 +8,7 @@ If enabled you can see and remove what Firefly III has collected in the Administ
 
 What Firefly III collects and sends exactly is different for each version.
 
-### Version 5.2.0 and earlier
+### Version 5.2.6 and earlier
 
 Collects no telemetry, even when it's enabled.
 
