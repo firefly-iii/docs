@@ -4,6 +4,34 @@ Firefly III supports the collection and sending of usage telemetry. This means t
 
 If enabled you can see and remove what Firefly III has collected in the Administration area of your Firefly III installation.
 
+## How do I enable telemetry?
+
+If you want Firefly III to collect and submit telemetry data, you must set the `SEND_TELEMETRY` environment variable to `true`. Telemetry will then be collected for all users. Make sure you notify other users that this is happening.
+
+You can change the environment variable by editing your `.env` file. If the variable is not in the file, just add it like so: `SEND_TELEMETRY=true`.
+
+If you're using Docker, you can do this by adding the telemetry environment variable to your docker run command: `-e SEND_TELEMETRY=true`.
+
+## How do I disable telemetry?
+
+Telemetry collection and submission is disabled by default. If you have enabled it before and want to disable it now, use `SEND_TELEMETRY=false` or remove the variable entirely. 
+
+## Can I see the status of the telemetry collection in Firefly III?
+
+There is a page under Administration, Telemetry (`/admin/telemetry`) that shows you the status of the telemetry collection. 
+
+## Can I see the collected telemetry and influence it?
+
+If telemetry is collected, the page under Administration, Telemetry (`/admin/telemetry/view`) that shows you how many records have been collected. You can view all records, but they are read-only. There are several options to manage the telemetry data.
+
+- You can submit the data, not having to wait on the cron job.
+- You can delete all (submitted) records.
+
+## What are types of data that can be collected?
+
+- "Feature flag". This tells me the value of a specific "flag". A flag could be the number of users, the PHP version, etc. See the overview below for more information.
+- "Recurring". Recurring telemetry values store a specific value ever *x* days. This type of telemetry is currently not used, however.
+
 ## What telemetry can be collected?
 
 What Firefly III collects and sends exactly is different for each version.
