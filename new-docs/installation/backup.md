@@ -4,7 +4,7 @@ Firefly III does not come with a built-in backup routine. Using your native OS t
 
 - The `.env` file in the root of your installation or the _exact_ command you've used to launch Firefly III.
 - The entire database or database file (in `/storage/database`);
-- All uploads from `/storage/uploads`;
+- All uploads from `/storage/upload`;
 
 ## Docker
 
