@@ -26,7 +26,7 @@ Keep in mind that most banks don't offer secure ways to download transactions. P
 
 ## Why can't I import duplicate transactions?
 
-Firefly III can recognise two different types of duplicate transactions. It will refuse to either of them.
+Firefly III can recognise two different types of duplicate transactions. It will refuse to import both of them.
 
 When you import from a certain source and a specific expense is an exact duplicate of an earlier imported expense, Firefly III will refuse to import the transaction. An exact duplicate transaction is a transaction where *every* field is equal to another transaction. For example, if you import the same CSV file twice, or when you import from Spectre but you reset your settings in the meantime. 
 
