@@ -44,14 +44,14 @@ docker run -d \
 -p 80:80 \
 -e APP_KEY=CHANGEME_32_CHARS \
 -e DB_HOST=CHANGEME \
--e DB_PORT=5432 \
+-e DB_PORT=3306 \
 -e DB_DATABASE=CHANGEME \
 -e DB_USERNAME=CHANGEME \
 -e DB_PASSWORD=CHANGEME \
 jc5x/firefly-iii:latest
 ```
 
-Firefly III assumes that you're using PostgreSQL, which a lot of people do. If you use MySQL, add the following environment variable to the command: `DB_CONNECTION=mysql` and make sure you change the port, `DB_PORT=3306`.
+Firefly III assumes that you're using MySQL, which a lot of people do. If you use PostgreSQL, add the following environment variable to the command: `DB_CONNECTION=pgsql` and make sure you change the port, `DB_PORT=3306`.
 
 If you want to run the Docker container as another user, add `--user=`. Possible values are `user`, `user:group`,`uid`, `uid:gid`, `user:gid`, `uid:group`.
 
@@ -125,11 +125,11 @@ Use the following run commands as a template.
 
 Change the following variables in the commands you see in the block below. This is not mandatory but highly recommended.
 
- * `POSTGRES_PASSWORD` must be changed to a suitable database password of your choice.
+ * `MYSQL_PASSWORD` must be changed to a suitable database password of your choice.
  * `DB_PASSWORD` must be equal to this password.
  * `APP_KEY`
 
-Keep in mind that `POSTGRES_PASSWORD` and `DB_PASSWORD` have to be *identical*. `POSTGRES_PASSWORD` is used to initialise the database, and `DB_PASSWORD` is used to connect to the database. So if these variables are different, it won't run.
+Keep in mind that `MYSQL_PASSWORD` and `DB_PASSWORD` have to be *identical*. `MYSQL_PASSWORD` is used to initialise the database, and `DB_PASSWORD` is used to connect to the database. So if these variables are different, it won't run.
 
 If you want to run the Docker container as another user, add `--user=`. Possible values are `user`, `user:group`,`uid`, `uid:gid`, `user:gid`, `uid:group`.
 
@@ -142,10 +142,10 @@ To start the database:
 ```
 docker run -d \
 --name=firefly_iii_db \
--e POSTGRES_PASSWORD=firefly \
--e POSTGRES_USER=firefly \
--v firefly_iii_db:/var/lib/postgresql/data \
-postgres:10
+-e MYSQL_PASSWORD=firefly \
+-e MYSQL_USER=firefly \
+-v firefly_iii_db:/var/lib/mysql \
+mariadb:10.4-bionic
 ```
 
 Then, to start Firefly III itself:
@@ -157,7 +157,7 @@ docker run -d \
 -e DB_HOST=firefly_iii_db \
 -e DB_DATABASE=firefly \
 -e DB_USERNAME=firefly \
--e DB_PORT=5432 \
+-e DB_PORT=3306 \
 -e DB_PASSWORD=firefly \
 -e APP_KEY=CHANGEME_32_CHARS \
 -p 80:80 \
@@ -206,7 +206,7 @@ On the command line, this would be something like:
 -e DB_HOST=mysql \
 -e DB_DATABASE=firefly \
 -e DB_USERNAME=firefly \
--e DB_PORT=5432 \
+-e DB_PORT=3306 \
 -e DB_PASSWORD=somepw \
 -e APP_KEY=CHANGEME_32_CHARS \
 -e APP_URL=https://firefly.example.com \
