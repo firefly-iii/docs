@@ -1,6 +1,6 @@
 # What Firefly III isn't
 
-Even more important than all the stuff Firefly III [can](https://docs.firefly-iii.org/about-firefly-iii/what-its-not) do for you is the list of stuff it **can't** do for you. If you want a personal finance tool to do this for you, look elsewhere.
+Even more important than all the stuff Firefly III [can](/about/introduction.md) do for you is the list of stuff it **can't** do for you. If you want a personal finance tool to do this for you, look elsewhere.
 
 ### Stock and portfolio management
 
@@ -8,7 +8,7 @@ Not supported by Firefly III. Use something like [Portfolio Performance](https:/
 
 ### Automated imports from [your bank here]
 
-There are [many, many ways](https://docs.firefly-iii.org/importing-data/introduction) to import data into Firefly III. But it won't be automated, and it won't be as easy as YNAB or Mint.
+There are [many, many ways](https://docs.firefly-iii.org/importing-data/introduction) to import data into Firefly III. But it won't be automated out of the box, and it won't be as easy as YNAB or Mint.
 
 ### Advanced accounting and asset management
 
