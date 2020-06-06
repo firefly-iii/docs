@@ -16,17 +16,17 @@ For your quick reference here is a list of pages you really want to visit:
 
 ## How can I use it or run it?
 
-- Install it on your own server
-- Run it using Docker
-- Find hosting for Firefly III
+- [Install it on your own server](installation/self_hosted.md)
+- [Run it using Docker](installation/docker.md)
+- [Find hosting for Firefly III](installation/third_parties.md)
 
 ## What can I import into Firefly III, and how?
 
-- Importing data into Firefly III
+- [Importing data into Firefly III](import/introduction.md)
 
 ## Where can I find more info?
 
 - This website!
-- Reddit
-- GitHub
-- My personal mailbox
+- [Reddit](https://old.reddit.com/r/FireflyIII/)
+- [GitHub](https://github.com/firefly-iii/firefly-iii/)
+- [My personal mailbox](mailto:james@firefly-iii.org)
