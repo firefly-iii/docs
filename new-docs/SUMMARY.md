@@ -4,6 +4,7 @@
 
 * [Introduction and features](about/introduction.md)
 * [Missing features](about/what-its-not.md)
+* [Missing features](about/screenshots.md)
 * [Purpose of Firefly III](about/purpose.md)
 * [Who's it for?](about/who-for.md)
 * [The grand theory](about/grand-theory.md)
