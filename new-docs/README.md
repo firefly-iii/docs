@@ -9,8 +9,8 @@ For your quick reference here is a list of pages you really want to visit:
 ## Is Firefly III something for me?
 
 - [Read what Firefly III can do for you](about/introduction.md).
-- [Read about the stuff Firefly III **can't or won't** do for you](https://docs.firefly-iii.org/about-firefly-iii/what-its-not).
-- [Check out some screenshots]()
+- [Read about the stuff Firefly III **can't or won't** do for you](about/what-its-not.md).
+- [Check out some screenshots](about/screenshots.md)
 - [Visit the demo site.](https://demo.firefly-iii.org/)
 - Read how I feel about personal finance. If you strongly disagree, Firefly III is not a tool for you.
 
