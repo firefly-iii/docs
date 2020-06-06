@@ -1,18 +1,55 @@
-"Firefly III" is a (self-hosted) manager for your personal finances. It can help you keep track of your expenses and income, so you can spend less and save more. Firefly III supports the use of budgets, categories and tags. It can import data from external sources and it has many neat financial reports available. Here are some screenshots.
+# Introduction and features
 
+"Firefly III" is a (self-hosted) manager for your personal finances. It can help you keep track of your expenses and income, so you can spend less and save more.
 
-### The index of Firefly III
+## High-level overview
 
-[![The index of Firefly III](images/tiny/index.png "The index of Firefly III")](images/index.png)
+Firefly III can do the following things:
 
-### The account overview of Firefly III
+- You can create and edit transactions, accounts, and give them budgets, categories and tags.
+- You can automate part of this with recurring transactions and auto-budgets.
+- You can keep track of liabilities.
 
-[![The account overview of Firefly III](images/tiny/account.png "The account overview of Firefly III")](images/account.png)
+## Important details:
 
-### Overview of all budgets
+- It is completely self-hosted and isolated, and will never contact external servers until you explicitly tell it to.
+- It features a REST JSON API that covers almost every part of Firefly III.
+- There are many translations available.
+- All pages feature help texts and support popups.
 
-[![Overview of all budgets](images/tiny/budgets.png "Overview of all budgets")](images/budgets.png) 
+## A list of features
 
-### A financial report in Firefly III
+- Create recurring transactions to manage your money
+- Rule based transaction handling with the ability to create your own rules
 
-[![A financial report in Firefly III](images/tiny/report.png "A financial report in Firefly III")](images/report.png)
+Also interesting:
+
+* A double-entry bookkeeping system
+* You can store, edit and remove withdrawals, deposits and transfers. This allows you full financial management
+* You can manage different types of accounts
+  * Asset accounts
+  * Shared asset accounts (household accounts)
+  * Saving accounts
+  * Credit cards
+  * Liabilities (loans, mortgages)
+* It's possible to create, change and manage money using budgets
+* Organize transactions using categories
+* Save towards a goal using piggy banks
+* Predict and anticipate bills
+* View income and expense reports
+* Organize expenses using tags
+
+And the things you would hope for but not expect:
+
+* 2 factor authentication for extra security 🔒
+* Supports any currency you want, including crypto currencies such as ₿itcoin and Ξthereum
+* There is a Docker image, a Sandstorm.io grain and an Heroku script.
+* Lots of help text in case you don't get it
+
+And to organise everything:
+
+* Clear views that should show you how you're doing
+* Easy navigation through your records
+* Browse back and forth to see previous months or even years
+* Lots of charts because we all love them
+* If you feel you’re missing something you can just ask me and I'll add it!
