@@ -31,3 +31,9 @@ Firefly III knows many ways to organise your data, but there are no "sub-levels"
 ### Share your administration
 
 Firefly III is a multi-user environment. But each user is strictly separated.
+
+### Changing the monthly cycle to another day of the week.
+
+A month goes from the 1st to the last day of the month. You can't tell Firefly III to go from the 23rd to the 22nd of the next month.
+
+
