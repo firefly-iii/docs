@@ -15,6 +15,8 @@ The first thing I did was simple: I started living from the first day of the mon
 
 So if you get paid on the 23rd of the month, your salary sits in your savings account from the 23rd until the first day of the next month, when you move (part of it) back to your checking account. If you get paid every week, this routine repeats weekly.
 
+This method of managing money works whatever your boss' payment schedule is. Move your salary to a different account (step 1 above) any time you get it and wait for the start of the month. 
+
 This is quite difficult the first few times, but after a while you'll notice that you have (pretty effectively) moved your routine away from your salary and income. This alone gives you great financial stability. 
 
 This procedure allowed me to program a very simple tool (the original "Firefly") which held very simple things: transactions. Oh and some accounts to keep track of the money. But that was basically it. It showed me where my money went.
@@ -31,6 +33,4 @@ If you're serious about changing your financial habits, you should enter each tr
 
 I don't like accounting. I don't like the fact that people buy a $60,000 sports car and then pretend they haven't just lost 60 grand by putting up the car as an "asset". As if you get your money back. I also don't like that people put up their house against their mortgage. It's not money. You don't have it. A Rembrand could be worth a million but it won't buy you a loaf of bread.
 
-## But I get paid every two weeks / every fortnight / once in a blue moon?
 
-My method of managing money works whatever your boss' payment schedule is. Move your salary to a different account (step 1 above) any time you get it and wait for the start of the month.
