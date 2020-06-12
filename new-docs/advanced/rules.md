@@ -38,7 +38,11 @@ These triggers are exact. So remember it's "amount less" and NOT "less or the sa
 
 #### Date triggers
 
-The date triggers are complex and require your attention. You can use several keywords:
+The date triggers are complex and require your attention. 
+
+##### Keywords
+
+You can use several keywords:
 
 - `today`, `yesterday` or `tomorrow`
 - `start of this week`, `start of this month`, `start of this quarter` or `start of this year`
@@ -46,7 +50,11 @@ The date triggers are complex and require your attention. You can use several ke
 
 These keywords are not translated. So even when you use Firefly III in Dutch or Russian, you must use the English terminology.
 
+##### Absolute date
+
 You can also use an absolute date, in this form: `YYYY-MM-DD`. So for the 17th of May 2020, you would use `2020-05-17`.
+
+##### Relative dates
 
 You can also use relative date indicators, like so:
 
@@ -64,6 +72,32 @@ Likewise, you can mix + and -. To go 11 months back, you could use:
 - `-1y +1m`
 
 If your entry is invalid, you can't save the rule.
+
+##### Semi specific dates
+
+Firefly III 5.3.0 and higher.
+
+I wasn't sure what to call this, but the following date triggers can be set:
+
+- On the 10th day of the month
+- In february
+- In 2019
+- On the 5th of June, any year.
+
+You can do this with the format `xxxx-xx-xx` where you change any set of `xx` into your desired outcome. The format is `year-month-day`. Here are some examples:
+
+- `xxxx-xx-10`. Will trigger on the 10th day of any month, any year.
+- `xxxx-04-xx`. Will trigger for any date in April, no matter the year or the day.
+- `2018-xx-xx`. Will trigger for any date in 2018.
+
+You can also make some advanced combinations:
+
+- `2017-xx-03`. Will trigger on the 3rd of any month, but only in 2017.
+- `2018-09-xx`. Will trigger on any day in September, 2018.
+- `xxxx-08-07`. Will trigger on August 7th, any year.
+
+So you could say "Transaction date is before" `xxxx-xx-10` and any transaction before the 10th of the month is triggered.
+
 
 ## Actions
 
