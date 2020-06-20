@@ -52,6 +52,7 @@
 * [Authentication](installation/authentication.md)
 * [Analytics](installation/analytics.md)
 * [Backup](installation/backup.md)
+* [Locales](installation/locales.md)
 * [Cron jobs](installation/cron.md)
 
 ## Importing data
