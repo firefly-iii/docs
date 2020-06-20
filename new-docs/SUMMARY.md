@@ -42,7 +42,7 @@
 * [Categories](concepts/categories.md)
 * [Tags](concepts/tags.md)
 * [Currencies](concepts/currencies.md)
-* [Tracking cash](concepts/groups.md)
+* [Groups](concepts/groups.md)
 * [Tracking cash](concepts/tracking_cash.md)
 
 ## Advanced installation
