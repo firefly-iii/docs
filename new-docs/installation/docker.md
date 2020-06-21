@@ -203,7 +203,7 @@ TRUSTED_PROXIES=**
 On the command line, this would be something like:
 
 ```
--e DB_HOST=mysql \
+-e DB_HOST=db \
 -e DB_DATABASE=firefly \
 -e DB_USERNAME=firefly \
 -e DB_PORT=5432 \
