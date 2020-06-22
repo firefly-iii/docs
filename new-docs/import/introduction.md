@@ -26,7 +26,7 @@ A tool, built by me, called the [CSV importer](http://github.com/firefly-iii/csv
 
 The [Spectre / Salt Edge](https://docs.firefly-iii.org/importing-data/spectre) importer can import any bank [Spectre supports](https://www.saltedge.com/products/spectre/faq#question4).
 
-The Spectre API is a paid product. After a short testing period, you must pay for the use of Spectre.
+The Spectre API is a paid product. After a short testing period, you must pay for the use of the Spectre API.
 
 ### bunq importer
 
@@ -50,4 +50,4 @@ A separate tool, built by GitHub user @Ludo444, can import [Revolut](https://git
 
 ### Other ways of importing
 
-If none of these import methods support your bank or financial org, please check out the [API](api/api).
+If none of these import methods support your bank or financial org, please check out the [API](api/api.md).
