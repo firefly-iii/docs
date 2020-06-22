@@ -50,4 +50,4 @@ A separate tool, built by GitHub user @Ludo444, can import [Revolut](https://git
 
 ### Other ways of importing
 
-If none of these import methods support your bank or financial org, please check out the [API](api/api.md).
+If none of these import methods support your bank or financial org, please check out the [API](../api/api.md).
