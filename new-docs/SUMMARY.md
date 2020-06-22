@@ -58,8 +58,7 @@
 ## Importing data
 
 * [Introduction](import/introduction.md)
-* [Spectre / Salt Edge](import/spectre.md)
-* [Other imports](import/others.md)
+* [FAQ](import/faq.md)
 
 ## Exporting data
 
