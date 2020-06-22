@@ -12,9 +12,9 @@ In order to import transactions into Firefly III, you'll have to install and run
 
 ## Available tools
 
-A universal tool to import transactions into your Firefly III installation is the CSV importer. If that fails, check out the Spectre importer. The Spectre API is provided by a fintech company called Salt Edge. They offer a **trial** of their Spectre API which you can use to connect to your bank.
+A universal tool to import transactions into your Firefly III installation is the [CSV importer](http://github.com/firefly-iii/csv-importer). If that fails, check out the [Spectre importer](http://github.com/firefly-iii/spectre-importer). The Spectre API is provided by a fintech company called Salt Edge. They offer a **trial** of their Spectre API which you can use to connect to your bank.
 
-If you're banking with bunq, you can use the dedicated bunq importer. You can also migrate from "You Need a Budget" using the dedicated YNAB importer.
+If you're banking with bunq, you can use the dedicated [bunq importer](http://github.com/firefly-iii/bunq-importer). You can migrate from "You Need a Budget" using the dedicated [YNAB importer](http://github.com/firefly-iii/ynab-importer).
 
 If you want to import transactions using FinTS, from Revolut or Plaid, use the tools made by Firefly III users listed below.
 
@@ -24,7 +24,7 @@ A tool, built by me, called the [CSV importer](http://github.com/firefly-iii/csv
 
 ### Spectre importer
 
-The [Spectre / Salt Edge](https://docs.firefly-iii.org/importing-data/spectre) importer can import any bank [Spectre supports](https://www.saltedge.com/products/spectre/faq#question4).
+The [Spectre importer](http://github.com/firefly-iii/spectre-importer) importer can import any bank [Spectre supports](https://www.saltedge.com/products/spectre/faq#question4).
 
 The Spectre API is a paid product. After a short testing period, you must pay for the use of the Spectre API.
 
