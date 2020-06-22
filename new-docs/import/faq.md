@@ -4,11 +4,9 @@ An FAQ about importing data into Firefly III
 
 ## I want to auto-import transactions from [my bank] out of the box!
 
-Firefly III has many tools to import transactions. You must install these tools separately.
+Firefly III has [many tools](introduction.md) to import transactions. You must install these tools separately.
 
-Developing an import routine is a very time-consuming and expensive process. You wouldn't believe the kind of stuff you have to build to have a routine that even works half the time. This involves a lot of code and a lot of testing, which is why I decided to move this into separate import routines.
-
-There are a lot of banks in the world. Each one has its own weird quircks when it comes to your transactions. Supporting each bank is a very though job. 
+Most tools come with the necessary hooks to automate the import yourself. This also depends on your bank's support for these kinds of things.
 
 ## Why is Spectre a trial?
 
