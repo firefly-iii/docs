@@ -8,7 +8,7 @@ Not supported by Firefly III. Use something like [Portfolio Performance](https:/
 
 ### Automated imports from [your bank here]
 
-There are [many, many ways](import/introduction) to import data into Firefly III. But it won't be automated out of the box, and it won't be as easy as YNAB or Mint.
+There are [many, many ways](../import/introduction.md) to import data into Firefly III. But it won't be automated out of the box, and it won't be as easy as YNAB or Mint.
 
 ### Advanced accounting and asset management
 
