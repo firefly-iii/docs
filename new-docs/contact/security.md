@@ -13,4 +13,4 @@ Firefly III should be run on a TLS enabled host (``https://``) even when running
 
 If you find something that compromises the security of Firefly III, you should [send me a message](mailto:james@firefly-iii.org) as soon as possible. These issues will be fixed immediately.
  
-You can use my [PGP key](https://keybase.io/jc5) for extra security. My [GitHub commits](https://github.com/firefly-iii/firefly-iii/commits/master) are almost always signed with this key. For more, see contact information.
+You can use my [PGP key](https://keybase.io/jc5) for extra security. My [GitHub commits](https://github.com/firefly-iii/firefly-iii/commits/main) are almost always signed with this key. For more, see contact information.

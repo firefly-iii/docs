@@ -152,7 +152,7 @@ You can see which locales your system has by running
 locale -a
 ```
 
-Depending on your language, a specific list of locales is tried by Firefly III. They can be found on [GitHub](https://github.com/firefly-iii/firefly-iii/tree/master/resources/lang). Open the directory of your language, then open `config.php` and look for the line `locale`.
+Depending on your language, a specific list of locales is tried by Firefly III. They can be found on [GitHub](https://github.com/firefly-iii/firefly-iii/tree/main/resources/lang). Open the directory of your language, then open `config.php` and look for the line `locale`.
 
 When it still does not work (did you reboot?) please *[open an issue](https://github.com/firefly-iii/firefly-iii/issues)*.
 

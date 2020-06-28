@@ -4,7 +4,7 @@ There are several third parties where you can run a Firefly III instance. Keep i
 
 ## Heroku
 
-Firefly III supports [Heroku](https://heroku.com/). You can [deploy Firefly III in Heroku](https://heroku.com/deploy?template=https://github.com/firefly-iii/firefly-iii/tree/master) after you register for a (free) account.
+Firefly III supports [Heroku](https://heroku.com/). You can [deploy Firefly III in Heroku](https://heroku.com/deploy?template=https://github.com/firefly-iii/firefly-iii/tree/main) after you register for a (free) account.
 
 ### Considerations when using Heroku
 
