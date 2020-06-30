@@ -24,8 +24,7 @@ Transactions have a few useful fields:
 * The accounts involved (from and to)
 * .. and some meta-information.
 
-In Firefly III, a transaction can be a withdrawal, a deposit or a transfer. Beyond the obvious, they are slightly different from one another:
-
+In Firefly III, a transaction can be a withdrawal, a deposit or a transfer. Beyond the obvious, they are slightly different from one another: XXX
 
 ## Withdrawals
 
