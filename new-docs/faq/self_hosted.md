@@ -156,6 +156,22 @@ Depending on your language, a specific list of locales is tried by Firefly III. 
 
 When it still does not work (did you reboot?) please *[open an issue](https://github.com/firefly-iii/firefly-iii/issues)*.
 
+### On Docker:
+
+```
+ docker exec -it --user root [container] bash
+```
+
+Then, in the container:
+
+Change "nl_BE" to your locale. Leave the rest.
+
+```
+echo "nl_BE.UTF-8 UTF-8" >> /etc/locale.gen
+locale-gen
+service apache2 reload
+```
+
 
 ## I get 'Unexpected question mark'?
 
