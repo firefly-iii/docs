@@ -1,4 +1,4 @@
-# FAQ
+# Using Docker
 
 People often have the same type of questions. Please find them below. If you open an issue that refers to one of these questions, your issue may be closed.
 
@@ -13,3 +13,4 @@ Run the following command:
 * `docker exec -it <container> php artisan cache:clear`
 
 Or browse to the `/flush` page in your installation.
+

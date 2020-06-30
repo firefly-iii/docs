@@ -4,17 +4,16 @@ Tags are an extension of categories and meant to expand on the meta-data include
 
 Tags can be useful to group expenses together, possibly in another context than your categories. For examples, tags might include:
 
-* ``too-expensive``
-* ``work-expense``
+* `too-expensive`
+* `work-expense`
 
 Or maybe something else entirely. This is up to you.
 
-Mapbox
-------
+## Mapbox
 
-You can add a [Mapbox](https://www.mapbox.com/) API key to your ``.env`` file which allows you to give tags a location.
+You can add a [Mapbox](https://www.mapbox.com/) API key to your `.env` file which allows you to give tags a location.
 
-Special tags
-------------
+## Special tags
 
 When you import data into Firefly III, a special tag will be created for each transaction. It is called `Import with key 'xxxx'` where the key is a custom code every time.
+

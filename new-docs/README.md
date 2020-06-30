@@ -1,4 +1,4 @@
-# Official Firefly III documentation
+# Introduction
 
 Welcome to the Firefly III documentation.
 
@@ -8,25 +8,26 @@ For your quick reference here is a list of pages you really want to visit:
 
 ## Is Firefly III something for me?
 
-- [Read what Firefly III can do for you](about/introduction.md).
-- [Read about the stuff Firefly III **can't or won't** do for you](about/what-its-not.md).
-- [Check out some screenshots](about/screenshots.md)
-- [Visit the demo site.](https://demo.firefly-iii.org/)
-- [Read how I feel about personal finance](about/personal-finances.md).
+* [Read what Firefly III can do for you](about-firefly-iii/introduction.md).
+* [Read about the stuff Firefly III **can't or won't** do for you](about-firefly-iii/what-its-not.md).
+* [Check out some screenshots](about-firefly-iii/screenshots.md)
+* [Visit the demo site.](https://demo.firefly-iii.org/)
+* [Read how I feel about personal finance](about-firefly-iii/personal-finances.md).
 
 ## How can I use it or run it?
 
-- [Install it on your own server](installation/self_hosted.md)
-- [Run it using Docker](installation/docker.md)
-- [Find hosting for Firefly III](installation/third_parties.md)
+* [Install it on your own server](installation/self_hosted.md)
+* [Run it using Docker](installation/docker.md)
+* [Find hosting for Firefly III](installation/third_parties.md)
 
 ## What can I import into Firefly III, and how?
 
-- [Importing data into Firefly III](import/introduction.md)
+* [Importing data into Firefly III](importing-data/introduction.md)
 
 ## Where can I find more info?
 
-- This website!
-- [Reddit](https://old.reddit.com/r/FireflyIII/)
-- [GitHub](https://github.com/firefly-iii/firefly-iii/)
-- [My personal mailbox](mailto:james@firefly-iii.org)
+* This website!
+* [Reddit](https://old.reddit.com/r/FireflyIII/)
+* [GitHub](https://github.com/firefly-iii/firefly-iii/)
+* [My personal mailbox](mailto:james@firefly-iii.org)
+
