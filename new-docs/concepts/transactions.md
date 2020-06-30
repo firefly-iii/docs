@@ -26,6 +26,7 @@ Transactions have a few useful fields:
 
 In Firefly III, a transaction can be a withdrawal, a deposit or a transfer. Beyond the obvious, they are slightly different from one another:
 
+
 ## Withdrawals
 
 Withdrawals have a free-format field for the "expense account" which you can fill in freely. If you go to a new store, simply enter the withdrawal with the new store as the expense account, and Firefly III will start tracking it automatically. Withdrawals can also be assigned a "budget".
