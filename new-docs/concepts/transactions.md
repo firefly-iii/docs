@@ -58,7 +58,15 @@ Any time you create a deposit, transfer or a withdrawal, Firefly III allows you 
 - Assign different revenue accounts to parts of a deposit.
 - Categorize money differently.
 
-You can split your entire groceries-receipt into small "sub"-transactions. You can specify each component of your salary.
+You can split your entire groceries-receipt into small "sub"-transactions. Or you can specify each component of your salary.
+
+### Constraints
+
+It's important to realise the following constraints when dealing with split transactions.
+
+- When making an expense (withdrawal), you can only split the destination accounts, not the source accounts. You can't create one expense that originates from two or three asset accounts. But you can divide a withdrawal over several expense accounts. You can split your groceries over several departments, but you can't pay a bill from two asset accounts.
+- Deposits must end up in one asset account. You can't make a deposit from one revenue accounts and split it over separate asset accounts. Your salary, when divided over different splits, must end up in one asset account.
+- Transfers can be split, but all splits must have the same source + destination.
 
 ## Multi-currency transactions
 
