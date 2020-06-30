@@ -1,4 +1,4 @@
-# FAQ
+# Self-hosting
 
 People often have the same type of questions. Please find them below. If you open an issue that refers to one of these questions, your issue may be closed.
 
@@ -31,7 +31,7 @@ There are several [tutorials online](https://www.digitalocean.com/community/tuto
 
 The following snippet might help:
 
-```
+```text
 location ^~ /firefly-iii/ {
    deny all;
 }
@@ -39,7 +39,7 @@ location ^~ /firefly-iii/ {
 location ^~ /budget {
    alias /var/www/firefly-iii/public;
    try_files $uri $uri/ @budget;
-   
+
    location ~* \.php(?:$|/) {
       include snippets/fastcgi-php.conf;
       fastcgi_param SCRIPT_FILENAME $request_filename;
@@ -59,20 +59,19 @@ There is not much to it. However, be warned. SQLite support is best-effort and i
 
 Open your `.env` file and find the lines that begin with `DB_`. These define your database connection. Leave `DB_CONNECTION` and set it to `sqlite`. Delete the rest.
 
-
-```   
+```text
 DB_CONNECTION=sqlite
 ```
 
 Then, in order to install the database, make sure the file `/storage/database/database.sqlite` exists. When it does not exist, you can use this command on Linux to create it:
 
-```   
+```text
 touch ./storage/database/database.sqlite
 ```
 
 Then you are ready to install the database in SQLite:
 
-```
+```text
 php artisan migrate --seed
 php artisan firefly-iii:upgrade-database
 ```
@@ -85,18 +84,18 @@ In your `.env` file, change the `DB_CONNECTION` to `pgsql`. Update the other `DB
 
 Then you are ready to install the database in PostgreSQL:
 
-```
+```text
 php artisan migrate --seed
 php artisan firefly-iii:upgrade-database
 ```
 
 ## I see a white page and nothing else?
 
-Check out the log files in `storage/logs` to see what is going on. Please open a ticker if you are not sure what to do. If the logs are empty  Firefly III cannot write to them. Make sure that the web server has write access to this directory. If the logs still remain empty, do you have a `vendor` directory in your Firefly III root? If not, run the Composer commands.
+Check out the log files in `storage/logs` to see what is going on. Please open a ticker if you are not sure what to do. If the logs are empty Firefly III cannot write to them. Make sure that the web server has write access to this directory. If the logs still remain empty, do you have a `vendor` directory in your Firefly III root? If not, run the Composer commands.
 
 If the pages remain empty, make sure you have enabled the rewrite module in Apache. If you're running nginx, use this as the "location" config:
 
-```
+```text
 location / {
      try_files $uri $uri/ /index.php?$query_string;
      autoindex on;
@@ -106,7 +105,7 @@ location / {
 
 ## I get a 404?
 
-If you run Apache, open the `httpd.conf` or `apache2.conf` configuration file (its location differs, but it is probably in `/etc/apache2`).
+If you run Apache, open the `httpd.conf` or `apache2.conf` configuration file \(its location differs, but it is probably in `/etc/apache2`\).
 
 Find the line that starts with `<Directory /var/www>`. If you see `/`, keep looking!
 
@@ -114,7 +113,7 @@ You will see the text `AllowOverride None` right below it. Change it to `AllowOv
 
 Also run the following commands:
 
-```   
+```text
 sudo a2enmod rewrite
 sudo service apache2 restart
 ```
@@ -137,41 +136,40 @@ Raspberry Pi's and other microcomputers are not the most speedy devices. User [n
 
 When Firefly III is showing amounts without decimal places or other weird things, or you have gotten a blue warning bar, your server is missing vital locale information. There are packages you must install to make sure Firefly III can format amounts. Heroku doesn't have good support for Chinese. This may not be something I can fix.
 
-Ensure with `dpkg-reconfigure` locales that the language you want to use is installed, then reboot Apache or Nginx (webserver) and if necessary, PHP FPM.
+Ensure with `dpkg-reconfigure` locales that the language you want to use is installed, then reboot Apache or Nginx \(webserver\) and if necessary, PHP FPM.
 
-In order to make the demo site work (it’s an Ubuntu server) I run these commands:
+In order to make the demo site work \(it’s an Ubuntu server\) I run these commands:
 
-```
+```text
 sudo apt-get install -y language-pack-nl-base
-sudo locale-gen 
+sudo locale-gen
 ```
 
 You can see which locales your system has by running
 
-```
+```text
 locale -a
 ```
 
 Depending on your language, a specific list of locales is tried by Firefly III. They can be found on [GitHub](https://github.com/firefly-iii/firefly-iii/tree/main/resources/lang). Open the directory of your language, then open `config.php` and look for the line `locale`.
 
-When it still does not work (did you reboot?) please *[open an issue](https://github.com/firefly-iii/firefly-iii/issues)*.
+When it still does not work \(did you reboot?\) please [_open an issue_](https://github.com/firefly-iii/firefly-iii/issues).
 
 ### On Docker:
 
-```
+```text
  docker exec -it --user root [container] bash
 ```
 
 Then, in the container:
 
-Change "nl_BE" to your locale. Leave the rest.
+Change "nl\_BE" to your locale. Leave the rest.
 
-```
+```text
 echo "nl_BE.UTF-8 UTF-8" >> /etc/locale.gen
 locale-gen
 service apache2 reload
 ```
-
 
 ## I get 'Unexpected question mark'?
 
@@ -179,9 +177,9 @@ Firefly III requires PHP 7.3 or higher.
 
 ## I get 'BCMath' errors?
 
-You see stuff like this: 
+You see stuff like this:
 
-```   
+```text
 PHP message: PHP Fatal error: Call to undefined function 
 FireflyIII\Http\Controllers\bcscale() in
 firefly-iii/app/Http/Controllers/HomeController.php on line 76
@@ -193,7 +191,7 @@ Solution: you haven't enabled or installed the BCMath module. Install it.
 
 Errors such as these:
 
-```   
+```text
 production.ERROR: exception 
 'Symfony\Component\Debug\Exception\FatalErrorException' with message
 'Call to undefined function FireflyIII\Http\Controllers\numfmt_create()'
@@ -202,11 +200,11 @@ in firefly-iii/app/Http/Controllers/Controller.php:55
 
 Solution: You haven't enabled or installed the Internationalization extension. If you are running FreeBSD, install `pecl-intl`.
 
-## I get 'Error: Call to undefined function ctype_alpha()'?
+## I get 'Error: Call to undefined function ctype\_alpha\(\)'?
 
 This may happen when you are on a NAS4free Debian installation or similar platform. This command may help:
 
-```   
+```text
 pkg install php73-ctype
 ```
 
@@ -214,32 +212,33 @@ pkg install php73-ctype
 
 Make sure you run the artisan commands in the `firefly-iii` directory.
 
-## I get 'Error: call to undefined function numfmt_create()'?
+## I get 'Error: call to undefined function numfmt\_create\(\)'?
 
 Make sure you have installed and enabled the PHP intl extension.
 
 ## I run SELinux and I don't want to disable it. Now what?
 
-Reddit user  [bousquetfrederic](https://www.reddit.com/user/bousquetfrederic) shares [their solution](https://www.reddit.com/r/FireflyIII/comments/84bf0p/selinux_vs_fireflyiii/):
+Reddit user [bousquetfrederic](https://www.reddit.com/user/bousquetfrederic) shares [their solution](https://www.reddit.com/r/FireflyIII/comments/84bf0p/selinux_vs_fireflyiii/):
 
-```bash   
+```bash
 sudo semanage fcontext -a -t httpd_sys_rw_content_t "/path/to/firefly-iii/storage(/.*)?"
 sudo restorecon -R /path/to/firefly-iii/storage
 ```
 
 ## I am trying to upgrade but I get "Foreign key constraint is incorrectly formed"
 
-This could happen when you upgrade a Firefly III installation with MySQL. The cause is that the tables used by Firefly III are stored under the "MyISAM" engine while Firefly III assumes these are stored using the "InnoDB" engine. To fix this, use a program like Sequel Pro or phpMyAdmin and change the engine of all your Firefly III tables to "InnoDB", *before* you try to upgrade.
+This could happen when you upgrade a Firefly III installation with MySQL. The cause is that the tables used by Firefly III are stored under the "MyISAM" engine while Firefly III assumes these are stored using the "InnoDB" engine. To fix this, use a program like Sequel Pro or phpMyAdmin and change the engine of all your Firefly III tables to "InnoDB", _before_ you try to upgrade.
 
 ## Unable to write to cache directory?
 
 This is a permissions error that may happen when another user than your webserver user has access to the Firefly III installation directory. Try the following command from your `/var/www/` directory:
 
-- `sudo chown -R www-data:www-data firefly-iii`
-- `sudo chmod -R 775 firefly-iii`
+* `sudo chown -R www-data:www-data firefly-iii`
+* `sudo chmod -R 775 firefly-iii`
 
 If you're using Docker, this may also happen when you run "php artisan" commands as root. To fix this, you can use a similar command for Docker. Replace `<container>` with the ID of your container.
 
-- `docker exec -it <container> chown -R www-data:www-data /var/www/firefly-iii/storage`
+* `docker exec -it <container> chown -R www-data:www-data /var/www/firefly-iii/storage`
 
 If the problem persists make sure that you run your cron job as the "www-data" user so the cache directory doesn't get mixed up: `sudo -u www-data php artisan [..]`.
+

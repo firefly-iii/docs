@@ -1,12 +1,14 @@
-# Summary
+# Table of contents
+
+* [Introduction](README.md)
 
 ## About Firefly III
 
-* [Introduction and features](about/introduction.md)
-* [Missing features](about/what-its-not.md)
-* [Screenshots](about/screenshots.md)
-* [Personal finances](about/personal-finances.md)
-* [Demo website](about/demo.md)
+* [Introduction and features](about-firefly-iii/introduction.md)
+* [Missing features](about-firefly-iii/what-its-not.md)
+* [Screenshots](about-firefly-iii/screenshots.md)
+* [Personal finances](about-firefly-iii/personal-finances.md)
+* [Demo website](about-firefly-iii/demo.md)
 
 ## Installation
 
@@ -16,6 +18,7 @@
 * [Hosted by 3rd parties](installation/third_parties.md)
 
 ## Support
+
 * [Feature requests and roadmap](support/features.md)
 * [Reporting bugs](support/bugs.md)
 * [Contribute to Firefly III](support/contribute.md)
@@ -25,6 +28,7 @@
 * [Error codes](support/error_codes.md)
 
 ## FAQ
+
 * [General questions](faq/general.md)
 * [Managing your finances](faq/financials.md)
 * [Using Docker](faq/docker.md)
@@ -47,32 +51,32 @@
 
 ## Advanced installation
 
-* [Upgrade instructions](installation/upgrade.md)
-* [Configure email](installation/email.md)
-* [Authentication](installation/authentication.md)
-* [Analytics](installation/analytics.md)
-* [Backup](installation/backup.md)
-* [Locales](installation/locales.md)
-* [Cron jobs](installation/cron.md)
+* [Upgrade instructions](advanced-installation/upgrade.md)
+* [Configure email](advanced-installation/email.md)
+* [Authentication](advanced-installation/authentication.md)
+* [Analytics](advanced-installation/analytics.md)
+* [Backup](advanced-installation/backup.md)
+* [Locales](advanced-installation/locales.md)
+* [Cron jobs](advanced-installation/cron.md)
 
 ## Importing data
 
-* [Introduction](import/introduction.md)
-* [FAQ](import/faq.md)
+* [Introduction](importing-data/introduction.md)
+* [FAQ](importing-data/faq.md)
 
 ## Exporting data
 
-* [Exporting data](export/export.md)
-    
+* [Exporting data](exporting-data/export.md)
+
 ## Advanced concepts
 
-* [Piggy banks](advanced/piggies.md)
-* [Bills](advanced/bills.md)
-* [Recurring transactions](advanced/recurring.md)
-* [Reports](advanced/reports.md)
-* [Rules](advanced/rules.md)
-* [Links](advanced/links.md)
-* [Reconciling accounts](advanced/reconcile.md)
+* [Piggy banks](advanced-concepts/piggies.md)
+* [Bills](advanced-concepts/bills.md)
+* [Recurring transactions](advanced-concepts/recurring.md)
+* [Reports](advanced-concepts/reports.md)
+* [Rules](advanced-concepts/rules.md)
+* [Links](advanced-concepts/links.md)
+* [Reconciling accounts](advanced-concepts/reconcile.md)
 
 ## API
 
@@ -82,3 +86,4 @@
 
 * [Contact and credits](contact/contact.md)
 * [Security](contact/security.md)
+
