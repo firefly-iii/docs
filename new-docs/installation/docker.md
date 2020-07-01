@@ -40,7 +40,7 @@ Run this Docker command to start the Firefly III container. Make sure that you e
 ```text
 docker run -d \
 -v firefly_iii_export:/var/www/firefly-iii/storage/export \
--v firefly_iii_upload:/var/www/firefly-iii/storage/upload \ 
+-v firefly_iii_upload:/var/www/firefly-iii/storage/upload \
 -p 80:80 \
 -e APP_KEY=CHANGEME_32_CHARS \
 -e DB_HOST=CHANGEME \
