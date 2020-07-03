@@ -1,6 +1,6 @@
 # Introduction and features
 
-"Firefly III" is a \(self-hosted\) manager for your personal finances. It can help you keep track of your expenses and income, so you can spend less and save more.
+"Firefly III" is a (self-hosted) manager for your personal finances. It can help you keep track of your expenses and income, so you can spend less and save more.
 
 Personal financial management is pretty difficult, and everybody has their own approach to it. Some people make budgets, other people limit their cashflow by throwing away their credit cards, others try to increase their current cashflow. There are tons of ways to save and earn money. Firefly III works on the principle that if you know where your money is going, you can stop it from going there.
 
@@ -8,7 +8,7 @@ By keeping track of your expenses and your income you can budget accordingly and
 
 ## Who is it for?
 
-This application is for people who want to track their finances, keep an eye on their money **without having to upload their financial records to the cloud**. You're a bit tech-savvy, you like open source software and you don't mind tinkering with \(self-hosted\) servers.
+This application is for people who want to track their finances, keep an eye on their money **without having to upload their financial records to the cloud**. You're a bit tech-savvy, you like open source software and you don't mind tinkering with (self-hosted) servers.
 
 Possibly, you're always short on money even though in theory, you make enough money to get by.
 
@@ -38,10 +38,10 @@ Also interesting:
 * You can store, edit and remove withdrawals, deposits and transfers. This allows you full financial management
 * You can manage different types of accounts
   * Asset accounts
-  * Shared asset accounts \(household accounts\)
+  * Shared asset accounts (household accounts)
   * Saving accounts
   * Credit cards
-  * Liabilities \(loans, mortgages\)
+  * Liabilities (loans, mortgages)
 * It's possible to create, change and manage money using budgets
 * Organize transactions using categories
 * Save towards a goal using piggy banks
@@ -53,7 +53,7 @@ And the things you would hope for but not expect:
 
 * 2 factor authentication for extra security 🔒
 * Supports any currency you want, including crypto currencies such as ₿itcoin and Ξthereum
-* There is a Docker image, a Sandstorm.io grain and an Heroku script.
+* There is a Docker image and an Heroku script.
 * Lots of help text in case you don't get it
 
 And to organise everything:
