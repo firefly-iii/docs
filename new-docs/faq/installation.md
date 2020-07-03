@@ -8,7 +8,7 @@ Please refer to the index on your right.
 
 A few errors may pop up during the automatic installation and upgrade routine:
 
-* `proc_close`: The `proc_close` method \(part of PHP\) is disabled in some cases due to security concerns.
+* `proc_close`: The `proc_close` method (part of PHP) is disabled in some cases due to security concerns.
 * Open base dir restriction is sometimes enabled for security purposes.
 * Other error messages.
 

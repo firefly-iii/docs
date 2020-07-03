@@ -1,10 +1,10 @@
 # Hosted by 3rd parties
 
-There are several third parties where you can run a Firefly III instance. Keep in mind that there's no such thing as a "free lunch", and these options are either paid or severely limited \(very slow or can't handle many transactions\).
+There are several third parties where you can run a Firefly III instance. Keep in mind that there's no such thing as a "free lunch", and these options are either paid or severely limited (very slow or can't handle many transactions).
 
 ## Heroku
 
-Firefly III supports [Heroku](https://heroku.com/). You can [deploy Firefly III in Heroku](https://heroku.com/deploy?template=https://github.com/firefly-iii/firefly-iii/tree/main) after you register for a \(free\) account.
+Firefly III supports [Heroku](https://heroku.com/). You can [deploy Firefly III in Heroku](https://heroku.com/deploy?template=https://github.com/firefly-iii/firefly-iii/tree/main) after you register for a (free) account.
 
 ### Considerations when using Heroku
 
@@ -14,7 +14,7 @@ The free-tier database can hold a maximum of 10,000 rows, which is about one yea
 
 ## Softaculous
 
-Firefly III is featured in [Softaculous](https://softaculous.com/). If your \(hosting\) server provides packages using Softaculous, Firefly III will be available as a package there. They even made a special [demo site](http://www.softaculous.com/softaculous/apps/others/Firefly_III).
+Firefly III is featured in [Softaculous](https://softaculous.com/). If your (hosting) server provides packages using Softaculous, Firefly III will be available as a package there. They even made a special [demo site](http://www.softaculous.com/softaculous/apps/others/Firefly_III).
 
 ## AMPPS
 

@@ -32,7 +32,7 @@ You can change these dates to your liking. There are a few magic words available
 * `previousFiscalYearStart`. Will return the start of the last fiscal year, if you have set this in your preferences.
 * `previousFiscalYearEnd`. Will return the end of the last fiscal year, if you have set this in your preferences.
 
-You can also replace `1,2,3` \(which denotes the asset accounts to include in the report\) with `allAssetAccounts` to include all of your asset accounts in the report.
+You can also replace `1,2,3` (which denotes the asset accounts to include in the report) with `allAssetAccounts` to include all of your asset accounts in the report.
 
 ## URL options for budget, category and tag reports
 
@@ -50,13 +50,13 @@ The reports that are currently available are:
 
 The default report gives you a general overview of your finances. It lists your account balances with summaries, plus your expenses and incomes. It will also list your budgets, categories and bills, giving you insight in your current financial situation. You can click on the screenshot below for a large version.
 
-Each table you see in the screenshot can be sorted by name, by amount, in reverse, etc. The charts have little hover-texts for added clarity and the \(i\)-buttons will give show more detailed information.
+Each table you see in the screenshot can be sorted by name, by amount, in reverse, etc. The charts have little hover-texts for added clarity and the (i)-buttons will give show more detailed information.
 
 [![Default financial report](../.gitbook/assets/reports-default-small%20%281%29.png)](https://github.com/firefly-iii/docs/tree/9bae8ca4ffd474ad148d66c2b5d49af9ba99adbe/new-docs/advanced/images/reports-default.png)
 
 ### Audit report
 
-The audit report is meant to give you an exact overview of an asset account \(or multiple\). For each asset account it will list the start and end balance, and it can show every available field in a table, if you want to. It will also list the before / after balance for each transaction. This should make it easy to find possible mistakes in your administration. You can click on the screenshot below for a large version.
+The audit report is meant to give you an exact overview of an asset account (or multiple). For each asset account it will list the start and end balance, and it can show every available field in a table, if you want to. It will also list the before / after balance for each transaction. This should make it easy to find possible mistakes in your administration. You can click on the screenshot below for a large version.
 
 [![Audit report](../.gitbook/assets/reports-audit-small%20%281%29.png)](https://github.com/firefly-iii/docs/tree/9bae8ca4ffd474ad148d66c2b5d49af9ba99adbe/new-docs/advanced/images/reports-audit.png)
 

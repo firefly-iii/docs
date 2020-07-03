@@ -18,11 +18,11 @@ Telemetry collection and submission is disabled by default. If you have enabled 
 
 ## Can I see the status of the telemetry collection in Firefly III?
 
-There is a page under Administration, Telemetry \(`/admin/telemetry`\) that shows you the status of the telemetry collection.
+There is a page under Administration, Telemetry (`/admin/telemetry`) that shows you the status of the telemetry collection.
 
 ## Can I see the collected telemetry and influence it?
 
-If telemetry is collected, there is a page under Administration, Telemetry \(`/admin/telemetry/view`\) that shows you how many records have been collected. You can view all records, but they are read-only. There are several options to manage the telemetry data.
+If telemetry is collected, there is a page under Administration, Telemetry (`/admin/telemetry/view`) that shows you how many records have been collected. You can view all records, but they are read-only. There are several options to manage the telemetry data.
 
 * You can submit the data, not having to wait on the cron job.
 * You can delete all records.
@@ -47,7 +47,7 @@ See version 5.2.8
 
 ### Version 5.2.8
 
-When enabled Firefly III version **5.2.8** can collect and submit the following telemetry. This is optional and disabled by default \(see the top of this page\):
+When enabled Firefly III version **5.2.8** can collect and submit the following telemetry. This is optional and disabled by default (see the top of this page):
 
 * The number of users in your system, collected when a new user registers.  
 

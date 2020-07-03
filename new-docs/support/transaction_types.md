@@ -6,7 +6,7 @@ Firefly III supports various transaction and account types. Here they are, liste
 
 Withdrawals represent money that you spent that you can't get back easily unless the receiving party sends it to you.
 
-To make cash withdrawals and use the cash account \(displayed as "\(cash\)"\), leave the destination account field _empty_.
+To make cash withdrawals and use the cash account (displayed as "(cash)"), leave the destination account field _empty_.
 
 | From | To | Example |
 | :--- | :--- | :--- |
@@ -23,13 +23,13 @@ To make cash withdrawals and use the cash account \(displayed as "\(cash\)"\), l
 
 Deposits represent money that you received from others.
 
-You can make cash deposits and use the cash account \(displayed as "\(cash\)"\), leave the source account field _empty_.
+You can make cash deposits and use the cash account (displayed as "(cash)"), leave the source account field _empty_.
 
 | From | To | Example |
 | :--- | :--- | :--- |
 | Revenue account | Asset account | Salary or income. |
-| Revenue account | Loan | A payment into your loan \(decreasing it\) by a third party. |
-| Revenue account | Debt | A payment into your debt \(decreasing it\) by a third party. |
+| Revenue account | Loan | A payment into your loan (decreasing it) by a third party. |
+| Revenue account | Debt | A payment into your debt (decreasing it) by a third party. |
 | Revenue account | Mortgage | A correction by your bank or fees waived. |
 | Cash account | Asset account | Cash deposit at an ATM. |
 | Loan | Asset account | Take money from a loan to spend on stuff. |

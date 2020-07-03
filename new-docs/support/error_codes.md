@@ -1,6 +1,6 @@
 # Error codes
 
-In an effort to make Firefly III more consistent and easier to work with, most \(not all\) exceptions now carry an "error code", that will point you to this very page. On this page you will find tips, tricks and ideas to fix the error you ran into.
+In an effort to make Firefly III more consistent and easier to work with, most (not all) exceptions now carry an "error code", that will point you to this very page. On this page you will find tips, tricks and ideas to fix the error you ran into.
 
 Just check out the list below, Control-F your error code and get it fixed!
 
@@ -10,11 +10,11 @@ All API error codes start with 2, and are separated from a human readable explan
 
 **200000**
 
-While trying to download a file. For this ID no file has been uploaded \(yet\). Use the [upload attachment](https://api-docs.firefly-iii.org/#/attachments/uploadAttachment) endpoint to upload a file first.
+While trying to download a file. For this ID no file has been uploaded (yet). Use the [upload attachment](https://api-docs.firefly-iii.org/#/attachments/uploadAttachment) endpoint to upload a file first.
 
 **200002**
 
-The file you're trying to download is empty \(zero bytes\). [Delete the original attachment](https://api-docs.firefly-iii.org/#/attachments/deleteAttachment) and try again.
+The file you're trying to download is empty (zero bytes). [Delete the original attachment](https://api-docs.firefly-iii.org/#/attachments/deleteAttachment) and try again.
 
 **200003**
 

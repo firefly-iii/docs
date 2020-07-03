@@ -1,6 +1,6 @@
 # Kubernetes
 
-In the `.deploy/kubernetes` directory of Firefly III \(also available [on GitHub](https://github.com/firefly-iii/kubernetes)\) you will find three YAML files that denote a pretty standard service offering for both Firefly III and an accompanying MySQL database.
+In the `.deploy/kubernetes` directory of Firefly III (also available [on GitHub](https://github.com/firefly-iii/kubernetes)) you will find three YAML files that denote a pretty standard service offering for both Firefly III and an accompanying MySQL database.
 
 _Take care!_
 
@@ -8,7 +8,7 @@ It's only Firefly III version 4.8.2 and up that will work with the instructions 
 
 ## Download and configuration
 
-Download all three files from GitHub \(if necessary\). Open `kustomization.yaml` and make sure to change both the `db_password` and the `app_key`. It's important to know that the `app_key` must be 32 characters in length **exactly**.
+Download all three files from GitHub (if necessary). Open `kustomization.yaml` and make sure to change both the `db_password` and the `app_key`. It's important to know that the `app_key` must be 32 characters in length **exactly**.
 
 ## Launch
 

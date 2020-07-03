@@ -105,7 +105,7 @@ location / {
 
 ## I get a 404?
 
-If you run Apache, open the `httpd.conf` or `apache2.conf` configuration file \(its location differs, but it is probably in `/etc/apache2`\).
+If you run Apache, open the `httpd.conf` or `apache2.conf` configuration file (its location differs, but it is probably in `/etc/apache2`).
 
 Find the line that starts with `<Directory /var/www>`. If you see `/`, keep looking!
 
@@ -136,9 +136,9 @@ Raspberry Pi's and other microcomputers are not the most speedy devices. User [n
 
 When Firefly III is showing amounts without decimal places or other weird things, or you have gotten a blue warning bar, your server is missing vital locale information. There are packages you must install to make sure Firefly III can format amounts. Heroku doesn't have good support for Chinese. This may not be something I can fix.
 
-Ensure with `dpkg-reconfigure` locales that the language you want to use is installed, then reboot Apache or Nginx \(webserver\) and if necessary, PHP FPM.
+Ensure with `dpkg-reconfigure` locales that the language you want to use is installed, then reboot Apache or Nginx (webserver) and if necessary, PHP FPM.
 
-In order to make the demo site work \(it’s an Ubuntu server\) I run these commands:
+In order to make the demo site work (it’s an Ubuntu server) I run these commands:
 
 ```text
 sudo apt-get install -y language-pack-nl-base
@@ -153,7 +153,7 @@ locale -a
 
 Depending on your language, a specific list of locales is tried by Firefly III. They can be found on [GitHub](https://github.com/firefly-iii/firefly-iii/tree/main/resources/lang). Open the directory of your language, then open `config.php` and look for the line `locale`.
 
-When it still does not work \(did you reboot?\) please [_open an issue_](https://github.com/firefly-iii/firefly-iii/issues).
+When it still does not work (did you reboot?) please [_open an issue_](https://github.com/firefly-iii/firefly-iii/issues).
 
 ### On Docker:
 
@@ -200,7 +200,7 @@ in firefly-iii/app/Http/Controllers/Controller.php:55
 
 Solution: You haven't enabled or installed the Internationalization extension. If you are running FreeBSD, install `pecl-intl`.
 
-## I get 'Error: Call to undefined function ctype\_alpha\(\)'?
+## I get 'Error: Call to undefined function ctype\_alpha()'?
 
 This may happen when you are on a NAS4free Debian installation or similar platform. This command may help:
 
@@ -212,7 +212,7 @@ pkg install php73-ctype
 
 Make sure you run the artisan commands in the `firefly-iii` directory.
 
-## I get 'Error: call to undefined function numfmt\_create\(\)'?
+## I get 'Error: call to undefined function numfmt\_create()'?
 
 Make sure you have installed and enabled the PHP intl extension.
 

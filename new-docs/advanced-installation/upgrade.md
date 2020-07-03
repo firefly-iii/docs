@@ -36,7 +36,7 @@ docker-compose -f docker-compose.yml up -d
 
 If you want to any container under another user, add the `user:` key under `image:`, with the same indentation. Possible values are `user`, `user:group`,`uid`, `uid:gid`, `user:gid`, `uid:group`.
 
-if you redownload `docker-compose.yml`, keep in mind that the database version in the Docker composer may have been updated and that this version is not compatible with your current version \(ie MariaDB 10 vs MariaDB 11\).
+if you redownload `docker-compose.yml`, keep in mind that the database version in the Docker composer may have been updated and that this version is not compatible with your current version (ie MariaDB 10 vs MariaDB 11).
 
 ## Virtual or real server
 
@@ -56,7 +56,7 @@ cp firefly-iii/storage/upload/* firefly-iii-updated/storage/upload/
 cp firefly-iii/storage/export/* firefly-iii-updated/storage/export/
 ```
 
-If you use SQLite as a database system \(you will know if you do\) copy your database as well. Otherwise the `.env`-file is enough.
+If you use SQLite as a database system (you will know if you do) copy your database as well. Otherwise the `.env`-file is enough.
 
 Then, run the following commands to finish the upgrade:
 
@@ -96,7 +96,7 @@ sudo a2enmod php7.x
 sudo service apache2 restart
 ```
 
-This assumes you run Apache and your OS package manager can handle multiple PHP versions \(not all of them do this\). Other commands can be found using a search engine.
+This assumes you run Apache and your OS package manager can handle multiple PHP versions (not all of them do this). Other commands can be found using a search engine.
 
 ### Straight from Github
 
@@ -120,7 +120,7 @@ php artisan cache:clear
 
 ### Heroku
 
-Backup the PGS database from Heroku's dashboard, then create a new application \(or destroy the database on your existing one\). Instructions to do so are [on this page](https://devcenter.heroku.com/articles/heroku-postgres-import-export#export). Spin up your new Firefly III Heroku installation, then import the backup by following these instructions [on this page](https://devcenter.heroku.com/articles/heroku-postgres-import-export#import).
+Backup the PGS database from Heroku's dashboard, then create a new application (or destroy the database on your existing one). Instructions to do so are [on this page](https://devcenter.heroku.com/articles/heroku-postgres-import-export#export). Spin up your new Firefly III Heroku installation, then import the backup by following these instructions [on this page](https://devcenter.heroku.com/articles/heroku-postgres-import-export#import).
 
 Firefly III will then set itself up, and you should be good to go from right where you left off on your previous installation.
 

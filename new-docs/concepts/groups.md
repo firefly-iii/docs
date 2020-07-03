@@ -8,11 +8,11 @@ Groups are a very basic visual divider of objects. For piggy banks, you could di
 
 ## Managing groups
 
-There are dedicated pages \(listed under `/groups/index`\) to edit and delete groups. You cannot create groups on this page; groups are created whenever you edit an object and set a group.
+There are dedicated pages (listed under `/groups/index`) to edit and delete groups. You cannot create groups on this page; groups are created whenever you edit an object and set a group.
 
 ## Deleting groups
 
-Groups are _automatically_ deleted when no objects exist in the group. If you remove the final object from a group \(for example, a single piggy bank\) the group is gone.
+Groups are _automatically_ deleted when no objects exist in the group. If you remove the final object from a group (for example, a single piggy bank) the group is gone.
 
 ## Managing objects in groups
 

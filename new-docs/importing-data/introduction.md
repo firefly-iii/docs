@@ -1,6 +1,6 @@
 # Introduction
 
-Importing transactions \(automatically\) into Firefly III is one of the most asked features of Firefly III. Everybody wants Firefly III to automatically connect to their bank and synchronize all transactions.
+Importing transactions (automatically) into Firefly III is one of the most asked features of Firefly III. Everybody wants Firefly III to automatically connect to their bank and synchronize all transactions.
 
 In order to import transactions into Firefly III, you'll have to install and run separate tools. These tools can do the sync for you.
 

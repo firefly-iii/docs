@@ -1,6 +1,6 @@
 # Configure email
 
-Firefly III can send you an email for specific notable events. These includes bugs and crashes \(always useful for me\) but also security notifications and password resets. The configuration values for email are in the `.env`-file:
+Firefly III can send you an email for specific notable events. These includes bugs and crashes (always useful for me) but also security notifications and password resets. The configuration values for email are in the `.env`-file:
 
 ```text
 MAIL_DRIVER=log
@@ -14,7 +14,7 @@ MAIL_ENCRYPTION=null
 
 The first thing you'll want to update is the `MAIL_DRIVER`. The mail driver indicates the system that is used for mailing. Firefly III supports the following mail systems: smtp, sendmail, mailgun, mandrill, sparkpost and log.
 
-The Firefly III administration pages \(located at `/admin`\) contain a test button that will send a test message.
+The Firefly III administration pages (located at `/admin`) contain a test button that will send a test message.
 
 Make sure that you _always_ change the `MAIL_FROM` address. If this is wrong, mail might never work!
 

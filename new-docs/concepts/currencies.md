@@ -8,9 +8,9 @@ Currencies are disabled by default, meaning that you cannot use them when creati
 
 ## Adding currencies
 
-Under Options &gt; Preferences you will find the "Currencies" page. When you are an admin, you will see the button "Create a new currency". You should enter some details such as the name, the symbol of the currency and of course the currency code \(preferrably according to the [ISO 4217](https://www.currency-iso.org/dam/downloads/lists/list_one.xml) standard\).
+Under Options &gt; Preferences you will find the "Currencies" page. When you are an admin, you will see the button "Create a new currency". You should enter some details such as the name, the symbol of the currency and of course the currency code (preferrably according to the [ISO 4217](https://www.currency-iso.org/dam/downloads/lists/list_one.xml) standard).
 
-Currencies have decimal places. Most have 2, like the Euro. Notable exceptions are Bitcoin \(8\) and the Mauritanian ouguiya \(no decimals\). Both are supported by Firefly III. Bitcoin is present by default, but not enabled.
+Currencies have decimal places. Most have 2, like the Euro. Notable exceptions are Bitcoin (8) and the Mauritanian ouguiya (no decimals). Both are supported by Firefly III. Bitcoin is present by default, but not enabled.
 
 New currencies added through this form will be enabled for use.
 
@@ -36,7 +36,7 @@ When you try to create a transaction in Euro's on an asset account that in US Do
 
 ## Creating transfers
 
-When you create a transfer between an account in EUR and USD \(or other currencies\) you must also indicate the amount transferred in both currencies.
+When you create a transfer between an account in EUR and USD (or other currencies) you must also indicate the amount transferred in both currencies.
 
 ![Likewise when you transfer money between two asset accounts, both currencies must have a monetary value.](../.gitbook/assets/currency-transfer%20%281%29.png)
 

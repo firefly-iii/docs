@@ -10,7 +10,7 @@ There is no formal roadmap for Firefly III. However, I try to release a new vers
 
 ## Often requested features
 
-Some features are already [on the roadmap](https://github.com/firefly-iii/firefly-iii/projects/5), so be sure to check it out. Others will probably never make it into Firefly III for various reasons. Here is a \(short\) list of commonly requested items, that will probably never make it into Firefly III:
+Some features are already [on the roadmap](https://github.com/firefly-iii/firefly-iii/projects/5), so be sure to check it out. Others will probably never make it into Firefly III for various reasons. Here is a (short) list of commonly requested items, that will probably never make it into Firefly III:
 
 * Sub-accounts, sub-categories, sub-budgets, etc., will not be featured in Firefly III. Generally speaking, these do not add _meaningful_ information to your transactions.
 * The ability to share a financial administration with your partner or significant other. Unfortunately, this requires a large change in Firefly III's architecture and functionality. As an alternative, you could share the login details with each other.

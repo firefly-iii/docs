@@ -23,7 +23,7 @@ You can use the following options to configure the export.
 * `--start=yyyy-mm-dd`. Start date of the export. This applies to transactions only.
 * `--end=yyyy-mm-dd`. Start date of the export. This applies to transactions only.
 * `--accounts=1,2,3,4`. Only include these asset accounts or liabilities in the export of transactions. Comma separated list of ID's. This applies to transactions only.
-* `--export_directory=./`. Where to store the files. Must be writeable. Defaults to `./` \(the current directory\).
+* `--export_directory=./`. Where to store the files. Must be writeable. Defaults to `./` (the current directory).
 
 You can set what to export using the following flags:
 

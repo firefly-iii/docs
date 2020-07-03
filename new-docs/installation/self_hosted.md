@@ -1,6 +1,6 @@
 # Self-hosted server
 
-If you have your own \(virtual\) web server you can use this guide to install Firefly III. You may have some ingredients prepared already.
+If you have your own (virtual) web server you can use this guide to install Firefly III. You may have some ingredients prepared already.
 
 ## Ingredients
 
@@ -12,7 +12,7 @@ You need a working LAMP, LEMP or WAMP stack. If you don't have one, search the w
 
 If you wish to use another database such as SQLite or Postgres, please check out the FAQ.
 
-You need a \(MySQL\) database and credentials for a user that can access that database. Firefly III creates its own tables. Avoid using the root user.
+You need a (MySQL) database and credentials for a user that can access that database. Firefly III creates its own tables. Avoid using the root user.
 
 Several users have created specific guides for their OS and database combination. Please keep in mind that Firefly III may have other system requirements.
 
@@ -21,8 +21,8 @@ Several users have created specific guides for their OS and database combination
 3. [Ubuntu Server 18.04 with nginx and PHP 7.2](https://gist.github.com/philthynz/ec04833a8e39c7f7d1b0d33cb4197a95)
 4. [Ubuntu Server 18.04 with nginx, PHP 7.3 and a Let's Encrypt certificate](https://gist.github.com/optimistic5/ca5a4a8593dcdb7360f712d37a0cc657)
 5. [Raspberry Pi 3, with Docker and Docker compose](https://gist.github.com/josephbadow/588c2ae961231fe338c459127c7d835b)
-6. [Firefly III in FreeBSD \(FreeNAS\)](https://gist.github.com/Zamana/bdfed1a06ba08467bd3ce92f4715c7fd)
-7. [Firefly III in FreeNAS \(alternative\)](https://forum.freenas-community.org/t/firefly-iii-personal-finance-manager-in-a-jail/45)
+6. [Firefly III in FreeBSD (FreeNAS)](https://gist.github.com/Zamana/bdfed1a06ba08467bd3ce92f4715c7fd)
+7. [Firefly III in FreeNAS (alternative)](https://forum.freenas-community.org/t/firefly-iii-personal-finance-manager-in-a-jail/45)
 
 In case you want to use one of the languages that Firefly III is equipped with, make sure you have installed the necessary locales. For Debian / Ubuntu for example, use `sudo apt install language-pack-nl-base && sudo locale-gen`.
 
@@ -45,7 +45,7 @@ You can search the web to find out how to install these modules. Some may be ins
 
 ### Installing composer
 
-If you have sudo rights \(try `sudo ls`\) you can install composer using the following command:
+If you have sudo rights (try `sudo ls`) you can install composer using the following command:
 
 ```bash
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
@@ -59,7 +59,7 @@ composer -v
 
 If you have no sudo rights, you can simply [download composer](https://getcomposer.org/download/) with the instructions under the header "manual download". Use `php composer.phar` instead of `composer` in the instructions ahead.
 
-This concludes the server preparations. If you're having trouble with \(parts of\) this step, please check out the FAQ.
+This concludes the server preparations. If you're having trouble with (parts of) this step, please check out the FAQ.
 
 ## Installing Firefly III
 

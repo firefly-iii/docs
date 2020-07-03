@@ -4,7 +4,7 @@ Although more and more people have access to fancy online banking, a lot of user
 
 This means that each transaction must be entered by hand when it occurs, and must be compared to your bank statements by hand later. Firefly III has a "reconciliation"-view that allows you to do just that.
 
-In the asset account overview, and on the page of an individual asset account, you will find a button with a checkbox in it \(✓\). This button opens the reconciliation mode.
+In the asset account overview, and on the page of an individual asset account, you will find a button with a checkbox in it (✓). This button opens the reconciliation mode.
 
 ## Match dates and balances
 
@@ -15,7 +15,7 @@ When reconciling an account, you must first match the amounts and dates on your 
 
 So Firefly III will show the same dates and balances as your bank statement does. You can press **Start reconciling** to continue.
 
-The goal is to put a checkbox \(next to "Amount"\) for each transaction that is also on your bank statements. Go over your entire bank statement and check each transaction in Firefly III.
+The goal is to put a checkbox (next to "Amount") for each transaction that is also on your bank statements. Go over your entire bank statement and check each transaction in Firefly III.
 
 Read below to see what to do next.
 

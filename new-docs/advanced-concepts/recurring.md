@@ -1,8 +1,8 @@
 # Recurring transactions
 
-Firefly III features the ability to automatically create transactions \(so you don't have to\). These are called recurring transactions.
+Firefly III features the ability to automatically create transactions (so you don't have to). These are called recurring transactions.
 
-A recurring transaction \(RT\) consists of two sets of data you need to fill in before it'll work as expected.
+A recurring transaction (RT) consists of two sets of data you need to fill in before it'll work as expected.
 
 You must also set up a [cron job](https://docs.firefly-iii.org/advanced-installation/cron) to fire, so Firefly III can create your transactions.
 
@@ -18,7 +18,7 @@ The repetition can be set to the following options:
 
 * Every day.
 * Every week on day X.
-* Every month on day n \(1st, 20th\).
+* Every month on day n (1st, 20th).
 * Every month on the x-th X-day.
 * Every year on a specific date.
 
@@ -43,7 +43,7 @@ These are all the fields you would expect in normal transactions:
 ![Mandatory information for a recurring transaction.](../.gitbook/assets/transaction-mandatory%20%281%29.png)
 
 * The type of transaction.
-* The description, the amount \(and currency\), and the source and destination accounts.
+* The description, the amount (and currency), and the source and destination accounts.
 
 Optional information includes:
 

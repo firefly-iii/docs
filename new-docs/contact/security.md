@@ -1,6 +1,6 @@
 # Security
 
-Firefly III should be run on a TLS enabled host \(`https://`\) even when running locally. Please remember that this is open source software under active development, and it is in no way guaranteed to be safe or secure.
+Firefly III should be run on a TLS enabled host (`https://`) even when running locally. Please remember that this is open source software under active development, and it is in no way guaranteed to be safe or secure.
 
 ## Security features
 

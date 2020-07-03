@@ -16,7 +16,7 @@ These are the account types in Firefly III
 
 ### Asset accounts
 
-Asset accounts are normal bank accounts. They hold your own money. Your bank account is an asset account. Your savings account is an asset account. They would be called "Savings account" or "Checking account". These accounts can be created with an initial \(negative\) balance, which is useful since you won't be entering your entire financial history.
+Asset accounts are normal bank accounts. They hold your own money. Your bank account is an asset account. Your savings account is an asset account. They would be called "Savings account" or "Checking account". These accounts can be created with an initial (negative) balance, which is useful since you won't be entering your entire financial history.
 
 Asset accounts come in three flavours:
 
@@ -26,13 +26,13 @@ This is the default kind of asset account.
 
 #### Shared asset accounts
 
-Shared asset accounts are shared with a partner, roommate or spouse. Use this to indicate that both \(all\) of you have access to this account. In Firefly III itself, you won't be able to actually share access between accounts, so this indication is purely for you.
+Shared asset accounts are shared with a partner, roommate or spouse. Use this to indicate that both (all) of you have access to this account. In Firefly III itself, you won't be able to actually share access between accounts, so this indication is purely for you.
 
 #### Credit cards
 
-Used to indicate the asset account belongs to a credit card. Firefly III does not \(yet\) respond to this, it's just for your administration.
+Used to indicate the asset account belongs to a credit card. Firefly III does not (yet) respond to this, it's just for your administration.
 
-**Note**: Credit cards are not liabilities. You should use them as if they weren't a way to borrow money, but rather a way to use money that you have stored elsewhere \(and that you will move to this account later\).
+**Note**: Credit cards are not liabilities. You should use them as if they weren't a way to borrow money, but rather a way to use money that you have stored elsewhere (and that you will move to this account later).
 
 ### Expense accounts
 
@@ -42,7 +42,7 @@ When you spend money, you do so at a store, online or maybe using cash. Each of 
 
 Cash money is different though. When you withdraw money from an ATM and register it in Firefly III, _don't_ register an expense account. Leave the field empty. This will make Firefly III fall back to a specially designed "cash account".
 
-Likewise, if you deposit cash into an asset account, don't mention a revenue account \(see below\).
+Likewise, if you deposit cash into an asset account, don't mention a revenue account (see below).
 
 ### Revenue accounts
 

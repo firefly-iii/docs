@@ -16,9 +16,9 @@ First of all, YNAB works the wrong way around by budgeting the money that comes 
 
 YNAB expects you to put your money into budgets based on whatever money comes in. But that's not how money works.
 
-Firefly III works the right way around. At the start of the month, you decide what you want to spend. 1000,-? 1500,-? Whatever you want! That money is divided over budgets and spent over a monthly period \(or whatever period you want\).
+Firefly III works the right way around. At the start of the month, you decide what you want to spend. 1000,-? 1500,-? Whatever you want! That money is divided over budgets and spent over a monthly period (or whatever period you want).
 
-If everything is OK, your budget should at least match what you earn. So that's easy. But if everything is _better_ then OK, you budget **less** than you make and you **save** the rest. You can use the rest of the money to fill piggy banks or donate to me \(kidding ;\)\).
+If everything is OK, your budget should at least match what you earn. So that's easy. But if everything is _better_ then OK, you budget **less** than you make and you **save** the rest. You can use the rest of the money to fill piggy banks or donate to me (kidding ;)).
 
 You can read more about this concept on the page about [the grand theory](https://docs.firefly-iii.org/about-firefly-iii/grand-theory).
 
@@ -75,10 +75,10 @@ That should solve it.
 
 ## I'm running Internet Explorer or Edge and nothing works?
 
-Some \(older\) browsers may not work with Firefly III. I have no plans to add support.
+Some (older) browsers may not work with Firefly III. I have no plans to add support.
 
 * Internet Explorer 9 or lower on Windows 7: will not work.
-* Internet Explorer 10 on Windows 7: works, but modern TLS configurations may break your site \(just try [the demo site](https://demo.firefly-iii.org/)\).
+* Internet Explorer 10 on Windows 7: works, but modern TLS configurations may break your site (just try [the demo site](https://demo.firefly-iii.org/)).
 * Internet Explorer 11 on Windows 7: works.
 * Internet Explorer 11 on Windows 8.1: not tested, but should work.
 * Microsoft Edge on Windows 10: will not work due to Content Security Policy header limitations.
@@ -93,7 +93,7 @@ You do this entirely at your own risk, of course.
 
 ## I lost my 2FA token generator, or 2FA has stopped working.
 
-If 2FA has stopped working, but it worked before, there probably is a time difference between your 2FA client \(your phone\) and the server that hosts Firefly III. Fix it. Then try again.
+If 2FA has stopped working, but it worked before, there probably is a time difference between your 2FA client (your phone) and the server that hosts Firefly III. Fix it. Then try again.
 
 If you still wish to disable 2FA because it doesn't work, you need to edit the database. Go to the `users` table in your favorite SQL editor, find yourself in the table content and set the value of the `mfa_secret` column to NULL for your user account.
 

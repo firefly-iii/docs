@@ -1,6 +1,6 @@
 # Authentication
 
-As of Firefly III 4.7.8 there are two ways to authenticate users. The settings to change these can be accessed through the `.env`-file in the root directory of your installation, or they can be changed through environment variables \(Docker\).
+As of Firefly III 4.7.8 there are two ways to authenticate users. The settings to change these can be accessed through the `.env`-file in the root directory of your installation, or they can be changed through environment variables (Docker).
 
 _If an environment variable itself contains the_ `=` _character, you must escape the entire value using quotes:_
 
@@ -207,7 +207,7 @@ ADLDAP_SYNC_FIELD=samaccountname
 
 ## Two-step authentication
 
-Two-step authentication, or two-factor authentication \(2FA\) asks you for an extra code to enter. This adds security, so even when you lose your password your account is still protected.
+Two-step authentication, or two-factor authentication (2FA) asks you for an extra code to enter. This adds security, so even when you lose your password your account is still protected.
 
 You can enable it in your profile.
 

@@ -7,7 +7,7 @@ Firefly III supports several feature that requires you to run a cron job:
    If Firefly III is to actually create these recurring transactions for you, someone or something must check every single day if a new transaction is due to be created.
 
 2. [Automatic budgeting](https://docs.firefly-iii.org/concepts/budgets). Firefly III can automatically set your budgets for you.
-3. [Telemetry](https://docs.firefly-iii.org/support/telemetry). When enabled \(telemetry is **opt-in**\), Firefly III will submit its telemetry data.
+3. [Telemetry](https://docs.firefly-iii.org/support/telemetry). When enabled (telemetry is **opt-in**), Firefly III will submit its telemetry data.
 
 ## Cron job that calls a command
 
@@ -26,7 +26,7 @@ If you do this, Firefly III will generate the recurring transactions each night 
 
 ## Cron job that requests a page
 
-If for some reason you can't call scripts like this you can also use a tool called cURL which is available on most \(if not all\) linux systems.
+If for some reason you can't call scripts like this you can also use a tool called cURL which is available on most (if not all) linux systems.
 
 The content of the cron job must be as follows:
 
@@ -39,9 +39,9 @@ Of course you must replace the URL with the URL of your own Firefly III installa
 
 ## Make IFTTT do it
 
-If you can't run a cron job, you can always make [If This, Then That \(IFTTT\)](https://ifttt.com) do it for you. This will only work if your Firefly III installation can be reached from the internet. Here's what you do.
+If you can't run a cron job, you can always make [If This, Then That (IFTTT)](https://ifttt.com) do it for you. This will only work if your Firefly III installation can be reached from the internet. Here's what you do.
 
-Login to IFTTT \(or register a new account\) and create a new applet:
+Login to IFTTT (or register a new account) and create a new applet:
 
 ![Make a new applet](../.gitbook/assets/ifttt-applet%20%281%29.png)
 

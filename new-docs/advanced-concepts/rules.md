@@ -29,7 +29,7 @@ Some triggers require some tinkering before they work the way you might think.
 
 #### Account number / IBAN triggers
 
-These triggers \(for both the source and destination accounts\) trigger on either the IBAN or the account number.
+These triggers (for both the source and destination accounts) trigger on either the IBAN or the account number.
 
 #### Amount triggers
 
@@ -57,8 +57,8 @@ You can also use an absolute date, in this form: `YYYY-MM-DD`. So for the 17th o
 
 You can also use relative date indicators, like so:
 
-* `+3d` \(in three days\)
-* `-2w` \(two weeks ago\)
+* `+3d` (in three days)
+* `-2w` (two weeks ago)
 
 You can use `d` for days, `w` for weeks, `m` for months and `y` for years. You can also combine them. To set a date trigger for a year and a half ago, you could do this:
 
@@ -99,9 +99,9 @@ So you could say "Transaction date is before" `xxxx-xx-10` and any transaction b
 
 ## Actions
 
-When the triggers are hit \(either ALL or ANY, see the "strict" option\), Firefly III will execute the associated rule actions. There are many actions available. Notable ones are:
+When the triggers are hit (either ALL or ANY, see the "strict" option), Firefly III will execute the associated rule actions. There are many actions available. Notable ones are:
 
-* Change the budget, category, tag\(s\), description, amount
+* Change the budget, category, tag(s), description, amount
 * Set a new description
 * Change the source or destination account
 
@@ -167,7 +167,7 @@ If you leave the action value empty, the action will fail.
 
 ## Apply rules
 
-You can apply your rules to existing transactions. On the rule-overview \(page `/rules`\), either use the "on/off"-icon or the ellipsis menu in a rule group to apply entire rule groups or individual rules to your transactions. See for some screenshots below.
+You can apply your rules to existing transactions. On the rule-overview (page `/rules`), either use the "on/off"-icon or the ellipsis menu in a rule group to apply entire rule groups or individual rules to your transactions. See for some screenshots below.
 
 ## Screenshots
 

@@ -26,7 +26,7 @@ This means that whenever a transaction matches these things, it will be linked t
 
 ## The date of a bill
 
-When you create a bill you also have to fill in the \(first\) date you expect the bill to hit. This date is purely cosmetic and will be used to inform you when the bill can be expected. For example:
+When you create a bill you also have to fill in the (first) date you expect the bill to hit. This date is purely cosmetic and will be used to inform you when the bill can be expected. For example:
 
 * A monthly bill, on the 3rd day of the month, will hit: 3 Jan, 3 Feb, 3 Mar, etc.
 * A weekly bill, starting on 15 Jan, will hit: 15 Jan, 22 Jan, 29 Jan, 5 Feb, etc.
@@ -39,7 +39,7 @@ The front page of Firefly III will also start showing the bills.
 
 ![The bills on the dashboard](https://firefly-iii.org/static/docs/4.8.0/bills-frontpage.png)
 
-Individual bills will end up looking like this picture \(under Money Management, then Bills\)
+Individual bills will end up looking like this picture (under Money Management, then Bills)
 
 ![Overview of a bill](https://firefly-iii.org/static/docs/4.7.0/bills-show.png)
 

@@ -18,11 +18,15 @@ You can't add your car to Firefly III. The monetary value of your house can't be
 
 Firefly III won't support the ability to predict expenses, give you a look into the future or do financial planning. The present is hard enough to manage at the moment.
 
+## User friendly installation
+
+Firefly III has no Wordpress-like installation that works in under 5 minutes. There are plenty of instructions but you have to know what you're doing. 
+
 ## Automated currency conversion so everything is in Euro's or dollars
 
 It won't be possible to see multi-currency transactions or accounts in a single default currency, by using exchange rates to convert the amounts. The result will always be inaccurate because banks often have steeper rates than the market.
 
-If you submit a transaction in multiple currencies \(this is possible\) Firefly III won't convert them for you.
+If you submit a transaction in multiple currencies (this is possible) Firefly III won't convert them for you.
 
 ## Sub-categories, sub-budgets, sub-accounts
 

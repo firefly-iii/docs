@@ -12,16 +12,16 @@ In Firefly III and most other systems this is stored using a "[double-entry book
 
 ![You lose money, the supermarket earns it.](../.gitbook/assets/transaction4%20%282%29.png)
 
-Each transaction is stored twice. Once as a loss \(for one party\), and once as a profit \(for the other party\). This seems pretty pointless, and technically it is. But it was designed back when clerks could be fraudulent and this double-entry system stopped fraud. In these modern days it is useful to check if all records are straight.
+Each transaction is stored twice. Once as a loss (for one party), and once as a profit (for the other party). This seems pretty pointless, and technically it is. But it was designed back when clerks could be fraudulent and this double-entry system stopped fraud. In these modern days it is useful to check if all records are straight.
 
 It is also useful when transferring money back and forth between your own accounts. This is the same as spending money. It's all moving money around. This helps maintain the internal consistency of the database.
 
 Transactions have a few useful fields:
 
 * A description
-* The amount \(duh\)
+* The amount (duh)
 * The date
-* The accounts involved \(from and to\)
+* The accounts involved (from and to)
 * .. and some meta-information.
 
 In Firefly III, a transaction can be a withdrawal, a deposit or a transfer. Beyond the obvious, they are slightly different from one another: XXX
@@ -40,7 +40,7 @@ Transfers have no free-format field. A transfer can only occur between existing 
 
 ## Split transactions
 
-What has been described here are singular transactions. Firefly III stores each financial transaction in a journal. Each journal contains two "transactions". One takes money \(-250 from your bank account\) and the other one puts it into another account \(+250 for Amazon.com\).
+What has been described here are singular transactions. Firefly III stores each financial transaction in a journal. Each journal contains two "transactions". One takes money (-250 from your bank account) and the other one puts it into another account (+250 for Amazon.com).
 
 You can verify this by counting. There are always twice as many "transactions" as there are "journals" in your database.
 
@@ -64,11 +64,11 @@ You can split your entire groceries-receipt into small "sub"-transactions. Or yo
 
 It's important to realise the following constraints when dealing with split transactions.
 
-* When making an expense \(withdrawal\), you can only split the destination accounts, not the source accounts. You can't create one expense that originates from two or three asset accounts. But you can divide a withdrawal over several expense accounts. You can split your groceries over several departments, but you can't pay a bill from two asset accounts.
+* When making an expense (withdrawal), you can only split the destination accounts, not the source accounts. You can't create one expense that originates from two or three asset accounts. But you can divide a withdrawal over several expense accounts. You can split your groceries over several departments, but you can't pay a bill from two asset accounts.
 * Deposits must end up in one asset account. You can't make a deposit from one revenue accounts and split it over separate asset accounts. Your salary, when divided over different splits, must end up in one asset account.
 * Transfers can be split, but all splits must have the same source + destination.
 
 ## Multi-currency transactions
 
-Firefly III supports multi-currency transactions. You can set the foreign currency for any \(split\) transaction.
+Firefly III supports multi-currency transactions. You can set the foreign currency for any (split) transaction.
 
