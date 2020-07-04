@@ -3,7 +3,7 @@
 Firefly III can send you an email for specific notable events. These includes bugs and crashes (always useful for me) but also security notifications and password resets. The configuration values for email are in the `.env`-file:
 
 ```
-MAIL_DRIVER=log
+MAIL_MAILER=log
 MAIL_HOST=smtp.mailtrap.io
 MAIL_PORT=2525
 MAIL_FROM=changeme@example.com
@@ -12,7 +12,7 @@ MAIL_PASSWORD=null
 MAIL_ENCRYPTION=null
 ```
 
-The first thing you'll want to update is the `MAIL_DRIVER`. The mail driver indicates the system that is used for mailing. Firefly III supports the following mail systems: smtp, sendmail, mailgun, mandrill, sparkpost and log.
+The first thing you'll want to update is the `MAIL_MAILER`. The mail mailer indicates the system that is used for mailing. Firefly III supports the following mail systems: smtp, sendmail, mailgun, mandrill, sparkpost and log.
 
 The Firefly III administration pages (located at `/admin`) contain a test button that will send a test message.
 
@@ -26,7 +26,7 @@ The default value will store messages in your log files instead of sending them.
 
 ## smtp
 
-SMTP is the de-facto standard for sending email. If you want to use GMail or Outlook as mail system, set the driver to `smtp`. Make sure you change the host, port and credentials and of course, `MAIL_ENCRYPTION` must be `null`, `ssl` or `tls`, depending on your provider.
+SMTP is the de-facto standard for sending email. If you want to use GMail or Outlook as mail system, set the mailer to `smtp`. Make sure you change the host, port and credentials and of course, `MAIL_ENCRYPTION` must be `null`, `ssl` or `tls`, depending on your provider.
 
 ## sendmail
 
