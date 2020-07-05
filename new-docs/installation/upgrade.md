@@ -36,7 +36,7 @@ docker-compose -f docker-compose.yml up -d
 
 If you want to any container under another user, add the `user:` key under `image:`, with the same indentation. Possible values are `user`, `user:group`,`uid`, `uid:gid`, `user:gid`, `uid:group`.
 
-if you redownload `docker-compose.yml`, keep in mind that the database version in the Docker composer may have been updated and that this version is not compatible with your current version (ie PostgreSQL 10 vs PostgreSQL 12).
+if you redownload `docker-compose.yml`, keep in mind that the database version in the Docker composer may have been updated and that this version is not compatible with your current version (ie MariaDB 10 vs MariaDB 11).
 
 ## Virtual or real server
 

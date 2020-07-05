@@ -9,3 +9,4 @@ You can send the bug info [to me by email](mailto:james@firefly-iii.org) or by [
 ## Errors in translations
 
 If you see a spelling error, grammatical error or a weird translation in your language, please join [the CrowdIn project](https://crowdin.com/project/firefly-iii). There you can submit your translations and fixes. The GitHub repository will download these automatically and they will be included in the next release.
+

@@ -1,4 +1,4 @@
-# Contribute to Firefly  III
+# Contribute to Firefly III
 
 First of all: thank you for contributing to Firefly III! It is always nice to get some help!
 
@@ -19,10 +19,11 @@ Opening a pull request with some changes is always a possibility as well. Keep i
 There are two main projects for the translation of Firefly III. They are hosted by CrowdIn, where you must register an account to help out.
 
 * [Firefly III](https://crowdin.com/project/firefly-iii) itself
-* [The Firefly III help pages](https://crowdin.com/project/firefly-iii-help) (the (?)-icon in the top right corner)
+* [The Firefly III help pages](https://crowdin.com/project/firefly-iii-help) \(the \(?\)-icon in the top right corner\)
 
 If you see a spelling error, grammatical error or a weird translation in your language, please join the correct projects. There, you can submit your translations and fixes. They are synced to GitHub every so often and included in each new release.
 
 The [wiki page on GitHub](https://github.com/firefly-iii/help/wiki/Download-and-enable-an-incomplete-language) has some extra instructions for translators.
 
 Is your language not listed? You can send your language [to me by email](mailto:james@firefly-iii.org) or [open a ticket on GitHub](https://github.com/firefly-iii/firefly-iii/issues).
+

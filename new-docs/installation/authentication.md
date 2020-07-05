@@ -20,6 +20,24 @@ By default Firefly III uses the "eloquent" driver that allows users to register 
 
 Firefly III will allow just one user to register itself after which registration will be blocked. The user who first registered is made administrator and can change the setting over at `/admin` to allow others to register.
 
+## Remote user
+
+Firefly III supports [RFC 3875](https://tools.ietf.org/html/rfc3875#section-4.1.10) which means your users can authenticate using the `REMOTE_USER` header. When you enable this method, an authentication proxy in front of Firefly III MUST be set up to care of the user's login and authentication. This allows you to use advanced login methods like hardware tokens, single sign-on, fingerprint readers and more. Once the authentication proxy says you're logged in, it will forward you to Firefly III.
+
+A very popular tool that can do this [Authelia](https://www.authelia.com/docs/).
+
+### Enable the remote user option
+
+To enable this function set the `AUTHENTICATION_GUARD` environment variable to `remote_user_guard`.
+
+### How it works
+
+Once you're authenticated by the proxy Firefly III will receive the request with your user ID in the `REMOTE_USER` header. Firefly III will then log you in. There are no further checks.
+
+When Firefly III is in `remote_user_guard` mode, it will do absolutely **NO** checks on the validity of the header or the contents. Firefly III will not ask for passwords, if won't check for MFA, nothing. All authentication is delegated to the authentication proxy and Firefly III just doesn't care anymore.
+
+So if you use this authentication method make sure there is NO way *around* the authentication proxy you've set up. Block all other access to the container or the server.
+
 ## LDAP
 
 In the following instructions I will refer to environment variables in all caps, like `EXAMPLE_VARIABLE`.

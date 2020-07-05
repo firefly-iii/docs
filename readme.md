@@ -9,5 +9,5 @@ These are the source files for the official [Firefly III documentation](https://
 
 ## License
 
-- [Firefly III license](https://github.com/firefly-iii/firefly-iii/blob/master/LICENSE)
-- [Firefly III documentation license](https://github.com/firefly-iii/docs/blob/master/license)
+- [Firefly III license](https://github.com/firefly-iii/firefly-iii/blob/main/LICENSE)
+- [Firefly III documentation license](https://github.com/firefly-iii/docs/blob/main/license)

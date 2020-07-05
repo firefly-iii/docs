@@ -1,30 +1,53 @@
 # Introduction
 
-Firefly III has several tools built-in to import data. This is changing however. Maintaining the code base necessary to import data into Firefly III is a process that is time-consuming, error prone, and interferes with the release cycle of Firefly III itself.
+Importing transactions (automatically) into Firefly III is one of the most asked features of Firefly III. Everybody wants Firefly III to automatically connect to their bank and synchronize all transactions.
 
-To combat this, several tools have been released that can be used to import data. These are released separately from Firefly III and must also be separately installed. They are however very user friendly and easy to use. Easier in fact, than their counterparts when they were stilll part of Firefly III.
+In order to import transactions into Firefly III, you'll have to install and run separate tools. These tools can do the sync for you.
 
-The current state of the Firefly III import eco-system is as follows:
+## Some notes regarding importing transactions
 
-## Released as separate tools
+* It's not as easy as YNAB or Mint, and it's never going to reach that level of sophistication.
+* Your bank may not be supported, despite our best efforts.
+* You might not be able to easily automate the import/sync process.
 
-The following import tools can be downloaded separately to import data into Firefly III.
+## Available tools
 
-* [CSV importer](http://github.com/firefly-iii/csv-importer), with [documentation](https://firefly-iii.gitbook.io/firefly-iii-csv-importer/).
-* [bunq importer](http://github.com/firefly-iii/bunq-importer), with [documentation](https://firefly-iii.gitbook.io/firefly-iii-bunq-importer/).
+A universal tool to import transactions into your Firefly III installation is the [CSV importer](http://github.com/firefly-iii/csv-importer). If that fails, check out the [Spectre importer](http://github.com/firefly-iii/spectre-importer). The Spectre API is provided by a fintech company called Salt Edge. They offer a **trial** of their Spectre API which you can use to connect to your bank.
 
-## Part of Firefly III
+If you're banking with bunq, you can use the dedicated [bunq importer](http://github.com/firefly-iii/bunq-importer). You can migrate from "You Need a Budget" using the dedicated [YNAB importer](http://github.com/firefly-iii/ynab-importer).
 
-Still a part of Firefly III are the following import tools:
+If you want to import transactions using FinTS, from Revolut or Plaid, use the tools made by Firefly III users listed below.
 
-* [Spectre / Salt Edge](https://docs.firefly-iii.org/importing-data/spectre)
-* [You Need A Budget](https://docs.firefly-iii.org/importing-data/ynab)
-* [FinTS](https://docs.firefly-iii.org/importing-data/fints)
+### CSV importer
 
-This list will become shorter over time. At some point all of the tools in the list above will be released as separate tools.
+A tool, built by me, called the [CSV importer](http://github.com/firefly-iii/csv-importer), with [documentation](https://firefly-iii.gitbook.io/firefly-iii-csv-importer/), can import any CSV file from any financial institute that supports CSV files.
 
-## Released by other users
+### Spectre importer
 
-Although I can't give you support on them, a special mention must be made for the following tools, graciously made by other Firefly III users to import data from other sources into Firefly III:
+The [Spectre importer](http://github.com/firefly-iii/spectre-importer) importer can import any bank [Spectre supports](https://www.saltedge.com/products/spectre/faq#question4).
 
-* [Ludo444's Revolut import tool](https://gitlab.com/ludo444/fireflyrevoluttransactions)
+The Spectre API is a paid product. After a short testing period, you must pay for the use of the Spectre API.
+
+### bunq importer
+
+The [bunq importer](http://github.com/firefly-iii/bunq-importer), with [documentation](https://firefly-iii.gitbook.io/firefly-iii-bunq-importer/), can import from [bunq](https://www.bunq.com/).
+
+### YNAB importer
+
+The [You Need A Budget importer](https://github.com/firefly-iii/ynab-importer), with [documentation](https://firefly-iii.gitbook.io/firefly-iii-ynab-importer/), can import from YNAB.
+
+### FinTS importer
+
+A separate tool, built by GitHub user @bnw, can import [FinTS](https://github.com/bnw/firefly-iii-fints-importer).
+
+### Revolut importer
+
+A separate tool, built by GitHub user @Ludo444, can import [Revolut](https://gitlab.com/ludo444/fireflyrevoluttransactions).
+
+### Plaid importer
+
+[Import from Plaid using this tool by George Hahn](https://gitlab.com/GeorgeHahn/firefly-plaid-connector)
+
+### Other ways of importing
+
+If none of these import methods support your bank or financial org, please check out the [API](../api/api.md).

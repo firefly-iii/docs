@@ -2,9 +2,9 @@
 
 Firefly III features the ability to automatically create transactions (so you don't have to). These are called recurring transactions. 
 
-An RT consists of two sets of data you need to fill in before it'll work as expected.
+A recurring transaction (RT) consists of two sets of data you need to fill in before it'll work as expected.
 
-You must also set up a cron job to fire, so Firefly III can create your transactions.
+You must also set up a [cron job](https://docs.firefly-iii.org/advanced-installation/cron) to fire, so Firefly III can create your transactions.
 
 If you have set up email correctly, Firefly III will automatically email you an overview of the transactions it has created.
 

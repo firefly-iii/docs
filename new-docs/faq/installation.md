@@ -1,4 +1,4 @@
-# FAQ
+# Installing and upgrading
 
 People often have the same type of questions. Please find them below. If you open an issue that refers to one of these questions, your issue may be closed.
 
@@ -8,13 +8,13 @@ Please refer to the index on your right.
 
 A few errors may pop up during the automatic installation and upgrade routine:
 
-* `proc_close`: The `proc_close` method (part of PHP) is disabled in some cases due to security concerns.
+* `proc_close`: The `proc_close` method \(part of PHP\) is disabled in some cases due to security concerns.
 * Open base dir restriction is sometimes enabled for security purposes.
 * Other error messages.
 
-These errors are not fatal for Firefly III, but they mean you must do the upgrade yourself. 
+These errors are not fatal for Firefly III, but they mean you must do the upgrade yourself.
 
-Please checkout the installation instructions and upgrade instructions for your particular type of installation. 
+Please checkout the installation instructions and upgrade instructions for your particular type of installation.
 
 ## I get syntax errors or other problems when opening Firefly III?
 
@@ -32,3 +32,4 @@ phpinfo();
 ```
 
 That should tell you what you need to know. You can find update and upgrade instructions online for your web server.
+
