@@ -36,7 +36,7 @@ Otherwise, Firefly III contacts no outside servers and will not download JS libr
 
 ## Storage
 
-Firefly III stores encrypted versions of all uploaded attachments in the `/storage/upload` directory. To prevent data loss make sure you have a copy of the `APP_KEY` environment variable.
+Firefly III stores encrypted versions of all uploaded attachments in the `/storage/upload` directory. To prevent data loss make sure you have a copy of the `APP_KEY` environment variable. Users who have access to the file system and access to the `APP_KEY` environment variable will be able to decrypt uploaded attachments for all users.
 
 ## Encryption
 
@@ -67,6 +67,8 @@ Firefly III is thusly prevented from executing unexpected Javascript in case of 
 ## Debug
 
 When you set the `APP_DEBUG` environment variable to `true`, Firefly III will leak an amazing amount of private data when it encounters a bug. This includes secrets and passwords.
+
+Bugs may also appear (and thus leak sensitive information) on pages not protected by a user login. An example would be the password reset page: misconfigured email settings may expose sensitive information when Firefly III reports the issue through an error page.
 
 ## Logging
 
