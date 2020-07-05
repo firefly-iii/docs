@@ -8,11 +8,11 @@ The database is not encrypted, and data in the tables of the database is readabl
 
 When you connect your Firefly III instance to the internet, make sure that the database can't be connected to from the web, but only from localhost. Preferrably, the database host can only be reached from the Firefly III host.
 
-ID's used for objects in Firefly III are incremental numbers. Logged in users may infer the existence of objects not owned by them by changing the ID in the address bar and observing 404's. This is not possible for guests.
+ID's used for objects in Firefly III are incremental numbers. Logged in users may infer the existence of objects owned by other users by changing the ID in the address bar and observing 404's. This is not possible for guests.
 
 ## Sessions and logins
 
-Sessions are not tied to you IP address. Use 2FA when you can, which is a feature of Firefly III. There is a button on the `/profile` page that allows you to logout other sessions so you can make sure there's a limited number of logged in sessions out there.
+Sessions are not tied to an IP address. Use 2FA when you can, which is a feature of Firefly III. There is a button on the `/profile` page that allows you to logout other sessions so you can make sure there's a limited number of logged in sessions out there.
 
 After the first user has registered themselves, future registrations are blocked. It can be enabled again under `/admin`. Each user is strictly separated from other users.
 
