@@ -43,11 +43,15 @@ Collects no telemetry, even when it's enabled.
 
 ### Version 5.2.7
 
-See version 5.2.8
+See version 5.3.0
 
 ### Version 5.2.8
 
-When enabled Firefly III version **5.2.8** can collect and submit the following telemetry. This is optional and disabled by default (see the top of this page):
+See version 5.3.0
+
+### Version 5.3.0
+
+When enabled Firefly III version **5.3.0** can collect and submit the following telemetry. This is optional and disabled by default (see the top of this page):
 
 * The number of users in your system, collected when a new user registers.  
 
