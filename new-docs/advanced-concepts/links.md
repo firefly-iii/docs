@@ -2,9 +2,9 @@
 
 More often than not a transaction isn't just "a transaction" but a connected to some other transactions. Maybe you've been reimbursed money by your boss. Maybe an expense is paid back to you by an friend. Or perhaps a friend paid you back for something or other.
 
-![Inward link](../.gitbook/assets/links1%20%281%29.png)
+![Inward link](./images/links1.png)
 
-In Firefly III you can store these links between transactions. By default, four link types are available. You can see these under Administration &gt; Transaction links configuration.
+In Firefly III you can store these links between transactions. By default, four link types are available. You can see these under Administration > Transaction links configuration.
 
 * Is paid for by
 * Is refunded by
@@ -13,7 +13,7 @@ In Firefly III you can store these links between transactions. By default, four 
 
 These links work both ways. When transaction A has been refunded by transaction B, B is noted to refund A.
 
-![Outward link](../.gitbook/assets/links2%20%281%29.png)
+![Outward link](./images/links2.png)
 
 You can also add your own link types if you want to.
 
@@ -23,15 +23,14 @@ You can remove or reverse a link once it has been created.
 
 ## Use of links
 
-It is important to realise that links don't _do_ anything. They won't change your transactions, or subtract amounts or anything like that.
+It is important to realise that links don't *do* anything. They won't change your transactions, or subtract amounts or anything like that.
 
 ## Screenshots
 
-![The &quot;Lunch with client&quot; expense is reimbursed by your boss in transaction &quot;Lunch reimbursement&quot;.](../.gitbook/assets/links-inward%20%281%29.png)
+![The "Lunch with client" expense is reimbursed by your boss in transaction "Lunch reimbursement".](./images/links-inward.png)
 
-![Vice versa, &quot;Lunch reimbursement&quot; reimburses you for &quot;Lunch with client&quot;.](../.gitbook/assets/links-outward%20%281%29.png)
+![Vice versa, "Lunch reimbursement" reimburses you for "Lunch with client".](./images/links-outward.png)
 
-![Use this modal to create a new link](../.gitbook/assets/links-modal%20%281%29.png)
+![Use this modal to create a new link](./images/links-modal.png)
 
-![You can delete the link or make the transactions switch positions.](../.gitbook/assets/links-change%20%281%29.png)
-
+![You can delete the link or make the transactions switch positions.](./images/links-change.png)

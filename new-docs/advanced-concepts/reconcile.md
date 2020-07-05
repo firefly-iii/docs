@@ -29,11 +29,11 @@ It seems you forgot to enter a transaction! Quickly add it and return to the rec
 
 ### Amount under "Reconciliation options" is less than zero
 
-This means that your Firefly III asset account has less money in it than it should have. Perhaps you entered a transaction wrongly or twice. When you press "Store reconciliation" you can let Firefly III create an automated transaction to correct this difference. Of course, if you have simply forgotten to check a transaction or even to _enter_ a transaction, you should correct that first!
+This means that your Firefly III asset account has less money in it than it should have. Perhaps you entered a transaction wrongly or twice. When you press "Store reconciliation" you can let Firefly III create an automated transaction to correct this difference. Of course, if you have simply forgotten to check a transaction or even to *enter* a transaction, you should correct that first!
 
 ### Amount under "Reconciliation options" is more than zero
 
-This means that your Firefly III asset account has more money in it than it should have. Maybe you have forgotten a transaction or entered the wrong amount. When you press "Store reconciliation" you can let Firefly III create an automated transaction to correct this difference. Of course, if you have simply forgotten to check a transaction or even to _enter_ a transaction, you should correct that first!
+This means that your Firefly III asset account has more money in it than it should have. Maybe you have forgotten a transaction or entered the wrong amount. When you press "Store reconciliation" you can let Firefly III create an automated transaction to correct this difference. Of course, if you have simply forgotten to check a transaction or even to *enter* a transaction, you should correct that first!
 
 ### Amount under "Reconciliation options" is exactly zero!
 
@@ -45,17 +45,16 @@ When you press "Store reconciliation", Firefly III will present you with an over
 
 ## Screenshots
 
-![The button is shown in your list of accounts](../.gitbook/assets/reconcile-account-index%20%281%29.png)
+![The button is shown in your list of accounts](./images/reconcile-account-index.png)
 
-![These dates and amounts must match your bank statement.](../.gitbook/assets/reconcile-set-amounts%20%281%29.png)
+![These dates and amounts must match your bank statement.](./images/reconcile-set-amounts.png)
 
-![When the result is negative, your Firefly III asset account is too low on funds.](../.gitbook/assets/reconcile-negative-result%20%281%29.png)
+![When the result is negative, your Firefly III asset account is too low on funds.](./images/reconcile-negative-result.png)
 
-![When your account is too low on funds, you can allow Firefly III to create a corrective transaction.](../.gitbook/assets/reconcile-negative-action%20%281%29.png)
+![When your account is too low on funds, you can allow Firefly III to create a corrective transaction.](./images/reconcile-negative-action.png)
 
-![When the result is positive, your Firefly III asset account has too much money in it.](../.gitbook/assets/reconcile-positive-result%20%281%29.png)
+![When the result is positive, your Firefly III asset account has too much money in it.](./images/reconcile-positive-result.png)
 
-![When your account is too full, you can allow Firefly III to create a corrective transaction.](../.gitbook/assets/reconcile-positive-action%20%281%29.png)
+![When your account is too full, you can allow Firefly III to create a corrective transaction.](./images/reconcile-positive-action.png)
 
-![When there is no mismatch between your bank statements and Firefly III, you don&apos;t need to do anything.](../.gitbook/assets/reconcile-neutral-action%20%281%29.png)
-
+![When there is no mismatch between your bank statements and Firefly III, you don't need to do anything.](./images/reconcile-neutral-action.png)

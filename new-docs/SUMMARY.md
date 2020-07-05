@@ -9,6 +9,7 @@
 * [Screenshots](about-firefly-iii/screenshots.md)
 * [Personal finances](about-firefly-iii/personal-finances.md)
 * [Demo website](about-firefly-iii/demo.md)
+* [Security](about-firefly-iii/security.md)
 
 ## Installation
 

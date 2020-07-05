@@ -2,14 +2,14 @@
 
 As of Firefly III 4.7.8 there are two ways to authenticate users. The settings to change these can be accessed through the `.env`-file in the root directory of your installation, or they can be changed through environment variables (Docker).
 
-_If an environment variable itself contains the_ `=` _character, you must escape the entire value using quotes:_
+*If an environment variable itself contains the* `=` *character, you must escape the entire value using quotes:*
 
 ```bash
 -e NORMAL_VAR=hello \
 -e COMPLEX_VAR="dn=example" \
 ```
 
-```text
+```   
 NORMAL_VAR=hello
 COMPLEX_VAR="dn=example"
 ```
@@ -36,7 +36,7 @@ Once you're authenticated by the proxy Firefly III will receive the request with
 
 When Firefly III is in `remote_user_guard` mode, it will do absolutely **NO** checks on the validity of the header or the contents. Firefly III will not ask for passwords, if won't check for MFA, nothing. All authentication is delegated to the authentication proxy and Firefly III just doesn't care anymore.
 
-So if you use this authentication method make sure there is NO way _around_ the authentication proxy you've set up. Block all other access to the container or the server.
+So if you use this authentication method make sure there is NO way *around* the authentication proxy you've set up. Block all other access to the container or the server.
 
 ## LDAP
 
@@ -71,7 +71,7 @@ The administrator account should have these already set in your configuration.
 
 When you're feeling especially daring, you can change the following fields to fine tune authentication with Firefly III.
 
-If you set `ADLDAP_PASSWORD_SYNC` to true, Firefly III will sync the user's password to its local user table. This allows users to login to Firefly III when the LDAP server is unavailable. This requires `ADLDAP_LOGIN_FALLBACK` to be `true` as well.
+If you set `ADLDAP_PASSWORD_SYNC` to true, Firefly III will sync the user's password to its local user table. This allows users to login to Firefly III when the LDAP server is unavailable. This requires `ADLDAP_LOGIN_FALLBACK` to be `true` as well. 
 
 ### Finishing up and possible problems
 
@@ -83,7 +83,7 @@ If you get "cannot be NULL"-errors or "field unavailable"-errors or something li
 
 The following configuration will allow you to connect to Forum System's excellent [example LDAP server](http://www.forumsys.com/tutorials/integration-how-to/ldap/online-ldap-test-server/). If you configure your Firefly III system, you can login with user "einstein" with password "password".
 
-```text
+```
 LOGIN_PROVIDER=ldap
 
 # LDAP connection configuration
@@ -125,7 +125,7 @@ ADLDAP_SYNC_FIELD=uid
 
 The following is an example configuration for FreeIPA:
 
-```text
+```
 LOGIN_PROVIDER=ldap
 
 # LDAP connection configuration
@@ -167,7 +167,7 @@ ADLDAP_SYNC_FIELD=uid
 
 The following is an example configuration for Active Directory:
 
-```text
+```
 LOGIN_PROVIDER=ldap
 
 # LDAP connection configuration
@@ -211,13 +211,12 @@ Two-step authentication, or two-factor authentication (2FA) asks you for an extr
 
 You can enable it in your profile.
 
-![The button is shown in your list of accounts.](../.gitbook/assets/2fa-enable%20%281%29.png)
+![The button is shown in your list of accounts.](images/2fa-enable.png)
 
 If you enable 2FA, you will also see eight backup codes that you should save just in case you lose access to your Authenticator app.
 
-![The button is shown in your list of accounts.](../.gitbook/assets/2fa-codes%20%281%29.png)
-
+![The button is shown in your list of accounts.](images/2fa-codes.png)
+   
 To confirm your 2FA settings, submit a code from your Authenticator app twice. In your settings, you will see the upgraded status for 2FA:
 
-![Options for 2FA.](../.gitbook/assets/2fa-reset%20%281%29.png)
-
+![Options for 2FA.](images/2fa-reset.png)

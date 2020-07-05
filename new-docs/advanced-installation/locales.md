@@ -1,9 +1,9 @@
 # Locales
 
-Setting up the right "locale" is about making sure the following things are formatted as you would expect them _in your local language_. The most important ones are:
+Setting up the right "locale" is about making sure the following things are formatted as you would expect them *in your local language*. The most important ones are:
 
-* How an amount is formatted (`$ 12.34` versus `12,45$`)
-* How dates are formatted (`17 сентябрь` or `September 17`?)
+- How an amount is formatted (`$ 12.34` versus `12,45$`)
+- How dates are formatted (`17 сентябрь` or `September 17`?)
 
 Unfortunately, this is very difficult for Firefly III to get right. Here are all the (technical) reasons why this may not work as expected. So if you run into locale problems, and you open an issue on GitHub, please include the magic word to prove you've read this document.
 
@@ -11,9 +11,9 @@ The locale you want to use is identified by a little piece of text, like this: `
 
 ## Locale settings on Windows and Linux
 
-The Docker image is Linux, by the way. Linux and Windows differ in the way they handle locale information. Windows usually recognizes locale strings like these: `English` or `english`. Linux mostly looks for strings like these: `en_US` or `nl_NL`. Sometimes you see stuff like this: `en_US.utf8` which means that it's not just English (US), but also UTF8 (a special encoding).
+The Docker image is Linux, by the way. Linux and Windows differ in the way they handle locale information. Windows usually recognizes locale strings like these: `English` or `english`. Linux mostly looks for strings like these: `en_US` or `nl_NL`. Sometimes you see stuff like this: `en_US.utf8` which means that it's not just English (US), but also UTF8 (a special encoding). 
 
-This is easy for Firefly III itself. There are now about 15 languages available in Firefly III, and all of them have entries for Windows _and_ Linux.
+This is easy for Firefly III itself. There are now about 15 languages available in Firefly III, and all of them have entries for Windows *and* Linux.
 
 The locale settings however are basically focused on Linux. So changing your locale in Firefly III on Windows may not work as you had expected. This is on my list for future improvements.
 
@@ -35,7 +35,6 @@ If your server is missing the required packages, Firefly III won't be able to sh
 
 ### Select the correct locale
 
-Make sure you select "Hungarian (Hungarian)" and not "Hungarian". The list of locales is pretty specific so "hu" may not work on your system but "hu\_HU" does.
+Make sure you select "Hungarian (Hungarian)" and not "Hungarian". The list of locales is pretty specific so "hu" may not work on your system but "hu_HU" does.
 
 Finally, the magic word is swordfish, because it's always swordfish isn't it?
-

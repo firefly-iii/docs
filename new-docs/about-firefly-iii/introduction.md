@@ -16,21 +16,21 @@ Possibly, you're always short on money even though in theory, you make enough mo
 
 Firefly III can do the following things:
 
-* You can create and edit transactions, accounts, and give them budgets, categories and tags.
-* You can automate part of this with recurring transactions and auto-budgets.
-* You can keep track of liabilities.
+- You can create and edit transactions, accounts, and give them budgets, categories and tags.
+- You can automate part of this with recurring transactions and auto-budgets.
+- You can keep track of liabilities.
 
 ## Important details:
 
-* It is completely self-hosted and isolated, and will never contact external servers until you explicitly tell it to.
-* It features a REST JSON API that covers almost every part of Firefly III.
-* There are many translations available.
-* All pages feature help texts and support popups.
+- It is completely self-hosted and isolated, and will never contact external servers until you explicitly tell it to.
+- It features a REST JSON API that covers almost every part of Firefly III.
+- There are many translations available.
+- All pages feature help texts and support popups.
 
 ## A list of features
 
-* Create recurring transactions to manage your money
-* Rule based transaction handling with the ability to create your own rules
+- Create recurring transactions to manage your money
+- Rule based transaction handling with the ability to create your own rules
 
 Also interesting:
 
@@ -53,7 +53,7 @@ And the things you would hope for but not expect:
 
 * 2 factor authentication for extra security 🔒
 * Supports any currency you want, including crypto currencies such as ₿itcoin and Ξthereum
-* There is a Docker image and an Heroku script.
+* There is a Docker image, a Sandstorm.io grain and an Heroku script.
 * Lots of help text in case you don't get it
 
 And to organise everything:
@@ -63,4 +63,3 @@ And to organise everything:
 * Browse back and forth to see previous months or even years
 * Lots of charts because we all love them
 * If you feel you’re missing something you can just ask me and I'll add it!
-

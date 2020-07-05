@@ -16,8 +16,8 @@ A rule must spring into action at the right time! This is decided by triggers th
 
 * When a transaction is created
 * When the description is something specific
-* When the amount is above _X_.
-* When the budget is _X_.
+* When the amount is above *X*.
+* When the budget is *X*.
 
 Rules can be set to be "strict" or not. If a rule is set to be strict, ALL triggers must match for the rule to fire. If a rule is not scrict, ANY trigger is enough.
 
@@ -35,67 +35,69 @@ These triggers (for both the source and destination accounts) trigger on either 
 
 These triggers are exact. So remember it's "amount less" and NOT "less or the same".
 
+
 #### Date triggers
 
-The date triggers are complex and require your attention.
+The date triggers are complex and require your attention. 
 
-**Keywords**
+##### Keywords
 
 You can use several keywords:
 
-* `today`, `yesterday` or `tomorrow`
-* `start of this week`, `start of this month`, `start of this quarter` or `start of this year`
-* `end of this week`, `end of this month`, `end of this quarter`, `end of this year`
+- `today`, `yesterday` or `tomorrow`
+- `start of this week`, `start of this month`, `start of this quarter` or `start of this year`
+- `end of this week`, `end of this month`, `end of this quarter`, `end of this year`
 
 These keywords are not translated. So even when you use Firefly III in Dutch or Russian, you must use the English terminology.
 
-**Absolute date**
+##### Absolute date
 
 You can also use an absolute date, in this form: `YYYY-MM-DD`. So for the 17th of May 2020, you would use `2020-05-17`.
 
-**Relative dates**
+##### Relative dates
 
 You can also use relative date indicators, like so:
 
-* `+3d` (in three days)
-* `-2w` (two weeks ago)
+- `+3d` (in three days)
+- `-2w` (two weeks ago)
 
 You can use `d` for days, `w` for weeks, `m` for months and `y` for years. You can also combine them. To set a date trigger for a year and a half ago, you could do this:
 
-* `-1y -6m`
+- `-1y -6m`
 
 Notice the **space** between the two.
 
 Likewise, you can mix + and -. To go 11 months back, you could use:
 
-* `-1y +1m`
+- `-1y +1m`
 
 If your entry is invalid, you can't save the rule.
 
-**Semi specific dates**
+##### Semi specific dates
 
 Firefly III 5.3.0 and higher.
 
 I wasn't sure what to call this, but the following date triggers can be set:
 
-* On the 10th day of the month
-* In february
-* In 2019
-* On the 5th of June, any year.
+- On the 10th day of the month
+- In february
+- In 2019
+- On the 5th of June, any year.
 
 You can do this with the format `xxxx-xx-xx` where you change any set of `xx` into your desired outcome. The format is `year-month-day`. Here are some examples:
 
-* `xxxx-xx-10`. Will trigger on the 10th day of any month, any year.
-* `xxxx-04-xx`. Will trigger for any date in April, no matter the year or the day.
-* `2018-xx-xx`. Will trigger for any date in 2018.
+- `xxxx-xx-10`. Will trigger on the 10th day of any month, any year.
+- `xxxx-04-xx`. Will trigger for any date in April, no matter the year or the day.
+- `2018-xx-xx`. Will trigger for any date in 2018.
 
 You can also make some advanced combinations:
 
-* `2017-xx-03`. Will trigger on the 3rd of any month, but only in 2017.
-* `2018-09-xx`. Will trigger on any day in September, 2018.
-* `xxxx-08-07`. Will trigger on August 7th, any year.
+- `2017-xx-03`. Will trigger on the 3rd of any month, but only in 2017.
+- `2018-09-xx`. Will trigger on any day in September, 2018.
+- `xxxx-08-07`. Will trigger on August 7th, any year.
 
 So you could say "Transaction date is before" `xxxx-xx-10` and any transaction before the 10th of the month is triggered.
+
 
 ## Actions
 
@@ -123,11 +125,12 @@ For any trigger, you can also set the "stop processing" option. If you do, and t
 
 For each action, you can set "stop processing" as well. When you do, any actions after the current one will not fire.
 
+
 ## Converting to another transaction type
 
-If you set an action to convert your transaction to a deposit, a transfer or a withdrawal, make sure that you configure the rule action correctly. If you don't do this right the rule action wil _silently_ fail and nothing will happen. Here you can read what will happen to your transaction. This is dependent on the original type and the future type of the transaction.
+If you set an action to convert your transaction to a deposit, a transfer or a withdrawal, make sure that you configure the rule action correctly. If you don't do this right the rule action wil *silently* fail and nothing will happen. Here you can read what will happen to your transaction. This is dependent on the original type and the future type of the transaction.
 
-These conversions will _not_ be applied to split transactions.
+These conversions will *not* be applied to split transactions.
 
 **From a deposit to a withdrawal**
 
@@ -167,17 +170,16 @@ If you leave the action value empty, the action will fail.
 
 ## Apply rules
 
-You can apply your rules to existing transactions. On the rule-overview (page `/rules`), either use the "on/off"-icon or the ellipsis menu in a rule group to apply entire rule groups or individual rules to your transactions. See for some screenshots below.
+You can apply your rules to existing transactions. On the rule-overview (page ``/rules``), either use the "on/off"-icon or the ellipsis menu in a rule group to apply entire rule groups or individual rules to your transactions. See for some screenshots below.
 
 ## Screenshots
 
-![A new rule can be given some basic information.](../.gitbook/assets/rules-meta%20%281%29.png)
+![A new rule can be given some basic information.](images/rules-meta.png)
 
-![First you would set up the triggers for the new rule](../.gitbook/assets/rules-triggers%20%281%29.png)
+![First you would set up the triggers for the new rule](images/rules-triggers.png)
 
-![Then decide on the actions to take.](../.gitbook/assets/rules-actions%20%281%29.png)
+![Then decide on the actions to take.](images/rules-actions.png)
 
-![Option to run a rule on transactions.](../.gitbook/assets/apply-rule%20%281%29.png)
+![Option to run a rule on transactions.](images/apply-rule.png)
 
-![Option to run a rule group on transactions.](../.gitbook/assets/apply-rule-group%20%281%29.png)
-
+![Option to run a rule group on transactions.](images/apply-rule-group.png)
