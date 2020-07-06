@@ -3,7 +3,7 @@
 Firefly III can send you an email for specific notable events. These includes bugs and crashes \(always useful for me\) but also security notifications and password resets. The configuration values for email are in the `.env`-file:
 
 ```text
-MAIL_DRIVER=log
+MAIL_MAILER=log
 MAIL_HOST=smtp.mailtrap.io
 MAIL_PORT=2525
 MAIL_FROM=changeme@example.com
@@ -12,7 +12,7 @@ MAIL_PASSWORD=null
 MAIL_ENCRYPTION=null
 ```
 
-The first thing you'll want to update is the `MAIL_DRIVER`. The mail driver indicates the system that is used for mailing. Firefly III supports the following mail systems: smtp, sendmail, mailgun, mandrill, sparkpost and log.
+The first thing you'll want to update is the `MAIL_MAILER`. The mail mailer indicates the system that is used for mailing. Firefly III supports the following mail systems: smtp, sendmail, mailgun, mandrill, sparkpost and log.
 
 The Firefly III administration pages \(located at `/admin`\) contain a test button that will send a test message.
 
@@ -34,7 +34,11 @@ Uses the built-in sendmail configuration. If you choose this, you can leave the 
 
 ## mailgun
 
-[Mailgun](https://www.mailgun.com/) is an API that can send emails. Their service allows for 10,000 free messages each month. To configure these, fill in the `MAILGUN_DOMAIN` and `MAILGUN_SECRET` values in your `.env` file. Please note that I haven't actually tested this.
+[Mailgun](https://www.mailgun.com/) is an API that can send emails. Their service allows for 10,000 free messages each month. To configure these, fill in the
+`MAILGUN_DOMAIN`, `MAILGUN_SECRET`, and `MAILGUN_ENDPOINT`  values in your `.env` file. The `MAILGUN_DOMAIN` is the domain you've verified with Mailgun, the 
+`MAILGUN_SECRET` is your Mailgun API key, and the `MAILGUN_ENDPOINT` is the Mailgun API endpoint, `api.mailgun.net`, if you are sending email from Mailgun's U.S.
+infrastructure, or `api.eu.mailgun.net`, from their EU infrastructure. Make sure `MAIL_FROM` is set to an email address that is from your Mailgun's verfied
+domain. 
 
 ## mandrill
 
