@@ -24,7 +24,13 @@ To close an account in Firefly III, do the following.
 
 You can find the inactive asset account on a special page: `/inactive-accounts/asset`.
 
-## I don't want to enter my budgets every month, can I copy them over?
+## What do I do with cashback actions?
 
-No. This is on purpose.
+When you buy a new 500,- TV and they give you a 50,- cashback. What do you do?
 
+1. Register an 500,- withdrawal for the TV and a 50,- deposit for the cashback.
+2. Register just the withdrawal at 450,-.
+
+Both options are valid. You can't merge these in one transaction. But less is more, and I suggest the second option.
+
+When you use the cashback to buy something else at a discount, apply the difference in that transaction. So if you were able to buy a 90,- blender for 40,- with the cashback from the TV, make a withdrawal for 40,-.
