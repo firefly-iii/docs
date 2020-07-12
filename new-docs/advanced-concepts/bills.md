@@ -22,6 +22,8 @@ When you create a transaction with the following properties, it will match to th
 
 This means that whenever a transaction matches these things, it will be linked to your bill.
 
+Bills can only be linked to withdrawals.
+
 ## The date of a bill
 
 When you create a bill you also have to fill in the (first) date you expect the bill to hit. This date is purely cosmetic and will be used to inform you when the bill can be expected. For example:
@@ -35,8 +37,8 @@ Keep in mind that weekly bills may fall outside of your expected range. At some 
 
 The front page of Firefly III will also start showing the bills.
 
-![The bills on the dashboard](https://firefly-iii.org/static/docs/4.8.0/bills-frontpage.png)
+![The bills on the dashboard](./images/bills-frontpage.png)
 
-Individual bills will end up looking like this picture (under Money Management, then Bills)
+Individual bills will end up looking like this picture:
 
-![Overview of a bill](https://firefly-iii.org/static/docs/4.7.0/bills-show.png)
+![Overview of a bill](./images/bills-show.png)
