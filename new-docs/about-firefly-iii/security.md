@@ -75,3 +75,13 @@ Bugs may also appear (and thus leak sensitive information) on pages not protecte
 ## Logging
 
 By default Firefly III outputs its logs to `stdout` and to a file in `/storage/logs`. That means that users who have access to these files or access to the Docker engine can trace the log files and extract personal information from them. You can set the `APP_LOG_LEVEL` to `error` to prevent the logging of most information or to `emergency` to prevent the logging of any information. When using Docker, keep in mind that Apache2 will keep logging each http request.
+
+## Security bugs and issues
+
+If you find a security issue or problem with Firefly III, please refer to the [Security Policy](https://github.com/firefly-iii/firefly-iii/security/policy).
+
+## Other stuff
+
+If you have more questions regarding the security of Firefly III, or how to secure your Firefly III installation, please [contact me directly](mailto:james@firefly-iii.org) or open [a ticket on GitHub](https://github.com/firefly-iii/firefly-iii/issues/new/choose).
+
+
