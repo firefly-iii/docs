@@ -13,7 +13,7 @@ For your quick reference here is a list of pages you really want to visit:
 * [Check out some screenshots](about-firefly-iii/screenshots.md)
 * [Visit the demo site.](https://demo.firefly-iii.org/)
 * [Read how I feel about personal finance](about-firefly-iii/personal-finances.md)
-* [Managing your personal finances will **never** be easy or sexy](about-firefly-iii/mgt.md)
+* [Managing your personal finances will **never** be easy or sexy](other-pages/mgt.md)
 
 ## How can I use it or run it?
 

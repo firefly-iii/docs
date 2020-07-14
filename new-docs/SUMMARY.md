@@ -85,5 +85,5 @@
 
 ## Other pages
 
-* [Contact and credits](contact/contact.md)
-* [About financial management](about-firefly-iii/mgt.md)
+* [Contact and credits](other-pages/contact.md)
+* [About financial management](other-pages/mgt.md)
