@@ -78,7 +78,9 @@ By default Firefly III outputs its logs to `stdout` and to a file in `/storage/l
 
 ## Security bugs and issues
 
+{% hint style="danger" %}
 If you find a security issue or problem with Firefly III, please refer to the [Security Policy](https://github.com/firefly-iii/firefly-iii/security/policy).
+{% endhint %}
 
 ## Other stuff
 
