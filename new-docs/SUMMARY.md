@@ -86,4 +86,3 @@
 ## Other pages
 
 * [Contact and credits](other-pages/contact.md)
-* [About financial management](other-pages/mgt.md)
