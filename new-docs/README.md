@@ -8,11 +8,12 @@ For your quick reference here is a list of pages you really want to visit:
 
 ## Is Firefly III something for me?
 
-* [Read what Firefly III can do for you](about-firefly-iii/introduction.md).
-* [Read about the stuff Firefly III **can't or won't** do for you](about-firefly-iii/what-its-not.md).
+* [Read what Firefly III can do for you](about-firefly-iii/introduction.md)
+* [Read about the stuff Firefly III **can't or won't** do for you](about-firefly-iii/what-its-not.md)
 * [Check out some screenshots](about-firefly-iii/screenshots.md)
 * [Visit the demo site.](https://demo.firefly-iii.org/)
-* [Read how I feel about personal finance](about-firefly-iii/personal-finances.md).
+* [Read how I feel about personal finance](about-firefly-iii/personal-finances.md)
+* [Managing your personal finances will **never** be easy or sexy](about-firefly-iii/mgt.md)
 
 ## How can I use it or run it?
 
