@@ -83,7 +83,7 @@
 
 * [API](api/api.md)
 
-## Contact
+## Other pages
 
 * [Contact and credits](contact/contact.md)
-
+* [About financial management](about-firefly-iii/mgt.md)
