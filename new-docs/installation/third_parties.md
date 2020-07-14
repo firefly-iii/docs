@@ -24,3 +24,6 @@ Firefly III is featured in [AMPPS](https://www.ampps.com/). You can download AMP
 
 Firefly III is featured in [Cloudron](https://cloudron.io/). You can install a Cloudron server instance and Firefly III will be available in the [App Store](https://cloudron.io/store/org.fireflyiii.cloudronapp.html).
 
+## Yunohost
+
+Firefly III is featured on [Yunohost](https://yunohost.org/#/app_firefly-iii).
