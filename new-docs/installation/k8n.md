@@ -2,9 +2,13 @@
 
 In the `.deploy/kubernetes` directory of Firefly III (also available [on GitHub](https://github.com/firefly-iii/kubernetes)) you will find three YAML files that denote a pretty standard service offering for both Firefly III and an accompanying MySQL database.
 
+{% hint style="info" %}
+
 _Take care!_
 
-It's only Firefly III version 4.8.2 and up that will work with the instructions below. If you're running an earlier version of Firefly III you may run into database access issues.
+It's only Firefly III version 4.8.2 *and up*, that will work with the instructions below. If you're running an earlier version of Firefly III you may run into database access issues.
+
+{% endhint %}
 
 ## Download and configuration
 
