@@ -8,6 +8,12 @@ Also read the **[Frequently Asked Questions](../faq/docker.md)**.
 
 {% endhint %}
 
+{% hint style="warning" %}
+
+Traefik may detect both port 80 and port 8080 in the Firefly III image. The only port used and enabled by Firefly III is port **8080**.
+
+{% endhint %}
+
 ## Docker tags
 
 Firefly III has several Docker tags. The instructions always assume `jc5x/firefly-iii:latest`. This is the latest stable release. Other tags are:
