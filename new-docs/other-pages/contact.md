@@ -34,7 +34,7 @@ Questions, ideas, bugs or other things to contribute? [Let me know](https://gith
 If you would like to donate towards the continued development of this tool, you can do so using various methods.
 
 * [Patreon](https://www.patreon.com/jc5)
-* [PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=44UKUT455HUFA)
+* [PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=L62W7DVD5ETPC&source=url)
 
 I greatly appreciate any contributions.
 

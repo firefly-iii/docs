@@ -24,5 +24,4 @@ Unfortunately, I don't have the time or the resources to build a custom import r
 
 Keep in mind that most banks don't offer secure ways to download transactions. Providers like Mint.com and YNAB often require your username and password to download transactions.
 
-To see which other importers are available for Firefly III, check out [this extensive list](https://docs.firefly-iii.org/importing-data/introduction).
-
+To see which other importers are available for Firefly III, check out [this extensive list](../importing-data/introduction.md).

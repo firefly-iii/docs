@@ -6,7 +6,7 @@ Please refer to the index on your right.
 
 ## What is Firefly III?
 
-Firefly III is a self-hosted manager for your personal finances. It's written in PHP 7.3. It's opinionated, which means it follows the mantra that I, the developer like.
+Firefly III is a self-hosted manager for your personal finances. It's written in PHP 7.4. It's opinionated, which means it follows the mantra that I, the developer like.
 
 ## Can I try it?
 
@@ -47,9 +47,9 @@ What you want may already be possible, so read the documentation carefully. If n
 
 If you want to help with the translations, please check out [our CrowdIn project](https://crowdin.com/project/firefly-iii) (or [this one](https://crowdin.com/project/firefly-iii-help) for the help pages). If you're missing your language, then contact me through [GitHub](https://github.com/firefly-iii/firefly-iii/) or email, using the details found on [the contact page](https://docs.firefly-iii.org/contact/contact)
 
-If you want to help with the development of Firefly III, please talk to me first. I've had some challenges with developers who are "helpful but clumsy". I have a strong opinion on what the code should look like and how things should work. I welcome all support, and I look forward to any suggestions you may have.
+If you want to help with the development of Firefly III, please come find me! I have a strong opinion on what the code should look like and how things should work. I welcome all support, and I look forward to any suggestions you may have.
 
 ## I have found a security related issue, what do I do?
 
-Please contact me using the details found on [the contact page](https://docs.firefly-iii.org/contact/contact).
+Please contact me using the details found in [the security policy](https://github.com/firefly-iii/firefly-iii/security/policy).
 

@@ -13,4 +13,3 @@ Run the following command:
 * `docker exec -it <container> php artisan cache:clear`
 
 Or browse to the `/flush` page in your installation.
-

@@ -14,29 +14,29 @@ Currencies have decimal places. Most have 2, like the Euro. Notable exceptions a
 
 New currencies added through this form will be enabled for use.
 
-![This screen allows you to create a new currency. Pretty straight-forward.](../.gitbook/assets/currency-create%20%281%29.png)
+![This screen allows you to create a new currency. Pretty straight-forward.](images/currency-create.png)
 
 ## Set the default currency
 
 Firefly III support multiple currencies but it requires one default currency. When you install Firefly III this is the Euro. You can change this if you want to.
 
-![In this instance of Firefly III, the default currency is the British Pound.](../.gitbook/assets/currency-default%20%281%29.png)
+![In this instance of Firefly III, the default currency is the British Pound.](images/currency-default.png)
 
 ## Set currency for asset accounts
 
 Asset accounts have one main currency. My personal bank accounts are in Euro. But I have a credit card in USD. You can set this when you create or edit an asset account. This is important when you create or import transactions.
 
-![Each account has its own default currency.](../.gitbook/assets/currency-asset%20%281%29.png)
+![Each account has its own default currency.](images/currency-asset.png)
 
 ## Creating transactions
 
 When you try to create a transaction in Euro's on an asset account that in US Dollars, you must set the amount in both USD and EUR.
 
-![When you withdraw an amount in a &quot;foreign&quot; currency, Firefly III needs to know the amount in the native currency.](../.gitbook/assets/currency-withdrawal%20%281%29.png)
+![When you withdraw an amount in a &quot;foreign&quot; currency, Firefly III needs to know the amount in the native currency.](images/currency-withdrawal.png)
 
 ## Creating transfers
 
 When you create a transfer between an account in EUR and USD (or other currencies) you must also indicate the amount transferred in both currencies.
 
-![Likewise when you transfer money between two asset accounts, both currencies must have a monetary value.](../.gitbook/assets/currency-transfer%20%281%29.png)
+![Likewise when you transfer money between two asset accounts, both currencies must have a monetary value.](images/currency-transfer.png)
 

@@ -6,11 +6,12 @@ Please refer to the index on your right.
 
 ## I get syntax errors or other problems when opening Firefly III?
 
-You're probably not running the correct version of PHP, or your Apache / nginx server is not correctly configured for the right PHP version. At the moment, you need **PHP 7.3**.
+You're probably not running the correct version of PHP, or your Apache / nginx server is not correctly configured for the right PHP version. At the moment, you need **PHP 7.4**.
 
-Errors you can expect to see if you're not running **PHP 7.3**:
+Errors you can expect to see if you're not running **PHP 7.4**:
 
 1. `Syntax error, unexpected )`
+2. `syntax error, unexpected 'string' (T_STRING), expecting function (T_FUNCTION) or const (T_CONST)`
 
 You can verify which version of PHP your web server is using by making a file called `phpinfo.php` and accessing it through your webserver:
 
@@ -23,7 +24,7 @@ That should tell you what you need to know. You can find update and upgrade inst
 
 ## I have to access Firefly III through /public/ and it gives me a warning?
 
-This means that the Document Root of your webserver is configured wrong. You should configure your webserver in such a way that `/` corresponds to `/public`. If you do not, you run the risk of exposing your database credentials, sessions and other sensitive financial data to the world.
+This means that the Document Root of your webserver is badly configured. You should configure your webserver in such a way that `/` corresponds to `/public`. If you do not, you run the risk of exposing your database credentials, sessions and other sensitive financial data to the world.
 
 There are several [tutorials online](https://www.digitalocean.com/community/tutorials/how-to-move-an-apache-web-root-to-a-new-location-on-ubuntu-16-04) that explain how to change your document root.
 
@@ -122,11 +123,11 @@ That should fix it!
 
 ## I get "Be right back"?
 
-Unfortunately, there is no straight answer without more information. Check out the `/storage/logs` directory of your Firefly III installation or check the logs of your Docker instance. The true error will be reported there. If necessary, enable [debug mode](https://github.com/firefly-iii/help/wiki/Enable-debug-logging-and-debug-mode) to collect more log files.
+Unfortunately, there is no straight answer without more information. Check out the `/storage/logs` directory of your Firefly III installation or check the logs of your Docker instance. The true error will be reported there. If necessary, enable [debug mode](https://docs.firefly-iii.org/faq/other#how-do-i-enable-debug-mode) to collect more log files.
 
 ## Can I use it on PHP 5.x?
 
-No. The code has been written specifically for PHP 7.3 and higher.
+No. The code has been written specifically for PHP 7.4 and higher.
 
 ## It is very slow on my server?
 
@@ -205,7 +206,7 @@ Solution: You haven't enabled or installed the Internationalization extension. I
 This may happen when you are on a NAS4free Debian installation or similar platform. This command may help:
 
 ```text
-pkg install php73-ctype
+pkg install php74-ctype
 ```
 
 ## I get 'Error: could not open input file artisan'?

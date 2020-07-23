@@ -40,6 +40,8 @@ if you redownload `docker-compose.yml`, keep in mind that the database version i
 
 ## Virtual or real server
 
+Be sure to check out this script by GitHub user [@pedrom34](https://github.com/pedrom34) in this [Gist](https://gist.github.com/pedrom34/d1b8ab84e1e9ec7e8c6cbcc3cc51d663).
+
 ### Created using composer "create-project"
 
 The best way to upgrade is to "reinstall" Firefly III using the following command:
