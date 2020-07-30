@@ -6,6 +6,10 @@ Even more important than all the stuff Firefly III [can](introduction.md) do for
 
 Not supported by Firefly III. Use something like [Portfolio Performance](https://www.portfolio-performance.info/).
 
+### Business finances, small business accounting, payroll management
+
+Not supported by Firefly III. Firefly III is meant for personal finances.
+
 ### Automated imports from [your bank here]
 
 There are [many, many ways](../importing-data/introduction.md) to import data into Firefly III. But it won't be automated out of the box, and it won't be as easy as YNAB or Mint.
