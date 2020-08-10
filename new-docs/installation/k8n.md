@@ -19,7 +19,7 @@ Download all three files from GitHub (if necessary). Open `kustomization.yaml` a
 If you have no special configuration things to keep in mind it's enough to launch with a simple:
 
 ```text
-cd firefly-iii/.deploy/kubernetes
+cd kubernetes # see https://github.com/firefly-iii/kubernetes
 kubectl apply -k ./
 ```
 
