@@ -2,7 +2,11 @@
 
 There are a lot of interesting tools and apps built around the [Firefly III API](../api/api.md). Here's a list, in no particular order.
 
+{% hint style="info" %}
 Is your (favorite) tool not on the list? Submit a PR!
+{% endhint %}
+
+
 
 ## Mobile apps
 
