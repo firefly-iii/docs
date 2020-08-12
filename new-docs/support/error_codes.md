@@ -64,6 +64,10 @@ You can't delete other users but yourself, unless you have the owner role.
 
 You can't delete the fallback currency. It's required by the system.
 
+**200027**
+
+A budget limit already exists with this date range and currency.
+
 ### Firefly III error codes
 
 These start with 3.

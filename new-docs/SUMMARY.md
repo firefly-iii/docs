@@ -78,6 +78,7 @@
 * [Rules](advanced-concepts/rules.md)
 * [Links](advanced-concepts/links.md)
 * [Reconciling accounts](advanced-concepts/reconcile.md)
+* [Command line usage](advanced-concepts/commandline.md)
 
 ## API
 
@@ -86,3 +87,4 @@
 ## Other pages
 
 * [Contact and credits](other-pages/contact.md)
+* [Third-party tools](other-pages/3rdparty.md)
