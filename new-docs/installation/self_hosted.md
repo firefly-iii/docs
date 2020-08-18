@@ -6,15 +6,17 @@ If you have your own (virtual) web server you can use this guide to install Fire
 
 You need a working LAMP, LEMP or WAMP stack. If you don't have one, search the web to find out how to get one. Make sure you're running PHP 7.4. There are many tutorials that will help you install one. Here are some Google queries to help you.
 
-1. [Install a LAMP stack with PHP 7.3](https://www.google.com/search?q=lamp+stack+php+7.3)
-2. [Upgrade Ubuntu PHP 7.3](https://www.google.com/search?q=upgrade+ubuntu+php+7.3)
-3. [PHP 7.3 raspberry pi](https://www.google.nl/search?q=PHP+7.3+raspberry+pi)
+1. [Install a LAMP stack with PHP 7.4](https://www.google.com/search?q=lamp+stack+php+7.4)
+2. [Upgrade Ubuntu PHP 7.4](https://www.google.com/search?q=upgrade+ubuntu+php+7.4)
+3. [PHP 7.4 raspberry pi](https://www.google.nl/search?q=PHP+7.4+raspberry+pi)
 
 If you wish to use another database such as SQLite or Postgres, please check out the FAQ.
 
 You need a (MySQL) database and credentials for a user that can access that database. Firefly III creates its own tables. Avoid using the root user.
 
 Several users have created specific guides for their OS and database combination. Please keep in mind that Firefly III may have other system requirements.
+
+Firefly III requires **PHP 7.4** so these instructions may not be relevant anymore.
 
 1. [CentOS 7, with nginx and PHP 7.2](https://old.reddit.com/r/FireflyIII/comments/825n4l/centos_7_nginx_installation_guide/)
 2. [Ubuntu Server 16.04LTS with nginx and PHP 7.2](https://old.reddit.com/r/FireflyIII/comments/8thxuu/fireflyiii_on_ubuntu_server_1604lts_nginx_php72/)

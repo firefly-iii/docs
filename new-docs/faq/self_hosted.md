@@ -174,7 +174,7 @@ service apache2 reload
 
 ## I get 'Unexpected question mark'?
 
-Firefly III requires PHP 7.3 or higher.
+Firefly III requires PHP 7.4 or higher.
 
 ## I get 'BCMath' errors?
 
