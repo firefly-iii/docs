@@ -42,6 +42,7 @@ Install the following PHP modules:
 * PHP XML
 * PHP MBString
 * PHP LDAP
+* PHP whatever database you're gonna use.
 
 You can search the web to find out how to install these modules. Some may be installed already depending on your system. Use `phpinfo()` to find out.
 

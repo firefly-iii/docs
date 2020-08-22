@@ -8,6 +8,14 @@ Also read the **[Frequently Asked Questions](../faq/docker.md)**.
 
 {% endhint %}
 
+{% hint style="info" %}
+
+🎥 When you're a visual learner, please make sure to check out David Burgess' [excellent installation tutorial on YouTube](https://dbtechreviews.com/2020/08/firefly-iii-installed-on-docker-self-hosted-personal-finance/).
+
+{% endhint %}
+
+
+
 {% hint style="warning" %}
 
 Traefik may detect both port 80 and port 8080 in the Firefly III image. The only port used and enabled by Firefly III is port **8080**.
