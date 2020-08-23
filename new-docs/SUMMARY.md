@@ -49,6 +49,7 @@
 * [Currencies](concepts/currencies.md)
 * [Groups](concepts/groups.md)
 * [Tracking cash](concepts/tracking_cash.md)
+* [Search](concepts/search.md)
 
 ## Advanced installation
 
