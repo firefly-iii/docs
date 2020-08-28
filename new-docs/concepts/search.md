@@ -10,11 +10,13 @@ All search operators work `like:this`. Either you set the `value:here` or when y
 
 ### Source account
 
-Use these operators to filter transactions based on the source account name: `source_account_starts`, `source_account_ends`, `source_account_is`, `source_account_contains`.
+Use these operators to filter transactions based on the source account name: `source_account_starts:query`, `source_account_ends:query`, `source_account_is:query`, `source_account_contains:query`.
 
-You can filter on the IBAN or account number as well: `source_account_nr_starts`, `source_account_nr_ends`, `source_account_nr_is`, `source_account_nr_contains`.
+You can filter on the IBAN or account number as well: `source_account_nr_starts:query`, `source_account_nr_ends:query`, `source_account_nr_is:query`, `source_account_nr_contains:query`.
 
-When you know the account ID, you can use `source_account_id`. This will also accept comma separated values, like so: `source_account_id:1,2,3`.
+When you know the account ID, you can use `source_account_id:query`. This will also accept comma separated values, like so: `source_account_id:1,2,3`.
+
+You can also search for source cash accounts, denoted by "(cash)" in the UI. Use `source_is_cash:true`.
 
 ### Destination account
 
@@ -24,9 +26,13 @@ The same applies to the destination account name (and number):
 * `destination_account_nr_starts`, `destination_account_nr_ends`, `destination_account_nr_is`, `destination_account_nr_contains`
 * `destination_account_id`
 
+You can also search for destination cash accounts, denoted by "(cash)" in the UI. Use `destination_is_cash:true`.
+
 ### Source or destination account
 
 You can search for a specific ID (source *or* destination) using `account_id`. This value also accepts comma separated values: `account_id:1,2,3`.
+
+You can also search for either source or destination cash accounts, denoted by "(cash)" in the UI. Use `account_is_cash:true`.
 
 ### Description
 
