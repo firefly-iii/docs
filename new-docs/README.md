@@ -2,7 +2,7 @@
 
 Welcome to the Firefly III documentation.
 
-Firefly III is a manager for your personal finances. It is self-hosted and [open source](https://github.com/firefly-iii/firefly-iii).
+Firefly III is a manager for your personal finances. It is self-hosted and [open source](https://github.com/firefly-iii/firefly-iii). This means that it's free, it has no ads and no tracking.
 
 For your quick reference here is a list of pages you really want to visit:
 
