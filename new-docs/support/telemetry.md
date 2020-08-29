@@ -51,6 +51,8 @@ See version 5.3.0
 
 ### Version 5.3.0
 
+Also applies to minor versions 5.3.1, 5.3.2 and 5.3.3
+
 When enabled Firefly III version **5.3.0** can collect and submit the following telemetry. This is optional and disabled by default (see the top of this page):
 
 * The number of users in your system, collected when a new user registers.  
@@ -68,6 +70,16 @@ When enabled Firefly III version **5.3.0** can collect and submit the following 
 * The first time you use specific console command is collected.  
 
   Some commands are rarely used, others give me insight in how people use Firefly III.
+
+### Version 5.4.0
+
+When enabled Firefly III version **5.4.0** can collect and submit the following telemetry, on top of what is collected in previous versions:
+
+* If you allow Firefly III to check for updates.
+* Which search operators you use. Firefly III collects the operators only, not the actual search query.
+
+---
+
 
 The [cron job](https://docs.firefly-iii.org/advanced-installation/cron), if set up correctly, will submit these entries to [telemetry.firefly-iii.org](https://telemetry.firefly-iii.org) every week. This will only happen when telemetry is enabled.
 
