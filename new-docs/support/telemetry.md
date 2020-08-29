@@ -43,15 +43,15 @@ Collects no telemetry, even when it's enabled.
 
 ### Version 5.2.7
 
-See version 5.3.0
+See version 5.3.0.
 
 ### Version 5.2.8
 
-See version 5.3.0
+See version 5.3.0.
 
 ### Version 5.3.0
 
-Also applies to minor versions 5.3.1, 5.3.2 and 5.3.3
+Also applies to versions: 5.2.7, 5.2.8, 5.3.1, 5.3.2 and 5.3.3.
 
 When enabled Firefly III version **5.3.0** can collect and submit the following telemetry. This is optional and disabled by default (see the top of this page):
 
