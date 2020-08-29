@@ -38,11 +38,11 @@ Otherwise, Firefly III contacts no outside servers and will not download JS libr
 
 ## Storage
 
-Firefly III stores encrypted versions of all uploaded attachments in the `/storage/upload` directory. To prevent data loss make sure you have a copy of the `APP_KEY` environment variable. Users who have access to the file system and access to the `APP_KEY` environment variable will be able to decrypt uploaded attachments for all users.
+Firefly III stores all uploaded attachments unencrypted in the `/storage/upload` directory. Users who have access to the file system will be able to get uploaded attachments for all users.
 
 ## Encryption
 
-Other than the attachments (see above) no other encryption of data-at-rest is used. Use your operating system's disk encryption features for further protection of data-at-rest. For data-in-transit, see TLS below.
+No encryption of data-at-rest is used. Use your operating system's disk encryption features for further protection of data-at-rest. For data-in-transit, see TLS below.
 
 A public/private keypair is generated to be used for the signing of API keys (Personal Access Tokens and OAuth Clients). This keypair is stored under `/storage` and has no further protection.
 
