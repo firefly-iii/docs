@@ -102,20 +102,20 @@ You can also use an absolute date, in this form: `YYYY-MM-DD`. So for the 17th o
 
 ##### Relative dates
 
-You can also use relative date indicators, like so:
+You can also use relative date indicators, like so. Notice the quotes around each query:
 
-- `+3d` (in three days)
-- `-2w` (two weeks ago)
+- `"+3d"` (in three days)
+- `"-2w"` (two weeks ago)
 
 You can use `d` for days, `w` for weeks, `m` for months and `y` for years. You can also combine them. To set a date for a year and a half ago, you could do this:
 
-- `-1y -6m`
+- `"-1y -6m"`
 
 Notice the **space** between the two.
 
 Likewise, you can mix + and -. To go 11 months back, you could use:
 
-- `-1y +1m`
+- `"-1y +1m"`
 
 ### Creation date
 
