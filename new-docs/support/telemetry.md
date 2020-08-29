@@ -75,7 +75,7 @@ When enabled Firefly III version **5.3.0** can collect and submit the following 
 
 When enabled Firefly III version **5.4.0** can collect and submit the following telemetry, on top of what is collected in previous versions:
 
-* If you allow Firefly III to check for updates.
+* If you allow Firefly III to check for updates and which channel.
 * Which search operators you use. Firefly III collects the operators only, not the actual search query.
 
 ---
