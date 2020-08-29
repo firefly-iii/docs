@@ -20,6 +20,8 @@ The very first user who registers on your instance of Firefly III gets assigned 
 
 Login attempts are capped; guests can't brute-force their way in.
 
+When a user logs in from a new IP address they will be sent an email.
+
 ## Personal information
 
 When logged out, Firefly III will not leak personal information. There is no identifying information in the pages that are available to guest users. The reset password option will tell users whether users have entered an existing email address or not. People who know or suspect what your email address is can use this feature to confirm it.
