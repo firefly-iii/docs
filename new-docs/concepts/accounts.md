@@ -18,7 +18,7 @@ These are the account types in Firefly III
 
 Asset accounts are normal bank accounts. They hold your own money. Your bank account is an asset account. Your savings account is an asset account. They would be called "Savings account" or "Checking account". These accounts can be created with an initial (negative) balance, which is useful since you won't be entering your entire financial history.
 
-Asset accounts come in three flavours:
+Asset accounts come in a few flavours:
 
 #### Default asset accounts
 
@@ -27,6 +27,14 @@ This is the default kind of asset account.
 #### Shared asset accounts
 
 Shared asset accounts are shared with a partner, roommate or spouse. Use this to indicate that both (all) of you have access to this account. In Firefly III itself, you won't be able to actually share access between accounts, so this indication is purely for you.
+
+#### Savings account
+
+A type to indicate it's a savings account.
+
+#### Cash wallet
+
+Can be used to track cash expenses, which I personally don't recommend btw. 
 
 #### Credit cards
 
@@ -40,7 +48,7 @@ When you spend money, you do so at a store, online or maybe using cash. Each of 
 
 ### Cash accounts
 
-Cash money is different though. When you withdraw money from an ATM and register it in Firefly III, _don't_ register an expense account. Leave the field empty. This will make Firefly III fall back to a specially designed "cash account".
+If you want to track your cash expenses specifically, use a cash wallet asset account, as you can read under "asset accounts". In most cases, cash money is different from "normal" money. When you withdraw money from an ATM and register it in Firefly III, _don't_ register an expense account. Leave the field empty. This will make Firefly III fall back to a specially designed "cash account".
 
 Likewise, if you deposit cash into an asset account, don't mention a revenue account (see below).
 
