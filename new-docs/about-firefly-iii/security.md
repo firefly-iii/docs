@@ -56,6 +56,8 @@ Logged in users can download an export of their data from the user interface (un
 
 Firefly III does not come with TLS enabled. This is up to you to setup. It does support it however. The Docker image can be protected using a reverse proxy setup, where the reverse proxy enables TLS. When self-hosting, this is up to you to configure.
 
+Firefly III supports a SSL connection to the database, when using MySQL or PostgreSQL. This is disabled by default.
+
 ## Docker secrets
 
 All secrets in use by Firefly III are stored in environment variables. These are offered to Firefly III by using actual environment variables (preferred), by using the `.env` file or by using Docker's feature to share environment variables with Firefly III.
@@ -77,6 +79,8 @@ Bugs may also appear (and thus leak sensitive information) on pages not protecte
 ## Logging
 
 By default Firefly III outputs its logs to `stdout` and to a file in `/storage/logs`. That means that users who have access to these files or access to the Docker engine can trace the log files and extract personal information from them. You can set the `APP_LOG_LEVEL` to `error` to prevent the logging of most information or to `emergency` to prevent the logging of any information. When using Docker, keep in mind that Apache2 will keep logging each http request.
+
+Even logging just error information may leak data.
 
 ## Security bugs and issues
 
