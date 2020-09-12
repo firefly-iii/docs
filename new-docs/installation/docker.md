@@ -61,13 +61,14 @@ docker run -d \
 -e APP_KEY=CHANGEME_32_CHARS \
 -e DB_HOST=CHANGEME \
 -e DB_PORT=3306 \
+-e DB_CONNECTION=mysql \
 -e DB_DATABASE=CHANGEME \
 -e DB_USERNAME=CHANGEME \
 -e DB_PASSWORD=CHANGEME \
 jc5x/firefly-iii:latest
 ```
 
-Firefly III assumes that you're using MySQL, which a lot of people do. If you use PostgreSQL, add the following environment variable to the command: `DB_CONNECTION=pgsql` and make sure you change the port, `DB_PORT=5432`.
+Firefly III assumes that you're using MySQL, which a lot of people do. If you use PostgreSQL, change the following environment variable in the command: `DB_CONNECTION=pgsql` and make sure you change the port, `DB_PORT=5432`.
 
 If you want to run the Docker container as another user, add `--user=`. Possible values are `user`, `user:group`,`uid`, `uid:gid`, `user:gid`, `uid:group`. Keep in mind that this may not always work and is an ongoing improvement for the Docker image of Firefly III.
 
@@ -139,6 +140,7 @@ On the command line, this would be something like:
 -e DB_DATABASE=firefly \
 -e DB_USERNAME=firefly \
 -e DB_PORT=3306 \
+-e DB_CONNECTION=mysql \
 -e DB_PASSWORD=somepw \
 -e APP_KEY=CHANGEME_32_CHARS \
 -e APP_URL=https://firefly.example.com \
