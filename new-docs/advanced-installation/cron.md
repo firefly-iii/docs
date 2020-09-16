@@ -35,6 +35,39 @@ The content of the cron job must be as follows:
 
 Of course you must replace the URL with the URL of your own Firefly III installation. The `<token>` value can be found on your `/profile` under the "Command line token" header. This will prevent others from spamming your cron job URL.
 
+## Systemd timer
+
+If you prefer you can use `systemd` to run the jobs on a recurring schedule similar to cron. You will need to create two files: a unit file and a timer file.
+
+Begin by creating a new file instructing systemd what to run, `firefly-cron.service`.
+
+```
+[Unit]
+Description=Firefly recurring transactions
+Requires=httpd.service php-fpm.service postgresql.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/php /var/www/firefly-iii/artisan firefly-iii:cron
+```
+
+You will want to change the Requires= line to match the services that you are actually running. In this example we are using httpd (Apache), PHP FastCGI Process Manager (FPM), and PostgreSQL. Similarly, change the path to *your* path to the PHP binary and the path to *your* Firefly III installation.
+
+Next create a new file for the timer specification, `firefly-cron.timer`.
+
+```
+[Unit]
+Description=Firefly recurring transactions
+
+[Timer]
+OnCalendar=daily
+
+[Install]
+WantedBy=timers.target
+```
+
+Copy these files to `/etc/systemd/system`. You must then enable (`systemctl enable firefly-cron.timer`) and start (`systemctl start firefly-cron.timer`) the timer. Verify the timer is registered with `systemctl --list-timers`. You may also want to run the service once manually to ensure it runs successfully: `systemctl start firefly-cron.service`. You can check the results with `journalctl -u firefly-cron`.
+
 ## Make IFTTT do it
 
 If you can't run a cron job, you can always make [If This, Then That (IFTTT)](https://ifttt.com) do it for you. This will only work if your Firefly III installation can be reached from the internet. Here's what you do.
