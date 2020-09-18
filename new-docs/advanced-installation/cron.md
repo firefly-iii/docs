@@ -2,10 +2,10 @@
 
 Firefly III supports several feature that requires you to run a cron job:
 
-1. [Recurring transactions](https://docs.firefly-iii.org/advanced-concepts/recurring). Firefly III can automatically create transactions for you.  
+1. [Recurring transactions](../advanced-concepts/recurring.md). Firefly III can automatically create transactions for you.  
   If Firefly III is to actually create these recurring transactions for you, someone or something must check every single day if a new transaction is due to be created.
-2. [Automatic budgeting](https://docs.firefly-iii.org/concepts/budgets). Firefly III can automatically set your budgets for you.
-3. [Telemetry](https://docs.firefly-iii.org/support/telemetry). When enabled (telemetry is **opt-in**), Firefly III will submit its telemetry data.
+2. [Automatic budgeting](../concepts/budgets.md). Firefly III can automatically set your budgets for you.
+3. [Telemetry](../support/telemetry.md). When enabled (telemetry is **opt-in**), Firefly III will submit its telemetry data.
 
 ## Cron job that calls a command
 

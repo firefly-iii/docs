@@ -45,7 +45,6 @@ Docker containers should only do one thing, which is why you need a separate dat
 These are used to persistently store uploaded files and exported data.
 
 ```text
-docker volume create firefly_iii_export
 docker volume create firefly_iii_upload
 ```
 
@@ -55,7 +54,6 @@ Run this Docker command to start the Firefly III container. Make sure that you e
 
 ```text
 docker run -d \
--v firefly_iii_export:/var/www/firefly-iii/storage/export \
 -v firefly_iii_upload:/var/www/firefly-iii/storage/upload \
 -p 80:8080 \
 -e APP_KEY=CHANGEME_32_CHARS \
@@ -70,9 +68,13 @@ jc5x/firefly-iii:latest
 
 Firefly III assumes that you're using MySQL, which a lot of people do. If you use PostgreSQL, change the following environment variable in the command: `DB_CONNECTION=pgsql` and make sure you change the port, `DB_PORT=5432`.
 
-If you want to run the Docker container as another user, add `--user=`. Possible values are `user`, `user:group`,`uid`, `uid:gid`, `user:gid`, `uid:group`. Keep in mind that this may not always work and is an ongoing improvement for the Docker image of Firefly III.
-
 When executed this command will fire up a Docker container with Firefly III inside of it. It may take some time to start. If the database is set up properly it will automatically migrate and install a default database and you should be able to surf to your container (usually located at [localhost](http://localhost)) to use Firefly III.
+
+{% hint style="info" %}
+
+The Apache server inside this Docker image will run as `www-data`. This will be reflected by the files you upload: they will be owned by `www-data`. You can change the user the image runs under but that user must exist inside the Docker image or things may not work as expected.
+
+{% endhint %}
 
 ## Using Docker Compose
 
@@ -84,7 +86,11 @@ Download [the Docker compose file](https://raw.githubusercontent.com/firefly-iii
 
 Make sure you grab the raw file, and don't copy paste from your browser. The spaces in the file are very important. So use "Save As".
 
-If you want to run any container under another user, add the `user:` key under `image:`, with the same indentation. Possible values are `user`, `user:group`,`uid`, `uid:gid`, `user:gid`, `uid:group`. Keep in mind that this may not always work and is an ongoing improvement for the Docker image of Firefly III.
+{% hint style="info" %}
+
+The Apache server inside this Docker image will run as `www-data`. This will be reflected by the files you upload: they will be owned by `www-data`. You can change the user the image runs under but that user must exist inside the Docker image or things may not work as expected.
+
+{% endhint %}
 
 ### Download environment variables
 

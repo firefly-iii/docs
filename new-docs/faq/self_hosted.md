@@ -123,7 +123,7 @@ That should fix it!
 
 ## I get "Be right back"?
 
-Unfortunately, there is no straight answer without more information. Check out the `/storage/logs` directory of your Firefly III installation or check the logs of your Docker instance. The true error will be reported there. If necessary, enable [debug mode](https://docs.firefly-iii.org/faq/other#how-do-i-enable-debug-mode) to collect more log files.
+Unfortunately, there is no straight answer without more information. Check out the `/storage/logs` directory of your Firefly III installation or check the logs of your Docker instance. The true error will be reported there. If necessary, enable [debug mode](other.md#how-do-i-enable-debug-mode) to collect more log files.
 
 ## Can I use it on PHP 5.x?
 
