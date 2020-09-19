@@ -39,11 +39,11 @@ Of course you must replace the URL with the URL of your own Firefly III installa
 
 If you prefer you can use `systemd` to run the jobs on a recurring schedule similar to cron. You will need to create two files: a unit file and a timer file.
 
-Begin by creating a new file instructing systemd what to run, `firefly-cron.service`.
+Begin by creating a new file instructing systemd what to run, `firefly-iii-cron.service`.
 
 ```
 [Unit]
-Description=Firefly recurring transactions
+Description=Firefly III recurring transactions
 Requires=httpd.service php-fpm.service postgresql.service
 
 [Service]
@@ -53,11 +53,11 @@ ExecStart=/usr/bin/php /var/www/firefly-iii/artisan firefly-iii:cron
 
 You will want to change the Requires= line to match the services that you are actually running. In this example we are using httpd (Apache), PHP FastCGI Process Manager (FPM), and PostgreSQL. Similarly, change the path to *your* path to the PHP binary and the path to *your* Firefly III installation.
 
-Next create a new file for the timer specification, `firefly-cron.timer`.
+Next create a new file for the timer specification, `firefly-iii-cron.timer`.
 
 ```
 [Unit]
-Description=Firefly recurring transactions
+Description=Firefly III recurring transactions
 
 [Timer]
 OnCalendar=daily
@@ -66,7 +66,7 @@ OnCalendar=daily
 WantedBy=timers.target
 ```
 
-Copy these files to `/etc/systemd/system`. You must then enable (`systemctl enable firefly-cron.timer`) and start (`systemctl start firefly-cron.timer`) the timer. Verify the timer is registered with `systemctl --list-timers`. You may also want to run the service once manually to ensure it runs successfully: `systemctl start firefly-cron.service`. You can check the results with `journalctl -u firefly-cron`.
+Copy these files to `/etc/systemd/system`. You must then enable (`systemctl enable firefly-cron.timer`) and start (`systemctl start firefly-cron.timer`) the timer. Verify the timer is registered with `systemctl --list-timers`. You may also want to run the service once manually to ensure it runs successfully: `systemctl start firefly-cron.service`. You can check the results with `journalctl -u firefly-iii-cron`.
 
 ## Make IFTTT do it
 
