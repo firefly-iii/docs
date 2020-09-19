@@ -66,7 +66,7 @@ OnCalendar=daily
 WantedBy=timers.target
 ```
 
-Copy these files to `/etc/systemd/system`. You must then enable (`systemctl enable firefly-cron.timer`) and start (`systemctl start firefly-cron.timer`) the timer. Verify the timer is registered with `systemctl --list-timers`. You may also want to run the service once manually to ensure it runs successfully: `systemctl start firefly-cron.service`. You can check the results with `journalctl -u firefly-iii-cron`.
+Copy these files to `/etc/systemd/system`. You must then enable (`systemctl enable firefly-iii-cron.timer`) and start (`systemctl start firefly-iii-cron.timer`) the timer. Verify the timer is registered with `systemctl --list-timers`. You may also want to run the service once manually to ensure it runs successfully: `systemctl start firefly-iii-cron.service`. You can check the results with `journalctl -u firefly-iii-cron`.
 
 ## Make IFTTT do it
 
