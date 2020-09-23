@@ -15,10 +15,10 @@ The content of the cron job must be as follows:
 
 ```   
 # cron job for Firefly III
-0 3 * * * /usr/bin/php /var/www/firefly-iii/artisan firefly-iii:cron
+0 3 * * * /usr/bin/php /var/www/html/artisan firefly-iii:cron
 ```
 
-Of course, you must make sure to replace `/usr/bin/php` with *your* path to PHP and replace `/var/www/firefly-iii/` with the path to *your* Firefly III installation.
+Of course, you must make sure to replace `/usr/bin/php` with *your* path to PHP and replace `/var/www/html/` with the path to *your* Firefly III installation.
 
 If you do this, Firefly III will generate the recurring transactions each night at 3AM. 
 
@@ -48,7 +48,7 @@ Requires=httpd.service php-fpm.service postgresql.service
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/php /var/www/firefly-iii/artisan firefly-iii:cron
+ExecStart=/usr/bin/php /var/www/html/artisan firefly-iii:cron
 ```
 
 You will want to change the Requires= line to match the services that you are actually running. In this example we are using httpd (Apache), PHP FastCGI Process Manager (FPM), and PostgreSQL. Similarly, change the path to *your* path to the PHP binary and the path to *your* Firefly III installation.
@@ -135,7 +135,7 @@ Use any tool or system to call the URL as documented above.
 The command would be something like this:
 
 ```
-0 3 * * * docker exec --user www-data <container> /usr/local/bin/php /var/www/firefly-iii/artisan firefly-iii:cron
+0 3 * * * docker exec --user www-data <container> /usr/local/bin/php /var/www/html/artisan firefly-iii:cron
 ```
 
 Replace `<container>` with the container ID or with `firefly_iii_app` in case of Docker compose. If you want, you can replace `<container>` with this piece of code that will automatically insert the correct container ID. Keep in mind, it may need some fine tuning!
