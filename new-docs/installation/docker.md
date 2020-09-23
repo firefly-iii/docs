@@ -24,10 +24,8 @@ Traefik may detect both port 80 and port 8080 in the Firefly III image. The only
 
 Firefly III has several Docker tags. The instructions always assume `jc5x/firefly-iii:latest`. This is the latest stable release. Other tags are:
 
-* `jc5x/firefly-iii:stable`. Same as `latest`. 
-* `jc5x/firefly-iii:beta`. This tag will also include beta releases.
-* `jc5x/firefly-iii:alpha`. This tag will also include alpha and beta releases.
-* `jc5x/firefly-iii:release-x.x.x`. These are version specific tags and will include alpha, beta and stable releases.
+* `jc5x/firefly-iii:beta`. This tag contains beta releases.
+* `jc5x/firefly-iii:alpha`. This tag contains alpha releases.
 * `jc5x/firefly-iii:develop`. Always the latest develop image. Maybe unstable.
 
 All Docker tags are built for ARMv7, ARM64 and AMD64. ARMv6 is not included, so these images will *not* work on the Raspberry Pi Zero, Raspberry Pi 1 (A+B) or Raspberry Pi Compute Module.
