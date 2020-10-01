@@ -6,7 +6,7 @@ First of all: thank you for contributing to Firefly III! It is always nice to ge
 
 If you find a bug, please take the time and see if the demo site is also suffering from this bug; include as many log files and details as you think necessary. Bugs have a lot of priority! You can send the bug info [to me by email](mailto:james@firefly-iii.org) or by [opening a ticket on GitHub](https://github.com/firefly-iii/firefly-iii/issues).
 
-When you want to fix a bug yourself, feel free to open a pull request.
+When you want to fix a bug yourself, feel free to open a pull request. A lot of static code bugs are detected by [Sonarcloud](https://sonarcloud.io/dashboard?id=firefly-iii_firefly-iii). Check it out for inspiration!
 
 ## Feature requests
 
