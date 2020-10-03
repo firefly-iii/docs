@@ -39,6 +39,27 @@ Secondly. Even if Firefly III was a hosted service (it's not) and it could be re
 
 For applications and actual end users like Firefly III and the users that use it, the PSD2 regulation doesn't add any value at all, unfortunately.
 
+## Firefly III should be a business!
+
+* Why is there not a cloud version of Firefly III?
+* Can I just pay you to host Firefly III for me?
+* Where is Firefly III-as-a-Service?
+
+I made Firefly III open source under the AGPL. Making Firefly III open source under the AGPL means that any change or addition to Firefly III must be open sourced under the AGPL as well. And for Firefly III to be business ready it needs a few changes. Those changes will allow anybody to host Firefly III for other people (as a service).
+
+* Firefly III as it is right now requires strict database controls or something auditable outside of Firefly III, because any database administrator can see everybody's administrations. There are no controls in Firefly III against insider threat. That alone makes it totally unworthy of being used in a "hosted"-fashion.
+* There is nothing in place to do proper user management, except some half-finished admin pages I built for the demo site 3 years ago. These pages are a part of Firefly III, so if Firefly III breaks so does your user admin.
+* More security and scrutiny is required to make sure the tool is bug-free and hassle-free. It's pretty easy to lock yourself out, for example.
+* There is no payment module or anything; you'd have to develop something on the side.
+* The development pace is too high to offer a stable product. I like to tinker and I break stuff all the time. My users accept this, if begrudgingly. But if they pay AND it breaks? No dice.
+* I built Firefly III specifically because self-hosting is the only way to guarantee your data is (fairly) safe. At least, out of the hands of nefarious corporations. So hosting a public instance for everybody to use is kind of exactly against that idea.
+
+If you want to, feel free to host Firefly III yourself and sell access. If it's you and a few friends, all the better. You can keep it low key without needing strict privacy policies or payment services. If there's a kickback for me all the better ;). But make it larger, and I fear you run into the situation where you have to build a second system next to Firefly III to manage users, manage payments, etc etc. And the parts in Firefly III that you change must be open sourced. 
+
+This excludes all the (legal) work you'll need to have in place to manage other people's finances hassle-free. 
+
+Personally, right now I'm just not interested in turning this into a business. I'm as happy I can be with the way things are right now. Thank you.
+
 ## I want something in Firefly III, what do I do?
 
 What you want may already be possible, so read the documentation carefully. If not, read [this page](general.md) and then contact me through [GitHub](https://github.com/firefly-iii/firefly-iii/) or email, using the details found on [the contact page](../contact/contact.md).
