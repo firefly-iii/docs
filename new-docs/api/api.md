@@ -25,7 +25,7 @@ Here you see how Postman would use the secret to get an access token. What you c
 
 ## Personal Access Token
 
-Some technical background. If you application can't or won't use OAuth2 (like the Firefly III CSV importer) you must generate a Personal Access Token on your profile page.
+Some technical background. If your application can't or won't use OAuth2 (like the Firefly III CSV importer) you must generate a Personal Access Token on your profile page.
 
 Go to your profile page (visit `/profile`) and follow these instructions:
 
