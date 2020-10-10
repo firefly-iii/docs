@@ -44,7 +44,16 @@ Install the following PHP modules:
 * PHP LDAP
 * PHP whatever database you're gonna use.
 
-You can search the web to find out how to install these modules. Some may be installed already depending on your system. Use `phpinfo()` to find out.
+With exception of the database plugin, the following command will install all of the above plugins:
+```
+sudo apt install php7.4-{gd, intl, mbstring, curl, zip, xml, bcmath, ldap}
+```
+Some of this may be installed already depending on your system. The command above will skip over any preinstall plugins as long as the versions match, otherwise they will be updated.
+
+To install the PHP MySQL Database Plugin, run the following:
+```
+sudo apt install php7.4-mysql
+```
 
 ### Installing composer
 
