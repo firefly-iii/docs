@@ -19,7 +19,7 @@ The locale settings however are basically focused on Linux. So changing your loc
 
 A lot of people run into the problem that their Linux only has `nl_NL.iso-8859-1` while Firefly III will always look for `nl_NL.utf8`.
 
-### Missing translations or format instructiosn
+### Missing translations or format instructions
 
 Even when you have the correct locales and all packages are in place, you may notice that dates aren't formatted properly. Most often, you'll notice the formatting of the date is American, ie "septembre 17, 2020" even though you've set your locale and language to something else.
 
