@@ -6,7 +6,11 @@ There are a lot of interesting tools and apps built around the [Firefly III API]
 Is your (favorite) tool not on the list? Submit a PR!
 {% endhint %}
 
+## Reporting
 
+### Summary emails
+
+The [email summary tool](https://github.com/davidschlachter/firefly-iii-email-summary) by [David](https://github.com/davidschlachter) sends you a monthly report of your expenses by category.
 
 ## Mobile apps
 
