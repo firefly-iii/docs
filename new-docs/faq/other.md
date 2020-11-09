@@ -96,7 +96,7 @@ If you still wish to disable 2FA because it doesn't work, you need to edit the d
 You can also run this query:
 
 ```sql
-update users set mfa_token = NULL where email = "your@email.com"
+update users set mfa_secret = NULL where email = "your@email.com"
 ```
 
 That should allow you to login again without having to submit a 2FA token.
