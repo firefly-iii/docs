@@ -10,6 +10,10 @@ In order to import transactions into Firefly III, you'll have to install and run
 * Your bank may not be supported, despite our best efforts.
 * You might not be able to easily automate the import/sync process.
 
+## How these apps work
+
+All of these apps connect to the Firefly III API, which is available at `/api/v1` and documented [on a separate website](https://api-docs.firefly-iii.org/). To connect these apps to the API, most require an access token or some kind of an OAuth flow to be followed.
+
 ## Available tools
 
 A universal tool to import transactions into your Firefly III installation is the [CSV importer](http://github.com/firefly-iii/csv-importer). If that fails, check out the [Spectre importer](http://github.com/firefly-iii/spectre-importer). The Spectre API is provided by a fintech company called Salt Edge. They offer a **trial** of their Spectre API which you can use to connect to your bank.
