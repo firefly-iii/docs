@@ -38,6 +38,17 @@ When Firefly III is in `remote_user_guard` mode, it will do absolutely **NO** ch
 
 So if you use this authentication method make sure there is NO way *around* the authentication proxy you've set up. Block all other access to the container or the server.
 
+### The guard header was unexpectedly empty
+
+Make sure that the header is forwarded to Firefly III. For example, add the following lines to `public/.htaccess`.
+
+```
+    RewriteCond %{HTTP:REMOTE_USER} .
+    RewriteRule .* - [E=REMOTE_USER:%{HTTP:REMOTE_USER}]
+```
+
+This is less than optimal when you're using the Docker image but if the header is sent to your reverse proxy and not to Firefly III directly, it may be necessary to make such a change.
+
 ## LDAP
 
 In the following instructions I will refer to environment variables in all caps, like `EXAMPLE_VARIABLE`.

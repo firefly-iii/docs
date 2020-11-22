@@ -28,7 +28,11 @@ Available on [F-Droid](https://f-droid.org/packages/xyz.hisname.fireflyiii/).
 
 ## Bots and tools
 
-### Firefly Bot
+### Firefly III CLI
+
+[Firefly III Command Line Interface](https://github.com/afonsoc12/firefly-cli) is a tool made by [@afonsoc12](https://github.com/afonsoc12) to enter transactions into Firefly III over the command line.
+
+### Firefly III Bot
 
 [Firefly Bot](https://github.com/vjFaLk/firefly-bot). A bot to create transactions through Telegram. Created by GitHub user [@vjFaLk](https://github.com/vjFaLk).
 
