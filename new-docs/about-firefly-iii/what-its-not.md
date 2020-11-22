@@ -4,7 +4,7 @@ Even more important than all the stuff Firefly III [can](introduction.md) do for
 
 ### Stock and portfolio management
 
-Not supported by Firefly III. Use something like [Portfolio Performance](https://www.portfolio-performance.info/).
+Not supported by Firefly III. Use something like [Portfolio Performance](https://www.portfolio-performance.info/). The net worth you track in Firefly III excludes stock.
 
 ### Business finances, small business accounting, payroll management
 
