@@ -1,6 +1,6 @@
 # Groups
 
-Some things in Firefly III can be divided into groups. At the moment this applies only to piggy banks, but the list is slowly growing.
+Some things in Firefly III can be divided into groups. At the moment this applies only to piggy banks and bills, but the list is slowly growing.
 
 ## Features
 
