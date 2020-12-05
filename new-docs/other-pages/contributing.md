@@ -2,7 +2,7 @@
 
 Thank you for taking the time to contribute something to the Firefly III eco-system.
 
-This contributing guideline applies to all tools and documentation that can be found under [github.com/firefly-iii/])https://github.com/firefly-iii/).
+This contributing guideline applies to all tools and documentation that can be found under [github.com/firefly-iii/](https://github.com/firefly-iii/).
 
 ## Developer certificate of origin
 
