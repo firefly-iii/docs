@@ -89,3 +89,4 @@
 
 * [Contact and credits](other-pages/contact.md)
 * [Third-party tools](other-pages/3rdparty.md)
+* [Contributing](other-pages/contributing.md)
