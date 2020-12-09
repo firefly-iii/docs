@@ -5,7 +5,7 @@ Setting up the right "locale" is about making sure the following things are form
 - How an amount is formatted (`$ 12.34` versus `12,45$`)
 - How dates are formatted (`17 сентябрь` or `September 17`?)
 
-Unfortunately, this is very difficult for Firefly III to get right. Here are all the (technical) reasons why this may not work as expected. So if you run into locale problems, and you open an issue on GitHub, please include the magic word to prove you've read this document.
+Unfortunately, this is very difficult for Firefly III to get right. Here are all the (technical) reasons why this may not work as expected. So if you run into locale problems, and you open an issue on GitHub, include the magic word to prove you've read this document.
 
 The locale you want to use is identified by a little piece of text, like this: `en`, `English`, `en_US.utf8`.
 
@@ -13,7 +13,7 @@ The locale you want to use is identified by a little piece of text, like this: `
 
 The Docker image is Linux, by the way. Linux and Windows differ in the way they handle locale information. Windows usually recognizes locale strings like these: `English` or `english`. Linux mostly looks for strings like these: `en_US` or `nl_NL`. Sometimes you see stuff like this: `en_US.utf8` which means that it's not just English (US), but also UTF8 (a special encoding). 
 
-This is easy for Firefly III itself. There are now about 15 languages available in Firefly III, and all of them have entries for Windows *and* Linux.
+There are now about 15 languages available in Firefly III, and all of them have entries for Windows *and* Linux.
 
 The locale settings however are basically focused on Linux. So changing your locale in Firefly III on Windows may not work as you had expected. This is on my list for future improvements.
 

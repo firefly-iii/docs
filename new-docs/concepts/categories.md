@@ -14,7 +14,7 @@ But there is also income (deposits) that you might want to give a category:
 * Taxes
 * Salary
 
-Each transaction can be given a category. This will show you what you spent your money on, or where it is coming from. Firefly III allows you to dynamically create and manage categories. Fancy charts will show you how your money is divided over categories. There is a category report that can show you exactly what is happening within a category.
+Each transaction can be given a category. This will show you what you spent your money on, or where it is coming from. Firefly III lets you dynamically create and manage categories. Fancy charts will show you how your money is divided over categories. There is a category report that can show you exactly what is happening within a category.
 
 ## The difference between budgets and categories
 

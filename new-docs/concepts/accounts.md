@@ -40,7 +40,7 @@ Can be used to track cash expenses, which I personally don't recommend.
 
 #### Credit cards
 
-Used to indicate the asset account belongs to a credit card. Firefly III does not (yet) respond to this, it's just for your administration.
+Used to indicate the asset account belongs to a credit card. Firefly III does not (yet) respond to this, it's for your administration.
 
 **Note**: Credit cards are not liabilities. You should use them as if they weren't a way to borrow money, but rather a way to use money that you have stored elsewhere (and that you will move to this account later).
 

@@ -40,8 +40,8 @@ To configure these, fill in the `MAILGUN_DOMAIN`, `MAILGUN_SECRET`, and `MAILGUN
 
 ## mandrill
 
-[Mandrill](https://www.mandrill.com/) is a paid service by MailChimp. Find the `MANDRILL_SECRET` and fill it in. That should be enough to enable email over Mandrill. Please note that I haven't actually tested this. 
+[Mandrill](https://www.mandrill.com/) is a paid service by MailChimp. Find the `MANDRILL_SECRET` and fill it in. That should be enough to enable email over Mandrill. Note that I haven't actually tested this. 
 
 ## sparkpost
 
-[Sparkpost](https://www.sparkpost.com/) is another paid service. Find the `SPARKPOST_SECRET` to configure sending email over Sparkpost. Please note that I haven't actually tested this. 
+[Sparkpost](https://www.sparkpost.com/) is another paid service. Find the `SPARKPOST_SECRET` to configure sending email over Sparkpost. Note that I haven't actually tested this. 

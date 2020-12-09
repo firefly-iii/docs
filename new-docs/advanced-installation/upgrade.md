@@ -19,11 +19,11 @@ To find out which container is Firefly III, run `docker container ls -a`.
 docker pull jc5x/firefly-iii:latest
 ```
 
-And then create it again by running the command from the installation guide. The container should upgrade itself so it can take some time for it to start. You should save the command you've used to start the container for easier upgrade.
+And then create it again by running the command from the installation guide. The container should upgrade itself so it can take some time for it to start. You can save the command you've used to start the container for quicker upgrade.
 
 If you want to run the Docker container as another user, add `--user=`. Possible values are `user`, `user:group`,`uid`, `uid:gid`, `user:gid`, `uid:group`.
 
-### Docker Hub via docker compose
+### Docker Hub and docker compose
 
 To update the container run these commands:
 
@@ -48,7 +48,7 @@ The best way to upgrade is to "reinstall" Firefly III using the following comman
 composer create-project grumpydictator/firefly-iii --no-dev --prefer-dist firefly-iii-updated <next_version>
 ```
 
-Where `<next_version>` is the latest version of Firefly III. This installs Firefly III in a new directory called `firefly-iii-updated`. Assuming your *original* Firefly III installation is in the directory `firefly-iii` you can upgrade by simply moving over your `.env` file and other stuff:
+Where `<next_version>` is the latest version of Firefly III. This installs Firefly III in a new directory called `firefly-iii-updated`. Assuming your *original* Firefly III installation is in the directory `firefly-iii` you can upgrade by moving over your `.env` file and other stuff:
 
 ```bash   
 cp firefly-iii/.env firefly-iii-updated/.env

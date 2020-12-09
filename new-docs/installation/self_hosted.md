@@ -102,6 +102,17 @@ php artisan passport:install
 
 Now you should be able to visit [http://localhost/firefly-iii/](http://localhost/firefly-iii/public) and see Firefly III.
 
+### It doesn't work!
+
+This manual can't list all the possible exceptions and errors you may run into. Some common issues are documented [in the FAQ](../faq/self_hosted.md).
+
+Look in these directions when you're running into problems:
+
+* Apache may not have mod_rewrite enabled or the htaccess file isn't activated (`AllowOverride`).
+* Nginx may not have the correct `try_files` instruction in the `location` block.
+
+Good luck!
+
 ## Accessing Firefly III
 
 ### Browsing to site

@@ -46,7 +46,7 @@ And the result is that you can see where you lost your money:
 
 ## Cash and multi-currency
 
-If you go to an ATM and withdraw an amount in dollars when you always work with Euro's, you'll have to store the transaction in such a way that your balance still works out. If you use "(cash)" this is easy:
+If you go to an ATM and withdraw an amount in dollars when you always work with Euro's, you'll have to store the transaction in such a way that your balance still works out. If you use "(cash)":
 
 ![Create a multi-currency cash withdrawal.](../.gitbook/assets/multi_1%20%281%29.png)
 

@@ -46,13 +46,13 @@ You can verify this by counting. There are always twice as many "transactions" a
 
 This way, Firefly III tries to stay true to what a financial transaction is, which is kind of singular. Money moves from A to B, end of story. Nothing more.
 
-However, often an expense tells a story. Just take grocery receipts for example. It's one expense sure, but it consists of many parts. And when you buy aspirin and bread at the same time, you might want to split the expense over two budgets, medication and groceries. A single expense would make you lose information.
+However, often an expense tells a story. Take grocery receipts for example. It's one expense sure, but it consists of many parts. And when you buy aspirin and bread at the same time, you might want to split the expense over two budgets, medication and groceries. A single expense would make you lose information.
 
 Likewise, your salary may have multiple components. Your base salary may be 1200. Plus 100 bonus. Etc. All that information is lost when you enter it using a singular, unsplitted deposit.
 
 ![Transaction with multiple parts](../.gitbook/assets/transaction5%20%281%29.png)
 
-Any time you create a deposit, transfer or a withdrawal, Firefly III allows you to **split** a transaction into multiple parts. When you do this, you can:
+Any time you create a deposit, transfer or a withdrawal, Firefly III lets you **split** a transaction into multiple parts. When you do this, you can:
 
 * Assign part of an expense to a budget;
 * Assign different revenue accounts to parts of a deposit.

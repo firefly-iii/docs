@@ -18,11 +18,11 @@ COMPLEX_VAR="dn=example"
 
 By default Firefly III uses the "eloquent" driver that allows users to register and login locally. This is based on the user's email address.
 
-Firefly III will allow just one user to register itself after which registration will be blocked. The user who first registered is made administrator and can change the setting over at `/admin` to allow others to register.
+Firefly III will allow one user to register itself after which registration will be blocked. The user who first registered is made administrator and can change the setting over at `/admin` to allow others to register.
 
 ## Remote user
 
-Firefly III supports [RFC 3875](https://tools.ietf.org/html/rfc3875#section-4.1.10) which means your users can authenticate using the `REMOTE_USER` header. When you enable this method, an authentication proxy in front of Firefly III MUST be set up to care of the user's login and authentication. This allows you to use advanced login methods like hardware tokens, single sign-on, fingerprint readers and more. Once the authentication proxy says you're logged in, it will forward you to Firefly III.
+Firefly III supports [RFC 3875](https://tools.ietf.org/html/rfc3875#section-4.1.10) which means your users can authenticate using the `REMOTE_USER` header. When you enable this method, an authentication proxy in front of Firefly III MUST be set up to care of the user's login and authentication. This lets you to use advanced login methods like hardware tokens, single sign-on, fingerprint readers and more. Once the authentication proxy says you're logged in, it will forward you to Firefly III.
 
 A very popular tool that can do this [Authelia](https://www.authelia.com/docs/).
 

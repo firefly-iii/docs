@@ -2,7 +2,7 @@
 
 _This function is available from version 5.0.0-alpha.2 and onwards_
 
-Firefly III allows you to export transactions and other data to CSV files.
+Firefly III lets you export transactions and other data to CSV files.
 
 ## Basic export
 
