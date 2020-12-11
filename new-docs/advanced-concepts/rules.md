@@ -164,7 +164,7 @@ If you leave the action value empty, the action will fail.
 
 **From a deposit to a transfer**
 
-The money will be moved into from the original asset account, from another asset account. The "action value" you must provide must be the name of a valid asset account. If it does not exist, the action will fail.
+The money will be moved into the original asset account, from another asset account. The "action value" you must provide must be the name of a valid asset account. If it does not exist, the action will fail.
 
 If you leave the action value empty, the action will fail.
 
