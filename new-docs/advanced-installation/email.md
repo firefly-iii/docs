@@ -22,7 +22,7 @@ If you use Docker, you can always set these values using environment variables.
 
 ##log
 
-The default value will store messages in your log files instead of sending them.
+The default value will store messages in your log files instead of sending them. `APP_LOG_LEVEL` must be set to `debug` for the messages to appear.
 
 ## smtp
 
