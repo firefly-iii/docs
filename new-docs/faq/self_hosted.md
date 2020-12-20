@@ -13,7 +13,7 @@ Errors you can expect to see if you're not running **PHP 7.4**:
 1. `Syntax error, unexpected )`
 2. `syntax error, unexpected 'string' (T_STRING), expecting function (T_FUNCTION) or const (T_CONST)`
 
-You can verify which version of PHP your web server is using by making a file called `phpinfo.php` and accessing it through your webserver:
+You can verify which version of PHP your web server is using by making a file called `phpinfo.php` and browsing to it through your webserver:
 
 ```php
 <?php
@@ -22,7 +22,7 @@ phpinfo();
 
 That should tell you what you need to know. You can find update and upgrade instructions online for your web server.
 
-## I have to access Firefly III through /public/ and it gives me a warning?
+## I have to visit Firefly III through /public/ and it gives me a warning?
 
 This means that the Document Root of your webserver is badly configured. You should configure your webserver in such a way that `/` corresponds to `/public`. If you do not, you run the risk of exposing your database credentials, sessions and other sensitive financial data to the world.
 
@@ -92,7 +92,7 @@ php artisan firefly-iii:upgrade-database
 
 ## I see a white page and nothing else?
 
-Check out the log files in `storage/logs` to see what is going on. Please open a ticker if you are not sure what to do. If the logs are empty Firefly III cannot write to them. Make sure that the web server has write access to this directory. If the logs still remain empty, do you have a `vendor` directory in your Firefly III root? If not, run the Composer commands.
+Check out the log files in `storage/logs` to see what is going on. Please open a ticker if you are not sure what to do. If the logs are empty Firefly III cannot write to them. Make sure that the web server has write permissions in this directory. If the logs still remain empty, do you have a `vendor` directory in your Firefly III root? If not, run the Composer commands.
 
 If the pages remain empty, make sure you have enabled the rewrite module in Apache. If you're running nginx, use this as the "location" config:
 
@@ -232,7 +232,7 @@ This could happen when you upgrade a Firefly III installation with MySQL. The ca
 
 ## Unable to write to cache directory?
 
-This is a permissions error that may happen when another user than your webserver user has access to the Firefly III installation directory. Try the following command from your `/var/www/` directory:
+This is a permissions error that may happen when another user than your webserver user has write permissions in the Firefly III installation directory. Try the following command from your `/var/www/` directory:
 
 * `sudo chown -R www-data:www-data firefly-iii`
 * `sudo chmod -R 775 firefly-iii`

@@ -16,7 +16,7 @@ A rule must spring into action at the right time! This is decided by triggers th
 
 * When a transaction is created
 * When the description is something specific
-* When the amount is above *X*.
+* When the amount is more than *X*.
 * When the budget is *X*.
 
 Rules can be set to be "strict" or not. If a rule is set to be strict, ALL triggers must match for the rule to fire. If a rule is not scrict, ANY trigger is enough.

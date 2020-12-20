@@ -26,7 +26,7 @@ This budget does not exist. Perhaps it was deleted? Try viewing the budget in Fi
 
 **200005**
 
-You have no access to this function because you don't have the "owner"-role.
+You have no permission to use this function because you don't have the "owner"-role.
 
 **200006**
 

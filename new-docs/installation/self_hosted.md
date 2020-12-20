@@ -12,7 +12,7 @@ You need a working LAMP, LEMP or WAMP stack. If you don't have one, search the w
 
 If you wish to use another database such as SQLite or Postgres, please check out the FAQ.
 
-You need a (MySQL) database and credentials for a user that can access that database. Firefly III creates its own tables. Avoid using the root user.
+You need a (MySQL) database and credentials for a user that has permissions on that database. Firefly III creates its own tables. Avoid using the root user.
 
 Several users have created specific guides for their OS and database combination. Please keep in mind that Firefly III may have other system requirements.
 
@@ -79,7 +79,7 @@ composer create-project grumpydictator/firefly-iii --no-dev --prefer-dist firefl
 
 You should replace `<latest>` with the latest version, which you can find on the [Firefly III version page](https://version.firefly-iii.org/).
 
-If this gives an error because of access rights, prepend the command with `sudo`. Then fix the access rights:
+If this gives an error because of read/write permissions, prepend the command with `sudo`. Then fix the permissions:
 
 ```bash
 sudo chown -R www-data:www-data firefly-iii
@@ -113,7 +113,7 @@ Look in these directions when you're running into problems:
 
 Good luck!
 
-## Accessing Firefly III
+## Visiting Firefly III
 
 ### Browsing to site
 

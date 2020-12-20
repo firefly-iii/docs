@@ -13,7 +13,7 @@ These properties by themselves are mostly cosmetic. They allow Firefly III to pr
 
 Once you have created a bill, Firefly III will suggest that you create a new rule that will match the bill. This rule is auto-filled to trigger on obvious things like the amount of the bill and the description you entered. Make sure you fine-tune the rule so any new transactions will auto-match the rule.
 
-When you create a transaction with the following properties, it will match to the example you see above.
+When you create a transaction with the following properties, it will match to the preceding example.
 
 * Amount more than: 700
 * Amount less than: 800

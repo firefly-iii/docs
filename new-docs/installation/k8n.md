@@ -6,7 +6,7 @@ In the `.deploy/kubernetes` directory of Firefly III (also available [on GitHub]
 
 _Take care!_
 
-It's only Firefly III version 4.8.2 *and up*, that will work with the instructions below. If you're running an earlier version of Firefly III you may run into database access issues.
+It's only Firefly III version 4.8.2 *and up*, that will work with the instructions below. If you're running an earlier version of Firefly III you may run into database permission issues.
 
 {% endhint %}
 

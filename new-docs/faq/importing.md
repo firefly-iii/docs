@@ -8,7 +8,7 @@ Please refer to the index on your right.
 
 [Salt Edge](https://www.saltedge.com) doesn't just let you import data. Once you have created an account and set up Firefly III to import data from their systems you can only import test data at first. You'll have [to contact them](https://www.saltedge.com/test_access) to get your account upgraded.
 
-This is a bit annoying, having to jump through hoops to get Salt Edge access, but it's the best I can do. Since Firefly III is open source software I cannot share my secret keys. They would be out on the street. So, each user has to get their own access to Salt Edge.
+This is a bit annoying, having to jump through hoops to get permission to use Salt Edge, but it's the best I can do. Since Firefly III is open source software I cannot share my secret keys. They would be out on the street. So, each user has to get their own permission from Salt Edge.
 
 ## I get an error about openssl\_pkey\_export?
 

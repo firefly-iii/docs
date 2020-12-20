@@ -24,7 +24,7 @@ Errors you can expect to see if you're not running **PHP 7.4**:
 
 1. `Syntax error, unexpected )`
 
-You can verify which version of PHP your web server is using by making a file called `phpinfo.php` and accessing it through your webserver:
+You can verify which version of PHP your web server is using by making a file called `phpinfo.php` and browse to it through your webserver:
 
 ```php
 <?php

@@ -15,7 +15,7 @@ The first thing I did was simple: I started living from the first day of the mon
 
 So if you get paid on the 23rd of the month, your salary sits in your savings account from the 23rd until the first day of the next month, when you move (part of it) back to your checking account. If you get paid every week, this routine repeats weekly.
 
-This method of managing money works whatever your boss' payment schedule is. Move your salary to a different account (step 1 above) any time you get it and wait for the start of the month. 
+This method of managing money works whatever your boss' payment schedule is. Move your salary to a different account (step 1) any time you get it and wait for the start of the month. 
 
 This is quite difficult the first few times, but after a while you'll notice that you have (pretty effectively) moved your routine away from your salary and income. This alone gives you great financial stability. 
 
