@@ -2,7 +2,7 @@
 
 Firefly III features a JSON API.
 
-Please visit the [dedicated Swagger documentation](https://api-docs.firefly-iii.org/) where you can read and try the API.
+Please visit the [dedicated Swagger documentation](https://api-docs.firefly-iii.org/) where you can read and try the API. [A PHP library](https://github.com/StanSoftBG/oauth2-firefly-iii) was developed by [StanSoft.BG Ltd.](https://github.com/StanSoftBG) that you can use to talk to Firefly III in PHP.
 
 To read more about Personal Access Token, check out the bottom of this page.
 

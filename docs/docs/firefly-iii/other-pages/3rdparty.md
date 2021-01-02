@@ -31,6 +31,10 @@ Available on [F-Droid](https://f-droid.org/packages/xyz.hisname.fireflyiii/).
 
 [Firefly III Command Line Interface](https://github.com/afonsoc12/firefly-cli) is a tool made by [@afonsoc12](https://github.com/afonsoc12) to enter transactions into Firefly III over the command line.
 
+### PHP API library
+
+[A PHP library](https://github.com/StanSoftBG/oauth2-firefly-iii) was developed by [StanSoft.BG Ltd.](https://github.com/StanSoftBG) that you can use to talk to Firefly III in PHP.
+
 ### Firefly III Bot
 
 [Firefly Bot](https://github.com/vjFaLk/firefly-bot). A bot to create transactions through Telegram. Created by GitHub user [@vjFaLk](https://github.com/vjFaLk).
