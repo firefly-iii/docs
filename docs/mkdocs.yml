@@ -1,0 +1,139 @@
+site_name: Firefly III
+site_description: Documentation Firefly III
+site_author: James Cole
+repo_url: https://github.com/firefly-iii/firefly-iii/
+edit_uri: "https://github.com/firefly-iii/docs/docs"
+dev_addr: '10.0.0.15:8000'
+
+markdown_extensions:
+    - admonition
+
+#    - def_list
+#    - mdx_gh_links:
+#        user: mkdocs
+#        repo: mkdocs
+
+nav:
+  - Home: 'index.md'
+  - 'Firefly III':
+    - Introduction: firefly-iii/index.md
+    - About Firefly III:
+      - Introduction and features: firefly-iii/about-firefly-iii/introduction.md
+      - Missing features: firefly-iii/about-firefly-iii/what-its-not.md
+      - Screenshots : firefly-iii/about-firefly-iii/screenshots.md
+      - Personal finances: firefly-iii/about-firefly-iii/personal-finances.md
+      - Demo website: firefly-iii/about-firefly-iii/demo.md
+      - Security: firefly-iii/about-firefly-iii/security.md
+    - Installation:
+      - Docker: firefly-iii/installation/docker.md
+      - Kubernetes: firefly-iii/installation/k8n.md
+      - Self-hosted server: firefly-iii/installation/self_hosted.md
+      - Hosted by 3rd parties: firefly-iii/installation/third_parties.md
+    - Support:
+      - Feature requests and roadmap: firefly-iii/support/features.md
+      - Reporting bugs: firefly-iii/support/bugs.md
+      - Contribute to Firefly III: firefly-iii/support/contribute.md
+      - FAQ: firefly-iii/support/faq.md
+      - Transaction types: firefly-iii/support/transaction_types.md
+      - Telemetry: firefly-iii/support/telemetry.md
+      - Error codes: firefly-iii/support/error_codes.md
+    - FAQ:
+      - General questions: firefly-iii/faq/general.md
+      - Managing your finances: firefly-iii/faq/financials.md
+      - Using Docker: firefly-iii/faq/docker.md
+      - Installing and upgrading: firefly-iii/faq/installation.md
+      - Self-hosting: firefly-iii/faq/self_hosted.md
+      - Importing data: firefly-iii/faq/importing.md
+      - Translating Firefly III: firefly-iii/faq/translate.md
+      - Other questions: firefly-iii/faq/other.md
+    - Concepts:
+      - Transactions: firefly-iii/concepts/transactions.md
+      - Accounts: firefly-iii/concepts/accounts.md
+      - Budgets: firefly-iii/concepts/budgets.md
+      - Categories: firefly-iii/concepts/categories.md
+      - Tags: firefly-iii/concepts/tags.md
+      - Currencies: firefly-iii/concepts/currencies.md
+      - Groups: firefly-iii/concepts/groups.md
+      - Tracking cash: firefly-iii/concepts/tracking_cash.md
+      - Search: firefly-iii/concepts/search.md
+    - Advanced installation:
+      - Upgrade instructions: firefly-iii/advanced-installation/upgrade.md
+      - Configure email: firefly-iii/advanced-installation/email.md
+      - Authentication: firefly-iii/advanced-installation/authentication.md
+      - Analytics: firefly-iii/advanced-installation/analytics.md
+      - Backup: firefly-iii/advanced-installation/backup.md
+      - Locales: firefly-iii/advanced-installation/locales.md
+      - Cron jobs: firefly-iii/advanced-installation/cron.md
+    - Importing data:
+      - Introduction: firefly-iii/importing-data/introduction.md
+      - FAQ: firefly-iii/importing-data/faq.md
+    - Exporting data:
+      - Exporting data: firefly-iii/exporting-data/export.md
+    - Advanced concepts:
+      - Piggy banks: firefly-iii/advanced-concepts/piggies.md
+      - Bills: firefly-iii/advanced-concepts/bills.md
+      - Recurring transactions: firefly-iii/advanced-concepts/recurring.md
+      - Reports: firefly-iii/advanced-concepts/reports.md
+      - Rules: firefly-iii/advanced-concepts/rules.md
+      - Links: firefly-iii/advanced-concepts/links.md
+      - Reconciling accounts: firefly-iii/advanced-concepts/reconcile.md
+      - Command line usage: firefly-iii/advanced-concepts/commandline.md
+    - API:
+      - API: firefly-iii/api/api.md
+    - Other pages:
+      - Contact and credits: firefly-iii/other-pages/contact.md
+      - Third-party tools: firefly-iii/other-pages/3rdparty.md
+      - Contributing: firefly-iii/other-pages/contributing.md
+  - CSV importer:
+    - Introduction: csv/index.md
+    - Installing and running:
+      - Configuration: csv/install/configure.md
+      - Docker: csv/install/docker.md
+      - Self-hosted: csv/install/self_hosted.md
+      - Public installation: csv/help/public.md
+    - Help:
+      - The JSON file: csv/help/json.md
+      - Pre-made configuration: csv/help/config.md
+      - Public installation: csv/help/public.md
+    - Upgrading:
+      - Upgrading: csv/upgrade/upgrade.md
+    - Importing data:
+      - Uploading files: csv/usage/upload.md
+      - Configuring your import: csv/usage/configure.md
+      - Setting roles for columns: csv/usage/roles.md
+      - Mapping data: csv/usage/map.md
+      - Importing over command line: csv/usage/command_line.md
+      - Importing using POST: csv/usage/post.md
+      - Emailing results: csv/usage/email.md
+    - Errors and trouble shooting:
+      - Duplicate transactions: csv/errors/duplicate_transactions.md
+      - Personal Access Token errors: csv/errors/token_errors.md
+      - Frequently seen issues: csv/errors/freq_errors.md
+      - Frequently asked questions: csv/errors/freq_questions.md
+      - Bad CSV files: csv/errors/bad_files.md
+  - Other data importers:
+    - Introduction: other-data-importers/index.md
+    - Installing and running:
+      - Docker: other-data-importers/install/docker.md
+      - Self-hosted: other-data-importers/install/self_hosted.md
+      - Configuration: other-data-importers/install/configure.md
+    - Upgrading: other-data-importers/upgrade.md
+    - Importing data:
+      - Uploading config: other-data-importers/usage/upload.md
+      - Filter the import: other-data-importers/usage/filter_import.md
+      - Configuring your import: other-data-importers/usage/configure.md
+      - Mapping data: other-data-importers/usage/map.md
+      - Importing over command line: other-data-importers/usage/command_line.md
+      - JSON file: other-data-importers/usage/json.md
+    - Errors and trouble shooting:
+      - Token errors: other-data-importers/errors/token_errors.md
+      - Frequently seen issues: other-data-importers/errors/freq_errors.md
+      - Frequently asked questions: other-data-importers/errors/freq_questions.md
+  - Other tools:
+    - Introduction: other-tools/index.md
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tabs
