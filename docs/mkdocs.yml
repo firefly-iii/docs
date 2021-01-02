@@ -2,7 +2,7 @@ site_name: Firefly III
 site_description: Documentation Firefly III
 site_author: James Cole
 repo_url: https://github.com/firefly-iii/firefly-iii/
-edit_uri: "https://github.com/firefly-iii/docs/docs"
+edit_uri: https://github.com/firefly-iii/docs/tree/main/docs/docs
 dev_addr: '10.0.0.15:8000'
 
 markdown_extensions:
