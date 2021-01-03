@@ -95,7 +95,7 @@ Use [run-inline.sh](https://github.com/firefly-iii/csv-importer-docker/blob/main
 
 When following the instructions above, the CSV importer will in a container separate from Firefly III itself. The communication between those containers can be done either by Docker internal IPs or internal URL's.
 
-Yhe IP address you need to contact Firefly III isn't 127.0.0.1, not even when you run Firefly III on the same machine. Docker uses an internal network.
+The IP address you need to contact Firefly III isn't 127.0.0.1, not even when you run Firefly III on the same machine. Docker uses an internal network.
 
 ### URL in Docker
 
