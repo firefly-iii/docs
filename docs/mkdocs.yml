@@ -24,6 +24,7 @@ plugins:
         'advanced-installation/email.md': 'firefly-iii/advanced-installation/email.md'
         'concepts/currencies.md': 'firefly-iii/concepts/currencies.md'
         'concepts/search.md': 'firefly-iii/concepts/search.md'
+        'concepts/transactions.md': 'firefly-iii/concepts/transactions.md'
         'faq/other.md': 'firefly-iii/faq/other.md'
         'installation/docker.md': 'firefly-iii/installation/docker.md'
         'installation/self_hosted.md': 'firefly-iii/installation/self_hosted.md'
