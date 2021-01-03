@@ -62,7 +62,7 @@ Personally, right now I'm just not interested in turning this into a business. I
 
 ## I want something in Firefly III, what do I do?
 
-What you want may already be possible, so read the documentation carefully. If not, read [this page](general.md) and then contact me through [GitHub](https://github.com/firefly-iii/firefly-iii/) or email, using the details found on [the contact page](../other-pages/contact.md).
+What you want may already be possible, so read the documentation carefully. If not, contact me through [GitHub](https://github.com/firefly-iii/firefly-iii/) or email, using the details found on [the contact page](../other-pages/contact.md).
 
 ## I want to help, what do I do?
 

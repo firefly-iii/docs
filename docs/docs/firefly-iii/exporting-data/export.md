@@ -1,12 +1,10 @@
 # Exporting data
 
-_This function is available from version 5.0.0-alpha.2 and onwards_
-
 Firefly III lets you export transactions and other data to CSV files.
 
 ## Basic export
 
-Go to /export in your Firefly III installation, or follow the menu under "import and export".
+Go to `/export` in your Firefly III installation, or follow the menu under "import and export".
 
 Here you'll find a button that you can use to export all of your transactions. This may take some time, and your installation may time-out.
 

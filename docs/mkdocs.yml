@@ -4,6 +4,7 @@ site_author: James Cole
 copyright: "&copy; <a href=\"mailto:james@firefly-iii.org\">James Cole</a>, licensed under <a href=\"https://github.com/firefly-iii/docs/blob/main/license\">Attribution-ShareAlike 4.0 International</a>."
 repo_url: https://github.com/firefly-iii/firefly-iii/
 edit_uri: https://github.com/firefly-iii/docs/tree/main/docs/docs
+site_url: https://docs.firefly-iii.org/
 dev_addr: '10.0.0.15:8000'
 extra_javascript:
   - 'analytics.js'
