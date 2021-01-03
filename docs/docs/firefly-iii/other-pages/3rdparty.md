@@ -9,66 +9,56 @@ There are a lot of interesting tools and apps built around the [Firefly III API]
 
 ### Summary emails
 
-The [email summary tool](https://github.com/davidschlachter/firefly-iii-email-summary) by [David](https://github.com/davidschlachter) sends you a monthly report of your expenses by category.
+David built a tool to send you a monthly overview of your expenses by category.
 
-## Mobile apps
+- [Credits](https://github.com/davidschlachter)
+- [Website and documentation](https://github.com/davidschlachter/firefly-iii-email-summary)
+
+## Mobile applications
 
 ### Firefly Personal Finance
 
-[Firefly Personal Finance](https://github.com/mconway/firefly-app/). Android app, built by GitHub user [@mconway](https://github.com/mconway).
+Firefly Personal Finance is an android app created by @mconway that connects to your Firefly III installation.
 
-Available in the [App Store](https://play.google.com/store/apps/details?id=com.zerobyte.firefly).
+- [Credits](https://github.com/mconway)
+- [Website and documentation](https://github.com/mconway/firefly-app/)
+- [Google Play Store](https://play.google.com/store/apps/details?id=com.zerobyte.firefly)
 
 ### Firefly III (Android)
 
-[Firefly III (Android)](https://github.com/emansih/FireflyMobile). Android app, built by GitHub user [@emansih](https://github.com/emansih).
+Firefly III (Android) is an android app created by @emansih that connects to your Firefly III installation.
 
-Available on [F-Droid](https://f-droid.org/packages/xyz.hisname.fireflyiii/).
+- [Credits](https://github.com/emansih)
+- [Website and documentation](https://github.com/emansih/FireflyMobile)
+- [F-Droid store](https://f-droid.org/packages/xyz.hisname.fireflyiii/)
 
 ## Bots and tools
 
 ### Firefly III CLI
 
-[Firefly III Command Line Interface](https://github.com/afonsoc12/firefly-cli) is a tool made by [@afonsoc12](https://github.com/afonsoc12) to enter transactions into Firefly III over the command line.
+Firefly III Command Line Interface is a tool made by @afonsoc12 that allows you to interact with Firefly III over the command line.
+
+- [Credits](https://github.com/afonsoc12)
+- [Website and documentation](https://github.com/afonsoc12/firefly-cli)
 
 ### PHP API library
 
-[A PHP library](https://github.com/StanSoftBG/oauth2-firefly-iii) was developed by [StanSoft.BG Ltd.](https://github.com/StanSoftBG) that you can use to talk to Firefly III in PHP.
+The PHP API library is a library developed by StanSoft.BG Ltd that allows you to easily authenticate to Firefly III over OAuth2.0 and use the API in your own app.
 
-### Firefly III Bot
+- [Credits](https://github.com/StanSoftBG)
+- [Website](https://github.com/StanSoftBG/oauth2-firefly-iii)
 
-[Firefly Bot](https://github.com/vjFaLk/firefly-bot). A bot to create transactions through Telegram. Created by GitHub user [@vjFaLk](https://github.com/vjFaLk).
+### Firefly Bot
 
-### Product manager
+The Firefly Bot can create transactions through Telegram.
 
-[Product manager](https://github.com/JC5/product-manager), made by [yours truly](https://github.com/JC5) to demonstrate the API. You can use it to manage large expenses and expensive hobby's.
-
-### Auto-save tool
-
-[Auto-save tool](https://github.com/JC5/autosave), made by [yours truly](https://github.com/JC5) to demonstrate the API. A tool to automatically top-up your savings account like some banks offer.
+- [Credits](https://github.com/vjFaLk)
+- [Website](https://github.com/vjFaLk/firefly-bot)
 
 ## Import tools
 
-### Plaid
+All import related tools are listed [on the page on importing data](../importing-data/introduction.md).
 
-[Plaid Connector](https://gitlab.com/GeorgeHahn/firefly-plaid-connector), by Gitlab user [@GeorgeHahn](https://gitlab.com/GeorgeHahn).
+## Other tools
 
-### FinTS
-
-[FinTS importer](https://github.com/bnw/firefly-iii-fints-importer), by GitHub user [@bnw](https://github.com/bnw)
-
-### CSV
-
-[CSV importer](https://github.com/firefly-iii/csv-importer/), made by [yours truly](https://github.com/JC5), to import CSV files.
-
-### Bunq
-
-[Bunq importer](https://github.com/firefly-iii/bunq-importer/), made by [yours truly](https://github.com/JC5), to import from bunq.
-
-### Spectre
-
-[Spectre importer](https://github.com/firefly-iii/spectre-importer/), made by [yours truly](https://github.com/JC5), to import from Spectre.
-
-### You Need A Budget
-
-[You Need A Budget importer](https://github.com/firefly-iii/ynab-importer/), made by [yours truly](https://github.com/JC5), to import from You Need A Budget.
+Other tools developed by the developer of Firefly III are listed on the [other tools](../../../other-tools) page.
