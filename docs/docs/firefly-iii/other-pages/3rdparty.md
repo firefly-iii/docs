@@ -1,6 +1,6 @@
 # Third-party tools
 
-There are a lot of interesting tools and apps built around the [Firefly III API](../api/api.md). Here's a list, in no particular order.
+There are a lot of interesting tools and apps built around the [Firefly III API](../api.md). Here's a list, in no particular order.
 
 !!! info 
     Is your (favorite) tool not on the list? Submit a PR!
