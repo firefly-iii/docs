@@ -8,7 +8,7 @@ The [main documentation](firefly-iii) for Firefly III.
 
 ## CSV Importer
 
-Since this is by far the most used tool, [the docs](csv-importer) are separate from the others.
+Since this is by far the most used tool, [the docs](csv) are separate from the others.
 
 ## Other data importers
 
