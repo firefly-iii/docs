@@ -168,7 +168,8 @@ theme:
   features:
     - navigation.tabs
   palette:
-    primary: deep orange
+    primary: blue grey
+    accent: red
   logo: img/logo.png
   favicon: img/favicon.ico
   icon:
