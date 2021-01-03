@@ -1,12 +1,16 @@
-site_name: Firefly III
-site_description: Documentation Firefly III
+site_name: Firefly III documentation
+site_description: Documentation for Firefly III
 site_author: James Cole
+copyright: "&copy; <a href=\"mailto:james@firefly-iii.org\">James Cole</a>, licensed under <a href=\"https://github.com/firefly-iii/docs/blob/main/license\">Attribution-ShareAlike 4.0 International</a>."
 repo_url: https://github.com/firefly-iii/firefly-iii/
 edit_uri: https://github.com/firefly-iii/docs/tree/main/docs/docs
 dev_addr: '10.0.0.15:8000'
-
+extra_javascript:
+  - 'analytics.js'
 
 plugins:
+  - search
+  - 'git-revision-date'
   - redirects:
       redirect_maps:
         'about-firefly-iii/introduction.md': 'firefly-iii/about-firefly-iii/introduction.md'
@@ -160,5 +164,18 @@ nav:
 theme:
   name: material
   features:
-    - navigation.instant
     - navigation.tabs
+  palette:
+    primary: deep orange
+  logo: img/logo.png
+  favicon: img/favicon.ico
+  icon:
+    repo: fontawesome/brands/github
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/Firefly_III
+    - icon: fontawesome/brands/github
+      link: https://github.com/firefly-iii
+    - icon: fontawesome/brands/reddit
+      link: https://old.reddit.com/r/FireflyIII

@@ -10,8 +10,8 @@ Firefly III does not come with a built-in backup routine. Using your native OS t
 
 If you're running Firefly III in Docker, make sure you grab:
 
-- The 3 volumes used by Firefly: "upload", "export" and "db"
-- The Docker variables you've used to launch the container, and especially the `APP_ENV`-variable.
+- The two volumes used by Firefly III: "upload" and "db"
+- The Docker variables you've used to launch the container, and especially the `APP_KEY`-variable.
 
 That way you have everything you need in case of problems.
 
