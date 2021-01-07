@@ -6,9 +6,6 @@ repo_url: https://github.com/firefly-iii/firefly-iii/
 edit_uri: https://github.com/firefly-iii/docs/tree/main/docs/docs
 site_url: https://docs.firefly-iii.org/
 dev_addr: '10.0.0.15:8000'
-extra_javascript:
-  - 'analytics.js'
-
 plugins:
   - search
   - 'git-revision-date'
@@ -22,6 +19,7 @@ plugins:
         'advanced-concepts/reports.md': 'firefly-iii/advanced-concepts/reports.md'
         'advanced-installation/authentication.md': 'firefly-iii/advanced-installation/authentication.md'
         'advanced-installation/email.md': 'firefly-iii/advanced-installation/email.md'
+        'advanced-installation/cron.md': 'firefly-iii/advanced-installation/cron.md'
         'concepts/currencies.md': 'firefly-iii/concepts/currencies.md'
         'concepts/search.md': 'firefly-iii/concepts/search.md'
         'concepts/transactions.md': 'firefly-iii/concepts/transactions.md'

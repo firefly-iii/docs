@@ -7,6 +7,27 @@
   	Sorry, this page does not exist. You may have followed an old link that I forgot to update. If you followed this link from anywhere inside Firefly III or the associated tools, please <a href="https://github.com/firefly-iii/firefly-iii/">open an issue on GitHub</a> or <a href="mailto:james@firefly-iii.org">drop me a line</a> so I can fix it.
   </p>
   <p style="width:60%;">
-  	In the mean time, please follow the links in the header or use the search to find to the page you were looking for.
+  	In the mean time, please follow the links in the header or use the search to find to the page you were looking for. I register and track these errors so with a little luck this 404-page will be gone in the near future.
   </p>
+{% endblock %}
+{% block analytics %}
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://analytics.firefly-iii.org/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '8']);
+    _paq.push(['trackEvent', 'DocsNotFound', 'View404Page']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
 {% endblock %}
