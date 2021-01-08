@@ -35,6 +35,7 @@ plugins:
         'concepts/currencies.md': 'firefly-iii/concepts/currencies.md'
         'concepts/groups.md': 'firefly-iii/concepts/groups.md'
         'concepts/search.md': 'firefly-iii/concepts/search.md'
+        'concepts/tracking_cash.md': 'firefly-iii/concepts/tracking_cash.md'
         'concepts/transactions.md': 'firefly-iii/concepts/transactions.md'
         'exporting-data/export.md': 'firefly-iii/exporting-data/export.md'
         'faq/other.md': 'firefly-iii/faq/other.md'
@@ -46,6 +47,10 @@ plugins:
         'installation/docker.md': 'firefly-iii/installation/docker.md'
         'installation/self_hosted.md': 'firefly-iii/installation/self_hosted.md'
         'installation/third_parties.md': 'firefly-iii/installation/third_parties.md'
+        'installing-and-running/docker.md': 'csv/install/docker.md'
+        'importing-data/faq.md': 'firefly-iii/importing-data/faq.md'
+        'importing-data/spectre.md': 'firefly-iii/importing-data/introduction.md'
+        'importing-data/others.md': 'firefly-iii/importing-data/introduction.md'
         'importing-data/introduction.md': 'firefly-iii/importing-data/introduction.md'
         'importing-data/upload.md': 'csv/usage/upload.md'
         'importing-data/command_line.md': 'csv/usage/command_line.md'
@@ -57,6 +62,11 @@ plugins:
         'support/features.md': 'firefly-iii/support/features.md'
         'support/telemetry.md': 'firefly-iii/support/telemetry.md'
         'usage/map.md': 'csv/usage/map.md'
+  - minify:
+      minify_html: true
+      minify_js: true
+      htmlmin_opts:
+          remove_comments: true
 
 markdown_extensions:
     - admonition
