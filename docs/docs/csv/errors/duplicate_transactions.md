@@ -6,11 +6,11 @@ Use the *debug view* to see why a transaction is imported, despite being a dupli
 
 Open both transactions in different tabs of your browser. Notice how the URL is something like this:
 
-* [https://demo.firefly-iii.org/transactions/show/297](https://demo.firefly-iii.org/transactions/show/297)
+* [https://demo.firefly-iii.org/transactions/show/123](https://demo.firefly-iii.org/transactions/show/123)
 
 Change the work "show" in the URL to "debug":
 
-* [https://demo.firefly-iii.org/transactions/**debug**/297](https://demo.firefly-iii.org/transactions/show/297)
+* [https://demo.firefly-iii.org/transactions/**debug**/123](https://demo.firefly-iii.org/transactions/debug/123)
 
 If you do this for **both** transactions you will end up with a specific JSON variant of the transaction.
 
