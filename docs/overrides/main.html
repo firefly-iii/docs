@@ -1,5 +1,33 @@
 {% extends "base.html" %}
 
+  {% block site_meta %}
+    <!-- hi there (2) -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    {% if page and page.meta and page.meta.description %}
+      <meta name="description" content="{{ page.meta.description }}">
+    {% elif config.site_description %}
+      <meta name="description" content="{{ config.site_description }}">
+    {% endif %}
+    {% if page and page.meta and page.meta.keywords %}
+      <meta name="keywords" content="{{ page.meta.keywords }}">
+    {% elif config.site_keywords %}
+      <meta name="keywords" content="{{ config.site_keywords }}">
+    {% endif %}
+    {% if page and page.meta and page.meta.author %}
+      <meta name="author" content="{{ page.meta.author }}">
+    {% elif config.site_author %}
+      <meta name="author" content="{{ config.site_author }}">
+    {% endif %}
+    {% if page.canonical_url %}
+      <link rel="canonical" href="{{ page.canonical_url }}">
+      <base href="{{ page.canonical_url }}">
+    {% endif %}
+    <link rel="shortcut icon" href="{{ config.theme.favicon | url }}">
+    <meta name="generator" content="mkdocs-{{ mkdocs_version }}, mkdocs-material-6.2.3">
+  {% endblock %}
+
+
 {% block analytics %}
 
 
