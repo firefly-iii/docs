@@ -40,6 +40,8 @@ So if you use this authentication method make sure there is NO way *around* the 
 
 ### The guard header was unexpectedly empty
 
+As a troubleshooting step, try setting the `AUTHENTICATION_GUARD_HEADER` environment variable to `HTTP_REMOTE_USER`.  If this doesn't work, unset the `AUTHENTICATION_GUARD_HEADER` environment variable and make the change below.
+
 Make sure that the header is forwarded to Firefly III. For example, add the following lines to `public/.htaccess`.
 
 ```
@@ -48,6 +50,12 @@ Make sure that the header is forwarded to Firefly III. For example, add the foll
 ```
 
 This is less than optimal when you're using the Docker image but if the header is sent to your reverse proxy and not to Firefly III directly, it may be necessary to make such a change.
+
+### Customizing remote user header
+
+If you are able to customize your authentication system to send a header other than `REMOTE_USER` to Firefly III, then set the `AUTHENTICATION_GUARD_HEADER` environment variable to the PHP name of that header.  For example, if the custom header is `FFIII-User`, then set `AUTHENTICATION_GUARD_HEADER` to `HTTP_FFIII_USER`.  Another benefit of using a custom header is that you do not need to mess with the `public/.htaccess` file as mentioned above.
+
+If the user's email address is also available through a different HTTP header, then set the `AUTHENTICATION_GUARD_EMAIL` environment variable to the PHP name of that yeader.  For example, if the custom header is `FFIII-Email`, then set `AUTHENTICATION_GUARD_EMAIL` to `HTTP_FFIII_EMAIL`
 
 ## LDAP
 
