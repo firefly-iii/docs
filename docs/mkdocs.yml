@@ -24,6 +24,7 @@ plugins:
         'advanced-concepts/recurring.md': 'firefly-iii/advanced-concepts/recurring.md'
         'advanced-concepts/reconcile.md': 'firefly-iii/advanced-concepts/reconcile.md'
         'advanced-concepts/reports.md': 'firefly-iii/advanced-concepts/reports.md'
+        'advanced-installation/analytics.md': 'firefly-iii/advanced-installation/analytics.md'
         'advanced-installation/authentication.md': 'firefly-iii/advanced-installation/authentication.md'
         'advanced-installation/backup.md': 'firefly-iii/advanced-installation/backup.md'
         'advanced-installation/cron.md': 'firefly-iii/advanced-installation/cron.md'
@@ -31,6 +32,7 @@ plugins:
         'advanced-installation/locales.md': 'firefly-iii/advanced-installation/locales.md'
         'advanced-installation/upgrade.md': 'firefly-iii/advanced-installation/upgrade.md'
         'concepts/accounts.md': 'firefly-iii/concepts/accounts.md'
+        'concepts/budgets.md': 'firefly-iii/concepts/budgets.md'
         'concepts/categories.md': 'firefly-iii/concepts/categories.md'
         'concepts/currencies.md': 'firefly-iii/concepts/currencies.md'
         'concepts/groups.md': 'firefly-iii/concepts/groups.md'
@@ -45,6 +47,7 @@ plugins:
         'faq/self_hosted.md': 'firefly-iii/faq/self_hosted.md'
         'help/json.md': 'csv/help/json.md'
         'installation/docker.md': 'firefly-iii/installation/docker.md'
+        'installation/k8n.md': 'firefly-iii/installation/k8n.md'
         'installation/self_hosted.md': 'firefly-iii/installation/self_hosted.md'
         'installation/third_parties.md': 'firefly-iii/installation/third_parties.md'
         'installing-and-running/docker.md': 'csv/install/docker.md'
@@ -56,12 +59,14 @@ plugins:
         'importing-data/command_line.md': 'csv/usage/command_line.md'
         'importing-data/map.md': 'csv/usage/map.md'
         'other-pages/3rdparty.md': 'firefly-iii/other-pages/3rdparty.md'
+        'other-pages/contributing.md': 'firefly-iii/other-pages/contributing.md'
         'support/contribute.md': 'firefly-iii/support/contribute.md'
         'support/error_codes.md': 'firefly-iii/support/error_codes.md'
         'support/faq.md': 'firefly-iii/support/faq.md'
         'support/features.md': 'firefly-iii/support/features.md'
         'support/telemetry.md': 'firefly-iii/support/telemetry.md'
         'usage/map.md': 'csv/usage/map.md'
+        'en/latest/installation/docker.html': 'firefly-iii/installation/docker.md'
   - minify:
       minify_html: true
       minify_js: true
