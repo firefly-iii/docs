@@ -69,6 +69,17 @@ Referrer-Policy: same-origin
 
 That should solve it.
 
+## Why is the minimum password length 16 characters?
+
+[NIST](https://pages.nist.gov/800-63-3/sp800-63b.html) recommends a few things when it comes to passwords:
+
+1. Prefer long passwords over complex ones.
+2. Don't make people change them regularly.
+3. Check for commonly leaked passwords.
+4. Allow people to see the password they enter.
+
+Safe for the last one, Firefly III does all of these things. You can disable nr. 3 by disabling the checkbox when you register or change your password. The minimum password length can't be changed.
+
 ## I'm running Internet Explorer or Edge and nothing works?
 
 Some (older) browsers may not work with Firefly III. I have no plans to add support.

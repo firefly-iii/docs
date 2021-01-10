@@ -20,6 +20,7 @@ plugins:
         'about-firefly-iii/what-its-not.md': 'firefly-iii/about-firefly-iii/what-its-not.md'
         'advanced-concepts/bills.md': 'firefly-iii/advanced-concepts/bills.md'
         'advanced-concepts/piggies.md': 'firefly-iii/advanced-concepts/piggies.md'
+        'advanced-concepts/links.md': 'firefly-iii/advanced-concepts/links.md'
         'advanced-concepts/rules.md': 'firefly-iii/advanced-concepts/rules.md'
         'advanced-concepts/recurring.md': 'firefly-iii/advanced-concepts/recurring.md'
         'advanced-concepts/reconcile.md': 'firefly-iii/advanced-concepts/reconcile.md'
@@ -39,11 +40,14 @@ plugins:
         'concepts/search.md': 'firefly-iii/concepts/search.md'
         'concepts/tracking_cash.md': 'firefly-iii/concepts/tracking_cash.md'
         'concepts/transactions.md': 'firefly-iii/concepts/transactions.md'
+        'errors-and-trouble-shooting/duplicate_transactions.md': 'csv/errors/duplicate_transactions.md'
+        'errors-and-trouble-shooting/token_errors.md': 'csv/errors/token_errors.md'
         'exporting-data/export.md': 'firefly-iii/exporting-data/export.md'
         'faq/other.md': 'firefly-iii/faq/other.md'
         'faq/importing.md': 'firefly-iii/faq/importing.md'
         'faq/docker.md': 'firefly-iii/faq/docker.md'
         'faq/installation.md': 'firefly-iii/faq/installation.md'
+        'faq/financials.md': 'firefly-iii/faq/financials.md'
         'faq/self_hosted.md': 'firefly-iii/faq/self_hosted.md'
         'help/json.md': 'csv/help/json.md'
         'installation/docker.md': 'firefly-iii/installation/docker.md'
@@ -67,6 +71,7 @@ plugins:
         'support/telemetry.md': 'firefly-iii/support/telemetry.md'
         'usage/map.md': 'csv/usage/map.md'
         'en/latest/installation/docker.html': 'firefly-iii/installation/docker.md'
+        'en/latest/import/spectre.html': 'firefly-iii/importing-data/introduction.md'
   - minify:
       minify_html: true
       minify_js: true
