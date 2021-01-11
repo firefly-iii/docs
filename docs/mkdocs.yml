@@ -60,6 +60,7 @@ plugins:
         'importing-data/others.md': 'firefly-iii/importing-data/introduction.md'
         'importing-data/introduction.md': 'firefly-iii/importing-data/introduction.md'
         'importing-data/upload.md': 'csv/usage/upload.md'
+        'importing-data/roles.md': 'csv/usage/roles.md'
         'importing-data/command_line.md': 'csv/usage/command_line.md'
         'importing-data/map.md': 'csv/usage/map.md'
         'other-pages/3rdparty.md': 'firefly-iii/other-pages/3rdparty.md'
@@ -218,7 +219,6 @@ theme:
   icon:
     repo: fontawesome/brands/github
 extra:
-  disqus: firefly-iii-documentation
   social:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/Firefly_III
