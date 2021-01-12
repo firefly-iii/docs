@@ -71,8 +71,6 @@ plugins:
         'support/features.md': 'firefly-iii/support/features.md'
         'support/telemetry.md': 'firefly-iii/support/telemetry.md'
         'usage/map.md': 'csv/usage/map.md'
-        'en/latest/installation/docker.html': 'firefly-iii/installation/docker.md'
-        'en/latest/import/spectre.html': 'firefly-iii/importing-data/introduction.md'
   - minify:
       minify_html: true
       minify_js: true

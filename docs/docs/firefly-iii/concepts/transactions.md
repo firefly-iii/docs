@@ -24,19 +24,23 @@ Transactions have a few useful fields:
 * The accounts involved (from and to)
 * .. and some meta-information.
 
-In Firefly III, a transaction can be a withdrawal, a deposit or a transfer. Beyond the obvious, they are slightly different from one another: XXX
+In Firefly III, a transaction can be a withdrawal, a deposit or a transfer. Beyond the obvious, they are slightly different from one another.
 
 ## Withdrawals
 
-Withdrawals have a free-format field for the "expense account" which you can fill in freely. If you go to a new store, simply enter the withdrawal with the new store as the expense account, and Firefly III will start tracking it automatically. Withdrawals can also be assigned a "budget".
+To create a withdrawal select a source account first. This should be an asset account or a liability. Then select a destination account (an expense account) or free-type a new one. Withdrawals can also be assigned a [budget](budgets.md).
+
+Although the form allows you to free-type a destination account as well, this may fail and the transaction can't be saved.
 
 ## Deposits
 
-Deposits have free-format field for the "revenue account". This works in the same way as withdrawals do.
+When you wish to create a deposit, select a revenue account first, as the source account. When it doesn't exist yet, free-type your own input and it will be created for you. Then, select an asset account or liability as the destination account. If the source account already exists the form will recognize that you're creating a deposit, and the "budget"-selector will disappear.
+
+Although the form allows you to free-type a destination account as well, this may fail and the transaction can't be saved.
 
 ## Transfers
 
-Transfers have no free-format field. A transfer can only occur between existing asset accounts. But transfers can also be linked to piggy banks. So you could move € 200 to your savings account and have it added to your piggy bank "new couch".
+A transfer is created only between existing asset accounts. Select an asset account for both the source and destination from the free-form fields. Transfers can be linked to [piggy banks](../advanced-concepts/piggies.md), to automatically add or remove money from the piggy bank you select.
 
 ## Split transactions
 
@@ -71,4 +75,3 @@ It's important to realise the following constraints when dealing with split tran
 ## Multi-currency transactions
 
 Firefly III supports multi-currency transactions. You can set the foreign currency for any (split) transaction.
-
