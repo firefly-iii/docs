@@ -43,7 +43,8 @@ plugins:
         'contact/contact.md': 'firefly-iii/other-pages/contact.md'
         'errors-and-trouble-shooting/duplicate_transactions.md': 'csv/errors/duplicate_transactions.md'
         'errors-and-trouble-shooting/token_errors.md': 'csv/errors/token_errors.md'
-        'exporting-data/export.md': 'firefly-iii/exporting-data/export.md'
+        'exporting-data/export.md': 'firefly-iii/exporting-data.md'
+        'firefly-iii/exporting-data/export.md': 'firefly-iii/exporting-data.md'
         'faq/other.md': 'firefly-iii/faq/other.md'
         'faq/importing.md': 'firefly-iii/faq/importing.md'
         'faq/docker.md': 'firefly-iii/faq/docker.md'
@@ -129,6 +130,8 @@ nav:
       - Groups: firefly-iii/concepts/groups.md
       - Tracking cash: firefly-iii/concepts/tracking_cash.md
       - Search: firefly-iii/concepts/search.md
+    - Pages and features:
+      - Administration: firefly-iii/pages-and-features/admin.md
     - Advanced installation:
       - Upgrade instructions: firefly-iii/advanced-installation/upgrade.md
       - Configure email: firefly-iii/advanced-installation/email.md
@@ -141,7 +144,7 @@ nav:
       - Introduction: firefly-iii/importing-data/introduction.md
       - FAQ: firefly-iii/importing-data/faq.md
     - Exporting data:
-      - Exporting data: firefly-iii/exporting-data/export.md
+      - Exporting data: firefly-iii/exporting-data.md
     - Advanced concepts:
       - Piggy banks: firefly-iii/advanced-concepts/piggies.md
       - Bills: firefly-iii/advanced-concepts/bills.md

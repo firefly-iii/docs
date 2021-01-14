@@ -2,7 +2,7 @@
 
 Firefly III supports as many currencies as you like. By default it ships with a variety of currencies, including crypto currencies.
 
-You can add your own currencies if you're missing one.
+You can add your own currencies if you're missing one. Please make sure the currency code is compliant with [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217).
 
 Currencies are disabled by default, meaning that you cannot use them when creating asset accounts or transactions. You must enable them first.
 
@@ -11,6 +11,14 @@ Currencies are disabled by default, meaning that you cannot use them when creati
 Under Options &gt; Preferences you will find the "Currencies" page. When you are an admin, you will see the button "Create a new currency". You should enter some details such as the name, the symbol of the currency and of course the currency code (preferrably according to the [ISO 4217](https://www.currency-iso.org/dam/downloads/lists/list_one.xml) standard).
 
 Currencies have decimal places. Most have 2, like the Euro. Notable exceptions are Bitcoin (8) and the Mauritanian ouguiya (no decimals). Both are supported by Firefly III. Bitcoin is present by default, but not enabled.
+
+Please note that each currency needs:
+
+- A symbol, such as $ or € or something else.
+- A code, such as EUR or USD or something you make up.
+- A name, of course.
+
+Currencies tend to have 2 decimal places. You should check out Wikipedia for more information about your preferred currency, if you are unsure. If you want to know what the values are for your currency, check out [this list of currencies](https://github.com/xsolla/currency-format/blob/master/currency-format.json) on Github. New currencies are enabled by default.# Currencies
 
 New currencies added through this form will be enabled for use.
 

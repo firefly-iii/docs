@@ -16,6 +16,8 @@ But there is also income (deposits) that you might want to give a category:
 
 Each transaction can be given a category. This will show you what you spent your money on, or where it is coming from. Firefly III lets you dynamically create and manage categories. Fancy charts will show you how your money is divided over categories. There is a category report that can show you exactly what is happening within a category.
 
+When you delete a category, any transactions in the category will be cleared of the category, and instead will get listed under "Transactions without a category".
+
 ## The difference between budgets and categories
 
 If you try to save money every month on a certain subject, it's a budget. Groceries are budget. Bills are a budget. If you travel by train occasionally, it's not a budget.
