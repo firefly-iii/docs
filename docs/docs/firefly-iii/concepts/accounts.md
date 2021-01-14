@@ -22,6 +22,8 @@ Asset accounts are normal bank accounts. They hold your own money. Your bank acc
 
 Asset accounts come in a few flavours. These are all cosmetic by the way, there is no technical difference.
 
+As for the roles that are available:
+
 #### Default asset accounts
 
 This is the default kind of asset account.
@@ -76,3 +78,7 @@ If your debt is gradually increasing because of interest payments or you borrowi
 When you pay off your debt you create transactions with your asset account as the source and the debt as the destination. 
 
 This way you can use Firefly III to track debts, both incoming and outgoing.
+
+## Deleting accounts
+
+If you delete an account, any associated transactions will be removed as well. If you're deleting an asset account and you've transferred money between the current asset account and other asset accounts, you might see changed balances all around. Remember to correct this, if necessary. You can move the transactions to a new account if you wish to preserve them.
