@@ -37,7 +37,8 @@ plugins:
         'concepts/categories.md': 'firefly-iii/concepts/categories.md'
         'concepts/currencies.md': 'firefly-iii/concepts/currencies.md'
         'concepts/groups.md': 'firefly-iii/concepts/groups.md'
-        'concepts/search.md': 'firefly-iii/concepts/search.md'
+        'concepts/search.md': 'firefly-iii/pages-and-features/search.md'
+        'firefly-iii/concepts/search.md': 'firefly-iii/pages-and-features/search.md'
         'concepts/tracking_cash.md': 'firefly-iii/concepts/tracking_cash.md'
         'concepts/transactions.md': 'firefly-iii/concepts/transactions.md'
         'contact/contact.md': 'firefly-iii/other-pages/contact.md'
@@ -129,9 +130,9 @@ nav:
       - Currencies: firefly-iii/concepts/currencies.md
       - Groups: firefly-iii/concepts/groups.md
       - Tracking cash: firefly-iii/concepts/tracking_cash.md
-      - Search: firefly-iii/concepts/search.md
     - Pages and features:
       - Administration: firefly-iii/pages-and-features/admin.md
+      - Search: firefly-iii/pages-and-features/search.md
     - Advanced installation:
       - Upgrade instructions: firefly-iii/advanced-installation/upgrade.md
       - Configure email: firefly-iii/advanced-installation/email.md
