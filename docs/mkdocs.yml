@@ -40,6 +40,7 @@ plugins:
         'concepts/search.md': 'firefly-iii/pages-and-features/search.md'
         'firefly-iii/concepts/search.md': 'firefly-iii/pages-and-features/search.md'
         'concepts/tracking_cash.md': 'firefly-iii/concepts/tracking_cash.md'
+        'concepts/tags.md': 'firefly-iii/concepts/tags.md'
         'concepts/transactions.md': 'firefly-iii/concepts/transactions.md'
         'contact/contact.md': 'firefly-iii/other-pages/contact.md'
         'errors-and-trouble-shooting/duplicate_transactions.md': 'csv/errors/duplicate_transactions.md'
