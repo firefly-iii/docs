@@ -76,6 +76,13 @@ You can migrate from "You Need a Budget" using the dedicated [YNAB importer](htt
 - [Website](https://github.com/firefly-iii/ynab-importer)
 - [Documentation](../../../other-data-importers)
 
+### UP Bank Australia importer
+
+A tool to import from Made by GitHub user [@Mugl3](https://github.com/Mugl3) that allows you to import from UP Bank Australia using Python.
+
+- [Website](https://github.com/Mugl3/UP_Firefly_API_Connector)
+- [Documentation](https://blog.dupreez.id.au/2021/01/automatically-update-firefly-iii-with-up-banking-transactions/)
+
 
 ## Other ways of importing
 
