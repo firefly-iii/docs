@@ -134,6 +134,7 @@ nav:
     - Pages and features:
       - Administration: firefly-iii/pages-and-features/admin.md
       - Search: firefly-iii/pages-and-features/search.md
+      - Webhooks: firefly-iii/pages-and-features/webhooks.md
     - Advanced installation:
       - Upgrade instructions: firefly-iii/advanced-installation/upgrade.md
       - Configure email: firefly-iii/advanced-installation/email.md
