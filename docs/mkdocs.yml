@@ -53,6 +53,7 @@ plugins:
         'faq/installation.md': 'firefly-iii/faq/installation.md'
         'faq/financials.md': 'firefly-iii/faq/financials.md'
         'faq/self_hosted.md': 'firefly-iii/faq/self_hosted.md'
+        'faq/translate.md': 'firefly-iii/faq/translate.md'
         'help/json.md': 'csv/help/json.md'
         'installation/docker.md': 'firefly-iii/installation/docker.md'
         'installation/k8n.md': 'firefly-iii/installation/k8n.md'

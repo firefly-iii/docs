@@ -30,7 +30,11 @@ If you submit a transaction in multiple currencies (this is possible) Firefly II
 
 ### Sub-categories, sub-budgets, sub-accounts
 
-Firefly III knows many ways to organise your data, but there are no "sub-levels". There are tags to make things very fine-grained.
+Firefly III knows many ways to organise your data, but there are no "sub-levels". Instead, most objects like piggy banks or bills can be divided in "groups" which serve a similar purpose. There are also tags to make things very fine-grained.
+
+### Keep track of outgoing loans
+
+Sometimes you borrow your friends money, and you want to keep track of the loan. It's possible [to track paybacks](../faq/financials.md#what-do-i-do-with-people-who-pay-me-back) in a limited fashion. A full implementation will be included in a future release.
 
 ### Share your administration
 
