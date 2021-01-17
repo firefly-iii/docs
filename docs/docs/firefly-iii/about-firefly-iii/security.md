@@ -10,6 +10,8 @@ When you connect your Firefly III instance to the internet, make sure that the d
 
 ID's used for objects in Firefly III are incremental numbers. Logged in users may infer the existence of objects owned by other users by changing the ID in the address bar and observing 404's. This is not possible for guests.
 
+Up until [Firefly III v4.7.9](https://github.com/firefly-iii/firefly-iii/releases/tag/4.7.9) (December 2018) the database was partially encrypted by Firefly III. Descriptions and other values were encrypted using AES and decrypted transparently. This adds security because if the database is taken, the values are unreadable without the key. This is no longer the caase.
+
 ## Sessions and logins
 
 Sessions are not tied to an IP address. Use 2FA when you can, which is a feature of Firefly III. There is a button on the `/profile` page that allows you to logout other sessions so you can make sure there's a limited number of logged in sessions out there.

@@ -42,26 +42,34 @@ Each webhook comes with a secret when created. The secret is used to generate th
 
 ## Webhook limits
 
-You *must* submit a `https://` URL. HTTP or other protocols are not allowed. The URL + the parameters must be unique.
+You *must* submit a `https://` URL. HTTP or other protocols are not allowed. You must give webhooks a unique title.
 
-It's not possible to send *two* or more responses *at the same time*, for example the transactions AND the accounts. To do this, you must create two separate webhooks (which will have two separate secrets).
+It's not possible to send *two* or more responses *at the same time*, for example the transactions AND the accounts. To do this, you must create two separate webhooks. These will have two separate secrets.
 
 ## Payload
 
-When a webhook delivers its payload you can expect (more or less) the following result. The signature is important and explained up ahead.
+When a webhook delivers its payload you can expect (more or less) the following result. The signature is important and explained later on.
 
 ### Headers
 
+These are the headers Firefly III will include with each submitted webhook. The version will match your Firefly III version. The signature has been shortened for clarity.
+
 ```
 User-Agent = FireflyIII/5.5.0
-Signature = t=1610738765,v1=d62463af1dcdcc7b5a2db6cf6b1e01d985c31685ee75d01a4f40754dbb4cf396
+Signature = t=1610738765,v1=d62463af1dcdcc...
 Accept = application/json
 Content-Type = application/json
 ```
 
 ### Body
 
-The body will be something like this. The result sent to you by Firefly III isn't formatted as nicely. In this example some parts of the actual `content` have been cut away to save space.
+The body will be something like this. 
+
+The UUID is unique for each webhook message. You can use it for debug purposes. The user ID matches the user who created the webhook, and the trigger + response fields tell you why the webhook was fired and what the content of the `content` field is. The webhook message also contains the original URL of the webhook.
+
+The `content` block corresponds to the `response` value. It's either the transaction, an array of accounts or something else entirely. This depends on the configuration of the webhook. 
+
+Note that the result sent to you by Firefly III isn't formatted as nicely. A webhook message from Firefly III isn't indented. Note also that in this example some parts of the actual `content` have been cut away to save space.
 
 ```json
 {
@@ -89,17 +97,16 @@ The body will be something like this. The result sent to you by Firefly III isn'
 }
 ```
 
-The UUID is unique for each webhook message. The webhook message also contains the original URL, what it's responding to and a signature.
 
 ### Signature
 
-This is a signature string:
+This is a typical signature string:
 
 ```
 t=1610738765,v1=d62463af1dcdcc7b5a2db6cf6b1e01d985c31685ee75d01a4f40754dbb4cf396
 ```
 
-The signature comes in two parts, a timestamp (`t`) and a versioned signature hash (`v`). The timestamp is prefixed by `t=`, and each signature is prefixed by a scheme. Schemes start with `v`, followed by an integer. Currently, the only valid live signature scheme is `v1`.
+The signature comes in two parts, a timestamp (`t`) and a versioned signature hash (`v`). The timestamp is prefixed by `t=`. Each signature is prefixed by a scheme. Schemes start with `v`, followed by an integer. Currently, the only valid live signature scheme is `v1`. Therefore, the signature is prefixed by `v1=`.
 
 The signature is generated using the HMAC method. The signed string is created by concatenating:
 
