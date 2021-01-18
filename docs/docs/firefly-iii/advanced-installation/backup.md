@@ -2,7 +2,7 @@
 
 Firefly III does not come with a built-in backup routine. Using your native OS tools is way more useful and faster. 
 
-## Self-hosted backuo
+## Self-hosted backup
 
 Make sure you grab the following and store it somewhere safe:
 
