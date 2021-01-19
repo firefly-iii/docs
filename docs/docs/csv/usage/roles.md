@@ -24,7 +24,7 @@ Select this role to ignore the content of the column.
 
 ### Date
 
-This sets the main date of the transaction.
+This sets the main date of the transaction. This date will be used for sorting transactions. If your CSV file also includes a timestamp *in the same column* you can include it in your date format and it'll be parsed as well.
 
 ### Description
 
@@ -81,7 +81,7 @@ Consists of:
 - Transaction payment date
 - Transaction invoice date
 
-These are meta-dates related to the transaction you can set.
+These are meta-dates related to the transaction you can set. These dates are just for show, and Firefly III doesn't use them at the moment. Some users import these dates to make sure the data isn't lost (ie. the interest date versus the booking date) but there's no feature yet in Firefly III that uses the dates. If you're not sure what to do with these date fields, just ignore them.
 
 ### External ID / Internal reference
 
