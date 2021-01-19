@@ -26,6 +26,10 @@ Select this role to ignore the content of the column.
 
 This sets the main date of the transaction. This date will be used for sorting transactions. If your CSV file also includes a timestamp *in the same column* you can include it in your date format and it'll be parsed as well.
 
+It's important to be consistent about the date you use. Especially when your CSV has several date fields. Some banks add multiple dates. For example, a transaction received on a Saturday won't be processed until Monday, and both dates are added to the CSV file. 
+
+Most people choose the date closest to the actual transaction. So the date on Saturday. Even when your bank statements don't show the transaction until Monday.
+
 ### Description
 
 The description of the transaction.
@@ -82,6 +86,8 @@ Consists of:
 - Transaction invoice date
 
 These are meta-dates related to the transaction you can set. These dates are just for show, and Firefly III doesn't use them at the moment. Some users import these dates to make sure the data isn't lost (ie. the interest date versus the booking date) but there's no feature yet in Firefly III that uses the dates. If you're not sure what to do with these date fields, just ignore them.
+
+Most people use the date that is closest to the actual transaction date as the main date (see earlier in the text about the "date" field). The other dates can be stored pretty much as you wish.
 
 ### External ID / Internal reference
 
