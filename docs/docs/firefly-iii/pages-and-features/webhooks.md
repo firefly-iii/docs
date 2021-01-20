@@ -1,7 +1,7 @@
 # Webhooks
 
 !!! info
-    This feature is available through the API of Firefly III v5.5.0+.
+    This feature is available through the API of Firefly III.
 
 A webhook is a custom callback. Triggered by events in Firefly III a message will be sent to an URL of your choice. 
 
@@ -34,7 +34,7 @@ All webhook responses will be delivered in JSON. This is the only option:
 You can manage webhooks using [the webhook API endpoints](https://api-docs.firefly.org/#/webhooks).
 
 !!! info
-    In Firefly III v5.5.0 this is the only way to manage webhooks. Sorry.
+    This is the only way to manage webhooks at the moment. Sorry.
 
 ## Secret
 

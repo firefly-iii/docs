@@ -119,6 +119,17 @@ Just so you know, the Firefly III rule engine is supposed to be basic. That's th
 * Copy values from one field to another.
 * Regular expressions.
 
+## I lost my password, but resetting doesn't work
+
+There are two reasons why resetting your password may not work.
+
+1. You signed up using a non-extistent email address
+2. You did not configure correct email settings.
+
+You can correct the second situation using [the email settings](/firefly-iii/advanced-installation/email.md).
+
+By configuring Firefly III to save the email message to the log files (`MAIL_MAILER=log`) *and* [by enabling debug mode](/firefly-iii/faq/other.md#how-do-i-enable-debug-mode), any password reset message will be stored to your log files. You can copy/paste the reset link from the email message in the log files.
+
 ## I have a question that is not in the FAQ?
 
 Please send your question [to me by email](mailto:james@firefly-iii.org) or [open a ticket on GitHub](https://github.com/firefly-iii/firefly-iii/issues).

@@ -15,7 +15,7 @@ The options are explained, so it should be easy to understand what they do. Plea
 
 ## Telemetry
 
-Firefly III can collect telemetry. This is opt-in, naturally. Learn more about this feature on the [telemetry page](../support/telemetry).
+Firefly III can collect telemetry. This is opt-in, naturally. Learn more about this feature on the [telemetry page](/firefly-iii/support/telemetry).
 
 ## Transaction links
 

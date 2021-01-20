@@ -32,6 +32,7 @@ plugins:
         'advanced-installation/email.md': 'firefly-iii/advanced-installation/email.md'
         'advanced-installation/locales.md': 'firefly-iii/advanced-installation/locales.md'
         'advanced-installation/upgrade.md': 'firefly-iii/advanced-installation/upgrade.md'
+        'csv/upgrade/upgrade.md': 'csv/upgrade.md'
         'concepts/accounts.md': 'firefly-iii/concepts/accounts.md'
         'concepts/budgets.md': 'firefly-iii/concepts/budgets.md'
         'concepts/categories.md': 'firefly-iii/concepts/categories.md'
@@ -75,6 +76,7 @@ plugins:
         'support/faq.md': 'firefly-iii/support/faq.md'
         'support/features.md': 'firefly-iii/support/features.md'
         'support/telemetry.md': 'firefly-iii/support/telemetry.md'
+        'support/transaction_types.md': 'firefly-iii/support/transaction_types.md'
         'usage/map.md': 'csv/usage/map.md'
   - minify:
       minify_html: true

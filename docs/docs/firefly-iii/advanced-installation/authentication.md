@@ -1,6 +1,6 @@
 # Authentication
 
-As of Firefly III 4.7.8 there are two ways to authenticate users. The settings to change these can be accessed through the `.env`-file in the root directory of your installation, or they can be changed through environment variables (Docker).
+There are two ways to authenticate users. The settings to change these can be accessed through the `.env`-file in the root directory of your installation, or they can be changed through environment variables (Docker).
 
 *If an environment variable itself contains the* `=` *character, you must escape the entire value using quotes:*
 
