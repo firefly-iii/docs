@@ -8,7 +8,7 @@ Open both transactions in different tabs of your browser. Notice how the URL is 
 
 * [https://demo.firefly-iii.org/transactions/show/123](https://demo.firefly-iii.org/transactions/show/123)
 
-Change the work "show" in the URL to "debug":
+Change the word `show` in the URL to `debug`:
 
 * [https://demo.firefly-iii.org/transactions/**debug**/123](https://demo.firefly-iii.org/transactions/debug/123)
 
