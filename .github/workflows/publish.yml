@@ -29,6 +29,6 @@ jobs:
           cd $GITHUB_WORKSPACE/docs
           az storage blob upload-batch \
                             -s ./site \
-                            -d $web \
+                            -d '$web' \
                             --dryrun \
                             --no-progress
