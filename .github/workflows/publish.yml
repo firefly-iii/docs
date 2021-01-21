@@ -29,7 +29,8 @@ jobs:
           AZURE_STORAGE_CONNECTION_STRING: ${{ secrets.connectionString }}
         run: |
           cd $GITHUB_WORKSPACE/docs
-          az storage blob upload-batch
+          az storage blob upload-batch \
+                            -s ./site \
+                            -d fireflyiiidocs \
                             --dryrun \
-                            --no-progress \
-                             --source ./site
+                            --no-progress
