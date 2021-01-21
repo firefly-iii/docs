@@ -14,7 +14,11 @@ jobs:
           cd $GITHUB_WORKSPACE/docs
           ls
           sudo apt install -y python3-pip
-          pip install mkdocs mkdocs-material mkdocs-git-revision-date-plugin mkdocs-redirects mkdocs-minify-plugin
+          sudo rm /usr/bin/python
+          sudo rm /usr/bin/pip
+          sudo ln -s /usr/bin/python3 /usr/bin/python
+          sudo ln -s /usr/bin/pip3 /usr/bin/pip
           python --version
+          pip --version
+          pip install mkdocs mkdocs-material mkdocs-git-revision-date-plugin mkdocs-redirects mkdocs-minify-plugin
           mkdocs --build
-
