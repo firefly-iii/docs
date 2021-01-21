@@ -21,4 +21,4 @@ jobs:
           python --version
           pip --version
           pip install mkdocs mkdocs-material mkdocs-git-revision-date-plugin mkdocs-redirects mkdocs-minify-plugin
-          python -m mkdocs --build
+          python -m mkdocs build --clean
