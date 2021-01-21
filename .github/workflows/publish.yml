@@ -11,5 +11,12 @@ jobs:
       - uses: actions/checkout@v2
       - name: Run a multi-line script
         run: |
-          cd $GITHUB_WORKSPACE
+          cd $GITHUB_WORKSPACE/docs
           ls
+          sudo apt install -y python3-pip
+          sudo ln -s /usr/bin/python3 /usr/bin/python
+          sudo ln -s /usr/bin/pip3 /usr/bin/pip
+          pip install mkdocs mkdocs-material mkdocs-git-revision-date-plugin mkdocs-redirects mkdocs-minify-plugin
+          python --version
+          mkdocs --build
+
