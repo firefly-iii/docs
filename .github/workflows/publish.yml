@@ -31,6 +31,6 @@ jobs:
           cd $GITHUB_WORKSPACE/docs
           az storage blob upload-batch \
                             -s ./site \
-                            -d fireflyiiidocs \
+                            -d / \
                             --dryrun \
                             --no-progress
