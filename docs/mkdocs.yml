@@ -13,7 +13,7 @@ plugins:
       redirect_maps:
         'api/api.md': 'firefly-iii/api.md'
         'about-firefly-iii/demo.md': 'firefly-iii/about-firefly-iii/demo.md'
-        'about-firefly-iii/features.md': 'firefly-iii/about-firefly-iii/features.md'
+        'about-firefly-iii/features.md': 'firefly-iii/about-firefly-iii/introduction.md'
         'about-firefly-iii/introduction.md': 'firefly-iii/about-firefly-iii/introduction.md'
         'about-firefly-iii/personal-finances.md': 'firefly-iii/about-firefly-iii/personal-finances.md'
         'about-firefly-iii/screenshots.md': 'firefly-iii/about-firefly-iii/screenshots.md'
