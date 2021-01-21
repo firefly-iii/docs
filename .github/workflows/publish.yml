@@ -9,7 +9,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - name: Run a multi-line script
+      - name: Install packages
         run: |
           cd $GITHUB_WORKSPACE/docs
           ls
@@ -21,4 +21,16 @@ jobs:
           python --version
           pip --version
           pip install mkdocs mkdocs-material mkdocs-git-revision-date-plugin mkdocs-redirects mkdocs-minify-plugin
+
+      - name: Build documentation
+        run: |
           python -m mkdocs build --clean
+      - name: Upload to Azure Blob Storage
+        run: |
+          echo "Azure storage account = '$(AZURE_STORAGE_ACCOUNT)'" 
+          echo "SAS token             = '$(AZURE_STORAGE_SAS_TOKEN)'" 
+          az storage blob upload-batch --destination fireflyiiidocs \
+                            --dryrun \
+                            --no-progress \
+                             --source ./site \
+                             --auth-mode login \
