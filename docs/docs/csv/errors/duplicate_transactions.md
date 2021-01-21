@@ -14,7 +14,7 @@ Change the word `show` in the URL to `debug`:
 
 If you do this for **both** transactions you will end up with a specific JSON variant of the transaction.
 
-Send it to me or compare it yourself to see the differences between two seemingly equal transactions.
+Send it to me or [compare it yourself](https://jsoncompare.org/) to see the differences between two seemingly equal transactions.
 
 - The `created_at` and `updated_at` fields are not used in the comparison by Firefly III.
 - The `import_hash_v2` and `original_source` are not used in the comparison by Firefly III.
