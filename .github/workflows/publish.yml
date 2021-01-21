@@ -25,13 +25,11 @@ jobs:
           cd $GITHUB_WORKSPACE/docs
           python -m mkdocs build --clean
       - name: Upload to Azure Blob Storage
+        env:
+          AZURE_STORAGE_CONNECTION_STRING: ${{ secrets.connectionString }}
         run: |
           cd $GITHUB_WORKSPACE/docs
-          echo "Azure storage account = '$(AZURE_STORAGE_ACCOUNT)'" 
-          echo "SAS token             = '$(AZURE_STORAGE_SAS_TOKEN)'" 
-          echo "Connection string     = '$(AZURE_STORAGE_CONNECTION_STRING)'"
-          az storage blob upload-batch --destination fireflyiiidocs \
+          az storage blob upload-batch
                             --dryrun \
                             --no-progress \
-                             --source ./site \
-                             --auth-mode login \
+                             --source ./site
