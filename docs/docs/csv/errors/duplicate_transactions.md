@@ -29,9 +29,9 @@ Some common causes of duplicate issues are listed below.
 Some CSV files contain "floating numbers", which are numbers that look like this:
 
 - `12.00000001`
-- `6,95999999`
+- `6.95999999`
 
-These numbers may have slight variations. Firefly III will see the difference and create what seems to be a duplicate transaction. The user interface may not show you the trailing digits.
+These numbers may have slight variations. Firefly III will see the difference and create what seems to be a duplicate transaction. The user interface may not show you the trailing digits leading you finding a duplicate transaction.
 
 ### New opposing accounts
 
