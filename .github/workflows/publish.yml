@@ -29,6 +29,5 @@ jobs:
           cd $GITHUB_WORKSPACE/docs
           az storage blob upload-batch \
                             -s ./site \
-                            -d '$web' \
-                            --dryrun \
+                            -d 'https://fireflyiiidocs.blob.core.windows.net/$web' \
                             --no-progress
