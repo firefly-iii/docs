@@ -1,9 +1,24 @@
 # POST commands
 
-On this page you'll find instructions on how to use the import tool's POST command to import data. This page assumes you're self-hosting the CSV import tool, although these commands also work when using Docker.
+On this page you'll find instructions on how to use the import tool's POST commands to import data. This page assumes you're self-hosting the CSV import tool, although these commands also work when using Docker.
 
 !!! info
-    The POST command only works when you're using a Personal Access Token to authenticate.
+    The POST commands only work when you're using a Personal Access Token to authenticate.
+
+## Uploading files and importing them
+
+You can upload a CSV file and a JSON file to the CSV importer to have it imported into your Firefly III installation automatically. To illustrate how this works, here's a CURL request that works.
+
+The CSV file and the JSON file must both be uploaded, after which the result will be a log of import attempt.
+
+```bash
+curl --location --request POST 'https://your-csv-importer.example.com/autoupload' \
+--header 'Accept: application/json' \
+--header 'Authorization: Bearer ey....' \
+--form 'csv=@"/path/to/csv.csv"' \
+--form 'json=@"/path/to/json.json"'
+```
+
 
 ## Importing a local directory
 
@@ -18,4 +33,3 @@ The CSV importer would then scroll through everything in the `/my/bank/files` di
 !!! warning
     If PHP can read from the directory you point it to, it will try to do so. Although it will search for non-executable pairs of files (ie. CSV and JSON) it will pick up whatever is there. This is a security risk, so make sure nobody else can access your CSV importer.
 
-The command doesn't support uploading files through this command (yet).
