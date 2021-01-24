@@ -55,6 +55,13 @@ The Firefly Bot can create transactions through Telegram.
 - [Credits](https://github.com/vjFaLk)
 - [Website](https://github.com/vjFaLk/firefly-bot)
 
+### iOS Shortcut
+
+iOS Shortcut to create transactions in Firefly III.  
+
+- [Credits](https://github.com/dimarei)
+- [Website](https://github.com/dimarei/firefly-ios-shortcuts)
+
 ## Import tools
 
 All import related tools are listed [on the page on importing data](../importing-data/introduction.md).
