@@ -33,28 +33,6 @@ Some CSV files contain "floating numbers", which are numbers that look like this
 
 These numbers may have slight variations. Firefly III will see the difference and create what seems to be a duplicate transaction. The user interface may not show you the trailing digits leading you finding a duplicate transaction.
 
-### New opposing accounts
-
-This happens when spend money in a place you never visited before, and you import the transaction twice. The first time Firefly III doesn't know about the shop so the import will go:
-
-```json
-{
-    "destination_id": null,
-    "destination_name": "KFC"
-}
-```
-
-The second import of the *same* transaction will look like this:
-
-```json
-{
-    "destination_id": 132,
-    "destination_name": null
-}
-```
-
-This results in a duplicate transaction. Duplication is checked on the user's input, not on the user's output. A solution is in the works.
-
 ## Other issues?
 
 Please open a ticket [on GitHub](https://github.com/firefly-iii/firefly-iii/).
