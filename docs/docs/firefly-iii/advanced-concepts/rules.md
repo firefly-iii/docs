@@ -75,29 +75,29 @@ If your entry is invalid, you can't save the rule.
 
 ##### Semi specific dates
 
-Firefly III 5.3.0 and higher.
-
 I wasn't sure what to call this, but the following date triggers can be set:
 
 - On the 10th day of the month
 - In february
 - In 2019
-- On the 5th of June, any year.
+- On the 5th of June, whatever the year.
 
 You can do this with the format `xxxx-xx-xx` where you change any set of `xx` into your desired outcome. The format is `year-month-day`. Here are some examples:
 
-- `xxxx-xx-10`. Will trigger on the 10th day of any month, any year.
+- `xxxx-xx-10`. Will trigger on the 10th day of any month.
 - `xxxx-04-xx`. Will trigger for any date in April, no matter the year or the day.
 - `2018-xx-xx`. Will trigger for any date in 2018.
 
 You can also make some advanced combinations:
 
-- `2017-xx-03`. Will trigger on the 3rd of any month, but only in 2017.
+- `2017-xx-03`. Will trigger on the 3rd of the month, but only in 2017.
 - `2018-09-xx`. Will trigger on any day in September, 2018.
-- `xxxx-08-07`. Will trigger on August 7th, any year.
+- `xxxx-08-07`. Will trigger on August 7th, whatever the year.
 
 So you could say "Transaction date is before" `xxxx-xx-10` and any transaction before the 10th of the month is triggered.
 
+!!! info
+    These semi specific dates are tricky. The `xx`-values will be filled in by the date of the transaction. If your rule trigger has something like "2018-xx-xx" it will never match transactions from any year except 2018.
 
 ## Actions
 
