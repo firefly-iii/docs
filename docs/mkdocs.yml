@@ -119,6 +119,12 @@ nav:
       - Transaction types: firefly-iii/support/transaction_types.md
       - Telemetry: firefly-iii/support/telemetry.md
       - Error codes: firefly-iii/support/error_codes.md
+    - Pages and features:
+      - Administration: firefly-iii/pages-and-features/admin.md
+      - Command line usage: firefly-iii/pages-and-features/commandline.md
+      - Rules: firefly-iii/pages-and-features/rules.md
+      - Search: firefly-iii/pages-and-features/search.md
+      - Webhooks: firefly-iii/pages-and-features/webhooks.md
     - FAQ:
       - General questions: firefly-iii/faq/general.md
       - Managing your finances: firefly-iii/faq/financials.md
@@ -137,12 +143,6 @@ nav:
       - Currencies: firefly-iii/concepts/currencies.md
       - Groups: firefly-iii/concepts/groups.md
       - Tracking cash: firefly-iii/concepts/tracking_cash.md
-    - Pages and features:
-      - Administration: firefly-iii/pages-and-features/admin.md
-      - Command line usage: firefly-iii/pages-and-features/commandline.md
-      - Rules: firefly-iii/pages-and-features/rules.md
-      - Search: firefly-iii/pages-and-features/search.md
-      - Webhooks: firefly-iii/pages-and-features/webhooks.md
     - Advanced installation:
       - Upgrade instructions: firefly-iii/advanced-installation/upgrade.md
       - Configure email: firefly-iii/advanced-installation/email.md
