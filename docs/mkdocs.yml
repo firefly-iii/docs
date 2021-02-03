@@ -40,8 +40,6 @@ plugins:
         'concepts/currencies.md': 'firefly-iii/concepts/currencies.md'
         'concepts/groups.md': 'firefly-iii/concepts/groups.md'
         'concepts/search.md': 'firefly-iii/pages-and-features/search.md'
-        'firefly-iii/concepts/search.md': 'firefly-iii/pages-and-features/search.md'
-        'firefly-iii/advanced-concepts/rules.md': 'firefly-iii/pages-and-features/rules.md'
         'concepts/tracking_cash.md': 'firefly-iii/concepts/tracking_cash.md'
         'concepts/tags.md': 'firefly-iii/concepts/tags.md'
         'concepts/transactions.md': 'firefly-iii/concepts/transactions.md'
@@ -49,7 +47,6 @@ plugins:
         'errors-and-trouble-shooting/duplicate_transactions.md': 'csv/errors/duplicate_transactions.md'
         'errors-and-trouble-shooting/token_errors.md': 'csv/errors/token_errors.md'
         'exporting-data/export.md': 'firefly-iii/exporting-data.md'
-        'firefly-iii/exporting-data/export.md': 'firefly-iii/exporting-data.md'
         'faq/other.md': 'firefly-iii/faq/other.md'
         'faq/importing.md': 'firefly-iii/faq/importing.md'
         'faq/docker.md': 'firefly-iii/faq/docker.md'
@@ -57,6 +54,10 @@ plugins:
         'faq/financials.md': 'firefly-iii/faq/financials.md'
         'faq/self_hosted.md': 'firefly-iii/faq/self_hosted.md'
         'faq/translate.md': 'firefly-iii/faq/translate.md'
+        'firefly-iii/advanced-concepts/rules.md': 'firefly-iii/pages-and-features/rules.md'
+        'firefly-iii/advanced-concepts/commandline.md': 'firefly-iii/pages-and-features/commandline.md'
+        'firefly-iii/concepts/search.md': 'firefly-iii/pages-and-features/search.md'
+        'firefly-iii/exporting-data/export.md': 'firefly-iii/exporting-data.md'
         'help/json.md': 'csv/help/json.md'
         'installation/docker.md': 'firefly-iii/installation/docker.md'
         'installation/k8n.md': 'firefly-iii/installation/k8n.md'
@@ -138,6 +139,7 @@ nav:
       - Tracking cash: firefly-iii/concepts/tracking_cash.md
     - Pages and features:
       - Administration: firefly-iii/pages-and-features/admin.md
+      - Command line usage: firefly-iii/advanced-concepts/commandline.md
       - Rules: firefly-iii/pages-and-features/rules.md
       - Search: firefly-iii/pages-and-features/search.md
       - Webhooks: firefly-iii/pages-and-features/webhooks.md
@@ -161,7 +163,6 @@ nav:
       - Reports: firefly-iii/advanced-concepts/reports.md
       - Links: firefly-iii/advanced-concepts/links.md
       - Reconciling accounts: firefly-iii/advanced-concepts/reconcile.md
-      - Command line usage: firefly-iii/advanced-concepts/commandline.md
     - API:
       - API: firefly-iii/api.md
     - Other pages:
