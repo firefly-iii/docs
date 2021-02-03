@@ -82,3 +82,13 @@ This way you can use Firefly III to track debts, both incoming and outgoing.
 ## Deleting accounts
 
 If you delete an account, any associated transactions will be removed as well. If you're deleting an asset account and you've transferred money between the current asset account and other asset accounts, you might see changed balances all around. Remember to correct this, if necessary. You can move the transactions to a new account if you wish to preserve them.
+
+## Unique account numbers and IBANs
+
+Firefly III will not let you create multiple accounts with the same IBAN or account number. They have to be unique.
+
+One exception exists for expense accounts and revenue accounts. As you have read, expense and revenue accounts are used as the opposing accounts for your transactions. But you may run into the situation where you have an expense account with the same name as a revenue account. For example, "Government Tax Department" which both *pays* you money and *gives* you money (but probably a lot less often).
+
+Such accounts can share an IBAN or an account number. They don't need to have the same name.
+
+Asset accounts can't use an IBAN or an account number if it's taken by either an expense account a revenue account.
