@@ -139,7 +139,7 @@ nav:
       - Tracking cash: firefly-iii/concepts/tracking_cash.md
     - Pages and features:
       - Administration: firefly-iii/pages-and-features/admin.md
-      - Command line usage: firefly-iii/advanced-concepts/commandline.md
+      - Command line usage: firefly-iii/pages-and-features/commandline.md
       - Rules: firefly-iii/pages-and-features/rules.md
       - Search: firefly-iii/pages-and-features/search.md
       - Webhooks: firefly-iii/pages-and-features/webhooks.md
