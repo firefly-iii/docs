@@ -14,14 +14,8 @@ If you wish to use another database such as SQLite or Postgres, please check out
 
 You need a (MySQL) database and credentials for a user that has permissions on that database. Firefly III creates its own tables. Avoid using the root user.
 
-Several users have created specific guides for their OS and database combination. Please keep in mind that Firefly III may have other system requirements.
+Several users have created specific guides for their OS and database combination.
 
-Firefly III requires **PHP 7.4** so these instructions may not be relevant anymore.
-
-1. [CentOS 7, with nginx and PHP 7.2](https://old.reddit.com/r/FireflyIII/comments/825n4l/centos_7_nginx_installation_guide/)
-2. [Ubuntu Server 16.04LTS with nginx and PHP 7.2](https://old.reddit.com/r/FireflyIII/comments/8thxuu/fireflyiii_on_ubuntu_server_1604lts_nginx_php72/)
-3. [Ubuntu Server 18.04 with nginx and PHP 7.2](https://gist.github.com/philthynz/ec04833a8e39c7f7d1b0d33cb4197a95)
-4. [Ubuntu Server 18.04 with nginx, PHP 7.3 and a Let's Encrypt certificate](https://gist.github.com/optimistic5/ca5a4a8593dcdb7360f712d37a0cc657)
 5. [Raspberry Pi 3, with Docker and Docker compose](https://gist.github.com/josephbadow/588c2ae961231fe338c459127c7d835b)
 6. [Firefly III in FreeBSD (FreeNAS)](https://gist.github.com/Zamana/bdfed1a06ba08467bd3ce92f4715c7fd)
 7. [Firefly III in FreeNAS (alternative)](https://forum.freenas-community.org/t/firefly-iii-personal-finance-manager-in-a-jail/45)
