@@ -175,13 +175,12 @@ nav:
       - Configuration: csv/install/configure.md
       - Docker: csv/install/docker.md
       - Self-hosted: csv/install/self_hosted.md
+      - Upgrading: csv/upgrade.md
       - Public installation: csv/help/public.md
     - Help:
       - The JSON file: csv/help/json.md
       - Pre-made configuration: csv/help/config.md
       - Public installation: csv/help/public.md
-    - Upgrading:
-      - Upgrading: csv/upgrade.md
     - Importing data:
       - Uploading files: csv/usage/upload.md
       - Configuring your import: csv/usage/configure.md
