@@ -13,6 +13,7 @@ plugins:
       redirect_maps:
         'api/api.md': 'firefly-iii/api.md'
         'about-firefly-iii/demo.md': 'firefly-iii/about-firefly-iii/demo.md'
+        'about-firefly-iii/grand-theory.md': 'firefly-iii/about-firefly-iii/personal-finances.md'
         'about-firefly-iii/features.md': 'firefly-iii/about-firefly-iii/introduction.md'
         'about-firefly-iii/introduction.md': 'firefly-iii/about-firefly-iii/introduction.md'
         'about-firefly-iii/personal-finances.md': 'firefly-iii/about-firefly-iii/personal-finances.md'
@@ -26,6 +27,7 @@ plugins:
         'advanced-concepts/recurring.md': 'firefly-iii/advanced-concepts/recurring.md'
         'advanced-concepts/reconcile.md': 'firefly-iii/advanced-concepts/reconcile.md'
         'advanced-concepts/reports.md': 'firefly-iii/advanced-concepts/reports.md'
+        'advanced-installation.md': 'firefly-iii/index.md'
         'advanced-installation/analytics.md': 'firefly-iii/advanced-installation/analytics.md'
         'advanced-installation/authentication.md': 'firefly-iii/advanced-installation/authentication.md'
         'advanced-installation/backup.md': 'firefly-iii/advanced-installation/backup.md'
