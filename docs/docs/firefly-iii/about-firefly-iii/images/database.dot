@@ -1,0 +1,56 @@
+digraph G {
+    graph [fontname = "helvetica",fontsize = 10];
+    node [fontname = "helvetica",fontsize = 10];
+    edge [fontname = "helvetica",fontsize = 10];
+
+    "account"      [shape = box,style=filled,fillcolor="#f9e79f",label = Account];
+    "transaction"  [shape = box,style=filled,fillcolor="#f1948a",label = Transaction];
+    "tj"           [shape = box,style=filled,fillcolor="#ec7063",label = "Transaction Journal"];
+    "tgroup"       [shape = box,style=filled,fillcolor="#c0392b",label = "Transaction Group"];
+    "budget"       [shape = box,style=filled,fillcolor="#a9dfbf",label = "Budget"];
+    "category"     [shape = box,style=filled,fillcolor="#a9dfbf",label = "Category"];
+    "currency"     [shape = box,style=filled,fillcolor="#f5cba7",label = "Currency"];
+    "bill"         [shape = box,style=filled,fillcolor="#a9dfbf",label = "Bill"];
+    "piggy"        [shape = box,style=filled,fillcolor="#f5cba7",label = "Piggy Bank"];
+    "piggy_event"  [shape = box,style=filled,fillcolor="#f5cba7",label = "Piggy Bank Event"];
+    "type"         [shape = box,style=filled,fillcolor="#f9e79f",label = "Transaction Type"];
+    "tag"          [shape = box,style=filled,fillcolor="#a9dfbf",label = "Tag"];
+    "rule_group"   [shape = box,style=filled,fillcolor="#d7bde2",label = "Rule Group"];
+    "rule"         [shape = box,style=filled,fillcolor="#bb8fce",label = "Rule"];
+    "rule_action"  [shape = box,style=filled,fillcolor="#af7ac5",label = "Rule Action"];
+    "rule_trigger" [shape = box,style=filled,fillcolor="#af7ac5",label = "Rule Trigger"];
+
+
+    transaction -> account [arrowhead = none];
+    type -> tj  [arrowhead = none];
+    tj -> transaction [arrowhead = none];
+    tj -> transaction [arrowhead = none];
+    tgroup -> tj [arrowhead = none];
+    budget -> tj [arrowhead = none];
+    category -> tj  [arrowhead = none];
+    bill -> tj [arrowhead = none];
+    currency -> tj [arrowhead = none];
+    currency -> tj [arrowhead = none];
+    currency -> account [arrowhead = none];
+    tag -> tj [arrowhead = none];
+    account -> piggy [arrowhead = none];
+    piggy -> piggy_event [arrowhead = none];
+    tj -> piggy_event [arrowhead = none];
+
+    rule_group -> rule [arrowhead = none];
+    rule -> rule_action [arrowhead = none];
+    rule -> rule_trigger [arrowhead = none];
+
+    // "recurrence"               [shape = box           ,style = filled,fillcolor = white,label = "Recurrence"];
+    // "recurrence_transaction"   [shape = box           ,style = filled,fillcolor = white,label = "Recurring Transaction"];
+    // "recurrence_repetition"    [shape = box           ,style = filled,fillcolor = white,label = "Recurring Repetition"];
+
+    // recurrence -> recurrence_transaction;
+    // recurrence -> recurrence_repetition;
+    // "note"     [shape = box           ,style = filled,fillcolor = white,label = "Note"];
+    // "attachment"     [shape = box           ,style = filled,fillcolor = white,label = "Attachment"];
+    // "location"     [shape = box           ,style = filled,fillcolor = white,label = "Location"];
+
+
+
+}

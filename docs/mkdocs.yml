@@ -107,6 +107,7 @@ nav:
       - Screenshots : firefly-iii/about-firefly-iii/screenshots.md
       - Personal finances: firefly-iii/about-firefly-iii/personal-finances.md
       - Demo website: firefly-iii/about-firefly-iii/demo.md
+      - Architecture: firefly-iii/about-firefly-iii/architecture.md
       - Security: firefly-iii/about-firefly-iii/security.md
     - Installation:
       - Docker: firefly-iii/installation/docker.md
