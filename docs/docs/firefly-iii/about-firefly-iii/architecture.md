@@ -1,6 +1,6 @@
 # Architecture
 
-On this page you'll find the architecture of Firefly III. It's not meant as an explanation of where everything is but rather as a means to show you how everything is structured. If you ever want to develop something here's what you need to know.
+On this page you'll find information about the internal architecture of Firefly III. It's not meant as an explanation of where everything is but rather as a means to show you how everything is structured. If you ever want to develop something these pages should show you where you need be.
 
 !!! info
     This page is under construction. Feedback is welcome!
@@ -9,7 +9,13 @@ On this page you'll find the architecture of Firefly III. It's not meant as an e
 
 ![Basic database structure](images/database.png)
 
-This image shows you a graphical overview of the most important parts of the database. There are many more tables, but these are the important objects you may want to learn about. If you see something in the database you're curious about, please let me know.
+![Webhooks](images/webhooks.png)
+
+![Rules](images/rules.png)
+
+![Recurring transactions](images/recurrence.png)
+
+These images show you a graphical overview of the most important parts of the database. There are many more tables, but these are the important objects you may want to learn about. If you see something in the database you're curious about, please let me know.
 
 ### Transactions
 
@@ -31,6 +37,14 @@ Accounts are linked to transactions and to piggy banks. A transfer (see transact
 ### Rules
 
 Rule groups contain rules. Rules have actions and triggers. Although actions and triggers may reference to budgets, categories and tags and other things, there is no database relationship. It's a type/value kind of a thing in the database.
+
+### Recurring transactions
+
+A recurring transaction has some basic information and an X number of transactions, which means it's possible to make a "split" recurring transaction. It's also possible to create multiple "repetitions", that define when a recurrence fires.
+
+### Webhooks
+
+Webhooks have a related object called the "webhook message" that contains the content of that particular moment the webhook fired (and if it succeeded).
 
 ## Code
 

@@ -1,0 +1,14 @@
+digraph G {
+    graph [fontname = "helvetica",fontsize = 10];
+    node [fontname = "helvetica",fontsize = 10];
+    edge [fontname = "helvetica",fontsize = 10];
+
+    // dot -Tpng recurrence.dot -o recurrence.png
+    "recurrence"   [shape = box,style=filled,fillcolor="#52be80",label = "Recurring transaction"];
+    "repetition"   [shape = box,style=filled,fillcolor="#7dcea0",label = "Repetition configuration"];
+    "transaction"  [shape = box,style=filled,fillcolor="#7dcea0",label = "Transaction configuration"];
+
+    // link rules
+    recurrence -> repetition [arrowhead = none];
+    recurrence -> transaction [arrowhead = none];
+}

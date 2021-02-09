@@ -5,43 +5,89 @@ digraph G {
 
     // dot -Tpng database.dot -o database.png
 
-    "account"      [shape = box,style=filled,fillcolor="#f9e79f",label = Account];
-    "transaction"  [shape = box,style=filled,fillcolor="#f1948a",label = Transaction];
+    "type"         [shape = box,style=filled,fillcolor="#f9e79f",label = "Transaction Type"];
+    "src_account"      [shape = box,style=filled,fillcolor="#fadbd8",label = "Source Account\n(Account)"];
+    "dst_account"      [shape = box,style=filled,fillcolor="#fadbd8",label = "Destination Account\n(Account)"];
+    "account_type"     [shape = box,style=filled,fillcolor="#f9e79f",label = "Account Type"];
+    "src_transaction"  [shape = box,style=filled,fillcolor="#f1948a",label = "Source Transaction\n(Transaction)"];
+    "dst_transaction"  [shape = box,style=filled,fillcolor="#f1948a",label = "Destination Transaction\n(Transaction)"];
+
     "tj"           [shape = box,style=filled,fillcolor="#ec7063",label = "Transaction Journal"];
     "tgroup"       [shape = box,style=filled,fillcolor="#c0392b",label = "Transaction Group"];
     "budget"       [shape = box,style=filled,fillcolor="#a9dfbf",label = "Budget"];
     "category"     [shape = box,style=filled,fillcolor="#a9dfbf",label = "Category"];
-    "currency"     [shape = box,style=filled,fillcolor="#f5cba7",label = "Currency"];
+    "currency"     [shape = box,style=filled,fillcolor="#f9e79f",label = "Currency"];
     "bill"         [shape = box,style=filled,fillcolor="#a9dfbf",label = "Bill"];
-    "piggy"        [shape = box,style=filled,fillcolor="#f5cba7",label = "Piggy Bank"];
+    "piggy"        [shape = box,style=filled,fillcolor="#a9dfbf",label = "Piggy Bank"];
     "piggy_event"  [shape = box,style=filled,fillcolor="#f5cba7",label = "Piggy Bank Event"];
-    "type"         [shape = box,style=filled,fillcolor="#f9e79f",label = "Transaction Type"];
     "tag"          [shape = box,style=filled,fillcolor="#a9dfbf",label = "Tag"];
-    "rule_group"   [shape = box,style=filled,fillcolor="#d7bde2",label = "Rule Group"];
-    "rule"         [shape = box,style=filled,fillcolor="#bb8fce",label = "Rule"];
-    "rule_action"  [shape = box,style=filled,fillcolor="#af7ac5",label = "Rule Action"];
-    "rule_trigger" [shape = box,style=filled,fillcolor="#af7ac5",label = "Rule Trigger"];
 
+    "budget_limit"       [shape = box,style=filled,fillcolor="#d5f5e3",label = "Budget Limit"];
+    "auto_budget"       [shape = box,style=filled,fillcolor="#d5f5e3",label = "Auto Budget"];
 
-    transaction -> account [arrowhead = none];
-    type -> tj  [arrowhead = none];
-    tj -> transaction [arrowhead = none];
-    tj -> transaction [arrowhead = none];
+    // group to account
     tgroup -> tj [arrowhead = none];
-    budget -> tj [arrowhead = none];
-    category -> tj  [arrowhead = none];
-    bill -> tj [arrowhead = none];
-    currency -> tj [arrowhead = none];
-    currency -> tj [arrowhead = none];
-    currency -> account [arrowhead = none];
-    tag -> tj [arrowhead = none];
-    account -> piggy [arrowhead = none];
+    tj -> src_transaction [arrowhead = none];
+    tj -> dst_transaction [arrowhead = none];
+    src_transaction -> src_account [arrowhead = none];
+    dst_transaction -> dst_account [arrowhead = none];
+
+    // link transaction journal to transaction type
+    tj -> type [arrowhead = none];
+
+    // link destination account to account type
+    dst_account -> account_type [arrowhead = none];
+
+    // meta data voor journal:
+    tj -> budget [arrowhead = none];
+    tj -> category [arrowhead = none];
+    tj -> bill [arrowhead = none];
+    tj -> tag [arrowhead = none];
+
+    // journal and account have a currency
+    src_account -> currency [arrowhead = none];
+    tj -> currency [arrowhead = none];
+
+    // link piggy to event
+    piggy -> src_account [arrowhead = none];
     piggy -> piggy_event [arrowhead = none];
+
+    // link piggy to journal
     tj -> piggy_event [arrowhead = none];
 
-    rule_group -> rule [arrowhead = none];
-    rule -> rule_action [arrowhead = none];
-    rule -> rule_trigger [arrowhead = none];
+    // link budget limit and auto budget
+    budget -> budget_limit [arrowhead = none];
+    budget -> auto_budget [arrowhead = none];
+
+    {rank = same; tj; type; budget; category; bill; tag}
+    {rank = same; dst_account; account_type;}
+
+
+    //
+    //
+    //type -> tj  [arrowhead = none];
+    
+    // budget -> tj [arrowhead = none];
+    // category -> tj  [arrowhead = none];
+    // bill -> tj [arrowhead = none];
+    // currency -> tj [arrowhead = none];
+    // currency -> tj [arrowhead = none];
+    // currency -> account [arrowhead = none];
+    // tag -> tj [arrowhead = none];
+    // account -> piggy [arrowhead = none];
+    // account_type -> account [arrowhead = none];
+    // piggy -> piggy_event [arrowhead = none];
+    // tj -> piggy_event [arrowhead = none];
+
+    // rule_group -> rule [arrowhead = none];
+    // rule -> rule_action [arrowhead = none];
+    // rule -> rule_trigger [arrowhead = none];
+
+    // src_account -> account;
+    // dst_account -> account;
+
+    // src_transaction -> transaction;
+    // dst_transaction -> transaction;
 
     // "recurrence"               [shape = box           ,style = filled,fillcolor = white,label = "Recurrence"];
     // "recurrence_transaction"   [shape = box           ,style = filled,fillcolor = white,label = "Recurring Transaction"];

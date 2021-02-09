@@ -1,0 +1,12 @@
+digraph G {
+    graph [fontname = "helvetica",fontsize = 10];
+    node [fontname = "helvetica",fontsize = 10];
+    edge [fontname = "helvetica",fontsize = 10];
+
+    // dot -Tpng webhooks.dot -o webhooks.png
+    "webhook"      [shape = box,style=filled,fillcolor="#eb984e",label = "Webhook"];
+    "message"      [shape = box,style=filled,fillcolor="#f5b041",label = "Webhook Message"];
+
+    // group to account
+    webhook -> message [arrowhead = none];
+}

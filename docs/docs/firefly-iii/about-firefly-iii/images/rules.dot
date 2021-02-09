@@ -1,0 +1,16 @@
+digraph G {
+    graph [fontname = "helvetica",fontsize = 10];
+    node [fontname = "helvetica",fontsize = 10];
+    edge [fontname = "helvetica",fontsize = 10];
+
+    // dot -Tpng rules.dot -o rules.png
+    "rule_group"   [shape = box,style=filled,fillcolor="#d7bde2",label = "Rule Group"];
+    "rule"         [shape = box,style=filled,fillcolor="#bb8fce",label = "Rule"];
+    "rule_action"  [shape = box,style=filled,fillcolor="#af7ac5",label = "Rule Action"];
+    "rule_trigger" [shape = box,style=filled,fillcolor="#af7ac5",label = "Rule Trigger"];
+
+    // link rules
+    rule_group -> rule [arrowhead = none];
+    rule -> rule_action [arrowhead = none];
+    rule -> rule_trigger [arrowhead = none];
+}
