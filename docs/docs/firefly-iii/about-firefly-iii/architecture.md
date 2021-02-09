@@ -58,7 +58,7 @@ There is an `OperatorQuerySearch` class stored in `app/Support/Search` that conv
 
 ### Rules
 
-Stored in the folder `app/TransactionRules/Engine` is the rule engine. It works just like the search does. It uses the rule triggers to build a search query. The transactions that are found are then handled by the actions in the `Actions` folder. The engine ties this all together.
+Stored in the folder `app/TransactionRules/Engine` is the rule engine. It works just like the search does. It uses the rule triggers to build a search query. The query is executed by the transaction collector. The transactions that are found are then handled by the actions in the `Actions` folder. The engine ties all of this together.
 
 ### Events
 
@@ -66,19 +66,23 @@ Some events in Firefly III trigger more code. File `app/Providers/EventServicePr
 
 ### Factory
 
-TODO
+Most objects in Firefly III are complicated things. Just look at the structure of a transaction. In a worst-case scenario a new split withdrawal results in 13 new objects. The various factories in `app/Factory` handle this. If you start with the `TransactionGroupFactory` you can go down the rabbit hole of transaction creation in Firefly III.
 
 ### Generators
 
-TODO
-
-### Handlers
-
-TODO
+- The Chart generators in `app/Generator` render specific arrays into chart.js compatible arrays (which in turn, are returned to the user as JSON).
+- The Report generators in `app/Generator` are kind of deprecated. They used to generate one huge array with the report in it that the user requested. This got pretty slow pretty fast, so now the generators only do the basic stuff. Each box on your favorite report is requested using AJAX / JSON from a dedicated controller in `app/Http/Controllers/Report`. This feels a lot snappier.
+- The Webhook generator is a small piece of code that generates the actual message used in webhooks.
 
 ### Helpers
 
-TODO
+The `app/Helpers` contains some generic code used for reports, the help, and updates. It's a place for all of those things I couldn't think of a better place for. The Collector is kind of special.
+
+### Transaction collector
+
+There are two schools of thought when it comes to transaction collection. Each page, each view and each report has its own set of transactions it wants to show *and* a specific set of meta-data it needs. In earlier times each controller would have its own code to grab transactions from the database. This is very hard to maintain, although it makes each query very efficient.
+
+Sacrificing efficiency, the transaction collector is a huge class that you can tell to collect transactions. You can give it date ranges, transaction types, which accounts should be involved, etc. Check out `app/Helpers/Collector/GroupCollectorInterface.php`. This is less effective than writing dedicated queries but it does save a lot of code.
 
 ### Jobs
 
