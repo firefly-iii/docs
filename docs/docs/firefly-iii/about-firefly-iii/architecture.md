@@ -76,7 +76,7 @@ Most objects in Firefly III are complicated things. Just look at the structure o
 
 ### Helpers
 
-The `app/Helpers` contains some generic code used for reports, the help, and updates. It's a place for all of those things I couldn't think of a better place for. The Collector is kind of special.
+The `app/Helpers` contains some generic code used for reports, the help, and updates. It's a place for all of those things I couldn't think of a better place for. The transaction collector is kind of special and is detailed in the next section.
 
 ### Transaction collector
 
@@ -86,30 +86,30 @@ Sacrificing efficiency, the transaction collector is a huge class that you can t
 
 ### Jobs
 
-TODO
+Some of the work that Firefly III needs to do is complex or time consuming, so it's packed in a job. In `app/Jobs` you'll find some of the things either triggered by cron jobs or by other things.
 
 ### Repositories
 
-TODO
+The repository design pattern basically says that you don't query your models directly but ask a repository to list or create what you need, and then the repository takes care of it. It's a weird pattern because usually you have this repository interface and just a single implementation making the interface kind of overhead. But I like the idea.
+
+These repositories do a lot of the heavy lifting when it comes to specific models and their demands from various parts of the code (search for, list, summarize). The "store"- and "update"-methods that these repositories contain are mostly taken over by factories.
 
 ### Validation rules
 
-TODO
+Validation rules are stored in `app/Rules` and `app/Validation`. It's one thing to validate if a number is larger than zero. But some of the validation rules for transactions used by Firefly III are pretty complex, because there's a lot of context.
 
 ### Services
 
-TODO
+The idea of `app/Services` was that any external service would have its code and interfaces in this folder. This applies to the update checker, the webhooks and the password verifier. However, there's also a few "internal" services. Creating a transaction or account from beginning to end is complex so these services tie it all together.
 
 ### Support classes
 
-### Transaction Collector
-
-TODO
+Is a bunch of support code for all kinds of functions and things in Firefly III. Just like the `app/Helpers` folder it seems to collect all kinds of code snippets that have nowhere else to go.
 
 ### Frontend
 
-TODO
+The `/frontend` folder contains the code of the new Vue frontend. Check out `src` for all the details. It's a Vue based frontend with separate pages. In the future, I hope to create an SPA, but for now it's separate pages, supported by views from `resources/views/v2`.
 
 ### Translations
 
-TODO
+All languages are stored in `resources/lang`. The main directory is `en_US`. If you want to support the translations, check out [Crowdin](https://crowdin.com/project/firefly-iii).
