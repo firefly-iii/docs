@@ -3,6 +3,8 @@ digraph G {
     node [fontname = "helvetica",fontsize = 10];
     edge [fontname = "helvetica",fontsize = 10];
 
+    // dot -Tpng database.dot -o database.png
+
     "account"      [shape = box,style=filled,fillcolor="#f9e79f",label = Account];
     "transaction"  [shape = box,style=filled,fillcolor="#f1948a",label = Transaction];
     "tj"           [shape = box,style=filled,fillcolor="#ec7063",label = "Transaction Journal"];
