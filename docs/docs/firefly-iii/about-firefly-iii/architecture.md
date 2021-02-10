@@ -125,20 +125,20 @@ Most objects in Firefly III are complicated things. Just look at the structure o
 
 ### Webhooks
 
-When selected events happen (currently: when a transaction is stored or updated) Firefly III creates a new `StandardMessageGenerator` that will generate a new webhook message for every active webhook that is applicable to the current event.
+When selected events happen (currently: when a transaction is stored or updated) Firefly III creates a new [`StandardMessageGenerator`](https://github.com/firefly-iii/firefly-iii/blob/main/app/Generator/Webhook/StandardMessageGenerator.php) that will generate a new webhook message for every active webhook that is applicable to the current event.
 
-After the generator generated the messages another trigger is fired that will send the messages. The `WebhookEventHandler` will select a maximum of 3 webhook messages that haven't failed too often. This means that message generation, message selection, and message sending are three separate processes.
+After the generator generates the messages another trigger is fired that will send the messages. The [`WebhookEventHandler`](https://github.com/firefly-iii/firefly-iii/blob/main/app/Handlers/Events/WebhookEventHandler.php) will select a maximum of 3 webhook messages that haven't failed too often. This means that message generation, message selection, and message sending are three separate processes.
 
-So actually sending a webhook message is another separate job (see `SendWebhookMessage`) which means that it can be done asynchronously. The `StandardWebhookSender` will use the `Sha3SignatureGenerator` to sign the message and send it (using Guzzle).
+So actually sending a webhook message is another separate job (see [`SendWebhookMessage`](https://github.com/firefly-iii/firefly-iii/blob/main/app/Jobs/SendWebhookMessage.php)) which means that it can be done asynchronously. The [`StandardWebhookSender`](https://github.com/firefly-iii/firefly-iii/blob/main/app/Services/Webhook/StandardWebhookSender.php) will use the [`Sha3SignatureGenerator`](https://github.com/firefly-iii/firefly-iii/blob/main/app/Helpers/Webhook/Sha3SignatureGenerator.php) to sign the message and send it (using Guzzle).
 
 The result is stored in the original webhook message in the database.
 
 ### Repositories
 
-The repository design pattern basically says that you don't query your models directly but ask a repository to list or create what you need, and then the repository takes care of it. It's a weird pattern because usually you have this repository interface and just a single implementation making the interface kind of overhead. But I like the idea.
+The [repository](https://github.com/firefly-iii/firefly-iii/tree/main/app/Repositories) design pattern basically says that you don't query your models directly but ask a repository to list or create what you need, and then the repository takes care of it. It's a weird pattern because usually you have this repository interface and just a single implementation making the interface kind of overhead. But I like the idea.
 
 These repositories do a lot of the heavy lifting when it comes to specific models and their demands from various parts of the code (search for, list, summarize). The "store"- and "update"-methods that these repositories contain are mostly taken over by factories.
 
 ### Frontend
 
-The `/frontend` folder contains the code of the new Vue frontend. Check out `src` for all the details. It's a Vue based frontend with separate pages. In the future, I hope to create an SPA, but for now it's separate pages, supported by views from `resources/views/v2`.
+The [`/frontend`](https://github.com/firefly-iii/firefly-iii/tree/main/frontend) folder contains the code of the new Vue frontend. Check out `src` for all the details. It's a Vue based frontend with separate pages. In the future, I hope to create an SPA, but for now it's separate pages, supported by views from [`resources/views/v2`](https://github.com/firefly-iii/firefly-iii/tree/main/app/resources/views/v2).
