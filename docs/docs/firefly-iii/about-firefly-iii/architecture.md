@@ -127,7 +127,13 @@ Most objects in Firefly III are complicated things. Just look at the structure o
 
 ### Webhooks
 
-TODO
+When selected events happen (currently: when a transaction is stored or updated) Firefly III creates a new `StandardMessageGenerator` that will generate a new webhook message for every active webhook that is applicable to the current event.
+
+After the generator generated the messages another trigger is fired that will send the messages. The `WebhookEventHandler` will select a maximum of 3 webhook messages that haven't failed too often. This means that message generation, message selection, and message sending are three separate processes.
+
+So actually sending a webhook message is another separate job (see `SendWebhookMessage`) which means that it can be done asynchronously. The `StandardWebhookSender` will use the `Sha3SignatureGenerator` to sign the message and send it (using Guzzle).
+
+The result is stored in the original webhook message in the database.
 
 ### Repositories
 
