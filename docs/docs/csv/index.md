@@ -12,7 +12,7 @@ The CSV importer can be used to import CSV files into Firefly III. You can use [
 
 ## What can't it do for me?
 
-The CSV importer can't connect to your bank or download files for you. You have to supply the files yourself.
+The CSV importer can't connect to your bank or download files for you. You have to supply the files yourself. You may need to tinker a bit to get Firefly III to recognize your CSV files properly.
 
 ## How can I use it?
 

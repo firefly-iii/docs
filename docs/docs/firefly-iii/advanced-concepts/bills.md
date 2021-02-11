@@ -1,7 +1,5 @@
 You can keep an eye on your expected recurring expenses by creating bills. Things like rent and utilities must be paid every month and Firefly III can keep track of such things.
 
-If you want to read more about bills, check out the [official documentation on bills](https://docs.firefly-iii.org/advanced-concepts/bills).
-
 When you create a bill, you tell Firefly III in what range you expect the bill to be. You also input the title of the bill, and how often the bill is expected to be paid.
 
 * The name is descriptive only and is not used internally.

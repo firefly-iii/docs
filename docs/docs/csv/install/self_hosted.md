@@ -41,7 +41,7 @@ composer -v
 
 If you have no sudo rights, you can simply [download composer](https://getcomposer.org/download/). Use `php composer.phar` instead of `composer` in the instructions ahead.
 
-This concludes the server preparations. If you're having trouble with (parts of) this step, please check out [the FAQ](https://csv-docs.firefly-iii.org/errors-and-trouble-shooting/freq_questions) or open an issue [on GitHub](https://github.com/firefly-iii/firefly-iii).
+This concludes the server preparations. If you're having trouble with (parts of) this step, please check out [the FAQ](../errors/freq_questions.md) or open an issue [on GitHub](https://github.com/firefly-iii/firefly-iii).
 
 ## Installing Firefly III CSV importer
 

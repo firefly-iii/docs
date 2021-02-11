@@ -71,7 +71,7 @@ When enabled Firefly III version **5.4.0** can collect and submit the following 
 ---
 
 
-The [cron job](https://docs.firefly-iii.org/advanced-installation/cron), if set up correctly, will submit these entries to [telemetry.firefly-iii.org](https://telemetry.firefly-iii.org) every week. This will only happen when telemetry is enabled.
+The [cron job](../advanced-installation/cron.md), if set up correctly, will submit these entries to [telemetry.firefly-iii.org](https://telemetry.firefly-iii.org) every week. This will only happen when telemetry is enabled.
 
 Both the collection and the submission of telemetry data is disabled until you enable it. In other words, if you do nothing, Firefly III will collect nothing and send nothing.
 

@@ -1,6 +1,6 @@
 # Configure installation
 
-The CSV importer communicates with Firefly III over the [API](https://docs.firefly-iii.org/api/api). You can supply the CSV importer with a few pieces of information to make it easy to connect to your Firefly III.
+The CSV importer communicates with Firefly III over the [API](../../firefly-iii/api.md). You can supply the CSV importer with a few pieces of information to make it easy to connect to your Firefly III.
 
 None of the following is mandatory, it will work if you don't do this beforehand.
 

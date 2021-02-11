@@ -2,7 +2,7 @@
 
 There are a few ways to use the CSV importer and Docker. There are some *gotchas* when it comes to Docker and IP addresses, so please check out the instructions at the bottom of the page.
 
-The CSV import uses the Firefly III API. Read more about the API in [the Firefly III documentation](https://docs.firefly-iii.org/api/api).
+The CSV import uses the Firefly III API. Read more about the API in [the Firefly III documentation](../../firefly-iii/api.md).
 
 !!! warning
     You should really read the [configuration page](configure.md) first! 
