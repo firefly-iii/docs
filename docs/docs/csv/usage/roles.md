@@ -6,7 +6,7 @@ Once you've configured the CSV file, you have to tell the Firefly III CSV import
 
 ## Column and example data
 
-You can see what kind of data Firefly III has found in your CSV file for each column.
+You can see what kind of data the CSV importer has found in your CSV file for each column.
 
 ## Map data?
 
