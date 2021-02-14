@@ -4,6 +4,10 @@ Please open a ticket [on GitHub](https://github.com/firefly-iii/firefly-iii/) if
 
 ## I get page load errors because the protocols don't match
 
+* "It only loads over http and not https!"
+* "Why doesn't the CSV importer support HTTPS?"
+* "How can I rewrite URLs to https?"
+
 You may see something like "The page at X was loaded over https, but requested insecure script X". This happens when your reverse proxy isn't configured correctly. For nginx, make sure you do something like this:
 
 ```
