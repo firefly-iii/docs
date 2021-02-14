@@ -10,8 +10,14 @@ For example, on your savings account on which you have € 500,- saved. You want
 
 To do so, use the button to create a new piggy bank. Fill in the details and select the correct asset account. The overview will then show you how your savings are divided over your three piggy banks.
 
-Screenshots
------------
+## Concept
+
+The idea is that you create a piggy bank for the money on your savings account. The money in your savings account can be added and removed to piggy banks freely. You can also transfer money in and out of your savings account and select a piggy bank to be associated with the transfer. The money will be added to (or removed from) the piggy bank as part of the transfer.
+
+You can't create a withdrawal or a deposit and refer to a piggy bank. It only works for transfers. It won't work in rules either, just for transfers.
+
+## Screenshots
+
 
 ![The three piggy banks from the example are listed in Firefly III as you can see here.](images/piggies-overview.png)
 

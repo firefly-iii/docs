@@ -111,6 +111,8 @@ Combined, this gives you a lot of power over your financial data.
 
 You cannot fire other rules from a rule.
 
+You can refer to a piggy bank from a rule action, so the transaction's amount will be added to (or removed from) the piggy bank. This will only work when the transaction is a transfer.
+
 ### Special actions
 
 #### Delete transaction
