@@ -24,12 +24,13 @@ Firefly Personal Finance is an android app created by @mconway that connects to 
 - [Website and documentation](https://github.com/mconway/firefly-app/)
 - [Google Play Store](https://play.google.com/store/apps/details?id=com.zerobyte.firefly)
 
-### Firefly III (Android)
+### Photuris III
 
-Firefly III (Android) is an android app created by @emansih that connects to your Firefly III installation.
+Photuris III is an android app created by @emansih that connects to your Firefly III installation.
 
 - [Credits](https://github.com/emansih)
 - [Website and documentation](https://github.com/emansih/FireflyMobile)
+- [Google Play Store](https://play.google.com/store/apps/details?id=xyz.hisname.fireflyiii)
 - [F-Droid store](https://f-droid.org/packages/xyz.hisname.fireflyiii/)
 
 ## Bots and tools
