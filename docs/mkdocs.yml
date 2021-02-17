@@ -34,7 +34,7 @@ plugins:
         'advanced-installation/cron.md': 'firefly-iii/advanced-installation/cron.md'
         'advanced-installation/email.md': 'firefly-iii/advanced-installation/email.md'
         'advanced-installation/locales.md': 'firefly-iii/advanced-installation/locales.md'
-        'advanced-installation/upgrade.md': 'firefly-iii/advanced-installation/upgrade.md'
+        'advanced-installation/upgrade.md': 'firefly-iii/installation/upgrade.md'
         'csv/upgrade/upgrade.md': 'csv/upgrade.md'
         'concepts/accounts.md': 'firefly-iii/concepts/accounts.md'
         'concepts/budgets.md': 'firefly-iii/concepts/budgets.md'
@@ -58,6 +58,7 @@ plugins:
         'faq/translate.md': 'firefly-iii/faq/translate.md'
         'firefly-iii/advanced-concepts/rules.md': 'firefly-iii/pages-and-features/rules.md'
         'firefly-iii/advanced-concepts/commandline.md': 'firefly-iii/pages-and-features/commandline.md'
+        'firefly-iii/advanced-installation/upgrade.md': 'firefly-iii/installation/upgrade.md'
         'firefly-iii/concepts/search.md': 'firefly-iii/pages-and-features/search.md'
         'firefly-iii/exporting-data/export.md': 'firefly-iii/exporting-data.md'
         'help/json.md': 'csv/help/json.md'
@@ -114,6 +115,7 @@ nav:
       - Kubernetes: firefly-iii/installation/k8n.md
       - Self-hosted server: firefly-iii/installation/self_hosted.md
       - Hosted by 3rd parties: firefly-iii/installation/third_parties.md
+      - Upgrade instructions: firefly-iii/installation/upgrade.md
     - Support:
       - Feature requests and roadmap: firefly-iii/support/features.md
       - Reporting bugs: firefly-iii/support/bugs.md
@@ -147,7 +149,6 @@ nav:
       - Groups: firefly-iii/concepts/groups.md
       - Tracking cash: firefly-iii/concepts/tracking_cash.md
     - Advanced installation:
-      - Upgrade instructions: firefly-iii/advanced-installation/upgrade.md
       - Configure email: firefly-iii/advanced-installation/email.md
       - Authentication: firefly-iii/advanced-installation/authentication.md
       - Analytics: firefly-iii/advanced-installation/analytics.md
