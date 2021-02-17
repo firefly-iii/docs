@@ -1,6 +1,6 @@
 # Kubernetes
 
-In the repository [on GitHub](https://github.com/firefly-iii/kubernetes)) you will find three YAML files that denote a pretty standard service offering for both Firefly III and an accompanying MySQL database.
+In the repository [on GitHub](https://github.com/firefly-iii/kubernetes) you will find three YAML files that denote a pretty standard service offering for both Firefly III and an accompanying MySQL database.
 
 ## Download and configuration
 
