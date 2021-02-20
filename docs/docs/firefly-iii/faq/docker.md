@@ -21,3 +21,19 @@ Some or all pages of your Firefly III show you an error that complains about not
 Make sure all your Docker commands run as `www-data`, also in cron jobs:
 
 * `docker exec [container] --user www-data /usr/local/bin/php /var/www/html/artisan firefly-iii:cron`
+
+## How do I debug a cron job on Docker?
+
+First, enable [debug mode](other.md#how-do-i-enable-debug-mode). The next step is to open a new terminal window, and tail the logs from your Firefly III docker container:
+
+```bash
+docker logs -f CONTAINERID
+```
+
+Fire the cron job again from another terminal window, with the following command. Please note that the exact Docker command may be different for your Docker container.
+
+```bash
+docker exec --user www-data CONTAINERID /usr/local/bin/php /var/www/html/artisan firefly-iii:cron --date=2021-02-01
+```
+
+In the command you see a date. Change it to be the first day of the *current* month in the format `YYYY-MM-DD`.
