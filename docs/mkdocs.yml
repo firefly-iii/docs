@@ -193,6 +193,7 @@ nav:
       - Importing over command line: csv/usage/command_line.md
       - Importing using POST: csv/usage/post.md
       - Emailing results: csv/usage/email.md
+      - Importing transfers: csv/usage/importing_transfers.md
     - Errors and trouble shooting:
       - Duplicate transactions: csv/errors/duplicate_transactions.md
       - Personal Access Token errors: csv/errors/token_errors.md
