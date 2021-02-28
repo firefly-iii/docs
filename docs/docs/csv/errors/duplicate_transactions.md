@@ -33,6 +33,10 @@ Some CSV files contain "floating numbers", which are numbers that look like this
 
 These numbers may have slight variations. Firefly III will see the difference and create what seems to be a duplicate transaction. The user interface may not show you the trailing digits leading you finding a duplicate transaction.
 
+### Different internal or external ID's
+
+Hidden deep in the JSON comparisons you may find a field called `external_id` or `internal_reference`. These fields will sometimes be different. Spectre is known to change these up every now and then just for the heck of it. 
+
 ## Other issues?
 
 Please open a ticket [on GitHub](https://github.com/firefly-iii/firefly-iii/).
