@@ -22,13 +22,13 @@ You must make sure to verify `/usr/bin/php` with *your* path to PHP and replace 
 
 If you do this, Firefly III will generate the recurring transactions each night at 3AM. 
 
-## Cron job that trigger future recurring transactions
+## Cron job that triggers future recurring transactions
 
-In order to trigger future recurring transactions, you can call the cron job with : `--force --date=YYYY-MM-DD`.
+In order to trigger future recurring transactions, you can call the cron job with `--force --date=YYYY-MM-DD`.
 
 Here is an example of a cron job that is triggered every first day of the month at 3am and generates the recurring transactions of the tenth day.
-```   
-# cron job for Firefly III that changes the target date.
+```
+# cronjob for Firefly III that changes the target date.
 0 3 1 * * /usr/bin/php /var/www/html/artisan firefly-iii:cron --force --date=$(date "+\%Y-\%m-")10
 ```
 
