@@ -2,8 +2,7 @@
 
 Firefly III supports several feature that requires you to run a cron job:
 
-1. [Recurring transactions](../advanced-concepts/recurring.md). Firefly III can automatically create transactions for you.  
-  If Firefly III is to actually create these recurring transactions for you, someone or something must verify every single day if a new transaction is due to be created.
+1. [Recurring transactions](../advanced-concepts/recurring.md). Firefly III can automatically create transactions for you. If Firefly III is to actually create these recurring transactions for you, someone or something must verify every single day if a new transaction is due to be created.
 2. [Automatic budgeting](../concepts/budgets.md). Firefly III can automatically set your budgets for you.
 3. [Telemetry](../support/telemetry.md). When enabled (telemetry is **opt-in**), Firefly III will submit its telemetry data.
 
@@ -20,7 +19,7 @@ The content of the cron job must be as follows:
 
 You must make sure to verify `/usr/bin/php` with *your* path to PHP and replace `/var/www/html/` with the path to *your* Firefly III installation.
 
-If you do this, Firefly III will generate the recurring transactions each night at 3AM. 
+If you do this, Firefly III will generate the recurring transactions each night at 3AM.
 
 ## Cron job that triggers future recurring transactions
 
@@ -32,18 +31,20 @@ Here is an example of a cron job that is triggered every first day of the month 
 0 3 1 * * /usr/bin/php /var/www/html/artisan firefly-iii:cron --force --date=$(date "+\%Y-\%m-")10
 ```
 
+If you do this, Firefly III will generate the recurring transactions each night at 3AM.
+
 ## Cron job that requests a page
 
-If for some reason you can't call scripts like this you can also use a tool called cURL which is available on most (if not all) linux systems. 
+If for some reason you can't call scripts like this you can also use a tool called cURL which is available on most (if not all) linux systems.
 
 The content of the cron job must be as follows:
 
 ```
 # cron job for Firefly III using cURL
-0 3 * * * curl https://demo.firefly-iii.org/cron/run/<token>
+0 3 * * * curl https://demo.firefly-iii.org/api/v1/cron/[token]
 ```
 
-Of course you must replace the URL with the URL of your own Firefly III installation. The `<token>` value can be found on your `/profile` under the "Command line token" header. This will prevent others from spamming your cron job URL.
+Of course you must replace the URL with the URL of your own Firefly III installation. The `[token]` value can be found on your `/profile` under the "Command line token" header. This will prevent others from spamming your cron job URL.
 
 ## Systemd timer
 
@@ -114,9 +115,9 @@ Click on "make a web request"
 
 ![Click on "make a web request"](images/ifttt-request.png)
 
-Enter the URL in the following format:
+Enter the URL in the following format. Keep in mind that the image shows the WRONG URL. Sorry about that.
 
-`https://your-firefly-installation.com/cron/run/<token>`
+`https://your-firefly-installation.com/api/v1/cron/[token]`
 
 Of course you must replace the URL with the URL of your own Firefly III installation. The `<token>` value can be found on your `/profile` under the "Command line token" header. This will prevent others from spamming your cron job URL.
 
@@ -159,7 +160,7 @@ $(docker container ls -a -f name=firefly --format="{{.ID}}")
 Here's an example:
 
 ```
-docker create --name=Firefly-Cronjob alpine sh -c "echo \"0 3 * * * wget <Firefly III URL>/cron/run/<TOKEN>\" | crontab - && crond -f -L /dev/stdout"
+docker create --name=Firefly-Cronjob alpine sh -c "echo \"0 3 * * * wget <Firefly III URL>/api/v1/cron/<TOKEN>\" | crontab - && crond -f -L /dev/stdout"
 ```
 
 Write your Firefly III URL in the place of `<Firefly III URL>` and put your command line token in the place of `<TOKEN>`. Both are can be found in your profile.
@@ -169,7 +170,7 @@ Write your Firefly III URL in the place of `<Firefly III URL>` and put your comm
 ```
 cron:
   image: alpine
-  command: sh -c "echo \"0 3 * * * wget https://<Firefly III URL>/cron/run/<TOKEN>\" | crontab - && crond -f -L /dev/stdout"
+  command: sh -c "echo \"0 3 * * * wget https://<Firefly III URL>/api/v1/cron/<TOKEN>\" | crontab - && crond -f -L /dev/stdout"
 ```
 
 Write your Firefly III URL in the place of `<Firefly III URL>` and put your command line token in the place of `<TOKEN>`. Both are can be found in your profile.

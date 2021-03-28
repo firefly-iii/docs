@@ -45,7 +45,7 @@ location ^~ /budget {
       include snippets/fastcgi-php.conf;
       fastcgi_param SCRIPT_FILENAME $request_filename;
       fastcgi_param modHeadersAvailable true; #Avoid sending the security headers twice
-      fastcgi_pass unix:/run/php/php7.2-fpm.sock;
+      fastcgi_pass unix:/run/php/php7.4-fpm.sock;
    }
 }
 

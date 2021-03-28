@@ -68,6 +68,14 @@ You can't delete the fallback currency. It's required by the system.
 
 A budget limit already exists with this date range and currency.
 
+**200028**
+
+The budget limit does not belong to the budget.
+
+**200030**
+
+Could not load config vars.
+
 ### Firefly III error codes
 
 These start with 3.

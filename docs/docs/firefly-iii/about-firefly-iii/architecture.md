@@ -37,7 +37,7 @@ Rule groups contain rules. Rules have actions and triggers. Although actions and
 
 ### Recurring transactions
 
-A recurring transaction has some basic information and an X number of transactions, which means it's possible to make a "split" recurring transaction. It's also possible to create multiple "repetitions", that define when a recurrence fires. This data is used by the recurring cronjob to create the exact transaction as defined in the transaction definition, whenever a repetition says its time.
+A recurring transaction has some basic information, and an X number of transactions, which means it's possible to make a "split" recurring transaction. It's also possible to create multiple "repetitions", that define when a recurrence fires. This data is used by the recurring cronjob to create the exact transaction as defined in the transaction definition, whenever a repetition says its time.
 
 ### Webhooks
 
