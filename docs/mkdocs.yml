@@ -220,15 +220,15 @@ nav:
       - Frequently asked questions: other-data-importers/errors/freq_questions.md
   - Other tools:
     - Introduction: other-tools/index.md
-
+extra_css:
+  - stylesheets/extra.css
 theme:
   name: material
   custom_dir: overrides
   features:
     - navigation.tabs
   palette:
-    primary: blue grey
-    accent: red
+    scheme: fireflyiii
   logo: img/logo.png
   favicon: img/favicon.ico
   icon:
