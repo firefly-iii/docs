@@ -160,7 +160,7 @@ $(docker container ls -a -f name=firefly --format="{{.ID}}")
 Here's an example:
 
 ```
-docker create --name=Firefly-Cronjob alpine sh -c "echo \"0 3 * * * wget <Firefly III URL>/api/v1/cron/<TOKEN>\" | crontab - && crond -f -L /dev/stdout"
+docker create --name=Firefly-Cronjob alpine sh -c "echo \"0 3 * * * wget -qO- <Firefly III URL>/api/v1/cron/<TOKEN>\" | crontab - && crond -f -L /dev/stdout"
 ```
 
 Write your Firefly III URL in the place of `<Firefly III URL>` and put your command line token in the place of `<TOKEN>`. Both are can be found in your profile.
@@ -170,7 +170,7 @@ Write your Firefly III URL in the place of `<Firefly III URL>` and put your comm
 ```
 cron:
   image: alpine
-  command: sh -c "echo \"0 3 * * * wget https://<Firefly III URL>/api/v1/cron/<TOKEN>\" | crontab - && crond -f -L /dev/stdout"
+  command: sh -c "echo \"0 3 * * * wget -qO- https://<Firefly III URL>/api/v1/cron/<TOKEN>\" | crontab - && crond -f -L /dev/stdout"
 ```
 
 Write your Firefly III URL in the place of `<Firefly III URL>` and put your command line token in the place of `<TOKEN>`. Both are can be found in your profile.
