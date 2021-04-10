@@ -4,6 +4,10 @@ People often have the same type of questions. Please find them below. If you ope
 
 Please refer to the index on your right.
 
+## Where is the Dockerfile?
+
+The Dockerfile is not part of the Firefly III repository. Rather, it's kept in a [separate repository](https://dev.azure.com/Firefly-III/_git/MainImage) on Azure. The Firefly III image is built there as well.
+
 ## I get 'permission denied' errors on the cache folder
 
 Some or all pages of your Firefly III show you an error that complains about not being able to write to stuff in the `/storage/cache` directory. Ultimately, this is caused by a permissions issue.
