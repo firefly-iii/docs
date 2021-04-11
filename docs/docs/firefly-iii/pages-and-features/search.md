@@ -50,7 +50,22 @@ You can use either the currency code (`EUR`) or (part of) the full name: `"US Do
 
 The following properties can be used to search for transactions with specific properties. Use the word "true" to activate it. You can't use "false" to negate the effect.
 
-* `has_attachments:true`, `has_no_category:true`, `has_any_category:true`, `has_no_budget:true`, `has_any_budget:true`, `has_no_tag:true`, `has_any_tag:true`, `no_notes:true`, `any_notes:true`
+Attachments, notes and tags:
+
+* `has_attachments:true`
+* `has_no_tag:true`
+* `has_any_tag:true`
+* `no_notes:true`
+* `any_notes:true`
+
+Categories, budgets and bills:
+
+* `has_no_category:true`
+* `has_any_category:true`
+* `has_no_budget:true`
+* `has_any_budget:true`
+* `has_no_bill:true`
+* `has_any_bill:true`
 
 ### Category, budget, bill or tag
 
