@@ -61,13 +61,19 @@ If the user's email address is also available through a different HTTP header, t
 
 In the following instructions I will refer to environment variables in all caps, like `EXAMPLE_VARIABLE`.
 
-To enable LDAP authentication first set `LOGIN_PROVIDER` to `ldap` and install the necessary packages. When you use Docker, this is already done!
+To enable LDAP authentication first set `LOGIN_PROVIDER` to `ldap` and install the necessary packages. 
 
 ```
 composer require adldap2/adldap2-laravel --no-install --no-scripts --no-plugins --no-progress
 composer install --no-dev --no-scripts --no-plugins --no-progress
 composer dump-autoload
 ```
+
+If you are using Docker, the Docker image will do this automatically.
+
+!!! warning
+    The Docker image will try to download these packages from the internet. You can't stop this, nor can you offer a local alternative.
+
 
 ### Connection configuration
 
