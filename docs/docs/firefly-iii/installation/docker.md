@@ -36,7 +36,7 @@ docker volume create firefly_iii_upload
 
 ### Start the container
 
-Run this Docker command to start the Firefly III container. Make sure that you edit the environment variables to match your own database. You should really change the `APP_KEY` as well. It should be a random string of _exactly_ 32 characters. You can generate such a key with the following command: `head /dev/urandom | LANG=C tr -dc 'A-Za-z0-9' | head -c 32`.
+Run this Docker command to start the Firefly III container. Make sure that you edit the environment variables to match your own database. You should really change the `APP_KEY` as well. It should be a random string of _exactly_ 32 characters. You can generate such a key with the following command: `head /dev/urandom | LC_ALL=C tr -dc 'A-Za-z0-9' | head -c 32 && echo`.
 
 ```text
 docker run -d \
