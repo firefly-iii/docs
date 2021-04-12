@@ -15,7 +15,7 @@ MAIL_PORT=25
 MAIL_ENCRYPTION=tls
 MAIL_USERNAME=username
 MAIL_PASSWORD=secret
-MAIL_FROM_ADDRESS=noreply@example.com
+MAIL_FROM=noreply@example.com
 ```
 
 Update the settings to match your email configuration. The first thing you'll want to update is the `MAIL_MAILER`. The mail mailer indicates the system that is used for mailing. The CSV importer supports the following mail systems: smtp, sendmail, mailgun, mandrill, sparkpost and log.
