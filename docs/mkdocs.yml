@@ -159,8 +159,7 @@ nav:
     - Importing data:
       - Introduction: firefly-iii/importing-data/introduction.md
       - FAQ: firefly-iii/importing-data/faq.md
-    - Exporting data:
-      - Exporting data: firefly-iii/exporting-data.md
+    - Exporting data: firefly-iii/exporting-data.md
     - Advanced concepts:
       - Piggy banks: firefly-iii/advanced-concepts/piggies.md
       - Bills: firefly-iii/advanced-concepts/bills.md
