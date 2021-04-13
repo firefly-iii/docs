@@ -5,7 +5,7 @@
 	<h2>Firefly III</h2>
 </div>
 
-The name of the tool is "Firefly III". It was named after the [Fairey Firefly](https://en.wikipedia.org/wiki/Fairey_Firefly) because at the time all my project names were British airplanes from the WW2 era . It's called "Firefly III" because this is the third major iteration of the original "Firefly I".
+The name of this tool is "Firefly III". It was named after the [Fairey Firefly](https://en.wikipedia.org/wiki/Fairey_Firefly) because at the time all my project names were British airplanes from the WW2 era . It's called "Firefly III" because this is the third major iteration of the original "Firefly I".
 
 On my request, the Firefly III logo was designed exclusively for Firefly III by the excellent Cherie Woo.
 
@@ -13,9 +13,9 @@ This page explains how you use the logo and Firefly III name in a way that fits 
 
 ## General usage
 
-Here's the thing: I don't mind people using the logo for their own tools and things. I wrote Firefly III as open source software under a copyleft license for a good reason. Spread the word!
+Here's the thing: I don't generally mind people using the logo for their own tools and things. I wrote Firefly III as open source software under a copyleft license for a good reason. Spread the word!
 
-I have however, on occassion, noticed subpar tools and things that are suddenly "my responsibility" because they carry the logo or call themselves "Firefly III". That's not going to fly. I would like to be responsible for my own subpar tools, thank you very much.
+I have however, on occassion, noticed subpar tools and things that are suddenly "my responsibility" because they carry the logo or call themselves "Firefly III". That's **not** going to fly. I would like to be responsible for my own subpar tools only, thank you very much.
 
 ### Talk about, not as, Firefly III
 
