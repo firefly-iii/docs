@@ -2,6 +2,9 @@
 
 Firefly III lets you export transactions and other data to CSV files.
 
+!!! warning
+    Don't use this feature to backup your data. Backup the database instead. You may not be able to restore everything when you try to import the generated files.
+
 ## Basic export
 
 Go to `/export` in your Firefly III installation, or follow the menu under "import and export".
