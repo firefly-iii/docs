@@ -27,7 +27,6 @@ A tool called the [CSV importer](http://github.com/firefly-iii/csv-importer) can
 
 ### Spectre / Salt Edge importer
 
-
 The [Spectre importer](http://github.com/firefly-iii/spectre-importer) is a good alternative to the CSV importer. This importer uses the Spectre API, provided by a fintech company called Salt Edge. They offer a **trial** of their Spectre API which you can use to connect to your bank. From your bank, Spectre will download and clean-up transactions.
 
 !!! warning
@@ -52,6 +51,13 @@ A tool built by GitHub user [@bnw](https://github.com/bnw) that allows you to im
 - [Website and documentation](https://gitlab.com/GeorgeHahn/firefly-plaid-connector)
 
 ## Bank-specific tools
+
+### Binance importer
+
+This collection of scripts by [@financelurker](https://github.com/financelurker) lets you sync your Binance account to your FireFly III account.
+
+- [Website](https://github.com/financelurker/binance-firefly-iii)
+- [Documentation](https://github.com/financelurker/binance-firefly-iii)
 
 ### bunq importer
 
