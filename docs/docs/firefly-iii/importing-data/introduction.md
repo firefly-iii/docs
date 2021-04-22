@@ -52,12 +52,12 @@ A tool built by GitHub user [@bnw](https://github.com/bnw) that allows you to im
 
 ## Bank-specific tools
 
-### Binance importer
+### Crypto exchanges importer
 
-This collection of scripts by [@financelurker](https://github.com/financelurker) lets you sync your Binance account to your FireFly III account.
+This service by [@financelurker](https://github.com/financelurker) lets you import activities from your crypto exchange accounts (like "Binance/binance.com") to your FireFly III account.
 
-- [Website](https://github.com/financelurker/binance-firefly-iii)
-- [Documentation](https://github.com/financelurker/binance-firefly-iii)
+- [Website](https://github.com/financelurker/crypto-trades-firefly-iii)
+- [Documentation](https://github.com/financelurker/crypto-trades-firefly-iii)
 
 ### bunq importer
 
