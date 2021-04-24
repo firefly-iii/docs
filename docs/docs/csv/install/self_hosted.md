@@ -81,3 +81,21 @@ Browsing to the site should be easy. You should see the following screen.
 ![Opening screen of the CSV importer.](images/opening.png)
 
 If this is not the case, or something is broken, be sure to open [an issue on GitHub](https://github.com/firefly-iii/firefly-iii) or check out [the FAQ](../errors/freq_questions.md).
+
+## Reverse proxies
+
+To run the CSV importer behind a reverse proxy, make sure you set the `TRUSTED_PROXIES` environment variable to either `**` or the IP address of your reverse proxy.
+
+### TLS
+
+To enable TLS in the CSV importer, your reverse proxy must send the right information to the CSV importer. Here is some code for nginx:
+
+```
+proxy_set_header X-Forwarded-Host $host;
+proxy_set_header X-Forwarded-Server $host;
+proxy_set_header X-Forwarded-Proto $scheme;
+proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+proxy_set_header Host $host;
+client_max_body_size 64M;
+proxy_read_timeout 300s;
+```
