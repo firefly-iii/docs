@@ -174,6 +174,10 @@ If you leave the action value empty, the action will fail.
 
 You can apply your rules to existing transactions. On the rule-overview (page ``/rules``), either use the "on/off"-icon or the ellipsis menu in a rule group to apply entire rule groups or individual rules to your transactions. See for some screenshots below.
 
+## Boolean logic
+
+This feature of Firefly III is pretty advanced, even if I say so myself. It does not support complicated rules. Rules like "the budget must be Groceries and the shop must be A or B" combine different operators ("and" and "or"). This will not work.
+
 ## Screenshots
 
 ![A new rule can be given some basic information.](images/rules-meta.png)

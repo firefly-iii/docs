@@ -4,11 +4,11 @@ Even more important than all the stuff Firefly III [can](introduction.md) do for
 
 ### Stock and portfolio management
 
-Not supported by Firefly III. Use something like [Portfolio Performance](https://www.portfolio-performance.info/). The net worth you track in Firefly III excludes stock.
+Is not supported by Firefly III. Use something like [Portfolio Performance](https://www.portfolio-performance.info/). The net worth you track in Firefly III excludes stock.
 
 ### Business finances, small business accounting, payroll management
 
-Not supported by Firefly III. Firefly III is meant for personal finances.
+Is not supported by Firefly III. Firefly III is meant for personal finances.
 
 ### Automated imports from [your bank here]
 
@@ -38,9 +38,9 @@ Sometimes you borrow your friends money, and you want to keep track of the loan.
 
 ### Share your administration
 
-Firefly III is a multi-user environment. But each user is strictly separated.
+Firefly III is a multi-user environment. But each user is strictly separated from other users.
 
-### Changing the monthly cycle to another day of the week.
+### Changing the monthly cycle to another day of the month.
 
 A month goes from the 1st to the last day of the month. You can't tell Firefly III to go from the 23rd to the 22nd of the next month.
 
