@@ -144,7 +144,7 @@ docker run -d \
 -e DB_DATABASE=fireflyiii \
 -e DB_USERNAME=root \
 -e DB_PASSWORD=super_secret \
-jc5x/firefly-iii:latest
+fireflyiii/core:latest
 
 # Chase the log files to see when Firefly III is ready to go:
 docker logs -f $(docker container ls -a -f name=fireflyiii --format="{{.ID}}")

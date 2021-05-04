@@ -10,11 +10,11 @@ There are several ways of installing Firefly III using Docker, which will be det
 
 ## Docker tags
 
-Firefly III has several Docker tags. The instructions always assume `jc5x/firefly-iii:latest`. This is the latest stable release. Other tags are:
+Firefly III has several Docker tags. The instructions always assume `fireflyiii/core:latest`. This is the latest stable release. Other tags are:
 
-* `jc5x/firefly-iii:beta`. This tag contains beta releases.
-* `jc5x/firefly-iii:alpha`. This tag contains alpha releases.
-* `jc5x/firefly-iii:develop`. Always the latest develop image. Maybe unstable.
+* `fireflyiii/core:beta`. This tag contains beta releases.
+* `fireflyiii/core:alpha`. This tag contains alpha releases.
+* `fireflyiii/core:develop`. Always the latest develop image. Maybe unstable.
 
 All Docker tags are built for ARMv7, ARM64 and AMD64. ARMv6 is not included, so these images will *not* work on the Raspberry Pi Zero, Raspberry Pi 1 (A+B) or Raspberry Pi Compute Module.
 
@@ -49,7 +49,7 @@ docker run -d \
 -e DB_DATABASE=CHANGEME \
 -e DB_USERNAME=CHANGEME \
 -e DB_PASSWORD=CHANGEME \
-jc5x/firefly-iii:latest
+fireflyiii/core:latest
 ```
 
 Firefly III assumes that you're using MySQL, which a lot of people do. If you use PostgreSQL, change the following environment variable in the command: `DB_CONNECTION=pgsql` and make sure you change the port, `DB_PORT=5432`.

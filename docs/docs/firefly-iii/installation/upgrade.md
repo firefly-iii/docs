@@ -16,7 +16,7 @@ docker rm <container>
 To find out which container is Firefly III, run `docker container ls -a`.
 
 ```bash
-docker pull jc5x/firefly-iii:latest
+docker pull fireflyiii/core:latest
 ```
 
 And then create it again by running the command from the installation guide. The container should upgrade itself so it can take some time for it to start. You can save the command you've used to start the container for quicker upgrade.
