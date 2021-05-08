@@ -33,6 +33,13 @@ Photuris III is an android app created by @emansih that connects to your Firefly
 - [Google Play Store](https://play.google.com/store/apps/details?id=xyz.hisname.fireflyiii)
 - [F-Droid store](https://f-droid.org/packages/xyz.hisname.fireflyiii/)
 
+### OCR Firefly Mobile
+
+OCR Firefly Mobile is a little tool to help you enter transactions into the mobile app automatically.
+
+- [Credits](https://github.com/luifermoron)
+- [Website](https://github.com/luifermoron/ocrFireflyMobile)
+
 ## Bots and tools
 
 ### Firefly III CLI
