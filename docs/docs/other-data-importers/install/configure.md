@@ -28,6 +28,12 @@ The Personal Access Token is pretty long. Use a tool like Notepad++ or Visual St
 
 You need to know the IP address or website address of your own Firefly III instances. In many cases this is simply `http://localhost`, but if you're a fancy user it might be something like `https://finances.example.com` or something similar.
 
+## Spectre / Salt Edge data
+
+To get Spectre API data you must register an account and apply for access. This limits you to about ten banks (more than enough for most home users).
+
+The Spectre API is a paid product by Salt Edge. It's used by many financial tools, fintechs and others in the financial space. They are kind enough to offer trials to users of Firefly III, but these are limited in time and scope. Salt Edge is a business-to-business organisation, which is reflected in their pricing: the cost of their API starts at about 500$ per month.
+
 ## YNAB data
 
 To obtain a Personal Access Token, [sign in to your account](https://app.youneedabudget.com/settings), go to "Account Settings", scroll down and navigate to "Developer Settings" section.
