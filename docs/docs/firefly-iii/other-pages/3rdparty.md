@@ -39,6 +39,7 @@ OCR Firefly Mobile is a little tool to help you enter transactions into the mobi
 
 - [Credits](https://github.com/luifermoron)
 - [Website](https://github.com/luifermoron/ocrFireflyMobile)
+- [Google Play Store](https://play.google.com/store/apps/details?id=com.opensource.autofill)
 
 ## Bots and tools
 
