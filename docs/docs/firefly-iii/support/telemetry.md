@@ -4,6 +4,8 @@ Firefly III supports the optional collection and sending of usage telemetry. Thi
 
 If enabled you can see and remove what Firefly III has collected in the Administration area of your Firefly III installation.
 
+Firefly III sends the collected meta data to a virtual machine hosted by Azure. Your data is not sent to Google or Yandex or whatever.
+
 ## How do I enable telemetry?
 
 If you want Firefly III to collect and submit telemetry data, you must set the `SEND_TELEMETRY` environment variable to `true`. Telemetry will then be collected for all users. Make sure you notify other users that this is happening.
