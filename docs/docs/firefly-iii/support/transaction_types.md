@@ -11,9 +11,12 @@ To make cash withdrawals and use the cash account (displayed as "(cash)"), leave
 | From | To | Example |
 | :--- | :--- | :--- |
 | Asset account | Expense account | A normal expense, like in a shop. |
-| Asset account | Loan | Pay back the loan using your checking account. |
-| Asset account | Debt | Pay back the debt using your checking account. |
-| Asset account | Mortgage | Pay your mortgage using your checking account. |
+| Asset account | Loan (you are [debtor](../concepts/accounts.md#liabilities)) | Pay back the loan using your checking account. |
+| Asset account | Debt (you are [debtor](../concepts/accounts.md#liabilities)) | Pay back the debt using your checking account. |
+| Asset account | Mortgage (you are [debtor](../concepts/accounts.md#liabilities)) | Pay your mortgage using your checking account. |
+| Asset account | Loan (you are [creditor](../concepts/accounts.md#liabilities)) | You loan somebody extra money. |
+| Asset account | Debt (you are [creditor](../concepts/accounts.md#liabilities)) | You loan somebody extra money. |
+| Asset account | Mortgage (you are [creditor](../concepts/accounts.md#liabilities)) | You loan somebody extra money. |
 | Asset account | Cash account | Do a cash withdrawal at an ATM |
 | Loan | Expense account | Interest payment to your loanshark. |
 | Debt | Expense account | Interest payment to the debt collector. |
@@ -28,9 +31,12 @@ You can make cash deposits and use the cash account (displayed as "(cash)"), lea
 | From | To | Example |
 | :--- | :--- | :--- |
 | Revenue account | Asset account | Salary or income. |
-| Revenue account | Loan | A payment into your loan (decreasing it) by a third party. |
-| Revenue account | Debt | A payment into your debt (decreasing it) by a third party. |
-| Revenue account | Mortgage | A correction by your bank or fees waived. |
+| Revenue account | Loan (you are [debtor](../concepts/accounts.md#liabilities)) | A payment into your loan (decreasing it) by a third party. |
+| Revenue account | Debt (you are [debtor](../concepts/accounts.md#liabilities)) | A payment into your debt (decreasing it) by a third party. |
+| Revenue account | Mortgage (you are [debtor](../concepts/accounts.md#liabilities)) | A correction by your bank or fees waived. |
+| Revenue account | Loan (you are [creditor](../concepts/accounts.md#liabilities)) | You're being paid back your loan. |
+| Revenue account | Debt (you are [creditor](../concepts/accounts.md#liabilities)) | You're being paid back your loan. |
+| Revenue account | Mortgage (you are [creditor](../concepts/accounts.md#liabilities)) | You're being paid back your loan. |
 | Cash account | Asset account | Cash deposit at an ATM. |
 | Loan | Asset account | Take money from a loan to spend on stuff. |
 | Debt | Asset account | Increase your debt by transferring money to your own account. |
@@ -72,8 +78,21 @@ Opening balance transactions are special transactions that occur when a new acco
 
 These transactions are also magical, and get created when you reconcile an asset account. It only works on those too.
 
-| From |  |  |
+| From | To |  |
 | :--- | :--- | :--- |
 | Asset account | Hidden reconciliation account | Reconciling an asset account by removing money from it. |
 | Hidden reconciliation account | Asset account | Reconciling an asset account by adding money to it. |
+
+## Liability credit
+
+If you borrow money to somebody (you are the [creditor](../concepts/accounts.md#liabilities)) that money must come from some place. In some cases, Firefly III creates a special transaction to give you the money that you borrow out to somebody else.
+
+| From | To |  |
+| :--- | :--- | :--- |
+| Hidden liability credit account | Loan | Magic money to be borrowed to somebody else. |
+| Hidden liability credit account | Debt | Magic money to be borrowed to somebody else. |
+| Hidden liability credit account | Mortgage | Magic money to be borrowed to somebody else. |
+
+
+
 

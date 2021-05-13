@@ -6,7 +6,11 @@ Firefly III supports several feature that requires you to run a cron job:
 2. [Automatic budgeting](../concepts/budgets.md). Firefly III can automatically set your budgets for you.
 3. [Telemetry](../support/telemetry.md). When enabled (telemetry is **opt-in**), Firefly III will submit its telemetry data.
 
-## Cron job that calls a command
+## Running the cron job
+
+Here are several ways to run the cron job:
+
+### Calling a command
 
 If you are a bit of a Linux geek you can set up a cron job easily by running `crontab -e` on the command line. Some users may have to run `sudo crontab -u www-data -e` so the correct user will be referred to.
 
@@ -21,19 +25,7 @@ You must make sure to verify `/usr/bin/php` with *your* path to PHP and replace 
 
 If you do this, Firefly III will generate the recurring transactions each night at 3AM.
 
-## Cron job that triggers future recurring transactions
-
-In order to trigger future recurring transactions, you can call the cron job with `--force --date=YYYY-MM-DD`.
-
-Here is an example of a cron job that is triggered every first day of the month at 3am and generates the recurring transactions of the tenth day.
-```
-# cronjob for Firefly III that changes the target date.
-0 3 1 * * /usr/bin/php /var/www/html/artisan firefly-iii:cron --force --date=$(date "+\%Y-\%m-")10
-```
-
-If you do this, Firefly III will generate the recurring transactions each night at 3AM.
-
-## Cron job that requests a page
+### Request a page over the web
 
 If for some reason you can't call scripts like this you can also use a tool called cURL which is available on most (if not all) linux systems.
 
@@ -46,7 +38,7 @@ The content of the cron job must be as follows:
 
 Of course you must replace the URL with the URL of your own Firefly III installation. The `[token]` value can be found on your `/profile` under the "Command line token" header. This will prevent others from spamming your cron job URL.
 
-## Systemd timer
+### Use the systemd timer
 
 If you prefer you can use `systemd` to run the jobs on a recurring schedule similar to cron. You will need to create two files: a unit file and a timer file.
 
@@ -79,7 +71,7 @@ WantedBy=timers.target
 
 Copy these files to `/etc/systemd/system`. You must then enable (`systemctl enable firefly-iii-cron.timer`) and start (`systemctl start firefly-iii-cron.timer`) the timer. Verify the timer is registered with `systemctl --list-timers`. You may also want to run the service once manually to ensure it runs successfully: `systemctl start firefly-iii-cron.service`. You can check the results with `journalctl -u firefly-iii-cron`.
 
-## Make IFTTT do it
+### Make IFTTT do it
 
 If you can't run a cron job, you can always make [If This, Then That (IFTTT)](https://ifttt.com) do it for you. This will only work if your Firefly III installation can be reached from the internet. Here's what you do.
 
@@ -135,7 +127,17 @@ Press Finish, and you're done!
 
 ## Cron jobs in Docker
 
-The Docker image does *not* support cron jobs. This is by design, because Docker images are designed to do one task. There are several solutions.
+The Docker image does *not* support cron jobs. This is by design, because Docker images are designed to do one task. There are several solutions however.
+
+### Static cron token
+
+If you use Docker you may have noticed that in order to get the `<TOKEN>` mentioned all the time, you must first launch Firefly III, get the token from your profile, update the Docker configuration and then restart everything. Since this is hugely annoying, you may also set the `STATIC_CRON_TOKEN` to a string of **exactly** 32 characters. This will also be accepted as cron token. For example, use `-e STATIC_CRON_TOKEN=klI0JEC7TkDisfFuyjbRsIqATxmH5qRW`. Then, you can do:
+
+```
+# cron job for Firefly III using cURL
+0 3 * * * curl https://demo.firefly-iii.org/api/v1/cron/klI0JEC7TkDisfFuyjbRsIqATxmH5qRW
+```
+
 
 ### Call the cron job from outside the Docker container
 
@@ -165,12 +167,25 @@ docker create --name=Firefly-Cronjob alpine sh -c "echo \"0 3 * * * wget -qO- <F
 
 Write your Firefly III URL in the place of `<Firefly III URL>` and put your command line token in the place of `<TOKEN>`. Both are can be found in your profile.
 
+If you do not know the Firefly III URL, you can also use the Docker IP address.
+
 ### Expand the docker-compose file
 
 ```
 cron:
   image: alpine
-  command: sh -c "echo \"0 3 * * * wget -qO- https://<Firefly III URL>/api/v1/cron/<TOKEN>\" | crontab - && crond -f -L /dev/stdout"
+  command: sh -c "echo \"0 3 * * * wget -qO- http://app/api/v1/cron/<TOKEN>\" | crontab - && crond -f -L /dev/stdout"
 ```
 
 Write your Firefly III URL in the place of `<Firefly III URL>` and put your command line token in the place of `<TOKEN>`. Both are can be found in your profile.
+
+You can also use `app` which is the default host name for Firefly III.
+
+## Extra information
+
+In order to trigger "future" cron jobs, you can call the cron job with `--force --date=YYYY-MM-DD`. This will make Firefly III pretend it's another day. This is useful for recurring transactions. Here is an example of a cron job that is triggered every first day of the month at 3am and pretends it's the tenth day of that month.
+
+```
+# cronjob for Firefly III that changes the target date.
+0 3 1 * * /usr/bin/php /var/www/html/artisan firefly-iii:cron --force --date=$(date "+\%Y-\%m-")10
+```
