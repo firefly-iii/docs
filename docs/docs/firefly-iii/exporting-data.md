@@ -40,3 +40,4 @@ You can set what to export using the following flags:
 
 If you add none of these flags, Firefly III will export nothing.
 
+Firefly III does not have the functionality to import this data. If you need to backup or migrate your data, backup and restore your database directly.
