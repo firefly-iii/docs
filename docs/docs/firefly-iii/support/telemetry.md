@@ -2,9 +2,7 @@
 
 Firefly III supports the optional collection and sending of usage telemetry. This means that Firefly III could try to collect info on how you use Firefly III, and send it to the developer of Firefly III. This is always **opt-in**, and is **disabled** by default. Firefly III will never collect or send financial information. Firefly III will also never collect or send financial meta-information, like sums or calculations. The collected data will never be made publicly accessible.
 
-If enabled you can see and remove what Firefly III has collected in the Administration area of your Firefly III installation.
-
-Firefly III sends the collected meta data to a virtual machine hosted by Azure. Your data is not sent to Google or Yandex or whatever.
+Firefly III sends the collected meta data to a virtual machine hosted by Azure using a self-hosted version Sentry.io. Your data is not sent to Google or Yandex or whatever.
 
 ## How do I enable telemetry?
 
@@ -24,16 +22,11 @@ There is a page under Administration, Telemetry (`/admin/telemetry`) that shows 
 
 ## Can I see the collected telemetry and influence it?
 
-If telemetry is collected, there is a page under Administration, Telemetry (`/admin/telemetry/view`) that shows you how many records have been collected. You can view all records, but they are read-only. There are several options to manage the telemetry data.
-
-* You can submit the data, not having to wait on the cron job.
-* You can delete all records.
-* You can delete all submitted records.
+No, you cannot.
 
 ## What are types of data that can be collected?
 
 * "Feature flag". This tells me the value of a specific "flag". A flag could be the number of users, the PHP version, etc. See the overview below for more information.
-* "Recurring". Recurring telemetry values store a specific value ever _x_ days. This type of telemetry is currently not used however.
 
 ## What telemetry can be collected?
 
@@ -70,20 +63,22 @@ When enabled Firefly III version **5.4.0** can collect and submit the following 
 * If you allow Firefly III to check for updates and which channel.
 * Which search operators you use. Firefly III collects the operators only, not the actual search query.
 
+## Version 5.6.0
+
+When enabled Firefly III version **5.4.0** can collect and submit the following telemetry, on top of what is collected in previous versions:
+
+* Crashes in your application, for example 500 errors and bugs.
+
 ---
-
-
-The [cron job](../advanced-installation/cron.md), if set up correctly, will submit these entries to [telemetry.firefly-iii.org](https://telemetry.firefly-iii.org) every week. This will only happen when telemetry is enabled.
 
 Both the collection and the submission of telemetry data is disabled until you enable it. In other words, if you do nothing, Firefly III will collect nothing and send nothing.
 
 ## What's the UUID?
 
-If you check your log files after the cron job is fired or the telemetry entries are submitted, you might see this:
+If you check your log files you might see something like this:
 
 ```text
 local.INFO: Result of submission [200]: {"uuid":"1ebfb9f0-6c0b-11ea-9aac-274c8c0cddda"}
 ```
 
-The "uuid" is a unique random reference to your telemetry submission and can be used to debug the process.
-
+The "uuid" is a unique random reference to your telemetry submission and can be used to debug the process. It cannot be used to identify you.
