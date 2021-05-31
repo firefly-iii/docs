@@ -2,7 +2,7 @@
 
 Importing transactions (automatically) into Firefly III is one of the most asked features of Firefly III. Everybody wants Firefly III to automatically connect to their bank and synchronize all transactions.
 
-In order to import transactions into Firefly III, you'll have to install and run separate tools. These tools can do the sync for you.
+In order to import transactions into Firefly III, you'll have to install and run separate tools. These tools can do the synchronization for you. All of these apps connect to the Firefly III API (documented [on a separate website](https://api-docs.firefly-iii.org/)). To connect these apps to the API, most require an access token or some kind of an OAuth flow to be followed.
 
 ## Some notes regarding importing transactions
 
@@ -10,9 +10,9 @@ In order to import transactions into Firefly III, you'll have to install and run
 * Your bank may not be supported, despite our best efforts.
 * You might not be able to easily automate the import/sync process.
 
-## How these apps work
+!!! info
+    Some background information on automated imports can be found in the [FAQ](faq.md).
 
-All of these apps connect to the Firefly III API, which is available at `/api/v1` and documented [on a separate website](https://api-docs.firefly-iii.org/). To connect these apps to the API, most require an access token or some kind of an OAuth flow to be followed.
 
 ## Available tools
 
