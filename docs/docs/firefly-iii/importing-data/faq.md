@@ -8,7 +8,7 @@ Firefly III has [many tools](introduction.md) to import transactions. You must i
 
 Most tools come with the necessary hooks to automate the import yourself. This also depends on your bank's support for these kinds of things.
 
-Please realize I don't have the time or the patience to deal with 2000+ different bank API's, export schemes, PDF files, CSV formats or OFX files. When you're asking this, please realize just how many banks are out there and also realize none of them use the same platform, protocol or data format. And also realise I do this in my free time, for free.
+Unfortunately I don't have the resources to work with the 2000+ different bank API's, export schemes, PDF files, CSV formats or OFX files that are out there. YSK there are too many banks are out there and none of them use the same platform, protocol or data format. So if you ever wonder why it's not automated: this is why ;)
 
 ## Why is Spectre a trial?
 
