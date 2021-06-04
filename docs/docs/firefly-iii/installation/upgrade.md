@@ -28,9 +28,9 @@ If you want to run the Docker container as another user, add `--user=`. Possible
 To update the container run these commands:
 
 ```bash
-docker-compose stop fireflyiii
+docker-compose stop app
 docker-compose rm
-docker-compose pull fireflyiii
+docker-compose pull app
 docker-compose -f docker-compose.yml up -d
 ```
 
