@@ -8,9 +8,9 @@ Once you start creating transactions you start to realise that in a month, the s
 * Going out for drinks
 * Clothing
 
-Like wise, you should start to notice that you always spend the same amount of money on these things. That amount may be too high for your tastes, and you may want to change that. Or at least, keep track of it.
+Likewise, you should start to notice that you always spend the same amount of money on these things. That amount may be too high for your tastes, and you may want to change that. Or at least, keep track of it.
 
-These things are **budgets**. Budgets are a kind of "category" that come back every single month. Bills are returning (rent, water, electricity). You buy groceries every day. You need to pay rent every month.
+These things are **budgets**. Budgets are a kind of "category" that come back every single month. Bills are recurring (rent, water, electricity). You buy groceries every day. You need to pay rent every month.
 
 In what is called an [envelope system](http://en.wikipedia.org/wiki/Envelope_system) you stuff money in envelopes and spend your money from those envelopes.
 

@@ -71,7 +71,7 @@ Any debt or loan you have is stored as a liability with a negative start balance
 
 A mortgage can also be stored this way.
 
-If you borrow money to other people, I recommend you use the same system. Store the money as a negative amount. My reasoning is that since you don't have the money you're in the red, and each deposit from those other people increases your networth back to what it's supposed to be.
+If you lend money to other people, I recommend using the same system. Store the money as a negative amount. My reasoning is that since you don't have the money you're in the red, and each deposit from those other people increases your net worth back to what it's supposed to be.
 
 If your debt is gradually increasing because of interest payments or you borrowing more money, you must create transactions with the debt as the source and your asset account as the destination. Firefly III will handle the rest. 
 
