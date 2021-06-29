@@ -104,6 +104,8 @@ When you're feeling especially daring, you can change the following fields to fi
 
 If you set `ADLDAP_PASSWORD_SYNC` to true, Firefly III will sync the user's password to its local user table. This allows users to login to Firefly III when the LDAP server is unavailable. This requires `ADLDAP_LOGIN_FALLBACK` to be `true` as well. 
 
+Setting `ADLDAP_AUTH_FILTER` allows you to filter AD objects within the Base DN, if your configuration requires this. Example: (memberof=CN=Firefly-User)
+
 ### Finishing up and possible problems
 
 Generally speaking, Firefly III will give you a "password not accepted" error when something goes wrong. I refer you to the log files of your LDAP server and those of Firefly III to see what went wrong. When in doubt, turn on debug mode and try again.
