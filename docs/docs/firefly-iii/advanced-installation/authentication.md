@@ -1,36 +1,11 @@
-# Firefly III uses email addresses as user identifiers. When you're using an external authentication guard
-# that doesn't do this, Firefly III is incapable of emailing you. Messages sent to "Bill Gates" always fail.
-#
-# However, if you set this value, Firefly III will store the value from this header as the user's backup
-# email address and use it to communicate. So user "Bill Gates" could still have
-# the email address "bill@microsoft.com".
-
-
-TODO iets over dubbele users en het objectguid en domain field, zie #4862
-
-
-
-# It's impossible to log out users who's authentication is handled by an external system.
-# Enter a custom URL here that will force a logout (your authentication provider can tell you).
-# Setting this variable only works when AUTHENTICATION_GUARD != web
-#
-# CUSTOM_LOGOUT_URI=
-
-
-No more option for server type
-met komma mag
-
-
-
-
-
-
-
 # Authentication
 
 There are two ways to authenticate users. The settings to change these can be accessed through the `.env`-file in the root directory of your installation, or they can be changed through environment variables (Docker).
 
-*If an environment variable itself contains the* `=` *character, you must escape the entire value using quotes:*
+In the following instructions the environment variables are referred to in all caps, like `EXAMPLE_VARIABLE`.
+
+!!! info 
+    If an environment variable itself contains the* `=` *character, you must escape the entire value using quotes:
 
 ```bash
 -e NORMAL_VAR=hello \
@@ -54,6 +29,9 @@ Firefly III supports [RFC 3875](https://tools.ietf.org/html/rfc3875#section-4.1.
 
 A very popular tool that can do this [Authelia](https://www.authelia.com/docs/).
 
+!!! warn
+    When Firefly III is in `remote_user_guard` mode, it will do absolutely **NO** checks on the validity of the header or the contents. Firefly III will not ask for passwords, if won't check for MFA, nothing. All authentication is delegated to the authentication proxy and Firefly III just doesn't care anymore.
+
 ### Enable the remote user option
 
 To enable this function set the `AUTHENTICATION_GUARD` environment variable to `remote_user_guard`.
@@ -61,8 +39,6 @@ To enable this function set the `AUTHENTICATION_GUARD` environment variable to `
 ### How it works
 
 Once you're authenticated by the proxy Firefly III will receive the request with your user ID in the `REMOTE_USER` header. Firefly III will then log you in. There are no further checks.
-
-When Firefly III is in `remote_user_guard` mode, it will do absolutely **NO** checks on the validity of the header or the contents. Firefly III will not ask for passwords, if won't check for MFA, nothing. All authentication is delegated to the authentication proxy and Firefly III just doesn't care anymore.
 
 So if you use this authentication method make sure there is NO way *around* the authentication proxy you've set up. Block all other access to the container or the server.
 
@@ -83,16 +59,16 @@ This is less than optimal when you're using the Docker image but if the header i
 
 If you are able to customize your authentication system to send a header other than `REMOTE_USER` to Firefly III, then set the `AUTHENTICATION_GUARD_HEADER` environment variable to the PHP name of that header.  For example, if the custom header is `FFIII-User`, then set `AUTHENTICATION_GUARD_HEADER` to `HTTP_FFIII_USER`.  Another benefit of using a custom header is that you do not need to change the `public/.htaccess` file as mentioned above.
 
-If the user's email address is also available through a different HTTP header, then set the `AUTHENTICATION_GUARD_EMAIL` environment variable to the PHP name of that yeader.  For example, if the custom header is `FFIII-Email`, then set `AUTHENTICATION_GUARD_EMAIL` to `HTTP_FFIII_EMAIL`
+Firefly III uses email addresses as user identifiers. When you're using an external authentication guard that doesn't do this, Firefly III is incapable of emailing you. Messages sent to "Bill Gates" always fail.
+
+If the user's email address is also available through a different HTTP header, then set the `AUTHENTICATION_GUARD_EMAIL` environment variable to the PHP name of that header.  For example, if the custom header is `FFIII-Email`, then set `AUTHENTICATION_GUARD_EMAIL` to `HTTP_FFIII_EMAIL`
 
 ## LDAP
 
-In the following instructions I will refer to environment variables in all caps, like `EXAMPLE_VARIABLE`.
-
-To enable LDAP authentication first set `LOGIN_PROVIDER` to `ldap` and install the necessary packages. 
+To enable LDAP authentication first set `AUTHENTICATION_GUARD` to `ldap` and install the necessary packages. 
 
 ```
-composer require adldap2/adldap2-laravel --no-install --no-scripts --no-plugins --no-progress
+composer require directorytree/ldaprecord-laravel --no-install --no-scripts --no-plugins --no-progress
 composer install --no-dev --no-scripts --no-plugins --no-progress
 composer dump-autoload
 ```
@@ -102,35 +78,18 @@ If you are using Docker, the Docker image will do this automatically.
 !!! warning
     The Docker image will try to download these packages from the internet. You can't stop this, nor can you offer a local alternative.
 
-
-### Connection configuration
-
-1. Change `ADLDAP_CONNECTION_SCHEME` to say either `OpenLDAP`, `FreeIPA`, or `ActiveDirectory`, depending on your server.
-2. Set `ADLDAP_AUTO_CONNECT` to `true` or `false`. I highly recommend to leave this at `true`.
-
 ### Connection settings
 
 Continue the configuration by changing the following settings:
 
-* `ADLDAP_CONTROLLERS`. A space separated list of LDAP controllers.
-* `ADLDAP_PORT`, `ADLDAP_TIMEOUT`, `ADLDAP_USE_SSL` and `ADLDAP_USE_TLS` to fine tune the connection. Use `ADLDAP_FOLLOW_REFFERALS` if you have multiple LDAP servers that may redirect requests.
+* `LDAP_HOST`. A space separated list of LDAP controllers.
+* `ADLDAP_PORT`, `ADLDAP_TIMEOUT`, `LDAP_SSL` and `LDAP_TLS` to fine tune the connection.
 
-Change the `ADLDAP_BASEDN` to indicate where the users can be located. If necessary, set `ADLDAP_ADMIN_USERNAME` and `ADLDAP_ADMIN_PASSWORD` to authenticate towards your LDAP server.
+Change the `LDAP_BASE_DN` to indicate where the users can be located. If necessary, set `LDAP_USERNAME` and `LDAP_PASSWORD` to authenticate towards your LDAP server.
 
-Users type the `ADLDAP_DISCOVER_FIELD` into the "User identifier"-box of Firefly III. This could be the distinguishedname, the uid or something else entirely. Firefly III will then use the `ADLDAP_AUTH_FIELD` to bind users to itself. The `ADLDAP_SYNC_FIELD` finally, will be stored in the user table of Firefly III. My strong suggestion is to keep all of these the same.
+Users type the `LDAP_AUTH_FIELD` into the "User identifier"-box of Firefly III. This could be the "distinguishedname", the "uid" or something else entirely.
 
-If necessary, you can set the following prefixes and suffixes so that the user's LDAP accounts are properly formatted for use with your LDAP server:
-
-* `ADLDAP_ACCOUNT_PREFIX`
-* `ADLDAP_ACCOUNT_SUFFIX`
-
-The administrator account should have these already set in your configuration.
-
-### Authentication settings
-
-When you're feeling especially daring, you can change the following fields to fine tune authentication with Firefly III.
-
-If you set `ADLDAP_PASSWORD_SYNC` to true, Firefly III will sync the user's password to its local user table. This allows users to login to Firefly III when the LDAP server is unavailable. This requires `ADLDAP_LOGIN_FALLBACK` to be `true` as well. 
+<!-- TODO iets over dubbele users en het objectguid en domain field, zie #4862 -->
 
 ### Finishing up and possible problems
 
@@ -143,41 +102,22 @@ If you get "cannot be NULL"-errors or "field unavailable"-errors or something li
 The following configuration will allow you to connect to Forum System's excellent [example LDAP server](http://www.forumsys.com/tutorials/integration-how-to/ldap/online-ldap-test-server/). If you configure your Firefly III system, you can login with user "einstein" with password "password".
 
 ```
-LOGIN_PROVIDER=ldap
+AUTHENTICATION_GUARD=ldap
 
-# LDAP connection configuration
-# OpenLDAP, FreeIPA or ActiveDirectory
-ADLDAP_CONNECTION_SCHEME=OpenLDAP
-ADLDAP_AUTO_CONNECT=true
+#
+# LDAP connection settings:
+#
+LDAP_HOST=ldap.forumsys.com
+LDAP_PORT=389
+LDAP_TIMEOUT=5
+LDAP_SSL=false
+LDAP_TLS=false
 
-# LDAP connection settings
-ADLDAP_CONTROLLERS=ldap.forumsys.com
-ADLDAP_PORT=389
-ADLDAP_TIMEOUT=5
-ADLDAP_BASEDN="dc=example,dc=com"
-ADLDAP_FOLLOW_REFFERALS=false
-ADLDAP_USE_SSL=false
-ADLDAP_USE_TLS=false
+LDAP_BASE_DN="dc=example,dc=com"
+LDAP_USERNAME="cn=read-only-admin,dc=example,dc=com"
+LDAP_PASSWORD=password
 
-ADLDAP_ADMIN_USERNAME="cn=read-only-admin,dc=example,dc=com"
-ADLDAP_ADMIN_PASSWORD=password
-
-ADLDAP_ACCOUNT_PREFIX="uid="
-ADLDAP_ACCOUNT_SUFFIX=",dc=example,dc=com"
-
-# LDAP authentication settings.
-ADLDAP_PASSWORD_SYNC=false
-ADLDAP_LOGIN_FALLBACK=false
-
-ADLDAP_DISCOVER_FIELD=uid
-ADLDAP_AUTH_FIELD=uid
-
-# Will allow SSO if your server provides an AUTH_USER field.
-WINDOWS_SSO_DISCOVER=samaccountname
-WINDOWS_SSO_KEY=AUTH_USER
-
-# field to sync as local username.
-ADLDAP_SYNC_FIELD=uid
+LDAP_AUTH_FIELD=uid
 ```
 
 ### Example configuration for FreeIPA
@@ -185,41 +125,20 @@ ADLDAP_SYNC_FIELD=uid
 The following is an example configuration for FreeIPA:
 
 ```
-LOGIN_PROVIDER=ldap
-
-# LDAP connection configuration
-# OpenLDAP, FreeIPA or ActiveDirectory
-ADLDAP_CONNECTION_SCHEME=FreeIPA
-ADLDAP_AUTO_CONNECT=true
+AUTHENTICATION_GUARD=ldap
 
 # LDAP connection settings
-ADLDAP_CONTROLLERS=ipa.example.com
-ADLDAP_PORT=389
-ADLDAP_TIMEOUT=5
-ADLDAP_BASEDN="dc=example,dc=com"
-ADLDAP_FOLLOW_REFFERALS=false
-ADLDAP_USE_SSL=false
-ADLDAP_USE_TLS=false
+LDAP_HOST=ipa.example.com
+LDAP_PORT=389
+LDAP_TIMEOUT=5
+LDAP_BASE_DN="dc=example,dc=com"
+LDAP_SSL=false
+LDAP_TLS=false
 
-ADLDAP_ADMIN_USERNAME="uid=read-only-admin,cn=users,cn=accounts,dc=example,dc=com"
-ADLDAP_ADMIN_PASSWORD=password
+LDAP_USERNAME="uid=read-only-admin,cn=users,cn=accounts,dc=example,dc=com"
+LDAP_PASSWORD=password
 
-ADLDAP_ACCOUNT_PREFIX="uid="
-ADLDAP_ACCOUNT_SUFFIX=",cn=users,cn=accounts,dc=example,dc=com"
-
-# LDAP authentication settings.
-ADLDAP_PASSWORD_SYNC=false
-ADLDAP_LOGIN_FALLBACK=false
-
-ADLDAP_DISCOVER_FIELD=uid
-ADLDAP_AUTH_FIELD=uid
-
-# Will allow SSO if your server provides an AUTH_USER field.
-WINDOWS_SSO_DISCOVER=samaccountname
-WINDOWS_SSO_KEY=AUTH_USER
-
-# field to sync as local username.
-ADLDAP_SYNC_FIELD=uid
+LDAP_AUTH_FIELD=uid
 ```
 
 ### Example configuration for Active Directory
@@ -227,41 +146,19 @@ ADLDAP_SYNC_FIELD=uid
 The following is an example configuration for Active Directory:
 
 ```
-LOGIN_PROVIDER=ldap
-
-# LDAP connection configuration
-# OpenLDAP, FreeIPA or ActiveDirectory
-ADLDAP_CONNECTION_SCHEME=ActiveDirectory
-ADLDAP_AUTO_CONNECT=true
+AUTHENTICATION_GUARD=ldap
 
 # LDAP connection settings
-ADLDAP_CONTROLLERS=ldap.example.com
-ADLDAP_PORT=389
-ADLDAP_TIMEOUT=5
-ADLDAP_BASEDN="dc=example,dc=com"
-ADLDAP_FOLLOW_REFFERALS=false
-ADLDAP_USE_SSL=false
-ADLDAP_USE_TLS=false
+LDAP_HOST=ldap.example.com
+LDAP_PORT=389
+LDAP_TIMEOUT=5
+LDAP_BASE_DN="dc=example,dc=com"
 
-ADLDAP_ADMIN_USERNAME="ldap"
-ADLDAP_ADMIN_PASSWORD=password
+LDAP_USERNAME="ldap"
+LDAP_PASSWORD=password
 
-#ADLDAP_ACCOUNT_PREFIX=
-#ADLDAP_ACCOUNT_SUFFIX=
+LDAP_AUTH_FIELD=distinguishedname
 
-# LDAP authentication settings.
-ADLDAP_PASSWORD_SYNC=false
-ADLDAP_LOGIN_FALLBACK=false
-
-ADLDAP_DISCOVER_FIELD=samaccountname
-ADLDAP_AUTH_FIELD=distinguishedname
-
-# Will allow SSO if your server provides an AUTH_USER field.
-WINDOWS_SSO_DISCOVER=samaccountname
-WINDOWS_SSO_KEY=AUTH_USER
-
-# field to sync as local username.
-ADLDAP_SYNC_FIELD=samaccountname
 ```
 
 ## Two-step authentication
