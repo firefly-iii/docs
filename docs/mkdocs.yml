@@ -81,7 +81,6 @@ plugins:
         'support/error_codes.md': 'firefly-iii/support/error_codes.md'
         'support/faq.md': 'firefly-iii/support/faq.md'
         'support/features.md': 'firefly-iii/support/features.md'
-        'support/telemetry.md': 'firefly-iii/support/telemetry.md'
         'support/transaction_types.md': 'firefly-iii/support/transaction_types.md'
         'usage/map.md': 'csv/usage/map.md'
   - minify:

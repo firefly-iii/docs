@@ -1,3 +1,31 @@
+# Firefly III uses email addresses as user identifiers. When you're using an external authentication guard
+# that doesn't do this, Firefly III is incapable of emailing you. Messages sent to "Bill Gates" always fail.
+#
+# However, if you set this value, Firefly III will store the value from this header as the user's backup
+# email address and use it to communicate. So user "Bill Gates" could still have
+# the email address "bill@microsoft.com".
+
+
+TODO iets over dubbele users en het objectguid en domain field, zie #4862
+
+
+
+# It's impossible to log out users who's authentication is handled by an external system.
+# Enter a custom URL here that will force a logout (your authentication provider can tell you).
+# Setting this variable only works when AUTHENTICATION_GUARD != web
+#
+# CUSTOM_LOGOUT_URI=
+
+
+No more option for server type
+met komma mag
+
+
+
+
+
+
+
 # Authentication
 
 There are two ways to authenticate users. The settings to change these can be accessed through the `.env`-file in the root directory of your installation, or they can be changed through environment variables (Docker).
