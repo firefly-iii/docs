@@ -83,7 +83,7 @@ If you are using Docker, the Docker image will do this automatically.
 Continue the configuration by changing the following settings:
 
 * `LDAP_HOST`. A space separated list of LDAP controllers.
-* `ADLDAP_PORT`, `ADLDAP_TIMEOUT`, `LDAP_SSL` and `LDAP_TLS` to fine tune the connection.
+* `LDAP_PORT`, `LDAP_TIMEOUT`, `LDAP_SSL` and `LDAP_TLS` to fine tune the connection.
 
 Change the `LDAP_BASE_DN` to indicate where the users can be located. If necessary, set `LDAP_USERNAME` and `LDAP_PASSWORD` to authenticate towards your LDAP server.
 
