@@ -6,16 +6,11 @@ The administration section of Firefly III has you some advanced settings for Fir
 * You can manage the translation links that are available.
 * You can configure how Firefly III checks for updates.
 * You can make Firefly III send a test message.
-* You can change the telemetry settings.
 * The user administration allows you to manage the users in your Firefly III installation, if more people than just yourself use this installation.
 
 ## Settings
 
 The options are explained, so it should be easy to understand what they do. Please do not enable the "demo website" function. This might break your installation.
-
-## Telemetry
-
-Firefly III can collect telemetry. This is opt-in, naturally. Learn more about this feature on the [telemetry page](/firefly-iii/support/telemetry).
 
 ## Transaction links
 
