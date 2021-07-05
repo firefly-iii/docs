@@ -57,9 +57,9 @@ By running this script, you will start a web server on port 8081 that will allow
 
 The Docker GitHub repository has some useful scripts to get you started. They're ready-made and all you need to do it add configuration values.
 
-- [run-hosted.sh](../scripts/run-hosted.sh.txt) in combination with your Personal Access Token and Firefly III URL.
-- [run-client-id.sh](../scripts/run-client-id.sh.txt) in combination with your Client ID and Firefly III URL.
-- [run-empty.sh](../scripts/run-empty.sh.txt) to run without anything.
+- [run-hosted.sh](scripts/run-hosted.sh.txt) in combination with your Personal Access Token and Firefly III URL.
+- [run-client-id.sh](scripts/run-client-id.sh.txt) in combination with your Client ID and Firefly III URL.
+- [run-empty.sh](scripts/run-empty.sh.txt) to run without anything.
 
 Here are some tricks to make it easier for yourself:
 
@@ -89,7 +89,7 @@ This can also be made easier for yourself:
 
 ### Use pre-defined script
 
-Use [run-inline.sh](../scripts/run-inline.sh.txt) to make it easier to manage your Personal Access Token. You can also customize the directory that the script will use as well.
+Use [run-inline.sh](scripts/run-inline.sh.txt) to make it easier to manage your Personal Access Token. You can also customize the directory that the script will use as well.
 
 ## Docker container communication
 
