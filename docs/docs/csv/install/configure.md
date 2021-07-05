@@ -13,7 +13,7 @@ You must tell the CSV importer where to reach Firefly III. This is set in the `F
 
 ### Vanity URL
 
-For Docker, you may be able to your the internal IP address of Firefly III, instead of its public address. But if normal users can't reach this URL, you must also set the `VANITY_URL`. Here is an example:
+For Docker, you may be able to use the internal IP address of Firefly III, instead of its public address. But if normal users can't reach this URL, you must also set the `VANITY_URL`. Here is an example:
 
 * `FIREFLY_III_URL=http://172.16.2.2:8080` (internal Docker URL)
 * `VANITY_URL=https://money.bill-gates.com` (public or local URL)
