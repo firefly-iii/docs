@@ -104,10 +104,15 @@ Make sure you backup your entire installation directory, and database.
 
 Go to the `firefly-iii` folder and run these commands.
 
-The `main` branch also includes alpha and beta releases. The `git pull` command may inadvertently upgrade your Firefly III version to the latest alpha or beta version if it is available. Verify there is no active alpha or beta on [the latest release](https://version.firefly-iii.org/) page.
+!!! warning
+    The `main` branch also includes alpha and beta releases. The `git pull` command may inadvertently upgrade your Firefly III version to the latest alpha or beta version if it is available. Verify there is no active alpha or beta on [the latest release](https://version.firefly-iii.org/) page.
+
+
 
 ```bash
 git pull
+# alternatively, use:
+# git pull origin [version]
 rm -rf bootstrap/cache/*
 rm -rf vendor/
 composer install --no-scripts --no-dev
