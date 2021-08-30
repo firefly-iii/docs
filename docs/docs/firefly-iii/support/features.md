@@ -19,6 +19,7 @@ Some ideas are suggested regularly. Unfortunately, I can't or won't implement al
 - The ability to set sub-categories, sub-budgets, sub-accounts, etc.
 - More complicated rules, like AND or OR and other boolean logic.
 - The ability to change the monthly cycle to another day of the month.
+- YNAB-style zero based budgeting
 
 ## If you're not going to implement my idea, could you at least make it optional?
 

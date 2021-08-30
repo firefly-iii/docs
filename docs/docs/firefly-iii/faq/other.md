@@ -118,6 +118,7 @@ Just so you know, the Firefly III rule engine is supposed to be basic. That's th
 
 * Copy values from one field to another.
 * Regular expressions.
+* Math
 
 ## I lost my password, but resetting doesn't work
 

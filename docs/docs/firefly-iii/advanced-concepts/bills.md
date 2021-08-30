@@ -12,7 +12,7 @@ These properties by themselves are mostly cosmetic. They allow Firefly III to pr
 
 If you enter a number in the "skip" field, the bill will be automatically skipped every X times; a bill that arrives every 3 months can be entered by filling in "2".
 
-If you edit a bill and change the amount, the rule will not be automatically updated to match. When you delete the bill, transactions associated with the bill will lose this association. The transaction will be saved.
+If you edit a bill and change the amount, the rule will not be automatically updated to match. When you delete the bill, transactions associated with the bill will lose this association but will not be deleted.
 
 ## Triggering a bill
 

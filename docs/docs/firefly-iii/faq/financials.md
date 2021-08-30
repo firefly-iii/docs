@@ -15,6 +15,19 @@ It's important that Firefly III won't do anything. You can't correct your budget
 
 It's up to you what you do. _Personally_, I do nr. 2. It means that Firefly III shows me what I actually spent, and my own income isn't skewed by what people pay me back.
 
+## How do I handle (partial) refunds?
+
+You may get a partial refund from a vendor. If you add this money as a deposit, the original transaction will not change. Your budgets will also still be affected. It's up to you to manage this, according to your preference. The expense account and revenue account cannot be merged. You cannot create a split transaction of different types (one withdrawal, one deposit).
+
+1. Update the original transaction to be the amount minus the refund. That way, it's like you never spent the money.
+2. Add a deposit for the refund, and increase your budget to match the new room for expenses you just created. It will still show up in reports as if you spent more than you did.
+
+Generally, the first method is recommended when the vendor makes a mistake. The second one is recommended when you overspent.
+
+## How do I handle a double booking?
+
+If you get a double booking, it's easiest to simply remove the second transaction from Firefly III, or never create it in the first place. If you delete an imported transaction, Firefly III will not recreate it during the next round of imports.
+
 ## What should I do when I close a real life asset account?
 
 To close an account in Firefly III, do the following.
