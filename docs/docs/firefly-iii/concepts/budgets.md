@@ -49,7 +49,7 @@ Other settings will have a similar effect:
 * Half yearly: Firefly III will create a half year long budget limit every six months, twice a year (1st of January, 1st of July). 
 * Yearly: Firefly III will create a year long budget limit every twelve months, once a year (1st of January). 
 
-### Rollover
+### Rollover ("Add an amount every period")
 
 Rollover budgets can be used to "save up" money in a budget. Firefly III will take the budget left from the previous period and add the configured amount to the budget.
 
