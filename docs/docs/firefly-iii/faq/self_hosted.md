@@ -8,7 +8,7 @@ Please refer to the index on your right.
 
 You're probably not running the correct version of PHP, or your Apache / nginx server is not correctly configured for the right PHP version. At the moment, you need **PHP 7.4**.
 
-Errors you can expect to see if you're not running **PHP 7.4**:
+Errors you can expect to see if you're not running **PHP c**:
 
 1. `Syntax error, unexpected )`
 2. `syntax error, unexpected 'string' (T_STRING), expecting function (T_FUNCTION) or const (T_CONST)`
@@ -21,6 +21,12 @@ phpinfo();
 ```
 
 That should tell you what you need to know. You can find update and upgrade instructions online for your web server.
+
+## Firefly III is very slow
+
+There are several reasons why this may be the case. Try the following suggestions.
+
+- From discussion [#5051](https://github.com/firefly-iii/firefly-iii/discussions/5051): Add `fastcgi_buffering off;` to the `server {}` section of your nginx configuration.
 
 ## I have to visit Firefly III through /public/ and it gives me a warning?
 
