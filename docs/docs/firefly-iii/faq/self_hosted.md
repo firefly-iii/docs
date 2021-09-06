@@ -6,9 +6,9 @@ Please refer to the index on your right.
 
 ## I get syntax errors or other problems when opening Firefly III?
 
-You're probably not running the correct version of PHP, or your Apache / nginx server is not correctly configured for the right PHP version. At the moment, you need **PHP 7.4**.
+You're probably not running the correct version of PHP, or your Apache / nginx server is not correctly configured for the right PHP version. At the moment, you need **PHP 8.0**.
 
-Errors you can expect to see if you're not running **PHP 7.4**:
+Errors you can expect to see if you're not running **PHP 8.0**:
 
 1. `Syntax error, unexpected )`
 2. `syntax error, unexpected 'string' (T_STRING), expecting function (T_FUNCTION) or const (T_CONST)`
@@ -21,6 +21,12 @@ phpinfo();
 ```
 
 That should tell you what you need to know. You can find update and upgrade instructions online for your web server.
+
+## Firefly III is very slow
+
+There are several reasons why this may be the case. Try the following suggestions.
+
+- From discussion [#5051](https://github.com/firefly-iii/firefly-iii/discussions/5051): Add `fastcgi_buffering off;` to the `server {}` section of your nginx configuration.
 
 ## I have to visit Firefly III through /public/ and it gives me a warning?
 
@@ -45,7 +51,7 @@ location ^~ /budget {
       include snippets/fastcgi-php.conf;
       fastcgi_param SCRIPT_FILENAME $request_filename;
       fastcgi_param modHeadersAvailable true; #Avoid sending the security headers twice
-      fastcgi_pass unix:/run/php/php7.4-fpm.sock;
+      fastcgi_pass unix:/run/php/php8.0-fpm.sock;
    }
 }
 
@@ -127,7 +133,11 @@ Unfortunately, there is no straight answer without more information. Check out t
 
 ## Can I use it on PHP 5.x?
 
-No. The code has been written specifically for PHP 7.4 and higher.
+No. The code has been written specifically for PHP 8.0 and higher.
+
+## Can I use it on PHP 7.x?
+
+No. The code has been written specifically for PHP 8.0 and higher.
 
 ## It is very slow on my server?
 

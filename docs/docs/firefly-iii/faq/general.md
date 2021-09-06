@@ -6,7 +6,7 @@ Please refer to the index on your right.
 
 ## What is Firefly III?
 
-Firefly III is a self-hosted manager for your personal finances. It's written in PHP 7.4. It's opinionated, which means it follows the mantra that I, the developer like.
+Firefly III is a self-hosted manager for your personal finances. It's written in PHP. It's opinionated, which means it follows the mantras that I, the developer like.
 
 ## Can I try it?
 
@@ -14,7 +14,7 @@ Yes, there is [a demo site](https://demo.firefly-iii.org/) where you can play wi
 
 ## Is it multi-user?
 
-Yes. For security reasons Firefly III opens up the registration form only for the first user, but anybody can register an account if you enable this under **Administration** &gt; **Configuration**. Keep in mind that you won't be able to _share_ your administration.
+Yes. For security reasons Firefly III opens up the registration form only for the first user, but anybody can register an account if you enable this under **Administration** &gt; **Configuration**. Keep in mind that you won't be able to _share_ your administration. This is a work in progress.
 
 ## I found a bug, what do I do?
 
