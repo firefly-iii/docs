@@ -5,7 +5,11 @@
 	<h2>Firefly III</h2>
 </div>
 
-The name of this tool is "Firefly III". It was named after the [Fairey Firefly](https://en.wikipedia.org/wiki/Fairey_Firefly) because at the time all my project names were British airplanes from the WW2 era . It's called "Firefly III" because this is the third major iteration of the original "Firefly I".
+The name of this tool is "Firefly III". It was named after the [Fairey Firefly](https://en.wikipedia.org/wiki/Fairey_Firefly) because at the time all my project names were British airplanes from the WW2 era.
+
+"Firefly" was the original iteration of this tool, and no longer exists. I started building "Firefly Mark 2" in Groovy (a Java dialect) but quickly gave up. "Firefly III" is my third and final attempt, and at the time I thought the "III" would make it sound cool. There will not be a Firefly IV or Firefly V.
+
+So it's called "Firefly III" because this is the third major iteration of the original "Firefly". Many people tend to use "Firefly" and "Firefly III" interchangeably although I tend to stick to "Firefly III" myself.
 
 On my request, the Firefly III logo was designed exclusively for Firefly III by the excellent Cherie Woo.
 
@@ -32,7 +36,7 @@ Use the logo to refer to Firefly III and the associated tools.
 
 Always download the official logo from this page. Don’t modify the graphics or use modified versions you might find on the internet. Do not modify the logo to use it in your own project. Do not use part of the logo in your own project. Don’t use the logo in a way that suggests partnership or endorsement by Firefly III.
 
-If you think you should be an exception, ask me first.
+If you think you should be an exception, please ask me first.
 
 ## Colours
 
