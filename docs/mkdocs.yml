@@ -167,6 +167,7 @@ nav:
       - Reconciling accounts: firefly-iii/advanced-concepts/reconcile.md
     - API:
       - API: firefly-iii/api.md
+      - Special endpoints: firefly-iii/api/specials.md
     - Other pages:
       - Contact and credits: firefly-iii/other-pages/contact.md
       - Third-party tools: firefly-iii/other-pages/3rdparty.md
