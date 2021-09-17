@@ -52,9 +52,9 @@ By running this script, you will start a web server on port 8081 that will allow
 
 Use `run-hosted.sh` to make it easier to manage the parameters.
 
-- [run-hosted.sh for Spectre](https://raw.githubusercontent.com/firefly-iii/spectre-importer-docker/main/run-hosted.sh)
-- [run-hosted.sh for YNAB](https://raw.githubusercontent.com/firefly-iii/ynab-importer-docker/main/run-hosted.sh)
-- [run-hosted.sh for bunq](https://raw.githubusercontent.com/firefly-iii/bunq-importer-docker/main/run-hosted.sh)
+- [run-hosted.sh for Spectre](scripts/run-hosted-spectre.sh.txt)
+- [run-hosted.sh for YNAB](scripts/run-hosted-ynab.sh.txt)
+- [run-hosted.sh for bunq](scripts/run-hosted-bunq.sh.txt)
 
 ### Append "-d"
 
@@ -113,9 +113,9 @@ This can also be made easier for yourself:
 
 Use `run-inline.sh` to make it easier to manage your tokens.
 
-- [run-inline.sh for Spectre](https://raw.githubusercontent.com/firefly-iii/spectre-importer-docker/main/run-inline.sh)
-- [run-inline.sh for YNAB](https://raw.githubusercontent.com/firefly-iii/ynab-importer-docker/main/run-inline.sh)
-- [run-inline.sh for bunq](https://raw.githubusercontent.com/firefly-iii/bunq-importer-docker/main/run-inline.sh)
+- [run-inline.sh for Spectre](scripts/run-inline-spectre.sh.txt)
+- [run-inline.sh for YNAB](scripts/run-inline-ynab.sh.txt)
+- [run-inline.sh for bunq](scripts/run-inline-bunq.sh.txt)
 
 ## Docker and IP addresses
 

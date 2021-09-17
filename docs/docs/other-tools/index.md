@@ -10,10 +10,6 @@ The [Firefly III product manager](https://github.com/JC5/product-manager) is a t
 
 The [Firefly III auto-save tool](https://github.com/JC5/autosave) is a tool that you can use to automatically create new "top up"-transactions that round your expenses up to the nearest Euro.
 
-## Telemetry
-
-This is [pretty basic Laravel website](https://github.com/firefly-iii/telemetry) that stores submitted telemetry data. Submitting telemetry is an opt-in feature of Firefly III.
-
 ## Libraries
 
 ### API support classes

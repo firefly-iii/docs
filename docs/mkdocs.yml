@@ -81,7 +81,6 @@ plugins:
         'support/error_codes.md': 'firefly-iii/support/error_codes.md'
         'support/faq.md': 'firefly-iii/support/faq.md'
         'support/features.md': 'firefly-iii/support/features.md'
-        'support/telemetry.md': 'firefly-iii/support/telemetry.md'
         'support/transaction_types.md': 'firefly-iii/support/transaction_types.md'
         'usage/map.md': 'csv/usage/map.md'
   - minify:
@@ -123,7 +122,6 @@ nav:
       - Contribute to Firefly III: firefly-iii/support/contribute.md
       - FAQ: firefly-iii/support/faq.md
       - Transaction types: firefly-iii/support/transaction_types.md
-      - Telemetry: firefly-iii/support/telemetry.md
       - Error codes: firefly-iii/support/error_codes.md
     - Pages and features:
       - Administration: firefly-iii/pages-and-features/admin.md
