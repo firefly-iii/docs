@@ -16,6 +16,16 @@ Yes, there is [a demo site](https://demo.firefly-iii.org/) where you can play wi
 
 Yes. For security reasons Firefly III opens up the registration form only for the first user, but anybody can register an account if you enable this under **Administration** &gt; **Configuration**. Keep in mind that you won't be able to _share_ your administration. This is a work in progress.
 
+## How does it compare to YNAB, Mint, GNUCash, Excel?
+
+This is a fairly complicated question, but here are some key differences that you should know about.
+
+- Firefly III is self-hosted and geared towards tech-savvy users. You must install it yourself and run it on your own server. This is a huge difference with other financial tools.
+- Importing data from your bank and doing this automatically is NOT easy with Firefly III. See also [importing data](../importing-data/introduction.md).
+- GNUCash has way more "accounting" features, like mutual funds and stock and equity.
+- Most online tools like YNAB and Mint have a another "style" of budgeting money. In YNAB you assign every coin to a budget until all your money is budgeted. Firefly III is geared towards predetermining your budgets, allocating funds to those budgets *only* and then spend it.
+- There is no desktop app for Firefly III, it's all web based.
+
 ## I found a bug, what do I do?
 
 You can contact me [through GitHub](https://github.com/firefly-iii/firefly-iii/) by opening an issue, or use the details found on [the contact page](../other-pages/contact.md).
