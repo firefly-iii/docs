@@ -1,12 +1,12 @@
 # Self hosted
 
-In order to run the CSV importer on your own machine, you'll need You need a working LAMP, LEMP or WAMP running PHP 7.4 and access to the command line. The installation routine for the CSV importer is basically the same as it is for Firefly III itself.
+In order to run the CSV importer on your own machine, you'll need You need a working LAMP, LEMP or WAMP running PHP 8.0 and access to the command line. The installation routine for the CSV importer is basically the same as it is for Firefly III itself.
 
-If you don't have one, search the web to find out how to get one. Make sure you're running PHP 7.4. There are many tutorials that will help you install one. Here are some Google queries to help you.
+If you don't have one, search the web to find out how to get one. Make sure you're running PHP 8.0. There are many tutorials that will help you install one. Here are some Google queries to help you.
 
-1. [Install a LAMP stack with PHP 7.4](https://www.google.com/search?q=lamp+stack+php+7.4)
-2. [Upgrade Ubuntu PHP 7.4](https://www.google.com/search?q=upgrade+ubuntu+php+7.4)
-3. [PHP 7.4 raspberry pi](https://www.google.nl/search?q=PHP+7.4+raspberry+pi)
+1. [Install a LAMP stack with PHP 8.0](https://www.google.com/search?q=lamp+stack+php+8.0)
+2. [Upgrade Ubuntu PHP 8.0](https://www.google.com/search?q=upgrade+ubuntu+php+8.0)
+3. [PHP 8.0 raspberry pi](https://www.google.nl/search?q=PHP+8.0+raspberry+pi)
 
 Also check out these user guides:
 

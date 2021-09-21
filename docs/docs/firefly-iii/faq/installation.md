@@ -18,9 +18,9 @@ Please checkout the installation instructions and upgrade instructions for your 
 
 ## I get syntax errors or other problems when opening Firefly III?
 
-You're probably not running the correct version of PHP, or your Apache / nginx server is not correctly configured for the right PHP version. At the moment, you need **PHP 7.4**.
+You're probably not running the correct version of PHP, or your Apache / nginx server is not correctly configured for the right PHP version. At the moment, you need **PHP 8.0**.
 
-Errors you can expect to see if you're not running **PHP 7.4**:
+Errors you can expect to see if you're not running **PHP 8.0**:
 
 1. `Syntax error, unexpected )`
 
