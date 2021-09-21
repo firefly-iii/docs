@@ -30,7 +30,7 @@ For your quick reference here is a list of pages you really want to visit:
 ## Where can I find more info?
 
 * This website!
-* [Reddit](https://old.reddit.com/r/FireflyIII/)
+* [Gitter](https://gitter.im/firefly-iii/firefly-iii)
 * [GitHub](https://github.com/firefly-iii/firefly-iii/)
 * [My personal mailbox](mailto:james@firefly-iii.org)
 
