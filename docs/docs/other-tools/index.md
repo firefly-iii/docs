@@ -18,7 +18,7 @@ A [small package](https://github.com/JC5/api-support-classes) with code to use t
 
 ### Recovery code thing
 
-A small change to [a recovery code package](https://github.com/JC5/recovery) so it's compatible with PHP 8.0.
+A small change to [a recovery code package](https://github.com/JC5/recovery) so it's compatible with PHP %PHPVERSION.
 
 ### 2FA laravel code things
 

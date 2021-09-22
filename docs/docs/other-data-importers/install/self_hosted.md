@@ -1,12 +1,12 @@
 # Self hosted
 
-In order to run the importer on your own machine, you'll need You need a working LAMP, LEMP or WAMP running PHP 8.0 and access to the command line. The installation routine for the importer is basically the same as it is for Firefly III itself.
+In order to run the importer on your own machine, you'll need You need a working LAMP, LEMP or WAMP running PHP %PHPVERSION and access to the command line. The installation routine for the importer is basically the same as it is for Firefly III itself.
 
-If you don't have one, search the web to find out how to get one. Make sure you're running PHP 8.0. There are many tutorials that will help you install one. Here are some Google queries to help you.
+If you don't have one, search the web to find out how to get one. Make sure you're running PHP %PHPVERSION. There are many tutorials that will help you install one. Here are some Google queries to help you.
 
-1. [Install a LAMP stack with PHP 8.0](https://www.google.com/search?q=lamp+stack+php+7.3)
-2. [Upgrade Ubuntu PHP 8.0](https://www.google.com/search?q=upgrade+ubuntu+php+7.3)
-3. [PHP 8.0 raspberry pi](https://www.google.nl/search?q=PHP+7.3+raspberry+pi)
+1. [Install a LAMP stack with PHP %PHPVERSION](https://www.google.com/search?q=lamp+stack+php+%PHPVERSION)
+2. [Upgrade Ubuntu PHP %PHPVERSION](https://www.google.com/search?q=upgrade+ubuntu+php+%PHPVERSION)
+3. [PHP %PHPVERSION raspberry pi](https://www.google.nl/search?q=PHP+%PHPVERSION+raspberry+pi)
 
 You won't need to set up a database.
 

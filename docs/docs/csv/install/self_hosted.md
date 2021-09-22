@@ -4,9 +4,9 @@ In order to run the CSV importer on your own machine, you'll need You need a wor
 
 If you don't have one, search the web to find out how to get one. Make sure you're running PHP %PHPVERSION! There are many tutorials that will help you install one. Here are some Google queries to help you.
 
-1. [Install a LAMP stack with PHP 8.0](https://www.google.com/search?q=lamp+stack+php+8.0)
-2. [Upgrade Ubuntu PHP 8.0](https://www.google.com/search?q=upgrade+ubuntu+php+8.0)
-3. [PHP 8.0 raspberry pi](https://www.google.nl/search?q=PHP+8.0+raspberry+pi)
+1. [Install a LAMP stack with PHP %PHPVERSION](https://www.google.com/search?q=lamp+stack+php+%PHPVERSION)
+2. [Upgrade Ubuntu PHP %PHPVERSION](https://www.google.com/search?q=upgrade+ubuntu+php+%PHPVERSION)
+3. [PHP %PHPVERSION raspberry pi](https://www.google.nl/search?q=PHP+%PHPVERSION+raspberry+pi)
 
 Also check out these user guides:
 
