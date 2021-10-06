@@ -89,15 +89,7 @@ docker-compose -f docker-compose.yml up -d
 You can follow the progress of the installation (it can take a few minutes) by running this command:
 
 ```text
-docker container ls -f name=fireflyiii
-```
-
-This will list the Firefly III containers. You can see the list starts with a container ID, for example `abc1234aab`. This container ID is probably different for you.
-
-Use the following command to follow the progress. To cancel, press Ctrl-C.
-
-```text
-docker container logs -f <containerID>
+docker-compose -f docker-compose.yml logs -f
 ```
 
 When the installation is done, Firefly III will thank you for installing it. Once you see this message, you can visit Firefly III. It will be running at your [localhost](http://localhost).
