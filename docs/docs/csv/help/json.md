@@ -49,7 +49,7 @@ There's a repository on GitHub with [import configurations for common banks and 
     "ignore_duplicate_transactions": true,
     "unique_column_index": 0,
     "unique_column_type": "note",
-    "version": 2,
+    "version": 2
 }
 ```
 
