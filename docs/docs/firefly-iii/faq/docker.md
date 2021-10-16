@@ -8,6 +8,50 @@ Please refer to the index on your right.
 
 The Dockerfile is not part of the Firefly III repository. Rather, it's kept in a [separate repository](https://dev.azure.com/Firefly-III/_git/MainImage) on Azure. The Firefly III image is built there as well.
 
+## Can I run it under a reverse proxy from a subdirectory?
+
+- Can I host it under a subfolder in a reverse-proxy?
+
+Yes. For the standard Docker image, follow [these instructions on GitHub](https://github.com/firefly-iii/firefly-iii/discussions/4892)
+
+> Installed a standalone Apache server, to act as an TLS-terminator.
+
+```
+<IfModule mod_ssl.c>
+<VirtualHost *:443>
+        ServerAdmin webmaster@localhost
+        DocumentRoot /var/www/html
+
+        ErrorLog ${APACHE_LOG_DIR}/error.log
+        CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+        ServerName ...
+        SSLCertificateFile /etc/letsencrypt/live/.../fullchain.pem
+        SSLCertificateKeyFile /etc/letsencrypt/live/.../privkey.pem
+        Include /etc/letsencrypt/options-ssl-apache.conf
+
+        <Location /accounts>
+            ProxyAddHeaders Off
+            RequestHeader unset Accept-Encoding
+            ProxyPass http://localhost:8087
+            ProxyPassReverse http://localhost:8087
+            AddOutputFilterByType SUBSTITUTE text/html
+            Substitute "s|http://localhost:8087/|https://.../accounts/|i"
+        </Location>
+</VirtualHost>
+</IfModule>
+```
+
+> `ProxyAddHeaders` is off to prevent Apache sending the X-Forward headers to Firefly III, otherwise the URL's it populates in the response will include the correct website, but not the correct path.
+
+> Unsetting the `Accept-Encoding` header ensures that the response from Firefly III is not compressed, otherwise the `Substitute` directive won't work.
+
+> `ProxyPass` and `ProxyPassReverse` act as you would expect, so that Firefly III will appear under the "accounts" directory.
+
+> The `AddOutputFilterByType` and `Substitute` directives alter the pages returned from Firefly III, replacing the localhost URL's with the website's URL. Replace "..." with your website address.
+
+Thanks to [@cartbar](https://github.com/cartbar)!
+
 ## I get 'permission denied' errors on the cache folder
 
 Some or all pages of your Firefly III show you an error that complains about not being able to write to stuff in the `/storage/cache` directory. Ultimately, this is caused by a permissions issue.
