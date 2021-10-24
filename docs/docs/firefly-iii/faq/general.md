@@ -76,7 +76,7 @@ What you want may already be possible, so read the documentation carefully. If n
 
 ## I want to help, what do I do?
 
-If you want to help with the translations, please check out [our CrowdIn project](https://crowdin.com/project/firefly-iii) (or [this one](https://crowdin.com/project/firefly-iii-help) for the help pages). If you're missing your language, then contact me through [GitHub](https://github.com/firefly-iii/firefly-iii/) or email, using the details found on [the contact page](../other-pages/contact.md).
+If you want to help with the translations, please check out [our CrowdIn project](https://crowdin.com/project/firefly-iii). If you're missing your language, then contact me through [GitHub](https://github.com/firefly-iii/firefly-iii/) or email, using the details found on [the contact page](../other-pages/contact.md).
 
 If you want to help with the development of Firefly III, please come find me! I have a strong opinion on what the code should look like and how things should work. I welcome all support, and I look forward to any suggestions you may have.
 
