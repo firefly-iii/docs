@@ -9,7 +9,7 @@ None of the following is mandatory, it will work if you don't do this beforehand
 
 ## Firefly III URL
 
-You must tell the CSV importer where to reach Firefly III. This is set in the `FIREFLY_III_URL` environment variable. 
+You must tell the CSV importer where to reach Firefly III. This is set in the `FIREFLY_III_URL` environment variable. Make sure you REMOVE any trailing slash from the end of the URL.
 
 ### Vanity URL
 
