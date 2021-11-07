@@ -67,7 +67,7 @@ plugins:
         'installation/self_hosted.md': 'firefly-iii/installation/self_hosted.md'
         'installation/third_parties.md': 'firefly-iii/installation/third_parties.md'
         'installing-and-running/docker.md': 'csv/install/docker.md'
-        'importing-data/faq.md': 'firefly-iii/importing-data/faq.md'
+        'importing-data/faq.md': 'firefly-iii/faq/importing.md'
         'importing-data/spectre.md': 'firefly-iii/importing-data/introduction.md'
         'importing-data/others.md': 'firefly-iii/importing-data/introduction.md'
         'importing-data/introduction.md': 'firefly-iii/importing-data/introduction.md'
@@ -156,7 +156,7 @@ nav:
       - Cron jobs: firefly-iii/advanced-installation/cron.md
     - Importing data:
       - Introduction: firefly-iii/importing-data/introduction.md
-      - FAQ: firefly-iii/importing-data/faq.md
+      - FAQ: firefly-iii/faq/importing.md
     - Exporting data: firefly-iii/exporting-data.md
     - Advanced concepts:
       - Piggy banks: firefly-iii/advanced-concepts/piggies.md

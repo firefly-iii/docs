@@ -2,7 +2,7 @@
 
 Importing transactions (automatically) into Firefly III is one of the most asked features of Firefly III. Everybody wants Firefly III to automatically connect to their bank and synchronize all transactions.
 
-In order to import transactions into Firefly III, you'll have to install and run separate tools. These tools can do the synchronization for you. All of these apps connect to the Firefly III API (documented [on a separate website](https://api-docs.firefly-iii.org/)). To connect these apps to the API, most require an access token or some kind of an OAuth flow to be followed.
+In order to import transactions into Firefly III, you'll have to install and run separate tools. These tools can do the synchronization for you. All of these apps connect to the Firefly III API (documented [on a separate website](https://api-docs.firefly-iii.org/)). To connect these apps to the API, most require an access token and an OAuth flow to be followed.
 
 ## Some notes regarding importing transactions
 
@@ -11,8 +11,7 @@ In order to import transactions into Firefly III, you'll have to install and run
 * You might not be able to easily automate the import/sync process.
 
 !!! info
-    Some background information on automated imports can be found in the [FAQ](faq.md).
-
+    Some background information on automated imports can be found in the [FAQ](../faq/importing.md).
 
 ## Available tools
 
@@ -61,10 +60,10 @@ This service by [@financelurker](https://github.com/financelurker) lets you impo
 
 ### bunq importer
 
-If you're banking with [bunq](https://www.bunq.com/), you can use the dedicated [bunq importer](http://github.com/firefly-iii/bunq-importer).
-
 !!! warning
-    API keys for bunq are only available for paying bunq users.
+    API keys for bunq are only available for paying bunq users. The bunq importer is discontinued as of January 1st, 2022.
+
+If you're banking with [bunq](https://www.bunq.com/), you can use the dedicated [bunq importer](http://github.com/firefly-iii/bunq-importer).
 
 - [Website](http://github.com/firefly-iii/bunq-importer)
 - [Documentation](../../../other-data-importers)
@@ -76,6 +75,9 @@ If you're banking with [Revolut](https://www.revolut.com/), you can use the [Rev
 - [Website and documentation](https://gitlab.com/ludo444/fireflyrevoluttransactions)
 
 ### YNAB importer
+
+!!! warning
+    The YNAB importer is discontinued as of January 1st, 2022.
 
 You can migrate from "You Need a Budget" using the dedicated [YNAB importer](http://github.com/firefly-iii/ynab-importer).
 

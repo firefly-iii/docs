@@ -21,7 +21,7 @@ Yes. For security reasons Firefly III opens up the registration form only for th
 This is a fairly complicated question, but here are some key differences that you should know about.
 
 - Firefly III is self-hosted and geared towards tech-savvy users. You must install it yourself and run it on your own server. This is a huge difference with other financial tools.
-- Importing data from your bank and doing this automatically is NOT easy with Firefly III. See also [importing data](../importing-data/introduction.md).
+- Importing data from your bank and doing this automatically is not that easy with Firefly III. See also [importing data](../importing-data/introduction.md) for more information.
 - GNUCash has way more "accounting" features, like mutual funds and stock and equity.
 - Most online tools like YNAB and Mint have a another "style" of budgeting money. In YNAB you assign every coin to a budget until all your money is budgeted. Firefly III is geared towards predetermining your budgets, allocating funds to those budgets *only* and then spend it.
 - There is no desktop app for Firefly III, it's all web based.
