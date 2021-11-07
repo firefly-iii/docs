@@ -53,6 +53,12 @@ Enter the following command.
 composer create-project firefly-iii/spectre-importer --no-dev --prefer-dist spectre-importer <latest>
 ```
 
+### Nordigen
+
+```bash
+composer create-project firefly-iii/nordigen-importer --no-dev --prefer-dist spectre-importer <latest>
+```
+
 ### YNAB
 
 ```bash

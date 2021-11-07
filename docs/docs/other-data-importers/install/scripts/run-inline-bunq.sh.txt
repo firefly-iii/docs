@@ -41,4 +41,4 @@ docker run \
 -e BUNQ_API_CODE=$BUNQ_API_CODE \
 -e BUNQ_API_URI=$BUNQ_API_URI \
 -e WEB_SERVER=false \
-fireflyiii/bunq-importer:develop
+fireflyiii/bunq-importer:latest

@@ -1,12 +1,12 @@
 #
-# This script will kick off the YNAB importer on the command line, using Docker run.
+# This script will kick off the Nordigen importer on the command line, using Docker run.
 # After it has run, the container will be stopped and removed automatically.
 # To configure this script, change the variables below to your liking.
 
 #
-# Refer here to your personal YNAB import configuration file.
+# Refer here to your personal Nordigen import configuration file.
 #
-JSON_CONFIG=/home/james/ynab_example.json
+JSON_CONFIG=/home/james/nordigen_example.json
 
 #
 # Create a personal access token in your Firefly III installation, under 'Profile'
@@ -16,12 +16,13 @@ PERSONAL_ACCESS_TOKEN=ey...
 #
 # This is the full path to your Firefly III installation:
 #
-FIREFLY_III_URI=http:/172.17.0....
+FIREFLY_III_URL=http:/172.17.0....
 
 #
-# Set your YNAB API token here.
+# Nordigen information. Get this from your profile over at Nordigen.
 #
-YNAB_API_CODE=
+NORDIGEN_ID=
+NORDIGEN_KEY=
 
 #
 # There is no need to touch anything after this point, but if you're smart you're free to do so.
@@ -30,9 +31,10 @@ DIR=$PWD
 
 docker run \
 --rm \
--v $JSON_CONFIG:/import/ynab.json \
+-v $JSON_CONFIG:/import/spectre.json \
 -e FIREFLY_III_ACCESS_TOKEN=$PERSONAL_ACCESS_TOKEN \
--e FIREFLY_III_URI=$FIREFLY_III_URI \
--e YNAB_API_CODE=$YNAB_API_CODE \
+-e FIREFLY_III_URL=$FIREFLY_III_URL \
+-e NORDIGEN_ID=$NORDIGEN_ID \
+-e NORDIGEN_KEY=$NORDIGEN_KEY \
 -e WEB_SERVER=false \
-fireflyiii/ynab-importer:latest
+fireflyiii/nordigen-importer:latest

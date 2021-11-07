@@ -1,5 +1,5 @@
 #
-# This script will kick off the YNAB importer on the command line, using Docker run.
+# This script will kick off the Nordigen importer on the command line, using Docker run.
 # It will launch a web server on port 8081 that you can approach and use to import data.
 
 #
@@ -13,9 +13,10 @@ PERSONAL_ACCESS_TOKEN=ey...
 FIREFLY_III_URI=http:/172.17.0.3/
 
 #
-# Set your YNAB API token here.
+# Set your Nordigen API information here.
 #
-YNAB_API_CODE=
+NORDIGEN_ID=
+NORDIGEN_KEY=
 
 #
 # There is no need to touch anything after this point, but if you're smart you're free to do so.
@@ -25,6 +26,7 @@ docker run \
 --rm \
 -e FIREFLY_III_ACCESS_TOKEN=$PERSONAL_ACCESS_TOKEN \
 -e FIREFLY_III_URI=$FIREFLY_III_URI \
--e YNAB_API_CODE=$YNAB_API_CODE \
+-e NORDIGEN_ID=$NORDIGEN_ID \
+-e NORDIGEN_KEY=$NORDIGEN_KEY \
 -p 8081:80 \
-fireflyiii/ynab-importer:latest
+fireflyiii/nordigen-importer:latest

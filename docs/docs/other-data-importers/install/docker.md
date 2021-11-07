@@ -1,14 +1,12 @@
 # Docker
 
-There are a few ways to use the data importers with Docker.
-
-There are some *gotchas* when it comes to Docker and IP addresses, so please check out the instructions at the bottom of the page.
+There are a few ways to use the Firefly III data importers with Docker. There are some *gotchas* when it comes to Docker and IP addresses, so please check out the instructions at the bottom of the page.
 
 ## Run as a web server
 
 This is the easiest way to run any importer. Simply use the following run command to launch the importer:
 
-### Spectre
+### For the Spectre importer
 
 ```bash
 docker run \
@@ -21,7 +19,20 @@ docker run \
 fireflyiii/spectre-importer:latest
 ```
 
-### YNAB
+### For the Nordigen importer
+
+```bash
+docker run \
+--rm \
+-e FIREFLY_III_ACCESS_TOKEN= \
+-e FIREFLY_III_URL= \
+-e NORDIGEN_ID= \
+-e NORDIGEN_KEY= \
+-p 8081:8080 \
+fireflyiii/nordigen-importer:latest
+```
+
+### For the YNAB importer
 
 ```bash
 docker run \
@@ -33,7 +44,7 @@ docker run \
 fireflyiii/ynab-importer:latest
 ```
 
-### bunq
+### For the bunq importer
 
 ```bash
 docker run \
@@ -46,13 +57,14 @@ docker run \
 fireflyiii/bunq-importer:latest
 ```
 
-By running this script, you will start a web server on port 8081 that will allow you to import data. You should append the command with your Personal Access Token, Firefly III URL and the necessary tokens.
+By running any of these scripts, you will start a web server on port 8081 that will allow you to import data. You should append the command with your Personal Access Token, Firefly III URL and the necessary tokens.
 
 ### Use the pre-defined script
 
-Use `run-hosted.sh` to make it easier to manage the parameters.
+Use `run-hosted.sh` to make it easier to manage the parameters. Here are some examples
 
 - [run-hosted.sh for Spectre](scripts/run-hosted-spectre.sh.txt)
+- [run-hosted.sh for Nordigen](scripts/run-hosted-nordigen.sh.txt)
 - [run-hosted.sh for YNAB](scripts/run-hosted-ynab.sh.txt)
 - [run-hosted.sh for bunq](scripts/run-hosted-bunq.sh.txt)
 
@@ -76,6 +88,20 @@ docker run \
 -e SPECTRE_SECRET= \
 -e WEB_SERVER=false \
 fireflyiii/spectre-importer:latest
+```
+
+### Nordigen
+
+```bash
+docker run \
+--rm \
+-v /home/james/config.json:/import/nordigen.json \
+-e FIREFLY_III_ACCESS_TOKEN= \
+-e FIREFLY_III_URL= \
+-e NORDIGEN_ID= \
+-e NORDIGEN_KEY= \
+-e WEB_SERVER=false \
+fireflyiii/nordigen-importer:latest
 ```
 
 ### YNAB
@@ -114,6 +140,7 @@ This can also be made easier for yourself:
 Use `run-inline.sh` to make it easier to manage your tokens.
 
 - [run-inline.sh for Spectre](scripts/run-inline-spectre.sh.txt)
+- [run-inline.sh for Nordigen](scripts/run-inline-nordigen.sh.txt)
 - [run-inline.sh for YNAB](scripts/run-inline-ynab.sh.txt)
 - [run-inline.sh for bunq](scripts/run-inline-bunq.sh.txt)
 
@@ -160,11 +187,7 @@ docker logs -f $(docker container ls -a -f name=fireflyiii --format="{{.ID}}")
 # get Firefly III IP address:
 docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' $(docker container ls -a -f name=fireflyiii --format="{{.ID}}")
 
-# Adapt run-inline.sh and run it using your personal access token and YNAB API token
-# You can find it here:
-# - https://github.com/firefly-iii/spectre-importer-docker/blob/main/run-inline.sh
-# - https://github.com/firefly-iii/ynab-importer-docker/blob/main/run-inline.sh
-# - https://github.com/firefly-iii/bunq-importer-docker/blob/main/run-inline.sh
+# Adapt run-inline.sh and run it using your personal access token and YNAB API token. See earlier in these docs.
 
 ./run-inline.sh
 

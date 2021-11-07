@@ -30,5 +30,5 @@ docker run \
 -e FIREFLY_III_URL=$FIREFLY_III_URL \
 -e SPECTRE_APP_ID=$SPECTRE_APP_ID \
 -e SPECTRE_SECRET=$SPECTRE_SECRET \
--p 8082:8080 \
+-p 8081:8080 \
 fireflyiii/spectre-importer:latest

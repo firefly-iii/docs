@@ -8,9 +8,10 @@ There are a few pieces of configuration required for the Firefly III import tool
 
 It depends on the service you're using which other info you need:
 
-- Spectre: Your Spectre / Salt Edge App Secret (select "Service" as the type) (`SPECTRE_SECRET`) and your Spectre / Salt Edge App ID (`SPECTRE_APP_ID`).
-- YNAB: Your YNAB API token (`YNAB_API_CODE`).
-- bunq: Your bunq API token (`BUNQ_API_CODE`) and the bunq API URL (`BUNQ_API_URL`).
+- **Spectre**: Your Spectre / Salt Edge App Secret (select "Service" as the type) (`SPECTRE_SECRET`) and your Spectre / Salt Edge App ID (`SPECTRE_APP_ID`).
+- **Nordigen**: Your Nordigen ID and KEY as `NORDIGEN_ID` and `NORDIGEN_KEY` respectively.
+- **YNAB**: Your YNAB API token (`YNAB_API_CODE`).
+- **bunq**: Your bunq API token (`BUNQ_API_CODE`) and the bunq API URL (`BUNQ_API_URL`).
 
 ## Asset accounts
 

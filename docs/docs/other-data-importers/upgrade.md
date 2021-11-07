@@ -10,6 +10,12 @@ The best way to upgrade is to "reinstall" the importer using the following comma
 composer create-project firefly-iii/spectre-importer --no-dev --prefer-dist updated-spectre-importer <next_version>
 ```
 
+### Nordigen
+
+```bash
+composer create-project firefly-iii/nordigen-importer --no-dev --prefer-dist updated-nordigen-importer <next_version>
+```
+
 ### YNAB
 
 ```bash
@@ -43,7 +49,13 @@ Then pull the new image using this command:
 ### Spectre
 
 ```bash
-docker pull fireflyiii/spectr-importer:latest
+docker pull fireflyiii/spectre-importer:latest
+```
+
+### Nordigen
+
+```bash
+docker pull fireflyiii/nordigen-importer:latest
 ```
 
 ### YNAB
