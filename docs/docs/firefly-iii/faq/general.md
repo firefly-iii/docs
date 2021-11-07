@@ -23,8 +23,25 @@ This is a fairly complicated question, but here are some key differences that yo
 - Firefly III is self-hosted and geared towards tech-savvy users. You must install it yourself and run it on your own server. This is a huge difference with other financial tools.
 - Importing data from your bank and doing this automatically is not that easy with Firefly III. See also [importing data](../importing-data/introduction.md) for more information.
 - GNUCash has way more "accounting" features, like mutual funds and stock and equity.
-- Most online tools like YNAB and Mint have a another "style" of budgeting money. In YNAB you assign every coin to a budget until all your money is budgeted. Firefly III is geared towards predetermining your budgets, allocating funds to those budgets *only* and then spend it.
+- Most online tools like YNAB and Mint have a another "style" of budgeting money. See for more info, below.
 - There is no desktop app for Firefly III, it's all web based.
+
+## Why is Firefly III not based on "zero sum budgeting"?
+
+In many budgeting tools you assign every coin to a budget until all your money is budgeted. When I started Firefly III zero-sum budgeting didn't really exist as a concept, at least not that I remember.
+
+The only effective difference with YNAB (and other tools) is that you *don't need to budget all the way to zero*. What you do is, you set a monthly amount that you want to budget (aka spend), like € 1000. You shape a few budgets around that amount, and you start the month with € 1000 on your bank account and like 4 budgets to spend it in. Now you have a monthly financial routine around 1000,-. You can now shape your budgets and try to spend even less. If you have € 2000 on your savings account you know you can go without a job for two months.
+
+Any income you get over the month you put in your savings account directly, it doesn't need to reside on your bank account: it would only muddle your € 1000. If you want to create specific saving targets for the money in your savings account you use [piggy banks](../advanced-concepts/piggies.md).
+
+Two differences between zero sum budgeting and Firefly III:
+
+- You don't need to budget all the money.
+- You separate the income from the budgeting and spending process
+
+When I built Firefly III I was over 5K in debt and this helped me pay it off in less than a year: a monthly budget routine separated from my income, fixed amounts at the start of each month, all income to the savings account. Firefly III is geared towards predetermining your budgets, allocating funds to those budgets *only* and then spend it.
+
+See [personal finances](../about-firefly-iii/personal-finances.md) for more information.
 
 ## I found a bug, what do I do?
 
