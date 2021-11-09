@@ -56,7 +56,7 @@ composer create-project firefly-iii/spectre-importer --no-dev --prefer-dist spec
 ### Nordigen
 
 ```bash
-composer create-project firefly-iii/nordigen-importer --no-dev --prefer-dist spectre-importer <latest>
+composer create-project firefly-iii/nordigen-importer --no-dev --prefer-dist nordigen-importer <latest>
 ```
 
 ### YNAB
