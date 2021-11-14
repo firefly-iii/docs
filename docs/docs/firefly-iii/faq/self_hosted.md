@@ -249,7 +249,7 @@ This is a permissions error that may happen when another user than your webserve
 
 If you're using Docker, this may also happen when you run "php artisan" commands as root. To fix this, you can use a similar command for Docker. Replace `<container>` with the ID of your container.
 
-* `docker exec -it <container> chown -R www-data:www-data /var/www/firefly-iii/storage`
+* `docker exec -it <container> chown -R www-data:www-data /var/www/html/storage`
 
 If the problem persists make sure that you run your cron job as the "www-data" user so the cache directory doesn't get mixed up: `sudo -u www-data php artisan [..]`.
 
