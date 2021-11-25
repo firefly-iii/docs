@@ -23,7 +23,7 @@ In the picture, objects related to transactions are shown in shades of red. A "t
 - One transaction removing money from account A.
 - One transaction adding money to account B.
 
-A split transaction is one "transaction group" that contains *X* "transaction journals", one for each split. Each transaction journal contains two transactions. The amount of the witdrawal is stored in the transaction.
+A split transaction is one "transaction group" that contains *X* "transaction journals", one for each split. Each transaction journal contains two transactions. The amount of the withdrawal is stored in the transaction.
 
 Accounts and transaction journals can have a currency assigned to it. Transaction journals may also have a "foreign" currency assigned to it, which is another reference to a currency object.
 
