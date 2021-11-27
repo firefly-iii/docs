@@ -199,6 +199,33 @@ nav:
       - Frequently seen issues: csv/errors/freq_errors.md
       - Frequently asked questions: csv/errors/freq_questions.md
       - Bad CSV files: csv/errors/bad_files.md
+  - Data Importer:
+    - Introduction: data-importer/index.md
+    - Installing and running:
+      - Configuration: data-importer/install/configure.md
+      - Docker: data-importer/install/docker.md
+      - Self-hosted: data-importer/install/self_hosted.md
+      - Upgrading: data-importer/upgrade.md
+      - Public installation: data-importer/help/public.md
+    - Help:
+      - The JSON file: data-importer/help/json.md
+      - Pre-made configuration: data-importer/help/config.md
+      - Public installation: data-importer/help/public.md
+    - Importing data:
+      - Uploading files: data-importer/usage/upload.md
+      - Configuring your import: data-importer/usage/configure.md
+      - Setting roles for columns: data-importer/usage/roles.md
+      - Mapping data: data-importer/usage/map.md
+      - Importing over command line: data-importer/usage/command_line.md
+      - Importing using POST: data-importer/usage/post.md
+      - Emailing results: data-importer/usage/email.md
+      - Importing transfers: data-importer/usage/importing_transfers.md
+    - Errors and trouble shooting:
+      - Duplicate transactions: data-importer/errors/duplicate_transactions.md
+      - Personal Access Token errors: data-importer/errors/token_errors.md
+      - Frequently seen issues: data-importer/errors/freq_errors.md
+      - Frequently asked questions: data-importer/errors/freq_questions.md
+      - Bad CSV files: data-importer/errors/bad_files.md
   - Other data importers:
     - Introduction: other-data-importers/index.md
     - Installing and running:
