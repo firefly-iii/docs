@@ -1,5 +1,8 @@
 # Configure installation
 
+!!! warning
+    The Firefly III CSV importer is due to be replaced by the universal [Data Importer](https://docs.firefly-iii.org/data-importer/). Please migrate at your earliest convenience.
+
 The CSV importer communicates with Firefly III over the [API](../../firefly-iii/api.md). You can supply the CSV importer with a few pieces of information to make it easy to connect to your Firefly III.
 
 None of the following is mandatory, it will work if you don't do this beforehand.

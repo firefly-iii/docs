@@ -1,5 +1,8 @@
 # Uploading files
 
+!!! warning
+    The Firefly III CSV importer is due to be replaced by the universal [Data Importer](https://docs.firefly-iii.org/data-importer/). Please migrate at your earliest convenience.
+
 On this page you'll find instructions on how to upload files into the CSV importer.
 
 ![Upload files.](./images/upload.png)

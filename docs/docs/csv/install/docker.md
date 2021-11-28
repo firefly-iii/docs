@@ -1,5 +1,8 @@
 # Docker
 
+!!! warning
+    The Firefly III CSV importer is due to be replaced by the universal [Data Importer](https://docs.firefly-iii.org/data-importer/). Please migrate at your earliest convenience.
+
 There are a few ways to use the CSV importer and Docker. There are some *gotchas* when it comes to Docker and IP addresses, so please check out the instructions at the bottom of the page.
 
 The CSV import uses the Firefly III API. Read more about the API in [the Firefly III documentation](../../firefly-iii/api.md).

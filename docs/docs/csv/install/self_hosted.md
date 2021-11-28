@@ -1,5 +1,8 @@
 # Self hosted
 
+!!! warning
+    The Firefly III CSV importer is due to be replaced by the universal [Data Importer](https://docs.firefly-iii.org/data-importer/). Please migrate at your earliest convenience.
+
 In order to run the CSV importer on your own machine, you'll need You need a working LAMP, LEMP or WAMP running PHP %PHPVERSION and access to the command line. The installation routine for the CSV importer is basically the same as it is for Firefly III itself.
 
 If you don't have one, search the web to find out how to get one. Make sure you're running PHP %PHPVERSION! There are many tutorials that will help you install one. Here are some Google queries to help you.

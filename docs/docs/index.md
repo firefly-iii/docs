@@ -6,23 +6,9 @@ Welcome. This site contains all the documentation for Firefly III and the associ
 
 The [main documentation](firefly-iii) for Firefly III.
 
-<!-- I am a test sentence -->
-
-<!--
-
-
 ## Data Importer
 
-You need a separate tool to import data into Firefly III. Check out the installation instructions and explanation on this page.
--->
-
-## CSV Importer
-
-Since this is by far the most used tool, [the docs](csv) are separate from the others.
-
-## Other data importers
-
-Contains instructions for [the bunq, Spectre and YNAB import tools](other-data-importers).
+The [Firefly III Data Importer](data-importer) is the nr. 1 tool to import from your bank into Firefly III.
 
 ## Other tools and libraries
 

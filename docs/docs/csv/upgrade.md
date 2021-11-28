@@ -1,5 +1,8 @@
 # Upgrade
 
+!!! warning
+    The Firefly III CSV importer is due to be replaced by the universal [Data Importer](https://docs.firefly-iii.org/data-importer/). Please migrate at your earliest convenience.
+
 ## Upgrading a self-hosted CSV Importer
 
 The best way to upgrade is to "reinstall" the Firefly III CSV importer using the following command:

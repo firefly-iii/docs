@@ -1,5 +1,8 @@
 # Email
 
+!!! warning
+    The Firefly III CSV importer is due to be replaced by the universal [Data Importer](https://docs.firefly-iii.org/data-importer/). Please migrate at your earliest convenience.
+
 The CSV importer can email you the results of the CSV import. This is useful for cron jobs.
 
 In your `.env.example` file or using Docker environment variables, configure the CSV importer as follows:

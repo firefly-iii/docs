@@ -1,5 +1,8 @@
 # POST commands
 
+!!! warning
+    The Firefly III CSV importer is due to be replaced by the universal [Data Importer](https://docs.firefly-iii.org/data-importer/). Please migrate at your earliest convenience.
+
 On this page you'll find instructions on how to use the import tool's POST commands to import data. This page assumes you're self-hosting the CSV import tool, although these commands also work when using Docker.
 
 !!! info

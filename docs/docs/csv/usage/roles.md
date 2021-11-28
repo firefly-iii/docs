@@ -1,5 +1,8 @@
 # Set roles
 
+!!! warning
+    The Firefly III CSV importer is due to be replaced by the universal [Data Importer](https://docs.firefly-iii.org/data-importer/). Please migrate at your earliest convenience.
+
 Once you've configured the CSV file, you have to tell the Firefly III CSV importer what each column means. The page looks something like this:
 
 ![An example CSV file with 3 columns.](./images/example.png)

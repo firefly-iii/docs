@@ -1,5 +1,8 @@
 # Bad files from your bank.
 
+!!! warning
+    The Firefly III CSV importer is due to be replaced by the universal [Data Importer](https://docs.firefly-iii.org/data-importer/). Please migrate at your earliest convenience.
+
 Some banks deliver abysmal CSV files. They have an interest to keep you inside their eco-system and will do anything to stop you from moving to another system. Here are some common problems and their solutions.
 
 ## File is not UTF-8

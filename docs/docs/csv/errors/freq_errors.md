@@ -1,5 +1,8 @@
 # Frequently seen issues
 
+!!! warning
+    The Firefly III CSV importer is due to be replaced by the universal [Data Importer](https://docs.firefly-iii.org/data-importer/). Please migrate at your earliest convenience.
+
 Please open a ticket [on GitHub](https://github.com/firefly-iii/firefly-iii/) if your problem isn't listed here.
 
 ## I get page load errors because the protocols don't match

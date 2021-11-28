@@ -1,5 +1,8 @@
 # Map data
 
+!!! warning
+    The Firefly III CSV importer is due to be replaced by the universal [Data Importer](https://docs.firefly-iii.org/data-importer/). Please migrate at your earliest convenience.
+
 If you import data into Firefly III, you may notice that most banks aren't particularly "clean" when it comes to account names. Check out this example:
 
 ![Weird opposing account names.](./images/difficult1.png)

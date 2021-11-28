@@ -1,5 +1,8 @@
 # JSON
 
+!!! warning
+    The Firefly III CSV importer is due to be replaced by the universal [Data Importer](https://docs.firefly-iii.org/data-importer/). Please migrate at your earliest convenience.
+
 The Firefly III CSV importer generates an import file each time you import CSV files. You can download the CSV file during or after the import.
 
 ## Pre-made import files

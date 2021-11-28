@@ -1,5 +1,8 @@
 # Firefly III CSV importer documentation
 
+!!! warning
+    The Firefly III CSV importer is due to be replaced by the universal [Data Importer](https://docs.firefly-iii.org/data-importer/). Please migrate at your earliest convenience.
+
 This is the [Firefly III CSV importer](https://github.com/firefly-iii/csv-importer) documentation. Welcome!
 
 ## What is the CSV Importer?

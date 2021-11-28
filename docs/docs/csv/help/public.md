@@ -1,5 +1,8 @@
 # Public installation
 
+!!! warning
+    The Firefly III CSV importer is due to be replaced by the universal [Data Importer](https://docs.firefly-iii.org/data-importer/). Please migrate at your earliest convenience.
+
 There is a public instance of the CSV importer running on [https://csv-importer.firefly-iii.org](https://csv-importer.firefly-iii.org). You can use this instance to import data into your own installation. But keep in mind it comes with a "price".
 
 - Your own Firefly III installation must be reachable over the internet. This is a security and privacy risk.

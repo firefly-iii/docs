@@ -1,5 +1,8 @@
 # Frequently Asked Questions
 
+!!! warning
+    The Firefly III CSV importer is due to be replaced by the universal [Data Importer](https://docs.firefly-iii.org/data-importer/). Please migrate at your earliest convenience.
+
 ## How do I handle custom SSL certificates?
 
 If you run your own CA, check out [the options](https://github.com/firefly-iii/csv-importer/blob/main/.env.example#L51) in the `.env.example` file.

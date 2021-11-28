@@ -1,5 +1,8 @@
 # Personal Access Token errors
 
+!!! warning
+    The Firefly III CSV importer is due to be replaced by the universal [Data Importer](https://docs.firefly-iii.org/data-importer/). Please migrate at your earliest convenience.
+
 If you configure the CSV importer to use Personal Access Tokens, and you've added your Personal Access Token to the CSV Importer, you can run into several errors that maybe difficult to diagnose. Here are some common ones:
 
 First, always remember:

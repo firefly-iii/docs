@@ -1,5 +1,8 @@
 # Configure the import
 
+!!! warning
+    The Firefly III CSV importer is due to be replaced by the universal [Data Importer](https://docs.firefly-iii.org/data-importer/). Please migrate at your earliest convenience.
+
 This page contains instructions on how to configure your CSV import.
 
 After uploading a file, you'll be presented with a list of options. A configuration file will pre-set these values for you.
