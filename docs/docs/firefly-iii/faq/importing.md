@@ -34,7 +34,7 @@ To see which other importers are available for Firefly III, check out [this exte
 
 ## I want to auto-import transactions from \[my bank\] out of the box!
 
-Firefly III has [many tools](introduction.md) to import transactions. You must install these tools separately.
+Firefly III has [many tools](../importing-data/introduction.md) to import transactions. You must install these tools separately.
 
 Most tools come with the necessary hooks to automate the import yourself. This also depends on your bank's support for these kinds of things.
 
