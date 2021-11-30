@@ -19,7 +19,7 @@ Install the following PHP modules:
 
 You need to [install composer](https://getcomposer.org/doc/00-intro.md) or [download composer](https://getcomposer.org/download/).
 
-If you're having trouble with (parts of) this step, please check out [the FAQ](../errors/freq_questions.md) or open an issue [on GitHub](https://github.com/firefly-iii/firefly-iii).
+If you're having trouble with (parts of) this step, please check out [the FAQ](../help/faq.md) or open an issue [on GitHub](https://github.com/firefly-iii/firefly-iii).
 
 ## Installing FIDI
 
@@ -50,11 +50,11 @@ You can access FIDI at [http://localhost/](http://localhost/). If this URL is ta
 
 ### Browsing to site
 
-Browsing to the site should be easy. You should see the following screen or something like it because this is an old screenshot.
+Browsing to the site should be easy. You should see the following screen.
 
 ![Opening screen of FIDI.](images/opening.png)
 
-If this is not the case, or something is broken, be sure to open [an issue on GitHub](https://github.com/firefly-iii/firefly-iii) or check out [the FAQ](../errors/freq_questions.md).
+If this is not the case, or something is broken, be sure to open [an issue on GitHub](https://github.com/firefly-iii/firefly-iii) or check out [the FAQ](../help/faq.md).
 
 ## Reverse proxies
 

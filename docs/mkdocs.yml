@@ -179,11 +179,12 @@ nav:
       - Docker: data-importer/install/docker.md
       - Self-hosted: data-importer/install/self_hosted.md
       - Upgrading: data-importer/upgrade.md
-      - Public installation: data-importer/help/public.md
+      - Cloud installation: data-importer/install/public.md
     - Help:
+      - My first import: data-importer/help/my_first_import.md
+      - FAQ: data-importer/help/faq.md
       - The JSON file: data-importer/help/json.md
       - Pre-made configuration: data-importer/help/config.md
-      - Public installation: data-importer/help/public.md
     - Importing data:
       - Uploading files: data-importer/usage/upload.md
       - Configuring your import: data-importer/usage/configure.md
@@ -197,7 +198,6 @@ nav:
       - Duplicate transactions: data-importer/errors/duplicate_transactions.md
       - Personal Access Token errors: data-importer/errors/token_errors.md
       - Frequently seen issues: data-importer/errors/freq_errors.md
-      - Frequently asked questions: data-importer/errors/freq_questions.md
       - Bad CSV files: data-importer/errors/bad_files.md
   - Other tools:
     - Introduction: other-tools/index.md
