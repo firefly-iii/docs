@@ -187,6 +187,7 @@ nav:
       - Pre-made configuration: data-importer/help/config.md
     - Importing data:
       - Uploading files: data-importer/usage/upload.md
+      - Connecting your bank: data-importer/usage/connection.md
       - Configuring your import: data-importer/usage/configure.md
       - Setting roles for columns: data-importer/usage/roles.md
       - Mapping data: data-importer/usage/map.md

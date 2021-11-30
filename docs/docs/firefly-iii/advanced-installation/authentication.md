@@ -29,7 +29,7 @@ Firefly III supports [RFC 3875](https://tools.ietf.org/html/rfc3875#section-4.1.
 
 A very popular tool that can do this [Authelia](https://www.authelia.com/docs/).
 
-!!! warn
+!!! warning
     When Firefly III is in `remote_user_guard` mode, it will do absolutely **NO** checks on the validity of the header or the contents. Firefly III will not ask for passwords, if won't check for MFA, nothing. All authentication is delegated to the authentication proxy and Firefly III just doesn't care anymore.
 
 ### Enable the remote user option
