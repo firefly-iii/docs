@@ -13,7 +13,7 @@ Because it is very difficult for a poor open source developer like me to build c
 
 If those institutes do not support your financial institution, be sure you can still import CSV files. Other formats are still on the roadmap. That should cover your needs.
 
-Should you be wondering: YNAB and bunq are [discontinued](https://github.com/firefly-iii/firefly-iii/issues/5161). Sorry about that.
+Should you be wondering: the YNAB and bunq importers are [discontinued](https://github.com/firefly-iii/firefly-iii/issues/5161). Sorry about that.
 
 ## Installation
 
@@ -25,7 +25,7 @@ The Firefly III Data Importer (or **FIDI** for short) is a tool you need to inst
 
 ## Usage
 
-To use the **FIDI**, you need any of the following things:
+To use **FIDI**, you need any of the following things:
 
 - API keys from [Salt Edge](https://www.saltedge.com/) / Spectre, if you want to use their services. Register at [Spectre](https://www.saltedge.com/client_users/sign_up).
 - API keys from [Nordigen](https://nordigen.com/), if you want to use their services instead. Register with [Nordigen](https://ob.nordigen.com/).
@@ -34,8 +34,8 @@ If you wish to use neither, you need a CSV file from your bank. How and where yo
 
 ### JSON file
 
-Optionally, FIDI accepts a JSON file with import configuration values. If you're just starting out, ignore this bit.
+Optionally, FIDI accepts a JSON file with import configuration values.
 
 ## And then what?
 
-Your transactions can be messy and confusing once imported. It can also be difficult to import to import a lot of data at once. Be sure to read the page 🐤 [My First Import](help/my_first_import.md).
+Your transactions can be messy and confusing once imported. It can also be difficult to import a lot of data at once. Be sure to read the page 🐤 [My First Import](help/my_first_import.md).

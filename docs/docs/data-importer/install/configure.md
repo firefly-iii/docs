@@ -29,7 +29,7 @@ To authenticate with Firefly III you must set ONE the following variables:
 
 ## Configure Nordigen
 
-To configure Nordigen, set the following variables:
+To configure Nordigen, set the following variables. This is necessary if you wish to connect to your bank through Nordigen.
 
 * `NORDIGEN_ID` is your Nordigen Client ID
 * `NORDIGEN_KEY` is your Nordigen Client Secret
@@ -37,7 +37,7 @@ To configure Nordigen, set the following variables:
 
 ## Configure Spectre
 
-To configure Spectre, set the following variables:
+To configure Spectre, set the following variables. This is necessary if you wish to connect to your bank through Nordigen.
 
 * `SPECTRE_APP_ID` is your Spectre / Salt Edge Client ID
 * `SPECTRE_SECRET` is your Spectre / Salt Edge Client secret
@@ -75,7 +75,7 @@ Make sure you uncheck the "confidential" checkbox.
 It is **very important** that the callback URL is correct. The callback is the following:
 
 ```
-http://[CSV IMPORTER]/callback
+http://[DATA IMPORTER]/callback
 ```
 
 Some common examples include:
