@@ -1,5 +1,32 @@
 # Frequently Asked Questions
 
+Questions about the Firefly III Data Importer (**FIDI**)
+
+## Can the data importer sync with my bank?
+
+Yes. The data importer uses Spectre and Nordigen to connect to over 6000 banks. Please see the [configuration page](../install/configure.md) for more details.
+
+There is also a [Firefly III API](../api.md) that you can connect to \[YOUR BANK HERE\], if you are clever enough to build something in your favorite programming language.
+
+## I want to auto-import transactions from \[my bank\] out of the box!
+
+You can use the [command line](../usage/command_line.md) or the [POST command](../usage/post.md) to automate your import. 
+
+
+## I'm getting prompted by Salt Edge to request test access. Am I doing it wrong?
+
+You'll have [to contact them](https://www.saltedge.com/test_access) to get your account upgraded.
+
+## Why is Spectre a trial?
+
+Spectre is kind enough to offer trials to users of Firefly III, but these are limited in time and scope. Some users report they have no trial but this may be different for you.
+
+## I get an error about openssl\_pkey\_export?
+
+It means your machine has no proper configuration file for OpenSSL, or it cannot be found. Please check out [this GitHub issue](https://github.com/firefly-iii/firefly-iii/issues/1384) for tips and tricks.
+
+
+
 ## How do I handle custom SSL certificates?
 
 If you run your own CA, check out [the options](https://github.com/firefly-iii/data-importer/blob/main/.env.example#L51) in the `.env.example` file.
@@ -35,17 +62,3 @@ The [API](../../firefly-iii/api.md) is a plugin system of sorts.
 
 The easiest way to automate imports is by using [the command line option to automatically import files](../usage/command_line.md).
 
-<!--
-
-
-## Common problems and errors
-
-### UTF-8 encoding.
-
-Make sure the file is UTF-8 encoded. Because it's hard for PHP to detect this properly and guarantee a hassle-free conversion, you must do any conversion to UTF-8 yourself.
-
-### Extra lines
-
-No extra text may be present before or after the data. This is bad form. A CSV file is for computers to read, not for humans. The CSV importer has no feature to remove a number of lines from the start of the file.
-
--->
