@@ -14,10 +14,6 @@ Unfortunately you won't be able to manage your stocks or portfolio with Firefly 
 
 Most features in Firefly III are geared towards personal finances. You should be able to get enough information for an invoice out of the API, but other features will not be added.
 
-### Automated imports from [your bank here]
-
-There are [many, many ways](../importing-data/introduction.md) to import data into Firefly III. It is, alas, not possible to automate this out of the box, and it will never be as easy or frictionless as YNAB or Mint. Those guys really know what they're doing and I just don't have the resources :(
-
 ### Advanced accounting and asset management
 
 Some features from advanced programs like GNUCash don't work in Firefly III. It's hard to add "objects" to Firefly III. The monetary value of your house can't be added to your net worth (to compensate for your mortgage). If you want to do this, use [GNUCash](https://gnucash.org/) instead.

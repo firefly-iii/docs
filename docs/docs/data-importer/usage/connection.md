@@ -4,7 +4,9 @@ Depending on Spectre or Nordigen, you may be faced with some options when you fo
 
 ## Spectre
 
-Spectre supports multiple "connections", so either you select an existing one or create a new one. A "connection" is literally what it says, a connection to your financial institution where transactions will be downloaded from.  
+Spectre supports multiple "connections", so either you select an existing one or create a new one. A "connection" is literally what it says, a connection to your financial institution where transactions will be downloaded from.
+
+![Select existing connection or create a new one](images/select_connection.png)
 
 ## Nordigen
 
