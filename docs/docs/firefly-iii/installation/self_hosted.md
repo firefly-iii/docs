@@ -67,10 +67,10 @@ Browse to `/var/www` which is probably the directory where your web server is co
 Enter the following command.
 
 ```bash
-composer create-project grumpydictator/firefly-iii --no-dev --prefer-dist firefly-iii <latest>
+composer create-project grumpydictator/firefly-iii --no-dev --prefer-dist firefly-iii %FFVERSION
 ```
 
-You should replace `<latest>` with the latest version, which you can find on the [Firefly III version page](https://version.firefly-iii.org/).
+%FFVERSION is the [latest version](https://version.firefly-iii.org/).
 
 If this gives an error because of read/write permissions, prepend the command with `sudo`. Then fix the permissions:
 
