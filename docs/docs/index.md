@@ -8,7 +8,7 @@ The [main documentation](firefly-iii) for Firefly III.
 
 ## Data Importer
 
-The [Firefly III Data Importer](data-importer) is the nr. 1 tool to import from your bank into Firefly III.
+The [Firefly III Data Importer](data-importer) is the nr. 1 tool to import data into Firefly III.
 
 ## Other tools and libraries
 

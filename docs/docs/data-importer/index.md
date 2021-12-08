@@ -1,10 +1,16 @@
 # Firefly III Data Importer documentation
 
-Welcome to the documentation of the Firefly III Data Importer, the nr. 1 tool to import from your bank into Firefly III.
+Welcome to the documentation of the Firefly III Data Importer, the nr. 1 tool to import data into Firefly III.
 
-This data importer is a universal importer, which means it can import from any sources you can think of. And if it can't, well then drop me a line and make me add your favorite data source!
 
 ## Introduction
+
+This data importer is a universal importer, which means it can import from any sources you can think of. And if it can't, well then drop me a line and make me add your favorite data source. 
+
+The data import supports a variety of sources:
+
+- You can import **CSV files** from *any* source: your bank, YNAB, Tiller or any other source of financial data.
+- You can import from your bank directly using a secure connection.
 
 Because it is very difficult for a poor open source developer like me to build custom-made secure connections to every single bank out there, I've called in the help from two companies that already solved that enigma. They cannot get enough credit:
 
@@ -12,8 +18,6 @@ Because it is very difficult for a poor open source developer like me to build c
 - [Nordigen](https://nordigen.com/) is a fintech solution who's API supports over [2100 banks](https://nordigen.com/en/coverage/)
 
 If those institutes do not support your financial institution, be sure you can still import CSV files. Other formats are still on the roadmap. That should cover your needs.
-
-Should you be wondering: the YNAB and bunq importers are [discontinued](https://github.com/firefly-iii/firefly-iii/issues/5161). Sorry about that.
 
 ## Installation
 

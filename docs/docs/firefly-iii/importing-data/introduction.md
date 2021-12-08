@@ -2,16 +2,16 @@
 
 In order to import transactions into Firefly III, you'll have to install the **[Firefly III Data Importer](../../data-importer/index.md)**. This app connects to the [Firefly III API](https://api-docs.firefly-iii.org/).
 
-## Some notes regarding importing transactions
+This data importer is a universal importer, which means it can import from any sources you can think of. And if it can't, well then drop me a line and make me add your favorite data source.
 
-* It's not as easy as YNAB or Mint, and it's never going to reach that level of sophistication.
-* Your bank may not be supported, despite our best efforts.
-* You might not be able to easily automate the import/sync process.
+The data import supports a variety of sources:
 
-!!! info
-    Some more information can be found in the [Data Importer FAQ](../../data-importer/help/faq.md).
+- You can import **CSV files** from *any* source: your bank, YNAB, Tiller or any other source of financial data.
+- You can import from your bank directly using a secure connection.
 
 ## Other import tools
+
+There are more import tools if the Firefly III Data Importer does not fit your use case.
 
 ### FinTS importer
 
