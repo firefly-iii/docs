@@ -15,7 +15,7 @@ docker run \
 -e FIREFLY_III_ACCESS_TOKEN=(here) \
 -e FIREFLY_III_URL=(here) \
 -e NORDIGEN_ID=(here) \
--e NORDIGEN_SECRET=(here) \
+-e NORDIGEN_KEY=(here) \
 -e SPECTRE_APP_ID=(here) \
 -e SPECTRE_SECRET=(here) \
 -p 8081:8080 \
