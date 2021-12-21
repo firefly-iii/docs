@@ -18,7 +18,7 @@ Several users have created specific guides for their OS and database combination
 
 1. [Raspberry Pi 3, with Docker and Docker compose](https://gist.github.com/josephbadow/588c2ae961231fe338c459127c7d835b)
 2. [Firefly III in Ubuntu 20.04 and proxmox](https://gist.github.com/Engr-AllanG/34e77a08e1482284763fff429cdd92fa)
-3. [Automated scripts to run various Linux tasks](https://github.com/edwardsj9090/firefly-iii-automation)
+3. [Firefly III scripted installer](https://github.com/runlevel-4/firefly-iii-automation)
 
 In case you want to use one of the languages that Firefly III is equipped with, make sure you have installed the necessary locales. For Debian / Ubuntu for example, use `sudo apt install language-pack-nl-base && sudo locale-gen`.
 
