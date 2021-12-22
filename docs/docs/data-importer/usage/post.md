@@ -12,7 +12,7 @@ CSV files: You can upload a CSV file and a JSON file to the CSV importer to have
 The CSV file and the JSON file must both be uploaded, after which the result will be a log of import attempt.
 
 ```bash
-curl --location --request POST 'https://your-data-importer.example.com/autoupload' \
+curl --location --request POST 'https://your-data-importer.example.com/autoupload?secret=YOURSECRETHERE' \
 --header 'Accept: application/json' \
 --header 'Authorization: Bearer ey....' \
 --form 'csv=@"/path/to/csv.csv"' \
@@ -22,7 +22,7 @@ curl --location --request POST 'https://your-data-importer.example.com/autouploa
 You can also import from Nordigen or Spectre, in which case a JSON file is enough:
 
 ```bash
-curl --location --request POST 'https://your-data-importer.example.com/autoupload' \
+curl --location --request POST 'https://your-data-importer.example.com/autoupload?secret=YOURSECRETHERE' \
 --header 'Accept: application/json' \
 --header 'Authorization: Bearer ey....' \
 --form 'json=@"/path/to/json.json"'
