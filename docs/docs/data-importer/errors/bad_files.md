@@ -1,6 +1,14 @@
-# Bad files from your bank.
+# Bad files from your bank
 
 Some banks deliver abysmal CSV files. They have an interest to keep you inside their eco-system and will do anything to stop you from moving to another system. Here are some common problems and their solutions.
+
+## Mixed content
+
+Some banks re-use the columns for different content. For example, "Sparkasse" (DE) uses the BIC column for other data if there is no BIC available. If your bank has similar issues, the import will probably fail. The best solution is to ignore the column entirely.
+
+## Extra header rows
+
+Some banks will insert an extra header-row (`Source,Amount,Destination`) every 100 rows. As if a computer would forget the column names. If your bank does this, those extra header rows will fail during the import.
 
 ## Not enough info to make rows unique
 
