@@ -8,6 +8,7 @@ The data import supports a variety of sources:
 
 - You can import **CSV files** from *any* source: your bank, YNAB, Tiller or any other source of financial data.
 - You can import from your bank directly using a secure connection.
+- You can set it up to run daily or weekly to keep Firefly III up to date.
 
 ## Other import tools
 
