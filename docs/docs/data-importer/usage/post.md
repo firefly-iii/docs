@@ -38,4 +38,4 @@ POST https://your-csv-importer.example.com/autoimport?directory=/my/bank/files
 
 FIDI would then scroll through everything in the `/my/bank/files` directory and import whatever is there. In other words, the POST command can trigger the import of files already present somewhere in a place where FIDI can read them.
 
-This command will only accept directories (and subdirectories) from a pre-set directory. Check out the `.env.example` file and find the `POST_DIR_WHITELIST` setting.
+This command will only accept directories (and subdirectories) from a pre-set directory. Check out the `.env.example` file and find the `IMPORT_DIR_WHITELIST` setting.
