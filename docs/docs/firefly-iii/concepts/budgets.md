@@ -20,7 +20,7 @@ There is even a special budget report.
 
 Firefly III also features categories. These are also interesting and useful, but slightly different.
 
-Each budget is valid for the current time period only (look to the top right). First, set the amount that is available to you by clicking the pencil icon next to "*Available in ~~~*". By default, this is zero.
+Each budget is valid for the current time period only (look to the top right). First, set the amount that is available to you by clicking the pencil icon next to *"Available in \~\~\~"*. By default, this is zero.
 
 Then, create some budgets with the "Create a budget" button either in the center of the screen or in the top right menu. All you need for a budget is a name.
 
@@ -30,9 +30,18 @@ Both the amount available and the amount budgeted are for a specific period: if 
 
 In your preferences, you can change this range to be weekly, or even yearly.
 
+## Adding money to a budget
+
+You can't add money to a budget through a deposit. A reimbursement or a returned item cannot be used to restore the budget.
+
+Since you spent the money, the money in the budget is gone. If you "unspent" the money you can do a few things:
+
+- Edit the original transaction and remove the amount you got back
+- Make the budget larger
+
 ## Automatic budgeting
 
-Firefly III v5.2.0 and later can automatically manage your budgets. Edit or create a budget and pick from the following options:
+Firefly III can automatically manage your budgets. Edit or create a budget and pick from the following options:
 
 ### Fixed amount
 
