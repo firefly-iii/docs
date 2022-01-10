@@ -26,11 +26,11 @@ When a user logs in from a new IP address they will be sent an email.
 
 ## Personal information
 
-When logged out, Firefly III will not leak personal information. There is no identifying information in the pages that are available to guest users. The reset password option will tell users whether users have entered an existing email address or not. People who know or suspect what your email address is can use this feature to confirm it.
+When logged out, Firefly III will not leak personal information. There is no identifying information in the pages that are available to guest users. The reset password option will not confirm if accounts exist.
 
 ## Privacy
 
-Firefly III has several options and features that can contact other servers on the internet.
+Firefly III has several options and features that contact other servers on the internet.
 
 - When registering, Firefly III uses the [Have I Been Pwnd password API (v3)](https://haveibeenpwned.com/API/v3#PwnedPasswords) to verify if you're using a secure password. You can disable this when registering an account.
 - Firefly III can *optionally* contact [version.firefly-iii.org](https://version.firefly-iii.org) to check for new versions. This is a Linux machine hosted on Azure.
