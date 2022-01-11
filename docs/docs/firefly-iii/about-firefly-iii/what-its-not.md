@@ -6,6 +6,10 @@ Sometimes I can't or won't implement a certain feature, or change how something 
 
 But remember, there is a lot of things that you *can* do with Firefly III!
 
+### YNAB-style zero based budgeting
+
+Basically, YNAB allows you to assign each of your coin to a "permanent" budget, that you would replenish once your salary arrives. This way, zero based budgeting is about giving all your coins a goal and leaving no coin behind. Since Firefly III is fundamentally different, it will not be possible for Firefly III to support this.
+
 ### Stock and portfolio management
 
 Unfortunately you won't be able to manage your stocks or portfolio with Firefly III. Use something like [Portfolio Performance](https://www.portfolio-performance.info/). The net worth you track in Firefly III would then exclude your portfolio, but you can consider creating an asset account and adding profit and losses as transactions.
@@ -49,8 +53,3 @@ A month goes from the 1st to the last day of the month. You can't tell Firefly I
 The rule engine could be a lot more complex. Things like conditional rules, paths (if-then-else) and variables (allowing you to copy/paste stuff) stuff are all technically possible. However, the rule engine must also be usable and easy to be introduced to. Most rule engines, even the filters in GMail, are very complex because of user demands and as a result, nobody uses them any more.
 
 For Firefly III, the current features of the engine will not be expanded. If you have a suggestion, please consider that your suggested trigger or action is simple.
-
-### YNAB-style zero based budgeting
-
-Basically, YNAB allows you to assign each of your coin to a "permanent" budget, that you would replenish once your salary arrives. This way, zero based budgeting is about giving all your coins a goal and leaving no coin behind. Since Firefly III is fundamentally different, it will not be possible for Firefly III to support this.
-
