@@ -1,6 +1,8 @@
 # Other tools
 
-There are a number of Firefly III tools and libraries you can check out and use.
+There are a number of Firefly III tools and libraries you can check out and use, which are made by me.
+
+Community contributions can be found on the **[third-party tools](../firefly-iii/other-pages/3rdparty)** page.
 
 ## Product manager
 

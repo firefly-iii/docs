@@ -6,7 +6,7 @@ Questions about the Firefly III Data Importer (**FIDI**)
 
 Yes. The data importer uses Spectre and Nordigen to connect to over 6000 banks. Please see the [configuration page](../install/configure.md) for more details.
 
-There is also a [Firefly III API](../api.md) that you can connect to \[YOUR BANK HERE\], if you are clever enough to build something in your favorite programming language.
+There is also a [Firefly III API](../../firefly-iii/api.md) that you can connect to \[YOUR BANK HERE\], if you are clever enough to build something in your favorite programming language.
 
 ## I want to auto-import transactions from \[my bank\] out of the box!
 

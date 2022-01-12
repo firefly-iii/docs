@@ -57,6 +57,13 @@ The PHP API library is a library developed by StanSoft.BG Ltd that allows you to
 - [Credits](https://github.com/StanSoftBG)
 - [Website](https://github.com/StanSoftBG/oauth2-firefly-iii)
 
+### Telegram bot for Firefly III
+
+The Telegram bot for Firefly III can create transactions through Telegram.
+
+- [Credits](https://github.com/cyxou)
+- [Website](https://github.com/cyxou/firefly-iii-telegram-bot)
+
 ### Firefly Bot
 
 The Firefly Bot can create transactions through Telegram.
