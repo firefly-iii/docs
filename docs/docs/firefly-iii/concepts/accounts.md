@@ -58,7 +58,7 @@ Firefly III supports liabilities such as debts and loans, that you can track usi
 There are two "directions" for liabilities. When you are the **debtor** you must pay it back. If you are the **creditor** the money will be paid back to you. Two easy examples are:
 
 - You are the debtor to your student loans.
-- You are the creditor when you borrowed a friend money to buy a new PC.
+- You are the creditor when you loaned a friend money to buy a new PC.
 
 !!! info
     Although you can set the interest rate for a liability, Firefly III will not automatically calculate the interest due.
