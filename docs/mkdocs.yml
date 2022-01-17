@@ -193,6 +193,7 @@ nav:
       - Mapping data: data-importer/usage/map.md
       - Importing over command line: data-importer/usage/command_line.md
       - Importing using POST: data-importer/usage/post.md
+      - Automation: data-importer/usage/automation.md
       - Emailing results: data-importer/usage/email.md
       - Importing transfers: data-importer/usage/importing_transfers.md
     - Errors and trouble shooting:
