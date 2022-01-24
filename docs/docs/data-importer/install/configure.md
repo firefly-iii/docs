@@ -37,7 +37,7 @@ To configure Nordigen, set the following variables. This is necessary if you wis
 
 ## Configure Spectre
 
-To configure Spectre, set the following variables. This is necessary if you wish to connect to your bank through Nordigen.
+To configure Spectre, set the following variables. This is necessary if you wish to connect to your bank through Spectre.
 
 * `SPECTRE_APP_ID` is your Spectre / Salt Edge Client ID
 * `SPECTRE_SECRET` is your Spectre / Salt Edge Client secret
