@@ -12,9 +12,9 @@ Please make sure you read and agree with all of the terms that either company ma
 
 ## Salt Edge's Spectre API
 
-You can sign up for Salt Edge's services on [this page](https://www.saltedge.com/client_users/sign_up). They will grant you "test access" first, and you must apply for "full" access through their service desk. If you mention you're a Firefly III user, they will grant you access to real bank data.
+You can sign up for Salt Edge's services on [this page](https://www.saltedge.com/client_users/sign_up). Your account will initially have a "pending” status. In order to get access to real banks, please request test access from your Client's dashboard main page and mention you’re a Firefly III user.
 
-The Spectre API is generally limited to non-EU and UK banks. You can see if your bank is supported [on this page](https://www.saltedge.com/products/spectre/countries?channel%5B%5D=non_regulated).
+The Account Information API is generally limited to non-EU and non-UK banks. You can see if your bank is supported [on this page](https://www.saltedge.com/products/spectre/countries?channel%5B%5D=non_regulated).
 
 Access to the Spectre API is limited to raw data only, which means you may have to do data cleanup yourself. You can use Firefly III [rules](../../firefly-iii/pages-and-features/rules.md) or build something yourself.
 
