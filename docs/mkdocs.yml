@@ -176,6 +176,7 @@ nav:
     - Introduction: data-importer/index.md
     - Installing and running:
       - Configuration: data-importer/install/configure.md
+      - Nordigen and Spectre: data-importer/install/nordigen-spectre.md
       - Docker: data-importer/install/docker.md
       - Self-hosted: data-importer/install/self_hosted.md
       - Upgrading: data-importer/upgrade.md

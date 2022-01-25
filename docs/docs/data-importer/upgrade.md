@@ -21,7 +21,7 @@ docker stop <container>
 docker rm <container>
 ```
 
-To find out which container is the Firefly III CSV importer, run `docker container ls -a` and look for `fireflyiii/data-importer`.
+To find out which container is the Firefly III Data Importer, run `docker container ls -a` and look for `fireflyiii/data-importer`.
 
 Then pull the new image using this command:
 

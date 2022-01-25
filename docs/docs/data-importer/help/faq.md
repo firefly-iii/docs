@@ -4,7 +4,7 @@ Questions about the Firefly III Data Importer (**FIDI**)
 
 ## Can the data importer sync with my bank?
 
-Yes. The data importer uses Spectre and Nordigen to connect to over 6000 banks. Please see the [configuration page](../install/configure.md) for more details.
+Yes. The data importer uses Spectre and Nordigen to connect to over 6000 banks. Please see the [configuration page](../install/configure.md) for more details and read up on [Nordigen and Salt Edge / Spectre](../install/nordigen-spectre.md).
 
 There is also a [Firefly III API](../../firefly-iii/api.md) that you can connect to \[YOUR BANK HERE\], if you are clever enough to build something in your favorite programming language.
 
@@ -12,20 +12,9 @@ There is also a [Firefly III API](../../firefly-iii/api.md) that you can connect
 
 You can use the [command line](../usage/command_line.md) or the [POST command](../usage/post.md) to automate your import. 
 
-
-## I'm getting prompted by Salt Edge to request test access. Am I doing it wrong?
-
-You'll have [to contact them](https://www.saltedge.com/test_access) to get your account upgraded.
-
-## Why is Spectre a trial?
-
-Spectre is kind enough to offer trials to users of Firefly III, but these are limited in time and scope. Some users report they have no trial but this may be different for you.
-
 ## I get an error about openssl\_pkey\_export?
 
 It means your machine has no proper configuration file for OpenSSL, or it cannot be found. Please check out [this GitHub issue](https://github.com/firefly-iii/firefly-iii/issues/1384) for tips and tricks.
-
-
 
 ## How do I handle custom SSL certificates?
 
