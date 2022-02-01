@@ -63,7 +63,7 @@ This is the choice to make when you want no duplicate detection. FIDI will just 
 #### Content-based
 
 !!! info
-If you're unsure about what setting to use, use content-based duplicate detection.
+    If you're unsure about what setting to use, use content-based duplicate detection.
 
 FIDI will submit all transactions to Firefly III where they will be checked for duplications. If you ever submitted the exact same transaction before Firefly III will ignore it. This is a useful feature when your CSV file or import has no real identifiers (see ahead).
 
