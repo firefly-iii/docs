@@ -6,22 +6,11 @@ Firefly III has been built around how I manage my finances. Please read this car
 
 After being a grownup for a while I noticed I was living from paycheck to paycheck. I could not save money. At the end of my money, I still had a part of the month to cover.
 
-The first thing I did was simple: I started living from the first day of the month until the last. This meant that I had to change a few things. This is something I do to this day:
+I built a system where you have transactions as the main concept of Firefly III. I've added an envelope-based based budgeting system. That means that you set a fixed amount every period (per month is most common). Firefly III can do that automatically as well.
 
-1. On the day I get paid, I move my entire salary to my savings account. All of it. Not a penny missing!
-2. Then, I try to live the rest of the month on the money I have left. This was *very* hard the first few times.
-3. On the *last* day of the month, I think how much money I will need in the next month.
-4. On the *first* day of the month, I put that amount in my checking account.
+As you spend money every month, the amount in the budget goes down (duh). Once the budget is empty, you will have to top it up or stop spending money on that particular subject. Most people have five or six budgets.
 
-So if you get paid on the 23rd of the month, your salary sits in your savings account from the 23rd until the first day of the next month, when you move (part of it) back to your checking account. If you get paid every week, this routine repeats weekly.
-
-This method of managing money works whatever your boss' payment schedule is. Move your salary to a different account (step 1) any time you get it and wait for the start of the month. 
-
-This is quite difficult the first few times, but after a while you'll notice that you have (pretty effectively) moved your routine away from your salary and income. This alone gives you great financial stability. 
-
-This procedure allowed me to program a very simple tool (the original "Firefly") which held very simple things: transactions. Oh and some accounts to keep track of the money. But that was basically it. It showed me where my money went.
-
-In those early, exciting days, all I did was live from the 1st to the 31st of the month. This helped me save a lot of money already. The rest of Firefly III's features have been built around this idea.
+There are also categories and tags to further narrow down your transactions.
 
 ## The next step
 
