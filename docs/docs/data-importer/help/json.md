@@ -125,8 +125,65 @@ about [import configuration](../usage/configure.md).
 
 Each column in your CSV file gets a single role. This array in the JSON file indicates the role for each column. The
 user interface shows you all the possible roles, but you can
-also [read the code](https://github.com/firefly-iii/csv-importer/blob/main/config/csv_importer.php#L150) to learn which
+also [read the code](https://github.com/firefly-iii/data-importer/blob/main/config/csv.php) to learn which
 roles are available.
+
+Below is a list of possible roles:
+
+| role                  | description                              |
+|-----------------------|------------------------------------------|
+| _ignore               | (ignore this column)                     |
+| account-bic           | Asset account (BIC)                      |
+| account-iban          | Asset account (IBAN)                     |
+| account-id            | Asset account ID (matching FF3)          |
+| account-name          | Asset account (name)                     |
+| account-number        | Asset account (account number)           |
+| amount                | Amount                                   |
+| amount_credit         | Amount (credit column)                   |
+| amount_debit          | Amount (debit column)                    |
+| amount_foreign        | Amount (in foreign currency)             |
+| amount_negated        | Amount (negated column)                  |
+| bill-id               | Bill ID (matching FF3)                   |
+| bill-name             | Bill name                                |
+| budget-id             | Budget ID (matching FF3)                 |
+| budget-name           | Budget name                              |
+| category-id           | Category ID (matching FF3)               |
+| category-name         | Category name                            |
+| currency-code         | Currency code (ISO 4217)                 |
+| currency-id           | Currency ID (matching FF3)               |
+| currency-name         | Currency name (matching FF3)             |
+| currency-symbol       | Currency symbol (matching FF3)           |
+| date_book             | Transaction booking date                 |
+| date_due              | Transaction due date                     |
+| date_interest         | Interest calculation date                |
+| date_invoice          | Transaction invoice date                 |
+| date_payment          | Transaction payment date                 |
+| date_process          | Transaction process date                 |
+| date_transaction      | Date                                     |
+| description           | Description                              |
+| external-id           | External ID                              |
+| external-url          | External URL                             |
+| foreign-currency-code | Foreign currency code (ISO 4217)         |
+| generic-debit-credit  | Generic bank debit/credit indicator      |
+| ing-debit-credit      | ING specific debit/credit indicator      |
+| internal_reference    | Internal reference                       |
+| note                  | Note(s)                                  |
+| opposing-bic          | Opposing account (BIC)                   |
+| opposing-iban         | Opposing account (IBAN)                  |
+| opposing-id           | Opposing account ID (matching FF3)       |
+| opposing-name         | Opposing account (name)                  |
+| opposing-number       | Opposing account (account number)        |
+| rabo-debit-credit     | Rabobank specific debit/credit indicator |
+| sepa_batch_id         | SEPA Batch ID                            |
+| sepa_cc               | SEPA Clearing Code                       |
+| sepa_ci               | SEPA Creditor Identifier                 |
+| sepa_country          | SEPA Country Code                        |
+| sepa_ct_id            | SEPA end-to-end Identifier               |
+| sepa_ct_op            | SEPA Opposing Account Identifier         |
+| sepa_db               | SEPA Mandate Identifier                  |
+| sepa_ep               | SEPA External Purpose                    |
+| tags-comma            | Tags (comma separated)                   |
+| tags-space            | Tags (space separated)                   |
 
 ### do_mapping
 
@@ -292,7 +349,7 @@ Spectre and Nordigen only. Used only if date_range is `range`. Will not import f
 
 ### nordigen_country
 
-Nordigen only. The country of the bank you selected to import from. 
+Nordigen only. The country of the bank you selected to import from.
 
 ### nordigen_bank
 
