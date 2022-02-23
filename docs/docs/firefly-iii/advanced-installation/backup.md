@@ -49,3 +49,19 @@ To get a better idea of how this works, see Docker's [official documentation](ht
 ### Automated backup using Docker
 
 See [GitHub issue #4270](https://github.com/firefly-iii/firefly-iii/issues/4270) for some hints.
+
+### Automated backup using bash script & crontab
+
+If you installed Firefly III with docker-compose, this script will backup the database, upload volume, env, and yaml docker files.
+It will also backup the configuration of FIDI if you installed it with the same docker-compose.
+
+To setup copy the [Firefly III bafirefly-iii/docsckuper](https://gist.github.com/dawid-czarnecki/8fa3420531f88b2b2631250854e23381) to the same location where your docker-compose.yml and .env files are
+Then add something like this to your crontab:
+```bash
+1 01 * * * bash /home/myname/backuper.sh backup /home/backup/\$(date '+%F').tar
+```
+
+With the same script you can also restore the the configuration and the databse. Just run:
+```bash
+bash /home/myname/backuper.sh restore /home/backup/firefly-2022-01-01.tar
+```
