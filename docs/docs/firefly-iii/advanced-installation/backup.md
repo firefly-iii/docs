@@ -58,7 +58,7 @@ It will also backup the configuration of FIDI if you installed it with the same 
 To setup copy the [Firefly III bafirefly-iii/docsckuper](https://gist.github.com/dawid-czarnecki/8fa3420531f88b2b2631250854e23381) to the same location where your docker-compose.yml and .env files are
 Then add something like this to your crontab:
 ```bash
-1 01 * * * bash /home/myname/backuper.sh backup /home/backup/\$(date '+%F').tar
+1 01 * * * bash /home/myname/backuper.sh backup /home/backup/$(date '+%F').tar
 ```
 
 With the same script you can also restore the the configuration and the databse. Just run:
