@@ -7,8 +7,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     {% if page and page.meta and page.meta.description %}
       <meta name="description" content="{{ page.meta.description }}">
+      <meta name="twitter:description" content="{{ page.meta.description }}">
+      <meta property="og:description" content="{{ page.meta.description }}" />
     {% elif config.site_description %}
       <meta name="description" content="{{ config.site_description }}">
+      <meta name="twitter:description" content="{{ config.site_description }}">
+      <meta property="og:description" content="{{ config.site_description }}" />
     {% endif %}
     {% if page and page.meta and page.meta.keywords %}
       <meta name="keywords" content="{{ page.meta.keywords }}">
@@ -25,7 +29,19 @@
       <base href="{{ page.canonical_url }}">
     {% endif %}
     <link rel="shortcut icon" href="{{ config.theme.favicon | url }}">
-    <meta name="generator" content="mkdocs-{{ mkdocs_version }}, mkdocs-material-6.2.3">
+    <meta name="generator" content="mkdocs-{{ mkdocs_version }}">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@Firefly_III">
+    <meta name="twitter:creator" content="@Firefly_III">
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ config.site_name }}" />
+    <meta property="og:url" content="{{ page.canonical_url }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+
+    <meta name="twitter:image" content="https://repository-images.githubusercontent.com/21298446/df3f3500-938f-11eb-9ced-1fc42aec4e90">
+    <meta property="og:image" content="https://repository-images.githubusercontent.com/21298446/df3f3500-938f-11eb-9ced-1fc42aec4e90" />
   {% endblock %}
 
 
