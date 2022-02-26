@@ -225,3 +225,5 @@ extra:
       link: https://github.com/firefly-iii
     - icon: fontawesome/brands/gitter
       link: https://gitter.im/firefly-iii/firefly-iii
+    - icon: fontawesome/solid/globe
+      link: https://www.firefly-iii.org
