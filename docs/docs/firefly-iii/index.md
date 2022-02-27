@@ -11,7 +11,7 @@ For your quick reference here is a list of pages you really want to visit:
 * [Read what Firefly III can do for you](about-firefly-iii/introduction.md)
 * [Read about the stuff Firefly III **can't or won't** do for you](about-firefly-iii/what-its-not.md)
 * [Check out some screenshots](about-firefly-iii/screenshots.md)
-* [Visit the demo site.](https://demo.firefly-iii.org/)
+* [Visit the demo site.](https://demo.firefly-iii.org/?mtm_campaign=documentation&mtm_kwd=docu-index)
 * [Read how I feel about personal finance](about-firefly-iii/personal-finances.md)
 
 ## How can I use it or run it?

@@ -10,7 +10,7 @@ Firefly III is a self-hosted manager for your personal finances. It's written in
 
 ## Can I try it?
 
-Yes, there is [a demo site](https://demo.firefly-iii.org/) where you can play with a sample administration.
+Yes, there is [a demo site](https://demo.firefly-iii.org/?mtm_campaign=documentation&mtm_kwd=faq-general) where you can play with a sample administration.
 
 ## Is it multi-user?
 

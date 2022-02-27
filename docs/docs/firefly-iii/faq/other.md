@@ -87,7 +87,7 @@ Safe for the last one, Firefly III does all of these things. You can disable nr.
 Some (older) browsers may not work with Firefly III. I have no plans to add support.
 
 * Internet Explorer 9 or lower on Windows 7: will not work.
-* Internet Explorer 10 on Windows 7: works, but modern TLS configurations may break your site (just try [the demo site](https://demo.firefly-iii.org/)).
+* Internet Explorer 10 on Windows 7: works, but modern TLS configurations may break your site (just try [the demo site](https://demo.firefly-iii.org/?mtm_campaign=documentation&mtm_kwd=demo-other)).
 * Internet Explorer 11 on Windows 7: works.
 * Internet Explorer 11 on Windows 8.1: not tested, but should work.
 * Microsoft Edge on Windows 10: will not work due to Content Security Policy header limitations.
