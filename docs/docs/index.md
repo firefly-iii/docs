@@ -6,6 +6,10 @@ Welcome. This site contains all the documentation for Firefly III and the associ
 
 The [main documentation](firefly-iii) for Firefly III.
 
+- [Introduction](firefly-iii/about-firefly-iii/introduction.md?test=OK)
+- Installing Firefly III using **[Docker](firefly-iii/installation/docker.md)**
+- Installing it on [your own hosting](firefly-iii/installation/self_hosted.md)
+
 ## Data Importer
 
 The [Firefly III Data Importer](data-importer) is the nr. 1 tool to import data into Firefly III.
