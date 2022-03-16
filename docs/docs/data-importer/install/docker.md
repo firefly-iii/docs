@@ -30,6 +30,9 @@ By running this script, you will start a web server on port 8081 that will allow
 
 All environment variables are optional, but convenient.
 
+!!! important
+    You may need to clear your cookies, browse to `/flush` or press \[Reauthenticate\] after changing the environment variables.
+
 ## Together with Firefly III
 
 The example Docker Compose file below shows you how to manage both FIDI and Firefly III in one Docker Compose file. This has the advantage that they will be able to communicate easily.

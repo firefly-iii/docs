@@ -8,6 +8,19 @@ Yes. The data importer uses Spectre and Nordigen to connect to over 6000 banks. 
 
 There is also a [Firefly III API](../../firefly-iii/api.md) that you can connect to \[YOUR BANK HERE\], if you are clever enough to build something in your favorite programming language.
 
+## I changed my configuration, but I still get the old values?
+
+- I fixed an error, but I'm still "Unauthenticated"
+- FIDI doesn't recognize my new access token
+
+FIDI stores some settings in cookies. They persist even when you restart the Docker container or reboot.
+
+1. Clear your cookies
+2. Press "\[Reauthenticate\]"
+3. Browse to `/flush` on your FIDI installation
+
+Any of these options should work.
+
 ## I want to auto-import transactions from \[my bank\] out of the box!
 
 You can use the [command line](../usage/command_line.md) or the [POST command](../usage/post.md) to automate your import. 

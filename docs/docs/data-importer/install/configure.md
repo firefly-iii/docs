@@ -24,7 +24,6 @@ To authenticate with Firefly III you must set ONE the following variables:
 2. OR Set a Client ID in the `FIREFLY_III_CLIENT_ID` environment variable.
 
 !!! important
-    
     A Docker installation will *never* be able to connect a Firefly III installation located at `http://localhost` or `http://127.0.0.1` because this address refers to the Docker container itself, and not Firefly III.
 
 ## Configure Nordigen
@@ -53,6 +52,9 @@ The configuration values are stored in environment variables:
 * `SPECTRE_APP_ID` and `SPECTRE_SECRET`
 
 You can use the `.env` file to store them, use Docker's `-e` flag to set them or use your operating system to set these values. This depends on your installation method, [Docker](docker.md) or [self hosted](self_hosted.md).
+
+!!! important
+    You may need to clear your cookies, browse to `/flush` or press \[Reauthenticate\] after changing these values.
 
 ## How to get these variables?
 
