@@ -6,6 +6,9 @@ In order to run the Firefly III Data Importer (**FIDI**) you need a working LAMP
 2. [Upgrade Ubuntu PHP %PHPVERSION](https://www.google.com/search?q=upgrade+ubuntu+php+%PHPVERSION)
 3. [PHP %PHPVERSION raspberry pi](https://www.google.nl/search?q=PHP+%PHPVERSION+raspberry+pi)
 
+!!! warning
+    FIDI will not work properly when installed or accessed through a subdirectory on your web server. If you run FIDI from `/fidi`, `/importer` or a similar subdirectory your milage may vary and I can't support you.
+
 ## Preparing your server
 
 ### Extra packages
@@ -47,6 +50,9 @@ In the `data-importer` directory you will find a `.env` file. There are instruct
 ## Accessing FIDI
 
 You can access FIDI at [http://localhost/](http://localhost/). If this URL is taken by Firefly III already, make sure your server configuration accepts both. This is called a "virtual host".
+
+!!! warning
+    A virtual host would entail setting up two (sub)domains like `firefly.local` and `fidi.local`.
 
 ### Browsing to site
 
