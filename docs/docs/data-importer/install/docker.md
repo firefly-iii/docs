@@ -70,6 +70,9 @@ services:
       - firefly_iii_db:/var/lib/mysql
   fidi:
     image: fireflyiii/data-importer:latest
+    restart: always
+    volumes:
+      - fidi_upload:/var/www/html/storage/upload
     env_file: .fidi.env
     ports:
       - 8081:8080
@@ -78,6 +81,7 @@ services:
 volumes:
   firefly_iii_upload:
   firefly_iii_db:
+  fidi_upload:
 ```
 
 
