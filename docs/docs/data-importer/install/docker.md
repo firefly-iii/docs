@@ -70,6 +70,7 @@ services:
       - firefly_iii_db:/var/lib/mysql
   fidi:
     image: fireflyiii/data-importer:latest
+    restart: always
     env_file: .fidi.env
     ports:
       - 8081:8080
