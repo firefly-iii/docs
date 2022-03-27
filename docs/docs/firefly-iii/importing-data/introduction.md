@@ -40,6 +40,12 @@ This service by [@financelurker](https://github.com/financelurker) lets you impo
 - [Website](https://github.com/financelurker/crypto-trades-firefly-iii)
 - [Documentation](https://github.com/financelurker/crypto-trades-firefly-iii)
 
+### PayPal importer
+
+A tool by [@robvankeilegom](https://github.com/robvankeilegom) to pull data from the PayPal API and push it to your Firefly III instance.
+
+- [Website and documentation](https://github.com/robvankeilegom/firefly-III-paypal-importer)
+
 ### Revolut importer
 
 If you're banking with [Revolut](https://www.revolut.com/), you can use the [Revolut importer](https://gitlab.com/ludo444/fireflyrevoluttransactions), which is built by GitLab user [@ludo444](https://gitlab.com/ludo444).
@@ -48,7 +54,7 @@ If you're banking with [Revolut](https://www.revolut.com/), you can use the [Rev
 
 ### UP Bank Australia importer
 
-A tool to import from Made by GitHub user [@Mugl3](https://github.com/Mugl3) that allows you to import from UP Bank Australia using Python.
+A tool made by GitHub user [@Mugl3](https://github.com/Mugl3) that allows you to import from UP Bank Australia using Python.
 
 - [Website](https://github.com/Mugl3/UP_Firefly_API_Connector)
 - [Documentation](https://blog.dupreez.id.au/2021/01/automatically-update-firefly-iii-with-up-banking-transactions/)
