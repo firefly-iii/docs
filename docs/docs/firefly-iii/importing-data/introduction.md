@@ -40,6 +40,12 @@ This service by [@financelurker](https://github.com/financelurker) lets you impo
 - [Website](https://github.com/financelurker/crypto-trades-firefly-iii)
 - [Documentation](https://github.com/financelurker/crypto-trades-firefly-iii)
 
+### PayPal importer
+
+A tool by [@robvankeilegom](https://github.com/robvankeilegom) to pull data from the PayPal API and push it to your Firefly III instance.
+
+- [Website and documentation](https://github.com/robvankeilegom/firefly-III-paypal-importer)
+
 ### Revolut importer
 
 If you're banking with [Revolut](https://www.revolut.com/), you can use the [Revolut importer](https://gitlab.com/ludo444/fireflyrevoluttransactions), which is built by GitLab user [@ludo444](https://gitlab.com/ludo444).
