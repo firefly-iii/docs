@@ -8,6 +8,8 @@ When you create a bill, you tell Firefly III in what range you expect the bill t
 * Description: Monthly rent
 * Repeats every month
 
+You can also set the end date and the extension date.
+
 These properties by themselves are mostly cosmetic. They allow Firefly III to predict for you how much you should expect to spend on these bills. On the frontpage, a little box will tell you how you're doing.
 
 If you enter a number in the "skip" field, the bill will be automatically skipped every X times; a bill that arrives every 3 months can be entered by filling in "2".
