@@ -62,6 +62,10 @@ Run the following command:
 
 Or browse to the `/flush` page in your installation.
 
+## The database password is wrong, but I'm 100% sure it's correct
+
+If you start the database container with a `MYSQL_PASSWORD` that you change later, it won't actually change in the database. So destroy the volume + container and start over.
+
 ## I get 'failed to open stream: Permission denied' on log files
 
 Some or all pages of your Firefly III show you an error that complains about not being able to write to stuff in the `/storage/logs` directory. Ultimately, this is caused by a permissions issue. Often, this is caused by cron jobs running under root, not `www-data`.
