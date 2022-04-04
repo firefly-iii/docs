@@ -34,3 +34,4 @@ jobs:
                             -s ./site \
                             -d 'https://fireflyiiidocs.blob.core.windows.net/$web' \
                             --no-progress
+                            --overwrite
