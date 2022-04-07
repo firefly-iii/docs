@@ -29,3 +29,7 @@ Some changes to [a 2FA package](https://github.com/JC5/google2fa-laravel) so it 
 ### API docs
 
 The [Firefly III API docs](https://github.com/firefly-iii/api-docs) and [the underlying generator](https://github.com/firefly-iii/api-docs-generator).
+
+## Transaction classification
+With CSV import via Data-Importer you can preprocess your CSV file and automatically assign your transactions to a category based on previous assignments: [TransCat](https://github.com/Hapyr/trans-cat)
+The project has not yet been tested extensively. Therefore bug reports are very welcome.  
