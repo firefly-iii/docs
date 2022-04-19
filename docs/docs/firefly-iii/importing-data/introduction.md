@@ -37,6 +37,13 @@ A tool built by GitHub user [@bnw](https://github.com/bnw) that allows you to im
 
 ## Bank-specific tools
 
+### Credit Agricole
+
+This Python app allows you to import transactions from Credit Agricole
+
+- [Website](https://github.com/Royalphax/credit-agricole-importer)
+- [Credits](https://github.com/Royalphax)
+
 ### Crypto exchanges importer
 
 This service by [@financelurker](https://github.com/financelurker) lets you import activities from your crypto exchange accounts (like "Binance/binance.com") to your FireFly III account.
