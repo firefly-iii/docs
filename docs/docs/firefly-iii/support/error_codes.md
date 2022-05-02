@@ -76,6 +76,10 @@ The budget limit does not belong to the budget.
 
 Could not load config vars.
 
+**200032**
+
+The transaction you just created was deleted by a rule.
+
 ### Firefly III error codes
 
 These start with 3.
