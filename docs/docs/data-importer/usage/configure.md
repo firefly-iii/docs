@@ -44,7 +44,7 @@ Select this if you want Firefly III to apply your rules to the import. It is use
 
 ### Import tag
 
-When you check this FIDI will add a tag to each imported transaction denoting the import; this groups your import under a tag. Any rules that remove all tags from a transactions will *not* when you use this option. The tag will always be added. This is not because FIDI uses some magic trick. The tag is added *after* the transaction is created and most people's rules don't fire then.
+When you check this FIDI will add a tag to each imported transaction denoting the import; this groups your import under a tag. Any rules that remove all tags from a transaction will *not* work when you use this option. The tag will always be added. This is not because FIDI uses some magic trick. The tag is added *after* the transaction is created and most people's rules don't fire then.
 
 ## Duplicate transaction detection
 
