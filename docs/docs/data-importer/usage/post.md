@@ -31,7 +31,7 @@ The CSV file and the JSON file must both be uploaded, after which the result wil
 curl --location --request POST 'https://fidi/autoupload?secret=YOURSECRETHERE' \
 --header 'Accept: application/json' \
 --header 'Authorization: Bearer ey....' \
---form 'csv=@"/local/path/to/csv.csv"' \
+--form 'importable=@"/local/path/to/csv.csv"' \
 --form 'json=@"/local/path/to/json.json"'
 ```
 
