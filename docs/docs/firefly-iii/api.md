@@ -44,7 +44,7 @@ Copy the entire token. Yes, it's very long!
 To use the token you have to pass an `Authorization: Bearer <token>` HTTP header. As an example in curl:
 
 ```bash
-curl -X GET 'https://[firefly domain name/api/v1/webhooks' \
+curl -X GET 'https://your-domain/api/v1/webhooks' \
   -H 'accept: application/vnd.api+json' \
   -H 'Authorization: Bearer [Personal Auth Token]' \
   -H 'Content-Type: application/json'
