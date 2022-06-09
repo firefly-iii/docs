@@ -41,3 +41,11 @@ Copy the entire token. Yes, it's very long!
 
 ![Copy the entire token.](images/pat-long.png)
 
+To use the token you have to pass an `Authorization: Bearer <token>` HTTP header. As an example in curl:
+
+```bash
+curl -X GET 'https://your-domain/api/v1/webhooks' \
+  -H 'accept: application/vnd.api+json' \
+  -H 'Authorization: Bearer [Personal Auth Token]' \
+  -H 'Content-Type: application/json'
+```
