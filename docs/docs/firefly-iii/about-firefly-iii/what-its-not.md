@@ -8,7 +8,7 @@ But remember, there is a lot of things that you *can* do with Firefly III!
 
 ### YNAB-style zero based budgeting
 
-Basically, YNAB allows you to assign each of your coin to a "permanent" budget, that you would replenish once your salary arrives. This way, zero based budgeting is about giving all your coins a goal and leaving no coin behind. Since Firefly III is fundamentally different, it will not be possible for Firefly III to support this.
+Basically, YNAB allows you to assign each of your coin to a "permanent" budget, that you would replenish once your salary arrives. This way, zero based budgeting is about giving all your coins a goal and leaving no coin behind. Since Firefly III is fundamentally different, it will not be possible for Firefly III to support this. If you want, you can read my opinion on [zero based budgeting](zero-based-budgeting.md).
 
 ### Stock and portfolio management
 
