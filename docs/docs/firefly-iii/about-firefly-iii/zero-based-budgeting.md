@@ -3,7 +3,7 @@
 !!! warning
     This page is entirely my personal opinion on personal finances. Feel free to disagree with me.
 
-[Zero based budgeting](https://en.wikipedia.org/wiki/Zero-based_budgeting) is a method of budgeting that focuses on giving each Euro a goal. All your budgets start at zero, and you fill them with money. Expenses deplete budgets again until you make money again to fill the budgets.
+[Zero based budgeting](https://en.wikipedia.org/wiki/Zero-based_budgeting) is a method of budgeting that focuses on giving each Euro a goal. All your budgets start at zero, and you fill them with money. Expenses deplete budgets until you make money to fill the budgets.
 
 This approach is pretty terrible. Here's why.
 
