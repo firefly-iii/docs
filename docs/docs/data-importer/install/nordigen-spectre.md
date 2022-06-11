@@ -19,9 +19,8 @@ Access to the Spectre API is limited to raw data only, which means you may have 
 
 ## Nordigen API
 
-You can sign up for the Nordigen API on [their website](https://nordigen.com/en/). Free access to the Nordigen API is limited to personal use only. Advanced (premium) API's are not available. You will not have to request extended access, but you can get the premium access for a fee if you so wish. Keep in mind that the Firefly III Data Importer currently does not support the premium API's.
+You can sign up for the Nordigen API on [their website](https://nordigen.com/en/). Access to the Nordigen API is free for both commercial and personal use (that's you). You will not have to request extended access, but you can get the premium access for a fee if you so wish. Keep in mind that the Firefly III Data Importer currently does not support the premium API's.
 
-Nordigen supports many PSD2-compliant banks in the EU and the UK, making it an alternative for Salt Edge's Spectre API, if you happen to live in these regions.
+Nordigen supports [many PSD2-compliant banks in the EU and the UK](https://nordigen.com/en/coverage/), making it an alternative for Salt Edge's Spectre API, if you happen to live in these regions. 
 
 Access to the Nordigen API is limited to raw data only, which means you may have to do data cleanup yourself. You can use Firefly III [rules](../../firefly-iii/pages-and-features/rules.md) or build something yourself.
-
