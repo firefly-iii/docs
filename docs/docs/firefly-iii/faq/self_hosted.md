@@ -216,7 +216,7 @@ Solution: You haven't enabled or installed the Internationalization extension. I
 This may happen when you are on a NAS4free Debian installation or similar platform. This command may help:
 
 ```text
-pkg install php74-ctype
+pkg install php80-ctype
 ```
 
 ## I get 'Error: could not open input file artisan'?
