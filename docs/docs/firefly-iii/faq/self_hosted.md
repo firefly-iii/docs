@@ -44,7 +44,7 @@ location ^~ /firefly-iii/ {
 }
 
 location ^~ /budget {
-   alias /var/www/firefly-iii/public;
+   alias /var/www/html/firefly-iii/public;
    try_files $uri $uri/ @budget;
 
    location ~* \.php(?:$|/) {

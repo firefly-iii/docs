@@ -23,7 +23,7 @@ docker exec -it abcde php artisan COMMAND:COMMAND
 Run:
 
 ```bash
-cd /var/www/firefly-iii
+cd /var/www/html/firefly-iii
 php artisan COMMAND:COMMAND
 ```
 
