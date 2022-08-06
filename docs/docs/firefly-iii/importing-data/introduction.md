@@ -37,6 +37,13 @@ A tool built by GitHub user [@bnw](https://github.com/bnw) that allows you to im
 
 ## Bank-specific tools
 
+### Up Bank Australia
+
+This application allows you to import data from Australian Bank "Up":
+
+- [Website](https://github.com/MajorArkwolf/UpBankFFImporter)
+- [Credits](https://github.com/MajorArkwolf)
+
 ### Credit Agricole
 
 This Python app allows you to import transactions from Credit Agricole
