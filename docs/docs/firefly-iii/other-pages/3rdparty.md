@@ -1,11 +1,17 @@
 # Third-party tools
 
-There are a lot of interesting tools and apps built around the [Firefly III API](../api.md). Here's a list, in no particular order.
+There are a lot of interesting tools and apps built around the [Firefly III API](../api.md). Here's a list, in no particular order. Is your (favorite) tool not on the list? Submit a PR!
 
-!!! info 
-    Is your (favorite) tool not on the list? Submit a PR!
+Be sure to also check out [the list of import tools](../importing-data/introduction).
 
 ## Reporting
+
+### Prometheus Exporter
+
+Alejandro built a Prometheus exporter for Firefly III.
+
+- [Credits](https://github.com/kinduff)
+- [Repository](https://github.com/kinduff/firefly_iii_exporter)
 
 ### Summary emails
 
