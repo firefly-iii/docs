@@ -2,7 +2,7 @@
 
 There are a lot of interesting tools and apps built around the [Firefly III API](../api.md). Here's a list, in no particular order. Is your (favorite) tool not on the list? Submit a PR!
 
-Be sure to also check out [the list of import tools](../importing-data/introduction).
+Be sure to also check out [the list of import tools](../../importing-data/introduction/#other-import-tools).
 
 ## Reporting
 
@@ -46,6 +46,14 @@ OCR Firefly Mobile is a little tool to help you enter transactions into the mobi
 - [Credits](https://github.com/luifermoron)
 - [Website](https://github.com/luifermoron/ocrFireflyMobile)
 - [Google Play Store](https://play.google.com/store/apps/details?id=com.opensource.autofill)
+
+### Abacus iOS App
+
+Abacus is an iOS app created by @victorbalssa that allows you to use your Firefly III instance from your iPhone.
+
+- [Credits](https://github.com/victorbalssa)
+- [GitHub](https://github.com/victorbalssa/abacus)
+- [App Store](https://apps.apple.com/us/app/1627093491)
 
 ## Bots and tools
 
