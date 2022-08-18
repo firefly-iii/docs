@@ -16,12 +16,12 @@ If you are a bit of a Linux geek you can set up a cron job easily by running `cr
 
 The content of the cron job must be as follows:
 
-```   
+```
 # cron job for Firefly III
-0 3 * * * /usr/bin/php /var/www/html/artisan firefly-iii:cron
+0 3 * * * /usr/local/bin/php /var/www/html/artisan firefly-iii:cron
 ```
 
-You must make sure to verify `/usr/bin/php` with *your* path to PHP and replace `/var/www/html/` with the path to *your* Firefly III installation.
+You must make sure to verify `/usr/local/bin/php` with *your* path to PHP and replace `/var/www/html/` with the path to *your* Firefly III installation.
 
 If you do this, Firefly III will generate the recurring transactions each night at 3AM.
 
@@ -51,7 +51,7 @@ Requires=httpd.service php-fpm.service postgresql.service
 
 [Service]
 Type=oneshot
-ExecStart=/usr/bin/php /var/www/html/artisan firefly-iii:cron
+ExecStart=/usr/local/bin/php /var/www/html/artisan firefly-iii:cron
 ```
 
 You will want to change the Requires= line to match the services that you are actually running. In this example we are using httpd (Apache), PHP FastCGI Process Manager (FPM), and PostgreSQL. Similarly, change the path to *your* path to the PHP binary and the path to *your* Firefly III installation.
@@ -187,5 +187,5 @@ In order to trigger "future" cron jobs, you can call the cron job with `--force 
 
 ```
 # cronjob for Firefly III that changes the target date.
-0 3 1 * * /usr/bin/php /var/www/html/artisan firefly-iii:cron --force --date=$(date "+\%Y-\%m-")10
+0 3 1 * * /usr/local/bin/php /var/www/html/artisan firefly-iii:cron --force --date=$(date "+\%Y-\%m-")10
 ```
