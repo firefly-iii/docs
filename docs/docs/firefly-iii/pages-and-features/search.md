@@ -154,7 +154,7 @@ Use a dot, not a comma: `12.34` will work. `12,34` will not. `€ 34,-` will not
 The amount operator uses positive amounts for all transactions.
 
 * `amount_exactly:12.34`
-* `amount_less::100`. Less or equal.
+* `amount_less:100`. Less or equal.
 * `amount_more:21`. More or equal.
 * `foreign_amount_exactly:34.56`
 * `foreign_amount_less:34.56`
