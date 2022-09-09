@@ -8,8 +8,6 @@ This is especially useful when you're importing data and you wish all transactio
 
 Rules are divided over rule groups. Each rule group has rules in a specific order.
 
-Rules can be set to be "strict" or not. If a rule is set to be strict, ALL triggers must match for the rule to fire. If a rule is not strict, ANY trigger is enough.
-
 ## Triggers
 
 A rule must spring into action at the right time! This is decided by triggers that you can set yourself. Here are some notable rule triggers that people use often:
@@ -19,9 +17,12 @@ A rule must spring into action at the right time! This is decided by triggers th
 * When the amount is more than *X*.
 * When the budget is *X*.
 
-Rules can be set to be "strict" or not. If a rule is set to be strict, ALL triggers must match for the rule to fire. If a rule is not strict, ANY trigger is enough.
+All triggers are case-insensitive.
 
-All triggers are case-insensitive
+Rules can be set to be "strict" or not. If a rule is set to be strict, ALL triggers must match for the rule to fire. If a rule is not strict, ANY trigger is enough. 
+
+!!! info
+    This can be useful if you wish to match ANY description, for example. If your transactions are described "groceries" or "went shopping" or "got food" then a *non-strict* rule could match all of them by adding 3 triggers with different content.
 
 ### Special triggers
 
