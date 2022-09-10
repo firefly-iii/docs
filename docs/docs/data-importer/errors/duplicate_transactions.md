@@ -2,6 +2,12 @@
 
 Sometimes the Firefly III Data Importer (**FIDI**) will create duplicate transactions, despite being told not to. This is pretty annoying so please open a ticket when this happens and let me know why Firefly III didn't detect a duplicate. I can use this information to fine-tune the duplication process.
 
+## Deleted, but duplicate?
+
+Firefly III will also check deleted transactions when checking for duplicates. This is on purpose. If your import contains bad transactions or informative message hidden as transactions, they will not be re-imported after you've deleted them.
+
+## Futher debugging
+
 Use the *debug view* to see why a transaction is imported, despite being a duplicate of another transaction. Remember that rules don't influence the (de)duplication process, because rules are applied *after* the duplication check.
 
 Open both transactions in different tabs of your browser. Notice how the URL is something like this:
