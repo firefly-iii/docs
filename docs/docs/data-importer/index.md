@@ -15,7 +15,7 @@ The data import supports a variety of sources:
 Because it is very difficult for a poor open source developer like me to build custom-made secure connections to every single bank out there, I've called in the help from two companies that already solved that enigma. They cannot get enough credit:
 
 - [Salt Edge](https://www.saltedge.com/) is a fintech solution whose Spectre API supports over [5000 banks](https://www.saltedge.com/products/spectre/countries).
-- [Nordigen](https://nordigen.com/) is a fintech solution who's API supports over [2100 banks](https://nordigen.com/en/coverage/).
+- [Nordigen](https://nordigen.com/) is a fintech solution whose API supports over [2100 banks](https://nordigen.com/en/coverage/).
 
 If those institutes do not support your financial institution, be sure you can still import CSV files. Other formats are still on the roadmap. That should cover your needs.
 
