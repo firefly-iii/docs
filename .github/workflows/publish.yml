@@ -22,8 +22,8 @@ jobs:
         run: |
           cd $GITHUB_WORKSPACE/docs
           grep -rl '%PHPVERSION' ./ | xargs sed -i 's/%PHPVERSION/8\.0/g'
-          grep -rl '%IMPORTERVERSION' ./ | xargs sed -i 's/%IMPORTERVERSION/0\.9\.15/g'
-          grep -rl '%FFVERSION' ./ | xargs sed -i 's/%FFVERSION/5\.7\.11/g'
+          grep -rl '%IMPORTERVERSION' ./ | xargs sed -i 's/%IMPORTERVERSION/0\.9\.16/g'
+          grep -rl '%FFVERSION' ./ | xargs sed -i 's/%FFVERSION/5\.7\.12/g'
           python -m mkdocs build --clean
       - name: Upload to Azure Blob Storage
         env:
