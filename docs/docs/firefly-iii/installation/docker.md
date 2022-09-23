@@ -137,6 +137,30 @@ If you are using Nginx add the following to your location block:
 
 ```text
 proxy_set_header X-Forwarded-Proto $scheme;
+proxy_set_header X-Forwarded-Host $host;
+proxy_set_header X-Forwarded-Server $host;
+ X-Forwarded-For $proxy_add_x_forwarded_for;
+Host $host;
+```
+
+For Apache, use something like:
+
+```text
+<VirtualHost *:443>
+        ServerName firefly.mydomain.com
+        ServerAdmin EMAIL
+        ProxyPreserveHost On
+        ProxyRequests Off
+        SSLEngine On
+        SSLCertificateFile      /etc/letsencrypt/live/.../fullchain.pem
+        SSLCertificateKeyFile   /etc/letsencrypt/live/.../privkey.pem
+        ProxyPass / http://127.0.0.1:8080/
+        ProxyPassReverse / http://127.0.0.1:8080/
+        ErrorLog ${APACHE_LOG_DIR}/finance_error.log
+        CustomLog ${APACHE_LOG_DIR}/finance_access.log combined
+        RequestHeader set X-Forwarded-Proto expr=%{REQUEST_SCHEME}
+        RequestHeader set X-Forwarded-SSL expr=%{HTTPS}
+</VirtualHost>
 ```
 
 ## Supported Docker environment variables
