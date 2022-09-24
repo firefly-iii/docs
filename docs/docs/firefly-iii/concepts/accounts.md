@@ -24,15 +24,15 @@ A type to indicate it's a savings account.
 
 #### Cash wallet
 
-Can be used to track cash expenses, which I personally don't recommend. 
+Can be used to track cash expenses. 
 
 #### Credit cards
 
-Used to indicate the asset account belongs to a credit card. Firefly III does not (yet) respond to this, it's for your own administration only.
+Indicate the asset account belongs to a credit card. Firefly III does not (yet) respond to this, it's for your own administration only. Firefly III does not use liability accounts for credit cards. 
 
 ### Expense accounts
 
-When you spend money, you do so at a store, online or maybe using cash. Each of these places gets its own expense account.
+When you spend money, you do so at a store, online or maybe using cash. Each of these places gets its own expense account. You can combine multiple stores into a single expense account if you want.
 
 ### Revenue accounts
 
@@ -49,39 +49,31 @@ Likewise, if you deposit cash into an asset account, don't mention a revenue acc
 
 ### Liabilities
 
-Firefly III supports liabilities such as debts and loans, that you can track using Firefly III. The idea is pretty simple, but it isn't 100% accountant approved. So beware. Firefly III has three types of liabilities:
+!!! info
+    Although you can set the interest rate for a liability, Firefly III will not automatically calculate the interest due.
+
+Firefly III supports liabilities that you can track using Firefly III. The way it works isn't 100% accountant approved. Firefly III has three types of liabilities:
 
 - Loan
 - Debt
 - Mortgage
 
-There are two "directions" for liabilities. When you are the **debtor** you must pay it back. If you are the **creditor** the money will be paid back to you. Two easy examples are:
+When you are the **debtor** you must pay it back. If you are the **creditor** the money will be paid back to you.
 
 - You are the debtor to your student loans.
 - You are the creditor when you loaned a friend money to buy a new PC.
-
-!!! info
-    Although you can set the interest rate for a liability, Firefly III will not automatically calculate the interest due.
 
 Once created Firefly III keeps track of the amounts for you. Here are the two scenarios (debtor and creditor) and how they work in Firefly III.
 
 #### Debtor
 
-This is the most common format. You take out student loans or a mortgage and you keep track of paying it back in Firefly III. You may optional set the amount due as the **start amount** but this is not necessary. You can also start with an empty loan and (see option number 3 ahead) transfer money away from the loan to pay for stuff. Here are a few scenario's:
-
-1. Every transaction from your asset account to the liability means you're paying back your debts.
-2. When you transfer money from the liability to your asset account you're borrowing more money.
-3. If you transfer money from the liability to an expense account, this is like interest or fees.
-4. If money is put into the liability from a revenue they are waiving fees or paying the loan back for you.
+You take out student loans or a mortgage and you keep track of paying it back in Firefly III. You may set the amount due as the **start amount**. You can also start with an empty loan and transfer money away from the loan to pay for stuff. Every transaction from your asset account to the liability means you're paying back your debts. When you transfer money from the liability to your asset account you're borrowing more money. If you transfer money from the liability to an expense account, this is like interest or fees. If money is put into the liability from a revenue account they are waiving fees or paying the loan back for you.
 
 #### Creditor
 
-This is less common but can be useful to track money. You give your friend 1000,- euro's for a new PC. Obviously you're not a charity so you want the money back. Here are the scenario's:
+This is less common but can be useful to track money. You give your friend 1000,- euro's for a new PC. Your friend pays off the loan with a deposit from a revenue account into the liability.  If you spend the money of your friends loan (you buy the PC) it's an expense from the liability.
 
-1. Your friend pays off the loan with a deposit from a revenue account into the liability.
-2. If you spend the money of your friends loan (you buy the PC) it's an expense from the liability.
-
-Firefly III keeps track of the "balance" of the liability and the "amount due". Ideally, the balance is zero and the "amount due" is the exact amount you're still owed.
+Firefly III keeps track of the balance of the liability and the amount due.
 
 You need two transactions when your friend pays you back the money. If you do not do this, you'll never be able to use the money.
 
@@ -96,6 +88,8 @@ If you want to borrow your friend more money, you also need two transactions:
 2. A withdrawal from the liability to your friend (an expense account).
 
 First, you need to move money to the liability. This will not increase the "amount due" but will increase the balance. You must then send the money to your friend, which *will* increase the amount due. The balance will be back at zero.
+
+This two-step approach is necessary to keep track of the amount due.
 
 ## Deleting accounts
 
