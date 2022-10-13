@@ -115,6 +115,7 @@ nav:
       - Docker: firefly-iii/installation/docker.md
       - Kubernetes: firefly-iii/installation/k8n.md
       - Self-hosted server: firefly-iii/installation/self_hosted.md
+      - Platforms: firefly-iii/installation/self_managed.md
       - Hosted by 3rd parties: firefly-iii/installation/third_parties.md
       - Upgrade instructions: firefly-iii/installation/upgrade.md
     - Support:
