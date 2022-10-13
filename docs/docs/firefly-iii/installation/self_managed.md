@@ -3,7 +3,7 @@
 There are lots of self-managed hosting tools on the market. They offer 1-click installation of apps and services.
 
 !!! warning
-    I do not offer support for these platforms. There are simply too many of them. Feel free to start a [discussion](https://github.com/orgs/firefly-iii/discussions) but you are probably on your own.
+    I can't always offer support for these platforms. There are a lot of them. Feel free to start a [discussion](https://github.com/orgs/firefly-iii/discussions), but you may have to do some exploration to get your issue resolved.
 
 ## Unraid
 
