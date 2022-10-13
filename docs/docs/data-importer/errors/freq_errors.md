@@ -2,6 +2,34 @@
 
 Please open a ticket [on GitHub](https://github.com/firefly-iii/firefly-iii/) if your problem isn't listed here.
 
+## I can't get beyond the opening screen
+
+Some setups have a bad time handling cookies, and without support for cookies the Data Importer doesn't know what you want to do. Make sure that
+
+- You don't run FIDI in a sub-directory
+- The cookie settings in the .env file are correct.
+
+## I changed my configuration, but I still get the old values?
+
+- I fixed an error, but I'm still "Unauthenticated"
+- FIDI doesn't recognize my new access token
+
+FIDI stores some settings in cookies. They persist even when you restart the Docker container or reboot.
+
+1. Clear your cookies
+2. Press "\[Reauthenticate\]"
+3. Browse to `/flush` on your FIDI installation
+
+Any of these options should work.
+
+
+
+## My connection times out, even though the IP addresses are correct
+
+This mainly applies to Docker. Make sure that both containers [are on the same network](https://old.reddit.com/r/FireflyIII/comments/fuur8o/csvimporter_connection_timeout/). Remember that Firefly III usually runs on port 8080.
+
+Please open a ticket [on GitHub](https://github.com/firefly-iii/firefly-iii/) if you can't get it to work.
+
 ## 502 Bad Gateway errors
 
 When Firefly III responds with a token, the resulting header may be too long for your reverse proxy. Add this to the configuration:
