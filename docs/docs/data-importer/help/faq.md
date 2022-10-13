@@ -1,25 +1,15 @@
 # Frequently Asked Questions
 
-Questions about the Firefly III Data Importer (**FIDI**)
+Questions about the Firefly III Data Importer (**FIDI**).
+
+!!! info
+    If you are experiencing issues, please read [frequently seen errors](../errors/freq_errors.md).
 
 ## Can the data importer sync with my bank?
 
 Yes. The data importer uses Spectre and Nordigen to connect to over 6000 banks. Please see the [configuration page](../install/configure.md) for more details and read up on [Nordigen and Salt Edge / Spectre](../install/nordigen-spectre.md).
 
 There is also a [Firefly III API](../../firefly-iii/api.md) that you can connect to \[YOUR BANK HERE\], if you are clever enough to build something in your favorite programming language.
-
-## I changed my configuration, but I still get the old values?
-
-- I fixed an error, but I'm still "Unauthenticated"
-- FIDI doesn't recognize my new access token
-
-FIDI stores some settings in cookies. They persist even when you restart the Docker container or reboot.
-
-1. Clear your cookies
-2. Press "\[Reauthenticate\]"
-3. Browse to `/flush` on your FIDI installation
-
-Any of these options should work.
 
 ## I want to auto-import transactions from \[my bank\] out of the box!
 
@@ -37,12 +27,6 @@ If you run your own CA, check out [the options](https://github.com/firefly-iii/d
 
 Browse to the `/flush`-URL on the data importer to reset it. There is also a button you can use on every page.
 
-## My connection times out, even though the IP addresses are correct
-
-This mainly applies to Docker. Make sure that both containers [are on the same network](https://old.reddit.com/r/FireflyIII/comments/fuur8o/csvimporter_connection_timeout/). Remember that Firefly III usually runs on port 8080.
-
-Please open a ticket [on GitHub](https://github.com/firefly-iii/firefly-iii/) if you can't get it to work.
-
 ## Why can't I import duplicate transactions?
 
 The Firefly III data importer can recognise two different types of duplicate transactions. By default, it will refuse to import both of these types.
@@ -52,7 +36,7 @@ The Firefly III data importer can recognise two different types of duplicate tra
 
 Even when you delete the original transaction, importing it again will result in a duplication error. This is because many CSV files come with dummy lines, and it's very annoying to have to keep deleting those.
 
-If you want to reimport duplicate transactions after deleting them, turn off duplicate detection or delete them from the database by hand.
+If you want to reimport duplicate transactions after deleting them, turn off duplicate detection or delete them from the database by hand. Firefly III v5.8.0 has a "purge"-button on your profile page that allows you to permanently remove duplicated transactions.
 
 ## Why isn't the data importer built into Firefly III?
 
