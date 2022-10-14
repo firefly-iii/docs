@@ -111,6 +111,7 @@ nav:
       - Architecture: firefly-iii/about-firefly-iii/architecture.md
       - Security: firefly-iii/about-firefly-iii/security.md
       - Logo and name: firefly-iii/about-firefly-iii/logo.md
+      - License: firefly-iii/about-firefly-iii/license.md
     - Installation:
       - Docker: firefly-iii/installation/docker.md
       - Kubernetes: firefly-iii/installation/k8n.md
