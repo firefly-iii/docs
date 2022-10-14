@@ -2,7 +2,7 @@
 
 ## The Firefly III license
 
-Firefly III is licensed to you under the [GNU Affero General Public License v3](https://www.gnu.org/licenses/agpl-3.0.html.en). It's abbreviated as "AGPLv3".
+Firefly III, the Firefly III Data Importer and any and all associated tools developed by me are licensed to you under the [GNU Affero General Public License v3](https://www.gnu.org/licenses/agpl-3.0.html.en). It's abbreviated as "AGPLv3".
 
 ## Firefly III copyright
 
@@ -37,6 +37,10 @@ That is OK. Any changes you make to Firefly III need to be made open source unde
 ### I want provide (paid) Firefly III support to people who ask me for it.
 
 That is OK. You don't need to pay me.
+
+### I want to build something "inspired by" Firefly III
+
+That is OK. Any changes you make to Firefly III need to be made open source under the AGPLv3.
 
 ### I run Firefly III for my friends. Do I need to provide them source code?
 
