@@ -16,6 +16,8 @@ There is a dedicated name that discusses [the name and logo of Firefly III](logo
 
 The AGPLv3 allows you to do anything with the code you want, **IF and only IF** you release your changes under the AGPLv3 as well. This also applies to running a modified version of Firefly III on your webserver: you must make the source code available to the users.
 
+The full details of what you can do are in the [AGPLv3 license](https://www.gnu.org/licenses/agpl-3.0.html.en). The license is leading, no matter what this page tells you.
+
 ## Questions
 
 I often get asked the same questions, so here are the answers.
