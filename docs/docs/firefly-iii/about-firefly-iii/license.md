@@ -6,9 +6,13 @@ Firefly III, the Firefly III Data Importer and any and all associated tools deve
 
 The AGPLv3 license is a "[copyleft](https://en.wikipedia.org/wiki/Copyleft)" license. It grands you all kinds of freedom in relation to (copies of) Firefly III, with the requirement that the same rights be preserved in derivative works. 
 
+You are never allowed to remove the license from Firefly III's code.
+
 ## Firefly III copyright
 
 Firefly III is mostly copyrighted by me. PR's and other contributions are copyrighted to their respective owners. The open source license does not change the copyright. The code is not without copyright. It is licensed to you to use under the [GNU Affero General Public License v3](https://www.gnu.org/licenses/agpl-3.0.html.en).
+
+You are never allowed to remove the copyright notice from Firefly III's code.
 
 ## Firefly III name and logo
 
@@ -26,7 +30,7 @@ I often get asked the same questions, so here are the answers.
 
 ### I want to run a commercial (hosted) version of Firefly III
 
-That is OK. Any changes you make to Firefly III need to be made open source under the AGPLv3. That means hosting a repository somewhere with the source code of your hosted version.
+That is OK. Any changes you make to Firefly III need to be made open source under the AGPLv3. That means hosting a repository somewhere with the source code of your hosted version. 
 
 ### I want to white-label Firefly III and sell it as "My Awesome Finance App"
 
