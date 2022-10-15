@@ -18,7 +18,7 @@ You are never allowed to remove the copyright notice from Firefly III's code.
 
 There is a dedicated page that discusses [the name and logo of Firefly III](logo.md).
 
-## What can I do under the AGPLv3
+## What can I do under the AGPLv3?
 
 The AGPLv3 allows you to do anything with the code you want, **IF and only IF** you release your changes under the AGPLv3 as well. This also applies to running a modified version of Firefly III on your webserver: you must make the source code available to the users.
 
@@ -28,31 +28,31 @@ The full details of what you can do are in the [AGPLv3 license](https://www.gnu.
 
 I often get asked the same questions, so here are the answers.
 
-### I want to run a commercial (hosted) version of Firefly III
+### Can I run a commercial (hosted) version of Firefly III?
 
 That is OK. Any changes you make to Firefly III need to be made open source under the AGPLv3. That means hosting a repository somewhere with the source code of your hosted version. 
 
-### I want to white-label Firefly III and sell it as "My Awesome Finance App"
+### Can I white-label Firefly III and sell it as "My Awesome Finance App"?
 
 That is OK. Any changes you make to Firefly III need to be made open source under the AGPLv3. That means hosting a repository somewhere with the source code of "My Awesome Finance App".
 
-### I want to change Firefly III so it can be used by commercial businesses, and sell it.
+### Can I change Firefly III so it can be used by commercial businesses, and sell it?
 
 That is OK. Any changes you make to Firefly III need to be made open source under the AGPLv3. That means hosting a repository somewhere with the code of "Firefly III + business expansions".
 
-### I want to build something "inspired by" Firefly III
+### Can I build something "inspired by" Firefly III?
 
 That is OK. Any changes you make to Firefly III need to be made open source under the AGPLv3. That means hosting a repository somewhere with the code.
 
 A special exception here: if you don't actually use or change Firefly III code, you are not required to open source your code. That means that your new app does not need to be AGPLv3. Keep in mind there are rules regarding [the name and logo of Firefly III](logo.md).
 
-### I want to build an (mobile) app that connects to Firefly III
+### Can I build an (mobile) app that connects to Firefly III?
 
 That is OK. Any changes you make to Firefly III need to be made open source under the AGPLv3. That means hosting a repository somewhere with the code.
 
 A special exception here: if you don't actually use or change Firefly III code, you are not required to open source your code. That means that your new app does not need to be AGPLv3. Keep in mind there are rules regarding [the name and logo of Firefly III](logo.md).
 
-### I want provide (paid) Firefly III support to people who ask me for it.
+### Can I provide (paid) Firefly III support to people who ask me for it?
 
 That is OK. You don't need to pay me.
 
