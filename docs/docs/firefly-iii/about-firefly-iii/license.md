@@ -10,7 +10,7 @@ Firefly III is mostly copyrighted by me. PR's and other contributions are copyri
 
 ## Firefly III name and logo
 
-There is a dedicated name that discusses [the name and logo of Firefly III](logo.md).
+There is a dedicated page that discusses [the name and logo of Firefly III](logo.md).
 
 ## What can I do under the AGPLv3
 
