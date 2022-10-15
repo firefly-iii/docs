@@ -12,7 +12,7 @@ Heroku uses what is called an "ephemeral file system" and it will not be able to
 
 ## Softaculous
 
-!!! warn
+!!! warning
     Your hosting provider may not be compatible with Firefly III, even when it's listed in your Softaculous application list. I cannot support you with this.
 
 Firefly III is featured in [Softaculous](https://softaculous.com/). If your (hosting) server provides packages using Softaculous, Firefly III will be available as a package there. They even made a special [demo site](http://www.softaculous.com/softaculous/apps/others/Firefly_III).
