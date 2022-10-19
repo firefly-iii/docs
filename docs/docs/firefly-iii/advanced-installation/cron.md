@@ -174,12 +174,12 @@ If you do not know the Firefly III URL, you can also use the Docker IP address.
 ```
 cron:
   image: alpine
-  command: sh -c "echo \"0 3 * * * wget -qO- http://app/api/v1/cron/<TOKEN>\" | crontab - && crond -f -L /dev/stdout"
+  command: sh -c "echo \"0 3 * * * wget -qO- http://app:8080/api/v1/cron/<TOKEN>\" | crontab - && crond -f -L /dev/stdout"
 ```
 
 Write your Firefly III URL in the place of `<Firefly III URL>` and put your command line token in the place of `<TOKEN>`. Both are can be found in your profile.
 
-You can also use `app` which is the default host name for Firefly III.
+You can also use `app` which is the default host name for Firefly III. Take note how this uses port 8080.
 
 ## Extra information
 
