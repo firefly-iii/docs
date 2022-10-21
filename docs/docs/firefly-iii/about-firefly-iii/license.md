@@ -32,6 +32,14 @@ I often get asked the same questions, so here are the answers.
 
 That is OK. Any changes you make to Firefly III need to be made open source under the AGPLv3. That means hosting a repository somewhere with the source code of your hosted version. 
 
+### Can I pay you to do the development of custom feature X for me?
+
+Yes. However, the code will be released under the AGPLv3 as well. And if I like the feature I will definitely port it back to Firefly III. Having said that, I currently do not have the time to do more development than I already do, paid or not. So if you ask me, the answer is probably "no".
+
+### Can I pay somebody else to do custom development on Firefly III?
+
+Yes. Anybody can fork and change Firefly III. If you want a specific feature, but you're not a developer, you can pay somebody to build it for you. But the code must also be released publicly under the AGPLv3. That means hosting a repository somewhere with the source code of "Firefly III + my cool changes".
+
 ### Can I white-label Firefly III and sell it as "My Awesome Finance App"?
 
 That is OK. Any changes you make to Firefly III need to be made open source under the AGPLv3. That means hosting a repository somewhere with the source code of "My Awesome Finance App".
