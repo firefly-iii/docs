@@ -73,6 +73,10 @@ This is a very generic error. Can you get some logs and dive into the issue?
 
 Happens to some Apache servers when they are not configured correctly. Set `LOG_LEVEL=emergency`.
 
+## I get an error about openssl\_pkey\_export?
+
+It means your machine has no proper configuration file for OpenSSL, or it cannot be found. Please check out [this GitHub issue](https://github.com/firefly-iii/firefly-iii/issues/1384) for tips and tricks.
+
 ## No matching DirectoryIndex
 
 Make sure Apache looks for public/index.php
