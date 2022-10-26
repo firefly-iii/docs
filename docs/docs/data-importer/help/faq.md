@@ -11,6 +11,12 @@ Yes. The data importer uses Spectre and Nordigen to connect to over 6000 banks. 
 
 There is also a [Firefly III API](../../firefly-iii/api.md) that you can connect to \[YOUR BANK HERE\], if you are clever enough to build something in your favorite programming language.
 
+## Can you clean-up the transactions from \[my bank\]?
+
+If your bank delivers terrible CSV files, or when the Nordigen / Salt Edge import is exceptionally messy, there is *nothing* I can do about it.
+
+There are simply too many banks and financial institutions in the world for me to manage exceptions or options for. If you run into a data quality issue, the best place to get it addressed is at the source: your bank.
+
 ## I want to auto-import transactions from \[my bank\] out of the box!
 
 You can use the [command line](../usage/command_line.md) or the [POST command](../usage/post.md) to automate your import. 
