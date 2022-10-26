@@ -15,10 +15,6 @@ There is also a [Firefly III API](../../firefly-iii/api.md) that you can connect
 
 You can use the [command line](../usage/command_line.md) or the [POST command](../usage/post.md) to automate your import. 
 
-## I get an error about openssl\_pkey\_export?
-
-It means your machine has no proper configuration file for OpenSSL, or it cannot be found. Please check out [this GitHub issue](https://github.com/firefly-iii/firefly-iii/issues/1384) for tips and tricks.
-
 ## How do I handle custom SSL certificates?
 
 If you run your own CA, check out [the options](https://github.com/firefly-iii/data-importer/blob/main/.env.example#L51) in the `.env.example` file.
