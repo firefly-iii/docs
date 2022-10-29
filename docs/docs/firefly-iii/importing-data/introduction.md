@@ -26,6 +26,10 @@ A tool built by GitHub user [@bnw](https://github.com/bnw) that allows you to im
 
 - [Website and documentation](https://github.com/bnw/firefly-iii-fints-importer)
 
+### GnuCash conversion script
+
+This experimental [Python script](https://gist.github.com/adyanth/20c004869baf33458e416d4396ca40a8) can convert GnuExports to Firefly III compatible JSON.
+
 ### Plaid importer
 
 [Plaid](https://plaid.com/) is a data aggregation service just like Spectre's Salt Edge API mentioned earlier. GitHub user [@GeorgeHahn](https://gitlab.com/GeorgeHahn) built a tool to import from Plaid.
