@@ -3,26 +3,14 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## 5.7.15 - 2022-05-25
-### Added
-- Initial release.
-
-### Changed
-- Initial release.
-
-### Deprecated
-- Initial release.
-
-### Removed
-- Initial release.
 
 ### Fixed
-- Initial release.
-
-### Security
-- Initial release.
-
-### API
-- Initial release
+- You can no longer set the currency of expense and revenue accounts.
+- Form elements are not spell checked anymore (privacy).
+- [Issue 6556](https://github.com/firefly-iii/firefly-iii/issues/6556) Wrong value used in bill chart
+- [Issue 6564](https://github.com/firefly-iii/firefly-iii/issues/6564) Right-Align numbers to match monetary value digits
+- [Issue 6589](https://github.com/firefly-iii/firefly-iii/issues/6589) Webhook not fired after destroying transaction
+- Add missing locale data
 
 
 ## 5.7.14 - 2022-10-19
