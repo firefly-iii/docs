@@ -17,3 +17,7 @@ The [Firefly III Data Importer](data-importer) is the nr. 1 tool to import data 
 ## Other tools and libraries
 
 Some [other tools and libraries](other-tools) part of the Firefly III network are documented here.
+
+## Contact
+
+Find Firefly III on <a rel="me" href="https://fosstodon.org/@ff3">Mastodon</a>.
