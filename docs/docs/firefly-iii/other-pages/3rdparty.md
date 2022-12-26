@@ -55,6 +55,13 @@ Abacus is an iOS app created by @victorbalssa that allows you to use your Firefl
 - [GitHub](https://github.com/victorbalssa/abacus)
 - [App Store](https://apps.apple.com/us/app/1627093491)
 
+### Lychnos
+
+Lychnos is a simple web front-end for Firefly III made by @davidschlachter, built around annual budgets for categories. Supports creating and viewing transactions alongside its budgeting features.
+
+- [Credits](https://github.com/davidschlachter)
+- [Website and documentation](https://github.com/davidschlachter/lychnos)
+
 ## Bots and tools
 
 ### Firefly III CLI
