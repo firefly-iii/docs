@@ -2,7 +2,42 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## 5.7.15 - 2022-05-25
+## 5.7.17 - 2022-12-30
+
+### Fixed
+- [Issue 6742](https://github.com/firefly-iii/firefly-iii/issues/6742) Error when a rule tries to add or remove an amount from a piggy bank
+- [Issue 6743](https://github.com/firefly-iii/firefly-iii/issues/6743) Error when opening piggy bank overview
+- [Issue 6753](https://github.com/firefly-iii/firefly-iii/issues/6753) Rules are not finding any transactions with trigger 'Amount is greater than 0'
+
+## 5.7.16 - 2022-12-25
+
+### Added
+- You can now search for SEPA CT, thanks @dasJ!
+
+### Changed
+- Links go to [Mastodon](https://fosstodon.org/@ff3), not Twitter.
+- Most if not all remaining float values removed. None were used in financial math.
+- Expand Laravel Passport settings.
+
+### Fixed
+- [Issue 6597](https://github.com/firefly-iii/firefly-iii/issues/6597) Edit existing split transaction's source did not work properly.
+- [Issue 6610](https://github.com/firefly-iii/firefly-iii/issues/6610) Fix search for attachments
+- [Issue 6625](https://github.com/firefly-iii/firefly-iii/issues/6625) Page of the links is not displayed due to an error
+- [Issue 6701](https://github.com/firefly-iii/firefly-iii/issues/6701) Ensure remote_guard_alt_email if changed, thanks @nebulade!
+- Remove some null pointers in the code.
+- Add missing locale data
+- Fixed typo, thx @charlesteets!
+- Various issues with piggy banks
+- Clear cache after a transaction is deleted.
+- Be more clear about registrations being disabled.
+
+### Security
+- Updated all packages and dependencies.
+
+### API
+- Fix API endpoint that would not accept two of the same dates.
+
+## 5.7.15 - 2022-11-02
 
 ### Fixed
 - You can no longer set the currency of expense and revenue accounts.
