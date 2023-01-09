@@ -30,14 +30,17 @@ A tool built by GitHub user [@bnw](https://github.com/bnw) that allows you to im
 
 This experimental [Python script](https://gist.github.com/adyanth/20c004869baf33458e416d4396ca40a8) can convert GnuExports to Firefly III compatible JSON.
 
-### Plaid importer
+### Plaid importers
 
-[Plaid](https://plaid.com/) is a data aggregation service just like Spectre's Salt Edge API mentioned earlier. GitHub user [@GeorgeHahn](https://gitlab.com/GeorgeHahn) built a tool to import from Plaid.
+[Plaid](https://plaid.com/) is a data aggregation service just like Spectre's Salt Edge API mentioned earlier.
+
+- GitLab user [@GeorgeHahn](https://gitlab.com/GeorgeHahn) built a tool to import from Plaid.
+  - [Website and documentation](https://gitlab.com/GeorgeHahn/firefly-plaid-connector)
+- GitHub user [@dvankley](https://github.com/dvankley) built an alternative Plaid importer tool.
+  - [Website and documentation](https://github.com/dvankley/firefly-plaid-connector-2)
 
 !!! warning
     The free Plaid program is meant for testing and your milage may vary.
-
-- [Website and documentation](https://gitlab.com/GeorgeHahn/firefly-plaid-connector)
 
 ## Bank-specific tools
 
