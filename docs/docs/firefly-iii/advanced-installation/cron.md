@@ -148,7 +148,7 @@ Use any tool or system to call the URL. See the preceding documentation.
 The command would be something like this:
 
 ```
-0 3 * * * docker exec --user www-data <container> /usr/local/bin/php /var/www/html/artisan firefly-iii:cron
+0 3 * * * docker exec <container> /usr/local/bin/php /var/www/html/artisan firefly-iii:cron
 ```
 
 Instead of `<container>`, write the container ID or write `firefly_iii_app` in case of Docker compose. If you want, you can replace `<container>` in the following piece of code, that will automatically insert the correct container ID. Keep in mind, it may need some fine tuning!
