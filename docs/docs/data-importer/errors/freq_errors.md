@@ -22,8 +22,6 @@ FIDI stores some settings in cookies. They persist even when you restart the Doc
 
 Any of these options should work.
 
-
-
 ## My connection times out, even though the IP addresses are correct
 
 This mainly applies to Docker. Make sure that both containers [are on the same network](https://old.reddit.com/r/FireflyIII/comments/fuur8o/csvimporter_connection_timeout/). Remember that Firefly III usually runs on port 8080.
@@ -39,6 +37,8 @@ proxy_buffer_size       128k;
 proxy_buffers           4 256k;
 proxy_busy_buffers_size 256k;
 ```
+
+Make sure you also increase the buffer size of the server as well.
 
 ## I get page load errors because the protocols don't match
 

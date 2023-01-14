@@ -6,6 +6,10 @@ In order to run the Firefly III Data Importer (**FIDI**) you need a working LAMP
 2. [Upgrade Ubuntu PHP %PHPVERSION](https://www.google.com/search?q=upgrade+ubuntu+php+%PHPVERSION)
 3. [PHP %PHPVERSION raspberry pi](https://www.google.nl/search?q=PHP+%PHPVERSION+raspberry+pi)
 
+Also remember these Gists, which may help in case you run into issues:
+
+1. [Firefly-III CSV-Importer Ubuntu 20.04 Proxmox Installation Guide](https://gist.github.com/Engr-AllanG/e87f827092e3a6b876b912cd897428ae). Remember to change 'CSV' to 'data' where necessary.
+
 !!! warning
     FIDI will not work properly when installed or accessed through a subdirectory on your web server. If you run FIDI from `/fidi`, `/importer` or a similar subdirectory your milage may vary and I can't support you.
 
