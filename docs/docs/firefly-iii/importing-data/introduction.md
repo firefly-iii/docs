@@ -20,6 +20,13 @@ There are more import tools if the Firefly III Data Importer does not fit your u
 
 [TransCat](https://github.com/Hapyr/trans-cat) can pre-process your CSV file and automatically assign your transactions to a category based on previous assignments. The project has not yet been tested extensively, and bug reports are very welcome.
 
+### Splitwise to Firefly III
+
+This tool syncs the expenses from Splitwise to Firefly III using their respective APIs.
+
+- [Website and documentation](https://github.com/adyanth/splitwise-firefly-sync)
+- [Credits](https://github.com/adyanth)
+
 ### FinTS importer
 
 A tool built by GitHub user [@bnw](https://github.com/bnw) that allows you to import using FinTS, a bank-independent protocol for online banking, developed and used by German banks. 
