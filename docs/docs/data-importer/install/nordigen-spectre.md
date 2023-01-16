@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Both the Nordigen API and Spectre (Salt Edge's API) are free-to-use for Firefly III users. Their products however are paid, and they are commercial organizations.
+Both the Nordigen API and Spectre (Salt Edge's API) are free-to-use for Firefly III users. Their products however are paid, and they are commercial organizations. Furthermore, their API access for Firefly III users may be limited.
 
 Please make sure you read and agree with all of the terms that either company may present you with. They have their own data usage and privacy policies, which you must read up on.
 
@@ -11,11 +11,16 @@ Please make sure you read and agree with all of the terms that either company ma
 
 ## Salt Edge's Spectre API
 
-You can sign up for Salt Edge's services on [this page](https://www.saltedge.com/client_users/sign_up). Your account will initially have a "pending” status. In order to get access to real banks, please request test access from your Client's dashboard main page and mention you’re a Firefly III user.
+You can sign up for Salt Edge's services on [this page](https://www.saltedge.com/client_users/sign_up).
 
-The Account Information API is generally limited to non-EU and non-UK banks. You can see if your bank is supported [on this page](https://www.saltedge.com/products/spectre/countries?channel%5B%5D=non_regulated).
+Your account will initially have a "pending" status. In order to get access to real banks, please request "test" access from your Client's dashboard main page and mention you’re a Firefly III user.
 
-Access to the Spectre API is limited to raw data only, which means you may have to do data cleanup yourself. You can use Firefly III [rules](../../firefly-iii/pages-and-features/rules.md) or build something yourself.
+### Limits
+Note that Spectre's partnership with Firefly III (Account Information API) does not offer the possibility of connecting to financial institutions via PSD2/Open Banking channels in the EU & UK: only web scraping connections are available. Furthermore, there is a limit of 10 banks and no customer support (support tickets won't be treated).
+
+Lastly, access to the Spectre API is limited to raw data only, which means you may have to do data cleanup yourself. You can use Firefly III [rules](../../firefly-iii/pages-and-features/rules.md) or build something yourself.
+
+You can see if your bank is supported [on this page](https://www.saltedge.com/products/spectre/countries?channel%5B%5D=non_regulated).
 
 ## Nordigen API
 
