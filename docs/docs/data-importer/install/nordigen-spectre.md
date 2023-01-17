@@ -16,9 +16,10 @@ You can sign up for Salt Edge's services on [this page](https://www.saltedge.com
 Your account will initially have a "pending" status. In order to get access to real banks, please request "test" access from your Client's dashboard main page and mention you’re a Firefly III user.
 
 ### Limits
-Note that Spectre's partnership with Firefly III (Account Information API) does not offer the possibility of connecting to financial institutions via PSD2/Open Banking channels in the EU & UK: only web scraping connections are available. Furthermore, there is a limit of 10 banks and no customer support (support tickets won't be treated).
 
-Lastly, access to the Spectre API is limited to raw data only, which means you may have to do data cleanup yourself. You can use Firefly III [rules](../../firefly-iii/pages-and-features/rules.md) or build something yourself.
+Note that Spectre does not offer the possibility of connecting to financial institutions via PSD2/Open Banking channels in the EU or the UK. These connections are limited to web scraping connections. Furthermore, there is a limit of 10 banks.
+
+Since access to the Spectre API is limited to raw data only, you may have to do data cleanup yourself. You can use Firefly III [rules](../../firefly-iii/pages-and-features/rules.md) or build something yourself.
 
 You can see if your bank is supported [on this page](https://www.saltedge.com/products/spectre/countries?channel%5B%5D=non_regulated).
 
