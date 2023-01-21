@@ -26,8 +26,8 @@ To authenticate with Firefly III you must set ONE the following variables:
 !!! important
     A Docker installation will *never* be able to connect a Firefly III installation located at `http://localhost` or `http://127.0.0.1` because this address refers to the Docker container itself, and not Firefly III.
 
-!!! important
-    If you are using an [external identity provider](https://docs.firefly-iii.org/firefly-iii/advanced-installation/authentication/#remote-user) to authenticate with Firefly, you must use a personal access token to connect your FIDI with Firefly. It is not possible to use a client ID in that case.
+!!! information
+    Firefly III combined with [external identity providers](../../firefly-iii/advanced-installation/authenticationmd) such as Authelia can only handle Personal Access Tokens.
 
 ## Configure Nordigen
 
