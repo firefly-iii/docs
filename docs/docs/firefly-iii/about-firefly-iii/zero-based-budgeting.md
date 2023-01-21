@@ -5,7 +5,7 @@
 
 [Zero based budgeting](https://en.wikipedia.org/wiki/Zero-based_budgeting) is a method of budgeting that focuses on giving each Euro a goal. All your budgets start at zero, and you fill them with money. Expenses deplete budgets until you make money to fill the budgets.
 
-This approach is pretty terrible. Here's why.
+I believe this approach is pretty terrible. Here's why.
 
 ## Paycheck to paycheck
 
@@ -35,7 +35,7 @@ For each (future) large expense I have a piggy bank connected to my savings acco
 
 ## Conclusion
 
-Skip the zero-based budgeting tools. They are easier to learn and easier to use, it's absolutely true. Most zero-based budgeting tools (especially the commercial ones) are also way better looking and more user friendly than Firefly III.
+I believe you should skip on zero-based budgeting tools. They are easier to learn and easier to use, it's absolutely true. Most zero-based budgeting tools (especially the commercial ones) are also way better looking and more user friendly than Firefly III.
 
 But also keep in mind: it's harder to spend less money with zero-based budgeting. It's harder to get a feeling for your financial situation with zero-based budgeting, and it's especially harder to *change* anything. And is that not why you started looking at these tools?
 

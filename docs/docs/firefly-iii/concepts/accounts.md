@@ -71,25 +71,16 @@ You take out student loans or a mortgage and you keep track of paying it back in
 
 #### Creditor
 
-This is less common but can be useful to track money. You give your friend 1000,- euro's for a new PC. Your friend pays off the loan with a deposit from a revenue account into the liability.  If you spend the money of your friends loan (you buy the PC) it's an expense from the liability.
+This is less common but can be useful to track money. You give your friend 1000,- euro's for a new PC. Your friend pays off the loan. Firefly III keeps track of the amount due.
 
-Firefly III keeps track of the balance of the liability and the amount due.
+If you want to borrow your friend (more) money, you need to do this:
 
-You need two transactions when your friend pays you back the money. If you do not do this, you'll never be able to use the money.
+1. Create an empty "creditor" liability. Then, transfer money from your asset account to the liability.
+2. Set up a liability with an initial amount. If necessary, transfer more money from your asset account to the liability.
 
-1. A deposit into the liability from your friend (a revenue account).
-2. A deposit from the liability into your own asset account.
+You need a transaction when your friend pays you back the money.
 
-The first transaction is your friend paying your back. This will lower the "amount due" amount. It will also raise the balance, which means this money is now available to you. When you transfer the money from the liability to your own account, the balance is zero again but the "amount due" will not change.
-
-If you want to borrow your friend more money, you also need two transactions:
-
-1. A withdrawal from your asset account into the liability.
-2. A withdrawal from the liability to your friend (an expense account).
-
-First, you need to move money to the liability. This will not increase the "amount due" but will increase the balance. You must then send the money to your friend, which *will* increase the amount due. The balance will be back at zero.
-
-This two-step approach is necessary to keep track of the amount due.
+- A deposit from the liability into your own asset account.
 
 ## Deleting accounts
 

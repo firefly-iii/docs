@@ -8,6 +8,8 @@ You can combine operators like so: `some:operator another:thing` but you can't u
 
 All search operators work `like:this`. Either you set the `value:here` or when you wish to include spaces, `you:"should do this"`.
 
+To negate a search, use a minus: `-category:something`. Any search operator can be negated.
+
 ### Source account
 
 Use these operators to filter transactions based on the source account name:

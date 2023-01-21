@@ -6,4 +6,4 @@ You can send any request [to me by email](mailto:james@firefly-iii.org) or [open
 
 ## Roadmap and release schedule
 
-There is no formal roadmap for Firefly III. However, I try to release a new version of Firefly III every month.
+Check out [roadmap.firefly-iii.org](https://roadmap.firefly-iii.org/).

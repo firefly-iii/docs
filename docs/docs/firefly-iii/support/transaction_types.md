@@ -18,9 +18,6 @@ To make cash withdrawals and use the cash account (displayed as "(cash)"), leave
 | Asset account | Debt (you are [creditor](../concepts/accounts.md#liabilities)) | You loan somebody extra money. |
 | Asset account | Mortgage (you are [creditor](../concepts/accounts.md#liabilities)) | You loan somebody extra money. |
 | Asset account | Cash account | Do a cash withdrawal at an ATM |
-| Loan | Expense account | Interest payment to your loanshark. |
-| Debt | Expense account | Interest payment to the debt collector. |
-| Mortgage | Expense account | Interest payment or bank fees for your mortgage. |
 
 ## Deposits
 
@@ -82,17 +79,6 @@ These transactions are also magical, and get created when you reconcile an asset
 | :--- | :--- | :--- |
 | Asset account | Hidden reconciliation account | Reconciling an asset account by removing money from it. |
 | Hidden reconciliation account | Asset account | Reconciling an asset account by adding money to it. |
-
-## Liability credit
-
-If you borrow money to somebody (you are the [creditor](../concepts/accounts.md#liabilities)) that money must come from some place. In some cases, Firefly III creates a special transaction to give you the money that you borrow out to somebody else.
-
-| From | To |  |
-| :--- | :--- | :--- |
-| Hidden liability credit account | Loan | Magic money to be borrowed to somebody else. |
-| Hidden liability credit account | Debt | Magic money to be borrowed to somebody else. |
-| Hidden liability credit account | Mortgage | Magic money to be borrowed to somebody else. |
-
 
 
 

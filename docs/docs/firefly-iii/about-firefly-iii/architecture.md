@@ -141,4 +141,4 @@ These repositories do a lot of the heavy lifting when it comes to specific model
 
 ### Frontend
 
-The [`/frontend`](https://github.com/firefly-iii/firefly-iii/tree/main/frontend) folder contains the code of the new Vue frontend. Check out `src` for all the details. It's a Vue based frontend with separate pages. In the future, I hope to create an SPA, but for now it's separate pages, supported by views from [`resources/views/v2`](https://github.com/firefly-iii/firefly-iii/tree/main/resources/views/v2).
+The [`/frontend`](https://github.com/firefly-iii/firefly-iii/tree/main/frontend) folder contains the code of the new Vue frontend. Check out `src` for all the details. It's a Vue based frontend build using Quasar.

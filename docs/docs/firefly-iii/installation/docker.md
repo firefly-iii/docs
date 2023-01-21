@@ -18,47 +18,6 @@ Firefly III has several Docker tags. The instructions always assume `fireflyiii/
 
 All Docker tags are built for ARMv7, ARM64 and AMD64. ARMv6 is not included, so these images will *not* work on the Raspberry Pi Zero, Raspberry Pi 1 (A+B) or Raspberry Pi Compute Module.
 
-## Straight from Docker Hub
-
-The instructions in this section will help you set up a single container.
-
-With these commands you create one container: the container for Firefly III itself. If you do this, you should already have a MySQL or a Postgres database running somewhere. For example, when you have one central database container for all of your Docker containers. Without such a database container, Firefly III will **not** work.
-
-Docker containers should only do one thing, which is why you need a separate database container.
-
-### Create some volumes
-
-These are used to persistently store uploaded files and exported data.
-
-```text
-docker volume create firefly_iii_upload
-```
-
-### Start the container
-
-Run this Docker command to start the Firefly III container. Make sure that you edit the environment variables to match your own database. You should really change the `APP_KEY` as well. It should be a random string of _exactly_ 32 characters. You can generate such a key with the following command: `head /dev/urandom | LC_ALL=C tr -dc 'A-Za-z0-9' | head -c 32 && echo`.
-
-```text
-docker run -d \
--v firefly_iii_upload:/var/www/html/storage/upload \
--p 80:8080 \
--e APP_KEY=CHANGEME_32_CHARS \
--e DB_HOST=CHANGEME \
--e DB_PORT=3306 \
--e DB_CONNECTION=mysql \
--e DB_DATABASE=CHANGEME \
--e DB_USERNAME=CHANGEME \
--e DB_PASSWORD=CHANGEME \
-fireflyiii/core:latest
-```
-
-Firefly III assumes that you're using MySQL, which a lot of people do. If you use PostgreSQL, change the following environment variable in the command: `DB_CONNECTION=pgsql` and make sure you change the port, `DB_PORT=5432`.
-
-When executed this command will fire up a Docker container with Firefly III inside of it. It may take some time to start. If the database is set up properly it will automatically migrate and install a default database and you should be able to surf to your container (usually located at [localhost](http://localhost)) to use Firefly III.
-
-!!! info
-    The Apache server inside this Docker image will run as `www-data`. This will be reflected by the files you upload: they will be owned by `www-data`. You can change the user the image runs under but that user must exist inside the Docker image or things may not work as expected.
-
 ## Using Docker Compose
 
 "Docker Compose" is a tool that can automatically set up and link several Docker containers using just one command. This is easier than running the commands manually.
@@ -99,6 +58,47 @@ You may see an error like this one: `Could not reliably determine the server's f
 ### Surf to Firefly III
 
 You can now visit Firefly III at [http://localhost](http://localhost) or [http://docker-ip:port](http://docker-ip:port) if it is running on a custom port.
+
+## Straight from Docker Hub
+
+The instructions in this section will help you set up a single container.
+
+With these commands you create one container: the container for Firefly III itself. If you do this, you should already have a MySQL or a Postgres database running somewhere. For example, when you have one central database container for all of your Docker containers. Without such a database container, Firefly III will **not** work.
+
+Docker containers should only do one thing, which is why you need a separate database container.
+
+### Create some volumes
+
+These are used to persistently store uploaded files and exported data.
+
+```text
+docker volume create firefly_iii_upload
+```
+
+### Start the container
+
+Run this Docker command to start the Firefly III container. Make sure that you edit the environment variables to match your own database. You should really change the `APP_KEY` as well. It should be a random string of _exactly_ 32 characters. You can generate such a key with the following command: `head /dev/urandom | LC_ALL=C tr -dc 'A-Za-z0-9' | head -c 32 && echo`.
+
+```text
+docker run -d \
+-v firefly_iii_upload:/var/www/html/storage/upload \
+-p 80:8080 \
+-e APP_KEY=CHANGEME_32_CHARS \
+-e DB_HOST=CHANGEME \
+-e DB_PORT=3306 \
+-e DB_CONNECTION=mysql \
+-e DB_DATABASE=CHANGEME \
+-e DB_USERNAME=CHANGEME \
+-e DB_PASSWORD=CHANGEME \
+fireflyiii/core:latest
+```
+
+Firefly III assumes that you're using MySQL, which a lot of people do. If you use PostgreSQL, change the following environment variable in the command: `DB_CONNECTION=pgsql` and make sure you change the port, `DB_PORT=5432`.
+
+When executed this command will fire up a Docker container with Firefly III inside of it. It may take some time to start. If the database is set up properly it will automatically migrate and install a default database and you should be able to surf to your container (usually located at [localhost](http://localhost)) to use Firefly III.
+
+!!! info
+    The Apache server inside this Docker image will run as `www-data`. This will be reflected by the files you upload: they will be owned by `www-data`. You can change the user the image runs under but that user must exist inside the Docker image or things may not work as expected.
 
 ## Docker and reverse proxies
 

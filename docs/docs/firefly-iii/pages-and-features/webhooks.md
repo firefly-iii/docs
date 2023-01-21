@@ -1,17 +1,16 @@
 # Webhooks
 
-!!! info
-    This feature is available through the API of Firefly III.
-
 A webhook is a custom callback. Triggered by events in Firefly III a message will be sent to an URL of your choice. 
 
 ## Triggers
 
 There are currently three available triggers for webhooks in Firefly III:
 
-- When a transaction is created (`TRIGGER_STORE_TRANSACTION`)
-- When a transaction is updated (`TRIGGER_UPDATE_TRANSACTION`)
-- When a transaction is deleted (`TRIGGER_DESTROY_TRANSACTION`)
+- When a transaction is created
+- When a transaction is updated
+- When a transaction is deleted
+
+A webhook can only respond to one trigger. If you want multiple triggers for the same webhook URL, you must setup multiple webhooks.
 
 ## Responses
 
@@ -19,22 +18,21 @@ When triggered, Firefly III will respond by sending a data package to the URL of
 
 ### Transaction create / update / delete
 
-- Send the transaction involved (`RESPONSE_TRANSACTIONS`)
-- Send the accounts involved (`RESPONSE_ACCOUNTS`)
-- Send nothing (`RESPONSE_NONE`)
+- Send the transaction involved
+- Send the accounts involved
+- Send nothing
+
+A webhook can only send one thing. If you want multiple things to be sent for the same webhook, you must setup multiple webhooks.
 
 ## Delivery
 
 All webhook responses will be delivered in JSON. This is the only option:
 
-- JSON (`DELIVERY_JSON`)
+- JSON
 
 ## Create or edit webhooks using the API
 
-You can manage webhooks using [the webhook API endpoints](https://api-docs.firefly-iii.org/#/webhooks).
-
-!!! info
-    This is the only way to manage webhooks at the moment. Sorry.
+You can manage webhooks using [the webhook API endpoints](https://api-docs.firefly-iii.org/#/webhooks) or on the page `/webhooks`.
 
 ## Secret
 
@@ -42,7 +40,7 @@ Each webhook comes with a secret when created. The secret is used to generate th
 
 ## Webhook limits
 
-You *must* submit a `https://` URL. HTTP or other protocols are not allowed. You must give webhooks a unique title.
+You must give webhooks a unique title.
 
 It's not possible to send *two* or more responses *at the same time*, for example the transactions AND the accounts. To do this, you must create two separate webhooks. These will have two separate secrets.
 
