@@ -80,31 +80,53 @@ Could not load config vars.
 
 The transaction you just created was deleted by a rule.
 
-20033: cant destroy This endpoint can\'t handle object "%s"
+**200033** 
 
-2000040: Webhook and webhook message are no match
+You can't destroy this data.
 
-2000041: Webhook message and webhook attempt are no match
+**200040** 
+
+Webhook and webhook message are no match
+
+**200041**
+
+Webhook message and webhook attempt are no match
 
 ### Firefly III error codes
 
 These start with 3.
 
-300000: Use ris null in access token verify
+**300000**
 
-300001: Journal #%d has no source transaction.
+The access token is invalid.
 
-300002: Journal #%d has multiple source transactions.
+**300001**
 
-300003: Journal #%d, transaction #%d has no source account.
+The transaction journal has no source transaction.
 
-300004: Journal #%d has no destination transaction.
+**300002**
 
-300005: Journal #%d has multiple destination transactions
+The transaction journal has multiple source transactions.
 
-300006: Journal #%d, transaction #%d has no destination account
+**300003**
 
-300007: Ended up with zero valid accounts to export from.
+The transaction journal has no source account.
+
+**300004**
+
+The transaction journal has no destination transaction.
+
+**300005** 
+
+The transaction journal has multiple destination transactions
+
+**300006** 
+
+The transaction journal has no destination account
+
+**300007** 
+
+Ended up with zero valid accounts to export from.
 
 ### Generic error codes
 
