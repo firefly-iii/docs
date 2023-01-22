@@ -32,10 +32,10 @@ fireflyiii/data-importer:latest
 You can run the data importer in a Docker Compose combination with Firefly III. An **[example docker-compose.yml](https://github.com/firefly-iii/docker/blob/main/docker-compose-data.yml)** is available on GitHub.
 
 - Notice how Firefly III uses the `.env` file. Use [the example file](https://github.com/firefly-iii/firefly-iii/blob/main/.env.example) from the Firefly III repository as a base.
-- FIDI has its own configuration file `.fidi.env`. FIDI has its own [example file here](https://github.com/firefly-iii/data-importer/blob/main/.env.example).
+- The data importer has its own configuration file `.fidi.env`. The data importer has its own [example file here](https://github.com/firefly-iii/data-importer/blob/main/.env.example).
 - The MariaDB also has its own configuration file in `.db.env`. Check out [Docker Hub](https://hub.docker.com/_/mariadb) for more details.
 
 The following things are important to remember:
 
 * Make sure the MySQL password is *the same* in the `.env` and `.db.env` file.
-* The `FIREFLY_III_URL` variable FIDI requires is `http://app:8080`.
+* The `FIREFLY_III_URL` variable the data importer requires is `http://app:8080`.

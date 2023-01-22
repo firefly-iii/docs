@@ -23,7 +23,7 @@ Create it again by running the command from [the installation guide](docker.md).
 
 ## Upgrading a self-hosted instance
 
-The best way to upgrade is to "reinstall" FIDI using the following command:
+The best way to upgrade is to "reinstall" the data importer using the following command:
 
 ```bash
 cd /var/www && \

@@ -6,20 +6,18 @@ The Personal Access Token you've configured doesn't give access to this instance
 
 ## Could not resolve host
 
-FIDI can't find the host where your Firefly III instance is running. This is often the problem when using Docker and the devices can't reach each other.
+The data importer can't find the host where your Firefly III instance is running. This is often the problem when using Docker and the devices can't reach each other.
 
 ## Your Firefly III version X is below the minimum required version Y
 
 The error says it all, really.
 
-
 ## I can't get beyond the opening screen
 
 Some setups have a bad time handling cookies, and without support for cookies the Data Importer doesn't know what you want to do. Make sure that
 
-- You don't run FIDI in a sub-directory
+- You're not running the data importer in a subdirectory
 - The cookie settings in the .env file are correct.
-
 
 ## My connection times out, even though the IP addresses are correct
 
@@ -29,7 +27,7 @@ Please open a ticket [on GitHub](https://github.com/firefly-iii/firefly-iii/) if
 
 ## cURL error 7: Failed to connect on port 443: Connection refused
 
-Happens when the Firefly III Data Importer (**FIDI**) can reach Firefly III, but is actively refused. Maybe a firewall is in the way?
+Happens when the Firefly III Data Importer can reach Firefly III, but is actively refused. Maybe a firewall is in the way?
 
 ## Unexpected empty response from Firefly III
 

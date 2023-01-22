@@ -1,10 +1,10 @@
 # Installation
 
-The Firefly III Data Importer (or **FIDI**) is a tool separate from [Firefly III](../../firefly-iii/). You can read more about that on [another page](../more-information/separate-tool.md).
+The Firefly III Data Importer is a tool separate from [Firefly III](../../firefly-iii/). You can read more about that on [another page](../more-information/separate-tool.md).
 
-If you had previously installed FIDI, following the **[upgrade instructions](upgrade.md)** is enough.
+If you had previously installed the data importer, following the **[upgrade instructions](upgrade.md)** is enough.
 
-For the installation of FIDI, you have several choices.
+For the installation of the data importer, you have several choices.
 
 ## Installation choices
 
@@ -16,4 +16,4 @@ In no specific order of preference:
 
 ## Configuration
 
-In all cases FIDI needs **[post-installation configuration](configuration.md)**. If you wish to use Nordigen or Spectre, please **[read about Nordigen and Spectre](../more-information/spectre-and-nordigen.md)** first.
+In all cases the data importer needs **[post-installation configuration](configuration.md)**. If you wish to use Nordigen or Spectre, please **[read about Nordigen and Spectre](../more-information/spectre-and-nordigen.md)** first.

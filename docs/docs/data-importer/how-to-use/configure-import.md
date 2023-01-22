@@ -69,7 +69,7 @@ When you check this the data importer will add a tag to each imported transactio
 TODO screenshot of option
 
 !!! note "Rules"
-    If you have rules that remove all tags from a transaction, they will *not* work when you use this option. The tag will always be added. This is not because FIDI uses some magic trick. The tag is added *after* the transaction is created.
+    If you have rules that remove all tags from a transaction, they will *not* work when you use this option. The tag will always be added. This is not because the data importer uses some magic trick. The tag is added *after* the transaction is created.
 
 ### Map data
 

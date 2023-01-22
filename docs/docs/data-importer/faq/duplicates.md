@@ -1,6 +1,6 @@
 # Duplicate transactions
 
-Sometimes the Firefly III Data Importer (**FIDI**) will create duplicate transactions, despite being told not to. This is pretty annoying so please open a ticket when this happens and let me know why Firefly III didn't detect a duplicate. I can use this information to fine-tune the duplication process.
+Sometimes the Firefly III Data Importer will create duplicate transactions, despite being told not to. This is pretty annoying so please open a ticket when this happens and let me know why Firefly III didn't detect a duplicate. I can use this information to fine-tune the duplication process.
 
 ## Deleted, but duplicate?
 
@@ -46,13 +46,3 @@ Hidden deep in the JSON comparisons you may find a field called `external_id` or
 ## Other issues?
 
 Please open a ticket [on GitHub](https://github.com/firefly-iii/firefly-iii/).
-
-
-The identifier-based duplicate detection method is pretty advanced, because it implies that you or your bank keep track of unique identifiers in your transactions, and you import them into the same field all the time. If you switch columns or switch fields it may stop working.
-
-My bank for example, gives every transaction a unique ID. I use "identifier-based" duplicate detection. I've configured the **Unique column index** to the column that contains the identifier and I use the **Unique column type** "External reference" to save it in.
-
-Whenever I import transactions FIDI will search for the identifier first and if it exists already, the transaction will not be imported.
-
-This is a useful feature when your CSV file or import has no real identifiers (see ahead). Many people use content-based duplicate detection in order to import files twice, or import files which may have overlap. Even transactions that are found in `today.csv` and `last-week.csv` will be detected as duplicates.
-

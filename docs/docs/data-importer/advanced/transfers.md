@@ -1,6 +1,6 @@
 # Importing transfers
 
-The first time you import data you may run into an issue where the Firefly III data importer (**FIDI**) creates withdrawals and deposits instead of transfers. Your import will contain transfers, deposits and expenses of them but somehow all you end up with expenses and deposits only. This is a common issue and is caused by the fact that Firefly III doesn't realise the opposing account is an asset account.
+The first time you import data you may run into an issue where the Firefly III data importer creates withdrawals and deposits instead of transfers. Your import will contain transfers, deposits and expenses of them but somehow all you end up with expenses and deposits only. This is a common issue and is caused by the fact that Firefly III doesn't realise the opposing account is an asset account.
 
 If Firefly III knows both accounts are asset accounts, it will create transfers. You must provide the right information and configuration.
 
@@ -35,4 +35,4 @@ When you create new asset accounts in Firefly III, always store an IBAN or accou
 
 ### Test, test, test
 
-Always try one or two transactions first. Keep an eye on the logs and turn on debug mode if necessary (see the search) so you can see why / how Firefly III and FIDI create the accounts they do.
+Always try one or two transactions first. Keep an eye on the logs and turn on debug mode if necessary (see the search) so you can see why / how Firefly III and the data importer create the accounts they do.

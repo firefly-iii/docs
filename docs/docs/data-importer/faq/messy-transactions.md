@@ -16,7 +16,7 @@ If you don't specifically configure the importer to import non-unique rows, open
 
 ## Transfers aren't merged
 
-The Firefly III Data Importer (**FIDI**) is capable of merging two transactions (one from A > B, and one from B < A) if they seem to be the same transaction listed twice. For example, when you import two files: one from your checking account and one from your savings account.
+The Firefly III Data Importer is capable of merging two transactions (one from A > B, and one from B < A) if they seem to be the same transaction listed twice. For example, when you import two files: one from your checking account and one from your savings account.
 
 By default, Firefly III will skip saving the second transfer because the first one already exists. The second is recognized as a duplicate because all the fields are the same. This may not always be the case. Examples that will stop this from happening are:
 
@@ -32,7 +32,7 @@ You can however, create custom rules that trigger on any content in the second t
 
 ### Merging transfers using an identifier
 
-If your bank supplies your CSV files with identifiers, you may configure FIDI to do an [identifier-based unique check](../how-to-use/configure-import.md). If both transactions share the same identifier, this may work for you.
+If your bank supplies your CSV files with identifiers, you may configure the data importer to do an [identifier-based unique check](../how-to-use/configure-import.md). If both transactions share the same identifier, this may work for you.
 
 ## Other issues?
 

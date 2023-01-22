@@ -2,7 +2,7 @@
 
 The data importer can email you the results of the import. This is useful for cron jobs.
 
-In your `.env.example` file or using Docker environment variables, configure FIDI as follows:
+In your `.env.example` file or using Docker environment variables, configure the data importer as follows:
 
 ```
 ENABLE_MAIL_REPORT=true
@@ -18,7 +18,7 @@ MAIL_PASSWORD=secret
 MAIL_FROM_ADDRESS=noreply@example.com
 ```
 
-Update the settings to match your email configuration. The first thing you'll want to update is the `MAIL_MAILER`. The mail mailer indicates the system that is used for mailing. FIDI supports the following mail systems: smtp, sendmail, mailgun, mandrill, sparkpost and log.
+Update the settings to match your email configuration. The first thing you'll want to update is the `MAIL_MAILER`. The mail mailer indicates the system that is used for mailing. The data importer supports the following mail systems: smtp, sendmail, mailgun, mandrill, sparkpost and log.
 
 Make sure that you *always* change the `MAIL_FROM_ADDRESS` address. If this is wrong, mail might never work!
 

@@ -43,7 +43,7 @@ If you wish to use Nordigen, please [read about Nordigen](../faq/spectre-and-nor
 
 * `NORDIGEN_ID` is your Nordigen Client ID
 * `NORDIGEN_KEY` is your Nordigen Client Secret
-* If you set `NORDIGEN_SANDBOX` to `true` FIDI will only connect to the Nordigen sandbox.
+* If you set `NORDIGEN_SANDBOX` to `true` the data importer will only connect to the Nordigen sandbox.
 
 ## Configure Spectre
 
@@ -83,7 +83,7 @@ You can generate your own Personal Access Token on the Profile page. Login to yo
 
 ### Client ID + Firefly III URL
 
-You can generate your own client ID on your Profile page (under OAuth). This is the ID you need when you want to share FIDI with multiple people, or when you want to allow others to use the same instance of FIDI.
+You can generate your own client ID on your Profile page (under OAuth). This is the ID you need when you want to share the data importer with multiple people, or when you want to allow others to use the same instance of the data importer.
 
 Make sure you uncheck the "confidential" checkbox.
 

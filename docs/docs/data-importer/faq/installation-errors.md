@@ -3,13 +3,13 @@
 ## I changed my configuration, but I still get the old values?
 
 - I fixed an error, but I'm still "Unauthenticated"
-- FIDI doesn't recognize my new access token
+- The data importer doesn't recognize my new access token
 
-FIDI stores some settings in cookies. They persist even when you restart the Docker container or reboot.
+The data importer stores some settings in cookies. They persist even when you restart the Docker container or reboot.
 
 1. Clear your cookies
 2. Press "\[Reauthenticate\]"
-3. Browse to `/flush` on your FIDI installation
+3. Browse to `/flush` on your installation
 
 Any of these options should work.
 

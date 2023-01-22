@@ -13,7 +13,7 @@ Also remember these Gists, which may help in case you run into issues:
 1. [Firefly-III CSV-Importer Ubuntu 20.04 Proxmox Installation Guide](https://gist.github.com/Engr-AllanG/e87f827092e3a6b876b912cd897428ae). Remember to change 'CSV' to 'data' where necessary.
 
 !!! warning
-    FIDI will not work properly when installed or accessed through a subdirectory on your web server. If you run FIDI from `/fidi`, `/importer` or a similar subdirectory your milage may vary and I can't support you.
+    The data importer will not work properly when installed or accessed through a subdirectory on your web server. If you run the data importer from `/fidi`, `/importer` or a similar subdirectory your mileage may vary and I can't support you.
 
 ## Installation instructions
 
@@ -73,9 +73,9 @@ proxy_read_timeout 300s;
 
 ## Accessing the data importer
 
-You can access FIDI at [http://localhost/](http://localhost/). If this URL is taken by Firefly III already, make sure your server configuration accepts both. This is called a "virtual host", and out of the scope of this installation guide.
+You can access the data importer at [http://localhost/](http://localhost/). If this URL is taken by Firefly III already, make sure your server configuration accepts both. This is called a "virtual host", and out of the scope of this installation guide.
 
-![Opening screen of FIDI.](images/opening.png)
+![Opening screen of the data importer.](images/opening.png)
 
 !!! question "Need help?"
     If something did not go as expected, please browse to **[the FAQ](../faq/index.md)** or the **[Support](../support/index.md)** pages.
