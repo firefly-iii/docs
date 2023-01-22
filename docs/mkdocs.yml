@@ -193,6 +193,9 @@ nav:
       - Clean-up data: data-importer/how-to-use/clean-up-data.md
     - Advanced:
       - Advanced: data-importer/advanced/index.md
+      - Auto-import: data-importer/advanced/automation.md
+      - JSON: data-importer/advanced/json.md
+      - Notifications: data-importer/advanced/notifications.md
     - FAQ:
         - FAQ: data-importer/faq/index.md
         - Installation errors: data-importer/faq/installation-errors.md
@@ -204,24 +207,12 @@ nav:
         - Re-import transactions: data-importer/faq/re-import.md
         - JSON file: data-importer/faq/json.md
         - Import from your bank: data-importer/faq/import-from-bank.md
-    - XImporting data:
-      - XUploading files: data-importer/usage/upload.md
-      - XConnecting your bank: data-importer/usage/connection.md
-      - XConfiguring your import: data-importer/usage/configure.md
-      - XSetting roles for columns: data-importer/usage/roles.md
-      - XMapping data: data-importer/usage/map.md
-      - XImporting over command line: data-importer/usage/command_line.md
-      - XImporting using POST: data-importer/usage/post.md
-      - XAutomation: data-importer/usage/automation.md
-      - XEmailing results: data-importer/usage/email.md
-      - XImporting transfers: data-importer/usage/importing_transfers.md
-    - XErrors and trouble shooting:
-      - XDuplicate transactions: data-importer/errors/duplicate_transactions.md
-      - XPersonal Access Token errors: data-importer/errors/token_errors.md
-      - XFrequently seen issues: data-importer/errors/freq_errors.md
-      - XBad CSV files: data-importer/errors/bad_files.md
-  - XOther tools:
-    - XIntroduction: other-tools/index.md
+    - Support:
+        - Support: data-importer/support/index.md
+        - Issues: data-importer/support/issues.md
+        - Roadmap: data-importer/support/roadmap.md
+        - Contact: data-importer/support/contact.md
+  - Other tools: other-tools/index.md
 extra_css:
   - stylesheets/extra.css
 theme:
