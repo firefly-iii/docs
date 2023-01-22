@@ -8,7 +8,7 @@ For Nordigen and Spectre you must first select the accounts to import from, and 
 
 Your selection may be limited: if the IBAN matches you have no choice. If the currency matches, only accounts with that currency can be selected.
 
-TODO screenshot
+![Account selection](images/account-select.png "Account selection")
 
 ## CSV file options
 
@@ -16,23 +16,17 @@ TODO screenshot
 
 When you import a CSV file, this checkbox allows you to indicate if your CSV file has headers on the first line of the file instead of data.
 
-TODO screenshot of headers
-
-TODO screenshot of configuration
+![A CSV file with headers](images/headers.png "A CSV file with headers")
 
 ### Convert to UTF-8
 
-Some files are not delivered as UTF-8, which is a common text format. You can ask the data importer to convert the files. You may end up with garbled text. This may happen especially when you have lines with special characters in them.
-
-TODO screenshot of option
+Some files are not delivered as UTF-8, which is a common text encoding format. You can ask the data importer to convert the files. You may end up with garbled text. This may happen especially when you have lines with special characters in them.
 
 ### CSV delimiter
 
 When you import a CSV file, you must select the field separator of our CSV file. This is almost always a comma.
 
-TODO screenshot of semi-colon file
-
-TODO screenshot of option
+![A CSV file with comma separation](images/comma.png "A CSV file with comma separation")
 
 ### Date format
 
@@ -46,17 +40,13 @@ Here are some examples:
 * `F/j/Y`. Will convert `January/17/2021`
 * `nl:d F Y`. Will convert Dutch date `5 mei 2021`
 
-TODO screenshot of date in file
-
-TODO screenshot of filled in date
+![Date configuration value "Ymd" is necessary to parse this file](images/date.png "Date configuration value 'Ymd' is necessary to parse this file")
 
 ## Import options
 
 ### Default import account
 
 Select the asset account you want to link transactions to, if your import doesn't have enough meta-data to determine this. This is some time useful when files just list the transactions and the destination, nothing more.
-
-TODO screenshot of option
 
 ### Rules
 
@@ -66,16 +56,12 @@ Select this if you want Firefly III to apply your rules to the import. It is use
 
 When you check this the data importer will add a tag to each imported transaction denoting the import; this groups your import under a tag. 
 
-TODO screenshot of option
-
 !!! note "Rules"
     If you have rules that remove all tags from a transaction, they will *not* work when you use this option. The tag will always be added. This is not because the data importer uses some magic trick. The tag is added *after* the transaction is created.
 
 ### Map data
 
 If you import data, you can "map" the data found to data already present in Firefly III. You can use this to map account names in the CSV file to account names already in Firefly III. If you do not map data, Firefly III will make one-on-one to existing or to be created data.
-
-TODO screenshot of option
 
 ### Date range
 
@@ -84,8 +70,6 @@ For Nordigen and Spectre imports, you can select a date range, limiting the impo
 - Import everything.
 - Go back a number of days, weeks, months or years.
 - Select a specific range to import from.
-
-TODO screenshot of option.
 
 ## Duplicate transaction detection
 
@@ -97,8 +81,6 @@ Checkout the [FAQ on duplicate transactions](../faq/duplicates.md) and the [FAQ 
 ### General detection options
 
 Sometimes imports contain duplicated lines. Use this option to remove them from your import. It almost never makes sense to import duplicate lines. These options don't apply to Nordigen and Spectre imports.
-
-TODO screenshot.
 
 ### Detection method
 
@@ -118,10 +100,8 @@ Identifier-based duplicate detection is useful when your bank has very precise a
 
 When importing your data, the data importer will first search for this unique identifier in the selected column, before it will try to import the transaction.
 
-TODO screenshot of option + some text
+![Unique header settings](images/unique-headers.png "Unique header settings")
 
 ## Other options
 
-If you want to, check the "skip form" button so you don't have to go through these options each time you start an import.
-
-TODO screenshot.
+If you want to, check the "skip form" button, so you don't have to go through these options each time you start an import.

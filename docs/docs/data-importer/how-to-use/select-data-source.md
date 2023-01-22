@@ -8,7 +8,7 @@ To import data first select your data source. You have the following choices:
 2. Import from Nordigen
 3. Import from Spectre
 
-TODO screenshot
+![Select import routine](images/selection.png "Select import routine")
 
 ## Import a CSV file
 
@@ -18,7 +18,7 @@ If the file contains any lines before the data starts, you must remove them manu
 
 There may be a standard configuration file for your bank in **[this GitHub repository](https://github.com/firefly-iii/import-configurations)**. If not, it is OK to continue without a configuration file.
 
-TODO screenshot
+![Upload CSV](images/upload-csv.png "Upload CSV")
 
 If you continue, you will end up at [the configuration screen](configure-import.md).
 
@@ -28,32 +28,24 @@ If you import from Nordigen, you can also optionally upload a Nordigen configura
 
 Read the page about [Nordigen and Spectre](../faq/spectre-and-nordigen.md) for more information about Nordigen.
 
-TODO screenshot upload
-
-TODO screenshot config variables
+![Nordigen identifiers](images/nordigen-info.png "Nordigen identifiers")
 
 After these settings, you must select your country and your bank of choice.
 
-TODO screenshot
-
-TODO screenshot
+![Nordigen bank selection](images/nordigen-bank.png "Nordigen bank selection")
 
 If you continue, you will end up at [the configuration screen](configure-import.md).
 
 ## Import from Spectre
 
-If you import from Nordigen, you can also optionally upload a Nordigen configuration file. Also, you may have to enter your Nordigen ID and Nordigen Key, if they are not part of the data importer's environment variables.
+If you import from Spectre, you can also optionally upload a Spectre configuration file. Also, you may have to enter your Spectre App ID and Spectre Secret, if they are not part of the data importer's environment variables.
 
 Read the page about [Nordigen and Spectre](../faq/spectre-and-nordigen.md) for more information about Nordigen.
 
-TODO screenshot upload
-
-TODO screenshot config variables
+![Spectre identifiers](images/spectre-info.png "Spectre identifiers")
 
 After these settings, you must select an existing connection, or create a new one.
 
-TODO screenshot
-
-TODO screenshot
+![Spectre connection](images/spectre-connection.png "Spectre connection")
 
 If you continue, you will end up at [the configuration screen](configure-import.md).

@@ -6,15 +6,15 @@ Once the configuration is set, the roles are determined and the mapping is done,
 
 ## Converting data
 
-In this stage, the data will be parsed and converted into Firefly III compatible transactions. Note how you can download a configuration file. This configuration file contains all of the details from the previous steps, and can be used to start a new import more quickly next time.
+In this stage, the data will be parsed and converted into Firefly III compatible transactions. Note how you can download a configuration file. This configuration file contains all the details from the previous steps, and can be used to start a new import more quickly next time.
 
-TODO screenshot
+![Data conversion](images/conversion.png "Data conversion")
 
 ## Submitting data
 
 Once converted, it's time to submit the data to Firefly III. Each transaction is sent to Firefly III over the API.
 
-TODO screenshot
+![Data submission](images/submission.png "Data conversion")
 
 ## Errors and breakdowns
 
