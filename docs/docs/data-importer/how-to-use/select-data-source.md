@@ -26,7 +26,7 @@ If you continue, you will end up at [the configuration screen](configure-import.
 
 If you import from Nordigen, you can also optionally upload a Nordigen configuration file. Also, you may have to enter your Nordigen ID and Nordigen Key, if they are not part of the data importer's environment variables.
 
-Read the page about [Nordigen and Spectre](../more-information/spectre-and-nordigen.md) for more information about Nordigen.
+Read the page about [Nordigen and Spectre](../faq/spectre-and-nordigen.md) for more information about Nordigen.
 
 TODO screenshot upload
 
@@ -44,7 +44,7 @@ If you continue, you will end up at [the configuration screen](configure-import.
 
 If you import from Nordigen, you can also optionally upload a Nordigen configuration file. Also, you may have to enter your Nordigen ID and Nordigen Key, if they are not part of the data importer's environment variables.
 
-Read the page about [Nordigen and Spectre](../more-information/spectre-and-nordigen.md) for more information about Nordigen.
+Read the page about [Nordigen and Spectre](../faq/spectre-and-nordigen.md) for more information about Nordigen.
 
 TODO screenshot upload
 

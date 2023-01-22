@@ -15,7 +15,6 @@ Here you will find answers to frequently asked questions.
 - [I have duplicate transactions](duplicates.md)
 - [I want to re-import transactions](re-import.md)
 - [How to fine tune the JSON file?](json.md)
-- [How can I import from \[my bank here\]?](import-from-bank.md)
 
 ## Other questions
 

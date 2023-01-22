@@ -16,4 +16,4 @@ In no specific order of preference:
 
 ## Configuration
 
-In all cases the data importer needs **[post-installation configuration](configuration.md)**. If you wish to use Nordigen or Spectre, please **[read about Nordigen and Spectre](../more-information/spectre-and-nordigen.md)** first.
+In all cases the data importer needs **[post-installation configuration](configuration.md)**. If you wish to use Nordigen or Spectre, please **[read about Nordigen and Spectre](../faq/spectre-and-nordigen.md)** first.

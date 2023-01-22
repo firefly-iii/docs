@@ -1,10 +1,8 @@
-TODO write me
-
+# Separate tool
 
 ## Why isn't the data importer built into Firefly III?
 
 I turned the data importer into a separate tool. It allows me to keep track of two different tools with different development requirements.
-
 
 ## Why isn't this a plugin, like WordPress?
 
