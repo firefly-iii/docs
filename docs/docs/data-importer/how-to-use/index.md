@@ -22,6 +22,7 @@ The data importer introduces a flow that you must go through that results in a d
 Would you like to know more?
 
 - [Automatically import data using cron jobs, the web or the command line](../advanced/automation.md)
+- [Learn how to correctly import transfers between accounts](../advanced/transfers.md)
 
 ## Ease of use
 
