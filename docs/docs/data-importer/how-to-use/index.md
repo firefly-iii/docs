@@ -8,7 +8,7 @@ The data importer introduces a flow that you must go through that results in a d
 
 - **[Select a data source](select-data-source.md)**  
   Learn how to import CSV files, or how to import from Spectre or Nordigen
-- **[Configure the import](configuration.md)**  
+- **[Configure the import](configure-import.md)**  
   Learn how to configure the import process, so it runs smoothly
 - **[Fine-tune CSV imports](fine-tune-import.md)**  
   Imported dats is never perfect, and options are available to tune the import even further.

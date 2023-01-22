@@ -20,7 +20,7 @@ There may be a standard configuration file for your bank in **[this GitHub repos
 
 TODO screenshot
 
-If you continue, you will end up at [the configuration screen](configuration.md).
+If you continue, you will end up at [the configuration screen](configure-import.md).
 
 ## Import from Nordigen
 
@@ -38,7 +38,7 @@ TODO screenshot
 
 TODO screenshot
 
-If you continue, you will end up at [the configuration screen](configuration.md).
+If you continue, you will end up at [the configuration screen](configure-import.md).
 
 ## Import from Spectre
 
@@ -56,4 +56,4 @@ TODO screenshot
 
 TODO screenshot
 
-If you continue, you will end up at [the configuration screen](configuration.md).
+If you continue, you will end up at [the configuration screen](configure-import.md).

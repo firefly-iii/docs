@@ -32,7 +32,7 @@ You can however, create custom rules that trigger on any content in the second t
 
 ### Merging transfers using an identifier
 
-If your bank supplies your CSV files with identifiers, you may configure FIDI to do an [identifier-based unique check](../how-to-use/configuration.md). If both transactions share the same identifier, this may work for you.
+If your bank supplies your CSV files with identifiers, you may configure FIDI to do an [identifier-based unique check](../how-to-use/configure-import.md). If both transactions share the same identifier, this may work for you.
 
 ## Other issues?
 

@@ -19,7 +19,7 @@ The default account should be an asset account. If this is correct, and your CSV
 
 ### Map data
 
-The import has a [mapping stage](map.md) during which you can link accounts. Use column role `Opposing account (x)` and `Asset account (x)`. Select the correct asset accounts during the mapping. If both accounts are recognized or mapped as an asset account, the transaction will become a transfer.
+The import has a [mapping stage](../how-to-use/map.md) during which you can link accounts. Use column role `Opposing account (x)` and `Asset account (x)`. Select the correct asset accounts during the mapping. If both accounts are recognized or mapped as an asset account, the transaction will become a transfer.
 
 #### Asset account names and opposing account names
 
