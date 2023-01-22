@@ -1,5 +1,7 @@
 # Upgrade
 
+TODO patch me up
+
 This page gives you instructions on how to upgrade your Firefly III Data Importer (**FIDI**).
 
 ## Upgrading a self-hosted FIDI

@@ -177,36 +177,50 @@ nav:
       - Contributing: firefly-iii/other-pages/contributing.md
   - Data importer:
     - Introduction: data-importer/index.md
-    - Installing and running:
-      - Configuration: data-importer/install/configure.md
-      - Nordigen and Spectre: data-importer/install/nordigen-spectre.md
-      - Docker: data-importer/install/docker.md
-      - Self-hosted: data-importer/install/self_hosted.md
-      - Upgrading: data-importer/upgrade.md
-      - Cloud installation: data-importer/install/public.md
-    - Help:
-      - My first import: data-importer/help/my_first_import.md
-      - FAQ: data-importer/help/faq.md
-      - The JSON file: data-importer/help/json.md
-      - Pre-made configuration: data-importer/help/config.md
-    - Importing data:
-      - Uploading files: data-importer/usage/upload.md
-      - Connecting your bank: data-importer/usage/connection.md
-      - Configuring your import: data-importer/usage/configure.md
-      - Setting roles for columns: data-importer/usage/roles.md
-      - Mapping data: data-importer/usage/map.md
-      - Importing over command line: data-importer/usage/command_line.md
-      - Importing using POST: data-importer/usage/post.md
-      - Automation: data-importer/usage/automation.md
-      - Emailing results: data-importer/usage/email.md
-      - Importing transfers: data-importer/usage/importing_transfers.md
-    - Errors and trouble shooting:
-      - Duplicate transactions: data-importer/errors/duplicate_transactions.md
-      - Personal Access Token errors: data-importer/errors/token_errors.md
-      - Frequently seen issues: data-importer/errors/freq_errors.md
-      - Bad CSV files: data-importer/errors/bad_files.md
-  - Other tools:
-    - Introduction: other-tools/index.md
+    - Installation:
+      - Installation: data-importer/installation/index.md
+      - Self-hosted: data-importer/installation/self-hosted.md
+      - Docker: data-importer/installation/docker.md
+      - Public installation: data-importer/installation/public.md
+      - Configuration: data-importer/installation/configuration.md
+      - Upgrading: data-importer/installation/upgrade.md
+    - How to use:
+      - How to use: data-importer/how-to-use/index.md
+      - Select data source: data-importer/how-to-use/select-data-source.md
+      - Fine-tune import: data-importer/how-to-use/fine-tune-import.md
+      - Clean-up data: data-importer/how-to-use/clean-up-data.md
+      - Start the import: data-importer/how-to-use/start.md
+    - FAQ:
+      - FAQ: data-importer/faq/index.md
+      - Installation errors: data-importer/faq/installation-errors.md
+      - Connection errors: data-importer/faq/connection-errors.md
+      - Nordigen and Spectre: data-importer/faq/spectre-and-nordigen.md
+      - Where to start?: data-importer/faq/where-to-start.md
+      - Messy transactions: data-importer/faq/messy-transactions.md
+      - Duplicates: data-importer/faq/duplicates.md
+      - Re-import transactions: data-importer/faq/re-import.md
+      - JSON file: data-importer/faq/json.md
+      - Import from your bank: data-importer/faq/import-from-bank.md
+    - Advanced:
+      - Advanced: data-importer/advanced/index.md
+    - XImporting data:
+      - XUploading files: data-importer/usage/upload.md
+      - XConnecting your bank: data-importer/usage/connection.md
+      - XConfiguring your import: data-importer/usage/configure.md
+      - XSetting roles for columns: data-importer/usage/roles.md
+      - XMapping data: data-importer/usage/map.md
+      - XImporting over command line: data-importer/usage/command_line.md
+      - XImporting using POST: data-importer/usage/post.md
+      - XAutomation: data-importer/usage/automation.md
+      - XEmailing results: data-importer/usage/email.md
+      - XImporting transfers: data-importer/usage/importing_transfers.md
+    - XErrors and trouble shooting:
+      - XDuplicate transactions: data-importer/errors/duplicate_transactions.md
+      - XPersonal Access Token errors: data-importer/errors/token_errors.md
+      - XFrequently seen issues: data-importer/errors/freq_errors.md
+      - XBad CSV files: data-importer/errors/bad_files.md
+  - XOther tools:
+    - XIntroduction: other-tools/index.md
 extra_css:
   - stylesheets/extra.css
 theme:

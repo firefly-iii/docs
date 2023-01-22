@@ -1,5 +1,7 @@
 # Self hosted
 
+TODO patch me up.
+
 In order to run the Firefly III Data Importer (**FIDI**) you need a working LAMP, LEMP or WAMP running PHP %PHPVERSION and access to the command line. Here are some Google queries to help you.
 
 1. [Install a LAMP stack with PHP %PHPVERSION](https://www.google.com/search?q=lamp+stack+php+%PHPVERSION)

@@ -1,5 +1,7 @@
 # Configure your installation
 
+TODO patch me up
+
 The Firefly III Data Importer (**FIDI**) communicates with Firefly III over the [API](../../firefly-iii/api.md). You can supply FIDI with a few pieces of information to make it easy to connect to your Firefly III installation.
 
 On this page you will read how to:
