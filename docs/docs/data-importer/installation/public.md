@@ -1,5 +1,7 @@
 # Public installation
 
+TODO patch me up.
+
 There is a public (cloud-based) instance of the Firefly III Data Importer (**FIDI**) running on [https://data-importer.firefly-iii.org](https://data-importer.firefly-iii.org) that anybody can use.
 
 You can use this instance to import data into your own installation. But keep in mind it comes with a "price".

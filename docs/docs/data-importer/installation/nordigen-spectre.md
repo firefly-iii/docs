@@ -1,5 +1,7 @@
 # Nordigen and Spectre
 
+TODO patch me up.
+
 ## Introduction
 
 Both the Nordigen API and Spectre (Salt Edge's API) are free-to-use for Firefly III users. Their products however are paid, and they are commercial organizations. Furthermore, their API access for Firefly III users may be limited.

@@ -5,13 +5,15 @@ Once the data importer [is installed](../installation/index.md), and you [have c
 ## Import steps
 
 - **[Select a data source](select-data-source.md)**  
-  Learn how to import CSV files, or how to import from Spectre or Nordigen.
+  Learn how to import CSV files, or how to import from Spectre or Nordigen
 - **[Configure the import](configuration.md)**  
   Learn how to configure the import process, so it runs smoothly
 - **[Fine-tune the CSV import](fine-tune-import.md)**  
   CSV files are never perfect, and options are available to tune the import even further
 - **[Start the import](start.md)**  
-  Learn what happens when the import runs, and what to do when it breaks.
+  Learn what happens when the import runs, and what to do when it breaks
+- **[Clean-up data](clean-up-data.md)**  
+  Some transactions are messy or weird. Learn more about data clean-up
 
 ## Advanced import steps.
 

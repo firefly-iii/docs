@@ -16,4 +16,4 @@ In no specific order of preference:
 
 ## Configuration
 
-In all cases FIDI needs **[post-installation configuration](configure.md)**.
+In all cases FIDI needs **[post-installation configuration](configuration.md)**.

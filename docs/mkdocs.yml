@@ -179,30 +179,31 @@ nav:
     - Introduction: data-importer/index.md
     - Installation:
       - Installation: data-importer/installation/index.md
-      - Self-hosted: data-importer/installation/self-hosted.md
       - Docker: data-importer/installation/docker.md
+      - Self-hosted: data-importer/installation/self-hosted.md
       - Public installation: data-importer/installation/public.md
       - Configuration: data-importer/installation/configuration.md
       - Upgrading: data-importer/installation/upgrade.md
     - How to use:
       - How to use: data-importer/how-to-use/index.md
       - Select data source: data-importer/how-to-use/select-data-source.md
-      - Fine-tune import: data-importer/how-to-use/fine-tune-import.md
-      - Clean-up data: data-importer/how-to-use/clean-up-data.md
+      - Configure import: data-importer/how-to-use/configure-import.md
+      - Fine-tune CSV: data-importer/how-to-use/fine-tune-import.md
       - Start the import: data-importer/how-to-use/start.md
-    - FAQ:
-      - FAQ: data-importer/faq/index.md
-      - Installation errors: data-importer/faq/installation-errors.md
-      - Connection errors: data-importer/faq/connection-errors.md
-      - Nordigen and Spectre: data-importer/faq/spectre-and-nordigen.md
-      - Where to start?: data-importer/faq/where-to-start.md
-      - Messy transactions: data-importer/faq/messy-transactions.md
-      - Duplicates: data-importer/faq/duplicates.md
-      - Re-import transactions: data-importer/faq/re-import.md
-      - JSON file: data-importer/faq/json.md
-      - Import from your bank: data-importer/faq/import-from-bank.md
+      - Clean-up data: data-importer/how-to-use/clean-up-data.md
     - Advanced:
       - Advanced: data-importer/advanced/index.md
+    - FAQ:
+        - FAQ: data-importer/faq/index.md
+        - Installation errors: data-importer/faq/installation-errors.md
+        - Connection errors: data-importer/faq/connection-errors.md
+        - Nordigen and Spectre: data-importer/faq/spectre-and-nordigen.md
+        - Where to start?: data-importer/faq/where-to-start.md
+        - Messy transactions: data-importer/faq/messy-transactions.md
+        - Duplicates: data-importer/faq/duplicates.md
+        - Re-import transactions: data-importer/faq/re-import.md
+        - JSON file: data-importer/faq/json.md
+        - Import from your bank: data-importer/faq/import-from-bank.md
     - XImporting data:
       - XUploading files: data-importer/usage/upload.md
       - XConnecting your bank: data-importer/usage/connection.md
