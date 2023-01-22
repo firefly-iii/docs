@@ -1,6 +1,6 @@
 # FAQ
 
-Here you will find answers to freq asked questions.
+Here you will find answers to frequently asked questions.
 
 ## Installation questions
 

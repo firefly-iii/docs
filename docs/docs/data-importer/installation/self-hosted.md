@@ -1,8 +1,8 @@
-# Self hosted
+# Self-hosted installation
 
-TODO patch me up.
+## Introduction
 
-In order to run the Firefly III Data Importer (**FIDI**) you need a working LAMP, LEMP or WAMP running PHP %PHPVERSION and access to the command line. Here are some Google queries to help you.
+In order to run the data importer you need a working LAMP, LEMP or WAMP-stack running PHP %PHPVERSION and access to the command line. Here are some Google queries to help you.
 
 1. [Install a LAMP stack with PHP %PHPVERSION](https://www.google.com/search?q=lamp+stack+php+%PHPVERSION)
 2. [Upgrade Ubuntu PHP %PHPVERSION](https://www.google.com/search?q=upgrade+ubuntu+php+%PHPVERSION)
@@ -15,66 +15,51 @@ Also remember these Gists, which may help in case you run into issues:
 !!! warning
     FIDI will not work properly when installed or accessed through a subdirectory on your web server. If you run FIDI from `/fidi`, `/importer` or a similar subdirectory your milage may vary and I can't support you.
 
-## Preparing your server
+## Installation instructions
 
-### Extra packages
+### Preparing your server
+
+### Install extra packages
 
 Install the following PHP modules:
 
 * PHP BCMath Arbitrary Precision Mathematics
 * PHP JSON
 
-### Installing composer
+### Install composer
 
 You need to [install composer](https://getcomposer.org/doc/00-intro.md) or [download composer](https://getcomposer.org/download/).
 
-If you're having trouble with (parts of) this step, please check out [the FAQ](../help/faq.md) or open an issue [on GitHub](https://github.com/firefly-iii/firefly-iii).
-
-## Installing FIDI
+## Installing the data importer
 
 ### Main command
 
-Browse to `/var/www`. Enter the following command. 
+The assumption is that you will install the data importer in `/var/www`. Go to the installation directory.
 
 ```bash
-composer create-project firefly-iii/data-importer --no-dev --prefer-dist data-importer %IMPORTERVERSION
+cd /var/www && \
+composer create-project firefly-iii/data-importer \
+    --no-dev --prefer-dist data-importer %IMPORTERVERSION
 ```
 
-If this gives an error because of access rights, prepend the command with `sudo`. Then fix the access rights:
+If this gives an error because of access rights, you can be lazy. Use `sudo`. Then, fix the access rights:
 
 ```bash   
 sudo chown -R www-data:www-data data-importer
 sudo chmod -R 775 data-importer/storage
 ```
 
-In general, these access rights aren't terrible important for FIDI, as long as your web server can read all the files.
-
 ### Configuration
 
-In the `data-importer` directory you will find a `.env` file. There are instructions what to do in this file. If you can't find this file, copy `.env.example` into `.env` and voila!
-
-## Accessing FIDI
-
-You can access FIDI at [http://localhost/](http://localhost/). If this URL is taken by Firefly III already, make sure your server configuration accepts both. This is called a "virtual host".
-
-!!! warning
-    A virtual host would entail setting up two (sub)domains like `firefly.local` and `fidi.local`.
-
-### Browsing to site
-
-Browsing to the site should be easy. You should see the following screen.
-
-![Opening screen of FIDI.](images/opening.png)
-
-If this is not the case, or something is broken, be sure to open [an issue on GitHub](https://github.com/firefly-iii/firefly-iii) or check out [the FAQ](../help/faq.md).
+In the `data-importer` directory you will find a `.env` file. There are instructions what to do in this file. If you can't find this file, copy `.env.example` into `.env`.
 
 ## Reverse proxies
 
-To run FIDI behind a reverse proxy, make sure you set the `TRUSTED_PROXIES` environment variable to either `*` or the IP address of your reverse proxy.
+To run the data importer behind a reverse proxy, make sure you set the `TRUSTED_PROXIES` environment variable to either `*` or the IP address of your reverse proxy.
 
 ### TLS
 
-To enable TLS in FIDI, your reverse proxy must send the right information to FIDI. Here is some code for nginx:
+To enable TLS in the data importer, your reverse proxy must be configured correctly. Here is some code for nginx:
 
 ```
 proxy_set_header X-Forwarded-Host $host;
@@ -85,3 +70,12 @@ proxy_set_header Host $host;
 client_max_body_size 64M;
 proxy_read_timeout 300s;
 ```
+
+## Accessing the data importer
+
+You can access FIDI at [http://localhost/](http://localhost/). If this URL is taken by Firefly III already, make sure your server configuration accepts both. This is called a "virtual host", and out of the scope of this installation guide.
+
+![Opening screen of FIDI.](images/opening.png)
+
+!!! question "Need help?"
+    If something did not go as expected, please browse to **[the FAQ](../faq/index.md)** or the **[Support](../support/index.md)** pages.

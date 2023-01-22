@@ -4,12 +4,14 @@ Once the data importer [is installed](../installation/index.md), and you [have c
 
 ## Import steps
 
+The data importer introduces a flow that you must go through that results in a data import.
+
 - **[Select a data source](select-data-source.md)**  
   Learn how to import CSV files, or how to import from Spectre or Nordigen
 - **[Configure the import](configuration.md)**  
   Learn how to configure the import process, so it runs smoothly
-- **[Fine-tune the CSV import](fine-tune-import.md)**  
-  CSV files are never perfect, and options are available to tune the import even further
+- **[Fine-tune CSV imports](fine-tune-import.md)**  
+  Imported dats is never perfect, and options are available to tune the import even further.
 - **[Start the import](start.md)**  
   Learn what happens when the import runs, and what to do when it breaks
 - **[Clean-up data](clean-up-data.md)**  

@@ -10,7 +10,7 @@ In this example, taken from a Dutch Rabobank CSV file, you'll see various weird 
 - Several shops with their location in the name.
 - Date information in the name.
 
-To fix this, Firefly III supports a process called "mapping" where you can link values like these to one unified shop entry. This example will make it pretty clear. It is taken directly from the Firefly III Data Importer (**FIDI**):
+To fix this, Firefly III supports a process called "mapping" where you can link values like these to one unified shop entry. This example will make it pretty clear. It is taken directly from the data importer:
 
 ![Mapping names to one account.](./images/map.png)
 

@@ -189,6 +189,7 @@ nav:
       - Select data source: data-importer/how-to-use/select-data-source.md
       - Configure import: data-importer/how-to-use/configure-import.md
       - Fine-tune CSV: data-importer/how-to-use/fine-tune-import.md
+      - Map data: data-importer/how-to-use/map.md
       - Start the import: data-importer/how-to-use/start.md
       - Clean-up data: data-importer/how-to-use/clean-up-data.md
     - Advanced:
@@ -197,16 +198,19 @@ nav:
       - JSON: data-importer/advanced/json.md
       - Notifications: data-importer/advanced/notifications.md
     - FAQ:
-        - FAQ: data-importer/faq/index.md
-        - Installation errors: data-importer/faq/installation-errors.md
-        - Connection errors: data-importer/faq/connection-errors.md
-        - Nordigen and Spectre: data-importer/faq/spectre-and-nordigen.md
-        - Where to start?: data-importer/faq/where-to-start.md
-        - Messy transactions: data-importer/faq/messy-transactions.md
-        - Duplicates: data-importer/faq/duplicates.md
-        - Re-import transactions: data-importer/faq/re-import.md
-        - JSON file: data-importer/faq/json.md
-        - Import from your bank: data-importer/faq/import-from-bank.md
+      - FAQ: data-importer/faq/index.md
+      - Installation errors: data-importer/faq/installation-errors.md
+      - Connection errors: data-importer/faq/connection-errors.md
+      - Nordigen and Spectre: data-importer/faq/spectre-and-nordigen.md
+      - Where to start?: data-importer/faq/where-to-start.md
+      - Messy transactions: data-importer/faq/messy-transactions.md
+      - Duplicates: data-importer/faq/duplicates.md
+      - Re-import transactions: data-importer/faq/re-import.md
+      - JSON file: data-importer/faq/json.md
+      - Import from your bank: data-importer/faq/import-from-bank.md
+    - More information:
+        - Separate tool: data-importer/more-information/separate-tool.md
+        - Nordigen and Spectre: data-importer/more-information/spectre-and-nordigen.md
     - Support:
         - Support: data-importer/support/index.md
         - Issues: data-importer/support/issues.md
@@ -228,8 +232,8 @@ theme:
     repo: fontawesome/brands/github
 extra:
   social:
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/Firefly_III
+    - icon: fontawesome/brands/mastodon
+      link: https://fosstodon.org/@ff3
     - icon: fontawesome/brands/github
       link: https://github.com/firefly-iii
     - icon: fontawesome/brands/gitter

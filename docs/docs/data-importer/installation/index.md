@@ -16,4 +16,4 @@ In no specific order of preference:
 
 ## Configuration
 
-In all cases FIDI needs **[post-installation configuration](configuration.md)**.
+In all cases FIDI needs **[post-installation configuration](configuration.md)**. If you wish to use Nordigen or Spectre, please **[read about Nordigen and Spectre](nordigen-spectre.md)** first.
