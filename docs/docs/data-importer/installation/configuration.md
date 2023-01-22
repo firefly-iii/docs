@@ -35,11 +35,11 @@ To authenticate with Firefly III you must set ONE the following variables:
 2. OR Set a Client ID in the `FIREFLY_III_CLIENT_ID` environment variable.
 
 !!! note "Authelia and other tools"
-    Firefly III combined with [external identity providers](../../firefly-iii/advanced-installation/authenticationmd) such as Authelia can only handle Personal Access Tokens.
+    Firefly III combined with [external identity providers](../../firefly-iii/advanced-installation/authentication.md) such as Authelia can only handle Personal Access Tokens.
 
 ## Configure Nordigen
 
-If you wish to use Nordigen, please [read about Nordigen](nordigen-spectre.md) first. Then, set the following variables. This is necessary if you wish to connect to your bank through Nordigen.
+If you wish to use Nordigen, please [read about Nordigen](../faq/spectre-and-nordigen.md) first. Then, set the following variables. This is necessary if you wish to connect to your bank through Nordigen.
 
 * `NORDIGEN_ID` is your Nordigen Client ID
 * `NORDIGEN_KEY` is your Nordigen Client Secret
@@ -47,7 +47,7 @@ If you wish to use Nordigen, please [read about Nordigen](nordigen-spectre.md) f
 
 ## Configure Spectre
 
-If you wish to use Spectre, please [read about Spectre](nordigen-spectre.md) first. Then, set the following variables. This is necessary if you wish to connect to your bank through Spectre.
+If you wish to use Spectre, please [read about Spectre](../faq/spectre-and-nordigen.md) first. Then, set the following variables. This is necessary if you wish to connect to your bank through Spectre.
 
 * `SPECTRE_APP_ID` is your Spectre / Salt Edge Client ID
 * `SPECTRE_SECRET` is your Spectre / Salt Edge Client secret
@@ -62,7 +62,7 @@ All the configuration values mentioned on this page are stored in environment va
 * `NORDIGEN_ID` and `NORDIGEN_KEY`
 * `SPECTRE_APP_ID` and `SPECTRE_SECRET`
 
-You can use the `.env` file to store them, use Docker's `-e` flag to set them or use your operating system to set these values. This depends on your installation method, [Docker](docker.md) or [self-hosted](self_hosted.md).
+You can use the `.env` file to store them, use Docker's `-e` flag to set them or use your operating system to set these values. This depends on your installation method, [Docker](docker.md) or [self-hosted](self-hosted.md).
 
 !!! important "Cookie warning"
     You may need to clear your cookies, browse to `/flush` or press \[Reauthenticate\] after changing these values.

@@ -39,6 +39,10 @@ Depends on the logs, let me know.
 
 Depends on the logs, let me know.
 
+### How do I handle custom SSL certificates?
+
+If you run your own CA, check out [the options](https://github.com/firefly-iii/data-importer/blob/main/.env.example#L51) in the `.env.example` file.
+
 ## Other errors?
 
 Please open a ticket [on GitHub](https://github.com/firefly-iii/firefly-iii/).

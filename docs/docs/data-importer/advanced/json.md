@@ -4,11 +4,26 @@ The data importer generates an import file each time you import data. You can do
 
 You can use it to quickly configure your import the way you want to.
 
-## Pre-made import files
+## Pre-made import configurations
 
 There's a repository on GitHub
-with **[import configurations](https://github.com/firefly-iii/import-configurations)** for common banks and financial institutions
-.
+with **[import configurations](https://github.com/firefly-iii/import-configurations)** for common banks and financial institutions.
+
+You can store pre-made configuration files in the data importer. This can be useful if you import regularly.
+
+- Store the files in `storage/configurations`
+- Mount a local directory to the `/var/www/html/storage/configurations` directory in Docker.
+- Change the `JSON_CONFIGURATION_DIR` to any custom directory (mount it if you want to), and place them there.
+
+With Docker:
+
+```
+docker run [..] -v /home/user/configurations:/configurations [..] -e JSON_CONFIGURATION_DIR=/configurations
+```
+
+This will show a dropdown with your JSON files ready to be selected:
+
+![Selecting pre-configured JSON files](../how-to-use/images/preselect.png)
 
 ## Example file
 
@@ -118,7 +133,7 @@ using the user interface.
 
 "Specifics" are the bank specific scripts that can be applied to your import. They are deprecated and may be removed in
 a future version of the CSV importer. You can read more about them on the page
-about [import configuration](../installation/configuration.md).
+about [import configuration](../how-to-use/configure-import.md).
 
 ### roles
 
@@ -259,14 +274,14 @@ the "transaction amount". If you try, it will be ignored.
 
 ### duplicate_detection_method
 
-The CSV importer has three methods to detect duplicate transactions. The [import configuration](../how-to-use/configuration.md)
+The CSV importer has three methods to detect duplicate transactions. The [import configuration](../how-to-use/configure-import.md)
 page has all the details. The JSON file reflects your choices.
 
 * `none`. Do no duplicate detection.
 * `classic`. Do content-based duplicate detection.
 * `cell`. Do identifier-based duplicate detection.
 
-Again, to learn more about these options, read about [import configuration](../how-to-use/configuration.md).
+Again, to learn more about these options, read about [import configuration](../how-to-use/configure-import.md).
 
 ### ignore_duplicate_lines
 
@@ -276,18 +291,18 @@ will be removed.
 ### ignore_duplicate_transactions
 
 This variable is not really used anymore, but it's an indicator of which `duplicate_detection_method` you're using.
-For `classic`, it will always be `true`. Otherwise it's `false`.
+For `classic`, it will always be `true`. Otherwise, it's `false`.
 
 ### unique_column_index
 
 This contains the column number that contains the unique value for the duplicate detection. It's only ever used when you
 use the `cell`-method, which stands for identifier-based duplicate detection. Read more
-about [import configuration](../how-to-use/configuration.md).
+about [import configuration](../how-to-use/configure-import.md).
 
 ### unique_column_type
 
 This contains the field type of the unique identifier. It's only ever used when you use the `cell`-method, which stands
-for identifier-based duplicate detection. Read more about [import configuration](../how-to-use/how-to-use.md).
+for identifier-based duplicate detection. Read more about [import configuration](../how-to-use/configure-import.md).
 
 ### version
 

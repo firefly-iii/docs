@@ -63,3 +63,7 @@ It means your machine has no proper configuration file for OpenSSL, or it cannot
 ## No matching DirectoryIndex
 
 Make sure Apache looks for public/index.php
+
+## Other errors?
+
+Please open a ticket [on GitHub](https://github.com/firefly-iii/firefly-iii/).

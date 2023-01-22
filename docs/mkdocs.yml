@@ -175,6 +175,7 @@ nav:
       - Contact and credits: firefly-iii/other-pages/contact.md
       - Third-party tools: firefly-iii/other-pages/3rdparty.md
       - Contributing: firefly-iii/other-pages/contributing.md
+      - Full changelog: firefly-iii/about-firefly-iii/changelog.md
   - Data importer:
     - Introduction: data-importer/index.md
     - Installation:
@@ -197,6 +198,7 @@ nav:
       - Auto-import: data-importer/advanced/automation.md
       - JSON: data-importer/advanced/json.md
       - Notifications: data-importer/advanced/notifications.md
+      - Import transfers: data-importer/advanced/transfers.md
     - FAQ:
       - FAQ: data-importer/faq/index.md
       - Installation errors: data-importer/faq/installation-errors.md

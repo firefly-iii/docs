@@ -14,6 +14,8 @@ TODO screenshot
 
 You have to upload the CSV file you wish to import. Optionally, you can upload a "configuration file". The configuration file is used to pre-set the import configuration, so you don't have to do it manually all the time.
 
+If the file contains any lines before the data starts, you must remove them manually. If there are extra headers (for example every 100 rows) you'll have to delete those too.
+
 There may be a standard configuration file for your bank in **[this GitHub repository](https://github.com/firefly-iii/import-configurations)**. If not, it is OK to continue without a configuration file.
 
 TODO screenshot
@@ -30,6 +32,12 @@ TODO screenshot upload
 
 TODO screenshot config variables
 
+After these settings, you must select your country and your bank of choice.
+
+TODO screenshot
+
+TODO screenshot
+
 If you continue, you will end up at [the configuration screen](configuration.md).
 
 ## Import from Spectre
@@ -41,5 +49,11 @@ Read the page about [Nordigen and Spectre](../more-information/spectre-and-nordi
 TODO screenshot upload
 
 TODO screenshot config variables
+
+After these settings, you must select an existing connection, or create a new one.
+
+TODO screenshot
+
+TODO screenshot
 
 If you continue, you will end up at [the configuration screen](configuration.md).
