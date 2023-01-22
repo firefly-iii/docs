@@ -1,1 +1,1 @@
-TODO write me
+# FAQ: Installation errors

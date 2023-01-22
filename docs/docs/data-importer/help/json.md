@@ -1,6 +1,6 @@
 # JSON
 
-The Firefly III data importer (**FIDI**) generates an import file each time you import data. You can download the
+The data importer generates an import file each time you import data. You can download the
 configuration file during or after the import.
 
 You can use it to quickly configure your import the way you want to.
@@ -119,7 +119,7 @@ using the user interface.
 
 "Specifics" are the bank specific scripts that can be applied to your import. They are decrepated and may be removed in
 a future version of the CSV importer. You can read more about them on the page
-about [import configuration](../usage/configure.md).
+about [import configuration](../installation/configuration.md).
 
 ### roles
 
@@ -260,14 +260,14 @@ the "transaction amount". If you try, it will be ignored.
 
 ### duplicate_detection_method
 
-The CSV importer has three methods to detect duplicate transactions. The [import configuration](../usage/configure.md)
+The CSV importer has three methods to detect duplicate transactions. The [import configuration](../installation/configuration.md)
 page has all the details. The JSON file reflects your choices.
 
 * `none`. Do no duplicate detection.
 * `classic`. Do content-based duplicate detection.
 * `cell`. Do identifier-based duplicate detection.
 
-Again, to learn more about these options, read about [import configuration](../usage/configure.md).
+Again, to learn more about these options, read about [import configuration](../installation/configuration.md).
 
 ### ignore_duplicate_lines
 
@@ -277,18 +277,18 @@ will be removed.
 ### ignore_duplicate_transactions
 
 This variable is not really used anymore, but it's an indicator of which `duplicate_detection_method` you're using.
-For `classic`, it will always be `true`. Otherwise it's `false`.
+For `classic`, it will always be `true`. Otherwise, it's `false`.
 
 ### unique_column_index
 
 This contains the column number that contains the unique value for the duplicate detection. It's only ever used when you
 use the `cell`-method, which stands for identifier-based duplicate detection. Read more
-about [import configuration](../usage/configure.md).
+about [import configuration](../installation/configuration.md).
 
 ### unique_column_type
 
 This contains the field type of the unique identifier. It's only ever used when you use the `cell`-method, which stands
-for identifier-based duplicate detection. Read more about [import configuration](../usage/configure.md).
+for identifier-based duplicate detection. Read more about [import configuration](../installation/configuration.md).
 
 ### version
 
