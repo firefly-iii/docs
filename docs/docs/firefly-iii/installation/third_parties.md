@@ -2,6 +2,10 @@
 
 There are several third parties where you can run a Firefly III instance. Keep in mind that there's no such thing as a "free lunch", and these options are either paid or severely limited (very slow or can't handle many transactions).
 
+## Synology
+
+Mariushosting.com wrote [an excellent guide](https://mariushosting.com/how-to-install-firefly-iii-on-your-synology-nas/) on how to host Firefly III on your Synology NAS.
+
 ## Heroku
 
 Firefly III supports [Heroku](https://heroku.com/). You can [deploy Firefly III in Heroku](https://heroku.com/deploy?template=https://github.com/firefly-iii/firefly-iii/tree/main) after you register for an account.
