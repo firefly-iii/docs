@@ -137,8 +137,8 @@ If you are using Nginx add the following to your location block:
 
 ```text
 proxy_set_header X-Forwarded-Proto $scheme;
-proxy_set_header X-Forwarded-Host $host;
-proxy_set_header X-Forwarded-Server $host;
+proxy_set_header X-Forwarded-Host $http_host;
+proxy_set_header X-Forwarded-Server $http_host;
 proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
 proxy_set_header Host $host;
 ```
