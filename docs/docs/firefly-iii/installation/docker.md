@@ -139,9 +139,10 @@ If you are using Nginx add the following to your location block:
 proxy_set_header X-Forwarded-Proto $scheme;
 proxy_set_header X-Forwarded-Host $host;
 proxy_set_header X-Forwarded-Server $host;
-proxy_set_header X-Forwarded-Port $server_port;
 proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
 proxy_set_header Host $host;
+# This line is optional and may help in some cases.
+# proxy_set_header X-Forwarded-Port $server_port;
 ```
 
 For Apache, use something like:
