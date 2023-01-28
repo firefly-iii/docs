@@ -1,8 +1,6 @@
 # Webhooks
 
-TODO clean me up
-
-A webhook is a custom callback. Triggered by events in Firefly III a message will be sent to an URL of your choice. 
+A webhook is a custom callback. Triggered by events in Firefly III a message will be sent to a URL of your choice. 
 
 ## Triggers
 
@@ -12,7 +10,7 @@ There are currently three available triggers for webhooks in Firefly III:
 - When a transaction is updated
 - When a transaction is deleted
 
-A webhook can only respond to one trigger. If you want multiple triggers for the same webhook URL, you must setup multiple webhooks.
+A webhook can only respond to one trigger. If you want multiple triggers for the same webhook URL, you must set up multiple webhooks.
 
 ## Responses
 
@@ -112,7 +110,7 @@ The signature is generated using the HMAC method. The signed string is created b
 
 * The timestamp (as a string)
 * The literal character `.` (a dot)
-* The unformatted JSON body of the request.
+* The non formatted JSON body of the request.
 
 Example: `123456.{"some":"json"}`.
 
