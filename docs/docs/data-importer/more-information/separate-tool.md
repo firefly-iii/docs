@@ -8,4 +8,4 @@ I turned the data importer into a separate tool. It allows me to keep track of t
 
 It adds a whole layer of complexities to Firefly III. A plugin needs a framework to land in. For the data importer to be a plugin, I would first have to build it so Firefly III supports plugins. And then the data importer would be the only plugin.
 
-The [API](../../firefly-iii/api.md) is a plugin system of sorts.
+The [API](../../firefly-iii/api/index.md) is a plugin system of sorts.

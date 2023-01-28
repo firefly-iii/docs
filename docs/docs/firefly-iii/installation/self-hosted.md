@@ -99,7 +99,7 @@ Now you should be able to visit [http://localhost/firefly-iii/](http://localhost
 
 ### It doesn't work!
 
-This manual can't list all the possible exceptions and errors you may run into. Some common issues are documented [in the FAQ](../faq/self_hosted.md).
+This manual can't list all the possible exceptions and errors you may run into. Some common issues are documented [in the FAQ](../faq/self-hosted.md).
 
 Look in these directions when you're running into problems:
 

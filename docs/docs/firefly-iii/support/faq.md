@@ -16,7 +16,7 @@ Questions about your Docker installation.
 
 For those errors you may run into during the installation or upgrade of Firefly III on your server.
 
-[**Running Firefly III self hosted**](../faq/self_hosted.md)
+[**Running Firefly III self hosted**](../faq/self-hosted.md)
 
 Specifically for those questions after you managed to install it.
 

@@ -27,7 +27,7 @@ Here you will find answers to frequently asked questions.
 
 Yes. The data importer uses Spectre and Nordigen to connect to over 6000 banks. Please see the [configuration page](../installation/configuration.md) for more details and read up on [Nordigen and Salt Edge / Spectre](spectre-and-nordigen.md).
 
-There is also a [Firefly III API](../../firefly-iii/api.md) that you can connect to \[YOUR BANK HERE\], if you are clever enough to build something in your favorite programming language.
+There is also a [Firefly III API](../../firefly-iii/index.md) that you can connect to \[YOUR BANK HERE\], if you are clever enough to build something in your favorite programming language.
 
 ### Can you clean-up the transactions from \[my bank\]?
 

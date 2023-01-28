@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The Data Importer communicates with Firefly III over the [API](../../firefly-iii/api.md). 
+The Data Importer communicates with Firefly III over the [API](../../firefly-iii/api/index.md). 
 
 On this page you will read how to:
 

@@ -12,4 +12,4 @@ Start with ten transactions. Or maybe five. Don't try to import 4 years worth at
 
 ## Map and rule
 
-Use the mapping function and Firefly III's [rules](../../firefly-iii/pages-and-features/rules.md) to manage data quality. You can read more about this on the page about **[data clean-up](../how-to-use/clean-up-data.md)**.
+Use the mapping function and Firefly III's [rules](../../firefly-iii/features/rules.md) to manage data quality. You can read more about this on the page about **[data clean-up](../how-to-use/clean-up-data.md)**.
