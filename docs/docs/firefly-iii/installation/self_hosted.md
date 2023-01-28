@@ -1,5 +1,7 @@
 # Self-hosted server
 
+TODO patch me up
+
 If you have your own (virtual) web server you can use this guide to install Firefly III. You may have some ingredients prepared already.
 
 ## Ingredients

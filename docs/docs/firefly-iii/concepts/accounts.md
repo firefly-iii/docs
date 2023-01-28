@@ -1,5 +1,7 @@
 # Accounts
 
+TODO clean me up
+
 Firefly III has several types of accounts. This goes beyond your own bank accounts and credit cards.
 
 ## Account types

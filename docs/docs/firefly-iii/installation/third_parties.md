@@ -1,5 +1,7 @@
 # Hosted by 3rd parties
 
+TODO patch me up
+
 There are several third parties where you can run a Firefly III instance. Keep in mind that there's no such thing as a "free lunch", and these options are either paid or severely limited (very slow or can't handle many transactions).
 
 ## Synology

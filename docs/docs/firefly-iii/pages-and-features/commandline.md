@@ -1,5 +1,7 @@
 # Command line / CLI
 
+TODO clean me up
+
 Firefly III has a bunch of CLI commands that you can use. Generally speaking these are meant for large operations. Here's a full overview.
 
 ## Execute a command

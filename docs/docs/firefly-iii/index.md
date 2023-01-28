@@ -1,4 +1,4 @@
-# Introduction
+# Firefly III
 
 Welcome to the Firefly III documentation.
 
@@ -16,7 +16,7 @@ For your quick reference here is a list of pages you really want to visit:
 
 ## How can I use it or run it?
 
-!!! info
+!!! info "Docker installation"
     The preferred way of running Firefly III is using Docker. It's easy to upgrade and easy to secure.
 
 * [Install it on your own server](installation/self_hosted.md)

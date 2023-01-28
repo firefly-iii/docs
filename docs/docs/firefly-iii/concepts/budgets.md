@@ -1,5 +1,7 @@
 # Budgets
 
+TODO merge with categories budgets tags groups
+
 Once you start creating transactions you start to realise that in a month, the same kind of stuff always comes back. For example:
 
 * Bills

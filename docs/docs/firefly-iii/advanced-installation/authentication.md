@@ -1,5 +1,7 @@
 # Authentication
 
+TODO patch me up
+
 There are two ways to authenticate users. The settings to change these can be accessed through the `.env`-file in the root directory of your installation, or they can be changed through environment variables (Docker).
 
 In the following instructions the environment variables are referred to in all caps, like `EXAMPLE_VARIABLE`.

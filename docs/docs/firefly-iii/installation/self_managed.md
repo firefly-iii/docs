@@ -1,5 +1,7 @@
 # Self-managed hosting tools
 
+TODO patch me up
+
 There are lots of self-managed hosting tools on the market. They offer 1-click installation of apps and services.
 
 !!! warning

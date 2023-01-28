@@ -1,5 +1,7 @@
 # Tracking cash
 
+TODO clean me up
+
 ## Introduction
 
 There are a few ways to manage your cash transactions in Firefly III. On this page you can read about them.

@@ -1,5 +1,7 @@
 # Links
 
+TODO move to concepts, merge with transactions
+
 More often than not a transaction isn't just "a transaction" but a connected to some other transactions. Maybe you've been reimbursed money by your boss. Maybe an expense is paid back to you by an friend. Or perhaps a friend paid you back for something or other.
 
 ![Inward link](./images/links1.png)

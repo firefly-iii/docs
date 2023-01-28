@@ -1,5 +1,7 @@
 # Piggy banks
 
+TODO move to concepts, cleanup
+
 If you want to buy something expensive, you might need to save for it. You can use piggy banks to save money. You can find them under "Financial Control" > "Piggy banks". A piggy bank is meant to group money on an asset account together.
 
 For example, on your savings account on which you have € 500,- saved. You want to buy a new digital camera, but you also need some money for a new couch and you already know your car is going to break down sooner or later. You would need *three* piggy banks.

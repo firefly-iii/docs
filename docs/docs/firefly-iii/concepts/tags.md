@@ -1,5 +1,7 @@
 # Tags
 
+TODO merge with categories budgets tags groups
+
 Tags are an extension of categories and meant to expand on the meta-data included in a transaction. You can add multiple tags to a transaction.
 
 Tags can be useful to group expenses together, possibly in another context than your categories. For examples, tags might include:

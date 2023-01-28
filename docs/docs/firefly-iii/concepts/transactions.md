@@ -1,5 +1,7 @@
 # Transactions
 
+TODO clean me up
+
 A transaction is a very simple thing. Money moves from A to B. It doesn't matter if this is an expense, your salary or you moving money around: _money moves from A to B_:
 
 ![Transferring money from your checking account to your savings account](images/transaction1.png)

@@ -1,5 +1,7 @@
 # Recurring transactions
 
+TODO move to concepts, cleanup
+
 Firefly III features the ability to automatically create transactions (so you don't have to). These are called recurring transactions. 
 
 A recurring transaction (RT) consists of two sets of data you need to fill in before it'll work as expected.

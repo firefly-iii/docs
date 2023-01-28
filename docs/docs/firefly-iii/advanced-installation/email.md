@@ -1,5 +1,7 @@
 # Configure outgoing messages
 
+TODO patch me up
+
 Firefly III can send you an email for specific notable events. These includes bugs and crashes (always useful for me) but also security notifications and password resets. The configuration values for email are in the `.env`-file:
 
 ```

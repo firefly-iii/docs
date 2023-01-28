@@ -1,5 +1,7 @@
 # Categories
 
+TODO merge with categories budgets tags groups
+
 Categories are a bit like budgets. You might start to notice how some things don't need a budget, but do need some kind of meta-thing. A category might work. "Furniture", "interest", "shoes" and "lunch" are perfect categories.
 
 * Daily groceries

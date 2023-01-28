@@ -1,7 +1,5 @@
 # FAQ
 
-Many things about Firefly III may have been asked before. So check out these FAQ's please, before you open a new issue:
-
 [**General questions**](../faq/general.md)
 
 For generic stuff about Firefly III.

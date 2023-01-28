@@ -1,5 +1,7 @@
 # Reports
 
+TODO cleanup
+
 Firefly III offers a variety of financial reports that can help you keep track of your finances. Each report has a certain scope that you can set to your liking:
 
 * The asset accounts involved.

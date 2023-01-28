@@ -1,5 +1,7 @@
 # Locales
 
+TODO clean me up
+
 Setting up the right "locale" is about making sure the following things are formatted as you would expect them *in your local language*. The most important ones are:
 
 - How an amount is formatted (`$ 12.34` versus `12,45$`)

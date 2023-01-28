@@ -1,8 +1,6 @@
 # Self-hosting
 
-People often have the same type of questions. Please find them below. If you open an issue that refers to one of these questions, your issue may be closed.
-
-Please refer to the index on your right.
+TODO clean me up
 
 ## I get syntax errors or other problems when opening Firefly III?
 
