@@ -12,4 +12,4 @@ Use [Firefly III rules](../../firefly-iii/features/rules.md) to look for incomin
 
 ## Clean up using webhooks
 
-Use [Firefly III webooks](../../firefly-iii/features/webhooks.md) to manage transaction content using webhooks. A webhook allows you to introduce custom scripting to Firefly III. It is the most powerful, but also the most complicated way to manage your transactions.    
+Use [Firefly III webhooks](../../firefly-iii/features/webhooks.md) to manage transaction content using webhooks. A webhook allows you to introduce custom scripting to Firefly III. It is the most powerful, but also the most complicated way to manage your transactions.    

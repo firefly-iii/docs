@@ -111,9 +111,6 @@ nav:
           - Duplicates: data-importer/faq/duplicates.md
           - Re-import transactions: data-importer/faq/re-import.md
           - JSON file: data-importer/faq/json.md
-          - Feature requests and roadmap: firefly-iii/support/features.md
-          - Reporting bugs: firefly-iii/support/bugs.md
-          - Contribute to Firefly III: firefly-iii/support/contribute.md
       - More information:
           - Separate tool: data-importer/more-information/separate-tool.md
       - Support:
