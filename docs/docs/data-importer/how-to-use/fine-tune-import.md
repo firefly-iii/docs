@@ -104,7 +104,7 @@ Multilines notes spanning to more than one line can be imported, just remember t
 
 In Firefly III you'll see the notes this way:
 
-![How your notes will be presentend in Firefly III](./images/multiline-notes-sample.png)
+![How your notes will be presented in Firefly III](./images/multiline-notes-sample.png)
 
 ### Debit/credit indicator
 

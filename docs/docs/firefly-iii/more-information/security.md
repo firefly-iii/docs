@@ -6,7 +6,7 @@ Because Firefly III stores personal financial information it's important to know
 
 The database is not encrypted, and data in the tables of the database is readable for humans. Make sure that you use a strong password to authenticate to the database and create a dedicated user for the Firefly III database. Whenever possible, use the disk encryption feature of your operating system to encrypt the disk on which the database is stored. 
 
-When you connect your Firefly III instance to the internet, make sure that the database can't be connected to from the web, but only from localhost. Preferrably, the database host can only be reached from the Firefly III host.
+When you connect your Firefly III instance to the internet, make sure that the database can't be connected to from the web, but only from localhost. Preferably, the database host can only be reached from the Firefly III host.
 
 ID's used for objects in Firefly III are incremental numbers. Logged-in users may infer the existence of objects owned by other users by changing the ID in the address bar and observing 404's. This is not possible for guests.
 
@@ -70,7 +70,7 @@ Firefly III supports the use of files for secrets (see the `.env.example` file).
 
 Each form in Firefly III is protected by a token preventing cross site request forging. All javascript on Firefly III pages must also be called with a special token to prevent cross-site scripting.
 
-Firefly III is thusly prevented from executing unexpected Javascript in case of newly discovered SQL injection or forgotten escaping.
+Firefly III is thus prevented from executing unexpected Javascript in case of newly discovered SQL injection or forgotten escaping.
 
 ## Debug
 

@@ -36,7 +36,7 @@ You can also replace `1,2,3` (which denotes the asset accounts to include in the
 
 ## URL options for budget, category and tag reports
 
-The URL's for these three report types look something like this: `/reports/budget/1,2,3/6,7,8/20180101/20180131`. 
+The URLs for these three report types look something like this: `/reports/budget/1,2,3/6,7,8/20180101/20180131`. 
 
 As you can see a new parameter has appeared, `6,7,8` which indicates with objects the report should be about. These could refer to budgets, tags or categories, depending on the type of report you're viewing.
 
@@ -63,7 +63,7 @@ The audit report is meant to give you an exact overview of an asset account (or 
 
 ### Expense/revenue report
 
-The expense/revenue report is meant for expense and revenue accounts that share the same name. Take for example your local Tax Department. You pay taxes but perhaps you recieve money back as well. Or when you work in retail, you might be able to buy stuff at a discount. This report shows you an overview of such accounts. You can click on the screenshot below for a large version.
+The expense/revenue report is meant for expense and revenue accounts that share the same name. Take for example your local Tax Department. You pay taxes but perhaps you receive money back as well. Or when you work in retail, you might be able to buy stuff at a discount. This report shows you an overview of such accounts. You can click on the screenshot below for a large version.
 
 [![Expense + revenue report](images/reports-expense-small.png)](images/reports-expense.png)
 

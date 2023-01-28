@@ -52,7 +52,7 @@ This way, Firefly III tries to stay true to what a financial transaction is, whi
 
 However, often an expense tells a story. Take grocery receipts for example. It's one expense sure, but it consists of many parts. And when you buy aspirin and bread at the same time, you might want to split the expense over two budgets, medication and groceries. A single expense would make you lose information.
 
-Likewise, your salary may have multiple components. Your base salary may be 1200. Plus 100 bonus. Etc. All that information is lost when you enter it using a singular, unsplitted deposit.
+Likewise, your salary may have multiple components. Your base salary may be 1200. Plus 100 bonus. Etc. All that information is lost when you enter it using a singular, not split deposit.
 
 ![Transaction with multiple parts](images/transaction5.png)
 
