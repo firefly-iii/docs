@@ -52,7 +52,7 @@ See [GitHub issue #4270](https://github.com/firefly-iii/firefly-iii/issues/4270)
 
 ### Automated backup using a bash script and crontab
 
-An installation of Firefly III installed using `docker-compose` can be backed up using this script provided by GitHub user [@dawid-czarnecki](https://github.com/dawid-czarnecki). The script will backup the database, capture the Docker volumes, `.env`-file, and relevant Docker files. It will also backup the configuration of the [Firefly III Data Importer](../../data-importer/) if you installed it with the same `docker-compose`-file.
+An installation of Firefly III installed using `docker-compose` can be backed up using this script provided by GitHub user [@dawid-czarnecki](https://github.com/dawid-czarnecki). The script will back up the database, capture the Docker volumes, `.env`-file, and relevant Docker files. It will also back up the configuration of the [Firefly III Data Importer](../../data-importer/) if you installed it with the same `docker-compose`-file.
 
 Copy the [bafirefly-iii/docsckuper](https://gist.github.com/dawid-czarnecki/8fa3420531f88b2b2631250854e23381)-script to the same location where your `docker-compose.yml` and `.env` files are located.
 

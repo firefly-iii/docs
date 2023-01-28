@@ -1,20 +1,16 @@
 # Self-hosted server
 
-TODO patch me up
-
 If you have your own (virtual) web server you can use this guide to install Firefly III. You may have some ingredients prepared already.
 
 ## Ingredients
 
-You need a working LAMP, LEMP or WAMP stack. If you don't have one, search the web to find out how to get one. Make sure you're running PHP %PHPVERSION. There are many tutorials that will help you install one. Here are some Google queries to help you.
+You need a working LAMP, LEMP or WAMP stack. Make sure you're running PHP %PHPVERSION. Here are some Google queries to help you.
 
 1. [Install a LAMP stack with PHP %PHPVERSION](https://www.google.com/search?q=lamp+stack+php+%PHPVERSION)
 2. [Upgrade Ubuntu PHP %PHPVERSION](https://www.google.com/search?q=upgrade+ubuntu+php+%PHPVERSION)
 3. [PHP %PHPVERSION raspberry pi](https://www.google.nl/search?q=PHP+%PHPVERSION+raspberry+pi)
 
-If you wish to use another database such as SQLite or Postgres, please check out the FAQ.
-
-You need a (MySQL) database and credentials for a user that has permissions on that database. Firefly III creates its own tables. Avoid using the root user.
+You need a (MySQL) database and credentials for a user that has permissions on that database. Firefly III creates its own tables.
 
 Several users have created specific guides for their OS and database combination.
 
@@ -58,8 +54,6 @@ composer -v
 
 If you have no sudo rights, you can simply [download composer](https://getcomposer.org/download/) with the instructions under the header "manual download". Use `php composer.phar` instead of `composer` in the instructions ahead.
 
-This concludes the server preparations. If you're having trouble with (parts of) this step, please check out the FAQ.
-
 ## Installing Firefly III
 
 ### Main command
@@ -87,7 +81,7 @@ In the `firefly-iii` directory you will find a `.env` file. Open this file using
 
 ### Initialize the database
 
-This step is very important, because Firefly III needs a database to work with and it will tell you whether or not your configuration is correct. Run the following command in the Firefly III directory.
+This step is very important, because Firefly III needs a database to work with, and it will tell you whether your configuration is correct. Run the following command in the Firefly III directory.
 
 ```bash
 php artisan migrate:refresh --seed
@@ -116,9 +110,8 @@ Browsing to the site should be easy. You should see a login screen.
 
 ### Registering an account
 
-You cannot login yet. Click on "Register a new account" and fill in the form.
+You cannot log in yet. Click on "Register a new account" and fill in the form.
 
 ### Your first accounts
 
 You will be logged in automatically. Follow the instructions and you are done!
-

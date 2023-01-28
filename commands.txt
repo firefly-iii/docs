@@ -3,4 +3,5 @@ pip install mkdocs mkdocs-material mkdocs-git-revision-date-plugin mkdocs-redire
 
 # serve docs locally
 mkdocs serve
+
 mkdocs serve --dirtyreload

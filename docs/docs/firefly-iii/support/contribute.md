@@ -16,7 +16,7 @@ Opening a pull request with some changes is always a possibility as well. Keep i
 
 ## Translations
 
-There is a project for the translation of Firefly III. It's are hosted by CrowdIn, where you must register an account to help out.
+There is a project for the translation of Firefly III. It's hosted by CrowdIn, where you must register an account to help out.
 
 * [Firefly III](https://crowdin.com/project/firefly-iii) on Crowdin.
 

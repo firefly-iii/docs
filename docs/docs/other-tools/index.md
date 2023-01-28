@@ -20,11 +20,11 @@ A [small package](https://github.com/JC5/api-support-classes) with code to use t
 
 ### Recovery code thing
 
-A small change to [a recovery code package](https://github.com/JC5/recovery) so it's compatible with PHP %PHPVERSION.
+A small change to [a recovery code package](https://github.com/JC5/recovery), so it's compatible with PHP %PHPVERSION.
 
 ### 2FA laravel code things
 
-Some changes to [a 2FA package](https://github.com/JC5/google2fa-laravel) so it can handle 2FA authentication over sessions.
+Some changes to [a 2FA package](https://github.com/JC5/google2fa-laravel), so it can handle 2FA authentication over sessions.
 
 ### API docs
 

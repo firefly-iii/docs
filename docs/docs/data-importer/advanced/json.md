@@ -121,7 +121,7 @@ True or false if the CSV file has headers, a top row that explains what each col
 
 ### rules
 
-Whether to apply your rules to the import. It is useful to run your rules after the import although it will
+Whether to apply your rules to the import. It is useful to run your rules after the import, although it will
 significantly slow down the import. The execution of rules can be slow when you have a lot of them.
 
 ### skip_form

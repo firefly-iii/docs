@@ -60,7 +60,7 @@ This application allows you to import data from Australian Bank "Up":
 
 ### Credit Agricole
 
-This Python app allows you to import transactions from Credit Agricole
+This Python app allows you to import transactions from Crédit Agricole
 
 - [Website](https://github.com/Royalphax/credit-agricole-importer)
 - [Credits](https://github.com/Royalphax)

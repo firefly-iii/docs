@@ -44,7 +44,7 @@ Yes. Anybody can fork and change Firefly III. If you want a specific feature, bu
 
 That is OK. Any changes you make to Firefly III need to be made open source under the AGPLv3. That means hosting a repository somewhere with the source code of "My Awesome Finance App".
 
-### Can I change Firefly III so it can be used by commercial businesses, and sell it?
+### Can I change Firefly III, so it can be used by commercial businesses, and sell it?
 
 That is OK. Any changes you make to Firefly III need to be made open source under the AGPLv3. That means hosting a repository somewhere with the code of "Firefly III + business expansions".
 
@@ -54,7 +54,7 @@ That is OK. Any changes you make to Firefly III need to be made open source unde
 
 A special exception here: if you don't actually use or change Firefly III code, you are not required to open source your code. That means that your new app does not need to be AGPLv3. Keep in mind there are rules regarding [the name and logo of Firefly III](logo.md).
 
-### Can I build an (mobile) app that connects to Firefly III?
+### Can I build a (mobile) app that connects to Firefly III?
 
 That is OK. Any changes you make to Firefly III need to be made open source under the AGPLv3. That means hosting a repository somewhere with the code.
 

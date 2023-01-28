@@ -85,7 +85,7 @@ Some of the work that Firefly III needs to do is complex or time-consuming, so i
 
 ### Validation rules
 
-Validation rules are stored in [`app/Rules`](https://github.com/firefly-iii/firefly-iii/tree/main/app/Rules) and [`app/Validation`](https://github.com/firefly-iii/firefly-iii/tree/main/app/Validation). It's one thing to validate if a number is larger than zero. But some of the validation rules for transactions used by Firefly III are pretty complex, because there's a lot of context.
+Validation rules are stored in [`app/Rules`](https://github.com/firefly-iii/firefly-iii/tree/main/app/Rules) and [`app/Validation`](https://github.com/firefly-iii/firefly-iii/tree/main/app/Validation). It's one thing to validate if a number is larger than zero. But some validation rules for transactions used by Firefly III are pretty complex, because there's a lot of context.
 
 ### Services
 
@@ -107,7 +107,7 @@ Apart from the [code](#code) in the previous section there are some design patte
 
 The single biggest piece of code in Firefly III is the **transaction collector**. This is an interface with lots of functions that is designed to collect (you guessed it) transactions. In the code you give the collector parameters like [date-ranges, accounts or search queries](https://github.com/firefly-iii/firefly-iii/blob/main/app/Api/V1/Controllers/AccountController.php#L265). You then collect the [results](https://github.com/firefly-iii/firefly-iii/blob/main/app/Api/V1/Controllers/AccountController.php#L277) and use it in lists, or in rule actions or whatever. This is basically [one big database query](https://github.com/firefly-iii/firefly-iii/blob/main/app/Helpers/Collector/GroupCollector.php#L179).
 
-There are two schools of thought when it comes to transaction collection. Each page, each view and each report has its own set of transactions it wants to show *and* a specific set of meta-data it needs. In earlier times each controller would have its own code to grab transactions from the database. This is very hard to maintain, although it makes each query very efficient. A transaction collector is less effective than writing dedicated queries but it does save a lot of code.
+There are two schools of thought when it comes to transaction collection. Each page, each view and each report has its own set of transactions it wants to show *and* a specific set of meta-data it needs. In earlier times each controller would have its own code to grab transactions from the database. This is very hard to maintain, although it makes each query very efficient. A transaction collector is less effective than writing dedicated queries, but it does save a lot of code.
 
 Check out the [`GroupCollectorInterface.php`](https://github.com/firefly-iii/firefly-iii/blob/main/app/Helpers/Collector/GroupCollectorInterface.php) for all the possibilities.
 

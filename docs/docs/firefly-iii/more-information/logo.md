@@ -9,7 +9,7 @@ The name of this tool is "Firefly III". It was named after the [Fairey Firefly](
 
 "Firefly" was the original iteration of this tool, and no longer exists. I started building "Firefly Mark 2" in Groovy (a Java dialect) but quickly gave up. "Firefly III" is my third and final attempt, and at the time I thought the "III" would make it sound cool. There will not be a Firefly IV or Firefly V.
 
-So it's called "Firefly III" because this is the third major iteration of the original "Firefly". Many people tend to use "Firefly" and "Firefly III" interchangeably although I tend to stick to "Firefly III" myself.
+So it's called "Firefly III" because this is the third major iteration of the original "Firefly". Many people tend to use "Firefly" and "Firefly III" interchangeably, although I tend to stick to "Firefly III" myself.
 
 On my request, the Firefly III logo was designed exclusively for Firefly III by the excellent Cherie Woo.
 

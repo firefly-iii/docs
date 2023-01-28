@@ -18,7 +18,7 @@ Please note that each currency needs:
 - A code, such as EUR or USD or something you make up.
 - A name, of course.
 
-Currencies tend to have 2 decimal places. You should check out Wikipedia for more information about your preferred currency, if you are unsure. If you want to know what the values are for your currency, check out [this list of currencies](https://github.com/xsolla/currency-format/blob/master/currency-format.json) on Github. New currencies are enabled by default.# Currencies
+Currencies tend to have 2 decimal places. You should check out Wikipedia for more information about your preferred currency, if you are unsure. If you want to know what the values are for your currency, check out [this list of currencies](https://github.com/xsolla/currency-format/blob/master/currency-format.json) on GitHub. New currencies are enabled by default.# Currencies
 
 New currencies added through this form will be enabled for use.
 
@@ -26,7 +26,7 @@ New currencies added through this form will be enabled for use.
 
 ## Set the default currency
 
-Firefly III support multiple currencies but it requires one default currency. When you install Firefly III this is the Euro. You can change this if you want to.
+Firefly III support multiple currencies, but it requires one default currency. When you install Firefly III this is the Euro. You can change this if you want to.
 
 ![In this instance of Firefly III, the default currency is the British Pound.](images/currency-default.png)
 

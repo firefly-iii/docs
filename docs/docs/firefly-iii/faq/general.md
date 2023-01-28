@@ -19,7 +19,7 @@ This is a fairly complicated question, but here are some key differences that yo
 - Firefly III is self-hosted and geared towards tech-savvy users. You must install it yourself and run it on your own server. This is a huge difference with other financial tools.
 - Importing data from your bank and doing this automatically is not that easy with Firefly III. See also [importing data](../importing-data/index.md) for more information.
 - GNUCash has way more "accounting" features, like mutual funds and stock and equity.
-- Most online tools like YNAB and Mint have a another "style" of budgeting money. See for more info, below.
+- Most online tools like YNAB and Mint have another "style" of budgeting money. See for more info, below.
 - There is no desktop app for Firefly III, it's all web based.
 
 ## Why is Firefly III not based on "zero-sum budgeting"?
@@ -77,7 +77,7 @@ I made Firefly III open source under the AGPL. Making Firefly III open source un
 * The development pace is too high to offer a stable product. I like to tinker and I break stuff all the time. My users accept this, if begrudgingly. But if they pay AND it breaks? No dice.
 * I built Firefly III specifically because self-hosting is the only way to guarantee your data is (fairly) safe. At least, out of the hands of nefarious corporations. So hosting a public instance for everybody to use is kind of exactly against that idea.
 
-If you want to, feel free to host Firefly III yourself and sell user accounts. If it's you and a few friends, all the better. You can keep it low key without needing strict privacy policies or payment services. If there's a kickback for me all the better ;). But make it larger, and I fear you run into the situation where you have to build a second system next to Firefly III to manage users, manage payments, etc etc. And the parts in Firefly III that you change must be open sourced. 
+If you want to, feel free to host Firefly III yourself and sell user accounts. If it's you and a few friends, all the better. You can keep it low-key without needing strict privacy policies or payment services. If there's a kickback for me all the better ;). But make it larger, and I fear you run into the situation where you have to build a second system next to Firefly III to manage users, manage payments, etc. And the parts in Firefly III that you change must be open sourced. 
 
 This excludes all the (legal) work you'll need to have in place to manage other people's finances hassle-free. 
 

@@ -120,7 +120,7 @@ When you delete a category, any transactions in the category will be cleared of 
 
 If you try to save money every month on a certain subject, it's a budget. Groceries are budget. Bills are a budget. If you travel by train occasionally, it's not a budget.
 
-A category is "incidental". You don't buy new furniture every month but you might want to keep track of such expenses. Or you don't care about costs for public traffic (budget-wise) but a category would be nice.
+A category is "incidental". You don't buy new furniture every month, but you might want to keep track of such expenses. Or you don't care about costs for public traffic (budget-wise) but a category would be nice.
 
 The rule of thumb is: would you make a real life envelope for it? If yes: budget. If no: category.
 

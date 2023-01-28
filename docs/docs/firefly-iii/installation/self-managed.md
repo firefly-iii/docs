@@ -1,15 +1,9 @@
 # Self-managed hosting tools
 
-TODO patch me up
-
 There are lots of self-managed hosting tools on the market. They offer 1-click installation of apps and services.
 
-!!! warning
+!!! warning "These tools are unsupported"
     I can't always offer support for these platforms. There are a lot of them. Feel free to start a [discussion](https://github.com/orgs/firefly-iii/discussions), but you may have to do some exploration to get your issue resolved.
-
-## Unraid
-
-There are [templates](https://forums.unraid.net/topic/124146-support-smartphonelover-firefly-iii-data-importer/) for Firefly III and the Data Importer.
 
 ## AMPPS
 
@@ -18,6 +12,14 @@ Firefly III is featured in [AMPPS](https://www.ampps.com/). You can download AMP
 ## Cloudron
 
 Firefly III is featured in [Cloudron](https://cloudron.io/). You can install a Cloudron server instance and Firefly III will be available in the [App Store](https://cloudron.io/store/org.fireflyiii.cloudronapp.html).
+
+## Umbrel
+
+Firefly III is featured in the [Umbrel app store](https://umbrel.com/).
+
+## Unraid
+
+There are [templates](https://forums.unraid.net/topic/124146-support-smartphonelover-firefly-iii-data-importer/) for Firefly III and the Data Importer.
 
 ## Yunohost
 

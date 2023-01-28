@@ -48,11 +48,11 @@ I cannot accept new features out of the blue. Please first discuss the change yo
 
 ### Contributing text and documentation
 
-If you see a spelling error, grammatical error or a weird translation *in your language*, please join [our CrowdIn](https://crowdin.com/project/firefly-iii) project. There, you can submit your translations and fixes. The GitHub repository will download these automatically and they will be included in the next release.
+If you see a spelling error, grammatical error or a weird translation *in your language*, please join [our CrowdIn](https://crowdin.com/project/firefly-iii) project. There, you can submit your translations and fixes. The GitHub repository will download these automatically, and they will be included in the next release.
 
 Know that I am always open for rewrites and more clarity in the documentation, but I will not accept changes that people can Google themselves already. For example, do not submit text that explains how to set up Docker. Or how to install PHP.
 
-Any documentation you write or fix must be spell checked. Make sure that if you correct my spelling or grammar, you don't make mistakes of your own.
+Any documentation you write or fix must be checked for correct spelling. Make sure that if you correct my spelling or grammar, you don't make mistakes of your own.
 
 #### Rules
 
@@ -71,7 +71,7 @@ Firefly III uses the following libraries and tools:
 * [Bootstrap](http://getbootstrap.com/)
 * [Laravel](http://laravel.com/)
 * [Twig](http://twig.sensiolabs.org/)
-* For development, some of the excellent tools made by [Barry van den Heuvel](https://github.com/barryvdh)
+* For development, some excellent tools made by [Barry van den Heuvel](https://github.com/barryvdh)
 * [Bootstrap sortable](https://github.com/drvic10k/bootstrap-sortable). by [Matúš Brliť](https://github.com/drvic10k)
 * [Date range picker](https://github.com/dangrossman/bootstrap-daterangepicker/) by [Dan Grossman](https://github.com/dangrossman)
 * The [real favicon generator](http://realfavicongenerator.net/)

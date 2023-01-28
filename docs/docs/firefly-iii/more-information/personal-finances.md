@@ -1,6 +1,6 @@
 This is a description of how Firefly III works, and how I feel about personal finances.
 
-Firefly III has been built around how I manage my finances. Please read this carefully so we match on how to do things.
+Firefly III has been built around how I manage my finances. Please read this carefully, so we match on how to do things.
 
 ## The general idea
 
@@ -14,7 +14,7 @@ There are also categories and tags to further narrow down your transactions.
 
 ## The next step
 
-To keep on top of your finances (using Firefly III), you must be *aware* of your finances. There are no shortcuts. You can use the import function and you can use the recurring transactions, but it won't help you one bit. It just gives you fancy charts. All knowledge and no wisdom.
+To keep on top of your finances (using Firefly III), you must be *aware* of your finances. There are no shortcuts. You can use the import function, and you can use the recurring transactions, but it won't help you one bit. It just gives you fancy charts. All knowledge and no wisdom.
 
 If you're serious about changing your financial habits, you should enter each transaction manually. Feel the impact of each penny you spend, and before you know it you'll spend a lot less of them.
 
@@ -24,6 +24,6 @@ If you're serious about changing your financial habits, you should enter each tr
     The text below feels a bit like a rant, but I'm going to keep it up regardless.
 
 
-I don't like accounting. I don't like the fact that people buy a $60,000 sports car and then pretend they haven't just lost 60 grand by putting up the car as an "asset". As if you get your money back. I also don't like that people put up their house against their mortgage. It's not money. You don't have it. A Rembrand could be worth a million but it won't buy you a loaf of bread.
+I don't like accounting. I don't like the fact that people buy a $60,000 sports car and then pretend they haven't just lost 60 grand by putting up the car as an "asset". As if you get your money back. I also don't like that people put up their house against their mortgage. It's not money. You don't have it. A Rembrandt could be worth a million, but it won't buy you a loaf of bread.
 
 
