@@ -1,8 +1,6 @@
 # Transactions
 
-TODO clean me up
-
-A transaction is a very simple thing. Money moves from A to B. It doesn't matter if this is an expense, your salary or you moving money around: _money moves from A to B_:
+Money moves from A to B. It doesn't matter if this is an expense, your salary or you moving money around: _money moves from A to B_:
 
 ![Transferring money from your checking account to your savings account](images/transaction1.png)
 
@@ -36,7 +34,7 @@ Although the form allows you to free-type a destination account as well, this ma
 
 ## Deposits
 
-When you wish to create a deposit, select a revenue account first, as the source account. When it doesn't exist yet, free-type your own input and it will be created for you. Then, select an asset account or liability as the destination account. If the source account already exists the form will recognize that you're creating a deposit, and the "budget"-selector will disappear.
+When you wish to create a deposit, select a revenue account first, as the source account. When it doesn't exist yet, free-type your own input, and it will be created for you. Then, select an asset account or liability as the destination account. If the source account already exists the form will recognize that you're creating a deposit, and the "budget"-selector will disappear.
 
 Although the form allows you to free-type a destination account as well, this may fail and the transaction can't be saved.
 
@@ -74,6 +72,39 @@ It's important to realise the following constraints when dealing with split tran
 * Deposits must end up in one asset account. You can't make a deposit from one revenue accounts and split it over separate asset accounts. Your salary, when divided over different splits, must end up in one asset account.
 * Transfers can be split, but all splits must have the same source + destination.
 
-## Multi-currency transactions
+## Transaction links
 
-Firefly III supports multi-currency transactions. You can set the foreign currency for any (split) transaction.
+More often than not a transaction isn't just "a transaction" but a connected to some other transactions. Maybe you've been reimbursed money by your boss. Maybe an expense is paid back to you by a friend. Or perhaps a friend paid you back for something or other.
+
+![Inward link](./images/links1.png)
+
+In Firefly III you can store these links between transactions. By default, four link types are available. You can see these under Administration > Transaction links configuration.
+
+* Is paid for by
+* Is refunded by
+* Is reimbursed by
+* Relates to
+
+These links work both ways. When transaction A has been refunded by transaction B, B is noted to refund A.
+
+![Outward link](./images/links2.png)
+
+You can also add your own link types if you want to.
+
+To make a link with another transaction, go to the overview of a transaction and use the "Link transaction" button under the transaction. If the transaction has been split, select the correct split to link. Select the correct type of link from the dropdown and select the transaction to be linked. Optionally you can add some comments.
+
+You can remove or reverse a link once it has been created.
+
+### Use of links
+
+It is important to realise that links don't *do* anything. They won't change your transactions, or subtract amounts or anything like that.
+
+### Screenshots
+
+![The "Lunch with client" expense is reimbursed by your boss in transaction "Lunch reimbursement".](./images/links-inward.png)
+
+![Vice versa, "Lunch reimbursement" reimburses you for "Lunch with client".](./images/links-outward.png)
+
+![Use this modal to create a new link](./images/links-modal.png)
+
+![You can delete the link or make the transactions switch positions.](./images/links-change.png)
