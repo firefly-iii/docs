@@ -54,7 +54,6 @@ nav:
           - Piggy banks: firefly-iii/financial-concepts/piggies.md
           - Bills: firefly-iii/financial-concepts/bills.md
           - Recurring transactions: firefly-iii/financial-concepts/recurring.md
-          - Transaction links: firefly-iii/financial-concepts/links.md
           - Reconciling accounts: firefly-iii/financial-concepts/reconcile.md
       - Importing data: firefly-iii/importing-data/index.md
       - Exporting data: firefly-iii/exporting-data/index.md

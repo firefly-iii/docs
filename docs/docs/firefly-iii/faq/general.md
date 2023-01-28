@@ -19,7 +19,7 @@ Yes. For security reasons Firefly III opens up the registration form only for th
 This is a fairly complicated question, but here are some key differences that you should know about.
 
 - Firefly III is self-hosted and geared towards tech-savvy users. You must install it yourself and run it on your own server. This is a huge difference with other financial tools.
-- Importing data from your bank and doing this automatically is not that easy with Firefly III. See also [importing data](../importing-data/introduction.md) for more information.
+- Importing data from your bank and doing this automatically is not that easy with Firefly III. See also [importing data](../importing-data/index.md) for more information.
 - GNUCash has way more "accounting" features, like mutual funds and stock and equity.
 - Most online tools like YNAB and Mint have a another "style" of budgeting money. See for more info, below.
 - There is no desktop app for Firefly III, it's all web based.
@@ -30,7 +30,7 @@ In many budgeting tools you assign every coin to a budget until all your money i
 
 The only effective difference with YNAB (and other tools) is that you *don't need to budget all the way to zero*. What you do is, you set a monthly amount that you want to budget (aka spend), like € 1000. You shape a few budgets around that amount, and you start the month with € 1000 on your bank account and like 4 budgets to spend it in. Now you have a monthly financial routine around 1000,-. You can now shape your budgets and try to spend even less. If you have € 2000 on your savings account you know you can go without a job for two months.
 
-Any income you get over the month you put in your savings account directly, it doesn't need to reside on your bank account: it would only muddle your € 1000. If you want to create specific saving targets for the money in your savings account you use [piggy banks](../advanced-concepts/piggies.md).
+Any income you get over the month you put in your savings account directly, it doesn't need to reside on your bank account: it would only muddle your € 1000. If you want to create specific saving targets for the money in your savings account you use [piggy banks](../financial-concepts/piggies.md).
 
 Two differences between zero sum budgeting and Firefly III:
 
@@ -39,7 +39,7 @@ Two differences between zero sum budgeting and Firefly III:
 
 When I built Firefly III I was over 5K in debt and this helped me pay it off in less than a year: a monthly budget routine separated from my income, fixed amounts at the start of each month, all income to the savings account. Firefly III is geared towards predetermining your budgets, allocating funds to those budgets *only* and then spend it.
 
-See [personal finances](../about-firefly-iii/personal-finances.md) for more information.
+See [personal finances](../more-information/personal-finances.md) for more information.
 
 ## I found a bug, what do I do?
 
@@ -60,7 +60,7 @@ It would cost a lot of time and money to get registered and get the right digita
 
 So just getting registered in the context of the PSD2 is impossible for Firefly III.
 
-Secondly. Even if Firefly III was a hosted service (it's not) and it could be registered (it can't be), there is still another problem: the PSD2 doesn't tell banks **how** to open up their API's. Each bank has their own API with its own authenthication flow, API endpoints, data-formats and queries. Literally no bank has the same API. So even if we could register Firefly III at the DBN (we can't) and we could get a PSD2 compliant certificate (we can't), and use the API's (we can't) we would still have to develop separate applications for each single bank.
+Secondly. Even if Firefly III was a hosted service (it's not) and it could be registered (it can't be), there is still another problem: the PSD2 doesn't tell banks **how** to open up their API's. Each bank has their own API with its own authentication flow, API endpoints, data-formats and queries. Literally no bank has the same API. So even if we could register Firefly III at the DBN (we can't) and we could get a PSD2 compliant certificate (we can't), and use the API's (we can't) we would still have to develop separate applications for each single bank.
 
 For applications and actual end users like Firefly III and the users that use it, the PSD2 regulation doesn't add any value at all, unfortunately.
 

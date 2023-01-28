@@ -30,7 +30,7 @@ In Firefly III, a transaction can be a withdrawal, a deposit or a transfer. Beyo
 
 ## Withdrawals
 
-To create a withdrawal select a source account first. This should be an asset account or a liability. Then select a destination account (an expense account) or free-type a new one. Withdrawals can also be assigned a [budget](budgets.md).
+To create a withdrawal select a source account first. This should be an asset account or a liability. Then select a destination account (an expense account) or free-type a new one. Withdrawals can also be assigned a [budget](organizing.md).
 
 Although the form allows you to free-type a destination account as well, this may fail and the transaction can't be saved.
 
@@ -42,7 +42,7 @@ Although the form allows you to free-type a destination account as well, this ma
 
 ## Transfers
 
-A transfer is created only between existing asset accounts. Select an asset account for both the source and destination from the free-form fields. Transfers can be linked to [piggy banks](../advanced-concepts/piggies.md), to automatically add or remove money from the piggy bank you select.
+A transfer is created only between existing asset accounts. Select an asset account for both the source and destination from the free-form fields. Transfers can be linked to [piggy banks](piggies.md), to automatically add or remove money from the piggy bank you select.
 
 ## Split transactions
 

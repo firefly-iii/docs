@@ -95,4 +95,4 @@ A tool made by GitHub user [@Mugl3](https://github.com/Mugl3) that allows you to
 
 ## Other ways of importing
 
-If none of these import methods support your bank or financial organisation, please check out the [API](../api.md).
+If none of these import methods support your bank or financial organisation, please check out the [API](../api/index.md).
