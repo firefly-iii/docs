@@ -15,7 +15,7 @@ IMPORT_DIR_WHITELIST=/your/directory
 ```
 
 !!! note "Command line and Docker"
-    When you're using Docker make sure that you've mounted a directory with your files in it. This is something you must have done when you launched the Docker container, using for example `-v /path/to/my/files:/import`.
+    When you're using Docker validate that you've mounted a directory with your files in it. This is something you must have done when you launched the Docker container, using for example `-v /path/to/my/files:/import`.
 
 ### Import a single (CSV) file
 

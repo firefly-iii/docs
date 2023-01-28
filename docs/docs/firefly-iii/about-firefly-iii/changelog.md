@@ -2885,7 +2885,7 @@ An intermediate release because something in the Twig and Twigbridge libraries i
 - German is now a "complete" language, more than 75% translated!
 
 ### Changed
-- **[New Github repository!](github.com/firefly-iii/firefly-iii)**
+- **[New GitHub repository!](https://github.com/firefly-iii/firefly-iii)**
 - Better category overview.
 - [Issue 502](https://github.com/firefly-iii/firefly-iii/issues/502), thanks to [zjean](https://github.com/zjean)
 

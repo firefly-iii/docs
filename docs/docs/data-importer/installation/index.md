@@ -1,6 +1,6 @@
 # Installation
 
-The Firefly III Data Importer is a tool separate from [Firefly III](../../firefly-iii/). You can read more about that on [another page](../more-information/separate-tool.md).
+The Firefly III Data Importer is a tool separate from [Firefly III](../../firefly-iii/index.md). You can read more about that on [another page](../more-information/separate-tool.md).
 
 If you had previously installed the data importer, following the **[upgrade instructions](upgrade.md)** is enough.
 

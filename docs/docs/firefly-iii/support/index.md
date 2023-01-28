@@ -17,7 +17,7 @@ Please note that Firefly III's is licensed under the [GNU Affero General Public 
 
 ## Support the development of Firefly III
 
-If you like Firefly III and if it helps you save lots of money, why not send me a dime for every dollar saved! :tada:
+If you like Firefly III and if it helps you save lots of money, why not send me a dime for every dollar saved! 🥳
 
 OK that was a joke. If you feel Firefly III made your life better, consider contributing as a sponsor. Please check out my [Patreon](https://www.patreon.com/jc5) and [GitHub Sponsors](https://github.com/sponsors/JC5) page for more information. Thank you for considering donating to Firefly III!
 
