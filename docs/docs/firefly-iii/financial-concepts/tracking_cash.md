@@ -1,14 +1,12 @@
 # Tracking cash
 
-TODO clean me up
-
 ## Introduction
 
 There are a few ways to manage your cash transactions in Firefly III. On this page you can read about them.
 
 ## Using the built-in "(cash)" account
 
-The best way to manage cash in Firefly III, and the best way to manage your sanity, is _not_ to track your cash money. Instead, whenever you withdraw money from an ATM you consider the entire amount as lost and you move on. This is useful when you use cash on but a few occasions like when you go out for drinks or when you pay the handy man so he can avoid taxes.
+The best way to manage cash in Firefly III, and the best way to manage your sanity, is _not_ to track your cash money. Instead, whenever you withdraw money from an ATM you consider the entire amount as lost, and you move on. This is useful when you use cash on but a few occasions like when you go out for drinks or when you pay the handy man, so he can avoid taxes.
 
 To do this in Firefly III, whenever you withdraw cash you leave the "destination account" field empty, like so:
 

@@ -1,10 +1,8 @@
 # Piggy banks
 
-TODO move to concepts, cleanup
-
 If you want to buy something expensive, you might need to save for it. You can use piggy banks to save money. You can find them under "Financial Control" > "Piggy banks". A piggy bank is meant to group money on an asset account together.
 
-For example, on your savings account on which you have € 500,- saved. You want to buy a new digital camera, but you also need some money for a new couch and you already know your car is going to break down sooner or later. You would need *three* piggy banks.
+For example, on your savings account on which you have € 500,- saved. You want to buy a new digital camera, but you also need some money for a new couch, and you already know your car is going to break down sooner or later. You would need *three* piggy banks.
 
 1. A piggy bank called "New camera", linked to your savings account. The target amount is € 300,-
 2. A piggy bank called "New couch", linked to your savings account. The target amount is € 400,-
@@ -19,7 +17,6 @@ The idea is that you create a piggy bank for the money on your savings account. 
 You can't create a withdrawal or a deposit and refer to a piggy bank. It only works for transfers. It won't work in rules either, just for transfers.
 
 ## Screenshots
-
 
 ![The three piggy banks from the example are listed in Firefly III as you can see here.](images/piggies-overview.png)
 

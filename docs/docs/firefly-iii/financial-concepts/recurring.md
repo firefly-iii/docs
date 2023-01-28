@@ -1,7 +1,5 @@
 # Recurring transactions
 
-TODO move to concepts, cleanup
-
 Firefly III features the ability to automatically create transactions (so you don't have to). These are called recurring transactions. 
 
 A recurring transaction (RT) consists of two sets of data you need to fill in before it'll work as expected.
@@ -12,7 +10,7 @@ If you have set up email correctly, Firefly III will automatically email you an 
 
 ## Information for the recurring transaction
 
-A recurring transaction needs meta data, such as a title and a description. You must also indicate if the recurring transaction is active and whether your rules should apply. The first date the recurring transaction should fire should be a date in the future.
+A recurring transaction needs meta-data, such as a title and a description. You must also indicate if the recurring transaction is active and whether your rules should apply. The first date the recurring transaction should fire should be a date in the future.
 
 ![Mandatory information for a recurring transaction.](images/recurrence-mandatory.png)
 

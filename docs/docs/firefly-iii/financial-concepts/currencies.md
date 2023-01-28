@@ -1,8 +1,6 @@
 # Currencies
 
-TODO clean me up
-
-Firefly III supports as many currencies as you like. By default it ships with a variety of currencies, including crypto currencies.
+Firefly III supports as many currencies as you like. By default, it ships with a variety of currencies.
 
 You can add your own currencies if you're missing one. Please make sure the currency code is compliant with [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217).
 

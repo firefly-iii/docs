@@ -1,7 +1,5 @@
 # Reconciling accounts
 
-TODO move to concepts, cleanup
-
 Although more and more people use fancy online banking, a lot of users still receive paper bank statements in the mail, every week or every month.
 
 This means that each transaction must be entered by hand when it occurs, and must be compared to your bank statements by hand later. Firefly III has a "reconciliation"-view that allows you to do just that.
