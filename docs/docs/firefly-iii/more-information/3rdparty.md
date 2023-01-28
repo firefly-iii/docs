@@ -1,8 +1,9 @@
 # Third-party tools
 
-There are a lot of interesting tools and apps built around the [Firefly III API](../api.md). Here's a list, in no particular order. Is your (favorite) tool not on the list? Submit a PR!
+There are a lot of interesting tools and apps built around the [Firefly III API](../api/index.md). Here's a list, in no particular order. Is your (favorite) tool not on the list? Submit a PR!
 
-Be sure to also check out [the list of import tools](../../importing-data/introduction/#other-import-tools).
+Be sure to also check out [the list of import tools](../importing-data/index.md#other-import-tools).
+
 
 ## Reporting
 
@@ -101,8 +102,8 @@ iOS Shortcut to create transactions in Firefly III.
 
 ## Import tools
 
-All import related tools are listed [on the page on importing data](../importing-data/introduction.md).
+All import related tools are listed [on the page on importing data](../importing-data/index.md).
 
 ## Other tools
 
-Other tools developed by the developer of Firefly III are listed on the [other tools](../../../other-tools) page.
+Other tools developed by the developer of Firefly III are listed on the [other tools](../../other-tools/index.md) page.

@@ -70,4 +70,4 @@ That is OK. If you run an unchanged version of Firefly III, you do not need to p
 
 ## I have another question
 
-Feel free to [contact me](../other-pages/contact.md). On the whole, the answer is probably simple: any changes you make to Firefly III need to be made open source under the AGPLv3.
+Feel free to [contact me](../support/index.md). On the whole, the answer is probably simple: any changes you make to Firefly III need to be made open source under the AGPLv3.

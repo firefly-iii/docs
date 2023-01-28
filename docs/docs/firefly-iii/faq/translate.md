@@ -8,7 +8,7 @@ At the moment, Firefly III has about 30 target languages with about 12 enabled. 
 
 ## Target language
 
-Make sure the language you want to translate in is listed [on this page](https://crowdin.com/project/firefly-iii). If not, [send me a message](../other-pages/contact.md).
+Make sure the language you want to translate in is listed [on this page](https://crowdin.com/project/firefly-iii). If not, [send me a message](../support/index.md).
 
 If you contact me, make sure you tell me what your language is called _in your language_. For example, Dutch in Dutch is `Nederlands`.
 
@@ -62,4 +62,4 @@ Once the files are in place, you can start editing them directly. If you refresh
 
 ![The result in Firefly III](images/result.png)
 
-Once you're done with a file, send the file [to me](../other-pages/contact.md) so I can upload the results to Crowdin.
+Once you're done with a file, send the file [to me](../support/index.md) so I can upload the results to Crowdin.

@@ -13,7 +13,7 @@ One of the reasons I started Firefly III was because I was living paycheck to pa
 
 Now I decide for each *month* how much money I need to make it through that particular month. It could be an expensive month due to holidays or yearly bills, or it could be a (relatively) cheap month. Either way, I know this beforehand based on previous expenses and I set my monthly budgets accordingly.
 
-Naturally, I budget less money for these expected expenses than I make in total. The rest of the money is put away for the next month or for large expenses like that new tablet I had my eye on (see also "[piggy banks](../advanced-concepts/piggies.md)"). This approach disconnects your finances from your paychecks and allows you to build a healthy way of saving and spending money.
+Naturally, I budget less money for these expected expenses than I make in total. The rest of the money is put away for the next month or for large expenses like that new tablet I had my eye on (see also "[piggy banks](../financial-concepts/piggies.md)"). This approach disconnects your finances from your paychecks and allows you to build a healthy way of saving and spending money.
 
 Contrary, zero based budgeting keeps the focus on your paychecks and forces you to divide it over your budgets. Your primary driver becomes how much money you make and not how much money you spend. This is an important distinction.
 

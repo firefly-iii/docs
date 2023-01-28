@@ -1,6 +1,6 @@
 # What Firefly III isn't
 
-Even more important than all the stuff Firefly III [can do for you](introduction.md) is the list of stuff it **can't** do for you. If you're looking for a personal finance tool to do this for you, you may want to consider using another tool. This is unfortunate, but the result of some architecture and design choices. My apologies in advance, if Firefly III isn't what you're looking for.
+Even more important than all the stuff Firefly III [can do for you](../about-firefly-iii/introduction.md) is the list of stuff it **can't** do for you. If you're looking for a personal finance tool to do this for you, you may want to consider using another tool. This is unfortunate, but the result of some architecture and design choices. My apologies in advance, if Firefly III isn't what you're looking for.
 
 Sometimes I can't or won't implement a certain feature, or change how something works. Let me reassure you this isn't personal or something. Also keep in mind that instead of offering options for everything I want Firefly III to have [sensible defaults](https://en.wikipedia.org/wiki/Convention_over_configuration).
 
