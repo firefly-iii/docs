@@ -1,10 +1,6 @@
 # Translating Firefly III
 
-TODO clean me up
-
-First of all, thank you for taking the time to help get Firefly III translated in as many languages as possible. Translation work is tedious and concentrated work, and I appreciate all your efforts.
-
-At the moment, Firefly III has about 30 target languages with about 12 enabled. To make translating Firefly III as easy as possible I wrote this little guide to get you started.
+First of all, thank you for taking the time to help get Firefly III translated in as many languages as possible. Translation work is tedious and concentrated work, and I appreciate all your efforts. To make translating Firefly III as easy as possible I wrote this little guide to get you started.
 
 ## Target language
 
@@ -20,7 +16,7 @@ Some things you'll need to know when translating text:
 
 ## Translate online
 
-Crowdin has a pretty fancy user interface for translating Firefly III texts. This works pretty well for most people but you lack context: you don't know where your text is going to end up. But this works for most text.
+Crowdin has a pretty fancy user interface for translating Firefly III texts. This works pretty well for most people, but you lack context: you don't know where your text is going to end up. But this works for most text.
 
 ## Translate offline
 
@@ -62,4 +58,4 @@ Once the files are in place, you can start editing them directly. If you refresh
 
 ![The result in Firefly III](images/result.png)
 
-Once you're done with a file, send the file [to me](../support/index.md) so I can upload the results to Crowdin.
+Once you're done with a file, send the file [to me](../support/index.md), so I can upload the results to Crowdin.

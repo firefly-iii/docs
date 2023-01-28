@@ -1,18 +1,16 @@
 # Reports
 
-TODO cleanup
-
 Firefly III offers a variety of financial reports that can help you keep track of your finances. Each report has a certain scope that you can set to your liking:
 
 * The asset accounts involved.
 * The date range: from 1 day to 20 years
 * Optionally, the budgets, categories or tags
 
-This way you can create the exact cross section of your finances you need.
+This way you can create the exact cross-section of your finances you need.
 
 ## URL options
 
-The URL's for reports look something like this: `/reports/default/1,2,3/20180101/20180131`. 
+The URLs for reports look something like this: `/reports/default/1,2,3/20180101/20180131`. 
 
 * `default` denotes the report type
 * `1,2,3` is the list of asset accounts included in this report.
@@ -42,7 +40,7 @@ The URL's for these three report types look something like this: `/reports/budge
 
 As you can see a new parameter has appeared, `6,7,8` which indicates with objects the report should be about. These could refer to budgets, tags or categories, depending on the type of report you're viewing.
 
-You can replace this second parameter with `allBudgets`, `allCategories` or `allTags` in order to include all of the objects in the report.
+You can replace this second parameter with `allBudgets`, `allCategories` or `allTags` in order to include all the objects in the report.
 
 ## Available reports
 

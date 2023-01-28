@@ -1,7 +1,5 @@
 # Command line / CLI
 
-TODO clean me up
-
 Firefly III has a bunch of CLI commands that you can use. Generally speaking these are meant for large operations. Here's a full overview.
 
 ## Execute a command
@@ -31,7 +29,7 @@ php artisan COMMAND:COMMAND
 
 ### Third-party
 
-Most third party systems like Heroku don't allow you do do this I'm afraid.
+Most third party systems like Heroku don't allow you to do this.
 
 ## Available commands
 
@@ -39,7 +37,7 @@ Most third party systems like Heroku don't allow you do do this I'm afraid.
 
 `php artisan`
 
-Please note that this will also list all of the internal upgrade commands Firefly III uses. Not very interesting.
+Please note that this will also list all the internal upgrade commands Firefly III uses. 
 
 ### Apply rules
 
@@ -74,15 +72,15 @@ Allows you to export all Firefly III data. To use it, add the following paramete
 * `--end[=END]`. Last transaction to export. Defaults to today. Only applies to transaction export.
 * `--accounts[=ACCOUNTS]`. From which accounts or liabilities to export. Only applies to transaction export. Defaults to all of your asset accounts.
 * `--export_directory[=EXPORT_DIRECTORY]`. Where to store the export files. [default: "./"]
-* `--export-transactions`. Create a file with all your transactions and their meta data. This flag and the other flags can be combined.
-* `--export-accounts`. Create a file with all your accounts and some meta data.
-* `--export-budgets`. Create a file with all your budgets and some meta data.
-* `--export-categories`. Create a file with all your categories and some meta data.
-* `--export-tags`. Create a file with all your tags and some meta data.
-* `--export-recurring`. Create a file with all your recurring transactions and some meta data.
-* `--export-rules`. Create a file with all your rules and some meta data.
-* `--export-bills`. Create a file with all your bills and some meta data.
-* `--export-piggies`. Create a file with all your piggy banks and some meta data.
+* `--export-transactions`. Create a file with all your transactions and their metadata. This flag and the other flags can be combined.
+* `--export-accounts`. Create a file with all your accounts and some metadata.
+* `--export-budgets`. Create a file with all your budgets and some metadata.
+* `--export-categories`. Create a file with all your categories and some metadata.
+* `--export-tags`. Create a file with all your tags and some metadata.
+* `--export-recurring`. Create a file with all your recurring transactions and some metadata.
+* `--export-rules`. Create a file with all your rules and some metadata.
+* `--export-bills`. Create a file with all your bills and some metadata.
+* `--export-piggies`. Create a file with all your piggy banks and some metadata.
 * `--force`. Force overwriting of previous exports if found.
 
 Keep in mind that on Docker, you must export to `./storage/export` to have the files available on your own system.

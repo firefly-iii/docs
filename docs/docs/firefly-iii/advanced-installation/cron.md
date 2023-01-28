@@ -1,51 +1,30 @@
 # Cron jobs
 
-TODO clean me up
+Firefly III has several feature that will only work when the cron job is running.
 
-Firefly III supports several feature that requires you to run a cron job:
-
-1. [Recurring transactions](../financial-concepts/recurring.md). Firefly III can automatically create transactions for you. If Firefly III is to actually create these recurring transactions for you, someone or something must verify every single day if a new transaction is due to be created.
-2. [Automatic budgeting](../financial-concepts/organizing.md). Firefly III can automatically set your budgets for you.
-3. [Warnings about bills](../financial-concepts/bills.md). Firefly III will warn you when bills are ending or expected to be renewed or cancelled.
-4. TODO also currencies
-
-TODO list is not interesting.
-
-## Running the cron job
-
-Here are several ways to run the cron job:
-
-### Calling a command
+## Calling a command
 
 If you are a bit of a Linux geek you can set up a cron job easily by running `crontab -e` on the command line. Some users may have to run `sudo crontab -u www-data -e` so the correct user will be referred to.
-
-The content of the cron job must be as follows:
 
 ```   
 # cron job for Firefly III
 0 3 * * * /usr/bin/php /var/www/html/artisan firefly-iii:cron
 ```
 
-You must make sure to verify `/usr/bin/php` with *your* path to PHP and replace `/var/www/html/` with the path to *your* Firefly III installation.
+## Request a page over the web
 
-If you do this, Firefly III will generate the recurring transactions each night at 3AM.
-
-### Request a page over the web
-
-If for some reason you can't call scripts like this you can also use a tool called cURL which is available on most (if not all) linux systems.
-
-The content of the cron job must be as follows:
+You can also use a tool called cURL.
 
 ```
 # cron job for Firefly III using cURL
 0 3 * * * curl https://demo.firefly-iii.org/api/v1/cron/[token]
 ```
 
-Of course you must replace the URL with the URL of your own Firefly III installation. The `[token]` value can be found on your `/profile` under the "Command line token" header. This will prevent others from spamming your cron job URL.
+The `[token]` value can be found on your `/profile` under the "Command line token" header. This will prevent others from spamming your cron job URL.
 
-### Use the systemd timer
+### Systemd timer
 
-If you prefer you can use `systemd` to run the jobs on a recurring schedule similar to cron. You will need to create two files: a unit file and a timer file.
+You can use `systemd` to run the jobs on a recurring schedule similar to cron. You will need to create two files: a unit file and a timer file.
 
 Begin by creating a new file instructing systemd what to run, `firefly-iii-cron.service`.
 
@@ -59,7 +38,7 @@ Type=oneshot
 ExecStart=/usr/bin/php /var/www/html/artisan firefly-iii:cron
 ```
 
-You will want to change the Requires= line to match the services that you are actually running. In this example we are using httpd (Apache), PHP FastCGI Process Manager (FPM), and PostgreSQL. Similarly, change the path to *your* path to the PHP binary and the path to *your* Firefly III installation.
+You will want to change the `Requires=` line to match the services that you are actually running. In this example we are using httpd (Apache), PHP FastCGI Process Manager (FPM), and PostgreSQL. Similarly, change the path to *your* path to the PHP binary and the path to *your* Firefly III installation.
 
 Next create a new file for the timer specification, `firefly-iii-cron.timer`.
 
@@ -76,9 +55,9 @@ WantedBy=timers.target
 
 Copy these files to `/etc/systemd/system`. You must then enable (`systemctl enable firefly-iii-cron.timer`) and start (`systemctl start firefly-iii-cron.timer`) the timer. Verify the timer is registered with `systemctl --list-timers`. You may also want to run the service once manually to ensure it runs successfully: `systemctl start firefly-iii-cron.service`. You can check the results with `journalctl -u firefly-iii-cron`.
 
-### Make IFTTT do it
+## IFTTT
 
-If you can't run a cron job, you can always make [If This, Then That (IFTTT)](https://ifttt.com) do it for you. This will only work if your Firefly III installation can be reached from the internet. Here's what you do.
+You can always use [If This, Then That (IFTTT)](https://ifttt.com). This will only work if your Firefly III installation can be reached from the internet. Here's what you do.
 
 Login to IFTTT (or register a new account) and create a new applet:
 
@@ -116,7 +95,7 @@ Enter the URL in the following format. Keep in mind that the image shows the WRO
 
 `https://your-firefly-installation.com/api/v1/cron/[token]`
 
-Of course you must replace the URL with the URL of your own Firefly III installation. The `<token>` value can be found on your `/profile` under the "Command line token" header. This will prevent others from spamming your cron job URL.
+The `[token]` value can be found on your `/profile` under the "Command line token" header. This will prevent others from spamming your cron job URL.
 
 ![The result of setting up IFTTT](images/ifttt-result.png)
 
@@ -132,11 +111,11 @@ Press Finish, and you're done!
 
 ## Cron jobs in Docker
 
-The Docker image does *not* support cron jobs. This is by design, because Docker images are designed to do one task. There are several solutions however.
+The Docker image does *not* support cron jobs.
 
 ### Static cron token
 
-If you use Docker you may have noticed that in order to get the `<TOKEN>` mentioned all the time, you must first launch Firefly III, get the token from your profile, update the Docker configuration and then restart everything. Since this is hugely annoying, you may also set the `STATIC_CRON_TOKEN` to a string of **exactly** 32 characters. This will also be accepted as cron token. For example, use `-e STATIC_CRON_TOKEN=klI0JEC7TkDisfFuyjbRsIqATxmH5qRW`. Then, you can do:
+Set the `STATIC_CRON_TOKEN` to a string of **exactly** 32 characters. This will also be accepted as cron token. For example, use `-e STATIC_CRON_TOKEN=klI0JEC7TkDisfFuyjbRsIqATxmH5qRW`.
 
 ```
 # cron job for Firefly III using cURL
@@ -153,13 +132,7 @@ Use any tool or system to call the URL. See the preceding documentation.
 The command would be something like this:
 
 ```
-0 3 * * * docker exec <container> /usr/local/bin/php /var/www/html/artisan firefly-iii:cron
-```
-
-Instead of `<container>`, write the container ID or write `firefly_iii_app` in case of Docker compose. If you want, you can replace `<container>` in the following piece of code, that will automatically insert the correct container ID. Keep in mind, it may need some fine tuning!
-
-```
-$(docker container ls -a -f name=firefly --format="{{.ID}}")
+0 3 * * * docker exec $(docker container ls -a -f name=firefly --format="{{.ID}}") /usr/local/bin/php /var/www/html/artisan firefly-iii:cron
 ```
 
 ### Run an image that calls the cron job
@@ -167,10 +140,11 @@ $(docker container ls -a -f name=firefly --format="{{.ID}}")
 Here's an example:
 
 ```
-docker create --name=Firefly-Cronjob alpine sh -c "echo \"0 3 * * * wget -qO- <Firefly III URL>/api/v1/cron/<TOKEN>\" | crontab - && crond -f -L /dev/stdout"
+docker create --name=FireflyIII-Cronjob alpine \
+    sh -c "echo \"0 3 * * * wget -qO- https://demo.firefly-iii.org/api/v1/cron/[TOKEN]\" | crontab - && crond -f -L /dev/stdout"
 ```
 
-Write your Firefly III URL in the place of `<Firefly III URL>` and put your command line token in the place of `<TOKEN>`. Both are can be found in your profile.
+The `[token]` value can be found on your `/profile` under the "Command line token" header.
 
 If you do not know the Firefly III URL, you can also use the Docker IP address.
 
@@ -179,12 +153,10 @@ If you do not know the Firefly III URL, you can also use the Docker IP address.
 ```
 cron:
   image: alpine
-  command: sh -c "echo \"0 3 * * * wget -qO- http://app:8080/api/v1/cron/<TOKEN>\" | crontab - && crond -f -L /dev/stdout"
+  command: sh -c "echo \"0 3 * * * wget -qO- http://app:8080/api/v1/cron/[TOKEN]\" | crontab - && crond -f -L /dev/stdout"
 ```
 
-Write your Firefly III URL in the place of `<Firefly III URL>` and put your command line token in the place of `<TOKEN>`. Both are can be found in your profile.
-
-You can also use `app` which is the default host name for Firefly III. Take note how this uses port 8080.
+The `[token]` value can be found on your `/profile` under the "Command line token" header.
 
 ## Extra information
 

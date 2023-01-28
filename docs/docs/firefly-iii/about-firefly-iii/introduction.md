@@ -1,10 +1,8 @@
 # Introduction and features
 
-TODO patch me up
-
 "Firefly III" is a (self-hosted) manager for your personal finances. It can help you keep track of your expenses and income, so you can spend less and save more.
 
-Personal financial management is pretty difficult, and everybody has their own approach to it. Some people make budgets, other people limit their cashflow by throwing away their credit cards, others try to increase their current cashflow. There are tons of ways to save and earn money. Firefly III works on the principle that if you know where your money is going, you can stop it from going there.
+Personal financial management is pretty difficult, and everybody has their own approach to it. Some people make budgets, other people limit their cash-flow by throwing away their credit cards, others try to *increase* their current cash-flow. There are tons of ways to save and earn money. Firefly III works on the principle that if you know where your money is going, you can stop it from going there.
 
 By keeping track of your expenses and your income you can budget accordingly and save money. Stop living from paycheck to paycheck but give yourself the financial wiggle room you need.
 
@@ -21,7 +19,7 @@ Firefly III can do the following things:
 - You can create and edit transactions, accounts, and give them budgets, categories and tags.
 - You can automate part of this with recurring transactions and auto-budgets.
 - You can keep track of liabilities.
-- You can [import data](../importing-data/index.md) into Firefly III from almost any bank.
+- You can **[import data](../importing-data/index.md)** into Firefly III from almost any bank.
 
 ## Important details:
 
@@ -54,9 +52,9 @@ Also interesting:
 
 And the things you would hope for but not expect:
 
-* 2 factor authentication for extra security 🔒
-* Supports any currency you want, including crypto currencies such as ₿itcoin and Ξthereum
-* There is a Docker image, a Sandstorm.io grain and an Heroku script.
+* 2-factor authentication for extra security 🔒
+* Supports any currency you want
+* There is a Docker image available
 * Lots of help text in case you don't get it
 
 And to organise everything:
@@ -65,4 +63,4 @@ And to organise everything:
 * Easy navigation through your records
 * Browse back and forth to see previous months or even years
 * Lots of charts because we all love them
-* If you feel you’re missing something you can just ask me and I'll add it!
+* If you feel you’re missing something you can just ask me, and I'll add it!

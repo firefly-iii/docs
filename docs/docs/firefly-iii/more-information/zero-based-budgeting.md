@@ -25,7 +25,7 @@ I keep all my money on my savings account. My checking account only has the mone
 
 In real life, long-term saving goals and short term budgets are two different things. I have five budgets every month. Not 30 or 40. Just five: "Bills", "groceries", "misc", "going out" and "work-related". I need no other budgets, because I have no other expenses outside of these budgets.
 
-Of course, I can split "misc" into multiple budgets. I used to have a "going out"-budget, but that was before COVID-19. I should think about a "online"-budget because I spend money every month on games and apps.
+Of course, I can split "misc" into multiple budgets. I used to have a "going out"-budget, but that was before COVID-19. I should think about an "online"-budget because I spend money every month on games and apps.
 
 Either way, these are my short-term goals, the money I *need* every month to live. Any other expenses are incidental and don't need a budget. At most, a category to group them in. But no budget.
 
@@ -35,7 +35,7 @@ For each (future) large expense I have a piggy bank connected to my savings acco
 
 ## Conclusion
 
-I believe you should skip on zero-based budgeting tools. They are easier to learn and easier to use, it's absolutely true. Most zero-based budgeting tools (especially the commercial ones) are also way better looking and more user friendly than Firefly III.
+I believe you should skip on zero-based budgeting tools. They are easier to learn and easier to use, it's absolutely true. Most zero-based budgeting tools (especially the commercial ones) are also way better looking and more user-friendly than Firefly III.
 
 But also keep in mind: it's harder to spend less money with zero-based budgeting. It's harder to get a feeling for your financial situation with zero-based budgeting, and it's especially harder to *change* anything. And is that not why you started looking at these tools?
 

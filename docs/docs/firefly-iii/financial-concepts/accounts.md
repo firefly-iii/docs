@@ -69,7 +69,7 @@ Once created Firefly III keeps track of the amounts for you. Here are the two sc
 
 #### Debtor
 
-You take out student loans or a mortgage and you keep track of paying it back in Firefly III. You may set the amount due as the **start amount**. You can also start with an empty loan and transfer money away from the loan to pay for stuff. Every transaction from your asset account to the liability means you're paying back your debts. When you transfer money from the liability to your asset account you're borrowing more money. If you transfer money from the liability to an expense account, this is like interest or fees. If money is put into the liability from a revenue account they are waiving fees or paying the loan back for you.
+You take out student loans or a mortgage, and you keep track of paying it back in Firefly III. You may set the amount due as the **start amount**. You can also start with an empty loan and transfer money away from the loan to pay for stuff. Every transaction from your asset account to the liability means you're paying back your debts. When you transfer money from the liability to your asset account you're borrowing more money. If you transfer money from the liability to an expense account, this is like interest or fees. If money is put into the liability from a revenue account they are waiving fees or paying the loan back for you.
 
 #### Creditor
 
@@ -86,7 +86,7 @@ You need a transaction when your friend pays you back the money.
 
 ## Deleting accounts
 
-If you delete an account, any associated transactions will be removed as well. If you're deleting an asset account and you've transferred money between the current asset account and other asset accounts, you might see changed balances all around. Remember to correct this, if necessary. You can move the transactions to a new account if you wish to preserve them.
+If you delete an account, any associated transactions will be removed as well. If you're deleting an asset account, and you've transferred money between the current asset account and other asset accounts, you might see changed balances all around. Remember to correct this, if necessary. You can move the transactions to a new account if you wish to preserve them.
 
 ## Unique account numbers and IBANs
 

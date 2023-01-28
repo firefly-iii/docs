@@ -1,14 +1,12 @@
 # Rules
 
-TODO clean me up
-
 Firefly III contains a powerful rule engine that can automatically update your transactions. It can do this when transactions are created or when they are changed. It works by combining "triggers" with "actions".
 
-This is especially useful when you're importing data and you wish all transactions to be updated at once. Or perhaps, you are too lazy to set the correct budget and category all the time so you make a rule to do this for you.
+This is especially useful when you're importing data, and you wish all transactions to be updated at once. Or perhaps, you are too lazy to set the correct budget and category all the time, so you make a rule to do this for you.
 
 ## Rule groups
 
-Rules are divided over rule groups. Each rule group has rules in a specific order.
+Rules are divided in rule groups. Each rule group has rules in a specific order.
 
 ## Triggers
 
@@ -23,7 +21,7 @@ All triggers are case-insensitive.
 
 Rules can be set to be "strict" or not. If a rule is set to be strict, ALL triggers must match for the rule to fire. If a rule is not strict, ANY trigger is enough. 
 
-Triggers can be inversed.
+Triggers can be inverted.
 
 !!! info
     This can be useful if you wish to match multiple descriptions in one same rule, for example. If your transactions are described "groceries" or "went shopping" or "got food" then a *non-strict* rule could match all of them by adding 3 triggers with different content.
@@ -96,7 +94,7 @@ You can do this with the format `xxxx-xx-xx` where you change any set of `xx` in
 You can also make some advanced combinations:
 
 - `2017-xx-03`. Will trigger on the 3rd of the month, but only in 2017.
-- `2018-09-xx`. Will trigger on any day in September, 2018.
+- `2018-09-xx`. Will trigger on any day in September 2018.
 - `xxxx-08-07`. Will trigger on August 7th, whatever the year.
 
 So you could say "Transaction date is before" `xxxx-xx-10` and any transaction before the 10th of the month is triggered.
@@ -126,9 +124,9 @@ If you use this trigger, the transaction will be deleted. There is no undo.
 
 ## Stop processing
 
-When you create a new rule, you can set an option called "stop processing". If you set it, and the rule is triggered, other rules in the group will NOT be processed any more.
+When you create a new rule, you can set an option called "stop processing". If you set it, and the rule is triggered, other rules in the group will NOT be processed anymore.
 
-For any trigger, you can also set the "stop processing" option. If you do, and the trigger is hit, it will stop processing other triggers in the rule. Whether or not the actions get executed depends on how many triggers were fired so far. If you hit 2 out of 2 when "stop processing" was hit, the actions will fire.
+For any trigger, you can also set the "stop processing" option. If you do, and the trigger is hit, it will stop processing other triggers in the rule. Whether the actions get executed depends on how many triggers were fired so far. If you hit 2 out of 2 when "stop processing" was hit, the actions will fire.
 
 For each action, you can set "stop processing" as well. When you do, any actions after the current one will not fire.
 
@@ -159,7 +157,7 @@ If you leave the action value blank, the new revenue account will be named after
 
 **From a transfer to a deposit.**
 
-Firefly III will replace the "source" asset account with an revenue account. So, a transfer from your Savings Account to your Checking Account will be converted into a deposit into your Checkings Account from Account X, where X is a revenue account. The "action value" you must provide must be the name of a valid revenue account. If it does not exist, it will be created.
+Firefly III will replace the "source" asset account with a revenue account. So, a transfer from your Savings Account to your Checking Account will be converted into a deposit into your Checkings Account from Account X, where X is a revenue account. The "action value" you must provide must be the name of a valid revenue account. If it does not exist, it will be created.
 
 If you leave the action value blank, the new revenue account will be named after the original source asset account.
 

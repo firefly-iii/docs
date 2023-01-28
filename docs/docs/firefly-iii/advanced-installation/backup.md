@@ -1,12 +1,6 @@
 # Backup
 
-TODO clean me up
-
-Firefly III does not come with a built-in backup routine. Using your native OS tools is way more useful and faster. 
-
-!!! warning
-    The export function of Firefly III is *not* a backup mechanism
-
+Firefly III does not come with a built-in backup routine. Using your native OS tools is way more useful and faster. The export function of Firefly III is *not* a backup mechanism
 
 ## Self-hosted backup
 
@@ -20,7 +14,7 @@ The database can be exported using tools like phpMyAdmin or pgAdmin.
 
 ## Docker
 
-If you're running Firefly III in Docker, backup the following:
+If you're running Firefly III in Docker, back up the following:
 
 - The Docker variables you've used to launch the container (s), and especially the `APP_KEY`-variable.
 - Any secrets you have used (database passwords).
@@ -30,18 +24,22 @@ That way you have everything you need in case of problems.
 
 ### Manual backup using Docker
 
-To backup the database volume, you could run something like this.
+To back up the database volume, you could run something like this.
 
-Backup with the following command:
+Back up with the following command:
 
 ```bash
-docker run --rm -v "firefly_iii_db:/tmp" -v "$HOME/backups/firefly:/backup" ubuntu tar -czvf /backup/firefly_db.tar /tmp
+docker run --rm -v "firefly_iii_db:/tmp" \
+    -v "$HOME/backups/firefly:/backup" \
+    ubuntu tar -czvf /backup/firefly_db.tar /tmp
 ```
 
 And restore with:
 
 ```bash
-docker run --rm -v "firefly_iii_db:/recover" -v "$HOME/backups/firefly:/backup" ubuntu tar -xvf /backup/firefly_db.tar -C /recover --strip 1
+docker run --rm -v "firefly_iii_db:/recover" \
+    -v "$HOME/backups/firefly:/backup" \
+    ubuntu tar -xvf /backup/firefly_db.tar -C /recover --strip 1
 ```
 
 A word of caution: Check that the volume exists **before** trying to back it up. If a named volume doesn't exist Docker will create an empty one, and the command will backup that empty volume. This *wipes out the existing backup*.

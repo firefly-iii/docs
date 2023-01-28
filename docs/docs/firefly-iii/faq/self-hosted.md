@@ -1,10 +1,8 @@
 # Self-hosting
 
-TODO clean me up
-
 ## I get syntax errors or other problems when opening Firefly III?
 
-You're probably not running the correct version of PHP, or your Apache / nginx server is not correctly configured for the right PHP version. At the moment, you need **PHP %PHPVERSION**.
+You're not running the correct version of PHP, or your Apache / nginx server is not correctly configured for the right PHP version. At the moment, you need **PHP %PHPVERSION**.
 
 Errors you can expect to see if you're not running **PHP %PHPVERSION**:
 
@@ -22,7 +20,7 @@ That should tell you what you need to know. You can find update and upgrade inst
 
 ## Firefly III is very slow
 
-There are several reasons why this may be the case. Try the following suggestions.
+Try the following suggestions.
 
 - From discussion [#5051](https://github.com/firefly-iii/firefly-iii/discussions/5051): Add `fastcgi_buffering off;` to the `server {}` section of your nginx configuration.
 
@@ -60,15 +58,13 @@ location @budget {
 
 ## I want to use SQLite?
 
-There is not much to it. However, be warned. SQLite support is best-effort and it's not an efficient database driver for Firefly III. I strongly advice against it. Having said that:
-
 Open your `.env` file and find the lines that begin with `DB_`. These define your database connection. Leave `DB_CONNECTION` and set it to `sqlite`. Delete the rest.
 
 ```text
 DB_CONNECTION=sqlite
 ```
 
-Then, in order to install the database, make sure the file `/storage/database/database.sqlite` exists. When it does not exist, you can use this command on Linux to create it:
+In order to install the database, make sure the file `/storage/database/database.sqlite` exists. When it does not exist, you can use this command on Linux to create it:
 
 ```text
 touch ./storage/database/database.sqlite
@@ -80,8 +76,6 @@ Then you are ready to install the database in SQLite:
 php artisan migrate --seed
 php artisan firefly-iii:upgrade-database
 ```
-
-And presto!
 
 ## I want to use PostgreSQL?
 
@@ -137,48 +131,17 @@ No. The code has been written specifically for PHP %PHPVERSION and higher.
 
 No. The code has been written specifically for PHP %PHPVERSION and higher.
 
+## Can I use it on PHP 8.0 or 8.1?
+
+No. The code has been written specifically for PHP %PHPVERSION and higher.
+
 ## It is very slow on my server?
 
 Raspberry Pi's and other microcomputers are not the most speedy devices. User [ndandanov](https://github.com/ndandanov) has very kindly tested what works best, and found out that [installing PHP OpCache is a very good way to speed up Firefly III](https://github.com/firefly-iii/firefly-iii/issues/1095#issuecomment-356975735).
 
 ## Decimal points are missing, numbers are off?
 
-When Firefly III is showing amounts without decimal places or other weird things, or you have gotten a blue warning bar, your server is missing vital locale information. There are packages you must install to make sure Firefly III can format amounts. Heroku doesn't have good support for Chinese. This may not be something I can fix.
-
-Ensure with `dpkg-reconfigure` locales that the language you want to use is installed, then reboot Apache or Nginx (webserver) and if necessary, PHP FPM.
-
-In order to make the demo site work (it’s an Ubuntu server) I run these commands:
-
-```text
-sudo apt-get install -y language-pack-nl-base
-sudo locale-gen
-```
-
-You can see which locales your system has by running
-
-```text
-locale -a
-```
-
-Depending on your language, a specific list of locales is tried by Firefly III. They can be found on [GitHub](https://github.com/firefly-iii/firefly-iii/tree/main/resources/lang). Open the directory of your language, then open `config.php` and look for the line `locale`.
-
-When it still does not work (did you reboot?) please [_open an issue_](https://github.com/firefly-iii/firefly-iii/issues).
-
-### On Docker:
-
-```text
- docker exec -it --user root [container] bash
-```
-
-Then, in the container:
-
-Change "nl\_BE" to your locale. Leave the rest.
-
-```text
-echo "nl_BE.UTF-8 UTF-8" >> /etc/locale.gen
-locale-gen
-service apache2 reload
-```
+See "[Locales](../advanced-installation/locales.md)".
 
 ## I get 'Unexpected question mark'?
 
@@ -234,9 +197,9 @@ sudo semanage fcontext -a -t httpd_sys_rw_content_t "/path/to/firefly-iii/storag
 sudo restorecon -R /path/to/firefly-iii/storage
 ```
 
-## I am trying to upgrade but I get "Foreign key constraint is incorrectly formed"
+## I am trying to upgrade, but I get "Foreign key constraint is incorrectly formed"
 
-This could happen when you upgrade a Firefly III installation with MySQL. The cause is that the tables used by Firefly III are stored under the "MyISAM" engine while Firefly III assumes these are stored using the "InnoDB" engine. To fix this, use a program like Sequel Pro or phpMyAdmin and change the engine of all your Firefly III tables to "InnoDB", _before_ you try to upgrade.
+This could happen when you upgrade a Firefly III installation with MySQL. To fix this, use a program like Sequel Pro or phpMyAdmin and change the engine of all your Firefly III tables to "InnoDB", _before_ you try to upgrade.
 
 ## Unable to write to cache directory?
 
