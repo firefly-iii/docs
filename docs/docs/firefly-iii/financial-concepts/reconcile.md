@@ -32,7 +32,7 @@ Read below to see what to do next.
 
 ### Transactions not listed on bank statement
 
-If you have a transaction in Firefly III that is not on your bank statement, it may have been saved with the wrong data. You should remove it from Firefly III, or change it so it matches a known transaction from your bank statements.
+If you have a transaction in Firefly III that is not on your bank statement, it may have been saved with the wrong data. You should remove it from Firefly III, or change it, so it matches a known transaction from your bank statements.
 
 ### Transactions not listed in Firefly III
 

@@ -22,7 +22,7 @@ When triggered, Firefly III will respond by sending a data package to the URL of
 - Send the accounts involved
 - Send nothing
 
-A webhook can only send one thing. If you want multiple things to be sent for the same webhook, you must setup multiple webhooks.
+A webhook can only send one thing. If you want multiple things to be sent for the same webhook, you must set up multiple webhooks.
 
 ## Delivery
 
@@ -36,7 +36,7 @@ You can manage webhooks using [the webhook API endpoints](https://api-docs.firef
 
 ## Secret
 
-Each webhook comes with a secret when created. The secret is used to generate the signature (see below). You can regenerate the secret but you can't set a value yourself.
+Each webhook comes with a secret when created. The secret is used to generate the signature (see below). You can regenerate the secret, but you can't set a value yourself.
 
 ## Webhook limits
 

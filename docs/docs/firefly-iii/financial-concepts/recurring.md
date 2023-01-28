@@ -29,7 +29,7 @@ Some notes apply:
 
 You can make Firefly III skip every X occurrences.
 
-If the date the transaction should repeat is in the weekend, Firefly III can automatically:
+If the date of the transaction should repeat is in the weekend, Firefly III can automatically:
 
 - Skip the transaction altogether.
 - Create the transaction on the Friday before instead. Please note that your recurring transaction will appear to fire a day early.

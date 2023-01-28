@@ -41,7 +41,7 @@ To find out which container is Firefly III, run `docker container ls -a`.
 docker pull fireflyiii/core:latest
 ```
 
-And then create it again by running the command from the installation guide. The container should upgrade itself so it can take some time for it to start. You can save the command you've used to start the container for quicker upgrade.
+And then create it again by running the command from the installation guide. The container should upgrade itself, so it can take some time for it to start. You can save the command you've used to start the container for quicker upgrade.
 
 If you want to run the Docker container as another user, add `--user=`. Possible values are `user`, `user:group`,`uid`, `uid:gid`, `user:gid`, `uid:group`.
 
@@ -61,7 +61,7 @@ cp firefly-iii/storage/upload/* firefly-iii-updated/storage/upload/
 cp firefly-iii/storage/export/* firefly-iii-updated/storage/export/
 ```
 
-If you use SQLite as a database system (you will know if you do) copy your database as well. Otherwise the `.env`-file is enough.
+If you use SQLite as a database system (you will know if you do) copy your database as well. Otherwise, the `.env`-file is enough.
 
 Then, run the following commands to finish the upgrade:
 

@@ -24,7 +24,7 @@ You can hack your installation of Firefly III to make it show your language, eve
 
 ### Enable the language
 
-First, open `app/config/firefly.php` in your favorite text editor and search for the languages configuration. You should see a bunch of languages listed in a row:
+First, open `app/config/firefly.php` in your favorite text editor and search for the languages' configuration. You should see a bunch of languages listed in a row:
 
 ![Enabled languages](images/enabled.png)
 

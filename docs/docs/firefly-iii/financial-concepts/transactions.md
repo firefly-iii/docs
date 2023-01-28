@@ -44,7 +44,7 @@ A transfer is created only between existing asset accounts. Select an asset acco
 
 ## Split transactions
 
-What has been described here are singular transactions. Firefly III stores each financial transaction in a journal. Each journal contains two "transactions". One takes money (-250 from your bank account) and the other one puts it into another account (+250 for Amazon.com).
+What has been described here are "singular transactions". Firefly III stores each financial transaction in a journal. Each journal contains two "transactions". One takes money (-250 from your bank account) and the other one puts it into another account (+250 for Amazon.com).
 
 You can verify this by counting. There are always twice as many "transactions" as there are "journals" in your database.
 

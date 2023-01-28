@@ -34,11 +34,11 @@ I am looking for ways to make it easier to look at charts with multiple currenci
 
 ### Sub-categories, sub-budgets, sub-accounts
 
-Firefly III knows many ways to organise your data, but there are no "sub-levels". Instead, most objects like piggy banks or bills can be divided in "groups" which serve a similar purpose. There are also tags to make things very fine-grained.
+Firefly III knows many ways to organise your data, but there are no "sublevels". Instead, most objects like piggy banks or bills can be divided in "groups" which serve a similar purpose. There are also tags to make things very fine-grained.
 
 ### Keep track of outgoing loans
 
-Sometimes you borrow your friends money, and you want to keep track of the loan. It's possible [to track paybacks](../faq/financials.md#what-do-i-do-with-people-who-pay-me-back) in a limited fashion. A full implementation will be included in a future release.
+Sometimes you borrow your friend's money, and you want to keep track of the loan. It's possible [to track paybacks](../faq/financials.md#what-do-i-do-with-people-who-pay-me-back) in a limited fashion. A full implementation will be included in a future release.
 
 ### Share your administration
 
@@ -48,8 +48,8 @@ Firefly III is a multi-user environment. But each user is strictly separated fro
 
 A month goes from the 1st to the last day of the month. You can't tell Firefly III to go from the 23rd to the 22nd of the next month.
 
-### More complicated rules, like AND or OR, copy/pasting values, etc
+### More complicated rules, like Boolean logic, copy/pasting values, etc
 
-The rule engine could be a lot more complex. Things like conditional rules, if-then-else, regular expressions or variables. These are all technically possible. However, the rule engine must also be usable and easy to be introduced to. Most rule engines, even the filters in GMail, are very complex because of user demands and as a result, nobody uses them any more.
+The rule engine could be a lot more complex. Things like conditional rules, if-then-else, regular expressions or variables. These are all technically possible. However, the rule engine must also be usable and easy to be introduced to. Most rule engines, even the filters in GMail, are very complex because of user demands and as a result, nobody uses them anymore.
 
 For Firefly III, the current features of the engine will not be expanded. If you have a suggestion, please consider that your suggested trigger or action is simple.

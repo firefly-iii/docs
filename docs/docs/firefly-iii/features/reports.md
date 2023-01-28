@@ -15,7 +15,7 @@ The URLs for reports look something like this: `/reports/default/1,2,3/20180101/
 * `default` denotes the report type
 * `1,2,3` is the list of asset accounts included in this report.
 
-In this example, it not difficult to see that `20180101` and `20180131` are dates: January 1st, 2018 and January 31th, 2018 respectively.
+In this example, it is not difficult to see that `20180101` and `20180131` are dates: January 1st, 2018 and January 31st, 2018 respectively.
 
 You can change these dates to your liking. There are a few magic words available that you can use instead of the exact date:
 

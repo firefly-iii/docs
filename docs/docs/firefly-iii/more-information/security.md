@@ -8,13 +8,13 @@ The database is not encrypted, and data in the tables of the database is readabl
 
 When you connect your Firefly III instance to the internet, make sure that the database can't be connected to from the web, but only from localhost. Preferrably, the database host can only be reached from the Firefly III host.
 
-ID's used for objects in Firefly III are incremental numbers. Logged in users may infer the existence of objects owned by other users by changing the ID in the address bar and observing 404's. This is not possible for guests.
+ID's used for objects in Firefly III are incremental numbers. Logged-in users may infer the existence of objects owned by other users by changing the ID in the address bar and observing 404's. This is not possible for guests.
 
 Up until [Firefly III v4.7.9](https://github.com/firefly-iii/firefly-iii/releases/tag/4.7.9) (December 2018) the database was partially encrypted by Firefly III. Descriptions and other values were encrypted using AES and decrypted transparently. This adds security because if the database is taken, the values are unreadable without the key. This is no longer the case.
 
 ## Sessions and logins
 
-Sessions are not tied to an IP address. Use 2FA when you can, which is a feature of Firefly III. There is a button on the `/profile` page that allows you to logout other sessions so you can make sure there's a limited number of logged in sessions out there.
+Sessions are not tied to an IP address. Use 2FA when you can, which is a feature of Firefly III. There is a button on the `/profile` page that allows you to logout other sessions, so you can make sure there's a limited number of logged-in sessions out there.
 
 After the first user has registered themselves, future registrations are blocked. It can be enabled again under `/admin`. Each user is strictly separated from other users. Users can't see or detect other users, although they can infer their existence through their user ID (see the preceding text).
 
@@ -52,13 +52,13 @@ A public/private keypair is generated to be used for the signing of API keys (Pe
 
 ## Export
 
-Logged in users can download an export of their data from the user interface (under `/export`). On the command line, users can export data and store it in any directory writeable to the user using the `firefly-iii:export-data` command. To use this command you'll need a special access token, which can be found under the `/profile` page. This token is strictly personal.
+Logged-in users can download an export of their data from the user interface (under `/export`). On the command line, users can export data and store it in any directory writeable to the user using the `firefly-iii:export-data` command. To use this command you'll need a special access token, which can be found under the `/profile` page. This token is strictly personal.
 
 ## TLS
 
-Firefly III does not come with TLS enabled. This is up to you to setup. It does support it however. The Docker image can be protected using a reverse proxy setup, where the reverse proxy enables TLS. When self-hosting, this is up to you to configure.
+Firefly III does not come with TLS enabled. This is up to you to set up. It does support it, however. The Docker image can be protected using a reverse proxy setup, where the reverse proxy enables TLS. When self-hosting, this is up to you to configure.
 
-Firefly III supports a SSL connection to the database, when using MySQL or PostgreSQL. This is disabled by default.
+Firefly III supports an SSL connection to the database, when using MySQL or PostgreSQL. This is disabled by default.
 
 ## Docker secrets
 
@@ -80,7 +80,7 @@ Bugs may also appear (and thus leak sensitive information) on pages not protecte
 
 ## Logging
 
-By default Firefly III outputs its logs to `stdout` and to a file in `/storage/logs`. That means that users who have permission to read these files or permission to the Docker engine can trace the log files and extract personal information from them. You can set the `APP_LOG_LEVEL` to `error` to prevent the logging of most information or to `emergency` to prevent the logging of any information. When using Docker, keep in mind that Apache2 will keep logging each http request.
+By default, Firefly III outputs its logs to `stdout` and to a file in `/storage/logs`. That means that users who have permission to read these files or permission to the Docker engine can trace the log files and extract personal information from them. You can set the `APP_LOG_LEVEL` to `error` to prevent the logging of most information or to `emergency` to prevent the logging of any information. When using Docker, keep in mind that Apache2 will keep logging each http request.
 
 Even logging just error information may leak data.
 
