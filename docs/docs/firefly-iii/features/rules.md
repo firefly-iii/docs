@@ -133,7 +133,7 @@ For each action, you can set "stop processing" as well. When you do, any actions
 
 ## Converting to another transaction type
 
-If you set an action to convert your transaction to a deposit, a transfer or a withdrawal, make sure that you configure the rule action correctly. If you don't do this right the rule action wil *silently* fail and nothing will happen. Here you can read what will happen to your transaction. This is dependent on the original type and the future type of the transaction.
+If you set an action to convert your transaction to a deposit, a transfer or a withdrawal, configure the rule action correctly. If you don't do this right the rule action wil *silently* fail and nothing will happen. Here you can read what will happen to your transaction. This is dependent on the original type and the future type of the transaction.
 
 These conversions will *not* be applied to split transactions.
 

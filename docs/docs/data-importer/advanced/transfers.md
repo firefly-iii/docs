@@ -11,7 +11,7 @@ Firefly III determines the transaction type based on the *source* and *destinati
 !!! info
 If your CSV files contain very little information on the opposing account (either the source or the destination) this will be difficult to do right.
 
-Use any of the following strategies to make sure that accounts are properly recognized.
+Use any of the following strategies to so accounts are properly recognized.
 
 ### Default account
 
@@ -31,7 +31,7 @@ If your file contains IBAN's or account numbers, definitely use them to link the
 
 ### Store IBANs and account numbers
 
-When you create new asset accounts in Firefly III, always store an IBAN or account number. This will improve the (auto) mapping and make sure that transactions are linked.
+When you create new asset accounts in Firefly III, always store an IBAN or account number. This will improve the (auto) mapping and link transactions.
 
 ### Test, test, test
 

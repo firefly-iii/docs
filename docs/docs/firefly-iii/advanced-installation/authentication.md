@@ -45,7 +45,7 @@ Once you're authenticated by the proxy Firefly III will receive the request with
 
 As a troubleshooting step, try setting the `AUTHENTICATION_GUARD_HEADER` environment variable to `HTTP_REMOTE_USER`.  If this doesn't work, unset the `AUTHENTICATION_GUARD_HEADER` environment variable and make the change below.
 
-Make sure that the header is forwarded to Firefly III. For example, add the following lines to `public/.htaccess`.
+The header must be forwarded to Firefly III. For example, add the following lines to `public/.htaccess`.
 
 ```
     RewriteCond %{HTTP:REMOTE_USER} .

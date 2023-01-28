@@ -75,7 +75,7 @@ Consists of:
 - Transaction payment date
 - Transaction invoice date
 
-These are meta-dates related to the transaction you can set. Import these dates to make sure the data isn't lost.
+These are meta-dates related to the transaction you can set. Import these dates so data isn't lost.
 
 Most people use the date that is closest to the actual transaction date as the main date (see earlier in the text about the "date" field). The other dates can be stored pretty much as you wish.
 

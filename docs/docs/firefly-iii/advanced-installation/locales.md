@@ -46,4 +46,4 @@ If your server is missing the required packages, Firefly III won't be able to sh
 
 ### Select the correct locale
 
-Make sure you select "Hungarian (Hungarian)" and not "Hungarian". The list of locales is pretty specific so "hu" may not work on your system but "hu_HU" does.
+Select "Hungarian (Hungarian)" and not "Hungarian". The list of locales is pretty specific so "hu" may not work on your system but "hu_HU" does.

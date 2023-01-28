@@ -20,7 +20,7 @@ If you edit a bill and change the amount, the rule will not be automatically upd
 
 ## Triggering a bill
 
-Once you have created a bill, Firefly III will suggest that you create a new rule that will match the bill. This rule is autofilled to trigger on obvious things like the amount of the bill and the description you entered. Make sure you fine-tune the rule so any new transactions will auto-match the rule.
+Once you have created a bill, Firefly III will suggest that you create a new rule that will match the bill. This rule is autofilled to trigger on obvious things like the amount of the bill and the description you entered. Fine-tune the rule so any new transactions will auto-match the rule.
 
 When you create a transaction with the following properties, it will match to the preceding example.
 

@@ -64,7 +64,7 @@ Open your `.env` file and find the lines that begin with `DB_`. These define you
 DB_CONNECTION=sqlite
 ```
 
-In order to install the database, make sure the file `/storage/database/database.sqlite` exists. When it does not exist, you can use this command on Linux to create it:
+In order to install the database, the file `/storage/database/database.sqlite` must exist. When it does not exist, you can use this command on Linux to create it:
 
 ```text
 touch ./storage/database/database.sqlite
@@ -90,9 +90,9 @@ php artisan firefly-iii:upgrade-database
 
 ## I see a white page and nothing else?
 
-Check out the log files in `storage/logs` to see what is going on. Please open a ticker if you are not sure what to do. If the logs are empty Firefly III cannot write to them. Make sure that the web server has write permissions in this directory. If the logs still remain empty, do you have a `vendor` directory in your Firefly III root? If not, run the Composer commands.
+Check out the log files in `storage/logs` to see what is going on. Please open a ticker if you are not sure what to do. If the logs are empty Firefly III cannot write to them. The web server must have write permissions in this directory. If the logs still remain empty, do you have a `vendor` directory in your Firefly III root? If not, run the Composer commands.
 
-If the pages remain empty, make sure you have enabled the rewrite module in Apache. If you're running nginx, use this as the "location" config:
+If the pages remain empty, check the rewrite module in Apache. If you're running nginx, use this as the "location" config:
 
 ```text
 location / {
@@ -182,11 +182,11 @@ pkg install php80-ctype
 
 ## I get 'Error: could not open input file artisan'?
 
-Make sure you run the artisan commands in the `firefly-iii` directory.
+Run the artisan commands in the `firefly-iii` directory.
 
 ## I get 'Error: call to undefined function numfmt\_create()'?
 
-Make sure you have installed and enabled the PHP intl extension.
+Verify you have installed and enabled the PHP intl extension.
 
 ## I run SELinux and I don't want to disable it. Now what?
 
@@ -212,5 +212,5 @@ If you're using Docker, this may also happen when you run "php artisan" commands
 
 * `docker exec -it <container> chown -R www-data:www-data /var/www/html/storage`
 
-If the problem persists make sure that you run your cron job as the "www-data" user so the cache directory doesn't get mixed up: `sudo -u www-data php artisan [..]`.
+If the problem persists run your cron job as the "www-data" user so the cache directory doesn't get mixed up: `sudo -u www-data php artisan [..]`.
 

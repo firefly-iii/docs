@@ -52,7 +52,7 @@ If you go to an ATM and withdraw an amount in dollars when you always work with 
 
 ![View a multi-currency cash withdrawal.](images/multi_2.png)
 
-If you use a separate cash account, you'll have to make sure the foreign currency is recorded correctly, _and_ you'll have to make a separate cash account to track these transactions.
+If you use a separate cash account, ensure the foreign currency is recorded correctly, _and_ make a separate cash account to track these transactions.
 
 ![Create a multi-currency cash transfer to your wallet.](images/multi_3.png)
 

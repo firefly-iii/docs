@@ -76,7 +76,7 @@ php artisan cache:clear
 cd ..
 ```
 
-To make sure your webserver serves you the new Firefly III:
+To ensure your webserver serves you the new Firefly III:
 
 ```bash
 mv firefly-iii firefly-iii-old
@@ -90,7 +90,7 @@ sudo chown -R www-data:www-data firefly-iii
 sudo chmod -R 775 firefly-iii/storage
 ```
 
-Make sure you remove any old PHP packages or at least, make sure they are not used by Apache and/or nginx. To disable old PHP versions in Apache, you can use:
+Remove any old PHP packages or at least, they must not be used by Apache and/or nginx. To disable old PHP versions in Apache, you can use:
 
 ```bash
 # to disable
@@ -105,7 +105,7 @@ This assumes you run Apache and your OS package manager can handle multiple PHP 
 
 ### Straight from GitHub
 
-Make sure you back up your entire installation directory, and database.
+Back up your entire installation directory, and database.
 
 Go to the `firefly-iii` folder and run these commands.
 

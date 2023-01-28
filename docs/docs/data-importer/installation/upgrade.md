@@ -39,7 +39,7 @@ mv /var/www/data-importer /var/www/old-data-importer
 mv /var/www/updated-data-importer /var/www/data-importer
 ```
 
-If necessary, use `sudo` to execute these commands, then make sure you correct the access rights with `chown`.
+If necessary, use `sudo` to execute these commands, then correct the access rights with `chown`.
 
 ```bash   
 sudo chown -R www-data:www-data data-importer

@@ -50,7 +50,7 @@ Optional information includes:
 - The foreign currency and amount, if you want to.
 - The category, budget, piggy bank and tags.
 
-If you wish to link a bill to the transaction, make sure that the option to apply rules is checked and that the new transaction would match this rule.
+If you wish to link a bill to the transaction, ensure the option to apply rules is checked and that the new transaction would match this rule.
 
 
 ## Cron job

@@ -64,7 +64,7 @@ If you start the database container with a `MYSQL_PASSWORD` that you change late
 
 This is caused by a permissions issue. Often, this is caused by cron jobs running under root, not `www-data`.
 
-Make sure all your Docker commands run as `www-data`, also in cron jobs:
+All your Docker commands must run as `www-data`, also in cron jobs:
 
 * `docker exec [container] --user www-data /usr/local/bin/php /var/www/html/artisan firefly-iii:cron`
 

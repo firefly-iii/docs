@@ -72,7 +72,7 @@ I made Firefly III open source under the AGPL. Making Firefly III open source un
 
 * Firefly III as it is right now requires strict database controls or something auditable outside of Firefly III, because any database administrator can see everybody's administrations. There are no controls in Firefly III against insider threat. That alone makes it totally unworthy of being used in a "hosted"-fashion.
 * There is nothing in place to do proper user management, except some half-finished admin pages I built for the demo site 3 years ago. These pages are a part of Firefly III, so if Firefly III breaks so does your user admin.
-* More security and scrutiny is required to make sure the tool is bug-free and hassle-free. It's pretty easy to lock yourself out, for example.
+* More security and scrutiny is required to ensure the tool is bug-free and hassle-free. It's pretty easy to lock yourself out, for example.
 * There is no payment module or anything; you'd have to develop something on the side.
 * The development pace is too high to offer a stable product. I like to tinker and I break stuff all the time. My users accept this, if begrudgingly. But if they pay AND it breaks? No dice.
 * I built Firefly III specifically because self-hosting is the only way to guarantee your data is (fairly) safe. At least, out of the hands of nefarious corporations. So hosting a public instance for everybody to use is kind of exactly against that idea.

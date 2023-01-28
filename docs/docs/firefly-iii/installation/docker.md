@@ -1,7 +1,7 @@
 # Docker
 
 !!! info
-    🎥 When you're a visual learner, please make sure to check out David Burgess' [excellent installation tutorial on YouTube](https://dbtechreviews.com/2020/08/firefly-iii-installed-on-docker-self-hosted-personal-finance/).
+    🎥 When you're a visual learner, check out David Burgess' [excellent installation tutorial on YouTube](https://dbtechreviews.com/2020/08/firefly-iii-installed-on-docker-self-hosted-personal-finance/).
 
 ## Using Docker Compose
 
@@ -9,7 +9,7 @@
 
 Download **[the Docker compose file](https://raw.githubusercontent.com/firefly-iii/docker/main/docker-compose.yml)** and place it somewhere convenient. It doesn't really matter where you place it, but I suggest a dedicated directory.
 
-Make sure you grab the raw file, and don't copy-paste the text from your browser. The spaces in the file are very important. So use "Save As".
+Grab the raw file, and don't copy-paste the text from your browser. The spaces in the file are very important. So use "Save As".
 
 !!! info
     The Apache server inside this Docker image will run as `www-data`. This will be reflected by the files you upload: they will be owned by `www-data`. You can change the user the image runs under but that user must exist inside the Docker image or things may not work as expected.
@@ -56,7 +56,7 @@ docker volume create firefly_iii_upload
 
 ### Start the container
 
-Run this Docker command to start the Firefly III container. Make sure that you edit the environment variables to match your own database. You should really change the `APP_KEY` as well. It should be a random string of _exactly_ 32 characters. You can generate such a key with the following command: `head /dev/urandom | LC_ALL=C tr -dc 'A-Za-z0-9' | head -c 32 && echo`.
+Run this Docker command to start the Firefly III container. Edit the environment variables to match your own database. You should really change the `APP_KEY` as well. It should be a random string of _exactly_ 32 characters. You can generate such a key with the following command: `head /dev/urandom | LC_ALL=C tr -dc 'A-Za-z0-9' | head -c 32 && echo`.
 
 ```text
 docker run -d \
@@ -72,7 +72,7 @@ docker run -d \
 fireflyiii/core:latest
 ```
 
-Firefly III assumes that you're using MySQL. If you use PostgreSQL, change the following environment variable in the command: `DB_CONNECTION=pgsql` and make sure you change the port, `DB_PORT=5432`.
+Firefly III assumes that you're using MySQL. If you use PostgreSQL, change the following environment variable in the command: `DB_CONNECTION=pgsql` and change the port, `DB_PORT=5432`.
 
 When executed this command will fire up a Docker container with Firefly III inside of it. It may take some time to start. If the database is set up properly it will automatically migrate and install a default database, and you should be able to surf to your container (usually located at [localhost](http://localhost)) to use Firefly III.
 

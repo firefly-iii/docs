@@ -22,7 +22,7 @@ fireflyiii/data-importer:latest
 ```
 
 !!! note
-    Change `docker run` to `docker run -d` to make sure the image runs in the background.
+    Change `docker run` to `docker run -d` so the image runs in the background.
 
 !!! ip
     You may need to clear your cookies, browse to `/flush` or press \[Reauthenticate\] after changing the environment variables.
@@ -37,5 +37,5 @@ You can run the data importer in a Docker Compose combination with Firefly III. 
 
 The following things are important to remember:
 
-* Make sure the MySQL password is *the same* in the `.env` and `.db.env` file.
+* The MySQL password must be *the same* in the `.env` and `.db.env` file.
 * The `FIREFLY_III_URL` variable the data importer requires is `http://app:8080`.

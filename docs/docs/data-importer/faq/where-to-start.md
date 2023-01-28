@@ -4,7 +4,7 @@ For a lot of people, the first time importing data is a bit of a hack and an exp
 
 ## Create all asset accounts first
 
-Make sure you have asset accounts for each of your accounts. That includes savings accounts and credit cards
+Validate you have asset accounts for each of your accounts. That includes savings accounts and credit cards
 
 ## Do not import large batches
 

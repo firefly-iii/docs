@@ -4,9 +4,9 @@ First of all, thank you for taking the time to help get Firefly III translated i
 
 ## Target language
 
-Make sure the language you want to translate in is listed [on this page](https://crowdin.com/project/firefly-iii). If not, [send me a message](../support/index.md).
+Ensure the language you want to translate in is listed [on this page](https://crowdin.com/project/firefly-iii). If not, [send me a message](../support/index.md).
 
-If you contact me, make sure you tell me what your language is called _in your language_. For example, Dutch in Dutch is `Nederlands`.
+If you contact me, tell me what your language is called _in your language_. For example, Dutch in Dutch is `Nederlands`.
 
 ## Things to pay attention to
 

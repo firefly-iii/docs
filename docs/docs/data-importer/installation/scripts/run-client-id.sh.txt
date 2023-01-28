@@ -5,7 +5,7 @@
 
 #
 # Create a client ID in your Firefly III installation, under 'Profile'.
-# Make sure you UNcheck the "confidential" checkbox.
+# UNcheck the "confidential" checkbox.
 #
 CLIENT_ID=0
 

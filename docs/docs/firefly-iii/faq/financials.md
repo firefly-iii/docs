@@ -28,7 +28,7 @@ If you get a double booking, it's easiest to simply remove the second transactio
 
 To close an account in Firefly III, do the following.
 
-1. Make sure the balance is zero by transferring out or withdrawing the final balance.
+1. The balance must be zero by transferring out or withdrawing the final balance.
 2. Edit the account (look for the pencil icon or use the ellipsis-menu) and remove the checkbox next to **Active**.
 
 You can find the inactive asset account on a special page: `/inactive-accounts/asset`.

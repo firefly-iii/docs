@@ -41,7 +41,7 @@ For the Data Importer the correct variable is `LOG_LEVEL`.
 
 ## I can't seem to get https working with Caddy
 
-Make sure you set `TRUSTED_PROXIES` to `*`. See also [this issue](https://github.com/firefly-iii/firefly-iii/issues/1632) on GitHub.
+Set `TRUSTED_PROXIES` to `*`. See also [this issue](https://github.com/firefly-iii/firefly-iii/issues/1632) on GitHub.
 
 ## Auto complete is case-sensitive?
 

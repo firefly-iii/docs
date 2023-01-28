@@ -23,7 +23,7 @@ proxy_buffers           4 256k;
 proxy_busy_buffers_size 256k;
 ```
 
-Make sure you also increase the buffer size of the server as well.
+Increase the buffer size of the server as well.
 
 ## I get page load errors because the protocols don't match
 
@@ -31,7 +31,7 @@ Make sure you also increase the buffer size of the server as well.
 * "Why doesn't the data importer support HTTPS?"
 * "How can I rewrite URLs to https?"
 
-You may see something like "The page at X was loaded over https, but requested insecure script X". This happens when your reverse proxy isn't configured correctly. For nginx, make sure you do something like this:
+You may see something like "The page at X was loaded over https, but requested insecure script X". This happens when your reverse proxy isn't configured correctly. For nginx:
 
 ```
 location / {
@@ -62,7 +62,7 @@ It means your machine has no proper configuration file for OpenSSL, or it cannot
 
 ## No matching DirectoryIndex
 
-Make sure Apache looks for public/index.php
+Validate Apache looks for public/index.php
 
 ## Other errors?
 

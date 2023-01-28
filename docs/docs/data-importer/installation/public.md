@@ -5,7 +5,7 @@ There is a public (cloud-based) instance of the Firefly III Data Importer runnin
 You can use this instance to import data into your own installation. Please keep in mind it comes with a "price".
 
 - Your own Firefly III installation must be reachable over the internet. This may be a security and privacy risk.
-- Make sure you create a public client (uncheck the "confidential"-flag) that uses the following callback URL: `https://data-importer.firefly-iii.org/callback`.
+- Create a public client (uncheck the "confidential"-flag) that uses the following callback URL: `https://data-importer.firefly-iii.org/callback`.
 - Any private data you upload may be stored for up to 24hrs.
 
 I appreciate the complexity of running the data importer for yourself so this cloud instance can help you import data into your own installation.

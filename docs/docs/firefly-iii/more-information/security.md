@@ -4,9 +4,9 @@ Because Firefly III stores personal financial information it's important to know
 
 ## Database
 
-The database is not encrypted, and data in the tables of the database is readable for humans. Make sure that you use a strong password to authenticate to the database and create a dedicated user for the Firefly III database. Whenever possible, use the disk encryption feature of your operating system to encrypt the disk on which the database is stored. 
+The database is not encrypted, and data in the tables of the database is readable for humans. Use a strong password to authenticate to the database and create a dedicated user for the Firefly III database. Whenever possible, use the disk encryption feature of your operating system to encrypt the disk on which the database is stored. 
 
-When you connect your Firefly III instance to the internet, make sure that the database can't be connected to from the web, but only from localhost. Preferably, the database host can only be reached from the Firefly III host.
+When you connect your Firefly III instance to the internet, ensure that the database can't be connected to from the web, but only from localhost. Preferably, the database host can only be reached from the Firefly III host.
 
 ID's used for objects in Firefly III are incremental numbers. Logged-in users may infer the existence of objects owned by other users by changing the ID in the address bar and observing 404's. This is not possible for guests.
 
@@ -14,7 +14,7 @@ Up until [Firefly III v4.7.9](https://github.com/firefly-iii/firefly-iii/release
 
 ## Sessions and logins
 
-Sessions are not tied to an IP address. Use 2FA when you can, which is a feature of Firefly III. There is a button on the `/profile` page that allows you to logout other sessions, so you can make sure there's a limited number of logged-in sessions out there.
+Sessions are not tied to an IP address. Use 2FA when you can, which is a feature of Firefly III. There is a button on the `/profile` page that allows you to logout other sessions, so you can ensure there's a limited number of logged-in sessions out there.
 
 After the first user has registered themselves, future registrations are blocked. It can be enabled again under `/admin`. Each user is strictly separated from other users. Users can't see or detect other users, although they can infer their existence through their user ID (see the preceding text).
 

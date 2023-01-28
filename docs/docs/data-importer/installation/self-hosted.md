@@ -55,7 +55,7 @@ In the `data-importer` directory you will find a `.env` file. There are instruct
 
 ## Reverse proxies
 
-To run the data importer behind a reverse proxy, make sure you set the `TRUSTED_PROXIES` environment variable to either `*` or the IP address of your reverse proxy.
+To run the data importer behind a reverse proxy, set the `TRUSTED_PROXIES` environment variable to either `*` or the IP address of your reverse proxy.
 
 ### TLS
 
@@ -73,7 +73,7 @@ proxy_read_timeout 300s;
 
 ## Accessing the data importer
 
-You can access the data importer at [http://localhost/](http://localhost/). If this URL is taken by Firefly III already, make sure your server configuration accepts both. This is called a "virtual host", and out of the scope of this installation guide.
+You can access the data importer at [http://localhost/](http://localhost/). If this URL is taken by Firefly III already, validate your server configuration accepts both. This is called a "virtual host", and out of the scope of this installation guide.
 
 ![Opening screen of the data importer.](images/opening.png)
 

@@ -4,7 +4,7 @@ If you have your own (virtual) web server you can use this guide to install Fire
 
 ## Ingredients
 
-You need a working LAMP, LEMP or WAMP stack. Make sure you're running PHP %PHPVERSION. Here are some Google queries to help you.
+You need a working LAMP, LEMP or WAMP stack. Run PHP %PHPVERSION. Here are some Google queries to help you.
 
 1. [Install a LAMP stack with PHP %PHPVERSION](https://www.google.com/search?q=lamp+stack+php+%PHPVERSION)
 2. [Upgrade Ubuntu PHP %PHPVERSION](https://www.google.com/search?q=upgrade+ubuntu+php+%PHPVERSION)
@@ -18,7 +18,7 @@ Several users have created specific guides for their OS and database combination
 2. [Firefly III in Ubuntu 20.04 and proxmox](https://gist.github.com/Engr-AllanG/34e77a08e1482284763fff429cdd92fa)
 3. [Firefly III scripted installer](https://github.com/runlevel-4/firefly-iii-automation)
 
-In case you want to use one of the languages that Firefly III is equipped with, make sure you have installed the necessary locales. For Debian / Ubuntu for example, use `sudo apt install language-pack-nl-base && sudo locale-gen`.
+In case you want to use one of the languages that Firefly III is equipped with, install the necessary locales. For Debian / Ubuntu for example, use `sudo apt install language-pack-nl-base && sudo locale-gen`.
 
 ## Preparing your server
 

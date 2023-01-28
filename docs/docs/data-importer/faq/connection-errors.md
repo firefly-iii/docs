@@ -2,7 +2,7 @@
 
 ## 401 Unauthorized
 
-The Personal Access Token you've configured doesn't give access to this instance of Firefly III. Double check that your Personal Access Token is correct. Make sure that it starts with "ey". No spaces at the end. No newlines.
+The Personal Access Token you've configured doesn't give access to this instance of Firefly III. Double check that your Personal Access Token is correct. It starts with "ey". No spaces at the end. No newlines.
 
 ## Could not resolve host
 
@@ -14,14 +14,14 @@ The error says it all, really.
 
 ## I can't get beyond the opening screen
 
-Some setups have a bad time handling cookies, and without support for cookies the Data Importer doesn't know what you want to do. Make sure that
+Some setups have a bad time handling cookies, and without support for cookies the Data Importer doesn't know what you want to do.
 
-- You're not running the data importer in a subdirectory
-- The cookie settings in the .env file are correct.
+- Validate you're not running the data importer in a subdirectory
+- Validate the cookie settings in the .env file are correct.
 
 ## My connection times out, even though the IP addresses are correct
 
-This mainly applies to Docker. Make sure that both containers [are on the same network](https://old.reddit.com/r/FireflyIII/comments/fuur8o/csvimporter_connection_timeout/). Remember that Firefly III usually runs on port 8080.
+This mainly applies to Docker. Both containers [must be on the same network](https://old.reddit.com/r/FireflyIII/comments/fuur8o/csvimporter_connection_timeout/). Remember that Firefly III usually runs on port 8080.
 
 Please open a ticket [on GitHub](https://github.com/firefly-iii/firefly-iii/) if you can't get it to work.
 

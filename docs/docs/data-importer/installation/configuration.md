@@ -14,7 +14,7 @@ On this page you will read how to:
 
 ### Firefly III URL
 
-First, you must tell the data importer where to reach Firefly III. This is set in the `FIREFLY_III_URL` environment variable. Make sure you REMOVE any trailing slash from the end of the URL.
+First, you must tell the data importer where to reach Firefly III. This is set in the `FIREFLY_III_URL` environment variable. REMOVE any trailing slash from the end of the URL.
 
 For Docker, you may be able to use the internal IP address of Firefly III, instead of its public address. But if normal users can't reach this URL, you must also set the `VANITY_URL`. Here is an example:
 
@@ -85,7 +85,7 @@ You can generate your own Personal Access Token on the Profile page. Login to yo
 
 You can generate your own client ID on your Profile page (under OAuth). This is the ID you need when you want to share the data importer with multiple people, or when you want to allow others to use the same instance of the data importer.
 
-Make sure you uncheck the "confidential" checkbox.
+Uncheck the "confidential" checkbox.
 
 ## Callback URL
 

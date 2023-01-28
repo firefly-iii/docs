@@ -37,7 +37,7 @@ I cannot accept new features out of the blue. Please first discuss the change yo
 
 #### Developer certificate of origin
 
-Please read [the developer certificate of origin](https://developercertificate.org/) and make sure you agree and comply with it.
+Please read [the developer certificate of origin](https://developercertificate.org/) and agree and comply with it.
 
 #### Rules
 
@@ -50,7 +50,7 @@ If you see a spelling error, grammatical error or a weird translation *in your l
 
 Know that I am always open for rewrites and more clarity in the documentation, but I will not accept changes that people can Google themselves already. For example, do not submit text that explains how to set up Docker. Or how to install PHP.
 
-Any documentation you write or fix must be checked for correct spelling. Make sure that if you correct my spelling or grammar, you don't make mistakes of your own.
+Any documentation you write or fix must be checked for correct spelling. If you correct my spelling or grammar, you don't make mistakes of your own.
 
 Is your language not listed? You can send your language [to me by email](mailto:james@firefly-iii.org) or [open a ticket on GitHub](https://github.com/firefly-iii/firefly-iii/issues).
 
