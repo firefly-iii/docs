@@ -2,6 +2,10 @@
 
 Please open a ticket [on GitHub](https://github.com/firefly-iii/firefly-iii/) if your problem isn't listed here.
 
+## How do I configure a reverse proxy in Docker?
+
+To run FIDI behind a reverse proxy, make sure you set the `TRUSTED_PROXIES` environment variable to either `*` or the IP address of your reverse proxy.
+
 ## I can't get beyond the opening screen
 
 Some setups have a bad time handling cookies, and without support for cookies the Data Importer doesn't know what you want to do. Make sure that
@@ -30,7 +34,8 @@ Please open a ticket [on GitHub](https://github.com/firefly-iii/firefly-iii/) if
 
 ## 502 Bad Gateway errors
 
-When Firefly III responds with a token, the resulting header may be too long for your reverse proxy. Add this to the configuration:
+When Firefly III responds with a token, the resulting header may be too long for your reverse proxy.
+These lines prevent that the proxy buffer size is too small. Put it in the `server` block of your nginx server.
 
 ```
 proxy_buffer_size       128k;

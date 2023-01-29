@@ -81,18 +81,6 @@ volumes:
   firefly_iii_db:
 ```
 
-## Extra configuration
+## Troubleshooting
 
-### Reverse proxies
-
-To run FIDI behind a reverse proxy, make sure you set the `TRUSTED_PROXIES` environment variable to either `*` or the IP address of your reverse proxy.
-
-### Proxy buffer size
-
-These lines prevent that the proxy buffer size is too small. Put it in the `server` block of your nginx server.
-
-```
-proxy_busy_buffers_size   512k;
-proxy_buffers   4 512k;
-proxy_buffer_size   256k;
-```    
+Read the [frequently seen errors](../errors/freq_errors.md)-page for more information.
