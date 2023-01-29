@@ -80,5 +80,31 @@ volumes:
   firefly_iii_upload:
   firefly_iii_db:
 ```
+## Reverse proxies
 
+To run FIDI behind a reverse proxy, make sure you set the `TRUSTED_PROXIES` environment variable to either `*` or the IP address of your reverse proxy.
 
+### nginx
+To prevent that the proxy buffer size is too small for the HTTP header you need to make it big enough.
+Here is a sample Configuration:
+```
+server {
+    listen 443 ssl http2;
+    listen [::]:443 ssl http2;
+    [...]
+ 	proxy_busy_buffers_size   512k;
+    proxy_buffers   4 512k;
+    proxy_buffer_size   256k;
+    location / 
+    {
+        proxy_set_header X-Forwarded-Proto $scheme;
+        proxy_set_header X-Forwarded-Host $host;
+        proxy_set_header X-Forwarded-Server $host;
+        proxy_set_header X-Forwarded-Port $server_port;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header Host $host;
+        # pass to Docker container
+        proxy_pass http://127.0.0.1:8081$uri$is_args$args;
+    }
+}
+```    
