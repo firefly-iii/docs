@@ -12,6 +12,7 @@ Here you will find answers to frequently asked questions.
 
 - [Where to start?](where-to-start.md)
 - [My transactions are a mess, now what?](messy-transactions.md)
+- [I am missing a lot of data, now what?](missing-data.md)
 - [I have duplicate transactions](duplicates.md)
 - [I want to re-import transactions](re-import.md)
 - [How to fine tune the JSON file?](json.md)

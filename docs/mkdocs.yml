@@ -108,6 +108,7 @@ nav:
           - Nordigen and Spectre: data-importer/faq/spectre-and-nordigen.md
           - Where to start?: data-importer/faq/where-to-start.md
           - Messy transactions: data-importer/faq/messy-transactions.md
+          - Missing data: data-importer/faq/missing-data.md
           - Duplicates: data-importer/faq/duplicates.md
           - Re-import transactions: data-importer/faq/re-import.md
           - JSON file: data-importer/faq/json.md
