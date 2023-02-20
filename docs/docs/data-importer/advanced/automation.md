@@ -11,7 +11,7 @@ Firefly III can import from the command line. Either by calling [the Docker cont
 The following environment variable need to be set. This value must match the local directory. If you're using Docker, set it to `/import`. 
 
 ```
-IMPORT_DIR_WHITELIST=/your/directory
+IMPORT_DIR_ALLOWLIST=/your/directory
 ```
 
 !!! note "Command line and Docker"
@@ -62,7 +62,7 @@ docker run \
 --rm \
 -v $PWD:/import \
 -e FIREFLY_III_ACCESS_TOKEN= \
--e IMPORT_DIR_WHITELIST=/import \
+-e IMPORT_DIR_ALLOWLIST=/import \
 -e FIREFLY_III_URL= \
 -e WEB_SERVER=false \
 fireflyiii/data-importer:latest
@@ -99,7 +99,7 @@ CAN_POST_FILES=true
 CAN_POST_AUTOIMPORT=true
 
 # this value must match the local directory
-IMPORT_DIR_WHITELIST=/your/directory
+IMPORT_DIR_ALLOWLIST=/your/directory
 ```
 
 ## Uploading files and importing them
