@@ -29,7 +29,7 @@ For Docker, you may be able to use the internal IP address of Firefly III, inste
 
 ### Authentication
 
-To authenticate with Firefly III you must set ONE the following variables:
+To authenticate with Firefly III you must set ONE of the following variables:
 
 1. Set a Personal Access Token in the `FIREFLY_III_ACCESS_TOKEN` environment variable.
 2. OR Set a Client ID in the `FIREFLY_III_CLIENT_ID` environment variable.
