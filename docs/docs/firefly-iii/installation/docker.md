@@ -1,8 +1,5 @@
 # Docker
 
-!!! info
-    🎥 When you're a visual learner, check out David Burgess' [excellent installation tutorial on YouTube](https://dbtechreviews.com/2020/08/firefly-iii-installed-on-docker-self-hosted-personal-finance/).
-
 ## Using Docker Compose
 
 ### Download Docker Compose file
