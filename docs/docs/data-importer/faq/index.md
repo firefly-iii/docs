@@ -50,3 +50,11 @@ Browse to the `/flush`-URL on the data importer to reset it. There is also a but
 
 The easiest way to automate imports is by using **[the various automation options](../advanced/automation.md)**.
 
+### How can I debug the data importer?
+
+A few steps can be followed to make it easier to see what the data importer is doing:
+
+1. Trace the Docker logs with `docker logs -f [container_id]`, where `[container_id]` is the ID of the container.
+2. Go to `/storage/logs` and `tail -f` the log files that you see there.
+
+The exact same instructions work for Firefly III as well.

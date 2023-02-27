@@ -8,6 +8,7 @@ Errors you can expect to see if you're not running **PHP %PHPVERSION**:
 
 1. `Syntax error, unexpected )`
 2. `syntax error, unexpected 'string' (T_STRING), expecting function (T_FUNCTION) or const (T_CONST)`
+3. `Unexpected question mark`
 
 You can verify which version of PHP your web server is using by making a file called `phpinfo.php` and browsing to it through your webserver:
 
@@ -123,17 +124,9 @@ That should fix it!
 
 Unfortunately, there is no straight answer without more information. Check out the `/storage/logs` directory of your Firefly III installation or check the logs of your Docker instance. The true error will be reported there. If necessary, enable [debug mode](other.md#how-do-i-enable-debug-mode) to collect more log files.
 
-## Can I use it on PHP 5.x?
+## Can I use it on PHP, but not version %PHPVERSION?
 
-No. The code has been written specifically for PHP %PHPVERSION and higher.
-
-## Can I use it on PHP 7.x?
-
-No. The code has been written specifically for PHP %PHPVERSION and higher.
-
-## Can I use it on PHP 8.0 or 8.1?
-
-No. The code has been written specifically for PHP %PHPVERSION and higher.
+No. The code has been written specifically for PHP version %PHPVERSION and higher.
 
 ## It is very slow on my server?
 
@@ -142,10 +135,6 @@ Raspberry Pi's and other microcomputers are not the most speedy devices. User [n
 ## Decimal points are missing, numbers are off?
 
 See "[Locales](../advanced-installation/locales.md)".
-
-## I get 'Unexpected question mark'?
-
-Firefly III requires PHP %PHPVERSION or higher.
 
 ## I get 'BCMath' errors?
 
@@ -177,7 +166,7 @@ Solution: You haven't enabled or installed the Internationalization extension. I
 This may happen when you are on a NAS4free Debian installation or similar platform. This command may help:
 
 ```text
-pkg install php80-ctype
+pkg install php82-ctype
 ```
 
 ## I get 'Error: could not open input file artisan'?
