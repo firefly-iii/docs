@@ -18,12 +18,24 @@ Any of these options should work.
 When Firefly III responds with a token, the resulting header may be too long for your reverse proxy. Add this to the configuration:
 
 ```
-proxy_buffer_size       128k;
-proxy_buffers           4 256k;
-proxy_busy_buffers_size 256k;
+server {
+    ...
+    proxy_buffer_size       128k;
+    proxy_buffers           4 256k;
+    proxy_busy_buffers_size 256k;
+}
 ```
 
-Increase the buffer size of the server as well.
+If that doesn't help, try:
+
+```
+server {
+    ...
+    fastcgi_buffers  16 16k;
+    fastcgi_buffer_size  32k;
+    
+}
+```
 
 ## I get page load errors because the protocols don't match
 
