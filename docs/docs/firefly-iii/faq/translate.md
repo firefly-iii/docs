@@ -1,14 +1,12 @@
 # Translating Firefly III
 
-First of all, thank you for taking the time to help get Firefly III translated in as many languages as possible. Translation work is tedious and concentrated work, and I appreciate all your efforts.
-
-At the moment, Firefly III has about 30 target languages with about 12 enabled. To make translating Firefly III as easy as possible I wrote this little guide to get you started.
+First of all, thank you for taking the time to help get Firefly III translated in as many languages as possible. Translation work is tedious and concentrated work, and I appreciate all your efforts. To make translating Firefly III as easy as possible I wrote this little guide to get you started.
 
 ## Target language
 
-Make sure the language you want to translate in is listed [on this page](https://crowdin.com/project/firefly-iii). If not, [send me a message](../other-pages/contact.md).
+Ensure the language you want to translate in is listed [on this page](https://crowdin.com/project/firefly-iii). If not, [send me a message](../support/index.md).
 
-If you contact me, make sure you tell me what your language is called _in your language_. For example, Dutch in Dutch is `Nederlands`.
+If you contact me, tell me what your language is called _in your language_. For example, Dutch in Dutch is `Nederlands`.
 
 ## Things to pay attention to
 
@@ -18,7 +16,7 @@ Some things you'll need to know when translating text:
 
 ## Translate online
 
-Crowdin has a pretty fancy user interface for translating Firefly III texts. This works pretty well for most people but you lack context: you don't know where your text is going to end up. But this works for most text.
+Crowdin has a pretty fancy user interface for translating Firefly III texts. This works pretty well for most people, but you lack context: you don't know where your text is going to end up. But this works for most text.
 
 ## Translate offline
 
@@ -26,7 +24,7 @@ You can hack your installation of Firefly III to make it show your language, eve
 
 ### Enable the language
 
-First, open `app/config/firefly.php` in your favorite text editor and search for the languages configuration. You should see a bunch of languages listed in a row:
+First, open `app/config/firefly.php` in your favorite text editor and search for the languages' configuration. You should see a bunch of languages listed in a row:
 
 ![Enabled languages](images/enabled.png)
 
@@ -60,4 +58,4 @@ Once the files are in place, you can start editing them directly. If you refresh
 
 ![The result in Firefly III](images/result.png)
 
-Once you're done with a file, send the file [to me](../other-pages/contact.md) so I can upload the results to Crowdin.
+Once you're done with a file, send the file [to me](../support/index.md), so I can upload the results to Crowdin.

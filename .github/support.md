@@ -1,4 +1,4 @@
-# Welcome to Firefly III on Github!
+# Welcome to Firefly III on GitHub!
 
 :+1::tada: Thank you for taking the time to contribute something to Firefly III!
 

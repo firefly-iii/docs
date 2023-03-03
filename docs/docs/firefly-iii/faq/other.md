@@ -1,12 +1,8 @@
 # Other questions
 
-People often have the same type of questions. Please find them below. If you open an issue that refers to one of these questions, your issue may be closed.
-
-Please refer to the index on your right.
-
 ## I came over from YNAB, I don't get it?
 
-YNAB and Firefly III have a slightly different way of working. Please read carefully.
+YNAB and Firefly III have a slightly different way of working.
 
 YNAB kind of works the other way around, by budgeting the money that comes in instead of the money that goes out. They expect you to think of a budget for every coin tossed to you instead of budgeting what you expect to spend.
 
@@ -14,7 +10,7 @@ YNAB expects you to put your money into budgets based on whatever money comes in
 
 Firefly III works the other way around. At the start of the month, you decide what you want to spend. 1000,-? 1500,-? Whatever you want! That money is divided over budgets and spent over a monthly period (or whatever period you want).
 
-If everything is OK, your budget should at least match what you earn. So that's easy. But if everything is _better_ then OK, you budget **less** than you make and you **save** the rest. You can use the rest of the money to fill piggy banks or donate to me (kidding ;)).
+If everything is OK, your budget should at least match what you earn. So that's easy. But if everything is _better_ than OK, you budget **less** than you make, and you **save** the rest. You can use the rest of the money to fill piggy banks or donate to me (kidding ;)).
 
 You can read more about this concept on the page about [personal finances](../about-firefly-iii/introduction.md).
 
@@ -45,13 +41,13 @@ For the Data Importer the correct variable is `LOG_LEVEL`.
 
 ## I can't seem to get https working with Caddy
 
-Make sure you set `TRUSTED_PROXIES` to `**`. See also [this issue](https://github.com/firefly-iii/firefly-iii/issues/1632) on GitHub.
+Set `TRUSTED_PROXIES` to `*`. See also [this issue](https://github.com/firefly-iii/firefly-iii/issues/1632) on GitHub.
 
-## Auto complete is case sensitive?
+## Auto complete is case-sensitive?
 
-This happens when the underlying database is Postgres, which is case sensitive by default. You may run into this when searching for `FLO` doesn't yield `flower`.
+This happens when the underlying database is Postgres, which is case-sensitive by default. You may run into this when searching for `FLO` doesn't yield `flower`.
 
-There's not much i can do about this. When the auto-complete searches in your database for entries, it may do so in a case-sensitive manner.
+There's not much I can do about this. When the auto-complete searches in your database for entries, it may do so in a case-sensitive manner.
 
 The good news is that once the search is over, the result is cached by your browser. These cached entries will be searched for in a case-**in**sensitive manner.
 
@@ -73,14 +69,7 @@ That should solve it.
 
 ## Why is the minimum password length 16 characters?
 
-[NIST](https://pages.nist.gov/800-63-3/sp800-63b.html) recommends a few things when it comes to passwords:
-
-1. Prefer long passwords over complex ones.
-2. Don't make people change them regularly.
-3. Check for commonly leaked passwords.
-4. Allow people to see the password they enter.
-
-Safe for the last one, Firefly III does all of these things. You can disable nr. 3 by disabling the checkbox when you register or change your password. The minimum password length can't be changed.
+The minimum password length can't be changed. [NIST](https://pages.nist.gov/800-63-3/sp800-63b.html) recommendations prevail.
 
 ## I'm running Internet Explorer or Edge and nothing works?
 
@@ -119,6 +108,7 @@ That should allow you to login again without having to submit a 2FA token.
 Just so you know, the Firefly III rule engine is supposed to be basic. That's the goal of the rule engine: to support basic stuff. Although it's _technically_ possible to make the rule engine do the most amazing stuff, I don't want to make Firefly III too complicated. So there are some things the rule engine will never be able to do, even though it's something that's not difficult to program:
 
 * Copy values from one field to another.
+* Boolean logic.
 * Regular expressions.
 * Math
 
@@ -126,12 +116,12 @@ Just so you know, the Firefly III rule engine is supposed to be basic. That's th
 
 There are two reasons why resetting your password may not work.
 
-1. You signed up using a non-extistent email address
+1. You signed up using a non-existent email address
 2. You did not configure correct email settings.
 
 You can correct the second situation using [the email settings](../advanced-installation/email.md).
 
-By configuring Firefly III to save the email message to the log files (`MAIL_MAILER=log`) *and* [by enabling debug mode](/firefly-iii/faq/other.md#how-do-i-enable-debug-mode), any password reset message will be stored to your log files. You can copy/paste the reset link from the email message in the log files.
+By configuring Firefly III to save the email message to the log files (`MAIL_MAILER=log`) *and* [by enabling debug mode](other.md#how-do-i-enable-debug-mode), any password reset message will be stored to your log files. You can copy/paste the reset link from the email message in the log files.
 
 ## I have a question that is not in the FAQ?
 

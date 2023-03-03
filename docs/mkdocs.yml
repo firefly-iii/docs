@@ -9,204 +9,117 @@ dev_addr: '10.0.0.15:8000'
 plugins:
   - search
   - 'git-revision-date'
-  - redirects:
-      redirect_maps:
-        'api/api.md': 'firefly-iii/api.md'
-        'about-firefly-iii/demo.md': 'firefly-iii/about-firefly-iii/demo.md'
-        'about-firefly-iii/grand-theory.md': 'firefly-iii/about-firefly-iii/personal-finances.md'
-        'about-firefly-iii/features.md': 'firefly-iii/about-firefly-iii/introduction.md'
-        'about-firefly-iii/introduction.md': 'firefly-iii/about-firefly-iii/introduction.md'
-        'about-firefly-iii/personal-finances.md': 'firefly-iii/about-firefly-iii/personal-finances.md'
-        'about-firefly-iii/screenshots.md': 'firefly-iii/about-firefly-iii/screenshots.md'
-        'about-firefly-iii/security.md': 'firefly-iii/about-firefly-iii/security.md'
-        'about-firefly-iii/what-its-not.md': 'firefly-iii/about-firefly-iii/what-its-not.md'
-        'advanced-concepts/bills.md': 'firefly-iii/advanced-concepts/bills.md'
-        'advanced-concepts/piggies.md': 'firefly-iii/advanced-concepts/piggies.md'
-        'advanced-concepts/links.md': 'firefly-iii/advanced-concepts/links.md'
-        'advanced-concepts/rules.md': 'firefly-iii/pages-and-features/rules.md'
-        'advanced-concepts/recurring.md': 'firefly-iii/advanced-concepts/recurring.md'
-        'advanced-concepts/reconcile.md': 'firefly-iii/advanced-concepts/reconcile.md'
-        'advanced-concepts/reports.md': 'firefly-iii/advanced-concepts/reports.md'
-        'advanced-installation.md': 'firefly-iii/index.md'
-        'advanced-installation/analytics.md': 'firefly-iii/advanced-installation/analytics.md'
-        'advanced-installation/authentication.md': 'firefly-iii/advanced-installation/authentication.md'
-        'advanced-installation/backup.md': 'firefly-iii/advanced-installation/backup.md'
-        'advanced-installation/cron.md': 'firefly-iii/advanced-installation/cron.md'
-        'advanced-installation/email.md': 'firefly-iii/advanced-installation/email.md'
-        'advanced-installation/locales.md': 'firefly-iii/advanced-installation/locales.md'
-        'advanced-installation/upgrade.md': 'firefly-iii/installation/upgrade.md'
-        'csv/upgrade/upgrade.md': 'data-importer/upgrade.md'
-        'concepts/accounts.md': 'firefly-iii/concepts/accounts.md'
-        'concepts/budgets.md': 'firefly-iii/concepts/budgets.md'
-        'concepts/categories.md': 'firefly-iii/concepts/categories.md'
-        'concepts/currencies.md': 'firefly-iii/concepts/currencies.md'
-        'concepts/groups.md': 'firefly-iii/concepts/groups.md'
-        'concepts/search.md': 'firefly-iii/pages-and-features/search.md'
-        'concepts/tracking_cash.md': 'firefly-iii/concepts/tracking_cash.md'
-        'concepts/tags.md': 'firefly-iii/concepts/tags.md'
-        'concepts/transactions.md': 'firefly-iii/concepts/transactions.md'
-        'contact/contact.md': 'firefly-iii/other-pages/contact.md'
-        'errors-and-trouble-shooting/duplicate_transactions.md': 'data-importer/errors/duplicate_transactions.md'
-        'errors-and-trouble-shooting/token_errors.md': 'data-importer/errors/token_errors.md'
-        'exporting-data/export.md': 'firefly-iii/exporting-data.md'
-        'faq/other.md': 'firefly-iii/faq/other.md'
-        'faq/importing.md': 'firefly-iii/faq/importing.md'
-        'faq/docker.md': 'firefly-iii/faq/docker.md'
-        'faq/installation.md': 'firefly-iii/faq/installation.md'
-        'faq/financials.md': 'firefly-iii/faq/financials.md'
-        'faq/self_hosted.md': 'firefly-iii/faq/self_hosted.md'
-        'faq/translate.md': 'firefly-iii/faq/translate.md'
-        'firefly-iii/advanced-concepts/rules.md': 'firefly-iii/pages-and-features/rules.md'
-        'firefly-iii/advanced-concepts/commandline.md': 'firefly-iii/pages-and-features/commandline.md'
-        'firefly-iii/advanced-installation/upgrade.md': 'firefly-iii/installation/upgrade.md'
-        'firefly-iii/concepts/search.md': 'firefly-iii/pages-and-features/search.md'
-        'firefly-iii/exporting-data/export.md': 'firefly-iii/exporting-data.md'
-        'help/json.md': 'data-importer/help/json.md'
-        'installation/docker.md': 'firefly-iii/installation/docker.md'
-        'installation/k8n.md': 'firefly-iii/installation/k8n.md'
-        'installation/self_hosted.md': 'firefly-iii/installation/self_hosted.md'
-        'installation/third_parties.md': 'firefly-iii/installation/third_parties.md'
-        'installing-and-running/docker.md': 'data-importer/install/docker.md'
-        'importing-data/faq.md': 'firefly-iii/faq/importing.md'
-        'importing-data/spectre.md': 'firefly-iii/importing-data/introduction.md'
-        'importing-data/others.md': 'firefly-iii/importing-data/introduction.md'
-        'importing-data/introduction.md': 'firefly-iii/importing-data/introduction.md'
-        'importing-data/upload.md': 'data-importer/usage/upload.md'
-        'importing-data/roles.md': 'data-importer/usage/roles.md'
-        'importing-data/command_line.md': 'data-importer/usage/command_line.md'
-        'importing-data/map.md': 'data-importer/usage/map.md'
-        'other-pages/3rdparty.md': 'firefly-iii/other-pages/3rdparty.md'
-        'other-pages/contributing.md': 'firefly-iii/other-pages/contributing.md'
-        'support/contribute.md': 'firefly-iii/support/contribute.md'
-        'support/error_codes.md': 'firefly-iii/support/error_codes.md'
-        'support/faq.md': 'firefly-iii/support/faq.md'
-        'support/features.md': 'firefly-iii/support/features.md'
-        'support/transaction_types.md': 'firefly-iii/support/transaction_types.md'
-        'usage/map.md': 'data-importer/usage/map.md'
   - minify:
       minify_html: true
       minify_js: true
       htmlmin_opts:
-          remove_comments: true
+        remove_comments: true
 
 markdown_extensions:
-    - admonition
-
-#    - def_list
-#    - mdx_gh_links:
-#        user: mkdocs
-#        repo: mkdocs
+  - admonition
 
 nav:
   - Home: 'index.md'
   - 'Firefly III':
-    - Introduction: firefly-iii/index.md
-    - About Firefly III:
-      - Introduction and features: firefly-iii/about-firefly-iii/introduction.md
-      - Missing features: firefly-iii/about-firefly-iii/what-its-not.md
-      - Zero based budgeting: firefly-iii/about-firefly-iii/zero-based-budgeting.md
-      - Screenshots : firefly-iii/about-firefly-iii/screenshots.md
-      - Personal finances: firefly-iii/about-firefly-iii/personal-finances.md
-      - Demo website: firefly-iii/about-firefly-iii/demo.md
-      - Architecture: firefly-iii/about-firefly-iii/architecture.md
-      - Security: firefly-iii/about-firefly-iii/security.md
-      - Logo and name: firefly-iii/about-firefly-iii/logo.md
-      - License: firefly-iii/about-firefly-iii/license.md
-    - Installation:
-      - Docker: firefly-iii/installation/docker.md
-      - Kubernetes: firefly-iii/installation/k8n.md
-      - Self-hosted server: firefly-iii/installation/self_hosted.md
-      - Platforms: firefly-iii/installation/self_managed.md
-      - Hosted by 3rd parties: firefly-iii/installation/third_parties.md
-      - Upgrade instructions: firefly-iii/installation/upgrade.md
-    - Support:
-      - Feature requests and roadmap: firefly-iii/support/features.md
-      - Reporting bugs: firefly-iii/support/bugs.md
-      - Contribute to Firefly III: firefly-iii/support/contribute.md
-      - FAQ: firefly-iii/support/faq.md
-      - Transaction types: firefly-iii/support/transaction_types.md
-      - Error codes: firefly-iii/support/error_codes.md
-    - Pages and features:
-      - Administration: firefly-iii/pages-and-features/admin.md
-      - Command line usage: firefly-iii/pages-and-features/commandline.md
-      - Rules: firefly-iii/pages-and-features/rules.md
-      - Search: firefly-iii/pages-and-features/search.md
-      - Webhooks: firefly-iii/pages-and-features/webhooks.md
-    - FAQ:
-      - General questions: firefly-iii/faq/general.md
-      - Managing your finances: firefly-iii/faq/financials.md
-      - Using Docker: firefly-iii/faq/docker.md
-      - Installing and upgrading: firefly-iii/faq/installation.md
-      - Self-hosting: firefly-iii/faq/self_hosted.md
-      - Importing data: firefly-iii/faq/importing.md
-      - Translating Firefly III: firefly-iii/faq/translate.md
-      - Other questions: firefly-iii/faq/other.md
-    - Concepts:
-      - Transactions: firefly-iii/concepts/transactions.md
-      - Accounts: firefly-iii/concepts/accounts.md
-      - Budgets: firefly-iii/concepts/budgets.md
-      - Categories: firefly-iii/concepts/categories.md
-      - Tags: firefly-iii/concepts/tags.md
-      - Currencies: firefly-iii/concepts/currencies.md
-      - Groups: firefly-iii/concepts/groups.md
-      - Tracking cash: firefly-iii/concepts/tracking_cash.md
-    - Advanced installation:
-      - Configure email: firefly-iii/advanced-installation/email.md
-      - Authentication: firefly-iii/advanced-installation/authentication.md
-      - Analytics: firefly-iii/advanced-installation/analytics.md
-      - Backup: firefly-iii/advanced-installation/backup.md
-      - Locales: firefly-iii/advanced-installation/locales.md
-      - Cron jobs: firefly-iii/advanced-installation/cron.md
-    - Importing data:
-      - Introduction: firefly-iii/importing-data/introduction.md
-      - FAQ: firefly-iii/faq/importing.md
-    - Exporting data: firefly-iii/exporting-data.md
-    - Advanced concepts:
-      - Piggy banks: firefly-iii/advanced-concepts/piggies.md
-      - Bills: firefly-iii/advanced-concepts/bills.md
-      - Recurring transactions: firefly-iii/advanced-concepts/recurring.md
-      - Reports: firefly-iii/advanced-concepts/reports.md
-      - Links: firefly-iii/advanced-concepts/links.md
-      - Reconciling accounts: firefly-iii/advanced-concepts/reconcile.md
-    - API:
-      - API: firefly-iii/api.md
-      - Special endpoints: firefly-iii/api/specials.md
-    - Other pages:
-      - Contact and credits: firefly-iii/other-pages/contact.md
-      - Third-party tools: firefly-iii/other-pages/3rdparty.md
-      - Contributing: firefly-iii/other-pages/contributing.md
+      - Home: firefly-iii/index.md
+      - About Firefly III:
+          - Introduction and features: firefly-iii/about-firefly-iii/introduction.md
+          - Screenshots: firefly-iii/about-firefly-iii/screenshots.md
+          - Demo website: firefly-iii/about-firefly-iii/demo.md
+      - Installation:
+          - Docker: firefly-iii/installation/docker.md
+          - Kubernetes: firefly-iii/installation/kubernetes.md
+          - Self-hosted server: firefly-iii/installation/self-hosted.md
+          - Platforms: firefly-iii/installation/self-managed.md
+          - Hosted by 3rd parties: firefly-iii/installation/third-parties.md
+          - Upgrade instructions: firefly-iii/installation/upgrade.md
+      - Advanced installation:
+          - Configure email: firefly-iii/advanced-installation/email.md
+          - Authentication: firefly-iii/advanced-installation/authentication.md
+          - Backup: firefly-iii/advanced-installation/backup.md
+          - Locales: firefly-iii/advanced-installation/locales.md
+          - Cron jobs: firefly-iii/advanced-installation/cron.md
+      - Features:
+          - Command line usage: firefly-iii/features/commandline.md
+          - Rules: firefly-iii/features/rules.md
+          - Search: firefly-iii/features/search.md
+          - Webhooks: firefly-iii/features/webhooks.md
+          - Reports: firefly-iii/features/reports.md
+      - Financial concepts:
+          - Transactions: firefly-iii/financial-concepts/transactions.md
+          - Organizing transactions: firefly-iii/financial-concepts/organizing.md
+          - Tracking cash: firefly-iii/financial-concepts/tracking_cash.md
+          - Accounts: firefly-iii/financial-concepts/accounts.md
+          - Currencies: firefly-iii/financial-concepts/currencies.md
+          - Piggy banks: firefly-iii/financial-concepts/piggies.md
+          - Bills: firefly-iii/financial-concepts/bills.md
+          - Recurring transactions: firefly-iii/financial-concepts/recurring.md
+          - Reconciling accounts: firefly-iii/financial-concepts/reconcile.md
+      - Importing data: firefly-iii/importing-data/index.md
+      - Exporting data: firefly-iii/exporting-data/index.md
+      - API:
+          - API: firefly-iii/api/index.md
+          - Special endpoints: firefly-iii/api/specials.md
+      - More info:
+          - Logo and name: firefly-iii/more-information/logo.md
+          - License: firefly-iii/more-information/license.md
+          - Architecture: firefly-iii/more-information/architecture.md
+          - Security: firefly-iii/more-information/security.md
+          - Missing features: firefly-iii/more-information/what-its-not.md
+          - Personal finances: firefly-iii/more-information/personal-finances.md
+          - Zero based budgeting: firefly-iii/more-information/zero-based-budgeting.md
+          - Third-party tools: firefly-iii/more-information/3rdparty.md
+      - FAQ:
+          - General questions: firefly-iii/faq/general.md
+          - Managing your finances: firefly-iii/faq/financials.md
+          - Using Docker: firefly-iii/faq/docker.md
+          - Installing and upgrading: firefly-iii/faq/installation.md
+          - Self-hosting: firefly-iii/faq/self-hosted.md
+          - Translating Firefly III: firefly-iii/faq/translate.md
+          - Other questions: firefly-iii/faq/other.md
+      - Support: firefly-iii/support/index.md
   - Data importer:
-    - Introduction: data-importer/index.md
-    - Installing and running:
-      - Configuration: data-importer/install/configure.md
-      - Nordigen and Spectre: data-importer/install/nordigen-spectre.md
-      - Docker: data-importer/install/docker.md
-      - Self-hosted: data-importer/install/self_hosted.md
-      - Upgrading: data-importer/upgrade.md
-      - Cloud installation: data-importer/install/public.md
-    - Help:
-      - My first import: data-importer/help/my_first_import.md
-      - FAQ: data-importer/help/faq.md
-      - The JSON file: data-importer/help/json.md
-      - Pre-made configuration: data-importer/help/config.md
-    - Importing data:
-      - Uploading files: data-importer/usage/upload.md
-      - Connecting your bank: data-importer/usage/connection.md
-      - Configuring your import: data-importer/usage/configure.md
-      - Setting roles for columns: data-importer/usage/roles.md
-      - Mapping data: data-importer/usage/map.md
-      - Importing over command line: data-importer/usage/command_line.md
-      - Importing using POST: data-importer/usage/post.md
-      - Automation: data-importer/usage/automation.md
-      - Emailing results: data-importer/usage/email.md
-      - Importing transfers: data-importer/usage/importing_transfers.md
-    - Errors and trouble shooting:
-      - Duplicate transactions: data-importer/errors/duplicate_transactions.md
-      - Personal Access Token errors: data-importer/errors/token_errors.md
-      - Frequently seen issues: data-importer/errors/freq_errors.md
-      - Bad CSV files: data-importer/errors/bad_files.md
-  - Other tools:
-    - Introduction: other-tools/index.md
+      - Home: data-importer/index.md
+      - Installation:
+          - Installation: data-importer/installation/index.md
+          - Docker: data-importer/installation/docker.md
+          - Self-hosted: data-importer/installation/self-hosted.md
+          - Public installation: data-importer/installation/public.md
+          - Configuration: data-importer/installation/configuration.md
+          - Upgrading: data-importer/installation/upgrade.md
+      - How to use:
+          - How to use: data-importer/how-to-use/index.md
+          - Select data source: data-importer/how-to-use/select-data-source.md
+          - Configure import: data-importer/how-to-use/configure-import.md
+          - Fine-tune CSV: data-importer/how-to-use/fine-tune-import.md
+          - Map data: data-importer/how-to-use/map.md
+          - Start the import: data-importer/how-to-use/start.md
+          - Clean-up data: data-importer/how-to-use/clean-up-data.md
+      - Advanced:
+          - Advanced: data-importer/advanced/index.md
+          - Auto-import: data-importer/advanced/automation.md
+          - JSON: data-importer/advanced/json.md
+          - Notifications: data-importer/advanced/notifications.md
+          - Import transfers: data-importer/advanced/transfers.md
+      - FAQ:
+          - FAQ: data-importer/faq/index.md
+          - Installation errors: data-importer/faq/installation-errors.md
+          - Connection errors: data-importer/faq/connection-errors.md
+          - Nordigen and Spectre: data-importer/faq/spectre-and-nordigen.md
+          - Where to start?: data-importer/faq/where-to-start.md
+          - Messy transactions: data-importer/faq/messy-transactions.md
+          - Missing data: data-importer/faq/missing-data.md
+          - Duplicates: data-importer/faq/duplicates.md
+          - Re-import transactions: data-importer/faq/re-import.md
+          - JSON file: data-importer/faq/json.md
+      - More information:
+          - Separate tool: data-importer/more-information/separate-tool.md
+      - Support:
+          - Support: data-importer/support/index.md
+          - Issues: data-importer/support/issues.md
+          - Roadmap: data-importer/support/roadmap.md
+          - Contact: data-importer/support/contact.md
+  - Other tools: other-tools/index.md
 extra_css:
   - stylesheets/extra.css
 theme:
@@ -222,8 +135,8 @@ theme:
     repo: fontawesome/brands/github
 extra:
   social:
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/Firefly_III
+    - icon: fontawesome/brands/mastodon
+      link: https://fosstodon.org/@ff3
     - icon: fontawesome/brands/github
       link: https://github.com/firefly-iii
     - icon: fontawesome/brands/gitter

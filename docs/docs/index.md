@@ -8,7 +8,7 @@ The [main documentation](firefly-iii) for Firefly III, including:
 
 - The [Introduction](firefly-iii/about-firefly-iii/introduction.md?mtm_campaign=docu-internal&mtm_kwd=introduction)
 - How to install Firefly III using **[Docker](firefly-iii/installation/docker.md?mtm_campaign=docu-internal&mtm_kwd=docker)**
-- How to install firefly III [on your own hosting](firefly-iii/installation/self_hosted.md?mtm_campaign=docu-internal&mtm_kwd=self_hosted)
+- How to install Firefly III [on your own hosting](firefly-iii/installation/self-hosted.md?mtm_campaign=docu-internal&mtm_kwd=self_hosted)
 
 ## Data Importer
 
