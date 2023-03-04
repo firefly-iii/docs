@@ -1,5 +1,9 @@
 # FAQ: Installation errors
 
+## I get "Function not implemented: AH00141: Could not initialize random number generator"
+
+This is an error that happens on Synology boxes with an old kernel. I'm sorry, there is nothing I can do for you.
+
 ## How do I configure a reverse proxy in Docker?
 
 To run the data importer behind a reverse proxy, make sure you set the `TRUSTED_PROXIES` environment variable to either `*` or the IP address of your reverse proxy.
