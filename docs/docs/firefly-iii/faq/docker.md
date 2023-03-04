@@ -56,6 +56,10 @@ This is caused by a permissions issue. Run the following command:
 
 Or browse to the `/flush` page in your installation.
 
+## I get "Function not implemented: AH00141: Could not initialize random number generator"
+
+This is an error that happens on Synology boxes with an old kernel. I'm sorry, there is nothing I can do for you.
+
 ## The database password is wrong, but I'm 100% sure it's correct
 
 If you start the database container with a `MYSQL_PASSWORD` that you change later, it won't change in the database. Destroy the volume + container and start over.
