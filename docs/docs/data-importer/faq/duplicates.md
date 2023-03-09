@@ -43,6 +43,38 @@ These numbers may have slight variations. Firefly III will see the difference an
 
 Hidden deep in the JSON comparisons you may find a field called `external_id` or `internal_reference`. These fields will sometimes be different. Spectre is known to change these sometimes.
 
+## How does it work?
+
+There are two duplicate detection methods: content-based and identifier-based.
+
+### Content-based
+
+Technically speaking, Firefly III handles "content-based" duplicate detection and it works as follows.
+
+First, the data importer prepares the transaction. This includes all of the mappings and roles you've configured. This does NOT include rules or webhooks, since Firefly III itself is responsible for those. The data importer finalises the transaction and sends it to Firefly III. Here's an example from the data importer logs:
+
+```
+Submitting to Firefly III: {"group_title":null,"error_if_duplicate_hash":false,"transactions":[ ... ]} 
+```
+
+The first thing Firefly III will do is generate a hash over this array. You can see this in the Firefly III logs. Remember, Firefly III is doing the duplicate checking:
+
+```
+Now in TransactionGroupFactory::create()  
+Now in TransactionJournalFactory::create()  
+Start of TransactionJournalFactory::create()  
+Now creating journal 1/1  
+The hash is: 616290b9c880d9b353e7a1b1c3d23d622a10abf6ec532cdebe966cc3e5151d2d { ... }
+```
+
+After this hash is created, Firefly III will search for other transactions with the same hash. If it finds them, it reports a duplicate back to the data importer.
+
+This way of processing transactions means that:
+
+- Any (changed) rules in Firefly III do not influence the duplicate detection
+- If you edit the transaction after it's imported, the hash remains the same, it will not be updated
+- The original ("as is") transaction is checked for duplicates, not the end result after rules or webhooks
+
 ## Other issues?
 
 Please open a ticket [on GitHub](https://github.com/firefly-iii/firefly-iii/).
