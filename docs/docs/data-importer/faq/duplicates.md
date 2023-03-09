@@ -75,6 +75,17 @@ This way of processing transactions means that:
 - If you edit the transaction after it's imported, the hash remains the same, it will not be updated
 - The original ("as is") transaction is checked for duplicates, not the end result after rules or webhooks
 
+Conversely, it also means that:
+
+- If you change the mapping, or the roles of the data before it gets send to Firefly III, the hash changes
+- If your bank uses new transaction IDs or changes the CapItaliZAtiON, the hash changes
+
+### Identifier-based
+
+Identifier-based duplicate detection is handled by the data importer. Each transaction you wish to import **must** have a unique identifier in a column.
+
+If you select the column and the field it should be stored in, the data importer will search your Firefly III installation for this specific identifier. When Firefly III reports it's been found, the transaction will not be imported (again).
+
 ## Other issues?
 
 Please open a ticket [on GitHub](https://github.com/firefly-iii/firefly-iii/).
