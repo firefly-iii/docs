@@ -1,7 +1,7 @@
 # Firefly III logo and name
 
 <div style="text-align:center;">
-	<img src="./logo.png" style="height:200px;">
+	<img src="./logo.png" style="height:200px;" alt="Firefly III logo">
 	<h2>Firefly III</h2>
 </div>
 

@@ -12,7 +12,7 @@ To run the data importer behind a reverse proxy, make sure you set the `TRUSTED_
 
 Some setups have a bad time handling cookies, and without support for cookies the Data Importer doesn't know what you want to do. Make sure that
 
-- You don't run the data importer in a sub-directory
+- You don't run the data importer in a subdirectory
 - The cookie settings in the .env file are correct.
 =======
 

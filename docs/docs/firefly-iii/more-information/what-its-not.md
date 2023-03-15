@@ -36,10 +36,6 @@ I am looking for ways to make it easier to look at charts with multiple currenci
 
 Firefly III knows many ways to organise your data, but there are no "sublevels". Instead, most objects like piggy banks or bills can be divided in "groups" which serve a similar purpose. There are also tags to make things very fine-grained.
 
-### Keep track of outgoing loans
-
-Sometimes you borrow your friend's money, and you want to keep track of the loan. It's possible [to track paybacks](../faq/financials.md#what-do-i-do-with-people-who-pay-me-back) in a limited fashion. A full implementation will be included in a future release.
-
 ### Share your administration
 
 Firefly III is a multi-user environment. But each user is strictly separated from other users. If you want to share your administration you must commit the capital sin of sharing your password. I am working on a better way to manage this however, and I ask for your patience.

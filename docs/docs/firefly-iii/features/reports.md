@@ -63,7 +63,7 @@ The audit report is meant to give you an exact overview of an asset account (or 
 
 ### Expense/revenue report
 
-The expense/revenue report is meant for expense and revenue accounts that share the same name. Take for example your local Tax Department. You pay taxes but perhaps you receive money back as well. Or when you work in retail, you might be able to buy stuff at a discount. This report shows you an overview of such accounts. You can click on the screenshot below for a large version.
+The expense/revenue report is meant for expense and revenue accounts that share the same name. Take for example your local Tax Department. You pay taxes, but perhaps you receive money back as well. Or when you work in retail, you might be able to buy stuff at a discount. This report shows you an overview of such accounts. You can click on the screenshot below for a large version.
 
 [![Expense + revenue report](images/reports-expense-small.png)](images/reports-expense.png)
 
