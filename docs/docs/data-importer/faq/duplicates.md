@@ -49,9 +49,9 @@ There are two duplicate detection methods: content-based and identifier-based.
 
 ### Content-based
 
-Technically speaking, Firefly III handles "content-based" duplicate detection and it works as follows.
+Technically speaking, Firefly III handles "content-based" duplicate detection, and it works as follows.
 
-First, the data importer prepares the transaction. This includes all of the mappings and roles you've configured. This does NOT include rules or webhooks, since Firefly III itself is responsible for those. The data importer finalises the transaction and sends it to Firefly III. Here's an example from the data importer logs:
+First, the data importer prepares the transaction. This includes all the mappings and roles you've configured. This does NOT include rules or webhooks, since Firefly III itself is responsible for those. The data importer finalises the transaction and sends it to Firefly III. Here's an example from the data importer logs:
 
 ```
 Submitting to Firefly III: {"group_title":null,"error_if_duplicate_hash":false,"transactions":[ ... ]} 
