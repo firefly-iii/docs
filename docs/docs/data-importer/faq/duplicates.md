@@ -6,6 +6,8 @@ Sometimes the Firefly III Data Importer will create duplicate transactions, desp
 
 Firefly III will also check deleted transactions when checking for duplicates. This is on purpose. If your import contains bad transactions or informative message hidden as transactions, they will not be re-imported after you've deleted them.
 
+If you're sure you wish to reimport transactions, press the **Purge** button on the last tab of your Profile (under `/profile`).
+
 ## Further debugging
 
 Use the *debug view* to see why a transaction is imported, despite being a duplicate of another transaction. Remember that rules don't influence the (de)duplication process, because rules are applied *after* the duplication check.
