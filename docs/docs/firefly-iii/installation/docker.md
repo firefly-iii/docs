@@ -26,6 +26,15 @@ If you've downloaded the Docker Compose file that *includes* the Data Importer, 
 
 It is **important** that you rename the file as instructed here. You can see in the Docker compose file why this is. There is a reference to it: `env_file:`. If you don't name it as it is in the Docker Compose file, you must edit the Docker compose file to match the file names.
 
+If you include the data importer, you MUST do this:
+
+1. Change `FIREFLY_III_URL` in `.importer.env` to `http://app:8080`
+
+Either way, you should also do this (not mandatory):
+
+1. Change `DB_PASSWORD` in `.env` to something else. Pick a nice password.
+2. Change `MYSQL_PASSWORD` in `.db.env` to the SAME value
+
 ### Start the container
 
 Run the following command in the directory where both `docker-compose.yml` and all environment variable files are present.
