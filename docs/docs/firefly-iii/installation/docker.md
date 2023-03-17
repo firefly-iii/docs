@@ -35,6 +35,9 @@ Either way, you should also do this (not mandatory):
 1. Change `DB_PASSWORD` in `.env` to something else. Pick a nice password.
 2. Change `MYSQL_PASSWORD` in `.db.env` to the SAME value
 
+!!! note
+    Change the password FIRST. If you change the password *after* you started Docker, it will complain about having no access.
+
 ### Start the container
 
 Run the following command in the directory where both `docker-compose.yml` and all environment variable files are present.
