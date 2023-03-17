@@ -1,5 +1,35 @@
 # Docker installation
 
+## Together with Firefly III
+
+You can run the data importer in a Docker Compose combination with Firefly III. A **[docker-compose.yml](https://github.com/firefly-iii/docker/blob/main/docker-compose-data.yml)** is available on GitHub. Download the raw file and store it in a directory of your choice.
+
+Then, download the environment variable files:
+
+- Download the `.env` file for Firefly III [from the Firefly III repository](https://github.com/firefly-iii/firefly-iii/blob/main/.env.example). Save the raw file as `.env` next to the docker compose file.
+- Download the `.importer.env` file from the [Data Importer repository](https://github.com/firefly-iii/data-importer/blob/main/.env.example) and save it as `.importer.env` next to the other files.
+- The final file contains the database variables and can be downloaded from [the Docker repository](https://raw.githubusercontent.com/firefly-iii/docker/main/database.env). Save it as a new file called `.db.env`.
+
+If you save all example files and change nothing, it will NOT YET work. You must do a few things: 
+
+1. Change `DB_PASSWORD` in `.env` to something else. Pick a nice password.
+2. Also change `MYSQL_PASSWORD` in `.db.env` to the SAME value
+3. Change `FIREFLY_III_URL` in `.importer.env` to `http://app:8080`. Nothing else!
+
+Run the following command in the directory where all files are present.
+
+```text
+docker-compose -f docker-compose.yml up -d
+```
+
+You can follow the progress of the installation by running this command:
+
+```text
+docker-compose -f docker-compose.yml logs -f
+```
+
+When the installation is done, Firefly III will thank you for installing it. Once you see this message, you can visit Firefly III. It will be running at your [localhost](http://localhost).
+
 ## Single installation
 
 To run the Data Importer using the following `run` command. You will start a web server on port 8081 that will allow you to use the data importer.  
@@ -27,15 +57,4 @@ fireflyiii/data-importer:latest
 !!! ip
     You may need to clear your cookies, browse to `/flush` or press \[Reauthenticate\] after changing the environment variables.
 
-## Together with Firefly III
 
-You can run the data importer in a Docker Compose combination with Firefly III. An **[example docker-compose.yml](https://github.com/firefly-iii/docker/blob/main/docker-compose-data.yml)** is available on GitHub.
-
-- Notice how Firefly III uses the `.env` file. Use [the example file](https://github.com/firefly-iii/firefly-iii/blob/main/.env.example) from the Firefly III repository as a base.
-- The data importer has its own configuration file `.fidi.env`. The data importer has its own [example file here](https://github.com/firefly-iii/data-importer/blob/main/.env.example).
-- The MariaDB also has its own configuration file in `.db.env`. Check out [Docker Hub](https://hub.docker.com/_/mariadb) for more details.
-
-The following things are important to remember:
-
-* The MySQL password must be *the same* in the `.env` and `.db.env` file.
-* The `FIREFLY_III_URL` variable the data importer requires is `http://app:8080`.

@@ -4,22 +4,31 @@
 
 ### Download Docker Compose file
 
-Download **[the Docker compose file](https://raw.githubusercontent.com/firefly-iii/docker/main/docker-compose.yml)** and place it somewhere convenient. It doesn't really matter where you place it, but I suggest a dedicated directory.
+Download **[the Docker Compose file](https://raw.githubusercontent.com/firefly-iii/docker/main/docker-compose.yml)** and place it somewhere convenient. It doesn't really matter where you place it, but I suggest a dedicated directory.
 
-Grab the raw file, and don't copy-paste the text from your browser. The spaces in the file are very important. So use "Save As".
+If you also want to use the Firefly III Data Importer, grab the [alternative Docker Compose file](https://raw.githubusercontent.com/firefly-iii/docker/main/docker-compose-data.yml) instead.
+
+Either way, grab the raw file, and don't copy-paste the text from your browser. The spaces in the file are very important. So use "Save As".
 
 !!! info
     The Apache server inside this Docker image will run as `www-data`. This will be reflected by the files you upload: they will be owned by `www-data`. You can change the user the image runs under but that user must exist inside the Docker image or things may not work as expected.
 
 ### Download environment variables
 
-Next step is to download **[the environment variable file](https://raw.githubusercontent.com/firefly-iii/firefly-iii/main/.env.example)** from the GitHub repository and place in the same folder as the `docker-compose.yml`.
+There are two environment variable-files you need to run this Docker Compose file. Download all three files and save them next to the Docker Compose file.
 
-It is **important** that you rename the file to `.env`. You can see in the Docker compose file why this is. There is a reference to it: `env_file: .env`. If you don't name it `.env`, but something else, you must edit the Docker compose file.
+- The first file contains Firefly III variables and can be downloaded from [the Firefly III repository](https://raw.githubusercontent.com/firefly-iii/firefly-iii/main/.env.example). Save it as a new file called `.env`.
+- The second file contains the database variables and can be downloaded from [the Docker repository](https://raw.githubusercontent.com/firefly-iii/docker/main/database.env). Save it as a new file called `.db.env`.
+
+If you've downloaded the Docker Compose file that *includes* the Data Importer, you'll need a third `.env` file:
+
+- Download the [Data Importer environment variables](https://raw.githubusercontent.com/firefly-iii/data-importer/main/.env.example) and save it as a new file called `.importer.env`.
+
+It is **important** that you rename the file as instructed here. You can see in the Docker compose file why this is. There is a reference to it: `env_file:`. If you don't name it as it is in the Docker Compose file, you must edit the Docker compose file to match the file names.
 
 ### Start the container
 
-Run the following command in the directory where both `docker-compose.yml` and `.env` are present.
+Run the following command in the directory where both `docker-compose.yml` and all environment variable files are present.
 
 ```text
 docker-compose -f docker-compose.yml up -d
