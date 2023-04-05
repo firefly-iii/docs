@@ -38,6 +38,10 @@ You can use the suggestions on **[this page](messy-transactions.md)** to learn h
 
 There are simply too many banks and financial institutions in the world for me to manage exceptions or options for. If you run into a data quality issue, the best place to get it addressed is at the source: your bank.
 
+### Will manually entered transactions match with imported bank transactions?
+
+Probably not. Most imported transactions have different fields with different values, which break the matching algorithm. 
+
 ### I want to auto-import transactions from \[my bank\] out of the box!
 
 You can use the information on the **[automation page](../advanced/automation.md)** to automate your import.

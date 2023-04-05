@@ -43,7 +43,7 @@ Either way, you should also do this (not mandatory):
 Run the following command in the directory where both `docker-compose.yml` and all environment variable files are present.
 
 ```text
-docker-compose -f docker-compose.yml up -d
+docker-compose -f docker-compose.yml up -d --pull=always
 ```
 
 You can follow the progress of the installation by running this command:
