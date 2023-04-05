@@ -14,10 +14,8 @@ Firefly III can upgrade itself from very old versions, even back from 4.7.x. In 
 To update the container run these commands:
 
 ```bash
-docker-compose stop app
-docker-compose rm
-docker-compose pull app
-docker-compose -f docker-compose.yml up -d
+docker-compose stop
+docker-compose -f docker-compose.yml up -d --pull=always
 ```
 
 If you re-download `docker-compose.yml`, keep in mind that the database version in the Docker composer may have been updated and that this version is not compatible with your current version (ie MariaDB 10 vs MariaDB 11).

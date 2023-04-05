@@ -22,7 +22,7 @@ If you save all example files and change nothing, it will NOT YET work. You must
 Run the following command in the directory where all files are present.
 
 ```text
-docker-compose -f docker-compose.yml up -d
+docker-compose -f docker-compose.yml up -d --pull=always
 ```
 
 You can follow the progress of the installation by running this command:

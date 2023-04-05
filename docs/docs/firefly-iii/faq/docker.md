@@ -56,6 +56,10 @@ This is caused by a permissions issue. Run the following command:
 
 Or browse to the `/flush` page in your installation.
 
+## I see a lot of log entries from the "Firefly III Health Checker"
+
+This is normal. The health checker is called by Docker to see if Firefly III is still up and running.
+
 ## I get "Function not implemented: AH00141: Could not initialize random number generator"
 
 This is an error that happens on Synology boxes with an old kernel. I'm sorry, there is nothing I can do for you.
