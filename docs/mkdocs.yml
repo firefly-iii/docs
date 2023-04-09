@@ -76,6 +76,7 @@ nav:
           - Installing and upgrading: firefly-iii/faq/installation.md
           - Self-hosting: firefly-iii/faq/self-hosted.md
           - Translating Firefly III: firefly-iii/faq/translate.md
+          - Rules: firefly-iii/faq/rules.md
           - Other questions: firefly-iii/faq/other.md
       - Support: firefly-iii/support/index.md
   - Data importer:
