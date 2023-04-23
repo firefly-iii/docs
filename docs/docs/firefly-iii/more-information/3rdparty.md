@@ -40,6 +40,15 @@ Photuris III is an android app created by @emansih that connects to your Firefly
 - [Google Play Store](https://play.google.com/store/apps/details?id=xyz.hisname.fireflyiii)
 - [F-Droid store](https://f-droid.org/packages/xyz.hisname.fireflyiii/)
 
+### Waterfly III
+
+Waterfly III is an android app created by @dreautall that connects to your Firefly III installation.
+
+- [Credits](https://github.com/dreautall)
+- [Website and documentation](https://github.com/dreautall/waterfly-iii)
+- [Google Play Store](https://play.google.com/store/apps/details?id=com.dreautall.waterflyiii)
+- [F-Droid store](https://f-droid.org/en/packages/com.dreautall.waterflyiii/)
+
 ### OCR Firefly Mobile
 
 OCR Firefly Mobile is a little tool to help you enter transactions into the mobile app automatically.
