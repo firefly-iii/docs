@@ -84,12 +84,13 @@ In the `firefly-iii` directory you will find a `.env` file. Open this file using
 This step is very important, because Firefly III needs a database to work with, and it will tell you whether your configuration is correct. Run the following command in the Firefly III directory.
 
 ```bash
-php artisan migrate:refresh --seed
 php artisan firefly-iii:upgrade-database
+php artisan firefly-iii:correct-database
+php artisan firefly-iii:report-integrity
 php artisan passport:install
 ```
 
-Now you should be able to visit [http://localhost/firefly-iii/](http://localhost/firefly-iii/public) and see Firefly III.
+Now you should be able to visit [http://localhost/firefly-iii/public](http://localhost/firefly-iii/public) and see Firefly III.
 
 ### It doesn't work!
 
