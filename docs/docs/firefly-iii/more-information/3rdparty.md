@@ -47,7 +47,6 @@ Waterfly III is an android app created by @dreautall that connects to your Firef
 - [Credits](https://github.com/dreautall)
 - [Website and documentation](https://github.com/dreautall/waterfly-iii)
 - [Google Play Store](https://play.google.com/store/apps/details?id=com.dreautall.waterflyiii)
-- [F-Droid store](https://f-droid.org/en/packages/com.dreautall.waterflyiii/)
 
 ### OCR Firefly Mobile
 
