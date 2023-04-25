@@ -23,6 +23,14 @@ David built a tool to send you a monthly overview of your expenses by category.
 
 ## Mobile applications
 
+### Waterfly III
+
+Waterfly III is an android app created by @dreautall that connects to your Firefly III installation.
+
+- [Credits](https://github.com/dreautall)
+- [Website and documentation](https://github.com/dreautall/waterfly-iii)
+- [Google Play Store](https://play.google.com/store/apps/details?id=com.dreautall.waterflyiii)
+
 ### Firefly Personal Finance
 
 Firefly Personal Finance is an android app created by @mconway that connects to your Firefly III installation.
