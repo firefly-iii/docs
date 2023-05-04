@@ -115,6 +115,7 @@ nav:
           - JSON file: data-importer/faq/json.md
       - More information:
           - Separate tool: data-importer/more-information/separate-tool.md
+          - Other tools: data-importer/more-information/other-tools.md
       - Support:
           - Support: data-importer/support/index.md
           - Issues: data-importer/support/issues.md
