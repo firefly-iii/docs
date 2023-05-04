@@ -26,4 +26,4 @@ If you want to know more about the data importer:
 
 - Read about **[Spectre and Nordigen](faq/spectre-and-nordigen.md)**, two third-party services that can import data for you
 - Read about why the data importer is a **[separate tool](more-information/separate-tool.md)**
-
+- Read about **[other data import tools](more-information/other-tools.md)** for Firefly III.
