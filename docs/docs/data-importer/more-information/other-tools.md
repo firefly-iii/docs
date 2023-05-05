@@ -19,6 +19,10 @@ There are various scripts and tools you can use, if the Firefly III Data Importe
 
 "[Firefly III FinTS importer](https://github.com/bnw/firefly-iii-fints-importer)" allows you to import using FinTS, a bank-independent protocol for online banking, developed and used by German banks. 
 
+### CAMT (ISO 20022)
+
+[This script](https://github.com/plumped/camt_converter_ISO20022_for_camt) allows you to unzip zip files with camt.053 in them and convert them into CSV for easy processing.
+
 ### GnuCash
 
 This experimental [Python script](https://gist.github.com/adyanth/20c004869baf33458e416d4396ca40a8) can convert GnuExports to Firefly III compatible JSON.
