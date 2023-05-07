@@ -22,13 +22,13 @@ If you save all example files and change nothing, it will NOT YET work. You must
 Run the following command in the directory where all files are present.
 
 ```text
-docker-compose -f docker-compose.yml up -d --pull=always
+docker compose -f docker-compose.yml up -d --pull=always
 ```
 
 You can follow the progress of the installation by running this command:
 
 ```text
-docker-compose -f docker-compose.yml logs -f
+docker compose -f docker-compose.yml logs -f
 ```
 
 When the installation is done, Firefly III will thank you for installing it. Once you see this message, you can visit Firefly III. It will be running at your [localhost](http://localhost).

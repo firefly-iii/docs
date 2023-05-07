@@ -148,7 +148,7 @@ The `[token]` value can be found on your `/profile` under the "Command line toke
 
 If you do not know the Firefly III URL, you can also use the Docker IP address.
 
-### Expand the docker-compose file
+### Expand the docker compose file
 
 ```
 cron:
