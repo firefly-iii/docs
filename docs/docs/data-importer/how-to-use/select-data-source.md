@@ -2,6 +2,13 @@
 
 ## Introduction
 
+Depending on how you installed the data importer, you can find it at any of the following urls:
+
+- http://localhost:8080/
+- http://localhost:81/
+
+Browse to your data importer URL.
+
 To import data first select your data source. You have the following choices:
 
 1. Import from CSV files
