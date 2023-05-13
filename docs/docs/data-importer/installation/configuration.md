@@ -16,9 +16,12 @@ On this page you will read how to:
 
 First, you must tell the data importer where to reach Firefly III. This is set in the `FIREFLY_III_URL` environment variable. REMOVE any trailing slash from the end of the URL.
 
-For Docker, you may be able to use the internal IP address of Firefly III, instead of its public address. But if normal users can't reach this URL, you must also set the `VANITY_URL`. Here is an example:
+In most cases, you can use `http://app:8080` which will be an internal reference to the Firefly III installation.
 
-* `FIREFLY_III_URL=http://172.16.2.2:8080` (internal Docker URL)
+Since normal users can't reach this URL, you must also set the `VANITY_URL`. Here is an example:
+
+* `FIREFLY_III_URL=http://app:8080` (internal Docker URL)
+* `FIREFLY_III_URL=http://172.16.2.2:8080` (alternative scenario, internal Docker IP)
 * `VANITY_URL=https://money.bill-gates.com` (public or local URL)
 
 !!! note "Optional value"
