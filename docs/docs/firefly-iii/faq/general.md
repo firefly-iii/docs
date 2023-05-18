@@ -26,7 +26,7 @@ This is a fairly complicated question, but here are some key differences that yo
 
 In many budgeting tools you assign every coin to a budget until all your money is budgeted. When I started Firefly III zero-sum budgeting didn't really exist as a concept, at least not that I remember.
 
-The only effective difference with YNAB (and other tools) is that you *don't need to budget all the way to zero*. What you do is, you set a monthly amount that you want to budget (aka spend), like € 1000. You shape a few budgets around that amount, and you start the month with € 1000 on your bank account and like 4 budgets to spend it in. Now you have a monthly financial routine around 1000,-. You can now shape your budgets and try to spend even less. If you have € 2000 on your savings account you know you can go without a job for two months.
+The only effective difference with YNAB (and other tools) is that you *don't need to budget all the way to zero*. What you do is, you set a monthly amount that you want to budget (aka spend), like € 1000. You shape a few budgets around that amount, and you start the month with € 1000 on your bank account and like 4 budgets to spend it in. Now you have a monthly financial routine around 1000. You can now shape your budgets and try to spend even less. If you have € 2000 on your savings account you know you can go without a job for two months.
 
 Any income you get over the month you put in your savings account directly, it doesn't need to reside on your bank account: it would only muddle your € 1000. If you want to create specific saving targets for the money in your savings account you use [piggy banks](../financial-concepts/piggies.md).
 
@@ -52,7 +52,7 @@ Unfortunately, there is no such thing as "PSD2 integration" or "PSD2 compliance"
 
 Firstly, the PSD2 regulation tells banks that they should open their APIs to authorized third parties. These authorized third parties must be registered at national financial institutes like "De Nederlandse Bank" (for the Netherlands). Such a registration is of course, impossible for Firefly III.
 
-Each user would have to register their own Firefly III installation separately at the DNB. Keep in mind that this process is expensive. After this registration each bank must authorize you separately. To authorize yourself you will need an EDIAS compliant PSD2 digital certificate which can cost up to EUR 2000,- without tax.
+Each user would have to register their own Firefly III installation separately at the DNB. Keep in mind that this process is expensive. After this registration each bank must authorize you separately. To authorize yourself you will need an EDIAS compliant PSD2 digital certificate which can cost up to EUR 2000 without tax.
 
 It would cost a lot of time and money to get registered and get the right digital certificates. And even then, these banks have manual processes to allow new API customers and there's no guarantee Firefly III would even make the cut.
 

@@ -16,7 +16,7 @@ These things are **budgets**. Budgets are a kind of "category" that come back ev
 
 In what is called an [envelope system](http://en.wikipedia.org/wiki/Envelope_system) you stuff money in envelopes and spend your money from those envelopes.
 
-Firefly III uses this method, which means you can create "envelopes" for any period. Example: € 200,- for "groceries" or € 500,- for "bills" every month. On the budgets-page you can create budgets and set envelopes each month (or each week or year). Expenses can then be assigned a budget, and you will see on the budget page how well you are doing.
+Firefly III uses this method, which means you can create "envelopes" for any period. Example: € 200 for "groceries" or € 500 for "bills" every month. On the budgets-page you can create budgets and set envelopes each month (or each week or year). Expenses can then be assigned a budget, and you will see on the budget page how well you are doing.
 
 There is even a special budget report.
 
@@ -45,46 +45,52 @@ Firefly III can automatically manage your budgets. Edit or create a budget and p
 
 #### Fixed amount
 
-Firefly III will create a new budget limit every selected period. The exact behavior depends entirely on your settings:
+Firefly III will create a new budget amount every selected period. The exact behavior depends entirely on your settings:
 
-If you set it to "monthly", € 200,- Firefly III will give you an automatic budget limit of € 200,-, valid for one month, every month. This will happen automatically.
-
-Other settings will have a similar effect:
-
-* Daily: Firefly III will create a budget limit of one day, every day.
-* Weekly: Firefly III will create a weekly budget limit every week, every Monday.
-* Monthly: Firefly III will create a monthly budget limit every month, on the first of every month.
-* Quarterly: Firefly III will create a quarterly budget limit every three months, on the first of every quarter (1st of January, 1st of April, 1st of July, 1st of October).
-* Half-yearly: Firefly III will create a half year long budget limit every six months, twice a year (1st of January, 1st of July).
-* Yearly: Firefly III will create a year long budget limit every twelve months, once a year (1st of January).
+If you set it to "monthly", € 200 Firefly III will give you an automatic budget amount of € 200, valid for one month, every month. This will happen automatically. Other periods are explained further ahead.
 
 #### Rollover ("Add an amount every period")
 
-Rollover budgets can be used to "save up" money in a budget. Firefly III will take the budget left from the previous period and add the configured amount to the budget.
+Rollover budget amounts can be used to "save up" money in a budget. Firefly III will take the budget left from the previous period and add the configured amount to the budget.
 
-If you set it to "monthly", € 25,- Firefly III will behave in the following way:
+If you set it to "monthly", € 25 Firefly III will behave in the following way:
 
-* January, the budget will be set to € 25,-.
-* February, the budget will be set to € 50,-.
-* March, € 75,- etc.
+* January, the budget will be set to € 25.
+* February, the budget will be set to € 50.
+* March, € 75 etc.
 
-If you spend money in your budget, this will be reflected in the budget. For example, with the example budget now at € 75,-, this is what happens when you spend € 19,95:
+If you spend money in your budget, this will be reflected in the budget. For example, with the example budget now at € 75, this is what happens when you spend € 19,95:
 
 * April, the budget will be set to € 80,05: 75 + 25 - 19,95.
 * May, € 105,05. Same logic.
 
 If at any point you spend more than the amount in the budget, the routine will start over. So if you spend 199,95 (which is more than 105,05):
 
-* June, the budget will be set to € 25,- again.
+* June, the budget will be set to € 25 again.
 
-Just like the "fixed amount" auto-budget settings, these changes will happen on specific moments. This depends on the budget settings:
+#### Adjusted ("... and correct for overspending")
 
-* Daily: Firefly III will create a budget limit of one day, every day.
-* Weekly: Firefly III will create a weekly budget limit every week, every Monday.
-* Monthly: Firefly III will create a monthly budget limit every month, on the first of every month.
-* Quarterly: Firefly III will create a quarterly budget limit every three months, on the first of every quarter (1st of January, 1st of April, 1st of July, 1st of October).
-* Half-yearly: Firefly III will create a half year long budget limit every six months, twice a year (1st of January, 1st of July).
-* Yearly: Firefly III will create a year long budget limit every twelve months, once a year (1st of January).
+If you set an adjusted budget amount, the budget amount will be set every period to the amount you specify. If you have overspent this amount in the previous period, this will be corrected in the current period.
+
+Example: you have a monthly budget of 50 for clothes.
+
+* January, the budget amount will be set to 50
+* February, the budget amount will be set to 100
+
+You spend 125 in February.
+
+* March, the budget amount will be set to 25 (100 - 125)
+
+Just like the "fixed amount" auto-budget settings, these changes will happen on specific moments. This depends on the budget settings. If you spent way too much, twice the period's amount, the new period will be set to 1 (one).
+
+#### Trigger dates
+
+* Daily: Firefly III will create a budget amount of one day, every day.
+* Weekly: Firefly III will create a weekly budget amount every week, every Monday.
+* Monthly: Firefly III will create a monthly budget amount every month, on the first of every month.
+* Quarterly: Firefly III will create a quarterly budget amount every three months, on the first of every quarter (1st of January, 1st of April, 1st of July, 1st of October).
+* Half-yearly: Firefly III will create a half year long budget amount every six months, twice a year (1st of January, 1st of July).
+* Yearly: Firefly III will create a year long budget amount every twelve months, once a year (1st of January).
 
 #### Special attention
 
