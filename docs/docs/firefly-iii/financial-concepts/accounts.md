@@ -71,7 +71,7 @@ You take out student loans or a mortgage, and you keep track of paying it back i
 
 #### Creditor
 
-This is less common but can be useful to track money. You give your friend 1000,- euro's for a new PC. Your friend pays off the loan. Firefly III keeps track of the amount due.
+This is less common but can be useful to track money. You give your friend 1000 euro's for a new PC. Your friend pays off the loan. Firefly III keeps track of the amount due.
 
 If you want to borrow your friend (more) money, you need to do this:
 
@@ -98,7 +98,7 @@ Asset accounts can't use an IBAN or an account number if it's taken by either an
 
 ## A note on your opening balance
 
-When you define an account's opening balance, you also have to set the date. Keep in mind that the opening balance is a transaction too. Let's say you set your opening balance to be 270,-- on December 1st. Trick question. What was your balance the week before, in November 27th? And assume no other transactions have been made.
+When you define an account's opening balance, you also have to set the date. Keep in mind that the opening balance is a transaction too. Let's say you set your opening balance to be 270- on December 1st. Trick question. What was your balance the week before, in November 27th? And assume no other transactions have been made.
 
 The correct answer is: 0.00. Because the opening balance was posted one week later, the balance of the account _before_ the opening balance is zero.
 

@@ -21,8 +21,8 @@ Either way, press "Store reconciliation" to store the result. The transactions w
 
 When reconciling an account, you must first match the amounts and dates on your bank statement, with the input fields in Firefly III. For example:
 
-* Start date: January 1st, 2018. Balance: € 120,-
-* Start date: January 31st, 2018. Balance: € 788,-
+* Start date: January 1st, 2018. Balance: € 120
+* Start date: January 31st, 2018. Balance: € 788
 
 So Firefly III will show the same dates and balances as your bank statement does. You can press **Start reconciling** to continue.
 
