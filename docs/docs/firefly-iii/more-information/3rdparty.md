@@ -87,6 +87,13 @@ The PHP API library is a library developed by StanSoft.BG Ltd that allows you to
 - [Credits](https://github.com/StanSoftBG)
 - [Website](https://github.com/StanSoftBG/oauth2-firefly-iii)
 
+### AI Categorizer
+
+Firefly III AI Categorizer is a tool developed by @bahuma20 that allows you to automatically categorize your expenses for free by using OpenAI.
+
+- [Credits](https://github.com/bahuma20)
+- [Website](https://github.com/bahuma20/firefly-iii-ai-categorize)
+
 ### Telegram bot for Firefly III
 
 The Telegram bot for Firefly III can create transactions through Telegram.
