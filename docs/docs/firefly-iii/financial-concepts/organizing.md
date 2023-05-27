@@ -53,7 +53,7 @@ If you set it to "monthly", € 200 Firefly III will give you an automatic budge
 
 Rollover budget amounts can be used to "save up" money in a budget. Firefly III will take the budget left from the previous period and add the configured amount to the budget.
 
-If you set it to "monthly", € 25 Firefly III will behave in the following way:
+If you set it to "monthly" (€ 25) Firefly III will behave like so:
 
 * January, the budget will be set to € 25.
 * February, the budget will be set to € 50.
