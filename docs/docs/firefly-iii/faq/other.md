@@ -51,6 +51,11 @@ There's not much I can do about this. When the auto-complete searches in your da
 
 The good news is that once the search is over, the result is cached by your browser. These cached entries will be searched for in a case-**in**sensitive manner.
 
+## Firefly III can't tell the difference between `a` and `ä`
+
+This happens because by default MySQL can't see the difference. At the moment, I cannot fix this.
+
+
 ## I keep getting redirected to the index after editing something
 
 If you're running Firefly III in a reverse proxy environment, please check if you have the following configuration:
