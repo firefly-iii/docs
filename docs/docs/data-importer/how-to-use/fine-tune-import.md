@@ -1,14 +1,17 @@
-# Fine tune CSV imports
+# Fine tune CSV or camt.053 imports
 
-Next to the [configuration settings](configure-import.md) you also have options to further tune your CSV file import.
+Next to the [configuration settings](configure-import.md) you also have options to further tune your CSV or camt.053 file import.
 
-## CSV column roles
+## CSV+camt.053 column roles
 
 You have to tell the Firefly III data importer what each column means. The page looks something like this:
 
 ![An example CSV file with 3 columns.](./images/example.png)
 
 Each column must be given a role. You can of course, choose to ignore a column. These are the roles that you can choose from:
+
+!!! info "About camt.053 roles"
+    The importer also allows you to set the roles for the content in camt.053. Since camt.053 are more strictly organised, your options may be limited. The text below mentions CSV files, but most options are also possible for camt.053 files.
 
 ### (ignore this column)
 

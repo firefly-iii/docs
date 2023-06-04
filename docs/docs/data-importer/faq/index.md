@@ -32,7 +32,7 @@ There is also a [Firefly III API](../../firefly-iii/index.md) that you can conne
 
 ### Can you clean-up the transactions from \[my bank\]?
 
-If your bank delivers terrible CSV files, or when the Nordigen / Salt Edge import is exceptionally messy, there is not much I can do about it.
+If your bank delivers terrible files, or when the Nordigen / Salt Edge import is exceptionally messy, there is not much I can do about it.
 
 You can use the suggestions on **[this page](messy-transactions.md)** to learn how to clean up transactions.
 

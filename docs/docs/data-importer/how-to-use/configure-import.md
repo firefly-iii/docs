@@ -1,6 +1,6 @@
 # Configure the import
 
-After uploading a file, you'll be presented with a list of options. Some options are specific to a way of importing, like CSV files, Nordigen or Spectre. We start from the top and go down the page.
+After uploading a file, you'll be presented with a list of options. Some options are specific to a way of importing, like CSV or camt.053 files, Nordigen or Spectre. We start from the top and go down the page.
 
 ## Nordigen and Spectre import options
 
@@ -42,6 +42,10 @@ Here are some examples:
 
 ![Date configuration value "Ymd" is necessary to parse this file](images/date.png "Date configuration value 'Ymd' is necessary to parse this file")
 
+## camt.053 file options
+
+The camt.053 file options are not yet documented, because I am lazy and the camt.053 import is only just released: thinks may change quickly. All other options below apply to camt.053 files as well. 
+
 ## Import options
 
 ### Default import account
@@ -59,9 +63,13 @@ When you check this the data importer will add a tag to each imported transactio
 !!! note "Rules"
     If you have rules that remove all tags from a transaction, they will *not* work when you use this option. The tag will always be added. This is not because the data importer uses some magic trick. The tag is added *after* the transaction is created.
 
+### Custom import tag
+
+You can set a custom import tag if you do not like the default one. To learn more about the possibilities, read the [FAQ on custom import tags](../faq/custom-import-tag.md).
+
 ### Map data
 
-If you import data, you can "map" the data found to data already present in Firefly III. You can use this to map account names in the CSV file to account names already in Firefly III. If you do not map data, Firefly III will make one-on-one to existing or to be created data.
+If you import data, you can "map" the data found to data already present in Firefly III. You can use this to map account names in the CSV or camt.053 file to account names already in Firefly III. If you do not map data, Firefly III will make one-on-one to existing or to be created data.
 
 ### Date range
 

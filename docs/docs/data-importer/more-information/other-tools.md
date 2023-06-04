@@ -23,6 +23,9 @@ There are various scripts and tools you can use, if the Firefly III Data Importe
 
 [This script](https://github.com/plumped/camt_converter_ISO20022_for_camt) allows you to unzip zip files with camt.053 in them and convert them into CSV for easy processing.
 
+!!! info
+    Since the data importer supports camt.053 files, this is no necessary.
+
 ### GnuCash
 
 This experimental [Python script](https://gist.github.com/adyanth/20c004869baf33458e416d4396ca40a8) can convert GnuExports to Firefly III compatible JSON.

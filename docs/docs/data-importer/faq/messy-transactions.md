@@ -1,12 +1,12 @@
 # Messy transactions
 
-Some banks deliver abysmal CSV files. They have an interest to keep you inside their ecosystem and will do anything to stop you from moving to another system. Here are some common problems and their solutions.
+Some banks deliver abysmal files. They have an interest to keep you inside their ecosystem and will do anything to stop you from moving to another system. Here are some common problems and their solutions.
 
 ## Mixed content
 
 Some banks re-use the columns for different content. For example, "Sparkasse" (DE) uses the BIC column for other data if there is no BIC available. If your bank has similar issues, the import will probably fail. The best solution is to ignore the column entirely.
 
-## Extra header rows
+## Extra header rows (CSV only)
 
 Some banks will insert an extra header-row (`Source,Amount,Destination`) every 100 rows. As if a computer would forget the column names. If your bank does this, those extra header rows will fail during the import.
 
@@ -32,7 +32,7 @@ You can however, create custom rules that trigger on any content in the second t
 
 ### Merging transfers using an identifier
 
-If your bank supplies your CSV files with identifiers, you may configure the data importer to do an [identifier-based unique check](../how-to-use/configure-import.md). If both transactions share the same identifier, this may work for you.
+If your bank supplies your files with identifiers, you may configure the data importer to do an [identifier-based unique check](../how-to-use/configure-import.md). If both transactions share the same identifier, this may work for you.
 
 ## Other issues?
 

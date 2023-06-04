@@ -17,25 +17,25 @@ IMPORT_DIR_ALLOWLIST=/your/directory
 !!! note "Command line and Docker"
     When you're using Docker validate that you've mounted a directory with your files in it. This is something you must have done when you launched the Docker container, using for example `-v /path/to/my/files:/import`.
 
-### Import a single (CSV) file
+### Import a single (CSV or camt.053) file
 
 Use the following command to import a single file:
 
 ```bash
-# self hosted (CSV file)
-php artisan importer:import file.json file.csv
+# self hosted (file)
+php artisan importer:import file.json file.xml
 
 # self hosted (other sources)
 php artisan importer:import file.json
 
-# docker (CSV file)
+# docker (file)
 docker exec -it [container-id] php artisan importer:import file.json file.csv
 
 # docker (other sources)
 docker exec -it [container-id] php artisan importer:import file.json
 ```
 
-The JSON file should always point to your JSON configuration file. If you are importing CSV files, replace `file.csv` with the full path to your CSV file.
+The JSON file should always point to your JSON configuration file. If you are importing CSV or camt.053 files, replace `file.csv` with the full path to your file.
 
 ### Importing a directory
 
@@ -49,9 +49,9 @@ php artisan importer:auto-import /path/to/your/files
 docker exec -it [container-id] php artisan importer:auto-import /import
 ```
 
-- For each CSV file to import you need two files: `my-file.csv` and `my-file.json`.
-- CSV files without a JSON file will be ignored.
-- JSON files without a CSV file will be tried as a Nordigen or Spectre import
+- For each CSV or camt.053 file to import you need two files: `my-file.xml` (or `my-file.csv`) and `my-file.json`.
+- CSV / camt.053 files without a JSON file will be ignored.
+- JSON files without a CSV / camt.053 file will be tried as a Nordigen or Spectre import
 
 ### Automatic imports using Docker
 
@@ -104,9 +104,9 @@ IMPORT_DIR_ALLOWLIST=/your/directory
 
 ## Uploading files and importing them
 
-CSV files: You can upload a CSV file and a JSON file to the CSV importer to have it imported into your Firefly III installation automatically. To illustrate how this works, here's a CURL request that works.
+CSV+camt.053 files: You can upload a file and a JSON file to the data importer to have it imported into your Firefly III installation automatically. To illustrate how this works, here's a CURL request that works.
 
-The CSV file and the JSON file will both be uploaded, after which the result will be a log of import attempt.
+The file and the JSON file will both be uploaded, after which the result will be a log of import attempt.
 
 ```bash
 curl --location --request POST 'https://data-importer.example.com/autoupload?secret=YOURSECRETHERE' \
