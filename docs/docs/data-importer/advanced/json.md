@@ -93,9 +93,12 @@ This is a typical configuration file with all options:
 
 ## Fields and values
 
+!!! info
+    Some options only apply to camt.053 files, others are exclusive to camt.053 files.
+
 ### date
 
-Sets the date format of the date entries in the CSV file. If your file contains internationalized dates, you can prefix
+Sets the date format of the date entries in the file. If your file contains internationalized dates, you can prefix
 the date format with your country code, like `it:` or `nl:`. Then, enter your date format.
 
 Read more about the format in the [PHP documentation](https://www.php.net/manual/en/datetime.format.php).

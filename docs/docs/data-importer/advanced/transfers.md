@@ -9,13 +9,13 @@ If Firefly III knows both accounts are asset accounts, it will create transfers.
 Firefly III determines the transaction type based on the *source* and *destination* account. Both must be recognized as asset accounts or liabilities (in some cases). If Firefly III doesn't recognize the accounts, it will create new expense/revenue accounts and create a withdrawal/deposit.
 
 !!! info
-If your CSV files contain very little information on the opposing account (either the source or the destination) this will be difficult to do right.
+If your files contain very little information on the opposing account (either the source or the destination) this will be difficult to do right.
 
 Use any of the following strategies to so accounts are properly recognized.
 
 ### Default account
 
-The default account should be an asset account. If this is correct, and your CSV file contains no information on the source account, you're halfway there.
+The default account should be an asset account. If this is correct, and your file contains no information on the source account, you're halfway there.
 
 ### Map data
 

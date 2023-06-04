@@ -11,17 +11,18 @@ Browse to your data importer URL.
 
 To import data first select your data source. You have the following choices:
 
-1. Import from CSV files
+1. Import from CSV or camt.053 files
 2. Import from Nordigen
 3. Import from Spectre
 
 ![Select import routine](images/selection.png "Select import routine")
 
-## Import a CSV file
+## Import a CSV file or a camt.053 file
 
-You have to upload the CSV file you wish to import. Optionally, you can upload a "configuration file". The configuration file is used to pre-set the import configuration, so you don't have to do it manually all the time.
+You have to upload the file you wish to import. Optionally, you can upload a "configuration file". The configuration file is used to pre-set the import configuration, so you don't have to do it manually all the time.
 
-If the file contains any lines before the data starts, you must remove them manually. If there are extra headers (for example every 100 rows) you'll have to delete those too.
+!!! info "A note when importing CSV files"
+    If the file contains any lines before the data starts, you must remove them manually. If there are extra headers (for example every 100 rows) you'll have to delete those too.
 
 There may be a standard configuration file for your bank in **[this GitHub repository](https://github.com/firefly-iii/import-configurations)**. If not, it is OK to continue without a configuration file.
 

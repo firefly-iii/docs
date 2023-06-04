@@ -92,7 +92,7 @@ nav:
           - How to use: data-importer/how-to-use/index.md
           - Select data source: data-importer/how-to-use/select-data-source.md
           - Configure import: data-importer/how-to-use/configure-import.md
-          - Fine-tune CSV: data-importer/how-to-use/fine-tune-import.md
+          - Fine-tune CSV+camt.053: data-importer/how-to-use/fine-tune-import.md
           - Map data: data-importer/how-to-use/map.md
           - Start the import: data-importer/how-to-use/start.md
           - Clean-up data: data-importer/how-to-use/clean-up-data.md
@@ -111,6 +111,7 @@ nav:
           - Messy transactions: data-importer/faq/messy-transactions.md
           - Missing data: data-importer/faq/missing-data.md
           - Duplicates: data-importer/faq/duplicates.md
+          - Custom import tag: data-importer/faq/custom-import-tag.md
           - Re-import transactions: data-importer/faq/re-import.md
           - JSON file: data-importer/faq/json.md
       - More information:
