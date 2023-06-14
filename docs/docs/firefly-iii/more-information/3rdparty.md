@@ -35,6 +35,8 @@ Waterfly III is an android app created by @dreautall that connects to your Firef
 
 Firefly Personal Finance is an android app created by @mconway that connects to your Firefly III installation.
 
+**WARNING: it seems abandoned on january 2020.**
+
 - [Credits](https://github.com/mconway)
 - [Website and documentation](https://github.com/mconway/firefly-app/)
 - [Google Play Store](https://play.google.com/store/apps/details?id=com.zerobyte.firefly)
@@ -56,13 +58,14 @@ OCR Firefly Mobile is a little tool to help you enter transactions into the mobi
 - [Website](https://github.com/luifermoron/ocrFireflyMobile)
 - [Google Play Store](https://play.google.com/store/apps/details?id=com.opensource.autofill)
 
-### Abacus iOS App
+### Abacus App
 
-Abacus is an iOS app created by @victorbalssa that allows you to use your Firefly III instance from your iPhone.
+Abacus is a mobile app created by @victorbalssa that allows you to use your Firefly III instance from your mobile.
 
 - [Credits](https://github.com/victorbalssa)
 - [GitHub](https://github.com/victorbalssa/abacus)
 - [App Store](https://apps.apple.com/us/app/1627093491)
+- [Google Play Store](https://play.google.com/store/apps/details?id=abacus.fireflyiii.android.app)
 
 ### Lychnos
 
