@@ -35,7 +35,8 @@ Waterfly III is an android app created by @dreautall that connects to your Firef
 
 Firefly Personal Finance is an android app created by @mconway that connects to your Firefly III installation.
 
-**WARNING: it seems abandoned on january 2020.**
+!!! warning
+The further development of this tool stopped in January 2020. It may no longer work as expected. 
 
 - [Credits](https://github.com/mconway)
 - [Website and documentation](https://github.com/mconway/firefly-app/)
