@@ -34,10 +34,8 @@ This experimental [Python script](https://gist.github.com/adyanth/20c004869baf33
 
 [Plaid](https://plaid.com/) is a data aggregation service just like Spectre's Salt Edge API mentioned earlier.
 
-- GitLab-user [@GeorgeHahn](https://gitlab.com/GeorgeHahn) built a tool to import from Plaid.
-  - [Website and documentation](https://gitlab.com/GeorgeHahn/firefly-plaid-connector)
-- GitHub-user [@dvankley](https://github.com/dvankley) built an alternative Plaid importer tool.
-  - [Website and documentation](https://github.com/dvankley/firefly-plaid-connector-2)
+- GitLab-user [@GeorgeHahn](https://gitlab.com/GeorgeHahn) built a tool to import from Plaid. [Website and documentation](https://gitlab.com/GeorgeHahn/firefly-plaid-connector)
+- GitHub-user [@dvankley](https://github.com/dvankley) built an alternative Plaid importer tool. [Website and documentation](https://github.com/dvankley/firefly-plaid-connector-2)
 
 !!! warning
     The free Plaid program is meant for testing and your milage may vary.
@@ -46,7 +44,7 @@ This experimental [Python script](https://gist.github.com/adyanth/20c004869baf33
 
 ### Up Bank Australia
 
-These applications allows you to import data from Australian Bank "Up":
+These applications allow you to import data from Australian Bank "Up":
 
 - "[UpBankFFImporter](https://github.com/MajorArkwolf/UpBankFFImporter)" by [@MajorArkwolf](https://github.com/MajorArkwolf)
 - "[UP_Firefly_API_Connector](https://blog.dupreez.id.au/2021/01/automatically-update-firefly-iii-with-up-banking-transactions/)" by [@Mugl3](https://github.com/Mugl3)
