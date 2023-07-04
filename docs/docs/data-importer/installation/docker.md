@@ -2,13 +2,13 @@
 
 ## Together with Firefly III
 
-You can run the data importer in a Docker Compose combination with Firefly III. A **[docker-compose.yml](https://github.com/firefly-iii/docker/blob/main/docker-compose-data.yml)** is available on GitHub. Download the raw file and store it in a directory of your choice.
+You can run the data importer in a Docker Compose combination with Firefly III. A **[docker-compose.yml](https://github.com/firefly-iii/docker/blob/main/docker-compose-importer.yml)** is available on GitHub. Download the raw file and store it in a directory of your choice.
 
 Then, download the environment variable files:
 
-- Download the `.env` file for Firefly III [from the Firefly III repository](https://github.com/firefly-iii/firefly-iii/blob/main/.env.example). Save the raw file as `.env` next to the docker compose file.
-- Download the `.importer.env` file from the [Data Importer repository](https://github.com/firefly-iii/data-importer/blob/main/.env.example) and save it as `.importer.env` next to the other files.
-- The final file contains the database variables and can be downloaded from [the Docker repository](https://raw.githubusercontent.com/firefly-iii/docker/main/database.env). Save it as a new file called `.db.env`.
+- Download the `.env.example` file for Firefly III [from the Firefly III repository](https://github.com/firefly-iii/firefly-iii/blob/main/.env.example). Save the raw file as `.env` next to the docker compose file.
+- Download the `.env.example` file from the [Data Importer repository](https://github.com/firefly-iii/data-importer/blob/main/.env.example) and save it as `.importer.env` next to the other files.
+- The final file (`database.env`) contains the database variables and can be downloaded from [the Docker repository](https://raw.githubusercontent.com/firefly-iii/docker/main/database.env). Save it as a new file called `.db.env`.
 
 If you save all example files and change nothing, it will NOT YET work. You must do a few things: 
 
