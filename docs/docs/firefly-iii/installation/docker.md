@@ -6,7 +6,7 @@
 
 Download **[the Docker Compose file](https://raw.githubusercontent.com/firefly-iii/docker/main/docker-compose.yml)** and place it somewhere convenient. It doesn't really matter where you place it, but I suggest a dedicated directory.
 
-If you also want to use the Firefly III Data Importer, grab the [alternative Docker Compose file](https://raw.githubusercontent.com/firefly-iii/docker/main/docker-compose-data.yml) instead.
+If you also want to use the Firefly III Data Importer, grab the [alternative Docker Compose file](https://raw.githubusercontent.com/firefly-iii/docker/main/docker-compose-importer.yml) instead.
 
 Either way, grab the raw file, and don't copy-paste the text from your browser. The spaces in the file are very important. So use "Save As".
 
