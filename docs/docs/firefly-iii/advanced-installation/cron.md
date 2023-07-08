@@ -20,7 +20,9 @@ You can also use a tool called cURL.
 0 3 * * * curl https://demo.firefly-iii.org/api/v1/cron/[token]
 ```
 
-The `[token]` value can be found on your `/profile` under the "Command line token" header. This will prevent others from spamming your cron job URL.
+The `[token]` value can be found on your `/profile` under the "Command line token" header. This will prevent others from spamming your cron job URL. An alternative to this token value is the `STATIC_CRON_TOKEN` environment variable. You can set this using the `.env` file, or by setting it through Docker. A little ahead on this page the difference is explained. 
+
+```
 
 ### Systemd timer
 
@@ -28,7 +30,7 @@ You can use `systemd` to run the jobs on a recurring schedule similar to cron. Y
 
 Begin by creating a new file instructing systemd what to run, `firefly-iii-cron.service`.
 
-```
+```ini
 [Unit]
 Description=Firefly III recurring transactions
 Requires=httpd.service php-fpm.service postgresql.service
@@ -42,7 +44,7 @@ You will want to change the `Requires=` line to match the services that you are 
 
 Next create a new file for the timer specification, `firefly-iii-cron.timer`.
 
-```
+```ini
 [Unit]
 Description=Firefly III recurring transactions
 
@@ -95,7 +97,7 @@ Enter the URL in the following format. Keep in mind that the image shows the WRO
 
 `https://your-firefly-installation.com/api/v1/cron/[token]`
 
-The `[token]` value can be found on your `/profile` under the "Command line token" header. This will prevent others from spamming your cron job URL.
+The `[token]` value can be found on your `/profile` under the "Command line token" header. This will prevent others from spamming your cron job URL. An alternative to this token value is the `STATIC_CRON_TOKEN` environment variable. You can set this using the `.env` file, or by setting it through Docker. A little ahead on this page the difference is explained.
 
 ![The result of setting up IFTTT](images/ifttt-result.png)
 
@@ -115,7 +117,13 @@ The Docker image does *not* support cron jobs.
 
 ### Static cron token
 
-Set the `STATIC_CRON_TOKEN` to a string of **exactly** 32 characters. This will also be accepted as cron token. For example, use `-e STATIC_CRON_TOKEN=klI0JEC7TkDisfFuyjbRsIqATxmH5qRW`.
+The web address for the cron job is protected by a token. You can find this token on the `/profile` page under "Command line token". This token is dynamic, and is generated anew for each user.
+
+When you use Docker, this can be difficult to configure. So, you can set the `STATIC_CRON_TOKEN` to a string of **exactly** 32 characters. This will also be accepted as cron token. 
+
+For example, use `-e STATIC_CRON_TOKEN=klI0JEC7TkDisfFuyjbRsIqATxmH5qRW`.
+
+So there are two kinds of tokens you can use. The personal token from your `/profile` page, or a self-generated 32-character token.
 
 ```
 # cron job for Firefly III using cURL
@@ -144,7 +152,7 @@ docker create --name=FireflyIII-Cronjob alpine \
     sh -c "echo \"0 3 * * * wget -qO- https://demo.firefly-iii.org/api/v1/cron/[TOKEN]\" | crontab - && crond -f -L /dev/stdout"
 ```
 
-The `[token]` value can be found on your `/profile` under the "Command line token" header.
+The `[token]` value can be found on your `/profile` under the "Command line token" header. Earlier on this page, you can read on the static token as well.
 
 If you do not know the Firefly III URL, you can also use the Docker IP address.
 
@@ -156,7 +164,7 @@ cron:
   command: sh -c "echo \"0 3 * * * wget -qO- http://app:8080/api/v1/cron/[TOKEN]\" | crontab - && crond -f -L /dev/stdout"
 ```
 
-The `[token]` value can be found on your `/profile` under the "Command line token" header.
+The `[token]` value can be found on your `/profile` under the "Command line token" header. Earlier on this page, you can read on the static token as well.
 
 ## Extra information
 
