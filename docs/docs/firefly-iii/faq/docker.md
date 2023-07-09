@@ -91,3 +91,13 @@ docker exec --user www-data CONTAINERID /usr/local/bin/php /var/www/html/artisan
 ```
 
 In the command you see a date. Change it to be the first day of the *current* month in the format `YYYY-MM-DD`.
+
+## Something something Authentik?
+
+Set the environment variable as follows:
+
+```
+AUTHENTICATION_GUARD_HEADER=HTTP_X_AUTHENTIK_EMAIL
+```
+
+For more info, see [issue #7460](https://github.com/firefly-iii/firefly-iii/issues/7460) on GitHub.
