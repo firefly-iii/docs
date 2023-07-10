@@ -79,7 +79,7 @@ Example: you have a monthly budget of 50 for clothes.
 
 You spend 125 in February.
 
-* March, the budget amount will be set to 25 (100 - 125)
+* March, the budget amount will be set to 25 (150 - 125)
 
 Just like the "fixed amount" auto-budget settings, these changes will happen on specific moments. This depends on the budget settings. If you spent way too much, twice the period's amount, the new period will be set to 1 (one).
 
