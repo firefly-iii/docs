@@ -27,6 +27,16 @@ You can see if your bank is supported [on this page](https://www.saltedge.com/pr
 
 You can sign up for the Nordigen API on [their website](https://nordigen.com/en/). Access to the Nordigen API is free for both commercial and personal use (that's you). You will not have to request extended access, but you can get the premium access for a fee if you so wish. Keep in mind that the Firefly III Data Importer currently does not support the premium APIs.
 
+!!! note
+    How to sign up for Nordigen:
+
+     1. Go to nordigen.com
+     2. Press Login
+     3. Press "Looking for Bank Account Data (Formerly Nordigen)?"
+     4. Click Sign Up
+     5. Follow the instructions
+     6. Profit!
+
 Nordigen supports [many PSD2-compliant banks in the EU and the UK](https://nordigen.com/en/coverage/), making it an alternative for Salt Edge's Spectre API, if you happen to live in these regions.
 
 Access to the Nordigen API is limited to raw data only, which means you may have to do data cleanup yourself. You can use Firefly III [rules](../../firefly-iii/features/rules.md) or build something yourself.
