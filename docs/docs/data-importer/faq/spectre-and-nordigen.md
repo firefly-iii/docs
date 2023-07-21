@@ -9,6 +9,9 @@ Please read and agree with all the terms that either company may present you wit
 !!! info "Disclaimer"
     As a general disclaimer: both Nordigen and Salt Edge are commercial organisations. They may revoke your access or charge money at any moment. I'm grateful for the free access they provide to Firefly III users.
 
+!!! info "About bank availability"
+    Both Nordigen and Salt Edge support very few 🇺🇸 American and Asian banks. There is little I can do about this. You'll have to import CSV files.
+
 ## Salt Edge's Spectre API
 
 You can sign up for Salt Edge's services on [this page](https://www.saltedge.com/client_users/sign_up).
