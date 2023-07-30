@@ -203,3 +203,6 @@ If you're using Docker, this may also happen when you run "php artisan" commands
 
 If the problem persists run your cron job as the "www-data" user so the cache directory doesn't get mixed up: `sudo -u www-data php artisan [..]`.
 
+## I want to migrate to PostgreSQL?
+
+Check out [this GitHub discussion](https://github.com/orgs/firefly-iii/discussions/7698#discussioncomment-6546883) with a guide.
