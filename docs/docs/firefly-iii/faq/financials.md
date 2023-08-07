@@ -43,3 +43,11 @@ When you buy a new 500 TV, and they give you a 50 cashback. What do you do?
 Both options are valid. You can't merge these in one transaction. But less is more, and I suggest the second option. That way you have less transactions to manage and the price you actually paid for the television is reflected in the transaction. 
 
 When you use the cashback to buy something else at a discount, apply the difference in the second transaction. So if you were able to buy a 90 blender for 40 with the cashback from the TV, make a withdrawal for 40.
+
+## How do I set the balance of an account?
+
+You **don't**. You can only influence the balance of an account by actually making or importing transactions that influence the balance. You can't just change the balance of the account.
+
+### But then what's the opening balance for?
+
+The opening balance is meant to set the balance of an account at the **start** of your Firefly III administration. That means that NO earlier transactions exist in your administration, and the opening balance reflects that. It summarizes all the transactions that happened before you started using Firefly III.

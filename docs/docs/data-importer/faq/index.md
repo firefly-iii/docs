@@ -19,6 +19,7 @@ Here you will find answers to frequently asked questions.
 
 ## Other questions
 
+- [General questions about setup and use](general.md)
 - [Read about some advanced topics](../advanced/index.md)
 - [Read about why the data importer is a separate tool](../more-information/separate-tool.md)
 

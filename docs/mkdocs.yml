@@ -104,6 +104,7 @@ nav:
           - Import transfers: data-importer/advanced/transfers.md
       - FAQ:
           - FAQ: data-importer/faq/index.md
+          - General questions: data-importer/faq/general.md
           - Installation errors: data-importer/faq/installation-errors.md
           - Connection errors: data-importer/faq/connection-errors.md
           - Nordigen and Spectre: data-importer/faq/spectre-and-nordigen.md
