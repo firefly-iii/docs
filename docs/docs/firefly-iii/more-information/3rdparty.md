@@ -119,6 +119,13 @@ iOS Shortcut to create transactions in Firefly III.
 - [Credits](https://github.com/dimarei)
 - [Website](https://github.com/dimarei/firefly-ios-shortcuts)
 
+### FFIIITC
+
+FFIIITC is a tool that allows you to automatically categorize your transactions using ML and Naive Bayes classifier.
+
+- [Credits](https://github.com/akopulko)
+- [Website](https://github.com/akopulko/ffiiitc)
+
 ## Import tools
 
 All import related tools are listed [on the page on importing data](../importing-data/index.md).
