@@ -181,6 +181,12 @@ You can apply your rules to existing transactions. On the rule-overview (page ``
 
 This feature of Firefly III is pretty advanced, even if I say so myself. It does not support complicated rules. Rules like "the budget must be Groceries and the shop must be A or B" combine different operators ("and" and "or"). This will not work.
 
+## Errors
+
+Rule actions may fail. For example, if a transaction has no category, a rule action to remove the category fails. Firefly III does not report this in the user interface because rules are often executed asynchronously. You can check the logs for errors.
+
+If you set up a [Slack or Discord notification channel](../advanced-installation/email.md), you will get these rule specific errors in your Slack or Discord channel.
+
 ## Screenshots
 
 ![A new rule can be given some basic information.](images/rules-meta.png)

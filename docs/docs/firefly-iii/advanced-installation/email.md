@@ -7,6 +7,10 @@ you can receive.
 
 Firefly III can send notifications to a Slack channel. Administrators can set an "Incoming Webhook URL" under `/admin`. Users can set  an "Incoming Webhook URL" under `/preferences`.
 
+## Discord
+
+Firefly III can also send the notifications to a Discord channel. Channel admins can create a webhook in a Discord-channel, which you can use wherever you see a Slack URL. 
+
 !!! info 
     If you are the only user of your Firefly III instance, you must set (the same) webhook in both locations.
 
