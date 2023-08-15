@@ -35,7 +35,7 @@ A very popular tool that can do this [Authelia](https://www.authelia.com/docs/).
 
 To enable this function change the `AUTHENTICATION_GUARD` environment variable to `remote_user_guard`.
 
-Set the `AUTHENTICATION_GUARD_HEADER` to the HTTP header that will contain the user's identifier (usually the email address or a username). If the identifier is not the email address, please set `AUTHENTICATION_GUARD_EMAIL` to the HTTP that will contain the user's email address
+Set the `AUTHENTICATION_GUARD_HEADER` to the HTTP header that will contain the user's identifier (usually the email address or a username). If the identifier is not the email address, please set `AUTHENTICATION_GUARD_EMAIL` to the HTTP header that will contain the user's email address
 
 ### How it works
 

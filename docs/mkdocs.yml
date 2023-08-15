@@ -34,7 +34,7 @@ nav:
           - Hosted by 3rd parties: firefly-iii/installation/third-parties.md
           - Upgrade instructions: firefly-iii/installation/upgrade.md
       - Advanced installation:
-          - Configure email: firefly-iii/advanced-installation/email.md
+          - Notifications: firefly-iii/advanced-installation/email.md
           - Authentication: firefly-iii/advanced-installation/authentication.md
           - Backup: firefly-iii/advanced-installation/backup.md
           - Locales: firefly-iii/advanced-installation/locales.md
