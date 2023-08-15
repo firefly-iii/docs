@@ -29,6 +29,8 @@ Both the amount available and the amount budgeted are for a specific period: if 
 
 In your preferences, you can change this range to be weekly, or even yearly.
 
+This is a different (and better!) approach than YNAB. Yes, [I am opinionated about this](../more-information/zero-based-budgeting.md).
+
 ### Adding money to a budget
 
 You can't add money to a budget through a deposit. A reimbursement or a returned item cannot be used to restore the budget.
@@ -46,7 +48,7 @@ Firefly III can automatically manage your budgets. Edit or create a budget and p
 
 Firefly III will create a new budget amount every selected period. The exact behavior depends entirely on your settings:
 
-If you set it to "monthly", € 200 Firefly III will give you an automatic budget amount of € 200, valid for one month, every month. This will happen automatically. Other periods are explained further ahead.
+If you set it to "monthly", € 200 Firefly III will give you an automatic budget amount of € 200, valid for one month, every month. This will happen automatically. Other options are explained further ahead.
 
 #### Rollover ("Add an amount every period")
 
@@ -142,13 +144,9 @@ Tags can be useful to group expenses together, possibly in another context than 
 
 Or maybe something else entirely. This is up to you.
 
-### Mapbox
-
-You can add a [Mapbox](https://www.mapbox.com/) API key to your `.env` file which allows you to give tags a location.
-
 ### Special tags
 
-When you import data into Firefly III, a special tag will be created for each transaction. It is called `Import with key 'xxxx'` where the key is a custom code every time.
+When you import data into Firefly III, a special tag will be created for each transaction. It is called `Import on date X` where the date and time of the import are set.
 
 ## Groups
 
