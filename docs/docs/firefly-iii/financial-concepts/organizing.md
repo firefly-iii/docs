@@ -6,7 +6,6 @@ Once you start creating transactions you start to realise that in a month, the s
 
 * Bills
 * Groceries
-* Cigarettes
 * Going out for drinks
 * Clothing
 
