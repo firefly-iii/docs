@@ -36,8 +36,7 @@ These triggers (for both the source and destination accounts) trigger on either 
 
 #### Amount triggers
 
-These triggers are exact. So remember it's "amount less" and NOT "less or the same".
-
+It's "amount less or equal" and similar.
 
 #### Date triggers
 
@@ -85,7 +84,7 @@ I wasn't sure what to call this, but the following date triggers can be set:
 - In 2019
 - On the 5th of June, whatever the year.
 
-You can do this with the format `xxxx-xx-xx` where you change any set of `xx` into your desired outcome. The format is `year-month-day`. Here are some examples:
+You can do this with the format `xxxx-xx-xx` where you change any set of `xx` into your desired outcome. The format is `year-month-day`. Keep in mind that the other `xx` pairs stay `xx` and need no change. Here are some examples:
 
 - `xxxx-xx-10`. Will trigger on the 10th day of any month.
 - `xxxx-04-xx`. Will trigger for any date in April, no matter the year or the day.
