@@ -1,6 +1,10 @@
 # Webhooks
 
-A webhook is a custom callback. Triggered by events in Firefly III a message will be sent to a URL of your choice. 
+A webhook is a custom callback. Triggered by events in Firefly III a message will be sent to a URL of your choice.
+
+## Enable webhooks
+
+Webhooks need to be enabled before they work. Set `ALLOW_WEBHOOKS=true`, either in your `.env` file or in your Docker environment variables. 
 
 ## Triggers
 
