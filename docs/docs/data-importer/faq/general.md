@@ -22,9 +22,9 @@ Upload as few lines or blocks of data as is necessary to reproduce the error. Re
 
 - Replace names with fake names;
 - Replace IBANs with [fake IBANs](https://fakeiban.org/);
-- Replace amounts with fake amounts;
+- Replace amounts with fake amounts
 
 !!! note "Consistency is important"
-    Try to remove as little data as you dare. Try to replace data consistently, always replacing IBAN ABC for the same (fake) IBAN for example.
+    Try to remove as little data as you dare. Try to replace data consistently, always replacing IBAN "ABC" for the same (fake) IBAN for example.
 
  You may always send your data file to me personally at [james@firefly-iii.org](mailto:james@firefly-iii.org). That leaks your personal data to a single person at least. I cannot guarantee nobody will ever hack me, but your files will be removed once the issue is closed.
