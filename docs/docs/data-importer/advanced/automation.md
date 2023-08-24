@@ -69,7 +69,7 @@ fireflyiii/data-importer:latest
 ```
 
 !!! info "Personal Access Token"
-    This little trick only works when you use a [personal access token](../installation/configuration.md).
+    This little trick only works when you use a [personal access token](../installation/configuration.md) (as you can see in the command).
 
 !!! info "Nordigen or Spectre information"
     If necessary, expand this command with the necessary Nordigen or Spectre keys and ID's.
@@ -81,7 +81,7 @@ fireflyiii/data-importer:latest
 You can use the data importer's POST commands to import data. This page assumes you're self-hosting the data importer, although these commands also work when using Docker.
 
 !!! info "Personal Access Token required"
-    The POST commands only work when you're using a Personal Access Token to authenticate.
+    The POST commands only work when you're using a Personal Access Token to authenticate, set in your `.env`-file or environment variables.
 
 !!! info "Nordigen or Spectre information"
     You cannot submit Nordigen or Spectre information using the POST commands, the data importer must already be configured with them.
