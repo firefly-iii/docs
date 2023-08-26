@@ -15,7 +15,7 @@ Either way, grab the raw file, and don't copy-paste the text from your browser. 
 
 ### Download environment variables
 
-There are two environment variable-files you need to run this Docker Compose file. Download all three files and save them next to the Docker Compose file.
+There are two environment variable-files you need to run this Docker Compose file. Download all two files and save them next to the Docker Compose file.
 
 - The first file contains Firefly III variables and can be downloaded from [the Firefly III repository](https://raw.githubusercontent.com/firefly-iii/firefly-iii/main/.env.example). Save it as a new file called `.env`.
 - The second file contains the database variables and can be downloaded from [the Docker repository](https://raw.githubusercontent.com/firefly-iii/docker/main/database.env). Save it as a new file called `.db.env`.
