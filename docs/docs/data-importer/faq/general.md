@@ -33,7 +33,7 @@ Upload as few lines or blocks of data as is necessary to reproduce the error. Re
 
 The data importer wil sometimes ignore data from Spectre. In the notes of the transaction, you will see something like this:
 
-(image)
+![An example error message](images/ignored.png)
 
 The data importer will do this when both the source and destination account information of a transaction are *the same*. This may happen when you get credit card refunds, when interest is paid to your account or when interest payments are taken from your account.
 
