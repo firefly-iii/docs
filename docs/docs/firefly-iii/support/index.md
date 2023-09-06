@@ -4,7 +4,7 @@
 
 As mentioned on several pages, you can contact me through email on [james@firefly-iii.org](mailto:james@firefly-iii.org).
 
-My PGP key is mentioned on [Keybase.io](https://keybase.io/jc5). The fingerprint is `90F5 46F1 3B81 B67A 1BAA 5DDD C169 61E6 55E7 4B5E`. You can [verify my key](https://gist.github.com/JC5/e5810692bea4513bd80381f57b2ed03a).
+My PGP key is mentioned on [Keybase.io](https://keybase.io/jc5). The fingerprint is `02F4 046C 4B23 6E06 0957 1612 B49A 324B 7EAD 6D80`. You can [verify my key](https://gist.github.com/JC5/e5810692bea4513bd80381f57b2ed03a).
 
 Use the following channels for support, feature requests or bug reports:
 
