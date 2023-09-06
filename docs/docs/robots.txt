@@ -6,3 +6,5 @@ Disallow: /
 
 User-agent: ChatGPT-User
 Disallow: /
+
+Sitemap: https://docs.firefly-iii.org/sitemap.xml
