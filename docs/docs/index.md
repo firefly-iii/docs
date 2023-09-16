@@ -4,7 +4,7 @@ Welcome. This site contains all the documentation for Firefly III and the associ
 
 ## Firefly III
 
-The [main documentation](firefly-iii) for Firefly III, including:
+The [main documentation](firefly-iii/index.md) for Firefly III, including:
 
 - The [Introduction](firefly-iii/about-firefly-iii/introduction.md?mtm_campaign=docu-internal&mtm_kwd=introduction)
 - How to install Firefly III using **[Docker](firefly-iii/installation/docker.md?mtm_campaign=docu-internal&mtm_kwd=docker)**
@@ -12,11 +12,11 @@ The [main documentation](firefly-iii) for Firefly III, including:
 
 ## Data Importer
 
-The [Firefly III Data Importer](data-importer) is the nr. 1 tool to import data into Firefly III.
+The [Firefly III Data Importer](data-importer/index.md) is the nr. 1 tool to import data into Firefly III.
 
 ## Other tools and libraries
 
-Some [other tools and libraries](other-tools) part of the Firefly III network are documented here.
+Some [other tools and libraries](other-tools/index.md) part of the Firefly III network are documented here.
 
 ## Contact
 

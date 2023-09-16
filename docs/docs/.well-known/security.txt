@@ -1,20 +1,38 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
 # Please report security issues related to Firefly III to me ASAP, via the email address below.
 # Feel free to encrypt your message using GPG altough it's a pain let's be honest
 #
+# There are some ground rules, please keep them in mind:
 #
-# Please do not contact me for random vulnerabilities on other people's websites.
-#
-# If it's not related to Firefly III I will not be able to help you.
+# 1. Your security report must be related to Firefly III or the associated tools
+# 2. There is no bug bounty program
+# 3. Don't report denial of service attacks on the login form
 #
 
 Contact: mailto:james@firefly-iii.org
-Expires: 2023-12-31T23:00:00.000Z
-Encryption: https://keybase.io/jc5/pgp_keys.asc?fingerprint=02f4046c4b236e0609571612b49a324b7ead6d80
+Expires: 2024-12-31T23:00:00.000Z
 Preferred-Languages: en, nl
-Canonical: https://docs.firefly-iii.org/.well-known/security.txt
-Signature: https://docs.firefly-iii.org/.well-known/security.txt.sig
 Policy: https://docs.firefly-iii.org/firefly-iii/support/
 
 #
 # Thank you for your time!
 #
+-----BEGIN PGP SIGNATURE-----
+
+iQJKBAABCAA0FiEEAvQEbEsjbgYJVxYStJoyS36tbYAFAmUEl4MWHGphbWVzQGZp
+cmVmbHktaWlpLm9yZwAKCRC0mjJLfq1tgKipEADC1bsgtE7YNY+2W/qkX3sBlKc3
+E8tDV/dr7D+jWMpV81poGyDzEe8sytJ5DmZWGTFiQez6jxZN5czT5KxZ7fMQOzbw
+kjT+S6CxKrvD2H05pe5v2ziY+lfDIVe4kI1vxYRB6bgTYi0pfGJF9woSH4qhwMMa
+5cai0Rj6Ew9pHPx06BvcHOoNjOcmqPWRoBt5a1LOK8EqSMJHbdUv8deAbQSkO/8t
+gDEA7FVRXXB0QRIraOR2cMtU2uW/o7NymDzZeaqWR9+g4eWeosRJjLA4K05akPx+
+3mrKG0qV76dBexfMC99IEfjgk+xiffxg2iiKh37uBbsgK74aakAujYta1q4SsX8d
+BXMvBpSi6mFuw13tgeueQS7IKqZsbh3vb6M325Dkv+hRe1e/Tw+qE9OWNFBQ2WS4
+H+sJZ8u1Ke++BctttaNkAkOZF0l8+f7+aEZhEaIan31hq0Y1KpFNPLiPMvMEDDBZ
+9OhqIZaWmpZv0vUu/pK+0IU5ESRAU8dSPLi1anj+LWSF+YkaOW8gmA5Di0Oiqta8
+xRDOaDSDgLN9ESd5gF8rca263AXeH1iPoPRHWPEFWgQPTcxVruwAhe7P+0dclCMx
+8eIaHoc21VGk299lwiCy4X9Wxp2+tQFH9iQG+Lnd/koxnufE6vGEIBLMzPxij6L4
+2oFicDqAMXd0Ls8kWA==
+=8skS
+-----END PGP SIGNATURE-----
