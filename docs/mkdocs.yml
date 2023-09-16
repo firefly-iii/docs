@@ -8,7 +8,9 @@ site_url: https://docs.firefly-iii.org/
 dev_addr: '10.0.0.15:8000'
 plugins:
   - search
-  - social
+  - social:
+      cards_layout_options:
+        background_color: '#1e6581'
   - 'git-revision-date'
   - minify:
       minify_html: true
