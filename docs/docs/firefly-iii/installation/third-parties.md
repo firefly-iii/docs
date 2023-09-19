@@ -10,6 +10,8 @@ Mariushosting.com wrote [an excellent guide](https://mariushosting.com/how-to-in
 
 Firefly III supports [Heroku](https://heroku.com/). You can [deploy Firefly III in Heroku](https://heroku.com/deploy?template=https://github.com/firefly-iii/firefly-iii/tree/main) after you register for an account.
 
+> As of version [v6.0.17](https://github.com/firefly-iii/firefly-iii/releases/tag/v6.0.16), support for Heroku has been removed
+
 ### Considerations when using Heroku
 
 Heroku uses what is called an "ephemeral file system" and it will not be able to store attachments. They will be deleted [every day](https://devcenter.heroku.com/articles/dynos#automatic-dyno-restarts). Don't use Firefly III on Heroku in combination with sensitive or rare file attachments.
