@@ -1,7 +1,7 @@
 site_name: Firefly III documentation
 site_description: Documentation for Firefly III
 site_author: James Cole
-copyright: "&copy; <a href=\"mailto:james@firefly-iii.org\">James Cole</a>, licensed under <a href=\"https://github.com/firefly-iii/docs/blob/main/license\">Attribution-ShareAlike 4.0 International</a>."
+copyright: "&copy; <a href=\"mailto:james@firefly-iii.org\">James Cole</a>, licensed under <a href=\"https://github.com/firefly-iii/docs/blob/main/license\">Attribution-ShareAlike 4.0 International</a>. <a href='#__consent'>Change cookie settings</a>"
 repo_url: https://github.com/firefly-iii/firefly-iii/
 edit_uri: https://github.com/firefly-iii/docs/tree/main/docs/docs
 site_url: https://docs.firefly-iii.org/
@@ -142,6 +142,17 @@ theme:
   icon:
     repo: fontawesome/brands/github
 extra:
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+    cookies:
+      github: false
+      custom: Matomo Analytics
+
   social:
     - icon: fontawesome/brands/mastodon
       link: https://fosstodon.org/@ff3
