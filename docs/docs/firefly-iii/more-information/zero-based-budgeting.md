@@ -31,7 +31,7 @@ Either way, these are my short-term goals, the money I *need* every month to liv
 
 ### How I manage this
 
-For each (future) large expense I have a piggy bank connected to my savings account. This includes large bills and gadgets I want to buy. My liabilities like my student debt are stored as a liability and the money I need to pay my debt, is part of my monthly bills.
+For each (future) large expense I have a piggy bank connected to my savings account. This includes large bills and gadgets I want to buy. My liabilities like my student debt are stored as [a liability](../financial-concepts/liabilities.md) and the money I need to pay my debt, is part of my monthly bills.
 
 ## Conclusion
 

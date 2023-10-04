@@ -49,38 +49,7 @@ Likewise, if you deposit cash into an asset account, don't mention a revenue acc
 
 ### Liabilities
 
-!!! info
-    Although you can set the interest rate for a liability, Firefly III will not automatically calculate the interest due.
-
-Firefly III supports liabilities that you can track using Firefly III. The way it works isn't 100% accountant approved. Firefly III has three types of liabilities:
-
-- Loan
-- Debt
-- Mortgage
-
-When you are the **debtor** you must pay it back. If you are the **creditor** the money will be paid back to you.
-
-- You are the debtor to your student loans.
-- You are the creditor when you loaned a friend money to buy a new PC.
-
-Once created Firefly III keeps track of the amounts for you. Here are the two scenarios (debtor and creditor) and how they work in Firefly III.
-
-#### Debtor
-
-You take out student loans or a mortgage, and you keep track of paying it back in Firefly III. You may set the amount due as the **start amount**. You can also start with an empty loan and transfer money away from the loan to pay for stuff. Every transaction from your asset account to the liability means you're paying back your debts. When you transfer money from the liability to your asset account you're borrowing more money. If you transfer money from the liability to an expense account, this is like interest or fees. If money is put into the liability from a revenue account they are waiving fees or paying the loan back for you.
-
-#### Creditor
-
-This is less common but can be useful to track money. You give your friend 1000 euro's for a new PC. Your friend pays off the loan. Firefly III keeps track of the amount due.
-
-If you want to borrow your friend (more) money, you need to do this:
-
-1. Create an empty "creditor" liability. Then, transfer money from your asset account to the liability.
-2. Set up a liability with an initial amount. If necessary, transfer more money from your asset account to the liability.
-
-You need a transaction when your friend pays you back the money.
-
-- A deposit from the liability into your own asset account.
+See [liabilities](liabilities.md).
 
 ## Deleting accounts
 
