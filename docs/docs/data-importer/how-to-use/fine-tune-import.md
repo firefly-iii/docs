@@ -29,11 +29,15 @@ The description of the transaction. If you select multiple columns to be the des
 
 ### Asset account (\*)
 
-These roles (several variations) are used to indicate the asset account in the transaction, usually your own. "Asset account ID (matching FF3)" is a special column that's only relevant when you import old data from Firefly III itself.
+These roles (several variations) are used to indicate the asset account in the transaction, usually your own. Think of these columns as the "payer" column, the person or account paying the money.
+
+The "asset account" role and the "opposing account" role (see ahead) will be automatically switched by the data importer when the transaction is the other way around.
 
 ### Opposing account (\*)
 
-These roles (in several variations) are used to indicate the opposing account. Usually these are stores or shops or opposing account details.
+These roles (in several variations) are used to indicate the opposing account. Usually these are stores or shops or opposing account details. Think of these columns as the "payee" column, the person or account receiving the money.
+
+The "asset account" role and the "opposing account" role (see earlier) will be automatically switched by the data importer when the transaction is the other way around.
 
 ### Amount
 
@@ -46,6 +50,10 @@ Indicates the foreign amount of the transaction. Is always present next to the n
 ### Amount (credit / debit column)
 
 Some banks split the amount in two columns. One for debits, one for credits. Use this column type for either field.
+
+### Bank specific credit/debit indicator
+
+Some banks use a column with a magic letter or word to indicate if the transaction is an expense or income. The data importer has a role for such columns, and [most letters are recognized](https://github.com/firefly-iii/data-importer/blob/main/app/Services/CSV/Converter/BankDebitCredit.php#L51).
 
 ### Bill
 
