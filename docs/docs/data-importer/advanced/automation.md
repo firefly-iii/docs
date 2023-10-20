@@ -55,7 +55,7 @@ docker exec -it [container-id] php artisan importer:auto-import /import
 
 ### Automatic imports using Docker
 
-The following command will the data importer, and it will try to import whatever it finds in the current directory. This is fully automated. It works by mounting the current directory to `/import` and importing all files.
+The following command will run the data importer. It will try to import whatever it finds in the current directory. This is fully automated. It works by mounting the current directory to `/import` and importing all files.
 
 ```bash
 docker run \
@@ -92,7 +92,7 @@ For all examples, the following environment variables need to be set:
 # the secret is required and must be at least 16 characters long
 AUTO_IMPORT_SECRET=YOURSECRETHERE
 
-# if this value is not set to true, you cannot upload files and impor tthem
+# if this value is not set to true, you cannot upload files and import them
 CAN_POST_FILES=true
 
 # if this value is not set to true, you cannot import a local directory
