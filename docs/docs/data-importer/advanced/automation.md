@@ -6,6 +6,12 @@ You can automate the data importer in various ways.
 
 Firefly III can import from the command line. Either by calling [the Docker container](../installation/docker.md), or by using your [self-hosted instance](../installation/self-hosted.md).
 
+### CSV, camt.053 files and JSON files
+
+Importing CSV or camt.053 data requires two separate files: the actual content (CSV or XML) and a JSON configuration file. You have get this configuration file *first*, by doing a single import through the UI. Once you have the JSON configuration file you can use it to import any file from your bank, assuming the structure of the file is the same.
+
+If you import from Nordigen or Salt Edge, you just need the JSON configuration file from the data importer. This can be a little confusing because Nordigen also offers JSON downloads of your raw transactions. All you need to import is the JSON file from the data importer itself. This will contain enough information to download everything from Nordigen or Salt Edge.
+
 ### Introduction
 
 The following environment variable need to be set. This value must match the local directory. If you're using Docker, set it to `/import`. 
@@ -19,7 +25,9 @@ IMPORT_DIR_ALLOWLIST=/your/directory
 
 ### Import a single (CSV or camt.053) file
 
-Use the following command to import a single file:
+Use the following command to import a single file.
+
+Remember that the JSON file is a reference to the data importer configuration file. 
 
 ```bash
 # self hosted (file)
@@ -51,7 +59,7 @@ docker exec -it [container-id] php artisan importer:auto-import /import
 
 - For each CSV or camt.053 file to import you need two files: `my-file.xml` (or `my-file.csv`) and `my-file.json`.
 - CSV / camt.053 files without a JSON file will be ignored.
-- JSON files without a CSV / camt.053 file will be tried as a Nordigen or Spectre import
+- JSON files without a CSV / camt.053 file will be tried as a Nordigen or Spectre import. Remember that the JSON file is a reference to the data importer configuration file, you do not need to download transactions yourself.
 
 ### Automatic imports using Docker
 
@@ -106,7 +114,7 @@ IMPORT_DIR_ALLOWLIST=/your/directory
 
 CSV+camt.053 files: You can upload a file and a JSON file to the data importer to have it imported into your Firefly III installation automatically. To illustrate how this works, here's a CURL request that works.
 
-The file and the JSON file will both be uploaded, after which the result will be a log of import attempt.
+The file and the JSON file will both be uploaded, after which the result will be a log of import attempt. Remember that the JSON file is a reference to the data importer configuration file. You do not need to download transactions from Nordigen or Salt Edge.
 
 ```bash
 curl --location --request POST 'https://data-importer.example.com/autoupload?secret=YOURSECRETHERE' \
@@ -127,7 +135,9 @@ curl --location --request POST 'https://data-importer.example.com/autoupload?sec
 
 ## Importing a local directory
 
-This POST command allows you to import from a local directory, where you have your files ready to go. For example, you have a directory called `/import` where `bank.csv` and `bank.json` are ready to go. In that case, you could do the following:
+This POST command allows you to import from a local directory, where you have your files ready to go. For example, you have a directory called `/import` where `bank.csv` and `bank.json` are ready to go. In that case, you could do the following.
+
+Remember that the JSON file is a reference to the data importer configuration file. 
 
 ```bash
 curl --location --request POST 'https://data-importer.example.com/autoimport?directory=/import&secret=YOURSECRETHERE'
