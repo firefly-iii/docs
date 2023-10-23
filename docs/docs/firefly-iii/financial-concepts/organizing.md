@@ -42,13 +42,23 @@ Since you spent the money, the money in the budget is gone. If you "unspent" the
 
 ### Automatic budgeting
 
-Firefly III can automatically manage your budgets. Edit or create a budget and pick from the following options:
+The idea has always been that you set your own budgets, every period, yourself, by hand. So each month you will have to fill in budgets for the next period, based on your previous period. Since that's pretty tedious the auto-budget function will do it for you. It always runs on the first day of the period (1st of month, or Monday, or whatever), and then sets the budget according to the settings in the auto-budget.
+
+!!! info 
+    Notice that it will never work its way backwards (and set budgets in the past) nor will it work forwards (set future budgets)
+
+
+in the beginning it could only set fixed amounts, but nowadays it has a few settings. It still always runs on the first of the period and looks back only one period.
+
+Edit or create a budget and pick from the following options:
 
 #### Fixed amount
 
 Firefly III will create a new budget amount every selected period. The exact behavior depends entirely on your settings:
 
 If you set it to "monthly", € 200 Firefly III will give you an automatic budget amount of € 200, valid for one month, every month. This will happen automatically. Other options are explained further ahead.
+
+This is the default behavior for a budget and the way most people budget their money.
 
 #### Rollover ("Add an amount every period")
 
