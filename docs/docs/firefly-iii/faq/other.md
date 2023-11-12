@@ -128,6 +128,39 @@ You can correct the second situation using [the email settings](../advanced-inst
 
 By configuring Firefly III to save the email message to the log files (`MAIL_MAILER=log`) *and* [by enabling debug mode](other.md#how-do-i-enable-debug-mode), any password reset message will be stored to your log files. You can copy/paste the reset link from the email message in the log files.
 
+If the reset link can no longer be sent, you will have to enter your database to delete all entries from the `password_resets`-table.
+
+An example of how to do this:
+
+```bash
+docker exec -i CONTAINER sh -c 'exec echo "DELETE FROM password_resets;" | mariadb -u"DB_USERNAME" -p"DB_PASSWORD"'
+```
+
+```sql
+DELETE FROM password_resets;
+
+```
+
+## I changed my email address, and now I can't log in?
+
+There are two reasons why changing your email address may not work.
+
+1. You signed up using a non-existent email address
+2. You did not configure correct email settings.
+
+You have to *confirm* the change to your email address, and if you do not have the magic link from the mail message, this will not work. You can correct the second situation using [the email settings](../advanced-installation/email.md). Then you can reset everything back to normal.
+
+If you already broke things, use the following database queries to fix it. To learn how to execute them in Docker, please read the previous question.
+
+After you run the first query you should be able to login again. Your user ID can be found on the `/profile` page.
+
+```sql
+update users set blocked=0, blocked_code=null where email="YOUR_NEW_MAIL"
+
+delete from preferences where name like "email_change_%" and user_id=YOUR_USER_ID;
+```
+
+
 ## I have a question that is not in the FAQ?
 
 Please send your question [to me by email](mailto:james@firefly-iii.org) or [open a ticket on GitHub](https://github.com/firefly-iii/firefly-iii/issues).

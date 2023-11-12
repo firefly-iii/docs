@@ -142,18 +142,6 @@ theme:
   favicon: img/favicon.ico
   icon:
     repo: fontawesome/brands/github
-extra:
-  consent:
-    title: Cookie consent
-    description: >- 
-      We use cookies to recognize your repeated visits and preferences, as well
-      as to measure the effectiveness of our documentation and whether users
-      find what they're searching for. With your consent, you're helping us to
-      make our documentation better.
-    cookies:
-      github: false
-      custom: Matomo Analytics
-
   social:
     - icon: fontawesome/brands/mastodon
       link: https://fosstodon.org/@ff3
