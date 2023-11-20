@@ -76,9 +76,9 @@ You are now ready to go!
 
 To run the Data Importer using the following `run` command. You will start a web server on port 8081 that will allow you to use the data importer.  
 
-Append the command with your Personal Access Token and Firefly III URL. The values you need and where to get them are explained on the **[Configuration page](configuration.md)**. Note that most people don't use Nordigen *and* Spectre values at the same time.
+Append the command with your Personal Access Token and Firefly III URL. The values you need and where to get them are explained on the **[Configuration page](configuration.md)**. Note that most people don't use GoCardless *and* Spectre values at the same time.
 
-All environment variables are optional, but convenient.
+All environment variables are optional, but convenient. Please note that the NORDIGEN environment variables refer to GoCardless.
 
 ```bash
 docker run \

@@ -10,7 +10,7 @@ Firefly III can import from the command line. Either by calling [the Docker cont
 
 Importing CSV or camt.053 data requires two separate files: the actual content (CSV or XML) and a JSON configuration file. You have get this configuration file *first*, by doing a single import through the UI. Once you have the JSON configuration file you can use it to import any file from your bank, assuming the structure of the file is the same.
 
-If you import from Nordigen or Salt Edge, you just need the JSON configuration file from the data importer. This can be a little confusing because Nordigen also offers JSON downloads of your raw transactions. All you need to import is the JSON file from the data importer itself. This will contain enough information to download everything from Nordigen or Salt Edge.
+If you import from GoCardless or Salt Edge, you just need the JSON configuration file from the data importer. This can be a little confusing because GoCardless also offers JSON downloads of your raw transactions. All you need to import is the JSON file from the data importer itself. This will contain enough information to download everything from GoCardless or Salt Edge.
 
 ### Introduction
 
@@ -59,7 +59,7 @@ docker exec -it [container-id] php artisan importer:auto-import /import
 
 - For each CSV or camt.053 file to import you need two files: `my-file.xml` (or `my-file.csv`) and `my-file.json`.
 - CSV / camt.053 files without a JSON file will be ignored.
-- JSON files without a CSV / camt.053 file will be tried as a Nordigen or Spectre import. Remember that the JSON file is a reference to the data importer configuration file, you do not need to download transactions yourself.
+- JSON files without a CSV / camt.053 file will be tried as a GoCardless or Spectre import. Remember that the JSON file is a reference to the data importer configuration file, you do not need to download transactions yourself.
 
 ### Automatic imports using Docker
 
@@ -79,8 +79,8 @@ fireflyiii/data-importer:latest
 !!! info "Personal Access Token"
     This little trick only works when you use a [personal access token](../installation/configuration.md) (as you can see in the command).
 
-!!! info "Nordigen or Spectre information"
-    If necessary, expand this command with the necessary Nordigen or Spectre keys and ID's.
+!!! info "GoCardless or Spectre information"
+    If necessary, expand this command with the necessary GoCardless or Spectre keys and ID's.
 
 ## Automated imports using the web (POST)
 
@@ -91,8 +91,8 @@ You can use the data importer's POST commands to import data. This page assumes 
 !!! info "Personal Access Token required"
     The POST commands only work when you're using a Personal Access Token to authenticate, set in your `.env`-file or environment variables.
 
-!!! info "Nordigen or Spectre information"
-    You cannot submit Nordigen or Spectre information using the POST commands, the data importer must already be configured with them.
+!!! info "GoCardless or Spectre information"
+    You cannot submit GoCardless or Spectre information using the POST commands, the data importer must already be configured with them.
 
 For all examples, the following environment variables need to be set:
 
@@ -114,7 +114,7 @@ IMPORT_DIR_ALLOWLIST=/your/directory
 
 CSV+camt.053 files: You can upload a file and a JSON file to the data importer to have it imported into your Firefly III installation automatically. To illustrate how this works, here's a CURL request that works.
 
-The file and the JSON file will both be uploaded, after which the result will be a log of import attempt. Remember that the JSON file is a reference to the data importer configuration file. You do not need to download transactions from Nordigen or Salt Edge.
+The file and the JSON file will both be uploaded, after which the result will be a log of import attempt. Remember that the JSON file is a reference to the data importer configuration file. You do not need to download transactions from GoCardless or Salt Edge.
 
 ```bash
 curl --location --request POST 'https://data-importer.example.com/autoupload?secret=YOURSECRETHERE' \
@@ -124,7 +124,7 @@ curl --location --request POST 'https://data-importer.example.com/autoupload?sec
 --form 'json=@"/local/path/to/json.json"'
 ```
 
-You can also import from Nordigen or Spectre, in which case a JSON file is enough:
+You can also import from GoCardless or Spectre, in which case a JSON file is enough:
 
 ```bash
 curl --location --request POST 'https://data-importer.example.com/autoupload?secret=YOURSECRETHERE' \

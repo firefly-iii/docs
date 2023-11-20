@@ -12,7 +12,7 @@ Browse to your data importer URL.
 To import data first select your data source. You have the following choices:
 
 1. Import from CSV or camt.053 files
-2. Import from Nordigen
+2. Import from GoCardless
 3. Import from Spectre
 
 ![Select import routine](images/selection.png "Select import routine")
@@ -30,17 +30,17 @@ There may be a standard configuration file for your bank in **[this GitHub repos
 
 If you continue, you will end up at [the configuration screen](configure-import.md).
 
-## Import from Nordigen
+## Import from GoCardless
 
-If you import from Nordigen, you can also optionally upload a Nordigen configuration file. Also, you may have to enter your Nordigen ID and Nordigen Key, if they are not part of the data importer's environment variables.
+If you import from GoCardless, you can also optionally upload a GoCardless configuration file. Also, you may have to enter your GoCardless ID and GoCardless Key, if they are not part of the data importer's environment variables.
 
-Read the page about [Nordigen and Spectre](../faq/spectre-and-nordigen.md) for more information about Nordigen.
+Read the page about [GoCardless and Spectre](../faq/spectre-and-nordigen.md) for more information about GoCardless.
 
-![Nordigen identifiers](images/nordigen-info.png "Nordigen identifiers")
+![GoCardless identifiers](images/nordigen-info.png "GoCardless identifiers")
 
 After these settings, you must select your country and your bank of choice.
 
-![Nordigen bank selection](images/nordigen-bank.png "Nordigen bank selection")
+![GoCardless bank selection](images/nordigen-bank.png "GoCardless bank selection")
 
 If you continue, you will end up at [the configuration screen](configure-import.md).
 
@@ -48,7 +48,7 @@ If you continue, you will end up at [the configuration screen](configure-import.
 
 If you import from Spectre, you can also optionally upload a Spectre configuration file. Also, you may have to enter your Spectre App ID and Spectre Secret, if they are not part of the data importer's environment variables.
 
-Read the page about [Nordigen and Spectre](../faq/spectre-and-nordigen.md) for more information about Nordigen.
+Read the page about [GoCardless and Spectre](../faq/spectre-and-nordigen.md) for more information about GoCardless.
 
 ![Spectre identifiers](images/spectre-info.png "Spectre identifiers")
 

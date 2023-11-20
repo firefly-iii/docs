@@ -7,7 +7,7 @@ Once the data importer [is installed](../installation/index.md), and you [have c
 The data importer introduces a flow that you must go through that results in a data import.
 
 - **[Select a data source](select-data-source.md)**  
-  Learn how to import CSV or camt.053 files, or how to import from Spectre or Nordigen
+  Learn how to import CSV or camt.053 files, or how to import from Spectre or GoCardless
 - **[Configure the import](configure-import.md)**  
   Learn how to configure the import process, so it runs smoothly
 - **[Fine-tune CSV and camt.053 imports](fine-tune-import.md)**  

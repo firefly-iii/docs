@@ -111,7 +111,7 @@ nav:
           - General questions: data-importer/faq/general.md
           - Installation errors: data-importer/faq/installation-errors.md
           - Connection errors: data-importer/faq/connection-errors.md
-          - Nordigen and Spectre: data-importer/faq/spectre-and-nordigen.md
+          - GoCardless and Spectre: data-importer/faq/spectre-and-nordigen.md
           - Where to start?: data-importer/faq/where-to-start.md
           - Messy transactions: data-importer/faq/messy-transactions.md
           - Missing data: data-importer/faq/missing-data.md

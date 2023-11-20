@@ -6,7 +6,7 @@ Here you will find answers to frequently asked questions.
 
 - [I get errors during the installation](installation-errors.md)
 - [I can't connect to Firefly III](connection-errors.md)
-- [I want to know more about Nordigen or Spectre](spectre-and-nordigen.md)
+- [I want to know more about GoCardless or Spectre](spectre-and-nordigen.md)
 
 ## Import data questions
 
@@ -27,13 +27,13 @@ Here you will find answers to frequently asked questions.
 
 ### Can the data importer sync with my bank?
 
-Yes. The data importer uses Spectre and Nordigen to connect to over 6000 banks. Please see the [configuration page](../installation/configuration.md) for more details and read up on [Nordigen and Salt Edge / Spectre](spectre-and-nordigen.md).
+Yes. The data importer uses Spectre and GoCardless to connect to over 6000 banks. Please see the [configuration page](../installation/configuration.md) for more details and read up on [GoCardless and Salt Edge / Spectre](spectre-and-nordigen.md).
 
 There is also a [Firefly III API](../../firefly-iii/index.md) that you can connect to \[YOUR BANK HERE\], if you are clever enough to build something in your favorite programming language.
 
 ### Can you clean-up the transactions from \[my bank\]?
 
-If your bank delivers terrible files, or when the Nordigen / Salt Edge import is exceptionally messy, there is not much I can do about it.
+If your bank delivers terrible files, or when the GoCardless / Salt Edge import is exceptionally messy, there is not much I can do about it.
 
 You can use the suggestions on **[this page](messy-transactions.md)** to learn how to clean up transactions.
 

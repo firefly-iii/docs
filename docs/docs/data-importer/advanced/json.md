@@ -317,7 +317,7 @@ If set to true, the import will the same tag to all transactions in the import.
 
 ### flow
 
-Determines what is in your import. `csv`, `spectre` or `nordigen`
+Determines what is in your import. `csv`, `spectre` or `nordigen`. The `nordigen` variable refers to GoCardless.
 
 ### identifier
 
@@ -333,16 +333,16 @@ Spectre only. Set to true, this will make the importer ignore Spectre's suggeste
 
 ### map_all_data
 
-Spectre and Nordigen only. Is an indication if you wish to map data.
+Spectre and GoCardless only. Is an indication if you wish to map data.
 
 ### accounts
 
-Spectre and Nordigen only. A list of accounts from your provider that you wish to import, and into which Firefly III
+Spectre and GoCardless only. A list of accounts from your provider that you wish to import, and into which Firefly III
 account you want to import.
 
 ### date_range
 
-Spectre and Nordigen only. What date range to import from your provider.
+Spectre and GoCardless only. What date range to import from your provider.
 
 - `all`: Import everything
 - `partial`: Go back `date_range_number` units of `date_range_unit` (see below)
@@ -350,31 +350,31 @@ Spectre and Nordigen only. What date range to import from your provider.
 
 ### date_range_unit
 
-Spectre and Nordigen only. `d` for days, `w` for weeks, `m` for months, `y` for years. Used only if date_range is partial.
+Spectre and GoCardless only. `d` for days, `w` for weeks, `m` for months, `y` for years. Used only if date_range is partial.
 
 ### date_range_number
 
-Spectre and Nordigen only. Number of days/weeks/months/years to go back. Used only if date_range is partial.
+Spectre and GoCardless only. Number of days/weeks/months/years to go back. Used only if date_range is partial.
 
 ### date_not_before
 
-Spectre and Nordigen only. Used only if date_range is `range`. Will not import from dates before the set date.
+Spectre and GoCardless only. Used only if date_range is `range`. Will not import from dates before the set date.
 
 ### date_not_after
 
-Spectre and Nordigen only. Used only if date_range is `range`. Will not import from dates after the set date.
+Spectre and GoCardless only. Used only if date_range is `range`. Will not import from dates after the set date.
 
 ### nordigen_country
 
-Nordigen only. The country of the bank you selected to import from.
+GoCardless only. The country of the bank you selected to import from. 
 
 ### nordigen_bank
 
-Nordigen only. The bank you selected to import from.
+GoCardless only. The bank you selected to import from.
 
 ### nordigen_requisitions
 
-Nordigen only. A list of valid "requisitions" (permissions to import) from your bank.
+GoCardless only. A list of valid "requisitions" (permissions to import) from your bank.
 
 ### conversion
 

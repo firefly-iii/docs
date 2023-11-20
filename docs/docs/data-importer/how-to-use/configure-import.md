@@ -1,10 +1,10 @@
 # Configure the import
 
-After uploading a file, you'll be presented with a list of options. Some options are specific to a way of importing, like CSV or camt.053 files, Nordigen or Spectre. We start from the top and go down the page.
+After uploading a file, you'll be presented with a list of options. Some options are specific to a way of importing, like CSV or camt.053 files, GoCardless or Spectre. We start from the top and go down the page.
 
-## Nordigen and Spectre import options
+## GoCardless and Spectre import options
 
-For Nordigen and Spectre you must first select the accounts to import from, and indicate in which account the data must be imported.
+For GoCardless and Spectre you must first select the accounts to import from, and indicate in which account the data must be imported.
 
 Your selection may be limited: if the IBAN matches you have no choice. If the currency matches, only accounts with that currency can be selected.
 
@@ -73,7 +73,7 @@ If you import data, you can "map" the data found to data already present in Fire
 
 ### Date range
 
-For Nordigen and Spectre imports, you can select a date range, limiting the import. Options are as follows:
+For GoCardless and Spectre imports, you can select a date range, limiting the import. Options are as follows:
 
 - Import everything.
 - Go back a number of days, weeks, months or years.
@@ -88,7 +88,7 @@ Checkout the [FAQ on duplicate transactions](../faq/duplicates.md) and the [FAQ 
 
 ### General detection options
 
-Sometimes imports contain duplicated lines. Use this option to remove them from your import. It almost never makes sense to import duplicate lines. These options don't apply to Nordigen and Spectre imports.
+Sometimes imports contain duplicated lines. Use this option to remove them from your import. It almost never makes sense to import duplicate lines. These options don't apply to GoCardless and Spectre imports.
 
 ### Detection method
 

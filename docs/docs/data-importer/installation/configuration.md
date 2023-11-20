@@ -7,7 +7,7 @@ The Data Importer communicates with Firefly III over the [API](../../firefly-iii
 On this page you will read how to:
 
 1. Configure access to the API.
-2. Configure Nordigen (optional)
+2. Configure GoCardless (optional)
 3. Configure Spectre (optional)
 
 ## Access to the API 
@@ -40,13 +40,13 @@ To authenticate with Firefly III you must set ONE of the following variables:
 !!! note "Authelia and other tools"
     Firefly III combined with [external identity providers](../../firefly-iii/advanced-installation/authentication.md) such as Authelia can only handle Personal Access Tokens.
 
-## Configure Nordigen
+## Configure GoCardless
 
-If you wish to use Nordigen, please [read about Nordigen](../faq/spectre-and-nordigen.md) first. Then, set the following variables. This is necessary if you wish to connect to your bank through Nordigen.
+If you wish to use GoCardless, please [read about GoCardless](../faq/spectre-and-nordigen.md) first. Then, set the following variables. This is necessary if you wish to connect to your bank through GoCardless.
 
-* `NORDIGEN_ID` is your Nordigen Client ID
-* `NORDIGEN_KEY` is your Nordigen Client Secret
-* If you set `NORDIGEN_SANDBOX` to `true` the data importer will only connect to the Nordigen sandbox.
+* `NORDIGEN_ID` is your GoCardless Client ID
+* `NORDIGEN_KEY` is your GoCardless Client Secret
+* If you set `NORDIGEN_SANDBOX` to `true` the data importer will only connect to the GoCardless sandbox.
 
 ## Configure Spectre
 
@@ -62,7 +62,7 @@ All the configuration values mentioned on this page are stored in environment va
 * `FIREFLY_III_URL`
 * `FIREFLY_III_ACCESS_TOKEN`
 * `FIREFLY_III_CLIENT_ID`
-* `NORDIGEN_ID` and `NORDIGEN_KEY`
+* `NORDIGEN_ID` and `NORDIGEN_KEY` (for GoCardless)
 * `SPECTRE_APP_ID` and `SPECTRE_SECRET`
 
 You can use the `.env` file to store them, use Docker's `-e` flag to set them or use your operating system to set these values. This depends on your installation method, [Docker](docker.md) or [self-hosted](self-hosted.md).

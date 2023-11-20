@@ -8,7 +8,7 @@ Once the configuration is set, the roles are determined and the mapping is done,
 
 In this stage, the data will be parsed and converted into Firefly III compatible transactions. Note how you can download a configuration file. This configuration file contains all the details from the previous steps, and can be used to start a new import more quickly next time.
 
-If you use Spectre or Nordigen, your MUST download the configuration file. Otherwise you have to authenticate to your bank all over again. 
+If you use Spectre or GoCardless, your MUST download the configuration file. Otherwise, you have to authenticate to your bank all over again. 
 
 ![Data conversion](images/conversion.png "Data conversion")
 
