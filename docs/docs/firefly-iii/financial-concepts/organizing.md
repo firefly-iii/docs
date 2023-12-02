@@ -17,11 +17,9 @@ In what is called an [envelope system](http://en.wikipedia.org/wiki/Envelope_sys
 
 Firefly III uses this method, which means you can create "envelopes" for any period. Example: € 200 for "groceries" or € 500 for "bills" every month. On the budgets-page you can create budgets and set envelopes each month (or each week or year). Expenses can then be assigned a budget, and you will see on the budget page how well you are doing.
 
-There is even a special budget report.
+There is even a special budget report. 
 
-Each budget is valid for the current time period only (look to the top right). First, set the amount that is available to you by clicking the pencil icon next to *"Available in \~\~\~"*. By default, this is zero.
-
-Then, create some budgets with the "Create a budget" button either in the center of the screen or in the top right menu. All you need for a budget is a name.
+Each budget is valid for the current time period only (look to the top right). Create some budgets with the "Create a budget" button either in the center of the screen or in the top right menu. All you need for a budget is a name.
 
 Once you've created some budgets you can set the amount of the budget using the input below the name. If you have already spent money in a budget, this will be shown as well. You can see that the top blue bar will update. It will be blue if you have budgeted all the money available, and turn red / orange if you budget more money than you have.
 
