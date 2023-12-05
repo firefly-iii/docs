@@ -156,13 +156,13 @@ nav:
       - Data Importer:
               - Separate tool: explanation/data-importer/separate-tool.md
       - More information:
-          - Logo and name: firefly-iii/more-information/logo.md
-          - Architecture: firefly-iii/more-information/architecture.md
-          - Security: firefly-iii/more-information/security.md
-          - License: firefly-iii/more-information/license.md
-          - Missing features: firefly-iii/more-information/what-its-not.mdmd
+          - Logo and name: explanation/more-information/logo.md
+          - Architecture: explanation/more-information/architecture.md
+          - Security: explanation/more-information/security.md
+          - License: explanation/more-information/license.md
+          - Missing features: explanation/more-information/what-its-not.md
       - Support: explanation/support.md
-      - Other tools: other-tools/index.md
+      - Other tools: explanation/other-tools.md
 
 extra_css:
   - stylesheets/extra.css
