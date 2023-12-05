@@ -1,23 +1,19 @@
-# Tutorials
+# How-to guides
 
-Check out the following tutorials about Firefly III and the Data Importer.
+These how-to guides will show you how to do things. The guides are goal oriented and will get you to a specific point.
 
-Please take note that you can learn installing Firefly III or the Data Importer from the **[how-to guides](../how-to/index.md)**.
+Popular examples:
 
-The menu on the left will guide you through the tutorial section.
+1. How to install Firefly III?
+2. How to set up email notifications?
+3. How to configure GoCardless?
 
-Popular choices are:
-
-1. How to import a simple CSV file using the Data Importer
-2. How to use piggy banks to save for money
-3. How to process refunds
-
-More choices are in the menu.
+The menu on the left should guide your through the guides (hah). 
 
 ## Missing something?
 
-1. You're missing a specific tutorial, and you wish to write it
-2. You don't want to write it, but you still miss a specific tutorial
+1. You're missing a specific how-to guide, and you wish to write it
+2. You don't want to write it, but you still miss a specific how-to guide
 3. You spot inaccuracies, terrible grammar or spelling mistakes
 
 Please open an [issue on GitHub](https://github.com/firefly-iii/firefly-iii/issues/new?assignees=&labels=&projects=&template=fr.yml). Your contributions are appreciated.

@@ -1,92 +1,155 @@
+---
 site_name: Firefly III documentation
 site_description: Documentation for Firefly III
 site_author: James Cole
-copyright: "&copy; <a href=\"mailto:james@firefly-iii.org\">James Cole</a>, licensed under <a href=\"https://github.com/firefly-iii/docs/blob/main/license\">Attribution-ShareAlike 4.0 International</a>. <a href='#__consent'>Change cookie settings</a>"
+copyright: "&copy; <a href=\"mailto:james@firefly-iii.org\">James Cole</a>,
+  licensed under <a
+  href=\"https://github.com/firefly-iii/docs/blob/main/license\">Attribution-Sh\
+  areAlike 4.0 International</a>."
 repo_url: https://github.com/firefly-iii/firefly-iii/
 edit_uri: https://github.com/firefly-iii/docs/tree/main/docs/docs
 site_url: https://docs.firefly-iii.org/
-dev_addr: '10.0.0.15:8000'
+dev_addr: 10.0.0.15:8000
 plugins:
   - search
   - social:
       cards_layout_options:
-        background_color: '#1e6581'
-  - 'git-revision-date'
+        background_color: "#1e6581"
+  - git-revision-date
   - minify:
       minify_html: true
       minify_js: true
       htmlmin_opts:
         remove_comments: true
-
 markdown_extensions:
   - admonition
-
 nav:
-  - Home: 'index.md'
-  - Tutorials: 
+  - Home: index.md
+  - Tutorials:
       - Home: tutorials/index.md
-      - Importing data: firefly-iii/importing-data/index.md
-      - Exporting data: firefly-iii/exporting-data/index.md
-      - DIHow to use:
-          - DIHow to use: data-importer/how-to-use/index.md
-          - DISelect data source: data-importer/how-to-use/select-data-source.md
-          - DIConfigure import: data-importer/how-to-use/configure-import.md
-          - DIFine-tune CSV+camt.053: data-importer/how-to-use/fine-tune-import.md
-          - DIMap data: data-importer/how-to-use/map.md
-          - DIStart the import: data-importer/how-to-use/start.md
-          - DIClean-up data: data-importer/how-to-use/clean-up-data.md
-  - 'How-to guides': 
+      - Firefly III:
+          - Your finances:
+              - Create accounts and transactions: tutorials/finances/first-accounts.md
+              - My first accounts: tutorials/finances/first-accounts.md
+              - Save using a piggy bank: tutorials/finances/piggy-bank.md
+              - Manage a subscription: tutorials/finances/subscription.md
+              - Process a refund: tutorials/finances/refund.md
+              - Manage a liability: tutorials/finances/liability.md
+          - Data management:
+              - Importing data: tutorials/firefly-iii/importing-data.md
+              - Exporting data: tutorials/firefly-iii/exporting-data.md
+      - Data Importer:
+          - Files:
+              - Import a basic CSV file: tutorials/data-importer/csv.md
+          - Data providers:
+              - Import from GoCardless: tutorials/data-importer/gocardless.md
+  - How-to guides:
       - Home: how-to/index.md
-      - DIAdvanced:
-          - DIAdvanced: data-importer/advanced/index.md
-          - DIAuto-import: data-importer/advanced/automation.md
-          - DIJSON: data-importer/advanced/json.md
-          - DINotifications: data-importer/advanced/notifications.md
-          - DIImport transfers: data-importer/advanced/transfers.md
-      - Installation:
-          - Docker: firefly-iii/installation/docker.md
-          - Kubernetes: firefly-iii/installation/kubernetes.md
-          - Self-hosted server: firefly-iii/installation/self-hosted.md
-          - Platforms: firefly-iii/installation/self-managed.md
-          - Hosted by 3rd parties: firefly-iii/installation/third-parties.md
-          - Upgrade instructions: firefly-iii/installation/upgrade.md
-      - Advanced installation:
-          - Notifications: firefly-iii/advanced-installation/email.md
-          - Authentication: firefly-iii/advanced-installation/authentication.md
-          - Backup: firefly-iii/advanced-installation/backup.md
-          - Locales: firefly-iii/advanced-installation/locales.md
-          - Cron jobs: firefly-iii/advanced-installation/cron.md
-      - DIInstallation:
-          - DIInstallation: data-importer/installation/index.md
-          - DIDocker: data-importer/installation/docker.md
-          - DISelf-hosted: data-importer/installation/self-hosted.md
-          - DIPublic installation: data-importer/installation/public.md
-          - DIConfiguration: data-importer/installation/configuration.md
-          - DIUpgrading: data-importer/installation/upgrade.md
-  - References: 
+      - Firefly III:
+          - How to install:
+              - Using Docker: how-to/firefly-iii/installation/docker.md
+              - Using Kubernetes: how-to/firefly-iii/installation/kubernetes.md
+              - Using a self-managed server: how-to/firefly-iii/installation/self-managed.md
+          - How to upgrade:
+              - Using Docker: firefly-iii/upgrade/docker.md
+              - Using Kubernetes: firefly-iii/upgrade/kubernetes.md
+              - Using a self-managed server: firefly-iii/upgrade/self-managed.md
+          - Advanced installation:
+              - How to set up notifications: firefly-iii/advanced-installation/email.md
+              - How to use different authentication: firefly-iii/advanced-installation/authentication.md
+              - How to make a backup: firefly-iii/advanced-installation/backup.md
+              - How to set up your local language: firefly-iii/advanced-installation/locales.md
+              - How to configure cron jobs: firefly-iii/advanced-installation/cron.md
+          - Your finances:
+              - How to manage accounts: index/accounts.md
+              - How to manage budgets: index/accounts.md
+              - How to organize transactions: index/accounts.md #  Organizing transactions: firefly-iii/financial-concepts/organizing.md
+              - How to track cash: firefly-iii/financial-concepts/tracking_cash.md
+              - How to use bills: index/bills.md 
+              - How to reconcile accounts: firefly-iii/financial-concepts/reconcile.md
+              - How to use recurring transactions: index/bills.md 
+              - How to use piggy banks: index/piggies.md 
+              - How to read reports: index/reports.md
+          - Cool features:
+              - How to use rules: firefly-iii/features/rules.md
+              - How to use webhooks: firefly-iii/features/webhooks.md
+              - How to use the search: firefly-iii/features/search.md
+      - Data Importer:
+          - How to install:
+              - Using Docker: data-importer/installation/docker.md
+              - Using Kubernetes: data-importer/installation/docker.md
+              - Using a self-managed server: data-importer/installation/self-hosted.md
+          - How to configure: data-importer/installation/configuration.md
+          - Importing data:
+              - Using CSV or CAMT.053 files: data-importer/installation/configuration.md
+              - Using Salt Edge: data-importer/installation/configuration.md
+              - Using CardLess: data-importer/installation/configuration.md
+              - How to import transfers between accounts: data-importer/advanced/transfers.md
+          - How to upgrade:
+              - Using Docker: data-importer/installation/docker.md
+              - Using Kubernetes: data-importer/installation/docker.md
+              - Using a self-managed server: data-importer/installation/self-hosted.md
+          - Advanced things:
+              - How to do auto-imports using CLI: data-importer/advanced/automation.md
+              - How to do auto-imports using POST: data-importer/advanced/automation.md
+              - How to set up notifications: data-importer/advanced/notifications.md
+  - Reference guides:
       - Home: references/index.md
-      - API:
-          - API: firefly-iii/api/index.md
-          - Special endpoints: firefly-iii/api/specials.md
-      - Features:
-          - Command line usage: firefly-iii/features/commandline.md
-          - Rules: firefly-iii/features/rules.md
-          - Search: firefly-iii/features/search.md
-          - Webhooks: firefly-iii/features/webhooks.md
-          - Reports: firefly-iii/features/reports.md
-      - More info:
+      - Firefly III:
+          - The database: database.md
+          - Security: security.md
+          - The CLI: firefly-iii/features/commandline.md
+          - All search options: index/search.md
+          - All rule triggers: index/search.md
+          - All rule actions: index/something.md
+          - API:
+              - The API: api/index.md
+              - Special endpoints: firefly-iii/api/specials.md
+          - Third parties:
+              - Third parties that host Firefly III: firefly-iii/installation/third-parties.md
+              - Third-party tools: firefly-iii/more-information/3rdparty.md
+      - Data Importer:
+          - JSON configuration file: data-importer/advanced/json.md
+          - Column roles: data-imp/roles.md
+          - Third-party tools: data-importer/more-information/other-tools.md
+          - Public installation: data-importer/installation/public.md
+      - Support: firefly-iii/support/index.md
+  - Explanation:
+      - Home: explanation/index.md
+      - Financial concepts:
+          - Transactions: firefly-iii/financial-concepts/transactions.md
+          - Accounts: firefly-iii/financial-concepts/accounts.md
+          - Budgets: firefly-iii/financial-concepts/transactions.md
+          - Liabilities: firefly-iii/financial-concepts/liabilities.md
+          - Currencies: firefly-iii/financial-concepts/currencies.md
+          - Piggy banks: firefly-iii/financial-concepts/piggies.md
+          - Bills: firefly-iii/financial-concepts/bills.md
+          - Recurring transactions: firefly-iii/financial-concepts/recurring.md
+      - Firefly III:
+          - About:
+              - Introduction and features: firefly-iii/about-firefly-iii/introduction.md
+              - Screenshots: firefly-iii/about-firefly-iii/screenshots.md
+              - Demo website: firefly-iii/about-firefly-iii/demo.md
+          - Background information:
+              - Personal finances: firefly-iii/more-information/personal-finances.md
+              - Zero based budgeting: firefly-iii/more-information/zero-based-budgeting.md
+      - Data Importer:
+              - Separate tool: data-importer/more-information/separate-tool.md
+      - More information:
           - Logo and name: firefly-iii/more-information/logo.md
-          - License: firefly-iii/more-information/license.md
           - Architecture: firefly-iii/more-information/architecture.md
           - Security: firefly-iii/more-information/security.md
-          - Missing features: firefly-iii/more-information/what-its-not.md
-          - Personal finances: firefly-iii/more-information/personal-finances.md
-          - Zero based budgeting: firefly-iii/more-information/zero-based-budgeting.md
-          - Third-party tools: firefly-iii/more-information/3rdparty.md
-      - Support: firefly-iii/support/index.md
-  - Explanation: 
-      - Home: explanation/index.md
-      - DIFAQ:
+          - License: firefly-iii/more-information/license.md
+          - Missing features: firefly-iii/more-information/what-its-not.mdmd
+      - Frequently Asked Questions:
+          - General questions: firefly-iii/faq/general.md
+          - Managing your finances: firefly-iii/faq/financials.md
+          - Using Docker: firefly-iii/faq/docker.md
+          - Installing and upgrading: firefly-iii/faq/installation.md
+          - Self-hosting: firefly-iii/faq/self-hosted.md
+          - Translating Firefly III: firefly-iii/faq/translate.md
+          - Rules: firefly-iii/faq/rules.md
+          - Other questions: firefly-iii/faq/other.md
           - DIFAQ: data-importer/faq/index.md
           - DIGeneral questions: data-importer/faq/general.md
           - DIInstallation errors: data-importer/faq/installation-errors.md
@@ -99,40 +162,10 @@ nav:
           - DICustom import tag: data-importer/faq/custom-import-tag.md
           - DIRe-import transactions: data-importer/faq/re-import.md
           - DIJSON file: data-importer/faq/json.md
-      - About Firefly III:
-          - Introduction and features: firefly-iii/about-firefly-iii/introduction.md
-          - Screenshots: firefly-iii/about-firefly-iii/screenshots.md
-          - Demo website: firefly-iii/about-firefly-iii/demo.md
-      - Financial concepts:
-          - Transactions: firefly-iii/financial-concepts/transactions.md
-          - Organizing transactions: firefly-iii/financial-concepts/organizing.md
-          - Tracking cash: firefly-iii/financial-concepts/tracking_cash.md
-          - Accounts: firefly-iii/financial-concepts/accounts.md
-          - Liabilities: firefly-iii/financial-concepts/liabilities.md
-          - Currencies: firefly-iii/financial-concepts/currencies.md
-          - Piggy banks: firefly-iii/financial-concepts/piggies.md
-          - Bills: firefly-iii/financial-concepts/bills.md
-          - Recurring transactions: firefly-iii/financial-concepts/recurring.md
-          - Reconciling accounts: firefly-iii/financial-concepts/reconcile.md
-      - FAQ:
-          - General questions: firefly-iii/faq/general.md
-          - Managing your finances: firefly-iii/faq/financials.md
-          - Using Docker: firefly-iii/faq/docker.md
-          - Installing and upgrading: firefly-iii/faq/installation.md
-          - Self-hosting: firefly-iii/faq/self-hosted.md
-          - Translating Firefly III: firefly-iii/faq/translate.md
-          - Rules: firefly-iii/faq/rules.md
-          - Other questions: firefly-iii/faq/other.md
-      - Support: firefly-iii/support/index.md
-      - DIMore information:
-          - DISeparate tool: data-importer/more-information/separate-tool.md
-          - DIOther tools: data-importer/more-information/other-tools.md
-      - DISupport:
-          - DISupport: data-importer/support/index.md
-          - DIIssues: data-importer/support/issues.md
-          - DIRoadmap: data-importer/support/roadmap.md
-          - DIContact: data-importer/support/contact.md
+      - Support: 
+          - Support: firefly-iii/support/index.md
       - Other tools: other-tools/index.md
+
 extra_css:
   - stylesheets/extra.css
 theme:
