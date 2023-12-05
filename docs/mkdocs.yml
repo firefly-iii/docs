@@ -29,7 +29,7 @@ nav:
       - Home: tutorials/index.md
       - Firefly III:
           - Your finances:
-              - Create accounts and transactions: tutorials/finances/first-accounts.md
+              - Create accounts and transactions: tutorials/finances/first-steps.md
               - My first accounts: tutorials/finances/first-accounts.md
               - Save using a piggy bank: tutorials/finances/piggy-bank.md
               - Manage a subscription: tutorials/finances/subscription.md
@@ -116,12 +116,12 @@ nav:
       - Support: references/support.md
       - Frequently Asked Questions:
           - General questions: references/faq/general.md
-          - Managing your finances: references/faq/financials.md
+          - Managing your finances: references/faq/finances.md
           - Using Docker: references/faq/docker.md
           - Installing and upgrading: references/faq/installation.md
-          - Self-hosting: references/faq/self-hosted.md
+#          - Self-hosting: references/faq/self-hosted.md
           - Translating Firefly III: references/faq/translate.md
-          - Rules: references/faq/rules.md
+ #         - Rules: references/faq/rules.md
           - Other questions: references/faq/other.md
 #          - DIGeneral questions: data-importer/faq/general.md
 #          - DIInstallation errors: data-importer/faq/installation-errors.md
