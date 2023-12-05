@@ -65,10 +65,10 @@ nav:
               - How to manage budgets: how-to/firefly-iii/finances/budgets.md
               - How to organize transactions: how-to/firefly-iii/finances/transactions.md
               - How to track cash: how-to/firefly-iii/finances/cash.md
-              - How to use bills: how-to/firefly-iii/finances/bills.md 
+              - How to use bills: how-to/firefly-iii/finances/bills.md
               - How to reconcile accounts: how-to/firefly-iii/finances/reconcile.md
-              - How to use recurring transactions: how-to/firefly-iii/finances/recurring.md 
-              - How to use piggy banks: how-to/firefly-iii/finances/piggies.md 
+              - How to use recurring transactions: how-to/firefly-iii/finances/recurring.md
+              - How to use piggy banks: how-to/firefly-iii/finances/piggies.md
               - How to read reports: how-to/firefly-iii/finances/reports.md
           - More features:
               - How to use rules: how-to/firefly-iii/features/rules.md
@@ -89,10 +89,12 @@ nav:
               - Using Salt Edge: how-to/data-importer/import/salt-edge.md
               - Using GoCardLess: how-to/data-importer/import/gocardless.md
               - How to import transfers between accounts: how-to/data-importer/import/transfers.md
+              - How to handle (missed) duplicates: how-to/data-importer/import/duplicates.md
           - Advanced things:
               - How to do auto-imports using CLI: how-to/data-importer/advanced/cli.md
               - How to do auto-imports using POST: how-to/data-importer/advanced/post.md
               - How to set up notifications: how-to/data-importer/advanced/notifications.md
+              - How to set a custom import tag: how-to/data-importer/advanced/custom-import-tag.md
   - Reference guides:
       - Home: references/index.md
       - Firefly III:
@@ -115,25 +117,10 @@ nav:
           - Public installation: references/data-importer/public.md
       - Support: references/support.md
       - Frequently Asked Questions:
-          - General questions: references/faq/general.md
-          - Managing your finances: references/faq/finances.md
-          - Using Docker: references/faq/docker.md
-          - Installing and upgrading: references/faq/installation.md
-#          - Self-hosting: references/faq/self-hosted.md
-          - Translating Firefly III: references/faq/translate.md
- #         - Rules: references/faq/rules.md
-          - Other questions: references/faq/other.md
-#          - DIGeneral questions: data-importer/faq/general.md
-#          - DIInstallation errors: data-importer/faq/installation-errors.md
-#          - DIConnection errors: data-importer/faq/connection-errors.md
-#          - DIGoCardless and Spectre: data-importer/faq/spectre-and-nordigen.md
-#          - DIWhere to start?: data-importer/faq/where-to-start.md
-#          - DIMessy transactions: data-importer/faq/messy-transactions.md
-#          - DIMissing data: data-importer/faq/missing-data.md
-#          - DIDuplicates: data-importer/faq/duplicates.md
-#          - DICustom import tag: data-importer/faq/custom-import-tag.md
-#          - DIRe-import transactions: data-importer/faq/re-import.md
-#          - DIJSON file: data-importer/faq/json.md
+          - Firefly III:
+              - General questions: references/faq/firefly-iii/general.md
+          - Data Importer:
+              - General questions: references/faq/data-importer/general.md
   - Explanation:
       - Home: explanation/index.md
       - Financial concepts:
@@ -154,7 +141,7 @@ nav:
               - Personal finances: explanation/firefly-iii/background/personal-finances.md
               - Zero based budgeting: explanation/firefly-iii/background/zero-based-budgeting.md
       - Data Importer:
-              - Separate tool: explanation/data-importer/separate-tool.md
+          - Separate tool: explanation/data-importer/separate-tool.md
       - More information:
           - Logo and name: explanation/more-information/logo.md
           - Architecture: explanation/more-information/architecture.md

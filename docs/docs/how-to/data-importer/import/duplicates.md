@@ -1,34 +1,12 @@
-# Duplicate transactions
+Sometimes the Data Importer will create duplicate transactions, despite being told not to. 
 
-Sometimes the Firefly III Data Importer will create duplicate transactions, despite being told not to. This is pretty annoying so please open a ticket when this happens and let me know why Firefly III didn't detect a duplicate. I can use this information to fine-tune the duplication process.
+Some other times the Data Importer refuses to import stuff because it claims to be a duplicate transaction.
 
 ## Deleted, but duplicate?
 
-Firefly III will also check deleted transactions when checking for duplicates. This is on purpose. If your import contains bad transactions or informative message hidden as transactions, they will not be re-imported after you've deleted them.
+The Data Importer will also check **deleted** transactions when checking for duplicates. This is on purpose! If your import contains bad transactions or informative message hidden as transactions, they will not be re-imported after you've deleted them. If you're sure you wish to reimport transactions, press the **Purge** button on the last tab of your Profile (under `/profile`).
 
-If you're sure you wish to reimport transactions, press the **Purge** button on the last tab of your Profile (under `/profile`).
-
-## Further debugging
-
-Use the *debug view* to see why a transaction is imported, despite being a duplicate of another transaction. Remember that rules don't influence the (de)duplication process, because rules are applied *after* the duplication check.
-
-Open both transactions in different tabs of your browser. Notice how the URL is something like this:
-
-* [https://demo.firefly-iii.org/transactions/show/123](https://demo.firefly-iii.org/transactions/show/123)
-
-Change the word `show` in the URL to `debug`:
-
-* [https://demo.firefly-iii.org/transactions/**debug**/123](https://demo.firefly-iii.org/transactions/debug/123)
-
-If you do this for **both** transactions you will end up with a specific JSON variant of the transaction.
-
-Send it to me or [compare it yourself](https://jsoncompare.org/) to see the differences between two seemingly equal transactions.
-
-- The `created_at` and `updated_at` fields are not used in the comparison by Firefly III.
-- The `import_hash_v2` and `original_source` are not used in the comparison by Firefly III.
-- The `id` and `transaction_journal_id` fields are not used in the comparison by Firefly III.
-
-## Common causes
+## Common causes of missed duplicate transactions
 
 Some common causes of duplicate issues are listed below.
 
@@ -43,11 +21,11 @@ These numbers may have slight variations. Firefly III will see the difference an
 
 ### Different internal or external ID's
 
-Hidden deep in the JSON comparisons you may find a field called `external_id` or `internal_reference`. These fields will sometimes be different. Spectre is known to change these sometimes.
+You may find your transaction has a field called `external_id` or `internal_reference`. These fields will sometimes be different. Spectre is known to change these sometimes for no good reason.
 
-## How does it work?
+## Detection methods
 
-There are two duplicate detection methods: content-based and identifier-based.
+There are two duplicate detection methods: content-based and identifier-based. It's up to you to pick one.
 
 ### Content-based
 
@@ -88,6 +66,29 @@ Identifier-based duplicate detection is handled by the data importer. Each trans
 
 If you select the column and the field it should be stored in, the data importer will search your Firefly III installation for this specific identifier. When Firefly III reports it's been found, the transaction will not be imported (again).
 
+## Further debugging
+
+Use the *debug view* to see why a transaction is imported, despite being a duplicate of another transaction. Remember that rules don't influence the (de)duplication process, because rules are applied *after* the duplication check.
+
+Open both transactions in different tabs of your browser. Notice how the URL is something like this:
+
+* [https://demo.firefly-iii.org/transactions/show/123](https://demo.firefly-iii.org/transactions/show/123)
+
+Change the word `show` in the URL to `debug`:
+
+* [https://demo.firefly-iii.org/transactions/**debug**/123](https://demo.firefly-iii.org/transactions/debug/123)
+
+If you do this for **both** transactions you will end up with a specific JSON variant of the transaction.
+
+Send it to me or [compare it yourself](https://jsoncompare.org/) to see the differences between two seemingly equal transactions.
+
+- The `created_at` and `updated_at` fields are not used in the comparison by Firefly III.
+- The `import_hash_v2` and `original_source` are not used in the comparison by Firefly III.
+- The `id` and `transaction_journal_id` fields are not used in the comparison by Firefly III.
+
 ## Other issues?
 
-Please open a ticket [on GitHub](https://github.com/firefly-iii/firefly-iii/).
+Please open an issue [on GitHub](https://github.com/firefly-iii/firefly-iii/).
+
+!!! info
+    At this point the duplication detection process is 100% correct all the time. If you still believe it's broken, please provide a reproducible example.

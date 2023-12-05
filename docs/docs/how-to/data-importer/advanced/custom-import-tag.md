@@ -1,10 +1,8 @@
-# Custom import tag
-
 You can set a custom import tag in your configuration file or using the UI.
 
 The standard tag is something like `Data Import at 2023-06-12 @ 23:03` which may not be very distinctive.
 
-Instead, you can set this to `Cool import by me` or combine it with some of the following custom variables. For example, by setting it to `Imported in year %year%`, the resulting tag will read `Imported in the year 2023`. 
+Instead, you can set this to `Cool import by me` or combine it with some of the following custom variables. For example, by setting it to `Imported in year %year%`, the resulting tag will read `Imported in the year 2023`.
 
 ## Custom variables
 
