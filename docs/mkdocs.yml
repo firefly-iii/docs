@@ -127,43 +127,21 @@ nav:
           - Recurring transactions: explanation/financial-concepts/recurring.md
       - Firefly III:
           - About:
-              - Introduction and features: firefly-iii/about-firefly-iii/introduction.md
-              - Screenshots: firefly-iii/about-firefly-iii/screenshots.md
-              - Demo website: firefly-iii/about-firefly-iii/demo.md
+              - Introduction and features: explanation/firefly-iii/about/introduction.md
+              - Screenshots: explanation/firefly-iii/about/screenshots.md
+              - Demo website: explanation/firefly-iii/about/demo.md
           - Background information:
-              - Personal finances: firefly-iii/more-information/personal-finances.md
-              - Zero based budgeting: firefly-iii/more-information/zero-based-budgeting.md
+              - Personal finances: explanation/firefly-iii/background/personal-finances.md
+              - Zero based budgeting: explanation/firefly-iii/background/zero-based-budgeting.md
       - Data Importer:
-              - Separate tool: data-importer/more-information/separate-tool.md
+              - Separate tool: explanation/data-importer/separate-tool.md
       - More information:
           - Logo and name: firefly-iii/more-information/logo.md
           - Architecture: firefly-iii/more-information/architecture.md
           - Security: firefly-iii/more-information/security.md
           - License: firefly-iii/more-information/license.md
           - Missing features: firefly-iii/more-information/what-its-not.mdmd
-      - Frequently Asked Questions:
-          - General questions: firefly-iii/faq/general.md
-          - Managing your finances: firefly-iii/faq/financials.md
-          - Using Docker: firefly-iii/faq/docker.md
-          - Installing and upgrading: firefly-iii/faq/installation.md
-          - Self-hosting: firefly-iii/faq/self-hosted.md
-          - Translating Firefly III: firefly-iii/faq/translate.md
-          - Rules: firefly-iii/faq/rules.md
-          - Other questions: firefly-iii/faq/other.md
-          - DIFAQ: data-importer/faq/index.md
-          - DIGeneral questions: data-importer/faq/general.md
-          - DIInstallation errors: data-importer/faq/installation-errors.md
-          - DIConnection errors: data-importer/faq/connection-errors.md
-          - DIGoCardless and Spectre: data-importer/faq/spectre-and-nordigen.md
-          - DIWhere to start?: data-importer/faq/where-to-start.md
-          - DIMessy transactions: data-importer/faq/messy-transactions.md
-          - DIMissing data: data-importer/faq/missing-data.md
-          - DIDuplicates: data-importer/faq/duplicates.md
-          - DICustom import tag: data-importer/faq/custom-import-tag.md
-          - DIRe-import transactions: data-importer/faq/re-import.md
-          - DIJSON file: data-importer/faq/json.md
-      - Support: 
-          - Support: firefly-iii/support/index.md
+      - Support: explanation/support.md
       - Other tools: other-tools/index.md
 
 extra_css:
