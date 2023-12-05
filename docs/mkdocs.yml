@@ -57,15 +57,15 @@ nav:
           - Advanced installation:
               - How to set up notifications: how-to/firefly-iii/advanced/notifications.md
               - How to use different authentication: how-to/firefly-iii/advanced/authentication.md
-              - How to make a backup: how-to/firefly-iii/advanced-installation/backup.md
-              - How to set up your local language: how-to/firefly-iii/advanced-installation/locales.md
-              - How to configure cron jobs: how-to/firefly-iii/advanced-installation/cron.md
+              - How to make a backup: how-to/firefly-iii/advanced/backup.md
+              - How to set up your local language: how-to/firefly-iii/advanced/locales.md
+              - How to configure cron jobs: how-to/firefly-iii/advanced/cron.md
           - Your finances:
               - How to manage accounts: how-to/firefly-iii/finances/accounts.md
               - How to manage budgets: how-to/firefly-iii/finances/budgets.md
               - How to organize transactions: how-to/firefly-iii/finances/transactions.md
               - How to track cash: how-to/firefly-iii/finances/cash.md
-              - How to use bills: how-to/firefly-iii/finances//bills.md 
+              - How to use bills: how-to/firefly-iii/finances/bills.md 
               - How to reconcile accounts: how-to/firefly-iii/finances/reconcile.md
               - How to use recurring transactions: how-to/firefly-iii/finances/recurring.md 
               - How to use piggy banks: how-to/firefly-iii/finances/piggies.md 
@@ -104,7 +104,7 @@ nav:
           - All rule actions: references/firefly-iii/rule-actions.md
           - API:
               - The API: references/firefly-iii/api/index.md
-              - Special endpoints: references/firefly-iii/specials.md
+              - Special endpoints: references/firefly-iii/api/specials.md
           - Third parties:
               - Third parties that host Firefly III: references/firefly-iii/third-parties/host.md
               - Third-party tools: references/firefly-iii/third-parties/apps.md
@@ -117,14 +117,14 @@ nav:
   - Explanation:
       - Home: explanation/index.md
       - Financial concepts:
-          - Transactions: firefly-iii/financial-concepts/transactions.md
-          - Accounts: firefly-iii/financial-concepts/accounts.md
-          - Budgets: firefly-iii/financial-concepts/transactions.md
-          - Liabilities: firefly-iii/financial-concepts/liabilities.md
-          - Currencies: firefly-iii/financial-concepts/currencies.md
-          - Piggy banks: firefly-iii/financial-concepts/piggies.md
-          - Bills: firefly-iii/financial-concepts/bills.md
-          - Recurring transactions: firefly-iii/financial-concepts/recurring.md
+          - Transactions: explanation/financial-concepts/transactions.md
+          - Accounts: explanation/financial-concepts/accounts.md
+          - Budgets: explanation/financial-concepts/transactions.md
+          - Liabilities: explanation/financial-concepts/liabilities.md
+          - Currencies: explanation/financial-concepts/currencies.md
+          - Piggy banks: explanation/financial-concepts/piggies.md
+          - Bills: explanation/financial-concepts/bills.md
+          - Recurring transactions: explanation/financial-concepts/recurring.md
       - Firefly III:
           - About:
               - Introduction and features: firefly-iii/about-firefly-iii/introduction.md
