@@ -114,6 +114,26 @@ nav:
           - Third-party tools: references/data-importer/third-party-tools.md
           - Public installation: references/data-importer/public.md
       - Support: references/support.md
+      - Frequently Asked Questions:
+          - General questions: references/faq/general.md
+          - Managing your finances: references/faq/financials.md
+          - Using Docker: references/faq/docker.md
+          - Installing and upgrading: references/faq/installation.md
+          - Self-hosting: references/faq/self-hosted.md
+          - Translating Firefly III: references/faq/translate.md
+          - Rules: references/faq/rules.md
+          - Other questions: references/faq/other.md
+#          - DIGeneral questions: data-importer/faq/general.md
+#          - DIInstallation errors: data-importer/faq/installation-errors.md
+#          - DIConnection errors: data-importer/faq/connection-errors.md
+#          - DIGoCardless and Spectre: data-importer/faq/spectre-and-nordigen.md
+#          - DIWhere to start?: data-importer/faq/where-to-start.md
+#          - DIMessy transactions: data-importer/faq/messy-transactions.md
+#          - DIMissing data: data-importer/faq/missing-data.md
+#          - DIDuplicates: data-importer/faq/duplicates.md
+#          - DICustom import tag: data-importer/faq/custom-import-tag.md
+#          - DIRe-import transactions: data-importer/faq/re-import.md
+#          - DIJSON file: data-importer/faq/json.md
   - Explanation:
       - Home: explanation/index.md
       - Financial concepts:
