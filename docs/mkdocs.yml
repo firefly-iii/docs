@@ -23,12 +23,26 @@ markdown_extensions:
 
 nav:
   - Home: 'index.md'
-  - 'Firefly III':
-      - Home: firefly-iii/index.md
-      - About Firefly III:
-          - Introduction and features: firefly-iii/about-firefly-iii/introduction.md
-          - Screenshots: firefly-iii/about-firefly-iii/screenshots.md
-          - Demo website: firefly-iii/about-firefly-iii/demo.md
+  - Tutorials: 
+      - Home: tutorials/index.md
+      - Importing data: firefly-iii/importing-data/index.md
+      - Exporting data: firefly-iii/exporting-data/index.md
+      - DIHow to use:
+          - DIHow to use: data-importer/how-to-use/index.md
+          - DISelect data source: data-importer/how-to-use/select-data-source.md
+          - DIConfigure import: data-importer/how-to-use/configure-import.md
+          - DIFine-tune CSV+camt.053: data-importer/how-to-use/fine-tune-import.md
+          - DIMap data: data-importer/how-to-use/map.md
+          - DIStart the import: data-importer/how-to-use/start.md
+          - DIClean-up data: data-importer/how-to-use/clean-up-data.md
+  - 'How-to guides': 
+      - Home: how-to/index.md
+      - DIAdvanced:
+          - DIAdvanced: data-importer/advanced/index.md
+          - DIAuto-import: data-importer/advanced/automation.md
+          - DIJSON: data-importer/advanced/json.md
+          - DINotifications: data-importer/advanced/notifications.md
+          - DIImport transfers: data-importer/advanced/transfers.md
       - Installation:
           - Docker: firefly-iii/installation/docker.md
           - Kubernetes: firefly-iii/installation/kubernetes.md
@@ -42,12 +56,53 @@ nav:
           - Backup: firefly-iii/advanced-installation/backup.md
           - Locales: firefly-iii/advanced-installation/locales.md
           - Cron jobs: firefly-iii/advanced-installation/cron.md
+      - DIInstallation:
+          - DIInstallation: data-importer/installation/index.md
+          - DIDocker: data-importer/installation/docker.md
+          - DISelf-hosted: data-importer/installation/self-hosted.md
+          - DIPublic installation: data-importer/installation/public.md
+          - DIConfiguration: data-importer/installation/configuration.md
+          - DIUpgrading: data-importer/installation/upgrade.md
+  - References: 
+      - Home: references/index.md
+      - API:
+          - API: firefly-iii/api/index.md
+          - Special endpoints: firefly-iii/api/specials.md
       - Features:
           - Command line usage: firefly-iii/features/commandline.md
           - Rules: firefly-iii/features/rules.md
           - Search: firefly-iii/features/search.md
           - Webhooks: firefly-iii/features/webhooks.md
           - Reports: firefly-iii/features/reports.md
+      - More info:
+          - Logo and name: firefly-iii/more-information/logo.md
+          - License: firefly-iii/more-information/license.md
+          - Architecture: firefly-iii/more-information/architecture.md
+          - Security: firefly-iii/more-information/security.md
+          - Missing features: firefly-iii/more-information/what-its-not.md
+          - Personal finances: firefly-iii/more-information/personal-finances.md
+          - Zero based budgeting: firefly-iii/more-information/zero-based-budgeting.md
+          - Third-party tools: firefly-iii/more-information/3rdparty.md
+      - Support: firefly-iii/support/index.md
+  - Explanation: 
+      - Home: explanation/index.md
+      - DIFAQ:
+          - DIFAQ: data-importer/faq/index.md
+          - DIGeneral questions: data-importer/faq/general.md
+          - DIInstallation errors: data-importer/faq/installation-errors.md
+          - DIConnection errors: data-importer/faq/connection-errors.md
+          - DIGoCardless and Spectre: data-importer/faq/spectre-and-nordigen.md
+          - DIWhere to start?: data-importer/faq/where-to-start.md
+          - DIMessy transactions: data-importer/faq/messy-transactions.md
+          - DIMissing data: data-importer/faq/missing-data.md
+          - DIDuplicates: data-importer/faq/duplicates.md
+          - DICustom import tag: data-importer/faq/custom-import-tag.md
+          - DIRe-import transactions: data-importer/faq/re-import.md
+          - DIJSON file: data-importer/faq/json.md
+      - About Firefly III:
+          - Introduction and features: firefly-iii/about-firefly-iii/introduction.md
+          - Screenshots: firefly-iii/about-firefly-iii/screenshots.md
+          - Demo website: firefly-iii/about-firefly-iii/demo.md
       - Financial concepts:
           - Transactions: firefly-iii/financial-concepts/transactions.md
           - Organizing transactions: firefly-iii/financial-concepts/organizing.md
@@ -59,20 +114,6 @@ nav:
           - Bills: firefly-iii/financial-concepts/bills.md
           - Recurring transactions: firefly-iii/financial-concepts/recurring.md
           - Reconciling accounts: firefly-iii/financial-concepts/reconcile.md
-      - Importing data: firefly-iii/importing-data/index.md
-      - Exporting data: firefly-iii/exporting-data/index.md
-      - API:
-          - API: firefly-iii/api/index.md
-          - Special endpoints: firefly-iii/api/specials.md
-      - More info:
-          - Logo and name: firefly-iii/more-information/logo.md
-          - License: firefly-iii/more-information/license.md
-          - Architecture: firefly-iii/more-information/architecture.md
-          - Security: firefly-iii/more-information/security.md
-          - Missing features: firefly-iii/more-information/what-its-not.md
-          - Personal finances: firefly-iii/more-information/personal-finances.md
-          - Zero based budgeting: firefly-iii/more-information/zero-based-budgeting.md
-          - Third-party tools: firefly-iii/more-information/3rdparty.md
       - FAQ:
           - General questions: firefly-iii/faq/general.md
           - Managing your finances: firefly-iii/faq/financials.md
@@ -83,51 +124,15 @@ nav:
           - Rules: firefly-iii/faq/rules.md
           - Other questions: firefly-iii/faq/other.md
       - Support: firefly-iii/support/index.md
-  - Data importer:
-      - Home: data-importer/index.md
-      - Installation:
-          - Installation: data-importer/installation/index.md
-          - Docker: data-importer/installation/docker.md
-          - Self-hosted: data-importer/installation/self-hosted.md
-          - Public installation: data-importer/installation/public.md
-          - Configuration: data-importer/installation/configuration.md
-          - Upgrading: data-importer/installation/upgrade.md
-      - How to use:
-          - How to use: data-importer/how-to-use/index.md
-          - Select data source: data-importer/how-to-use/select-data-source.md
-          - Configure import: data-importer/how-to-use/configure-import.md
-          - Fine-tune CSV+camt.053: data-importer/how-to-use/fine-tune-import.md
-          - Map data: data-importer/how-to-use/map.md
-          - Start the import: data-importer/how-to-use/start.md
-          - Clean-up data: data-importer/how-to-use/clean-up-data.md
-      - Advanced:
-          - Advanced: data-importer/advanced/index.md
-          - Auto-import: data-importer/advanced/automation.md
-          - JSON: data-importer/advanced/json.md
-          - Notifications: data-importer/advanced/notifications.md
-          - Import transfers: data-importer/advanced/transfers.md
-      - FAQ:
-          - FAQ: data-importer/faq/index.md
-          - General questions: data-importer/faq/general.md
-          - Installation errors: data-importer/faq/installation-errors.md
-          - Connection errors: data-importer/faq/connection-errors.md
-          - GoCardless and Spectre: data-importer/faq/spectre-and-nordigen.md
-          - Where to start?: data-importer/faq/where-to-start.md
-          - Messy transactions: data-importer/faq/messy-transactions.md
-          - Missing data: data-importer/faq/missing-data.md
-          - Duplicates: data-importer/faq/duplicates.md
-          - Custom import tag: data-importer/faq/custom-import-tag.md
-          - Re-import transactions: data-importer/faq/re-import.md
-          - JSON file: data-importer/faq/json.md
-      - More information:
-          - Separate tool: data-importer/more-information/separate-tool.md
-          - Other tools: data-importer/more-information/other-tools.md
-      - Support:
-          - Support: data-importer/support/index.md
-          - Issues: data-importer/support/issues.md
-          - Roadmap: data-importer/support/roadmap.md
-          - Contact: data-importer/support/contact.md
-  - Other tools: other-tools/index.md
+      - DIMore information:
+          - DISeparate tool: data-importer/more-information/separate-tool.md
+          - DIOther tools: data-importer/more-information/other-tools.md
+      - DISupport:
+          - DISupport: data-importer/support/index.md
+          - DIIssues: data-importer/support/issues.md
+          - DIRoadmap: data-importer/support/roadmap.md
+          - DIContact: data-importer/support/contact.md
+      - Other tools: other-tools/index.md
 extra_css:
   - stylesheets/extra.css
 theme:
