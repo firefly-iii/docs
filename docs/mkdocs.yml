@@ -51,69 +51,69 @@ nav:
               - Using Kubernetes: how-to/firefly-iii/installation/kubernetes.md
               - Using a self-managed server: how-to/firefly-iii/installation/self-managed.md
           - How to upgrade:
-              - Using Docker: firefly-iii/upgrade/docker.md
-              - Using Kubernetes: firefly-iii/upgrade/kubernetes.md
-              - Using a self-managed server: firefly-iii/upgrade/self-managed.md
+              - Using Docker: how-to/firefly-iii/upgrade/docker.md
+              - Using Kubernetes: how-to/firefly-iii/upgrade/kubernetes.md
+              - Using a self-managed server: how-to/firefly-iii/upgrade/self-managed.md
           - Advanced installation:
-              - How to set up notifications: firefly-iii/advanced-installation/email.md
-              - How to use different authentication: firefly-iii/advanced-installation/authentication.md
-              - How to make a backup: firefly-iii/advanced-installation/backup.md
-              - How to set up your local language: firefly-iii/advanced-installation/locales.md
-              - How to configure cron jobs: firefly-iii/advanced-installation/cron.md
+              - How to set up notifications: how-to/firefly-iii/advanced/notifications.md
+              - How to use different authentication: how-to/firefly-iii/advanced/authentication.md
+              - How to make a backup: how-to/firefly-iii/advanced-installation/backup.md
+              - How to set up your local language: how-to/firefly-iii/advanced-installation/locales.md
+              - How to configure cron jobs: how-to/firefly-iii/advanced-installation/cron.md
           - Your finances:
-              - How to manage accounts: index/accounts.md
-              - How to manage budgets: index/accounts.md
-              - How to organize transactions: index/accounts.md #  Organizing transactions: firefly-iii/financial-concepts/organizing.md
-              - How to track cash: firefly-iii/financial-concepts/tracking_cash.md
-              - How to use bills: index/bills.md 
-              - How to reconcile accounts: firefly-iii/financial-concepts/reconcile.md
-              - How to use recurring transactions: index/bills.md 
-              - How to use piggy banks: index/piggies.md 
-              - How to read reports: index/reports.md
-          - Cool features:
-              - How to use rules: firefly-iii/features/rules.md
-              - How to use webhooks: firefly-iii/features/webhooks.md
-              - How to use the search: firefly-iii/features/search.md
+              - How to manage accounts: how-to/firefly-iii/finances/accounts.md
+              - How to manage budgets: how-to/firefly-iii/finances/budgets.md
+              - How to organize transactions: how-to/firefly-iii/finances/transactions.md
+              - How to track cash: how-to/firefly-iii/finances/cash.md
+              - How to use bills: how-to/firefly-iii/finances//bills.md 
+              - How to reconcile accounts: how-to/firefly-iii/finances/reconcile.md
+              - How to use recurring transactions: how-to/firefly-iii/finances/recurring.md 
+              - How to use piggy banks: how-to/firefly-iii/finances/piggies.md 
+              - How to read reports: how-to/firefly-iii/finances/reports.md
+          - More features:
+              - How to use rules: how-to/firefly-iii/features/rules.md
+              - How to use webhooks: how-to/firefly-iii/features/webhooks.md
+              - How to use the search: how-to/firefly-iii/features/search.md
       - Data Importer:
           - How to install:
-              - Using Docker: data-importer/installation/docker.md
-              - Using Kubernetes: data-importer/installation/docker.md
-              - Using a self-managed server: data-importer/installation/self-hosted.md
-          - How to configure: data-importer/installation/configuration.md
-          - Importing data:
-              - Using CSV or CAMT.053 files: data-importer/installation/configuration.md
-              - Using Salt Edge: data-importer/installation/configuration.md
-              - Using CardLess: data-importer/installation/configuration.md
-              - How to import transfers between accounts: data-importer/advanced/transfers.md
+              - Using Docker: how-to/data-importer/installation/docker.md
+              - Using Kubernetes: how-to/data-importer/installation/kubernetes.md
+              - Using a self-managed server: how-to/data-importer/installation/self-managed.md
+          - How to configure: how-to/data-importer/how-to-configure.md
           - How to upgrade:
-              - Using Docker: data-importer/installation/docker.md
-              - Using Kubernetes: data-importer/installation/docker.md
-              - Using a self-managed server: data-importer/installation/self-hosted.md
+              - Using Docker: how-to/data-importer/upgrade/docker.md
+              - Using Kubernetes: how-to/data-importer/upgrade/kubernetes.md
+              - Using a self-managed server: how-to/data-importer/upgrade/self-managed.md
+          - Importing data:
+              - Using CSV or CAMT.053 files: how-to/data-importer/import/csv.md
+              - Using Salt Edge: how-to/data-importer/import/salt-edge.md
+              - Using GoCardLess: how-to/data-importer/import/gocardless.md
+              - How to import transfers between accounts: how-to/data-importer/import/transfers.md
           - Advanced things:
-              - How to do auto-imports using CLI: data-importer/advanced/automation.md
-              - How to do auto-imports using POST: data-importer/advanced/automation.md
-              - How to set up notifications: data-importer/advanced/notifications.md
+              - How to do auto-imports using CLI: how-to/data-importer/advanced/cli.md
+              - How to do auto-imports using POST: how-to/data-importer/advanced/post.md
+              - How to set up notifications: how-to/data-importer/advanced/notifications.md
   - Reference guides:
       - Home: references/index.md
       - Firefly III:
-          - The database: database.md
-          - Security: security.md
-          - The CLI: firefly-iii/features/commandline.md
-          - All search options: index/search.md
-          - All rule triggers: index/search.md
-          - All rule actions: index/something.md
+          - The database: references/firefly-iii/database.md
+          - Security: references/firefly-iii/security.md
+          - The CLI: references/firefly-iii/commandline.md
+          - All search options: references/firefly-iii/search.md
+          - All rule triggers: references/firefly-iii/rule-triggers.md
+          - All rule actions: references/firefly-iii/rule-actions.md
           - API:
-              - The API: api/index.md
-              - Special endpoints: firefly-iii/api/specials.md
+              - The API: references/firefly-iii/api/index.md
+              - Special endpoints: references/firefly-iii/specials.md
           - Third parties:
-              - Third parties that host Firefly III: firefly-iii/installation/third-parties.md
-              - Third-party tools: firefly-iii/more-information/3rdparty.md
+              - Third parties that host Firefly III: references/firefly-iii/third-parties/host.md
+              - Third-party tools: references/firefly-iii/third-parties/apps.md
       - Data Importer:
-          - JSON configuration file: data-importer/advanced/json.md
-          - Column roles: data-imp/roles.md
-          - Third-party tools: data-importer/more-information/other-tools.md
-          - Public installation: data-importer/installation/public.md
-      - Support: firefly-iii/support/index.md
+          - JSON configuration file: references/data-importer/json.md
+          - Column roles: references/data-importer/roles.md
+          - Third-party tools: references/data-importer/third-party-tools.md
+          - Public installation: references/data-importer/public.md
+      - Support: references/support.md
   - Explanation:
       - Home: explanation/index.md
       - Financial concepts:
