@@ -112,11 +112,13 @@ nav:
           - Third parties:
               - Third parties that host Firefly III: references/firefly-iii/third-parties/host.md
               - Third-party tools: references/firefly-iii/third-parties/apps.md
+          - Full changelog: references/firefly-iii/changelog.md
       - Data Importer:
           - JSON configuration file: references/data-importer/json.md
           - Column roles: references/data-importer/roles.md
           - Third-party tools: references/data-importer/third-party-tools.md
           - Public installation: references/data-importer/public.md
+          - Full changelog: references/data-importer/changelog.md
       - Support: references/support.md
       - Frequently Asked Questions:
           - Firefly III:
