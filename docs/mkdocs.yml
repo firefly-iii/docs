@@ -45,6 +45,8 @@ nav:
               - Import from GoCardless: tutorials/data-importer/gocardless.md
   - How-to guides:
       - Home: how-to/index.md
+      - General:
+          - How to debug things: how-to/general/debug.md
       - Firefly III:
           - How to install:
               - Using Docker: how-to/firefly-iii/installation/docker.md
@@ -121,6 +123,8 @@ nav:
               - General questions: references/faq/firefly-iii/general.md
           - Data Importer:
               - General questions: references/faq/data-importer/general.md
+              - Installing and running: references/faq/data-importer/install.md
+              - Common import issues: references/faq/data-importer/import.md
   - Explanation:
       - Home: explanation/index.md
       - Financial concepts:
@@ -133,7 +137,7 @@ nav:
           - Bills: explanation/financial-concepts/bills.md
           - Recurring transactions: explanation/financial-concepts/recurring.md
       - Firefly III:
-          - About:
+          - About Firefly III:
               - Introduction and features: explanation/firefly-iii/about/introduction.md
               - Screenshots: explanation/firefly-iii/about/screenshots.md
               - Demo website: explanation/firefly-iii/about/demo.md
@@ -141,7 +145,10 @@ nav:
               - Personal finances: explanation/firefly-iii/background/personal-finances.md
               - Zero based budgeting: explanation/firefly-iii/background/zero-based-budgeting.md
       - Data Importer:
+          - About the Data Importer:
+              - Introduction and features: explanation/data-importer/about/introduction.md
           - Separate tool: explanation/data-importer/separate-tool.md
+          - Ignored values: explanation/data-importer/ignored-values.md
       - More information:
           - Logo and name: explanation/more-information/logo.md
           - Architecture: explanation/more-information/architecture.md

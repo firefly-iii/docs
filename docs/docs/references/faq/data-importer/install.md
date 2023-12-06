@@ -1,5 +1,3 @@
-# FAQ: Installation errors
-
 ## I get "Function not implemented: AH00141: Could not initialize random number generator"
 
 This is an error that happens on Synology boxes with an old kernel. I'm sorry, there is nothing I can do for you.
@@ -14,20 +12,7 @@ Some setups have a bad time handling cookies, and without support for cookies th
 
 - You don't run the data importer in a subdirectory
 - The cookie settings in the .env file are correct.
-=======
-
-## I changed my configuration, but I still get the old values?
-
-- I fixed an error, but I'm still "Unauthenticated"
-- The data importer doesn't recognize my new access token
-
-The data importer stores some settings in cookies. They persist even when you restart the Docker container or reboot.
-
-1. Clear your cookies
-2. Press "\[Reauthenticate\]"
-3. Browse to `/flush` on your installation
-
-Any of these options should work.
+  =======
 
 ## 502 Bad Gateway errors
 
@@ -75,22 +60,11 @@ location / {
 }
 ```
 
-## Internal Server Error
-
-This is a very generic error. Can you get some logs and dive into the issue?
-
 ## Response header name contains invalid characters, aborting request
 
 Happens to some Apache servers when they are not configured correctly. Set `LOG_LEVEL=emergency`.
 
+
 ## I get an error about openssl\_pkey\_export?
 
 It means your machine has no proper configuration file for OpenSSL, or it cannot be found. Please check out [this GitHub issue](https://github.com/firefly-iii/firefly-iii/issues/1384) for tips and tricks.
-
-## No matching DirectoryIndex
-
-Validate Apache looks for public/index.php
-
-## Other errors?
-
-Please open a ticket [on GitHub](https://github.com/firefly-iii/firefly-iii/).
