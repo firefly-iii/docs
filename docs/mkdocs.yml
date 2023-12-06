@@ -140,7 +140,7 @@ nav:
       - Financial concepts:
           - Transactions: explanation/financial-concepts/transactions.md
           - Accounts: explanation/financial-concepts/accounts.md
-          - Budgets: explanation/financial-concepts/transactions.md
+          - Budgets: explanation/financial-concepts/budgets.md
           - Liabilities: explanation/financial-concepts/liabilities.md
           - Currencies: explanation/financial-concepts/currencies.md
           - Piggy banks: explanation/financial-concepts/piggies.md
