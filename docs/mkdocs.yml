@@ -78,6 +78,8 @@ nav:
               - How to use rules: how-to/firefly-iii/features/rules.md
               - How to use webhooks: how-to/firefly-iii/features/webhooks.md
               - How to use the search: how-to/firefly-iii/features/search.md
+          - Development:
+              - Translations: how-to/firefly-iii/development/translations.md
       - Data Importer:
           - How to install:
               - Using Docker: how-to/data-importer/installation/docker.md
@@ -104,7 +106,7 @@ nav:
       - Firefly III:
           - The database: references/firefly-iii/database.md
           - Security: references/firefly-iii/security.md
-          - The CLI: references/firefly-iii/commandline.md
+          - The CLI: references/firefly-iii/cli.md
           - All search options: references/firefly-iii/search.md
           - All rule triggers: references/firefly-iii/rule-triggers.md
           - All rule actions: references/firefly-iii/rule-actions.md
@@ -133,7 +135,6 @@ nav:
           - Installing and running: references/faq/install.md
           - Development: references/faq/development.md
           - Docker: references/faq/docker.md
-          - Translations: references/faq/translations.md
   - Explanation:
       - Home: explanation/index.md
       - Financial concepts:

@@ -37,7 +37,7 @@ Most third party systems like Heroku don't allow you to do this.
 
 `php artisan`
 
-Please note that this will also list all the internal upgrade commands Firefly III uses. 
+Please note that this will also list all the internal upgrade commands Firefly III uses.
 
 ### Apply rules
 
