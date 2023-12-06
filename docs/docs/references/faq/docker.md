@@ -1,5 +1,3 @@
-# Using Docker
-
 ## Where is the Dockerfile?
 
 See this [separate repository](https://dev.azure.com/Firefly-III/_git/MainImage) on Azure. The Firefly III image is built there as well.

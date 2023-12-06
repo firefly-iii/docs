@@ -47,6 +47,7 @@ nav:
       - Home: how-to/index.md
       - General:
           - How to debug things: how-to/general/debug.md
+          - How to report security issues: how-to/general/report-security-issues.md
       - Firefly III:
           - How to install:
               - Using Docker: how-to/firefly-iii/installation/docker.md
@@ -73,6 +74,7 @@ nav:
               - How to use piggy banks: how-to/firefly-iii/finances/piggies.md
               - How to read reports: how-to/firefly-iii/finances/reports.md
           - More features:
+              - Make it multi-user: how-to/firefly-iii/features/multi-user.md
               - How to use rules: how-to/firefly-iii/features/rules.md
               - How to use webhooks: how-to/firefly-iii/features/webhooks.md
               - How to use the search: how-to/firefly-iii/features/search.md
@@ -123,10 +125,15 @@ nav:
       - Frequently Asked Questions:
           - Firefly III:
               - General questions: references/faq/firefly-iii/general.md
+              - Using and running: references/faq/firefly-iii/using.md
+              - Financial management: references/faq/firefly-iii/finances.md
           - Data Importer:
               - General questions: references/faq/data-importer/general.md
-              - Installing and running: references/faq/data-importer/install.md
               - Common import issues: references/faq/data-importer/import.md
+          - Installing and running: references/faq/install.md
+          - Development: references/faq/development.md
+          - Docker: references/faq/docker.md
+          - Translations: references/faq/translations.md
   - Explanation:
       - Home: explanation/index.md
       - Financial concepts:
