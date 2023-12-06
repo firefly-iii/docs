@@ -34,3 +34,21 @@ When you create new asset accounts in Firefly III, always store an IBAN or accou
 ### Test, test, test
 
 Always try one or two transactions first. Keep an eye on the logs and turn on debug mode if necessary (see the search) so you can see why / how Firefly III and the data importer create the accounts they do.
+
+
+## Transfers aren't merged
+
+
+The Firefly III Data Importer is capable of merging two transactions (one from A > B, and one from B < A) if they seem to be the same transaction listed twice. For example, when you import two files: one from your checking account and one from your savings account.
+
+By default, Firefly III will skip saving the second transfer because the first one already exists. The second is recognized as a duplicate because all the fields are the same. This may not always be the case. Examples that will stop this from happening are:
+
+- The second transfer has another internal transaction reference (bunq does this).
+- The second transfer has a different description.
+- In the second transfer, any other meta-data is different (notes, links, etc).
+
+You'll have to manually edit your file so the transactions are the same.
+
+You can't do this by applying rules to your transfers. Rules are only executed on transactions that are already stored in Firefly III. If your rule changes a transfer into a duplicate of another transfer, this won't make the system delete it.
+
+You can however, create custom rules that trigger on any content in the second transfer, and then delete it.

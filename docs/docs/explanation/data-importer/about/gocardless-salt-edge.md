@@ -7,10 +7,10 @@ Both the GoCardless API and Spectre (Salt Edge's API) are free-to-use for Firefl
 Please read and agree with all the terms that either company may present you with. They have their own data usage and privacy policies, which you must read up on.
 
 !!! info "Disclaimer"
-    As a general disclaimer: both GoCardless and Salt Edge are commercial organisations. They may revoke your access or charge money at any moment. I'm grateful for the free access they provide to Firefly III users.
+As a general disclaimer: both GoCardless and Salt Edge are commercial organisations. They may revoke your access or charge money at any moment. I'm grateful for the free access they provide to Firefly III users.
 
 !!! info "About bank availability"
-    Both GoCardless and Salt Edge support very few 🇺🇸 American and Asian banks. There is little I can do about this. You'll have to import CSV files.
+Both GoCardless and Salt Edge support very few 🇺🇸 American and Asian banks. There is little I can do about this. You'll have to import CSV files.
 
 ## Salt Edge's Spectre API
 
@@ -31,7 +31,7 @@ You can see if your bank is supported [on this page](https://www.saltedge.com/pr
 You can sign up for the GoCardless API on [their website](https://bankaccountdata.gocardless.com/signup). Access to the GoCardless Bank Account Data API is free for both commercial and personal use (that's you). You will not have to request extended access, but you can get the premium access for a fee if you so wish. Keep in mind that the Firefly III Data Importer currently does not support the premium APIs.
 
 !!! note
-    How to sign up for GoCardless:
+How to sign up for GoCardless:
 
      1. Go to [nordigen.com](https://nordigen.com/en/) or follow the [direct link](https://bankaccountdata.gocardless.com/signup) to the signup form.
      2. Press Login
