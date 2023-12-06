@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 $path       = __DIR__ . '/docs';
 $extensions = ['md'];
-$files = [];
-$todos = [];
+$files      = [];
+$todos      = [];
 
 $objects = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($path), RecursiveIteratorIterator::SELF_FIRST);
 foreach ($objects as $name => $object) {
@@ -20,22 +20,32 @@ foreach ($objects as $name => $object) {
 }
 
 /** @var string $file */
-foreach($files as $file) {
+foreach ($files as $file) {
     $content = file_get_contents($file);
-    if('' === $content) {
+    if ('' === $content) {
         echo sprintf('[!]  File is empty: %s', $file);
         continue;
     }
     $lines = explode("\n", $content);
     /** @var string $line */
-    foreach($lines as $line) {
+    foreach ($lines as $line) {
         $line = trim($line);
-        if(str_starts_with($line,'(TODO')) {
-            $todos[] = sprintf('%s in file %s', str_replace(['(TODO',')'], '', $line), str_replace($path, '', $file));
+        if (str_starts_with($line, '(TODO')) {
+            $todo     = str_replace(['(TODO', ')'], '', $line);
+            $filePath = str_replace($path, '', $file);
+
+            // file name:
+            $parts = explode('/', $filePath);
+            $fileName = $parts[count($parts) - 1];
+
+            $url = sprintf('https://github.com/firefly-iii/docs/blob/new-docu/docs/docs%s', $filePath);
+
+            // /explanation/index.md
+            $todos[] = sprintf('%s in file [%s](%s)', $todo, $fileName, $url);
         }
     }
 }
 
-foreach($todos as $todo) {
+foreach ($todos as $todo) {
     echo sprintf('- [ ] %s', $todo) . PHP_EOL;
 }
