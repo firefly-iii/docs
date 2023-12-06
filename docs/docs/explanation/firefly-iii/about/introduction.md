@@ -1,4 +1,4 @@
-(TODO validate and cleanup)
+# Firefly III introduction
 
 "Firefly III" is a (self-hosted) manager for your personal finances. It can help you keep track of your expenses and income, so you can spend less and save more.
 
@@ -19,7 +19,7 @@ Firefly III can do the following things:
 - You can create and edit transactions, accounts, and give them budgets, categories and tags.
 - You can automate part of this with recurring transactions and auto-budgets.
 - You can keep track of liabilities.
-- You can **[import data](../importing-data/index.md)** into Firefly III from almost any bank.
+- You can **[import data](../../../how-to/index.md)** into Firefly III from almost any bank.
 
 ## Important details:
 

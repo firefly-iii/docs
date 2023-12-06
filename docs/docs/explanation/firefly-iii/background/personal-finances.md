@@ -1,4 +1,4 @@
-(TODO validate and cleanup)
+# Managing your personal finances
 
 This is a description of how Firefly III works, and how I feel about personal finances.
 
@@ -23,9 +23,8 @@ If you're serious about changing your financial habits, you should enter each tr
 ## Accounting versus personal finance
 
 !!! info
-The text below feels a bit like a rant, but I'm going to keep it up regardless.
-
+    The text below feels a bit like a rant, but I'm going to keep it up regardless.
 
 I don't like accounting. I don't like the fact that people buy a $60,000 sports car and then pretend they haven't just lost 60 grand by putting up the car as an "asset". As if you get your money back. I also don't like that people put up their house against their mortgage. It's not money. You don't have it. A Rembrandt could be worth a million, but it won't buy you a loaf of bread.
 
-
+So, liability management in Firefly III isn't about your house versus your mortgage, it's just about your mortgage. 

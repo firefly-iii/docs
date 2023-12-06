@@ -6,6 +6,7 @@ $path       = __DIR__ . '/docs';
 $extensions = ['md'];
 $files      = [];
 $todos      = [];
+$warnings   = [];
 
 $objects = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($path), RecursiveIteratorIterator::SELF_FIRST);
 foreach ($objects as $name => $object) {
@@ -27,15 +28,14 @@ foreach ($files as $file) {
         continue;
     }
     $lines = explode("\n", $content);
-    /** @var string $line */
     foreach ($lines as $line) {
         $line = trim($line);
         if (str_starts_with($line, '(TODO')) {
-            $todo     = str_replace(['(TODO', ')'], '', $line);
+            $todo     = trim(str_replace(['(TODO', ')'], '', $line));
             $filePath = str_replace($path, '', $file);
 
             // file name:
-            $parts = explode('/', $filePath);
+            $parts    = explode('/', $filePath);
             $fileName = $parts[count($parts) - 1];
 
             $url = sprintf('https://github.com/firefly-iii/docs/blob/new-docu/docs/docs%s', $filePath);
@@ -44,6 +44,19 @@ foreach ($files as $file) {
             $todos[] = sprintf('%s in file [%s](%s)', $todo, $fileName, $url);
         }
     }
+
+    // parse a bunch of possible warnings:
+    if (!str_starts_with($content, '# ')) {
+        $filePath = str_replace($path, '', $file);
+
+        // file name:
+        $parts    = explode('/', $filePath);
+        $fileName = $parts[count($parts) - 1];
+
+        $url        = sprintf('https://github.com/firefly-iii/docs/blob/new-docu/docs/docs%s', $filePath);
+        $todos[] = sprintf('File [%s](%s) has no page title.', $fileName, $url);
+    }
+
 }
 
 foreach ($todos as $todo) {

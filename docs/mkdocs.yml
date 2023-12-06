@@ -32,9 +32,10 @@ nav:
               - Create accounts and transactions: tutorials/finances/first-steps.md
               - My first accounts: tutorials/finances/first-accounts.md
               - Save using a piggy bank: tutorials/finances/piggy-bank.md
-              - Manage a subscription: tutorials/finances/subscription.md
+              - Manage a bill: tutorials/finances/bill.md
               - Process a refund: tutorials/finances/refund.md
               - Manage a liability: tutorials/finances/liability.md
+              - Manage multiple currencies: tutorials/finances/currencies.md
           - Data management:
               - Importing data: tutorials/firefly-iii/importing-data.md
               - Exporting data: tutorials/firefly-iii/exporting-data.md
@@ -179,8 +180,8 @@ theme:
     - navigation.tabs
   palette:
     scheme: fireflyiii
-  logo: img/logo.png
-  favicon: img/favicon.ico
+  logo: images/logo.png
+  favicon: images/favicon.ico
   icon:
     repo: fontawesome/brands/github
   social:

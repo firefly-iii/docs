@@ -1,11 +1,12 @@
-
-(TODO validate and cleanup, link to other pages)
-
-# Other tools
+# Other Firefly III related tools
 
 There are a number of Firefly III tools and libraries you can check out and use, which are made by me.
 
-Community contributions can be found on the **[third-party tools](../firefly-iii/more-information/3rdparty.md)** page.
+Also interesting:
+
+- [Tools for the Data Importer made by other people](../references/data-importer/third-party-tools.md)
+- [Firefly III apps and tools made by other people](../references/firefly-iii/third-parties/apps.md)
+- [Places that host or platforms that can run Firefly III](../references/firefly-iii/third-parties/host.md)
 
 ## Product manager
 
