@@ -34,7 +34,7 @@ nav:
               - Save using a piggy bank: tutorials/finances/piggy-bank.md
               - Manage a bill: tutorials/finances/bill.md
               - Process a refund: tutorials/finances/refund.md
-              - Manage a liability: tutorials/finances/liability.md
+              - Manage your mortgage: tutorials/finances/mortgage.md
               - Manage multiple currencies: tutorials/finances/currencies.md
           - Data management:
               - Importing data: tutorials/firefly-iii/importing-data.md
@@ -71,6 +71,7 @@ nav:
               - How to track cash: how-to/firefly-iii/finances/cash.md
               - How to use bills: how-to/firefly-iii/finances/bills.md
               - How to reconcile accounts: how-to/firefly-iii/finances/reconcile.md
+              - How to manage liabilities: how-to/firefly-iii/finances/liabilities.md
               - How to use recurring transactions: how-to/firefly-iii/finances/recurring.md
               - How to use piggy banks: how-to/firefly-iii/finances/piggies.md
               - How to read reports: how-to/firefly-iii/finances/reports.md

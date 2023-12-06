@@ -1,18 +1,16 @@
-(TODO validate and cleanup)
-
 # Transactions
 
 Money moves from A to B. It doesn't matter if this is an expense, your salary or you moving money around: _money moves from A to B_:
 
-![Transferring money from your checking account to your savings account](images/transaction1.png)
+![Transferring money from your checking account to your savings account](../../images/explanation/financial-concepts/transaction1.png)
 
-![An expense is moving money from you to the supermarket.](images/transaction2.png)
+![An expense is moving money from you to the supermarket.](../../images/explanation/financial-concepts/transaction2.png)
 
 In Firefly III and most other systems this is stored using a "[double-entry bookkeeping system](http://en.wikipedia.org/wiki/Double-entry_bookkeeping_system)". You get money and your boss loses it. You spend money and the Supermarket "earns" it:
 
-![Your boss loses money, you earn it.](images/transaction3.png)
+![Your boss loses money, you earn it.](../../images/explanation/financial-concepts/transaction3.png)
 
-![You lose money, the supermarket earns it.](images/transaction4.png)
+![You lose money, the supermarket earns it.](../../images/explanation/financial-concepts/transaction4.png)
 
 Each transaction is stored twice. Once as a loss (for one party), and once as a profit (for the other party). This seems pretty pointless, and technically it is. But it was designed back when clerks could be fraudulent and this double-entry system stopped fraud. In these modern days it is useful to check if all records are straight.
 
