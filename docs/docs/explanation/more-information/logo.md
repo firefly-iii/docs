@@ -1,10 +1,7 @@
-
-(TODO validate and cleanup)
-
 # Firefly III logo and name
 
 <div style="text-align:center;">
-	<img src="./logo.png" style="height:200px;" alt="Firefly III logo">
+	<img src="../../../images/explanation/more-information/logo/logo.png" style="height:200px;" alt="Firefly III logo">
 	<h2>Firefly III</h2>
 </div>
 
@@ -30,8 +27,8 @@ If you want to use the "Firefly III" name, use something like "Cool Tool for Fir
 
 ## The logo
 
-* Logo as [PNG](logo/logo.png) / [SVG](logo/logo.svg)
-* Logo as [PNG](logo/logo-flame.png) / [SVG](logo/logo-flame.svg) (with a flame effect)
+* Logo as [PNG](../../images/explanation/more-information/logo/logo.png) / [SVG](../../images/explanation/more-information/logo/logo.svg)
+* Logo as [PNG](../../images/explanation/more-information/logo/logo-flame.png) / [SVG](../../images/explanation/more-information/logo/logo-flame.svg) (with a flame effect)
 
 The Firefly III is a canvassed piggy, surrounded by a flame. The tail is inverted "into" the piggy. The main color of the logo is #CD5029. You may recognize the butt of the piggy in the favicon of Firefly III.
 

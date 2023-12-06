@@ -1,9 +1,4 @@
-
-(TODO validate and cleanup, link to other pages)
-
-# License
-
-## The Firefly III license
+# The Firefly III license
 
 Firefly III, the Firefly III Data Importer and any and all associated tools developed by me are licensed to you under the [GNU Affero General Public License v3](https://www.gnu.org/licenses/agpl-3.0.html.en). It's abbreviated as "AGPLv3".
 
@@ -73,4 +68,4 @@ That is OK. If you run an unchanged version of Firefly III, you do not need to p
 
 ## I have another question
 
-Feel free to [contact me](../support/index.md). On the whole, the answer is probably simple: any changes you make to Firefly III need to be made open source under the AGPLv3.
+Feel free to [contact me](../support.md). On the whole, the answer is probably simple: any changes you make to Firefly III need to be made open source under the AGPLv3.

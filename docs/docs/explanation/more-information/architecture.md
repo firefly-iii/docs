@@ -1,19 +1,14 @@
-
-(TODO validate and cleanup, link to other pages)
-
-# Architecture
-
 On this page you'll find information about the internal architecture of Firefly III. It's not meant as an explanation of where everything is but rather as a means to show you how everything is structured. If you ever want to develop something these pages should show you where you need be.
 
 ## Database
 
-![Basic database structure](images/database.png)
+![Basic database structure](../../images/explanation/more-information/database.png)
 
-![Webhooks](images/webhooks.png)
+![Webhooks](../../images/explanation/more-information/webhooks.png)
 
-![Rules](images/rules.png)
+![Rules](../../images/explanation/more-information/rules.png)
 
-![Recurring transactions](images/recurrence.png)
+![Recurring transactions](../../images/explanation/more-information/recurrence.png)
 
 These images show you a graphical overview of the most important parts of the database. There are many more tables, but these are the important objects you may want to learn about. If you see something in the database you're curious about, please let me know.
 

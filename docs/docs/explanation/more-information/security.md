@@ -91,7 +91,7 @@ Even logging just error information may leak data.
 ## Security bugs and issues
 
 !!! danger
-If you find a security issue or problem with Firefly III, please refer to the [Security Policy](https://github.com/firefly-iii/firefly-iii/security/policy).
+    If you find a security issue or problem with Firefly III, please refer to the [Security Policy](https://github.com/firefly-iii/firefly-iii/security/policy).
 
 ## Other stuff
 

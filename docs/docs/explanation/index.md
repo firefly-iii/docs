@@ -1,14 +1,12 @@
 # Explanation
 
-(TODO link to pages)
-
 If you want to know more about Firefly III or the Data Importer in general, or you're just browsing around, check out the menu on the left.
 
 Popular pages include:
 
-1. Financial concepts such as transactions and liabilities
-2. Security
-3. Zero based budgeting
+1. Financial concepts such as [transactions](financial-concepts/transactions.md) and [liabilities](financial-concepts/liabilities.md)
+2. [Security](more-information/security.md)
+3. [Zero based budgeting](firefly-iii/background/zero-based-budgeting.md)
 
 ## Missing something?
 
@@ -20,11 +18,4 @@ Please open an [issue on GitHub](https://github.com/firefly-iii/firefly-iii/issu
 
 ## Would you like to know more?
 
-(TODO link to support page)
-
-You can contact me at [james@firefly-iii.org](mailto:james@firefly-iii.org), you may open an issue or contact me through the support channels:
-
-- [GitHub Discussions for questions and support](https://github.com/firefly-iii/firefly-iii/discussions/)
-- [Gitter.im for a good chat and a quick answer](https://gitter.im/firefly-iii/firefly-iii)
-- [GitHub Issues for bugs and issues](https://github.com/firefly-iii/firefly-iii/issues)
-- Follow me around for news and updates on <a rel="me" href="https://fosstodon.org/@ff3">Mastodon</a>
+Check out the [support page](support.md).

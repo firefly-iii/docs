@@ -111,6 +111,7 @@ nav:
           - Security: references/firefly-iii/security.md
           - The CLI: references/firefly-iii/cli.md
           - Account types: references/firefly-iii/account-types.md
+          - Transaction types: references/firefly-iii/transaction-types.md
           - All search options: references/firefly-iii/search.md
           - All rule triggers: references/firefly-iii/rule-triggers.md
           - All rule actions: references/firefly-iii/rule-actions.md
