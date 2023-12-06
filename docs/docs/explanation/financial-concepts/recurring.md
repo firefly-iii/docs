@@ -1,3 +1,5 @@
+(TODO validate and cleanup)
+
 # Recurring transactions
 
 Firefly III features the ability to automatically create transactions (so you don't have to). These are called recurring transactions.

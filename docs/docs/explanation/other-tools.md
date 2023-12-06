@@ -1,3 +1,6 @@
+
+(TODO validate and cleanup, link to other pages)
+
 # Other tools
 
 There are a number of Firefly III tools and libraries you can check out and use, which are made by me.

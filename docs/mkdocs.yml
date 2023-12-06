@@ -123,7 +123,6 @@ nav:
           - Third-party tools: references/data-importer/third-party-tools.md
           - Public installation: references/data-importer/public.md
           - Full changelog: references/data-importer/changelog.md
-      - Support: references/support.md
       - Frequently Asked Questions:
           - Firefly III:
               - General questions: references/faq/firefly-iii/general.md
@@ -135,6 +134,7 @@ nav:
           - Installing and running: references/faq/install.md
           - Development: references/faq/development.md
           - Docker: references/faq/docker.md
+      - Support: references/support.md
   - Explanation:
       - Home: explanation/index.md
       - Financial concepts:
@@ -166,8 +166,8 @@ nav:
           - Security: explanation/more-information/security.md
           - License: explanation/more-information/license.md
           - Missing features: explanation/more-information/what-its-not.md
-      - Support: explanation/support.md
       - Other tools: explanation/other-tools.md
+      - Support: explanation/support.md
 
 extra_css:
   - stylesheets/extra.css

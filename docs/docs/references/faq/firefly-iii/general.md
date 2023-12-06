@@ -1,3 +1,6 @@
+(TODO validate and cleanup)
+
+
 ## Is it multi-user?
 
 Yes. For security reasons Firefly III opens up the registration form only for the first user, but anybody can register an account if you enable this under **Administration** &gt; **Configuration**. Keep in mind that you won't be able to _share_ your administration. This is a work in progress.

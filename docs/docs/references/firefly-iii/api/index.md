@@ -1,3 +1,5 @@
+(TODO cleanup this page)
+
 # API
 
 Firefly III features a JSON API.

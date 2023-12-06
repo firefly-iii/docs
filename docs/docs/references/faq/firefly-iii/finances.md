@@ -1,3 +1,5 @@
+(TODO validate and cleanup)
+
 ## What should I do when I close a real life asset account?
 
 To close an account in Firefly III, do the following.

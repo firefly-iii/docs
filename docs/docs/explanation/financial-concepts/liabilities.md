@@ -1,3 +1,5 @@
+(TODO validate and cleanup)
+
 # Liabilities
 
 Firefly III has two types of liabilities. Credit cards are not considered a liability.

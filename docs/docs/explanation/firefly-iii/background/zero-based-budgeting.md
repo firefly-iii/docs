@@ -1,3 +1,5 @@
+(TODO validate and cleanup)
+
 ## I came over from YNAB, I don't get it?
 
 YNAB and Firefly III have a slightly different way of working.

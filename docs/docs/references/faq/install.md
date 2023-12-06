@@ -1,4 +1,6 @@
 
+(TODO validate and cleanup)
+
 ## I get page load errors because the protocols don't match
 
 * "It only loads over http and not https!"

@@ -1,3 +1,6 @@
+(TODO validate and cleanup)
+
+
 ## Mixed content
 
 Some banks re-use the columns for different content. For example, "Sparkasse" (DE) uses the BIC column for other data if there is no BIC available. If your bank has similar issues, the import will probably fail. The best solution is to ignore the column entirely.

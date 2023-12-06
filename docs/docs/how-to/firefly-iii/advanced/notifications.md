@@ -1,5 +1,7 @@
 # Configure outgoing messages
 
+(TODO cleanup and validate)
+
 Firefly III can send notifications for specific events. Check out `/admin` and  `/preferences` for a set of notifications
 you can receive.
 

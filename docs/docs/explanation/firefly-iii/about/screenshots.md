@@ -1,3 +1,5 @@
+(TODO validate and cleanup)
+
 Check it out yourself on the [demo site](https://demo.firefly-iii.org/?mtm_campaign=documentation&mtm_kwd=screenshots).
 
 ### The index of Firefly III

@@ -1,3 +1,6 @@
+(TODO validate and cleanup)
+
+
 ## Auto complete is case-sensitive?
 
 This happens when the underlying database is Postgres, which is case-sensitive by default. You may run into this when searching for `FLO` doesn't yield `flower`.

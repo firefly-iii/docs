@@ -1,3 +1,5 @@
+(TODO cleanup this page)
+
 The Data Importer can import from the command line. Either by calling [the Docker container](../installation/docker.md), or by using your [self-hosted instance](../installation/self-hosted.md).
 
 ### CSV, camt.053 files and JSON files

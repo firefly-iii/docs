@@ -1,5 +1,7 @@
 # Upgrade
 
+(TODO separate from other types, cleanup)
+
 ## General upgrade instructions
 
 Firefly III can upgrade itself from very old versions, even back from 4.7.x. In some cases the upgrade process is destructive. It will remove transactions, delete accounts or clean up data.

@@ -1,3 +1,5 @@
+(TODO cleanup, make guide, drop title)
+
 # Reconciling accounts
 
 Although more and more people use fancy online banking, a lot of users still receive paper bank statements in the mail, every week or every month.

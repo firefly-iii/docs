@@ -1,3 +1,5 @@
+(TODO cleanup, salt edge only)
+
 # Spectre and GoCardless (formerly Nordigen)
 
 ## Introduction

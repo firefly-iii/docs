@@ -1,3 +1,5 @@
+(TODO validate and cleanup)
+
 # Spectre and GoCardless (formerly Nordigen)
 
 ## Introduction

@@ -1,3 +1,5 @@
+(TODO cleanup, make guide, drop title)
+
 # Tracking cash
 
 ## Introduction

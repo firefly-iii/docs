@@ -1,5 +1,7 @@
 # Backup
 
+(TODO cleanup and validate)
+
 Firefly III does not come with a built-in backup routine. Using your native OS tools is way more useful and faster. The export function of Firefly III is *not* a backup mechanism
 
 ## Self-hosted backup

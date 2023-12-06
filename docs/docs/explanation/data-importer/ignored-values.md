@@ -1,3 +1,5 @@
+(TODO validate and cleanup, still relevant?)
+
 ## The Data importer has ignored these values?
 
 The data importer wil sometimes ignore data from Spectre. In the notes of the transaction, you will see something like this:

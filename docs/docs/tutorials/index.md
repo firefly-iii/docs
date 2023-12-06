@@ -1,5 +1,7 @@
 # Tutorials
 
+(TODO make links)
+
 Check out the following tutorials about Firefly III and the Data Importer.
 
 Please take note that you can learn installing Firefly III or the Data Importer from the **[how-to guides](../how-to/index.md)**.
@@ -23,6 +25,8 @@ More choices are in the menu.
 Please open an [issue on GitHub](https://github.com/firefly-iii/firefly-iii/issues/new?assignees=&labels=&projects=&template=fr.yml). Your contributions are appreciated.
 
 ## Would you like to know more?
+
+(TODO link to support page instead)
 
 You can contact me at [james@firefly-iii.org](mailto:james@firefly-iii.org), you may open an issue or contact me through the support channels:
 

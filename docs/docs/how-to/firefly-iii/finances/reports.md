@@ -1,3 +1,5 @@
+(TODO cleanup, make guide, drop title)
+
 # Reports
 
 Firefly III offers a variety of financial reports that can help you keep track of your finances. Each report has a certain scope that you can set to your liking:

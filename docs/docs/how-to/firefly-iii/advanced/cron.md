@@ -1,5 +1,7 @@
 # Cron jobs
 
+(TODO cleanup and validate, drop title)
+
 Firefly III has several feature that will only work when the cron job is running.
 
 ## Calling a command

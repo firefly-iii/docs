@@ -1,3 +1,7 @@
+
+
+(TODO validate and cleanup, link to other pages)
+
 # Security
 
 Because Firefly III stores personal financial information it's important to know how Firefly III is secured, and how it's not.

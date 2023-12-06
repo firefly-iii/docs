@@ -1,3 +1,5 @@
+(TODO clean up, refresh content)
+
 # Translating Firefly III
 
 First of all, thank you for taking the time to help get Firefly III translated in as many languages as possible. Translation work is tedious and concentrated work, and I appreciate all your efforts. To make translating Firefly III as easy as possible I wrote this little guide to get you started.

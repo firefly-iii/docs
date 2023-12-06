@@ -1,5 +1,7 @@
 # Locales
 
+(TODO cleanup and validate, drop title)
+
 Setting up the right "locale" is about:
 
 - How an amount is formatted (`$ 12.34` versus `12,45$`)

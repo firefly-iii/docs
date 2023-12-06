@@ -1,3 +1,6 @@
+
+(TODO validate and cleanup)
+
 # Firefly III logo and name
 
 <div style="text-align:center;">

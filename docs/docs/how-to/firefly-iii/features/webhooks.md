@@ -1,3 +1,5 @@
+(TODO clean up, move stuff to references, move stuff to explanation)
+
 # Webhooks
 
 A webhook is a custom callback. Triggered by events in Firefly III a message will be sent to a URL of your choice.

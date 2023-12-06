@@ -1,3 +1,4 @@
+(TODO validate and cleanup, write better intro)
 
 ### Can the data importer sync with my bank?
 

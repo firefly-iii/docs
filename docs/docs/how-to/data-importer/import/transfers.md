@@ -1,3 +1,5 @@
+(TODO cleanup)
+
 The first time you import data you may run into an issue where the Firefly III data importer creates withdrawals and deposits instead of transfers. Your import will contain transfers, deposits and expenses of them but somehow all you end up with expenses and deposits only. This is a common issue and is caused by the fact that Firefly III doesn't realise the opposing account is an asset account.
 
 If Firefly III knows both accounts are asset accounts, it will create transfers. You must provide the right information and configuration.

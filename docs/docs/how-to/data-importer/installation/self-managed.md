@@ -1,3 +1,5 @@
+(TODO clean up)
+
 ## Introduction
 
 In order to run the data importer you need a working LAMP, LEMP or WAMP-stack running PHP %PHPVERSION and access to the command line. Here are some Google queries to help you.

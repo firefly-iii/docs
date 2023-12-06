@@ -1,3 +1,6 @@
+
+(TODO validate and cleanup, link to other pages)
+
 # License
 
 ## The Firefly III license

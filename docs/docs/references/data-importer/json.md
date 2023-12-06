@@ -1,3 +1,5 @@
+(TODO cleanup, link to explain page)
+
 # JSON
 
 The data importer generates an import file each time you import data. You can download the configuration file during or after the import.

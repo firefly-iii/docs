@@ -1,3 +1,5 @@
+(TODO validate and cleanup, sync with other file)
+
 # Contact information
 
 If you need support using Firefly III or the associated tools, come find us!

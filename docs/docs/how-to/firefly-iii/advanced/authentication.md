@@ -1,5 +1,7 @@
 # Authentication
 
+(TODO cleanup and validate)
+
 ## Built-in authentication
 
 By default, Firefly III uses the "eloquent" driver that allows users to register and login locally. This is based on the user's email address.

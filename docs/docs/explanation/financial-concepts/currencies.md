@@ -1,3 +1,5 @@
+(TODO validate and cleanup)
+
 # Currencies
 
 Firefly III supports as many currencies as you like. By default, it ships with a variety of currencies.

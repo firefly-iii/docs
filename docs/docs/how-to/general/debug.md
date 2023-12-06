@@ -1,9 +1,11 @@
 ## How can I safely submit debug information?
 
+(TODO clean up this page)
+
 A lot of data files contain private information. You should **never** share these files on GitHub. They are very hard to remove.
 
 !!! warning "Uploading files to GitHub"
-Do not upload CSV files or CAMT.053 to GitHub directly without censoring them first.
+    Do not upload CSV files or CAMT.053 to GitHub directly without censoring them first.
 
 Upload as few lines or blocks of data as is necessary to reproduce the error. Removing private information from the remaining data consists of (your choice):
 

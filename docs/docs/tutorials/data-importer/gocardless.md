@@ -1,3 +1,5 @@
+(TODO write tutorial structure and incorporate info below)
+
 # Select a data source
 
 ## Introduction

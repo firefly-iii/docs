@@ -1,3 +1,5 @@
+(TODO cleanup page, gocardless only)
+
 # Spectre and GoCardless (formerly Nordigen)
 
 ## Introduction

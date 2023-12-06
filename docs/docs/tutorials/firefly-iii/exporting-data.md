@@ -1,5 +1,7 @@
 # Exporting data
 
+(TODO write tutorial structure and incorporate info below)
+
 Firefly III lets you export transactions and other data to CSV files.
 
 !!! warning

@@ -1,3 +1,5 @@
+(TODO validate and cleanup)
+
 # Piggy banks
 
 If you want to buy something expensive, you might need to save for it. You can use piggy banks to save money. You can find them under "Financial Control" > "Piggy banks". A piggy bank is meant to group money on an asset account together.

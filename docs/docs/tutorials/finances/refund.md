@@ -1,3 +1,7 @@
+(TODO write tutorial structure)
+
+(TODO incorporate questions below)
+
 ## What do I do with people who pay me back?
 
 Let's say you have a budget for "Going out", worth € 100. You go out with some friends, and you offer to pay the bill, expecting your friends to pay you back later. The total bill is € 120 with your three friends owing you € 90 in total. So although you spent € 120 (overspending your budget with € 20), your actual costs are a mere € 30. What to do?

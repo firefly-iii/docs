@@ -1,3 +1,5 @@
+(TODO cleanup this page)
+
 # API special endpoints
 
 Some Firefly III API endpoints need a little more guidance than fits in the documentation.

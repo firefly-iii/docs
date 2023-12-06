@@ -1,5 +1,7 @@
 # Reference guides
 
+(TODO link to pages)
+
 These pages will give you more information on the (inner) workings of Firefly III, the API and other things.
 
 Popular pages include:
@@ -17,6 +19,8 @@ Popular pages include:
 Please open an [issue on GitHub](https://github.com/firefly-iii/firefly-iii/issues/new?assignees=&labels=&projects=&template=fr.yml). Your contributions are appreciated.
 
 ## Would you like to know more?
+
+(TODO link to support page)
 
 You can contact me at [james@firefly-iii.org](mailto:james@firefly-iii.org), you may open an issue or contact me through the support channels:
 

@@ -1,3 +1,5 @@
+(TODO clean up, move stuff to references, move stuff to explanation)
+
 # Search
 
 You can search for transactions using the box in the left top of the page. Apart from basic stuff like `Groceries` or `"query with spaces"`, you can also use special operators to search.
