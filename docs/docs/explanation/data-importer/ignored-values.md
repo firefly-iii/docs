@@ -1,10 +1,8 @@
-(TODO validate and cleanup, still relevant?)
-
-## The Data importer has ignored these values?
+# Ignored values
 
 The data importer wil sometimes ignore data from Spectre. In the notes of the transaction, you will see something like this:
 
-![An example error message](images/ignored.png)
+![An example error message](../../images/explanation/data-importer/ignored.png)
 
 The data importer will do this when both the source and destination account information of a transaction are *the same*. This may happen when you get credit card refunds, when interest is paid to your account or when interest payments are taken from your account.
 

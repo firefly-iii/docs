@@ -1,6 +1,3 @@
-
-(TODO validate and cleanup, link to other pages)
-
 # What Firefly III isn't
 
 Even more important than all the stuff Firefly III [can do for you](../about-firefly-iii/introduction.md) is the list of stuff it **can't** do for you. If you're looking for a personal finance tool to do this for you, you may want to consider using another tool. This is unfortunate, but the result of some architecture and design choices. My apologies in advance, if Firefly III isn't what you're looking for.
@@ -11,7 +8,7 @@ But remember, there is a lot of things that you *can* do with Firefly III!
 
 ### YNAB-style zero based budgeting
 
-Basically, YNAB allows you to assign each of your coin to a "permanent" budget, that you would replenish once your salary arrives. This way, zero based budgeting is about giving all your coins a goal and leaving no coin behind. Since Firefly III is fundamentally different, it will not be possible for Firefly III to support this. If you want, you can read my opinion on [zero based budgeting](zero-based-budgeting.md).
+Basically, YNAB allows you to assign each of your coin to a "permanent" budget, that you would replenish once your salary arrives. This way, zero based budgeting is about giving all your coins a goal and leaving no coin behind. Since Firefly III is fundamentally different, it will not be possible for Firefly III to support this. If you want, you can read my opinion on [zero based budgeting](../firefly-iii/background/zero-based-budgeting.md).
 
 ### Stock and portfolio management
 

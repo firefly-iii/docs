@@ -1,61 +1,72 @@
-(TODO clean up)
-
-# Configure your installation
-
-## Introduction
+# How to configure the data importer
 
 The Data Importer communicates with Firefly III over the [API](../../firefly-iii/api/index.md).
 
 On this page you will read how to:
 
-1. Configure access to the API.
+1. Configure access to the Firefly III API.
 2. Configure GoCardless (optional)
 3. Configure Spectre (optional)
 
-## Access to the API
+Please also refer to the following guides.
 
-### Firefly III URL
+- [How to install the data importer using Docker](installation/docker.md)
+- [How to install the data importer on your own server](installation/self-managed.md)
+- [General introduction to the data importer](../../explanation/data-importer/about/introduction.md)
+- [Explanation about GoCardless and Salt Edge Spectre](../../explanation/data-importer/about/gocardless-salt-edge.md)
+- [How to get a personal access token](../../how-to/firefly-iii/advanced/api.md)
 
-First, you must tell the data importer where to reach Firefly III. This is set in the `FIREFLY_III_URL` environment variable. REMOVE any trailing slash from the end of the URL.
+## Access to Firefly III
 
-In most cases, you can use `http://app:8080` which will be an internal reference to the Firefly III installation.
+First, you must tell the data importer where to reach Firefly III.
 
-Since normal users can't reach this URL, you must also set the `VANITY_URL`. Here is an example:
+| Environment variable | Probable value when Docker | Probable value when not Docker |
+|----------------------|----------------------------|--------------------------------|
+| `FIREFLY_III_URL`    | `http://app:8080`          | `https://localhost`            |
+| `FIREFLY_III_URL`    | `http://172.16.2.2:8080`   | `http://myserver.lan`          |
+| `VANITY_URL`         | `http://localhost`         | `http://localhost`             |
 
-* `FIREFLY_III_URL=http://app:8080` (internal Docker URL)
-* `FIREFLY_III_URL=http://172.16.2.2:8080` (alternative scenario, internal Docker IP)
-* `VANITY_URL=https://money.bill-gates.com` (public or local URL)
+If you use Docker, remember that the `FIREFLY_III_URL` is a reference to Firefly III from inside the data importer container. Therefore, in most cases, the URL is `http://app:8080`, as you can see in the examples above. This happens because Docker containers can use the container name to refer to each other.
 
-!!! note "Optional value"
-The `FIREFLY_III_URL` is optional. If you don't set it, the data importer will ask for the URL.
+If you do not use Docker, the `FIREFLY_III_URL` is probably your localhost or the location of your existing Firefly III installation.
+
+The `VANITY_URL` is rarely used outside of Docker containers. It contains the URL of Firefly III as you see it in your address bar. This is often not the same as the `FIREFLY_III_URL`.
+
+The `FIREFLY_III_URL` is optional. If you don't set it, the data importer will simply ask for the URL. If you do not set it, the `VANITY_URL` will be ignored.
 
 !!! warning "Docker and 127.0.0.1"
-Docker cannot connect to a Firefly III installation using `http://localhost` or `http://127.0.0.1` because this address refers to the Docker container itself, and not Firefly III.
+    Docker cannot connect to a Firefly III installation using `http://localhost` or `http://127.0.0.1` because this address refers to the Docker container itself, and not Firefly III.
 
-### Authentication
+## Authenticate to Firefly III
 
-To authenticate with Firefly III you must set ONE of the following variables:
+Second, to authenticate with Firefly III you must set ONE of the following variables:
 
 1. Set a Personal Access Token in the `FIREFLY_III_ACCESS_TOKEN` environment variable.
 2. OR Set a Client ID in the `FIREFLY_III_CLIENT_ID` environment variable.
 
 !!! note "Authelia and other tools"
-Firefly III combined with [external identity providers](../../firefly-iii/advanced-installation/authentication.md) such as Authelia can only handle Personal Access Tokens.
+    Firefly III combined with [external identity providers](../../how-to/firefly-iii/advanced/authentication.md) such as Authelia can only handle Personal Access Tokens.
+
+These variables are mutually exclusive. If you set both, the data importer will use the Personal Access Token. If you set neither, the data importer will ask for the client ID.
 
 ## Configure GoCardless
 
-If you wish to use GoCardless, please [read about GoCardless](../faq/spectre-and-nordigen.md) first. Then, set the following variables. This is necessary if you wish to connect to your bank through GoCardless.
+If you wish to use GoCardless, please [read about GoCardless](../../explanation/data-importer/about/gocardless-salt-edge.md) first. Then, set the following variables. This is necessary if you wish to connect to your bank through GoCardless.
 
 * `NORDIGEN_ID` is your GoCardless Client ID
 * `NORDIGEN_KEY` is your GoCardless Client Secret
 * If you set `NORDIGEN_SANDBOX` to `true` the data importer will only connect to the GoCardless sandbox.
 
+If you do not set these, the data importer will ask for them.
+
 ## Configure Spectre
 
-If you wish to use Spectre, please [read about Spectre](../faq/spectre-and-nordigen.md) first. Then, set the following variables. This is necessary if you wish to connect to your bank through Spectre.
+Third, optionally, if you wish to use Spectre, please [read about Spectre](../../explanation/data-importer/about/gocardless-salt-edge.md) first. Then, set the following variables. This is necessary if you wish to connect to your bank through Spectre.
 
 * `SPECTRE_APP_ID` is your Spectre / Salt Edge Client ID
 * `SPECTRE_SECRET` is your Spectre / Salt Edge Client secret
+
+If you do not set these, the data importer will ask for them.
 
 ## Where to set the configuration?
 
@@ -67,59 +78,7 @@ All the configuration values mentioned on this page are stored in environment va
 * `NORDIGEN_ID` and `NORDIGEN_KEY` (for GoCardless)
 * `SPECTRE_APP_ID` and `SPECTRE_SECRET`
 
-You can use the `.env` file to store them, use Docker's `-e` flag to set them or use your operating system to set these values. This depends on your installation method, [Docker](docker.md) or [self-hosted](self-hosted.md).
+You can use the `.env` file to store them, use Docker's `-e` flag to set them or use your operating system to set these values. This depends on your installation method, [Docker](installation/docker.md) or [self-managed](installation/self-managed.md).
 
 !!! important "Cookie warning"
-You may need to clear your cookies, browse to `/flush` or press \[Reauthenticate\] after changing these values.
-
-## How to get these variables?
-
-### Personal Access Token
-
-You can generate your own Personal Access Token on the Profile page. Login to your Firefly III instance, go to "Options" > "Profile" > "OAuth" and find "Personal Access Tokens". Create a new Personal Access Token by clicking on "Create New Token". Give it a recognizable name and press "Create". The Personal Access Token is pretty long. Use a tool like Notepad++ or Visual Studio Code to copy-and-paste it.
-
-![Click the right button.](images/pat1.png)
-
-![Give the personal access token a name.](images/pat2.png)
-
-![Copy and paste the token for use in the importer.](images/pat3.png)
-
-![Authentication is reported.](images/pat4.png)
-
-### Client ID + Firefly III URL
-
-You can generate your own client ID on your Profile page (under OAuth). This is the ID you need when you want to share the data importer with multiple people, or when you want to allow others to use the same instance of the data importer.
-
-Uncheck the "confidential" checkbox.
-
-## Callback URL
-
-It is **very important** that the callback URL is correct. The callback is the following:
-
-```
-http://[DATA IMPORTER]/callback
-```
-
-Some common examples include:
-
-* [http://172.16.0.2/callback](http://172.16.0.2/callback) (172.16 is a common IP range for Docker hosts)
-* [https://data-importer.home/callback](https://data-importer.home/callback) (Some users have fancy local addresses. Notice the TLS)
-* [http://10.0.0.15/callback](http://10.0.0.15/callback) (10.0.0.x is often used when using Vagrant)
-
-But ALWAYS add `/callback` or you'll run into weird errors later.
-
-![This is the correct client ID](images/cid1.png)
-
-![Fill in the details correctly](images/cid2.png)
-
-
-
-## Is the data importer multi-user?
-
-Yes. It borrows login information from Firefly III using OAuth. To make sure it redirects to Firefly III, where you can log in, **do not** set the `FIREFLY_III_ACCESS_TOKEN` in the data importer environment variables. Use only the `FIREFLY_III_URL` variable. This way, each user must authenticate to the data importer.
-
-Some features are not available when you set up a multi-user data importer: you cannot use the POST import function, and you can't import over the command line.
-
-If you use Firefly III with "remote user authentication" (for example Authelia) the data importer can only use personal access tokens. That means that it cannot be made multi-user.
-
-In such cases, you must set up multiple data importers, one for each user.
+    You may need to clear your cookies, browse to `/flush` or press \[Reauthenticate\] after changing these values.

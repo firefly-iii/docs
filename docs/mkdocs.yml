@@ -81,6 +81,7 @@ nav:
               - How to use webhooks: how-to/firefly-iii/features/webhooks.md
               - How to use the search: how-to/firefly-iii/features/search.md
               - How to use currencies: how-to/firefly-iii/features/currencies.md
+              - How to the CLI: how-to/firefly-iii/features/cli.md
           - Development:
               - Translations: how-to/firefly-iii/development/translations.md
       - Data Importer:

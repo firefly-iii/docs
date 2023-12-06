@@ -8,11 +8,7 @@ See also:
 
 And many more subjects under the [how-to](../../how-to/index.md) and [tutorial](../../tutorials/index.md) sections.
 
-Firefly III has several types of accounts. This goes beyond your own bank accounts and credit cards.
-
-(TODO expand text about accounts)
-
-In a double booking system, everything is an account
+Firefly III has several types of accounts. This goes beyond your own bank accounts and credit cards. Accounts are one of the core concepts of Firefly III. In a double booking system, everything is related to an account. Accounts are the holders of transactions and each transaction in Firefly III must have a source and a destination account.
 
 ## Unique account numbers and IBANs
 

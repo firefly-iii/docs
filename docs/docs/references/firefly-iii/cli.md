@@ -1,47 +1,16 @@
-(TODO cleanup)
-
 # Command line / CLI
 
 Firefly III has a bunch of CLI commands that you can use. Generally speaking these are meant for large operations. Here's a full overview.
 
-## Execute a command
+See also: [How to use the CLI](../../how-to/firefly-iii/features/cli.md).
 
-### Docker
-
-Run the following command on your command line, and replace COMMAND:COMMAND with the actual command from the list below.
-
-```bash
-docker exec -it $(docker container ls -a -f name=firefly --format="{{.ID}}") php artisan COMMAND:COMMAND
-```
-
-If this doesn't work, replace the `$(..)` part with your actual Docker container ID:
-
-```bash
-docker exec -it abcde php artisan COMMAND:COMMAND
-```
-
-### Self-hosted
-
-Run:
-
-```bash
-cd /var/www/html/firefly-iii
-php artisan COMMAND:COMMAND
-```
-
-### Third-party
-
-Most third party systems like Heroku don't allow you to do this.
-
-## Available commands
-
-### List all commands
+## List all commands
 
 `php artisan`
 
 Please note that this will also list all the internal upgrade commands Firefly III uses.
 
-### Apply rules
+## Apply rules
 
 `php artisan firefly-iii:apply-rules`
 
@@ -56,13 +25,15 @@ This command will apply your rules and rule groups on a selection of your transa
 * `--start_date[=START_DATE]`. The date of the earliest transaction to be included (inclusive). If omitted, will be your very first transaction ever. Format: YYYY-MM-DD
 * `--end_date[=END_DATE]`. The date of the latest transaction to be included (inclusive). If omitted, will be your latest transaction ever. Format: YYYY-MM-DD
 
-### Cronjob
+For more information about rules, see also [how to use rules](../../how-to/firefly-iii/features/rules.md).
+
+## Cronjob
 
 `php artisan firefly-iii:cron`
 
-Fires the cronjob. Read more about it on [the page about the cronjob](../advanced-installation/cron.md).
+Fires the cronjob. See also [how to set up the cron job](../../how-to/firefly-iii/advanced/cron.md).
 
-### Export data
+## Export data
 
 `php artisan firefly-iii:export-data`
 
@@ -86,3 +57,5 @@ Allows you to export all Firefly III data. To use it, add the following paramete
 * `--force`. Force overwriting of previous exports if found.
 
 Keep in mind that on Docker, you must export to `./storage/export` to have the files available on your own system.
+
+See also [how to export data](../../tutorials/firefly-iii/exporting-data.md).

@@ -1,3 +1,5 @@
+# Architecture
+
 On this page you'll find information about the internal architecture of Firefly III. It's not meant as an explanation of where everything is but rather as a means to show you how everything is structured. If you ever want to develop something these pages should show you where you need be.
 
 ## Database

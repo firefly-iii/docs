@@ -1,14 +1,12 @@
 # How-to guides
 
-(TODO fix links)
-
 These how-to guides will show you how to do things. The guides are goal oriented and will get you to a specific point.
 
 Popular examples:
 
-1. How to install Firefly III?
-2. How to set up email notifications?
-3. How to configure GoCardless?
+1. How to [install Firefly III](firefly-iii/installation/docker.md)?
+2. How to set up [email notifications](firefly-iii/advanced/notifications.md)?
+3. How to [configure GoCardless](data-importer/how-to-configure.md)?
 
 The menu on the left should guide your through the guides (hah). 
 
@@ -22,11 +20,4 @@ Please open an [issue on GitHub](https://github.com/firefly-iii/firefly-iii/issu
 
 ## Would you like to know more?
 
-(TODO link to support page instead)
-
-You can contact me at [james@firefly-iii.org](mailto:james@firefly-iii.org), you may open an issue or contact me through the support channels:
-
-- [GitHub Discussions for questions and support](https://github.com/firefly-iii/firefly-iii/discussions/)
-- [Gitter.im for a good chat and a quick answer](https://gitter.im/firefly-iii/firefly-iii)
-- [GitHub Issues for bugs and issues](https://github.com/firefly-iii/firefly-iii/issues)
-- Follow me around for news and updates on <a rel="me" href="https://fosstodon.org/@ff3">Mastodon</a>
+Check out the [support page](../references/support.md).

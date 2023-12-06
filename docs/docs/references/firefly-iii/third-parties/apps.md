@@ -1,81 +1,8 @@
-(TODO cleanup)
-
-# Self-managed hosting tools
-
-There are lots of self-managed hosting tools on the market. They offer 1-click installation of apps and services.
-
-!!! warning "These tools are unsupported"
-I can't always offer support for these platforms. There are a lot of them. Feel free to start a [discussion](https://github.com/orgs/firefly-iii/discussions), but you may have to do some exploration to get your issue resolved.
-
-## AMPPS
-
-Firefly III is featured in [AMPPS](https://www.ampps.com/). You can download AMPPS for Windows, Linux and Mac and Firefly III will be available as a package there.
-
-## Cloudron
-
-Firefly III is featured in [Cloudron](https://cloudron.io/). You can install a Cloudron server instance and Firefly III will be available in the [App Store](https://cloudron.io/store/org.fireflyiii.cloudronapp.html).
-
-## Umbrel
-
-Firefly III is featured in the [Umbrel app store](https://umbrel.com/).
-
-## Unraid
-
-There are [templates](https://forums.unraid.net/topic/124146-support-smartphonelover-firefly-iii-data-importer/) for Firefly III and the Data Importer.
-
-## Yunohost
-
-Firefly III is featured on [Yunohost](https://yunohost.org/#/app_firefly-iii).
-
-
-# Hosted by 3rd parties
-
-There are several third parties where you can run a Firefly III instance.
-
-## Synology
-
-Mariushosting.com wrote [an excellent guide](https://mariushosting.com/how-to-install-firefly-iii-on-your-synology-nas/) on how to host Firefly III on your Synology NAS.
-
-## Heroku
-
-Firefly III supports [Heroku](https://heroku.com/). You can [deploy Firefly III in Heroku](https://heroku.com/deploy?template=https://github.com/firefly-iii/firefly-iii/tree/main) after you register for an account.
-
-> As of version [v6.0.17](https://github.com/firefly-iii/firefly-iii/releases/tag/v6.0.16), support for Heroku has been removed
-
-### Considerations when using Heroku
-
-Heroku uses what is called an "ephemeral file system" and it will not be able to store attachments. They will be deleted [every day](https://devcenter.heroku.com/articles/dynos#automatic-dyno-restarts). Don't use Firefly III on Heroku in combination with sensitive or rare file attachments.
-
-## Softaculous
-
-!!! warning
-Your hosting provider may not be compatible with Firefly III, even when it's listed in your Softaculous application list. I cannot support you with this.
-
-Firefly III is featured in [Softaculous](https://softaculous.com/). If your (hosting) server provides packages using Softaculous, Firefly III will be available as a package there. They even made a special [demo site](http://www.softaculous.com/softaculous/apps/others/Firefly_III).
-
-
-# Third-party tools
+# Third-party apps
 
 There are a lot of interesting tools and apps built around the [Firefly III API](../api/index.md). Here's a list, in no particular order. Is your (favorite) tool not on the list? Submit a PR!
 
 Be sure to also check out [the list of import tools](../importing-data/index.md#other-import-tools).
-
-
-## Reporting
-
-### Prometheus Exporter
-
-Alejandro built a Prometheus exporter for Firefly III.
-
-- [Credits](https://github.com/kinduff)
-- [Repository](https://github.com/kinduff/firefly_iii_exporter)
-
-### Summary emails
-
-David built a tool to send you a monthly overview of your expenses by category.
-
-- [Credits](https://github.com/davidschlachter)
-- [Website and documentation](https://github.com/davidschlachter/firefly-iii-email-summary)
 
 ## Mobile applications
 
@@ -182,10 +109,26 @@ FFIIITC is a tool that allows you to automatically categorize your transactions 
 - [Credits](https://github.com/akopulko)
 - [Website](https://github.com/akopulko/ffiiitc)
 
+## Reporting
+
+### Prometheus Exporter
+
+Alejandro built a Prometheus exporter for Firefly III.
+
+- [Credits](https://github.com/kinduff)
+- [Repository](https://github.com/kinduff/firefly_iii_exporter)
+
+### Summary emails
+
+David built a tool to send you a monthly overview of your expenses by category.
+
+- [Credits](https://github.com/davidschlachter)
+- [Website and documentation](https://github.com/davidschlachter/firefly-iii-email-summary)
+
 ## Import tools
 
-All import related tools are listed [on the page on importing data](../importing-data/index.md).
+All import related tools are listed [on the page on importing data](../../data-importer/third-party-tools.md).
 
 ## Other tools
 
-Other tools developed by the developer of Firefly III are listed on the [other tools](../../other-tools/index.md) page.
+Other tools developed by the developer of Firefly III are listed on the [other tools](../../../explanation/other-tools.md) page.
