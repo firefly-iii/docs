@@ -1,12 +1,21 @@
-(TODO clean up)
-
-# Upgrade
+# Upgrade using Docker
 
 This page gives you instructions on how to upgrade your Data Importer installation.
 
-## Upgrading a Docker container
+## Upgrade Docker compose
 
-To upgrade, stop (if necessary) and remove your container using these commands:
+The default installation refers to Docker Compose. To upgrade, do this in the directory where you stored all the Docker Compose and environment files.
+
+```bash
+docker compose stop
+docker compose rm -f
+docker compose pull
+docker compose -f docker-compose.yml up -d --remove-orphans
+```
+
+## Upgrade Docker
+
+To upgrade a single container, stop and remove your container using these commands:
 
 ```bash
 docker stop [container-id]
@@ -21,29 +30,4 @@ Then pull the new image using this command:
 docker pull fireflyiii/data-importer:latest
 ```
 
-Create it again by running the command from [the installation guide](docker.md).
-
-## Upgrading a self-hosted instance
-
-The best way to upgrade is to "reinstall" the data importer using the following command:
-
-```bash
-cd /var/www && \
-    composer create-project firefly-iii/data-importer \
-    --no-dev --prefer-dist updated-data-importer %IMPORTERVERSION
-```
-
-This installs the tool in a new directory called `updated-data-importer`. Move over your `.env` file by copy-pasting it. For example:
-
-```bash
-cp /var/www/data-importer/.env /var/www/updated-data-importer/.env
-mv /var/www/data-importer /var/www/old-data-importer
-mv /var/www/updated-data-importer /var/www/data-importer
-```
-
-If necessary, use `sudo` to execute these commands, then correct the access rights with `chown`.
-
-```bash   
-sudo chown -R www-data:www-data data-importer
-sudo chmod -R 775 data-importer/storage
-```
+Create it again by running the commands from [the installation how-to guide](../installation/docker.md).

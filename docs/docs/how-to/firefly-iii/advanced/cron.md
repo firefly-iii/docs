@@ -1,8 +1,9 @@
 # Cron jobs
 
-(TODO cleanup and validate, drop title)
-
 Firefly III has several feature that will only work when the cron job is running.
+
+!!! info "Which features need cron jobs?"
+    Automated budgets, recurring transactions, bill warnings and up-to-data currency exchange rate information all need cron jobs to function properly.
 
 ## Calling a command
 
@@ -32,7 +33,7 @@ Begin by creating a new file instructing systemd what to run, `firefly-iii-cron.
 
 ```ini
 [Unit]
-Description=Firefly III recurring transactions
+Description=Firefly III cron
 Requires=httpd.service php-fpm.service postgresql.service
 
 [Service]
@@ -46,7 +47,7 @@ Next create a new file for the timer specification, `firefly-iii-cron.timer`.
 
 ```ini
 [Unit]
-Description=Firefly III recurring transactions
+Description=Firefly III cron
 
 [Timer]
 OnCalendar=daily
@@ -57,67 +58,13 @@ WantedBy=timers.target
 
 Copy these files to `/etc/systemd/system`. You must then enable (`systemctl enable firefly-iii-cron.timer`) and start (`systemctl start firefly-iii-cron.timer`) the timer. Verify the timer is registered with `systemctl --list-timers`. You may also want to run the service once manually to ensure it runs successfully: `systemctl start firefly-iii-cron.service`. You can check the results with `journalctl -u firefly-iii-cron`.
 
-## IFTTT
-
-You can always use [If This, Then That (IFTTT)](https://ifttt.com). This will only work if your Firefly III installation can be reached from the internet. Here's what you do.
-
-Login to IFTTT (or register a new account) and create a new applet:
-
-![Make a new applet](images/ifttt-applet.png)
-
-You will get this screen. Select "This":
-
-![Select "This"](images/ifttt-this.png)
-
-Select "Date and Time":
-
-![Select "Date and time"](images/ifttt-dt.png)
-
-Select "Every day at":
-
-![Select "Every day at"](images/ifttt-eda.png)
-
-Set the time to 3AM:
-
-![Time to 3AM](images/ifttt-3am.png)
-
-Click on "That":
-
-![Click on "That"](images/ifttt-that.png)
-
-Use the search bar to search for "Webhooks".
-
-![Search for "Webhooks"](images/ifttt-webhooks.png)
-
-Click on "make a web request"
-
-![Click on "make a web request"](images/ifttt-request.png)
-
-Enter the URL in the following format. Keep in mind that the image shows the WRONG URL. Sorry about that.
-
-`https://your-firefly-installation.com/api/v1/cron/[token]`
-
-The `[token]` value can be found on your `/profile` under the "Command line token" header. This will prevent others from spamming your cron job URL. An alternative to this token value is the `STATIC_CRON_TOKEN` environment variable. You can set this using the `.env` file, or by setting it through Docker. A little ahead on this page the difference is explained.
-
-![The result of setting up IFTTT](images/ifttt-result.png)
-
-Press Finish to finish up. You can change the title of the IFTTT applet into something more descriptive, if you want to.
-
-![Finished up](images/ifttt-finish.png)
-
-You will see a final overview
-
-![Overview](images/ifttt-overview.png)
-
-Press Finish, and you're done!
-
 ## Cron jobs in Docker
 
-The Docker image does *not* support cron jobs.
+The Docker image does *not* support cron jobs, but the Docker Compose image includes a cron job container.
 
 ### Static cron token
 
-The web address for the cron job is protected by a token. You can find this token on the `/profile` page under "Command line token". This token is dynamic, and is generated anew for each user.
+The web address for the cron job is protected by a token. You can find this token on the `/profile` page under "Command line token". This token is dynamic, and is generated separately for each user.
 
 When you use Docker, this can be difficult to configure. So, you can set the `STATIC_CRON_TOKEN` to a string of **exactly** 32 characters. This will also be accepted as cron token.
 
@@ -158,6 +105,8 @@ If you do not know the Firefly III URL, you can also use the Docker IP address.
 
 ### Expand the docker compose file
 
+This is already present in the default Docker compose file.
+
 ```
 cron:
   image: alpine
@@ -174,3 +123,59 @@ In order to trigger "future" cron jobs, you can call the cron job with `--force 
 # cronjob for Firefly III that changes the target date.
 0 3 1 * * /usr/bin/php /var/www/html/artisan firefly-iii:cron --force --date=$(date "+\%Y-\%m-")10
 ```
+
+
+## IFTTT
+
+You can always use [If This, Then That (IFTTT)](https://ifttt.com). This will only work if your Firefly III installation can be reached from the internet. Here's what you do.
+
+Login to IFTTT (or register a new account) and create a new applet:
+
+![Make a new applet](../../../images/how-to/firefly-iii/advanced/ifttt-applet.png)
+
+You will get this screen. Select "This":
+
+![Select "This"](../../../images/how-to/firefly-iii/advanced/ifttt-this.png)
+
+Select "Date and Time":
+
+![Select "Date and time"](../../../images/how-to/firefly-iii/advanced/ifttt-dt.png)
+
+Select "Every day at":
+
+![Select "Every day at"](../../../images/how-to/firefly-iii/advanced/ifttt-eda.png)
+
+Set the time to 3AM:
+
+![Time to 3AM](../../../images/how-to/firefly-iii/advanced/ifttt-3am.png)
+
+Click on "That":
+
+![Click on "That"](../../../images/how-to/firefly-iii/advanced/ifttt-that.png)
+
+Use the search bar to search for "Webhooks".
+
+![Search for "Webhooks"](../../../images/how-to/firefly-iii/advanced/ifttt-webhooks.png)
+
+Click on "make a web request"
+
+![Click on "make a web request"](../../../images/how-to/firefly-iii/advanced/ifttt-request.png)
+
+Enter the URL in the following format. Keep in mind that the image shows the WRONG URL. Sorry about that.
+
+`https://your-firefly-installation.com/api/v1/cron/[token]`
+
+The `[token]` value can be found on your `/profile` under the "Command line token" header. This will prevent others from spamming your cron job URL. An alternative to this token value is the `STATIC_CRON_TOKEN` environment variable. You can set this using the `.env` file, or by setting it through Docker. A little ahead on this page the difference is explained.
+
+![The result of setting up IFTTT](../../../images/how-to/firefly-iii/advanced/ifttt-result.png)
+
+Press Finish to finish up. You can change the title of the IFTTT applet into something more descriptive, if you want to.
+
+![Finished up](../../../images/how-to/firefly-iii/advanced/ifttt-finish.png)
+
+You will see a final overview
+
+![Overview](../../../images/how-to/firefly-iii/advanced/ifttt-overview.png)
+
+Press Finish, and you're done!
+

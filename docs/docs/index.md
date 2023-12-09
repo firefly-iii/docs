@@ -18,6 +18,7 @@ Many more tutorials can be found in the [tutorials](tutorials/index.md)-section.
 Are you looking to complete specific tasks? Check out the [how-to guides](how-to/index.md), and you will find things such as:
 
 - How to install Firefly III
+- How to install the Data Importer
 - How to use the command line
 
 More guides can be found in the [how-to guides](how-to/index.md) section.

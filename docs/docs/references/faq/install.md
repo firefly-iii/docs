@@ -1,6 +1,19 @@
 
 (TODO validate and cleanup)
 
+## Set TLS in the data importer
+
+```
+proxy_set_header X-Forwarded-Host $host;
+proxy_set_header X-Forwarded-Server $host;
+proxy_set_header X-Forwarded-Proto $scheme;
+proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+proxy_set_header Host $host;
+client_max_body_size 64M;
+proxy_read_timeout 300s;
+```
+
+
 ## I get page load errors because the protocols don't match
 
 * "It only loads over http and not https!"

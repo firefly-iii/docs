@@ -1,16 +1,25 @@
-(TODO clean up)
+# How to install using Docker
 
-# Docker installation
+This guide will assume you'll want to install both Firefly III and the Data Importer. If you already have a Firefly III installation,
+and you wish to expand it with the data importer, do not worry. You can simply follow this guide again and reinstall Firefly III. You will point to
+the same data volumes and the same databases, so nothing will be lost.
 
-## Together with Firefly III
+If you happen to include any existing data from Firefly III, please [back this data up first](../../firefly-iii/advanced/backup.md).
 
-You can run the data importer in a Docker Compose combination with Firefly III. A **[docker-compose-importer.yml](https://raw.githubusercontent.com/firefly-iii/docker/main/docker-compose-importer.yml)** is available on GitHub. Download the raw file and store it in a directory of your choice as `docker-compose.yml`.
+## Docker compose
+
+### Download files
+
+Grab the **[docker-compose-importer.yml](https://raw.githubusercontent.com/firefly-iii/docker/main/docker-compose-importer.yml)** from GitHub. Download the raw file and store it in a directory of your choice as `docker-compose.yml`.
 
 Then, download the environment variable files:
 
 - Download the `.env.example` file for Firefly III [from the Firefly III repository](https://raw.githubusercontent.com/firefly-iii/firefly-iii/main/.env.example). Save the raw file as `.env` next to the docker compose file.
 - Download the `.env.example` file from the [Data Importer repository](https://raw.githubusercontent.com/firefly-iii/data-importer/main/.env.example) and save it as `.importer.env` next to the other files.
 - The final file (`database.env`) contains the database variables and can be downloaded from [the Docker repository](https://raw.githubusercontent.com/firefly-iii/docker/main/database.env). Save it as a new file called `.db.env`.
+
+
+### Edit files
 
 If you save all example files and change nothing, it will NOT YET work. You must do a few things:
 
@@ -20,7 +29,9 @@ If you save all example files and change nothing, it will NOT YET work. You must
 4. Change `VANITY_URL` in `.importer.env` to `http://localhost`
 
 !!! note
-Change the password FIRST. If you change the password *after* you started Docker, it will complain about having no access.
+    Change the password FIRST. If you change the password *after* you started Docker, it will complain about having no access.
+
+### Run the compose file
 
 Run the following command in the directory where all files are present.
 
@@ -36,49 +47,53 @@ docker compose -f docker-compose.yml logs -f
 
 When the installation is done, Firefly III will thank you for installing it. Once you see this message, you can visit Firefly III. It will be running at [http://localhost](http://localhost).
 
+### Set up Firefly III
 
-### Register a new account
+Follow these how-to's and tutorials to set up Firefly III:
 
-Register a new account and create your first account at Firefly III, running at [http://localhost](http://localhost).
-
-### Create asset accounts
-
-Under Accounts > Asset accounts, do two things:
-
-1. Create any missing accounts (savings accounts, credit cards, etc) and be sure to add the account number or IBAN.
-2. Edit the original account and add the account number or IBAN.
+- [Tutorial: Create accounts and transactions](../../../tutorials/finances/first-steps.md)
+- [Tutorial: My first accounts](../../../tutorials/finances/first-accounts.md)
+- [How-to: organize transactions](../../firefly-iii/finances/transactions.md)
 
 ### Create an access token
 
-!!! info "Callback URL"
-The callback URL will be `http://localhost:81/callback`
+Follow [how-to get a token](../../firefly-iii/features/api.md). Use the custom instructions below:
 
-1. In Firefly III at [http://localhost](http://localhost), browse to Profile > OAuth
-2. Create a new client ID [according to these instructions](configuration.md#client-id-firefly-iii-url).
+1. The callback URL will be `http://localhost:81/callback`
+2. UNCHECK the box that says "Confidential"
 
 ### Browse to the data importer
 
-Now, browse to the data importer. It will be running at [http://localhost:81/](http://localhost:81/).
+Now, browse to the Data Importer. It will be running at [http://localhost:81/](http://localhost:81/).
 
 Enter the Client ID from the previous step. In my example, it is "3":
 
-![Enter the client ID](images/enter_id.png)
+![Enter the client ID](../../../images/how-to/data-importer/installation/enter_id.png)
 
 Press the button to Authenticate. You should give permission on the next screen. Note how the name of your client is reflected in the question:
 
-![Give permission](images/give_permission.png)
+![Give permission](../../../images/how-to/data-importer/installation/give_permission.png)
 
 You should get back on the Data Importer index:
 
-![Ready to go!](images/ready_to_go.png)
+![Ready to go!](../../../images/how-to/data-importer/installation/ready_to_go.png)
 
 You are now ready to go!
 
+- [Tutorial: Import from GoCardless](../../../tutorials/data-importer/gocardless.md)
+- [Tutorial: Import a basic CSV file](../../../tutorials/data-importer/csv.md)
+- [How-to: import CSV or camt.053 files](../import/csv.md)
+
 ## Single installation
 
-To run the Data Importer using the following `run` command. You will start a web server on port 8081 that will allow you to use the data importer.
+To run the Data Importer as a singular container using the following `run` command. You will start a web server on port 8081 that will allow you to use the data importer.
 
-Append the command with your Personal Access Token and Firefly III URL. The values you need and where to get them are explained on the **[Configuration page](configuration.md)**. Note that most people don't use GoCardless *and* Spectre values at the same time.
+Follow [how-to get a token](../../firefly-iii/features/api.md). Use the custom instructions below:
+
+1. The callback URL will be your Firefly III installation
+2. UNCHECK the box that says "Confidential"
+
+Note that most people don't use GoCardless *and* Spectre values at the same time.
 
 All environment variables are optional, but convenient. Please note that the NORDIGEN environment variables refer to GoCardless.
 
@@ -95,10 +110,7 @@ fireflyiii/data-importer:latest
 
 ```
 
-!!! note
-Change `docker run` to `docker run -d` so the image runs in the background.
-
-!!! ip
-You may need to clear your cookies, browse to `/flush` or press \[Reauthenticate\] after changing the environment variables.
+!!! note "Run in the background"
+    Change `docker run` to `docker run -d` so the image runs in the background.
 
 

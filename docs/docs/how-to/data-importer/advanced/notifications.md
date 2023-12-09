@@ -1,5 +1,4 @@
-(TODO cleanup this page)
-
+# How to set up notifications
 
 The data importer can email you the results of the import. This is useful for cron jobs.
 

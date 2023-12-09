@@ -1,6 +1,6 @@
-(TODO cleanup this page)
+# How to set a custom import tag
 
-You can set a custom import tag in your configuration file or using the UI.
+You can set a custom import tag, either in your configuration file or using the UI.
 
 The standard tag is something like `Data Import at 2023-06-12 @ 23:03` which may not be very distinctive.
 

@@ -82,6 +82,7 @@ nav:
               - How to use the search: how-to/firefly-iii/features/search.md
               - How to use currencies: how-to/firefly-iii/features/currencies.md
               - How to the CLI: how-to/firefly-iii/features/cli.md
+              - How to use the API: how-to/firefly-iii/features/api.md
           - Development:
               - Translations: how-to/firefly-iii/development/translations.md
       - Data Importer:
@@ -95,14 +96,15 @@ nav:
               - Using Kubernetes: how-to/data-importer/upgrade/kubernetes.md
               - Using a self-managed server: how-to/data-importer/upgrade/self-managed.md
           - Importing data:
-              - Using CSV or CAMT.053 files: how-to/data-importer/import/csv.md
-              - Using Salt Edge: how-to/data-importer/import/salt-edge.md
-              - Using GoCardLess: how-to/data-importer/import/gocardless.md
+              - How to import CSV or CAMT.053 files: how-to/data-importer/import/csv.md
+              - How to map data: how-to/data-importer/import/map-data.md
+              - How to use Salt Edge: how-to/data-importer/import/salt-edge.md
+              - How to use GoCardLess: how-to/data-importer/import/gocardless.md
               - How to import transfers between accounts: how-to/data-importer/import/transfers.md
               - How to handle (missed) duplicates: how-to/data-importer/import/duplicates.md
           - Advanced things:
-              - How to do auto-imports using CLI: how-to/data-importer/advanced/cli.md
-              - How to do auto-imports using POST: how-to/data-importer/advanced/post.md
+              - How to import using CLI: how-to/data-importer/advanced/cli.md
+              - How to import using POST: how-to/data-importer/advanced/post.md
               - How to set up notifications: how-to/data-importer/advanced/notifications.md
               - How to set a custom import tag: how-to/data-importer/advanced/custom-import-tag.md
   - Reference guides:

@@ -1,38 +1,8 @@
+# Upgrade a self-managed server
 
-(TODO clean up)
+The best way to upgrade is to "reinstall" the data importer using the commands from [the how-to guide](../installation/self-managed.md).
 
-# Upgrade
-
-This page gives you instructions on how to upgrade your Data Importer installation.
-
-## Upgrading a Docker container
-
-To upgrade, stop (if necessary) and remove your container using these commands:
-
-```bash
-docker stop [container-id]
-docker rm [container-id]
-```
-
-To find out which container is the Firefly III Data Importer, run `docker container ls -a` and look for `fireflyiii/data-importer`.
-
-Then pull the new image using this command:
-
-```bash
-docker pull fireflyiii/data-importer:latest
-```
-
-Create it again by running the command from [the installation guide](docker.md).
-
-## Upgrading a self-hosted instance
-
-The best way to upgrade is to "reinstall" the data importer using the following command:
-
-```bash
-cd /var/www && \
-    composer create-project firefly-iii/data-importer \
-    --no-dev --prefer-dist updated-data-importer %IMPORTERVERSION
-```
+Instead of `data-importer`, use `updated-data-importer`.
 
 This installs the tool in a new directory called `updated-data-importer`. Move over your `.env` file by copy-pasting it. For example:
 

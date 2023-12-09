@@ -1,18 +1,21 @@
-# Backup
+# How to make a backup
 
-(TODO cleanup and validate)
+Firefly III does not come with a built-in backup routine. Using your native OS tools is way more useful and faster. 
 
-Firefly III does not come with a built-in backup routine. Using your native OS tools is way more useful and faster. The export function of Firefly III is *not* a backup mechanism
+!!! warning "Do not use the export function as a backup mechanism"
+    The export function of Firefly III is *not* a backup mechanism
 
-## Self-hosted backup
+## Self-managed installation backup
 
 Grab the following and store it somewhere safe:
 
 - The `.env` file in the root of your installation or the _exact_ command you've used to launch Firefly III.
-- The entire database or database file (in `/storage/database`);
+- The entire database, or the database file (in `/storage/database`);
 - All uploads from `/storage/upload`;
 
 The database can be exported using tools like phpMyAdmin or pgAdmin.
+
+After you made a backup this way, the *first* thing you must do is restore it, to make sure it actually worked.
 
 ## Docker
 
@@ -23,6 +26,8 @@ If you're running Firefly III in Docker, back up the following:
 - The two volumes used by Firefly III: "upload" and "db"
 
 That way you have everything you need in case of problems.
+
+After you made a backup this way, the *first* thing you must do is restore it, to make sure it actually worked.
 
 ### Manual backup using Docker
 
@@ -44,9 +49,13 @@ docker run --rm -v "firefly_iii_db:/recover" \
     ubuntu tar -xvf /backup/firefly_db.tar -C /recover --strip 1
 ```
 
-A word of caution: Check that the volume exists **before** trying to back it up. If a named volume doesn't exist Docker will create an empty one, and the command will backup that empty volume. This *wipes out the existing backup*.
+!!! warning 
+    Check that the volume exists **before** trying to back it up. If a named volume doesn't exist Docker will create an empty one, and the command will backup that empty volume. This *wipes out the existing backup*.
 
-To get a better idea of how this works, see Docker's [official documentation](https://docs.docker.com/storage/volumes/#backup-restore-or-migrate-data-volumes).
+    To get a better idea of how this works, see Docker's [official documentation](https://docs.docker.com/storage/volumes/#backup-restore-or-migrate-data-volumes).
+
+After you made a backup this way, the *first* thing you must do is restore it, to make sure it actually worked.
+
 
 ### Automated backup using Docker
 
@@ -70,3 +79,5 @@ The same script can also restore the Docker configuration and the database, gett
 ```bash
 bash /home/myname/backuper.sh restore /home/backup/firefly-2022-01-01.tar
 ```
+
+After you made a backup this way, the *first* thing you must do is restore it, to make sure it actually worked.

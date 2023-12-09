@@ -1,4 +1,4 @@
-(TODO cleanup)
+# How to import transfers between accounts
 
 The first time you import data you may run into an issue where the Firefly III data importer creates withdrawals and deposits instead of transfers. Your import will contain transfers, deposits and expenses of them but somehow all you end up with expenses and deposits only. This is a common issue and is caused by the fact that Firefly III doesn't realise the opposing account is an asset account.
 
@@ -19,7 +19,7 @@ The default account should be an asset account. If this is correct, and your fil
 
 ### Map data
 
-The import has a [mapping stage](../how-to-use/map.md) during which you can link accounts. Use column role `Opposing account (x)` and `Asset account (x)`. Select the correct asset accounts during the mapping. If both accounts are recognized or mapped as an asset account, the transaction will become a transfer.
+The import has a [mapping stage](../import/map-data.md) during which you can link accounts. Use column role `Opposing account (x)` and `Asset account (x)`. Select the correct asset accounts during the mapping. If both accounts are recognized or mapped as an asset account, the transaction will become a transfer.
 
 #### Asset account names and opposing account names
 

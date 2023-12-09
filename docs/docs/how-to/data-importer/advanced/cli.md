@@ -1,10 +1,12 @@
-(TODO cleanup this page)
+# How to import using the CLI
 
-The Data Importer can import from the command line. Either by calling [the Docker container](../installation/docker.md), or by using your [self-hosted instance](../installation/self-hosted.md).
+The Data Importer can import from the command line. Either by calling [the Docker container](../installation/docker.md), or by using your [self-managed instance](../installation/self-managed.md).
 
 ### CSV, camt.053 files and JSON files
 
 Importing CSV or camt.053 data requires two separate files: the actual content (CSV or XML) and a JSON configuration file. You have get this configuration file *first*, by doing a single import through the UI. Once you have the JSON configuration file you can use it to import any file from your bank, assuming the structure of the file is the same.
+
+### GoCardless and Salt Edge
 
 If you import from GoCardless or Salt Edge, you just need the JSON configuration file from the data importer. This can be a little confusing because GoCardless also offers JSON downloads of your raw transactions. All you need to import is the JSON file from the data importer itself. This will contain enough information to download everything from GoCardless or Salt Edge.
 
@@ -26,7 +28,7 @@ Use the following command to import a single file.
 Remember that the JSON file is a reference to the data importer configuration file.
 
 ```bash
-# self hosted (file)
+# self managed (file)
 php artisan importer:import file.json file.xml
 
 # self hosted (other sources)
@@ -46,7 +48,7 @@ The JSON file should always point to your JSON configuration file. If you are im
 Another import option is present to import everything in a directory. Here are the necessary commands.
 
 ```bash
-# self hosted
+# self managed
 php artisan importer:auto-import /path/to/your/files
 
 # docker

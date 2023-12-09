@@ -1,12 +1,8 @@
-# Authentication
-
-(TODO cleanup and validate)
-
-## Built-in authentication
+# How to use different authentication
 
 By default, Firefly III uses the "eloquent" driver that allows users to register and login locally. This is based on the user's email address.
 
-Firefly III will allow one user to register itself after which registration will be blocked. The user who first registered is made administrator and can change the setting over at `/admin` to allow others to register.
+See also [how to make Firefly III multi-user](../features/multi-user.md).
 
 ## Two-step authentication
 
@@ -14,15 +10,17 @@ Two-step authentication, or two-factor authentication (2FA) asks you for an extr
 
 You can enable it in your profile.
 
-![The button is shown in your list of accounts.](images/2fa-enable.png)
+![The button is shown in your list of accounts.](../../../images/how-to/firefly-iii/advanced/2fa-enable.png)
 
 If you enable 2FA, you will also see eight backup codes that you should save just in case you lose access to your Authenticator app.
 
-![The button is shown in your list of accounts.](images/2fa-codes.png)
+![The button is shown in your list of accounts.](../../../images/how-to/firefly-iii/advanced/2fa-codes.png)
 
-To confirm your 2FA settings, submit a code from your Authenticator app twice. In your settings, you will see the upgraded status for 2FA:
+To confirm your 2FA settings, submit a code from your Authenticator app **twice**. You may have to wait 30 seconds. In your settings, you will see the upgraded status for 2FA:
 
-![Options for 2FA.](images/2fa-reset.png)
+![Options for 2FA.](../../../images/how-to/firefly-iii/advanced/2fa-reset.png)
+
+If you lose access to your 2FA data, anybody with access to the database can turn it off and get you back in. [Please check out the FAQ](../../../references/faq/firefly-iii/general.md).
 
 ## Remote user authentication
 
@@ -30,8 +28,8 @@ Firefly III supports [RFC 3875](https://tools.ietf.org/html/rfc3875#section-4.1.
 
 A very popular tool that can do this [Authelia](https://www.authelia.com/docs/).
 
-!!! warning
-When Firefly III is set up for remote user authentication, it will do absolutely **NO** checks on the validity of the header or the contents. Firefly III will not ask for passwords, it won't check for MFA, nothing. All authentication is delegated to the authentication proxy and Firefly III just doesn't care anymore.
+!!! warning 
+    When Firefly III is set up for remote user authentication, it will do absolutely **NO** checks on the validity of the header or the contents. Firefly III will not ask for passwords, it won't check for MFA, nothing. All authentication is delegated to the authentication proxy and Firefly III just doesn't care anymore.
 
 ### Enable the remote user option
 
