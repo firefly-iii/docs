@@ -1,16 +1,14 @@
-(TODO write me)
+# How to use recurring transactions 
 
+Firefly III can automatically create transactions for you, if they follow a tight schedule, like every month, week or year.
 
-
-You must also set up a [cron job](../advanced-installation/cron.md) to fire, so Firefly III can create your transactions.
-
-If you have set up email correctly, Firefly III will automatically email you an overview of the transactions it has created.
+This feature requires that you know [how to run the cron job](../advanced/cron.md). If you have set up email correctly, Firefly III will automatically email you an overview of the transactions it has created.
 
 ## Information for the recurring transaction
 
 A recurring transaction needs meta-data, such as a title and a description. You must also indicate if the recurring transaction is active and whether your rules should apply. The first date the recurring transaction should fire should be a date in the future.
 
-![Mandatory information for a recurring transaction.](images/recurrence-mandatory.png)
+![Mandatory information for a recurring transaction.](../../../images/how-to/firefly-iii/finances/recurrence-mandatory.png)
 
 The repetition can be set to the following options:
 
@@ -38,7 +36,7 @@ If the date of the transaction should repeat is in the weekend, Firefly III can 
 
 These are all the fields you would expect in normal transactions:
 
-![Mandatory information for a recurring transaction.](images/transaction-mandatory.png)
+![Mandatory information for a recurring transaction.](../../../images/how-to/firefly-iii/finances/transaction-mandatory.png)
 
 - The type of transaction.
 - The description, the amount (and currency), and the source and destination accounts.
@@ -49,10 +47,3 @@ Optional information includes:
 - The category, budget, piggy bank and tags.
 
 If you wish to link a bill to the transaction, ensure the option to apply rules is checked and that the new transaction would match this rule.
-
-
-## Cron job
-
-In order to actually create the transactions, Firefly III requires a cron job to be running on your server. It must be set up to run every day. If you are hosting yourself, you can easily set up a new cron job using `crontab` and simply Googling for "cronjob linux".
-
-Just wait patiently and the cron job will create the transactions during the night.

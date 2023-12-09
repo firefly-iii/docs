@@ -1,6 +1,4 @@
-(TODO cleanup, make guide, drop title)
-
-# Reports
+# How to read reports
 
 Firefly III offers a variety of financial reports that can help you keep track of your finances. Each report has a certain scope that you can set to your liking:
 
@@ -55,19 +53,19 @@ The default report gives you a general overview of your finances. It lists your 
 Each table you see in the screenshot can be sorted by name, by amount, in reverse, etc. The charts have little hover-texts for added clarity and the (i)-buttons will give show more detailed information.
 
 
-[![Default financial report](images/reports-default-small.png)](images/reports-default.png)
+[![Default financial report](../../../images/how-to/firefly-iii/finances/reports-default-small.png)](../../../images/how-to/firefly-iii/finances/reports-default.png)
 
 ### Audit report
 
 The audit report is meant to give you an exact overview of an asset account (or multiple). For each asset account it will list the start and end balance, and it can show every available field in a table, if you want to. It will also list the before / after balance for each transaction. This should make it easy to find possible mistakes in your administration. You can click on the screenshot below for a large version.
 
-[![Audit report](images/reports-audit-small.png)](images/reports-audit.png)
+[![Audit report](../../../images/how-to/firefly-iii/finances/reports-audit-small.png)](../../../images/how-to/firefly-iii/finances/reports-audit.png)
 
 ### Expense/revenue report
 
 The expense/revenue report is meant for expense and revenue accounts that share the same name. Take for example your local Tax Department. You pay taxes, but perhaps you receive money back as well. Or when you work in retail, you might be able to buy stuff at a discount. This report shows you an overview of such accounts. You can click on the screenshot below for a large version.
 
-[![Expense + revenue report](images/reports-expense-small.png)](images/reports-expense.png)
+[![Expense + revenue report](../../../images/how-to/firefly-iii/finances/reports-expense-small.png)](../../../images/how-to/firefly-iii/finances/reports-expense.png)
 
 ### Budget report
 
@@ -75,16 +73,16 @@ This report shows you a detailed overview for the selected budgets *and* the sel
 
 Part of this information is also available on the default budget pages, and your front page. You can click on the screenshot below for a large version.
 
-[![Budget report](images/reports-budget-small.png)](images/reports-budget.png)
+[![Budget report](../../../images/how-to/firefly-iii/finances/reports-budget-small.png)](../../../images/how-to/firefly-iii/finances/reports-budget.png)
 
 ### Category report
 
 This report is the same as the budget report but focuses on your categories. It can also include income, which can be very useful. Use this report to see on which specific things you unexpectedly spend a lot of money. Likewise, since it includes incomes, it can also be used to see if that raise you have received actually amounted to anything, after taxes. You can click on the screenshot below for a large version.
 
-[![Default category report](images/reports-category-small.png)](images/reports-category.png)
+[![Default category report](../../../images/how-to/firefly-iii/finances/reports-category-small.png)](../../../images/how-to/firefly-iii/finances/reports-category.png)
 
 ### Tag report
 
 This report is the same as the category report but focuses on your tags. Use this report to see on which specific things you unexpectedly spend a lot of money. Likewise, since it includes incomes, it can also be used to see if that raise you have received actually amounted to anything, after taxes. You can click on the screenshot below for a large version.
 
-[![Tag report](images/reports-tag-small.png)](images/reports-tag.png)
+[![Tag report](../../../images/how-to/firefly-iii/finances/reports-tag-small.png)](../../../images/how-to/firefly-iii/finances/reports-tag.png)

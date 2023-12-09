@@ -1,7 +1,6 @@
+# How to organize transactions
+
 (TODO write me)
-
-
-
 
 Transactions have a few useful fields:
 

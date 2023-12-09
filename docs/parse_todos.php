@@ -7,6 +7,7 @@ $extensions = ['md'];
 $files      = [];
 $todos      = [];
 $warnings   = [];
+$images = [];
 
 $objects = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($path), RecursiveIteratorIterator::SELF_FIRST);
 foreach ($objects as $name => $object) {
@@ -41,7 +42,12 @@ foreach ($files as $file) {
             $url = sprintf('https://github.com/firefly-iii/docs/blob/new-docu/docs/docs%s', $filePath);
 
             // /explanation/index.md
-            $todos[] = sprintf('%s in file [%s](%s)', $todo, $fileName, $url);
+            if(str_contains($todo, 'image')) {
+                $images[] = sprintf('%s in file [%s](%s)', $todo, $fileName, $url);
+            }
+            if(!str_contains($todo, 'image')) {
+                $todos[] = sprintf('%s in file [%s](%s)', $todo, $fileName, $url);
+            }
         }
     }
 
@@ -60,5 +66,9 @@ foreach ($files as $file) {
 }
 
 foreach ($todos as $todo) {
+    echo sprintf('- [ ] %s', $todo) . PHP_EOL;
+}
+echo PHP_EOL;
+foreach ($images as $todo) {
     echo sprintf('- [ ] %s', $todo) . PHP_EOL;
 }

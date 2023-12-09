@@ -1,36 +1,24 @@
-(TODO write me)
+# How to use bills
 
+Bills are a way to manage your finances. You can read more about it in the [explanation about bills](../../../explanation/financial-concepts/bills.md).
 
 When you create a bill, you tell Firefly III in what range you expect the bill to be. You also input the title of the bill, and how often the bill is expected to be paid.
 
-* The name is descriptive only and is not used internally.
+* Description
 * Minimum amount: 700
 * Maximum amount: 800
 * Description: Monthly rent
 * Repeats every month
 
-You can also set the end date and the extension date.
+(TODO image)
 
-These properties by themselves are mostly cosmetic. They allow Firefly III to predict for you how much you should expect to spend on these bills. On the frontpage, a little box will tell you how you're doing.
+You can also set the end date and the extension date. If you know [how to set up a cron job](../advanced/cron.md), Firefly III can alert you about these dates.
 
-If you enter a number in the "skip" field, the bill will be automatically skipped every X times; a bill that arrives every 3 months can be entered by filling in "2".
+The minimum and maximum amount and the period allow Firefly III to predict for you how much you should expect to spend on these bills. On the frontpage, a little box will tell you how you're doing.  If you enter a number in the "skip" field, the bill will be automatically skipped every X times; a bill that arrives every 3 months can be entered by filling in "2".
 
-If you edit a bill and change the amount, the rule will not be automatically updated to match. When you delete the bill, transactions associated with the bill will lose this association but will not be deleted.
+After you create a bill you are automatically redirected to the page to create a new rule. You can learn [how to manage rules](../features/rules.md). This new rule is autofilled to trigger on obvious things like the amount of the bill and the description you entered. Fine-tune the rule so any new transactions will auto-match the rule. 
 
-## Triggering a bill
-
-Once you have created a bill, Firefly III will suggest that you create a new rule that will match the bill. This rule is autofilled to trigger on obvious things like the amount of the bill and the description you entered. Fine-tune the rule so any new transactions will auto-match the rule.
-
-When you create a transaction with the following properties, it will match to the preceding example.
-
-* Amount more than: 700
-* Amount less than: 800
-* Expense account: "Landlord"
-* Description: "Rent"
-
-This means that whenever a transaction matches these things, it will be linked to your bill.
-
-Bills can only be linked to withdrawals.
+When you delete the bill, transactions associated with the bill will lose this association but will not be deleted.
 
 ## The date of a bill
 
@@ -45,8 +33,8 @@ Keep in mind that weekly bills may fall outside your expected range. At some poi
 
 The front page of Firefly III will also start showing the bills.
 
-![The bills on the dashboard](./images/bills-frontpage.png)
+![The bills on the dashboard](../../../images/how-to/firefly-iii/finances/bills-frontpage.png)
 
 Individual bills will end up looking like this picture:
 
-![Overview of a bill](./images/bills-show.png)
+![Overview of a bill](../../../images/how-to/firefly-iii/finances/bills-show.png)
