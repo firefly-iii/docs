@@ -3,9 +3,7 @@
 !!! tip
     I've not yet finished writing this tutorial. Some items may not be filled in yet. I apologize for the inconvenience. Please refer to the [support page](../../references/support.md) if you have questions.
 
-(TODO write tutorial structure)
-
-(TODO incorporate questions below)
+(TODO write tutorial structure, incorporate questions below)
 
 ## What do I do with people who pay me back?
 

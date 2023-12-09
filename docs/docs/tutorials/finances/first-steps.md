@@ -9,6 +9,8 @@ In this tutorial you will learn how to set up your first accounts so they match 
 
 This tutorial assumes you already registered yourself, as it is explained in the [how-to guides](../../how-to/index.md).
 
+(TODO finalize text)
+
 ## First setup 
 
 You will see this screen when you run Firefly III for the first time:

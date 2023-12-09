@@ -7,7 +7,7 @@
 
 (TODO link to other tutorials)
 
-In order to import transactions into Firefly III, you'll have to install the **[Firefly III Data Importer](../../data-importer/index.md)**. This app connects to the [Firefly III API](https://api-docs.firefly-iii.org/).
+In order to import transactions into Firefly III, you'll have to install the Firefly III Data Importer. This app connects to the [Firefly III API](https://api-docs.firefly-iii.org/).
 
 Firefly III and the Data Importer are two different applications.
 
@@ -21,8 +21,8 @@ The data import supports a variety of sources:
 
 ## Other import tools
 
-The documentation for the Data Importer lists [other tools](../../data-importer/more-information/other-tools.md) that you can use to import data.
+The documentation for the Data Importer lists [other tools](../../references/data-importer/third-party-tools.md) that you can use to import data.
 
 ## Custom importing
 
-If none of these import methods support your bank or financial organisation, please check out the [API](../api/index.md).
+If none of these import methods support your bank or financial organisation, please check out the [API](../../references/firefly-iii/api/index.md).

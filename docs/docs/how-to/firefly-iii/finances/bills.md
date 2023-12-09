@@ -10,7 +10,7 @@ When you create a bill, you tell Firefly III in what range you expect the bill t
 * Description: Monthly rent
 * Repeats every month
 
-(TODO image)
+![The bills on the dashboard](../../../images/how-to/firefly-iii/finances/create-bill.png)
 
 You can also set the end date and the extension date. If you know [how to set up a cron job](../advanced/cron.md), Firefly III can alert you about these dates.
 

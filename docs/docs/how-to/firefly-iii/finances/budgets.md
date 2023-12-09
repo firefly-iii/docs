@@ -4,7 +4,7 @@ Firefly III features budgets as a powerful way to manage your finances. To get s
 
 Firefly III budgeting works best when you work from the first day of the month to the last. This is even true when you get paid weekly or 13 times a year (4-weekly). It's also true when you get paid some random moment in a month. For more information on this, read [the explanation on managing your personal finances](../../../explanation/firefly-iii/background/personal-finances.md).
 
-(TODO image of budget create w/ cross through right part)
+![Create a budget](../../../images/how-to/firefly-iii/finances/create-budget.png)
 
 ## Basic budgets
 
@@ -12,7 +12,7 @@ Once you have a few budgets, you can link them to your expenses when you create 
 
 This is not very useful yet. So, on the `/budgets` page you  can set the maximum amount for the budget. This amount applies to the current period and for most users  this applies to the current month. Monthly budgeting is a common way of organizing your finances.
 
-(TODO image of a few budgets with amounts)
+![Overview](../../../images/how-to/firefly-iii/finances/budget-list.png)
 
 ## Automated budgets
 
@@ -23,13 +23,13 @@ When the next month arrives, your budget amounts are gone, since they only appli
 
 You can also make Firefly III do this for you. However, it requires that you know [how to run the cron job](../advanced/cron.md).
 
-(TODO image here)
+![Basic auto budget](../../../images/how-to/firefly-iii/finances/auto-budget-1.png)
 
 ## Budgets that grow
 
 You can also simply add money to the budget every month. That way, it grows every period. You start at 25, and if you spend nothing it grows to 50, 75, etc. every month.
 
-(TODO image here)
+![Growing auto budget](../../../images/how-to/firefly-iii/finances/auto-budget-2.png)
 
 ## Budgets that grow, but correct for expenses
 
@@ -37,7 +37,7 @@ The previous trick works if you want unspent money to be available in the next m
 
 If you spend more than twice your allotted amount, Firefly III will set the next month's budget to a symbolic 1,-. It's up to you to decide how to deal with it.
 
-(TODO image here)
+![Also growing auto budget](../../../images/how-to/firefly-iii/finances/auto-budget-3.png)
 
 ## Mixing periods
 
