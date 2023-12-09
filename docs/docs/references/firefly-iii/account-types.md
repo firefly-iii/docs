@@ -56,6 +56,12 @@ Likewise, if you deposit cash into an asset account, don't mention a revenue acc
 
 ## Liabilities
 
-(TODO expand liabilities)
+All liabilities work the same way. There are three types, meant to distinguish them:
+
+- Loan
+- Debt
+- Mortgage
+
+For all types, you can set the start of the debt and the initial amount. You can also set the interest rate and the period over which interest is paid. Firefly III will not automatically calculate the result however, these fields are for your own administration.
 
 See [liabilities](liabilities.md).

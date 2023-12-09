@@ -1,8 +1,6 @@
+# How to manage liabilities
+
 ( TODO write me)
-
-
-
-
 
 It depends a bit how you want to "start" the liability, but the management
 

@@ -1,11 +1,6 @@
-(TODO write me)
-
-
-## Detection methods
+# Duplicate detection
 
 There are two duplicate detection methods: content-based and identifier-based. It's up to you to pick one.
-
-
 
 ### Content-based
 

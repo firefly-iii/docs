@@ -1,6 +1,4 @@
-(TODO cleanup)
-
-(TODO link to demo)
+# Public installation
 
 There is a public (cloud-based) instance of the Firefly III Data Importer running on [https://data-importer.firefly-iii.org](https://data-importer.firefly-iii.org) that anybody can use.
 
@@ -13,4 +11,4 @@ You can use this instance to import data into your own installation. Please keep
 I appreciate the complexity of running the data importer for yourself so this cloud instance can help you import data into your own installation.
 
 !!! warning "Be careful"
-There **no guarantee** that the server won't be hacked. You also have **no guarantee** that I won't snoop through your files. A bug may make your files public to other users. I'm afraid I can give you zero guarantees and no warranty.
+    There **no guarantee** that the server won't be hacked. You also have **no guarantee** that I won't snoop through your files. A bug may make your files public to other users. I'm afraid I can give you zero guarantees and no warranty.

@@ -1,13 +1,12 @@
-
-(TODO validate and cleanup)
+# FAQ for Docker-related questions
 
 ## Where is the Dockerfile?
 
-See this [separate repository](https://dev.azure.com/Firefly-III/_git/MainImage) on Azure. The Firefly III image is built there as well.
+- [Firefly III](https://dev.azure.com/Firefly-III/_git/MainImage?path=/Dockerfile)
+- [Firefly III Data Importer](https://dev.azure.com/Firefly-III/_git/ImportToolImage)
+- [Firefly III shared base image](https://dev.azure.com/Firefly-III/_git/BaseImage?path=/apache-8.3/Dockerfile)
 
 ## Can I run it under a reverse proxy from a subdirectory?
-
-- Can I host it under a sub-folder in a reverse-proxy?
 
 Yes. For the standard Docker image, follow [these instructions on GitHub](https://github.com/firefly-iii/firefly-iii/discussions/4892)
 
@@ -79,7 +78,7 @@ All your Docker commands must run as `www-data`, also in cron jobs:
 
 ## How do I debug a cron job on Docker?
 
-Enable [debug mode](other.md#how-do-i-enable-debug-mode). Open a new terminal window, and tail the logs from your Firefly III docker container:
+Enable [debug mode](../../how-to/general/debug.md). Open a new terminal window, and tail the logs from your Firefly III docker container:
 
 ```bash
 docker logs -f CONTAINERID
@@ -93,7 +92,7 @@ docker exec --user www-data CONTAINERID /usr/local/bin/php /var/www/html/artisan
 
 In the command you see a date. Change it to be the first day of the *current* month in the format `YYYY-MM-DD`.
 
-## Something something Authentik?
+## Something about Authentik?
 
 Set the environment variable as follows:
 

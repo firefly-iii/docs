@@ -1,5 +1,4 @@
-(TODO validate and cleanup)
-
+# Using Firefly III, questions
 
 ## Auto complete is case-sensitive?
 

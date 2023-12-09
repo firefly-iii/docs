@@ -110,8 +110,6 @@ nav:
   - Reference guides:
       - Home: references/index.md
       - Firefly III:
-          - The database: references/firefly-iii/database.md
-          - Security: references/firefly-iii/security.md
           - The CLI: references/firefly-iii/cli.md
           - Account types: references/firefly-iii/account-types.md
           - Transaction types: references/firefly-iii/transaction-types.md
@@ -127,9 +125,10 @@ nav:
           - Full changelog: references/firefly-iii/changelog.md
       - Data Importer:
           - JSON configuration file: references/data-importer/json.md
-          - Column roles: references/data-importer/roles.md
+          - Data field roles: references/data-importer/roles.md
           - Third-party tools: references/data-importer/third-party-tools.md
           - Public installation: references/data-importer/public.md
+          - Duplicate detection: references/data-importer/duplicate-detection.md
           - Full changelog: references/data-importer/changelog.md
       - Frequently Asked Questions:
           - Firefly III:

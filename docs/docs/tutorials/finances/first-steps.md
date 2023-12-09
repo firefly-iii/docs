@@ -1,3 +1,8 @@
+# Create accounts and transactions
+
+!!! tip
+    I've not yet finished writing this tutorial. Some items may not be filled in yet. I apologize for the inconvenience. Please refer to the [support page](../../references/support.md) if you have questions.
+
 Let's assume you managed to install Firefly III using the [how-to guides](../../how-to/index.md). You've got a working installation, and you're ready to go. What's next?
 
 In this tutorial you will learn how to set up your first accounts so they match your bank statements. You will also learn how to create some transactions.

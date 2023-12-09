@@ -1,49 +1,42 @@
+# General installation and running questions
 
-(TODO validate and cleanup)
+## How do I set TLS in Firefly III or the data importer?
 
-## Set TLS in the data importer
+If you wish to enable SSL as well, both apps respects the HTTP header `X-Forwarded-Proto`.
 
-```
+If you are using Nginx add the following to your location block:
+
+```text
+proxy_set_header X-Forwarded-Proto $scheme;
 proxy_set_header X-Forwarded-Host $host;
 proxy_set_header X-Forwarded-Server $host;
-proxy_set_header X-Forwarded-Proto $scheme;
 proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
 proxy_set_header Host $host;
+# This line is optional and may help in some cases.
+# proxy_set_header X-Forwarded-Port $server_port;
 client_max_body_size 64M;
 proxy_read_timeout 300s;
 ```
 
+For Apache, use something like:
 
-## I get page load errors because the protocols don't match
-
-* "It only loads over http and not https!"
-* "Why doesn't the data importer support HTTPS?"
-* "How can I rewrite URLs to https?"
-
-You may see something like "The page at X was loaded over https, but requested insecure script X". This happens when your reverse proxy isn't configured correctly. For nginx:
-
+```text
+<VirtualHost *:443>
+        ServerName firefly.mydomain.com
+        ServerAdmin EMAIL
+        ProxyPreserveHost On
+        ProxyRequests Off
+        SSLEngine On
+        SSLCertificateFile      /etc/letsencrypt/live/.../fullchain.pem
+        SSLCertificateKeyFile   /etc/letsencrypt/live/.../privkey.pem
+        ProxyPass / http://127.0.0.1:8080/
+        ProxyPassReverse / http://127.0.0.1:8080/
+        ErrorLog ${APACHE_LOG_DIR}/finance_error.log
+        CustomLog ${APACHE_LOG_DIR}/finance_access.log combined
+        RequestHeader set X-Forwarded-Proto expr=%{REQUEST_SCHEME}
+        RequestHeader set X-Forwarded-SSL expr=%{HTTPS}
+</VirtualHost>
 ```
-location / {
-	proxy_set_header X-Forwarded-Host $host;
-	proxy_set_header X-Forwarded-Server $host;
-	proxy_set_header X-Forwarded-Proto $scheme;
-	proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-	proxy_set_header Host $host;
-
-	# pass to Docker container
-	proxy_pass http://127.0.0.1:10011$uri$is_args$args;
-}
-```
-
-If you run some kind of reverse proxy manager, probably the most important instruction in the code block is this one:
-
-```
-proxy_set_header X-Forwarded-Proto $scheme;
-```
-
-This line instructs your forward proxy to tell Firefly III to use "https" instead of "http". Whatever software you use, if you can get it to include this header, it will probably start working.
-
-
 
 ## I can't seem to get https working with Caddy
 
@@ -62,8 +55,7 @@ To run the data importer behind a reverse proxy, make sure you set the `TRUSTED_
 Some setups have a bad time handling cookies, and without support for cookies the Data Importer doesn't know what you want to do. Make sure that
 
 - You don't run the data importer in a subdirectory
-- The cookie settings in the .env file are correct.
-  =======
+- The cookie settings in the `.env` file are correct.
 
 ## 502 Bad Gateway errors
 
@@ -87,27 +79,6 @@ server {
     fastcgi_buffers  16 16k;
     fastcgi_buffer_size  32k;
     
-}
-```
-
-## I get page load errors because the protocols don't match
-
-* "It only loads over http and not https!"
-* "Why doesn't the data importer support HTTPS?"
-* "How can I rewrite URLs to https?"
-
-You may see something like "The page at X was loaded over https, but requested insecure script X". This happens when your reverse proxy isn't configured correctly. For nginx:
-
-```
-location / {
-	proxy_set_header X-Forwarded-Host $host;
-	proxy_set_header X-Forwarded-Server $host;
-	proxy_set_header X-Forwarded-Proto $scheme;
-	proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-	proxy_set_header Host $host;
-
-	# pass to Docker container
-	proxy_pass http://127.0.0.1:10011$uri$is_args$args;
 }
 ```
 
@@ -211,6 +182,9 @@ Then you are ready to install the database in PostgreSQL:
 php artisan migrate --seed
 php artisan firefly-iii:upgrade-database
 ```
+
+Check out [this GitHub discussion](https://github.com/orgs/firefly-iii/discussions/7698#discussioncomment-6546883) for a guide to migrate.
+
 
 ## I see a white page and nothing else?
 
@@ -329,6 +303,3 @@ If you're using Docker, this may also happen when you run "php artisan" commands
 
 If the problem persists run your cron job as the "www-data" user so the cache directory doesn't get mixed up: `sudo -u www-data php artisan [..]`.
 
-## I want to migrate to PostgreSQL?
-
-Check out [this GitHub discussion](https://github.com/orgs/firefly-iii/discussions/7698#discussioncomment-6546883) with a guide.

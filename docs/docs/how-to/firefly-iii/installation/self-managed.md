@@ -1,6 +1,4 @@
-# Self-hosted server
-
-(TODO cleanup and fix links)
+# Self-managed server
 
 If you have your own (virtual) web server you can use this guide to install Firefly III. You may have some ingredients prepared already.
 
@@ -97,25 +95,13 @@ Now you should be able to visit [http://localhost/firefly-iii/public](http://loc
 
 ### It doesn't work!
 
-This manual can't list all the possible exceptions and errors you may run into. Some common issues are documented [in the FAQ](../faq/self-hosted.md).
+This manual can't list all the possible exceptions and errors you may run into. Some common issues are documented [in the FAQ](../../../references/faq/install.md).
 
 Look in these directions when you're running into problems:
 
 * Apache may not have mod_rewrite enabled or the htaccess file isn't activated (`AllowOverride`).
 * Nginx may not have the correct `try_files` instruction in the `location` block.
 
-Good luck!
-
 ## Visiting Firefly III
 
-### Browsing to site
-
-Browsing to the site should be easy. You should see a login screen.
-
-### Registering an account
-
-You cannot log in yet. Click on "Register a new account" and fill in the form.
-
-### Your first accounts
-
-You will be logged in automatically. Follow the instructions and you are done!
+Check out [the tutorial on creating accounts and transactions](../../../tutorials/finances/first-steps.md).

@@ -1,11 +1,9 @@
-(TODO cleanup)
-
-# Other data import tools
+# Third-party tools
 
 There are various scripts and tools you can use, if the Firefly III Data Importer does not fit your use case.
 
 !!! info
-These are all developed by other users, feel free to contact them if you have support questions.
+    These are all developed by other users, feel free to contact them if you have support questions.
 
 ## Transaction classification
 

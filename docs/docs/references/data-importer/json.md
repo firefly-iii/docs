@@ -1,15 +1,12 @@
-(TODO cleanup, link to explain page)
+# JSON configuration file
 
-# JSON
-
-The data importer generates an import file each time you import data. You can download the configuration file during or after the import.
+The data importer generates an import configuration file each time you import data. You can download the configuration file during or after the import.
 
 You can use it to quickly configure your import the way you want to.
 
 ## Pre-made import configurations
 
-There's a repository on GitHub
-with **[import configurations](https://github.com/firefly-iii/import-configurations)** for common banks and financial institutions.
+There's a repository on GitHub with [import configurations](https://github.com/firefly-iii/import-configurations) for common banks and financial institutions.
 
 You can store pre-made configuration files in the data importer. This can be useful if you import regularly.
 
@@ -25,7 +22,7 @@ docker run [..] -v /home/user/configurations:/configurations [..] -e JSON_CONFIG
 
 This will show a dropdown with your JSON files ready to be selected:
 
-![Selecting pre-configured JSON files](../how-to-use/images/preselect.png)
+![Selecting pre-configured JSON files](../../images/references/data-importer/preselect.png)
 
 ## Example file
 
@@ -96,7 +93,7 @@ This is a typical configuration file with all options:
 ## Fields and values
 
 !!! info
-Some options only apply to camt.053 files, others are exclusive to camt.053 files.
+    Some options only apply to CSV files, others are exclusive to camt.053 files.
 
 ### date
 

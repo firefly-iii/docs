@@ -1,14 +1,12 @@
 # Reference guides
 
-(TODO link to pages)
-
 These pages will give you more information on the (inner) workings of Firefly III, the API and other things.
 
 Popular pages include:
 
-1. The API
-2. The database architecture
-3. Options and settings for rules and search
+1. The [API](firefly-iii/api/index.md)
+2. The [database architecture](firefly-iii/database.md)
+3. Options and settings for [rules](firefly-iii/rule-triggers.md) and [search](firefly-iii/search.md).
 
 ## Missing something?
 
@@ -20,11 +18,4 @@ Please open an [issue on GitHub](https://github.com/firefly-iii/firefly-iii/issu
 
 ## Would you like to know more?
 
-(TODO link to support page)
-
-You can contact me at [james@firefly-iii.org](mailto:james@firefly-iii.org), you may open an issue or contact me through the support channels:
-
-- [GitHub Discussions for questions and support](https://github.com/firefly-iii/firefly-iii/discussions/)
-- [Gitter.im for a good chat and a quick answer](https://gitter.im/firefly-iii/firefly-iii)
-- [GitHub Issues for bugs and issues](https://github.com/firefly-iii/firefly-iii/issues)
-- Follow me around for news and updates on <a rel="me" href="https://fosstodon.org/@ff3">Mastodon</a>
+Check out the [support page](support.md).

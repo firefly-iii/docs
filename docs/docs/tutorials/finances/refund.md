@@ -1,3 +1,8 @@
+# Process a refund
+
+!!! tip
+    I've not yet finished writing this tutorial. Some items may not be filled in yet. I apologize for the inconvenience. Please refer to the [support page](../../references/support.md) if you have questions.
+
 (TODO write tutorial structure)
 
 (TODO incorporate questions below)
@@ -21,3 +26,14 @@ You may get a partial refund from a vendor. If you add this money as a deposit, 
 2. Add a deposit for the refund, and increase your budget to match the new room for expenses you just created. It will still show up in reports as if you spent more than you did.
 
 Generally, the first method is recommended when the vendor makes a mistake. The second one is recommended when you overspent.
+
+## What do I do with cashback actions?
+
+When you buy a new 500 TV, and they give you a 50 cashback. What do you do?
+
+1. Register an 500 withdrawal for the TV and a 50 deposit for the cashback.
+2. Register just the withdrawal at 450.
+
+Both options are valid. You can't merge these in one transaction. But less is more, and I suggest the second option. That way you have less transactions to manage and the price you actually paid for the television is reflected in the transaction.
+
+When you use the cashback to buy something else at a discount, apply the difference in the second transaction. So if you were able to buy a 90 blender for 40 with the cashback from the TV, make a withdrawal for 40.

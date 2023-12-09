@@ -1,14 +1,12 @@
-(TODO validate and cleanup)
-
+# General Firefly III questions
 
 ## Is it multi-user?
 
-Yes. For security reasons Firefly III opens up the registration form only for the first user, but anybody can register an account if you enable this under **Administration** &gt; **Configuration**. Keep in mind that you won't be able to _share_ your administration. This is a work in progress.
+Yes. For security reasons Firefly III opens up the registration form only for the first user. See also [how to make Firefly III mult-user](../../../how-to/firefly-iii/features/multi-user.md). Keep in mind that you won't be able to _share_ your administration. This is a work in progress.
 
 ## Can I share one administration with multiple users?
 
 Unfortunately not. Each administration is tightly locked to a single user. If you want to share your financial administration with your partner or somebody else, you must share the username and password with them.
-
 
 ## How does it compare to YNAB, Mint, GNUCash, Excel?
 
@@ -36,7 +34,6 @@ Two differences between zero-sum budgeting and Firefly III:
 When I built Firefly III I was over 5K in debt and this helped me pay it off in less than a year: a monthly budget routine separated from my income, fixed amounts at the start of each month, all income to the savings account. Firefly III is geared towards predetermining your budgets, allocating funds to those budgets *only* and then spend it.
 
 See [personal finances](../more-information/personal-finances.md) for more information.
-
 
 ## Will Firefly III support PSD2?
 

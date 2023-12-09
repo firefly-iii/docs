@@ -1,7 +1,5 @@
 # Tutorials
 
-(TODO make links)
-
 Check out the following tutorials about Firefly III and the Data Importer.
 
 Please take note that you can learn installing Firefly III or the Data Importer from the **[how-to guides](../how-to/index.md)**.
@@ -10,9 +8,9 @@ The menu on the left will guide you through the tutorial section.
 
 Popular choices are:
 
-1. How to import a simple CSV file using the Data Importer
-2. How to use piggy banks to save for money
-3. How to process refunds
+1. How to [import a simple CSV file using the Data Importer](data-importer/csv.md)
+2. How to use [piggy banks to save for money](finances/piggy-bank.md)
+3. How to [process refunds](finances/refund.md)
 
 More choices are in the menu.
 
@@ -26,11 +24,4 @@ Please open an [issue on GitHub](https://github.com/firefly-iii/firefly-iii/issu
 
 ## Would you like to know more?
 
-(TODO link to support page instead)
-
-You can contact me at [james@firefly-iii.org](mailto:james@firefly-iii.org), you may open an issue or contact me through the support channels:
-
-- [GitHub Discussions for questions and support](https://github.com/firefly-iii/firefly-iii/discussions/)
-- [Gitter.im for a good chat and a quick answer](https://gitter.im/firefly-iii/firefly-iii)
-- [GitHub Issues for bugs and issues](https://github.com/firefly-iii/firefly-iii/issues)
-- Follow me around for news and updates on <a rel="me" href="https://fosstodon.org/@ff3">Mastodon</a>
+Check out the [support page](../references/support.md).

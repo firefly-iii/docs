@@ -1,6 +1,6 @@
 # How to organize transactions
 
-(TODO write me)
+Transactions are, naturally, the core of how you manage your finances. You can create transactions manually or have them imported by the data importer.
 
 Transactions have a few useful fields:
 
@@ -10,13 +10,17 @@ Transactions have a few useful fields:
 * The accounts involved (from and to)
 * .. and some meta-information.
 
-In Firefly III, a transaction can be a withdrawal, a deposit or a transfer. Beyond the obvious, they are slightly different from one another.
+In Firefly III, a transaction can be a withdrawal, a deposit or a transfer. Beyond the obvious, they are slightly different from one another. The [reference to all transaction types](../../../references/firefly-iii/transaction-types.md) explains more about them.
 
 ## Withdrawals
 
-To create a withdrawal select a source account first. This should be an [asset account](accounts.md) or a [liability](liabilities.md). Then select a destination account (an expense account) or free-type a new one. Withdrawals can also be assigned a [budget](organizing.md).
+Withdrawals are meant to record expenses. The source account of each withdrawal is an asset account, and the destination account is an expense account.
+
+To create a withdrawal select a source account first. This should be an [asset account](accounts.md) or a [liability](liabilities.md). Then select a destination account (an expense account) or free-type a new one. Withdrawals can also be assigned a [budget](budgets.md).
 
 Although the form allows you to free-type a destination account as well, this may fail and the transaction can't be saved.
+
+If you want to store cash withdrawals, be sure to read [how to manage cash](cash.md).
 
 ## Deposits
 
@@ -24,12 +28,11 @@ When you wish to create a deposit, select a revenue account first, as the source
 
 Although the form allows you to free-type a destination account as well, this may fail and the transaction can't be saved.
 
+If you want to store cash deposits, be sure to read [how to manage cash](cash.md).
+
 ## Transfers
 
 A transfer is created only between existing asset accounts. Select an asset account for both the source and destination from the free-form fields. Transfers can be linked to [piggy banks](piggies.md), to automatically add or remove money from the piggy bank you select.
-
-
-
 
 ## Split transactions
 
@@ -43,7 +46,7 @@ However, often an expense tells a story. Take grocery receipts for example. It's
 
 Likewise, your salary may have multiple components. Your base salary may be 1200. Plus 100 bonus. Etc. All that information is lost when you enter it using a singular, not split deposit.
 
-![Transaction with multiple parts](images/transaction5.png)
+![Transaction with multiple parts](../../../images/how-to/firefly-iii/finances/transaction5.png)
 
 Any time you create a deposit, transfer or a withdrawal, Firefly III lets you **split** a transaction into multiple parts. When you do this, you can:
 
@@ -52,8 +55,6 @@ Any time you create a deposit, transfer or a withdrawal, Firefly III lets you **
 * Categorize money differently.
 
 You can split your entire groceries-receipt into small "sub"-transactions. Or you can specify each component of your salary.
-
-
 
 ### Constraints
 
@@ -67,7 +68,7 @@ It's important to realise the following constraints when dealing with split tran
 
 More often than not a transaction isn't just "a transaction" but a connected to some other transactions. Maybe you've been reimbursed money by your boss. Maybe an expense is paid back to you by a friend. Or perhaps a friend paid you back for something or other.
 
-![Inward link](./images/links1.png)
+![Inward link](../../../images/how-to/firefly-iii/finances/links1.png)
 
 In Firefly III you can store these links between transactions. By default, four link types are available. You can see these under Administration > Transaction links configuration.
 
@@ -78,7 +79,7 @@ In Firefly III you can store these links between transactions. By default, four 
 
 These links work both ways. When transaction A has been refunded by transaction B, B is noted to refund A.
 
-![Outward link](./images/links2.png)
+![Outward link](../../../images/how-to/firefly-iii/finances/links2.png)
 
 You can also add your own link types if you want to.
 
@@ -90,12 +91,3 @@ You can remove or reverse a link once it has been created.
 
 It is important to realise that links don't *do* anything. They won't change your transactions, or subtract amounts or anything like that.
 
-### Screenshots
-
-![The "Lunch with client" expense is reimbursed by your boss in transaction "Lunch reimbursement".](./images/links-inward.png)
-
-![Vice versa, "Lunch reimbursement" reimburses you for "Lunch with client".](./images/links-outward.png)
-
-![Use this modal to create a new link](./images/links-modal.png)
-
-![You can delete the link or make the transactions switch positions.](./images/links-change.png)
