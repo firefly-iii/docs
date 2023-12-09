@@ -1,14 +1,12 @@
 # How to talk to the API
 
-(TODO write me)
-
-To read more about Personal Access Token, check out the bottom of this page.
+To read more about Personal Access Tokens, check out the bottom of this page.
 
 ## Authentication
 
 The API uses the OAuth2 workflow. You need to create OAuth2 Clients in your profile when logged in.
 
-![Your OAuth2 Clients as they would be visible in your profile](images/api-tokens.png)
+![Your OAuth2 Clients as they would be visible in your profile](../../../images/how-to/firefly-iii/features/api-tokens.png)
 
 These clients have a secret (visible in the screenshot). The secret can be exchanged for an access token. The access token is used to access the API.
 
@@ -17,7 +15,7 @@ Firefly III offers the following end points that can be used in applications tha
 * `/oauth/authorize`
 * `/oauth/token`
 
-![Here is the OAuth2 screen from Postman.](images/api-postman.png)
+![Here is the OAuth2 screen from Postman.](../../../images/how-to/firefly-iii/features/api-postman.png)
 
 Here you see how Postman would use the secret to get an access token. What you can build in OAuth2 is out of the scope of this document.
 
@@ -29,15 +27,15 @@ Go to your profile page (visit `/profile`) and follow these instructions:
 
 Click on "create new token":
 
-![Click on &quot;create new token&quot;](images/pat-new.png)
+![Click on &quot;create new token&quot;](../../../images/how-to/firefly-iii/features/pat-new.png)
 
 Give your token a name you recognize:
 
-![Give your token a name you recognize.](images/pat-name.png)
+![Give your token a name you recognize.](../../../images/how-to/firefly-iii/features/pat-name.png)
 
 Copy the entire token. Yes, it's very long!
 
-![Copy the entire token.](images/pat-long.png)
+![Copy the entire token.](../../../images/how-to/firefly-iii/features/pat-long.png)
 
 To use the token you have to pass an `Authorization: Bearer <token>` HTTP header. As an example in curl:
 
@@ -55,13 +53,13 @@ curl -X GET 'https://your-domain/api/v1/webhooks' \
 
 You can generate your own Personal Access Token on the Profile page. Login to your Firefly III instance, go to "Options" > "Profile" > "OAuth" and find "Personal Access Tokens". Create a new Personal Access Token by clicking on "Create New Token". Give it a recognizable name and press "Create". The Personal Access Token is pretty long. Use a tool like Notepad++ or Visual Studio Code to copy-and-paste it.
 
-![Click the right button.](images/pat1.png)
+![Click the right button.](../../../images/how-to/firefly-iii/features/pat1.png)
 
-![Give the personal access token a name.](images/pat2.png)
+![Give the personal access token a name.](../../../images/how-to/firefly-iii/features/pat2.png)
 
-![Copy and paste the token for use in the importer.](images/pat3.png)
+![Copy and paste the token for use in the importer.](../../../images/how-to/firefly-iii/features/pat3.png)
 
-![Authentication is reported.](images/pat4.png)
+![Authentication is reported.](../../../images/how-to/firefly-iii/features/pat4.png)
 
 ### Client ID + Firefly III URL
 
@@ -71,13 +69,7 @@ Uncheck the "confidential" checkbox.
 
 ## Callback URL
 
-It is
-
-*
-
-*very
-important
-** that the callback URL is correct. The callback is the following:
+It is **very important** that the callback URL is correct. The callback is the following:
 
 ```
 http://[DATA IMPORTER]/callback
@@ -91,6 +83,6 @@ Some common examples include:
 
 But ALWAYS add `/callback` or you'll run into weird errors later.
 
-![This is the correct client ID](images/cid1.png)
+![This is the correct client ID](../../../images/how-to/firefly-iii/features/cid1.png)
 
-![Fill in the details correctly](images/cid2.png)
+![Fill in the details correctly](../../../images/how-to/firefly-iii/features/cid2.png)

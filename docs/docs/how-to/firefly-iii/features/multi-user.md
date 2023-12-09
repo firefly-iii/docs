@@ -1,5 +1,7 @@
-(TODO write me)
+# How to make Firefly III multi-user
 
+The first user that registers itself automatically becomes the owner. No more registrations will be allowed.
 
+To enable registrations again, go to `/admin` and click "Configuration options for Firefly III".
 
-Firefly III will allow one user to register itself after which registration will be blocked. The user who first registered is made administrator and can change the setting over at `/admin` to allow others to register.
+Unselect "Disable user registration" and press "Store configuration".

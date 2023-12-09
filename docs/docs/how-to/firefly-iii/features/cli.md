@@ -1,10 +1,8 @@
-(TODO write me)
+# CLI / Command Line Interface
 
-See also list of commands
+Firefly III has a few commands you can use. See [this reference to a list of commands](../../../references/firefly-iii/cli.md).
 
-## Execute a command
-
-### Docker
+## Docker
 
 Run the following command on your command line, and replace COMMAND:COMMAND with the actual command from the list below.
 
@@ -18,7 +16,7 @@ If this doesn't work, replace the `$(..)` part with your actual Docker container
 docker exec -it abcde php artisan COMMAND:COMMAND
 ```
 
-### Self-hosted
+## Self-managed
 
 Run:
 
@@ -27,6 +25,6 @@ cd /var/www/html/firefly-iii
 php artisan COMMAND:COMMAND
 ```
 
-### Third-party
+## Third-party
 
-Most third party systems like Heroku don't allow you to do this.
+Most third party systems, like Heroku, don't allow you to do this.

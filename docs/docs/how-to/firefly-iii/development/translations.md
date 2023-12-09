@@ -1,20 +1,12 @@
-(TODO clean up, refresh content)
-
 # Translating Firefly III
 
 First of all, thank you for taking the time to help get Firefly III translated in as many languages as possible. Translation work is tedious and concentrated work, and I appreciate all your efforts. To make translating Firefly III as easy as possible I wrote this little guide to get you started.
 
 ## Target language
 
-Ensure the language you want to translate in is listed [on this page](https://crowdin.com/project/firefly-iii). If not, [send me a message](../support/index.md).
+Ensure the language you want to translate in is listed [on this page](https://crowdin.com/project/firefly-iii). If not, [see the instructions on the Support page](../../../references/support.md).
 
 If you contact me, tell me what your language is called _in your language_. For example, Dutch in Dutch is `Nederlands`.
-
-## Things to pay attention to
-
-Some things you'll need to know when translating text:
-
-* I try to make Firefly III user friendly. Whenever possible skip formal language constructs.
 
 ## Translate online
 
@@ -28,19 +20,19 @@ You can hack your installation of Firefly III to make it show your language, eve
 
 First, open `app/config/firefly.php` in your favorite text editor and search for the languages' configuration. You should see a bunch of languages listed in a row:
 
-![Enabled languages](images/enabled.png)
+![Enabled languages](../../../images/how-to/firefly-iii/development/enabled.png)
 
-Below that, a list of languages that are not enabled yet. Each line is preceded by `//`.
+Below that, a list of languages that are not enabled yet. Each line is preceded by `//`. If it's not there yet, you can add it.
 
-![Disabled languages](images/disabled.png)
+![Disabled languages](../../../images/how-to/firefly-iii/development/disabled.png)
 
 Remove the `//` to enable the language of your choice.
 
-![Klingon can now be translated](images/enabled_single.png)
+![Klingon can now be translated](../../../images/how-to/firefly-iii/development/enabled_single.png)
 
 You can now select this language in your settings.
 
-![Klingon can now be translated](images/enabled_select.png)
+![Klingon can now be translated](../../../images/how-to/firefly-iii/development/enabled_select.png)
 
 ### Download the right files
 
@@ -48,16 +40,16 @@ Everything in Firefly III will still be in English. You need to download a zip f
 
 Go to [Crowdin](https://crowdin.com/project/firefly-iii), select your language and download a zip file of your language.
 
-![Download zip file](images/download_file.png)
+![Download zip file](../../../images/how-to/firefly-iii/development/download_file.png)
 
 In the zip file, you'll find a directory called `resources/lang/xx_XX` where `xx_XX` is your language code. The PHP files you find in that directory inside the zip file must be extracted to `firefly-iii/resources/lang/xx_XX`. Change `xx_XX`, of course.
 
-![Zip file structure](images/zip_structure.png)
+![Zip file structure](../../../images/how-to/firefly-iii/development/zip_structure.png)
 
 Once the files are in place, you can start editing them directly. If you refresh your instance of Firefly III, the text should be translated instantly.
 
-![The very first translation](images/first_translation.png)
+![The very first translation](../../../images/how-to/firefly-iii/development/first_translation.png)
 
-![The result in Firefly III](images/result.png)
+![The result in Firefly III](../../../images/how-to/firefly-iii/development/result.png)
 
 Once you're done with a file, send the file [to me](../support/index.md), so I can upload the results to Crowdin.
