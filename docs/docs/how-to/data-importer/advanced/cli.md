@@ -75,7 +75,7 @@ fireflyiii/data-importer:latest
 ```
 
 !!! info "Personal Access Token"
-    This little trick only works when you use a [personal access token](../installation/configuration.md) (as you can see in the command).
+    This little trick only works when you use a [personal access token](../how-to-configure.md) (as you can see in the command).
 
 !!! info "GoCardless or Spectre information"
     If necessary, expand this command with the necessary GoCardless or Spectre keys and ID's.

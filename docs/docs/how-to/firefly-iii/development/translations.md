@@ -52,4 +52,4 @@ Once the files are in place, you can start editing them directly. If you refresh
 
 ![The result in Firefly III](../../../images/how-to/firefly-iii/development/result.png)
 
-Once you're done with a file, send the file [to me](../support/index.md), so I can upload the results to Crowdin.
+Once you're done with a file, send the file [to me](../../../references/support.md), so I can upload the results to Crowdin.

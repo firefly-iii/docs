@@ -36,7 +36,7 @@ However, often an expense tells a story. Take grocery receipts for example. It's
 
 Likewise, your salary may have multiple components. Your base salary may be 1200. Plus 100 bonus. Etc. All that information is lost when you enter it using a singular, not split deposit.
 
-![Transaction with multiple parts](images/transaction5.png)
+![Transaction with multiple parts](../../images/how-to/firefly-iii/finances/transaction5.png)
 
 Any time you create a deposit, transfer or a withdrawal, Firefly III lets you **split** a transaction into multiple parts. When you do this, you can:
 

@@ -89,4 +89,4 @@ Firefly III uses the following libraries and tools:
 
 ## License
 
-Firefly III is licensed under the [GNU Affero General Public License v3.0](https://github.com/firefly-iii/firefly-iii/blob/main/LICENSE) (or later). [Read more about this](more-information/license.md).
+Firefly III is licensed under the [GNU Affero General Public License v3.0](https://github.com/firefly-iii/firefly-iii/blob/main/LICENSE) (or later). [Read more about this](../explanation/more-information/license.md).

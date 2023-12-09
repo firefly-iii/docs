@@ -219,7 +219,7 @@ That should fix it!
 
 ## I get "Be right back"?
 
-Unfortunately, there is no straight answer without more information. Check out the `/storage/logs` directory of your Firefly III installation or check the logs of your Docker instance. The true error will be reported there. If necessary, enable [debug mode](other.md#how-do-i-enable-debug-mode) to collect more log files.
+Unfortunately, there is no straight answer without more information. Check out the `/storage/logs` directory of your Firefly III installation or check the logs of your Docker instance. The true error will be reported there. If necessary, enable [debug mode](../../how-to/general/debug.md) to collect more log files.
 
 ## Can I use it on PHP, but not version %PHPVERSION?
 
@@ -234,7 +234,7 @@ Raspberry Pi's and other microcomputers are not the most speedy devices. User [n
 
 ## Decimal points are missing, numbers are off?
 
-See "[Locales](../advanced-installation/locales.md)".
+See "[Locales](../../how-to/firefly-iii/advanced/locales.md)".
 
 ## I get 'BCMath' errors?
 

@@ -1,4 +1,4 @@
-# Locales
+# How to set up your local language
 
 Setting up the right "locale" is about:
 

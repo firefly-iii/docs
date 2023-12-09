@@ -2,7 +2,7 @@
 
 See also:
 
-- [How to talk to the API](../../../how-to/firefly-iii/advanced/api.md)
+- [How to talk to the API](../../../how-to/firefly-iii/features/api.md)
 
 Firefly III features a JSON API.
 

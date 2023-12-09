@@ -1,6 +1,6 @@
 # How to configure the data importer
 
-The Data Importer communicates with Firefly III over the [API](../../firefly-iii/api/index.md).
+The Data Importer communicates with Firefly III over the [API](../../references/firefly-iii/api/index.md).
 
 On this page you will read how to:
 
@@ -14,7 +14,7 @@ Please also refer to the following guides.
 - [How to install the data importer on your own server](installation/self-managed.md)
 - [General introduction to the data importer](../../explanation/data-importer/about/introduction.md)
 - [Explanation about GoCardless and Salt Edge Spectre](../../explanation/data-importer/about/gocardless-salt-edge.md)
-- [How to get a personal access token](../../how-to/firefly-iii/advanced/api.md)
+- [How to get a personal access token](../../how-to/firefly-iii/features/api.md)
 
 ## Access to Firefly III
 

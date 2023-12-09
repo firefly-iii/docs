@@ -1,6 +1,7 @@
 # Firefly III Data Importer
 
-The Firefly III data importer can be used to import data into Firefly III. It is a [separate tool](../separate-tool.md) from Firefly III with it's own [installation guide](../../../how-to/data-importer/installation/docker.md).
+The Firefly III data importer can be used to import data into Firefly III. It is a [separate tool](../separate-tool.md) from Firefly III with 
+its own [installation guide](../../../how-to/data-importer/installation/docker.md).
 
 The importer can import CSV files and CAMT.053 files. It can also connect to banks using third party services, namely [Salt Edge's Spectre API and GoCardless' bank API](gocardless-salt-edge.md).
 
@@ -13,9 +14,9 @@ Importing transactions can be complicated, so be sure to check out the following
 
 ### Can the data importer sync with my bank?
 
-Yes. The data importer uses Spectre and GoCardless to connect to over 6000 banks. Please see the [configuration page](../installation/configuration.md) for more details and read up on [GoCardless and Salt Edge / Spectre](spectre-and-nordigen.md).
+Yes. The data importer uses Spectre and GoCardless to connect to over 6000 banks. Please see the [configuration page](../../../how-to/data-importer/how-to-configure.md) for more details and read up on [GoCardless and Salt Edge / Spectre](gocardless-salt-edge.md).
 
-There is also a [Firefly III API](../../firefly-iii/index.md) that you can connect to \[YOUR BANK HERE\], if you are clever enough to build something in your favorite programming language.
+There is also a [Firefly III API](../../../references/firefly-iii/api/index.md) that you can connect to \[YOUR BANK HERE\], if you are clever enough to build something in your favorite programming language.
 
 ### Can you clean-up the transactions from \[my bank\]?
 

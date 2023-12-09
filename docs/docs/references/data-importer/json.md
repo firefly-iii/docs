@@ -131,12 +131,6 @@ significantly slow down the import. The execution of rules can be slow when you 
 If checked, next time you use the importer it will skip the configuration form. You can always go back to the form when
 using the user interface.
 
-### specifics
-
-"Specifics" are the bank specific scripts that can be applied to your import. They are deprecated and may be removed in
-a future version of the CSV importer. You can read more about them on the page
-about [import configuration](../how-to-use/configure-import.md).
-
 ### roles
 
 Each column in your CSV file gets a single role. This array in the JSON file indicates the role for each column. The
@@ -276,14 +270,14 @@ the "transaction amount". If you try, it will be ignored.
 
 ### duplicate_detection_method
 
-The CSV importer has three methods to detect duplicate transactions. The [import configuration](../how-to-use/configure-import.md)
+The CSV importer has three methods to detect duplicate transactions. The [reference](duplicate-detection.md)
 page has all the details. The JSON file reflects your choices.
 
 * `none`. Do no duplicate detection.
 * `classic`. Do content-based duplicate detection.
 * `cell`. Do identifier-based duplicate detection.
 
-Again, to learn more about these options, read about [import configuration](../how-to-use/configure-import.md).
+Again, to learn more about these options, read [the reference about duplicate detection](duplicate-detection.md).
 
 ### ignore_duplicate_lines
 
@@ -299,12 +293,12 @@ For `classic`, it will always be `true`. Otherwise, it's `false`.
 
 This contains the column number that contains the unique value for the duplicate detection. It's only ever used when you
 use the `cell`-method, which stands for identifier-based duplicate detection. Read more
-about [import configuration](../how-to-use/configure-import.md).
+about [duplicate detection](duplicate-detection.md).
 
 ### unique_column_type
 
 This contains the field type of the unique identifier. It's only ever used when you use the `cell`-method, which stands
-for identifier-based duplicate detection. Read more about [import configuration](../how-to-use/configure-import.md).
+for identifier-based duplicate detection. Read more about [duplicate detection](duplicate-detection.md).
 
 ### version
 

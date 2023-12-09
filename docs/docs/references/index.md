@@ -5,7 +5,7 @@ These pages will give you more information on the (inner) workings of Firefly II
 Popular pages include:
 
 1. The [API](firefly-iii/api/index.md)
-2. The [database architecture](firefly-iii/database.md)
+2. [Third-party apps](firefly-iii/third-parties/apps.md)
 3. Options and settings for [rules](firefly-iii/rule-triggers.md) and [search](firefly-iii/search.md).
 
 ## Missing something?

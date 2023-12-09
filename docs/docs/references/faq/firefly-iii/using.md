@@ -83,9 +83,9 @@ There are two reasons why resetting your password may not work.
 1. You signed up using a non-existent email address
 2. You did not configure correct email settings.
 
-You can correct the second situation using [the email settings](../advanced-installation/email.md).
+You can correct the second situation using [the email settings](../../../how-to/firefly-iii/advanced/notifications.md).
 
-By configuring Firefly III to save the email message to the log files (`MAIL_MAILER=log`) *and* [by enabling debug mode](other.md#how-do-i-enable-debug-mode), any password reset message will be stored to your log files. You can copy/paste the reset link from the email message in the log files.
+By configuring Firefly III to save the email message to the log files (`MAIL_MAILER=log`) *and* [by enabling debug mode](../../../how-to/general/debug.md), any password reset message will be stored to your log files. You can copy/paste the reset link from the email message in the log files.
 
 If the reset link can no longer be sent, you will have to enter your database to delete all entries from the `password_resets`-table.
 
@@ -107,7 +107,7 @@ There are two reasons why changing your email address may not work.
 1. You signed up using a non-existent email address
 2. You did not configure correct email settings.
 
-You have to *confirm* the change to your email address, and if you do not have the magic link from the mail message, this will not work. You can correct the second situation using [the email settings](../advanced-installation/email.md). Then you can reset everything back to normal.
+You have to *confirm* the change to your email address, and if you do not have the magic link from the mail message, this will not work. You can correct the second situation using [the email settings](../../../how-to/firefly-iii/advanced/notifications.md). Then you can reset everything back to normal.
 
 If you already broke things, use the following database queries to fix it. To learn how to execute them in Docker, please read the previous question.
 

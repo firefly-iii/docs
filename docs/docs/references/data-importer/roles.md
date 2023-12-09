@@ -2,7 +2,7 @@
 
 The data importer can import a lot of data. This page lists all the roles that a column can have. You can use this page to validate your CSV file.
 
-These options do not just apply to CSV files. Camt.053 files and Spectre and GoCardless imports also have roles assigned to their contents. For camt.053 there are less options for you to pick from per data field, since camt.053 standards are more strict. 
+These options do not just apply to CSV files. Camt.053 files and Spectre and GoCardless imports also have roles assigned to their contents. For camt.053 there are less options for you to pick from per data field, since camt.053 standards are stricter. 
 
 The roles for data importer from Spectre and GoCardless cannot be configured. Those are pre-set by the developer. 
 
@@ -108,7 +108,7 @@ Multilines notes spanning to more than one line can be imported, just remember t
 
 In Firefly III you'll see the notes this way:
 
-![How your notes will be presented in Firefly III](./images/multiline-notes-sample.png)
+![How your notes will be presented in Firefly III](../../images/references/data-importer/multiline-notes-sample.png)
 
 ## Debit/credit indicator
 

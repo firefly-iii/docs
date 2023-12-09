@@ -2,7 +2,7 @@
 
 There are a lot of interesting tools and apps built around the [Firefly III API](../api/index.md). Here's a list, in no particular order. Is your (favorite) tool not on the list? Submit a PR!
 
-Be sure to also check out [the list of import tools](../importing-data/index.md#other-import-tools).
+Be sure to also check out [the list of import tools](../../data-importer/third-party-tools.md).
 
 ## Mobile applications
 
