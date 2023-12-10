@@ -19,7 +19,8 @@ jobs:
           pip install mkdocs 
           pip install git+https://${MKDOCS_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git@master
           pip install mkdocs-git-revision-date-plugin mkdocs-redirects mkdocs-minify-plugin pillow cairosvg
-
+        env:
+          MKDOCS_TOKEN: ${{ secrets.MKDOCS_TOKEN }}
       - name: Build documentation
         run: |
           cd $GITHUB_WORKSPACE/docs
