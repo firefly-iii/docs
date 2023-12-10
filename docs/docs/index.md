@@ -1,23 +1,55 @@
 # Firefly III documentation
 
-Welcome. This site contains all the documentation for Firefly III and the associated tools. Please follow the links below or use the top bar navigation to go to the section of your choice. When in doubt, please use the search in the right-hand corner.
+Welcome. This site contains all the documentation for **Firefly III** and the **Data Importer**. Please follow the links below or use the top bar navigation to go to the section of your choice. When in doubt, please use the search in the top right-hand corner.
 
-## Firefly III
+## [Tutorials](tutorials/index.md)
 
-The [main documentation](firefly-iii/index.md) for Firefly III, including:
+Want to learn something new? Check out some excellent [tutorials](tutorials/index.md) for beginners and advanced users, such as:
 
-- The [Introduction](firefly-iii/about-firefly-iii/introduction.md?mtm_campaign=docu-internal&mtm_kwd=introduction)
-- How to install Firefly III using **[Docker](firefly-iii/installation/docker.md?mtm_campaign=docu-internal&mtm_kwd=docker)**
-- How to install Firefly III [on your own hosting](firefly-iii/installation/self-hosted.md?mtm_campaign=docu-internal&mtm_kwd=self_hosted)
+- Set up your first set of bank accounts
+- Manage your finances using budgets
+- Introduce piggy banks to save money
+- Predict expenses using bills
 
-## Data Importer
+Many more tutorials can be found in the [tutorials](tutorials/index.md)-section.
 
-The [Firefly III Data Importer](data-importer/index.md) is the nr. 1 tool to import data into Firefly III.
+## [How-to guides](how-to/index.md)
 
-## Other tools and libraries
+Are you looking to complete specific tasks? Check out the [how-to guides](how-to/index.md), and you will find things such as:
 
-Some [other tools and libraries](other-tools/index.md) part of the Firefly III network are documented here.
+- How to install Firefly III
+- How to install the Data Importer
+- How to use the command line
 
-## Contact
+More guides can be found in the [how-to guides](how-to/index.md) section.
 
-Find Firefly III on <a rel="me" href="https://fosstodon.org/@ff3">Mastodon</a>.
+## [References](references/index.md)
+
+There is plenty of knowledge to grasp to understand what Firefly III and the data importer are capable of. Read the references to learn about:
+
+- The Firefly III API
+- The structure of transactions and accounts
+
+Or anything else you can think of: look it up in the [references](references/index.md) section
+
+## [Explanation](explanation/index.md)
+
+To grasp what Firefly III is about you may need some simple information. Find it in the explanation section.
+
+- Who maintains Firefly III, and why
+- What the financial concepts are behind Firefly III
+
+Find more in the [explanation](explanation/index.md) section.
+
+## Contact and more information
+
+You can contact me at [james@firefly-iii.org](mailto:james@firefly-iii.org), you may open an issue or contact me through the support channels:
+
+- [GitHub Discussions for questions and support](https://github.com/firefly-iii/firefly-iii/discussions/)
+- [Gitter.im for a good chat and a quick answer](https://gitter.im/firefly-iii/firefly-iii)
+- [GitHub Issues for bugs and issues](https://github.com/firefly-iii/firefly-iii/issues)
+- Follow me around for news and updates on <a rel="me" href="https://fosstodon.org/@ff3">Mastodon</a>
+
+## Donate
+
+If you feel Firefly III made your life better, consider contributing as a sponsor. Please check out my [Patreon](https://www.patreon.com/jc5) and [GitHub Sponsors](https://github.com/sponsors/JC5) page for more information. Thank you for considering.
