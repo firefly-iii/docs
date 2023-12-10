@@ -12,7 +12,6 @@ site_url: https://docs.firefly-iii.org/
 dev_addr: 10.0.0.15:8000
 plugins:
   - search
-  - navigation.path
   - social:
       cards_layout_options:
         background_color: "#1e6581"
@@ -184,7 +183,9 @@ theme:
   name: material
   custom_dir: overrides
   features:
+    - navigation.instant
     - navigation.tabs
+    - navigation.path
     - content.action.edit
   palette:
     scheme: fireflyiii
