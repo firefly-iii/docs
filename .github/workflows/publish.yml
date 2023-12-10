@@ -16,7 +16,9 @@ jobs:
           sudo rm /usr/bin/pip
           sudo ln -s /usr/bin/python3 /usr/bin/python
           sudo ln -s /usr/bin/pip3 /usr/bin/pip
-          pip install mkdocs mkdocs-material mkdocs-git-revision-date-plugin mkdocs-redirects mkdocs-minify-plugin pillow cairosvg
+          pip install mkdocs 
+          pip install git+https://${MKDOCS_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git@master
+          pip install mkdocs-git-revision-date-plugin mkdocs-redirects mkdocs-minify-plugin pillow cairosvg
 
       - name: Build documentation
         run: |
