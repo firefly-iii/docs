@@ -1,5 +1,9 @@
 # Common data import issues and questions
 
+## All transactions are imported as today?
+
+Make sure that the date field in your CSV file (`2023-09-17`) is marked as the "Transaction" date, and make sure the format (`Y-m-d`) matches the actual content in the file. Follow the format in [this table](https://www.php.net/manual/en/datetime.format.php).
+
 ## Mixed content
 
 Some banks re-use the columns for different content. For example, "Sparkasse" (DE) uses the BIC column for other data if there is no BIC available. If your bank has similar issues, the import will probably fail. The best solution is to ignore the column entirely.
