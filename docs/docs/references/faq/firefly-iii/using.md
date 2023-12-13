@@ -118,3 +118,12 @@ update users set blocked=0, blocked_code=null where email="YOUR_NEW_MAIL"
 
 delete from preferences where name like "email_change_%" and user_id=YOUR_USER_ID;
 ```
+
+## I get "Transactions for user #x are off by 0.000000..."
+
+This may happen when importing data.
+
+1. Make a backup of your database. 
+2. Run the following command: `php artisan firefly-iii:force-decimal-size`
+
+For Docker, you'll have to put this in front of it: `docker exec -it [container] (command here)`. The container id can be found using `docker container ls`.

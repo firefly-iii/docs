@@ -18,3 +18,4 @@ You **don't**. You can only influence the balance of an account by actually maki
 ### But then what's the opening balance for?
 
 The opening balance is meant to set the balance of an account at the **start** of your Firefly III administration. That means that NO earlier transactions exist in your administration, and the opening balance reflects that. It summarizes all the transactions that happened before you started using Firefly III.
+
