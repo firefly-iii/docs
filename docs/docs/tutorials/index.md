@@ -1,3 +1,8 @@
+---
+hide:
+  - feedback
+---
+
 # Tutorials
 
 Check out the following tutorials about Firefly III and the Data Importer.

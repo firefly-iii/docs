@@ -1,3 +1,8 @@
+---
+hide:
+  - feedback
+---
+
 # How-to guides
 
 These how-to guides will show you how to do things. The guides are goal oriented and will get you to a specific point.

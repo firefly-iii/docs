@@ -1,3 +1,8 @@
+---
+hide:
+  - feedback
+---
+
 # Reference guides
 
 These pages will give you more information on the (inner) workings of Firefly III, the API and other things.

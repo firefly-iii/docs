@@ -1,3 +1,8 @@
+---
+hide:
+  - feedback
+---
+
 # Explanation
 
 If you want to know more about Firefly III or the Data Importer in general, or you're just browsing around, check out the menu on the left.
