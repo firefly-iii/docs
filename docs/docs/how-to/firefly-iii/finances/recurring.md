@@ -47,3 +47,8 @@ Optional information includes:
 - The category, budget, piggy bank and tags.
 
 If you wish to link a bill to the transaction, ensure the option to apply rules is checked and that the new transaction would match this rule.
+
+## Limitations
+
+1. You can't add a dynamic amount to a recurring transaction.
+2. You can't create split transactions.
