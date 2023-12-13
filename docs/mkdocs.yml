@@ -12,6 +12,7 @@ site_url: https://docs.firefly-iii.org/
 dev_addr: 10.0.0.15:8000
 plugins:
   - search
+  - optimize
   - social:
       cards_layout_options:
         background_color: "#1e6581"
@@ -202,3 +203,21 @@ theme:
       link: https://gitter.im/firefly-iii/firefly-iii
     - icon: fontawesome/solid/globe
       link: https://www.firefly-iii.org/?mtm_campaign=documentation&mtm_kwd=bottom-link
+extra:
+  analytics:
+    provider: custom
+    property: custom_property
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >-
+            Thanks for your feedback! Help us improve this page by
+            <a href="https://github.com/orgs/firefly-iii/discussions" target="_blank" rel="noopener">complaining about it on GitHub</a>.
