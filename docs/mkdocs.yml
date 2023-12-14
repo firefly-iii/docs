@@ -219,5 +219,5 @@ extra:
           name: This page could be improved
           data: 0
           note: >-
-            <p>Sorry to hear that :(. Please leave your feedback in the form below. It may take a moment to load. Thank you!</p>
+            <p>Sorry to hear that :(. Please leave your feedback down here <a href="https://github.com/orgs/firefly-iii/discussions">or on GitHub</a>. Thank you!</p>
             <div id="empty-feedback-form"></div>
