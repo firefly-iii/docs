@@ -184,7 +184,6 @@ theme:
   name: material
   custom_dir: overrides
   features:
-    - navigation.instant
     - navigation.tabs
     - navigation.path
     - content.action.edit
