@@ -36,8 +36,14 @@
                         _paq.push(['setSiteId', '8']);
                         _paq.push(['trackEvent', 'PageFeedback', page, data]);
                     })();
-
-                    console.log({page, data});
+                    if('0' === data) {
+                        console.log('Load form!');
+                        var element = document.getElementById('empty-feedback-form');
+                        element.setAttribute('data-tf-live', '01HHJ4Q8SVJGPQHPDE3V14DHSB');
+                        var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+                        g.src = '//embed.typeform.com/next/embed.js';
+                        s.parentNode.insertBefore(g, s);
+                    }
 
                     /* Disable form and show note, if given */
                     feedback.firstElementChild.disabled = true
