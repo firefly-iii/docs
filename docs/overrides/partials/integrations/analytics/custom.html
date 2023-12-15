@@ -34,8 +34,8 @@
                         var u="https://analytics.firefly-iii.org/";
                         _paq.push(['setTrackerUrl', u+'matomo.php']);
                         _paq.push(['setSiteId', '8']);
-                        _paq.push(['trackEvent', 'PageFeedback', page, data]);
-                        console.log('Pushed event!');
+                        _paq.push(['trackEvent', 'PageFeedback', 'SendFeedback', page, data]);
+                        console.log('Pushed event! #2');
                     })();
                     if('0' === data) {
                         var element = document.getElementById('empty-feedback-form');
