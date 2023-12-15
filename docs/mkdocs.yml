@@ -139,6 +139,7 @@ nav:
           - Data Importer:
               - General questions: references/faq/data-importer/general.md
               - Common import issues: references/faq/data-importer/import.md
+              - Salt Edge and GoCardless: references/faq/data-importer/salt-edge-gocardless.md
           - Installing and running: references/faq/install.md
           - Development: references/faq/development.md
           - Docker: references/faq/docker.md
