@@ -35,9 +35,9 @@
                         _paq.push(['setTrackerUrl', u+'matomo.php']);
                         _paq.push(['setSiteId', '8']);
                         _paq.push(['trackEvent', 'PageFeedback', page, data]);
+                        console.log('Pushed event!');
                     })();
                     if('0' === data) {
-                        console.log('Load form!');
                         var element = document.getElementById('empty-feedback-form');
                         element.setAttribute('data-tf-live', '01HHJ4Q8SVJGPQHPDE3V14DHSB');
                         var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
