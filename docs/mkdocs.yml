@@ -24,6 +24,13 @@ plugins:
         remove_comments: true
 markdown_extensions:
   - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 nav:
   - Home: index.md
   - Tutorials:
@@ -189,6 +196,9 @@ theme:
     - navigation.tabs
     - navigation.path
     - content.action.edit
+    - content.code.select
+    - content.code.annotate
+    - content.code.copy
   palette:
     scheme: fireflyiii
   logo: images/logo.png
