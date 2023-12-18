@@ -98,6 +98,7 @@ nav:
               - Using a self-managed server: how-to/data-importer/upgrade/self-managed.md
           - Importing data:
               - How to import CSV or CAMT.053 files: how-to/data-importer/import/csv.md
+              - How to automate the import: how-to/data-importer/import/automate.md
               - How to map data: how-to/data-importer/import/map-data.md
               - How to use Salt Edge: how-to/data-importer/import/salt-edge.md
               - How to use GoCardLess: how-to/data-importer/import/gocardless.md
