@@ -45,6 +45,8 @@ When you create a new rule, you can set an option called "stop processing". If y
 
 For any trigger, you can also set the "stop processing" option. If you do, and the trigger is hit, it will stop processing other triggers in the rule. Whether the actions get executed depends on how many triggers were fired so far. If you hit 2 out of 2 when "stop processing" was hit, the actions will fire.
 
+There's an exception this for non-strict rules (see earlier text). Since non-strict rules fire on ANY trigger, even when you set "stop processing other triggers", all triggers will be checked regardless. Non-strict rule can trigger on any trigger so it is pointless to stop processing other triggers.
+
 For each action, you can set "stop processing" as well. When you do, any actions after the current one will not fire.
 
 ## Apply rules
