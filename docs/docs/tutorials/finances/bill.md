@@ -55,7 +55,7 @@ to a bill that fall outside the bill's schedule. Firefly III will still link the
 
 ## See bill being paid
 
-On the bill page, you can see that the transaction is linked to the bill and the bill is now paid. You can also see the next expected payment date.
+On the bill page, you can see that the transaction is linked to the bill, and the bill is now paid. You can also see the next expected payment date.
 
 (TODO add screenshot)
 
