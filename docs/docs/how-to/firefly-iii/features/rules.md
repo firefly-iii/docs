@@ -41,13 +41,24 @@ You can refer to a piggy bank from a rule action, so the transaction's amount wi
 
 ## Stop processing?
 
+### Stop processing other rules
+
 When you create a new rule, you can set an option called "stop processing". If you set it, and the rule is triggered, other rules in the group will NOT be processed anymore.
+
+Example: you have three rules in a group to add the tag "Groceries" to your groceries. One for each store you frequent. Once the first rule has triggered, you no longer need to check the other two rules.
+
+### Stop processing other triggers
+
+!!! info 
+    This only applies to "non-strict" rules.
 
 For any trigger, you can also set the "stop processing" option. If you do, and the trigger is hit, it will stop processing other triggers in the rule. Whether the actions get executed depends on how many triggers were fired so far. If you hit 2 out of 2 when "stop processing" was hit, the actions will fire.
 
-There's an exception this for non-strict rules (see earlier text). Since non-strict rules fire on ANY trigger, even when you set "stop processing other triggers", all triggers will be checked regardless. Non-strict rule can trigger on any trigger so it is pointless to stop processing other triggers.
+Example: You need to hit any of three tags in your transactions: A, B or C. If you find A, you can stop looking for B or C.
 
-For each action, you can set "stop processing" as well. When you do, any actions after the current one will not fire.
+### Stop processing other actions
+
+For each action, you can set "stop processing" as well. When you do, if the action changes a transaction, any actions after the current one will not fire.
 
 ## Apply rules
 
