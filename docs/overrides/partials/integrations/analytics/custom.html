@@ -18,41 +18,30 @@
             var feedback = document.forms.feedback
             if (feedback) {
                 feedback.hidden = false
-
-
                 // start
                 /* Send feedback to Analytics */
                 for (var button of feedback.querySelectorAll("[type=submit]")) {
                     button.addEventListener("click", function (ev) {
                         ev.preventDefault()
 
-                        // post things:
-                        console.log('Pushed event! #1');
+                        // collect some things
+                        var page = document.location.pathname;
+                        var data = this.getAttribute("data-md-value");
+
+                        // post to custom script.
                         fetch("https://version.firefly-iii.org/support/submit_feedback.php", {
                             method: "POST",
                             body: 'feedback=' + data + '&page=' + page,
                         });
-                        console.log('Done! #1');
 
-                        /* Retrieve and send data */
-                        var page = document.location.pathname
-                        var data = this.getAttribute("data-md-value")
+
+                        // post to Matomo.
                         var _paq = window._paq = window._paq || [];
-                        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
                         (function () {
-                            var u = "https://analytics.firefly-iii.org/";
-                            _paq.push(['setTrackerUrl', u + 'matomo.php']);
+                            _paq.push(['setTrackerUrl', 'https://analytics.firefly-iii.org/matomo.php']);
                             _paq.push(['setSiteId', '8']);
                             _paq.push(['trackEvent', 'PageEvents', 'SendFeedback', page, data]);
-                            console.log('Pushed event! #2');
                         })();
-
-                        // post things:
-                        fetch("https://version.firefly-iii.org/support/submit_feedback.php", {
-                            method: "POST",
-                            body: 'feedback=' + data + '&page=' + page,
-                        });
-
 
                         if ('0' === data) {
                             var element = document.getElementById('empty-feedback-form');
@@ -62,13 +51,8 @@
                             s.parentNode.insertBefore(g, s);
                         }
 
-                        /* Disable form and show note, if given */
-                        feedback.firstElementChild.disabled = true
-                        var note = feedback.querySelector(
-                            ".md-feedback__note [data-md-value='" + data + "']"
-                        )
-                        if (note)
-                            note.hidden = false
+                        /* Disable form */
+                        feedback.firstElementChild.disabled = true;
                     })
                 }
                 // end
