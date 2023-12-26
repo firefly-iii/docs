@@ -31,7 +31,13 @@
                         // post to custom script.
                         fetch("https://version.firefly-iii.org/support/submit_feedback.php", {
                             method: "POST",
-                            body: 'feedback=' + data + '&page=' + page,
+                            body: JSON.stringify({
+                                feedback: data,
+                                page: page,
+                            }),
+                            headers: {
+                                "Content-type": "application/json; charset=UTF-8"
+                            }
                         });
 
 
