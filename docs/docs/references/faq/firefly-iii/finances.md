@@ -19,6 +19,15 @@ You **don't**. You can only influence the balance of an account by actually maki
 
 The opening balance is meant to set the balance of an account at the **start** of your Firefly III administration. That means that NO earlier transactions exist in your administration, and the opening balance reflects that. It summarizes all the transactions that happened before you started using Firefly III.
 
+### My bank automatically rounds transactions up, is that supported?
+
+Some banks will help you save money by rounding amounts up, i.e. from 3.95 to 4.00. The difference is deposited in your savings account. 
+
+Whether this is supported depends on how you import and manage transactions.
+
+1. If you create transactions yourself, it's easy to add a split for each transaction. You can also use [this autosave script](https://github.com/JC5/autosave) to help you.
+2. If you import transactions using CSV, GoCardless or another solution, it depends on your bank. Do they create these transactions for you? If so, you're in luck! If not, use [this autosave script](https://github.com/JC5/autosave) to help you.
+
 ### The charts are annoying!
 
 Yes, they are. Especially in two distinct cases:
