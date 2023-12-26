@@ -26,6 +26,14 @@
                     button.addEventListener("click", function (ev) {
                         ev.preventDefault()
 
+                        // post things:
+                        console.log('Pushed event! #1');
+                        fetch("https://version.firefly-iii.org/support/submit_feedback.php", {
+                            method: "POST",
+                            body: 'feedback=' + data + '&page=' + page,
+                        });
+                        console.log('Done! #1');
+
                         /* Retrieve and send data */
                         var page = document.location.pathname
                         var data = this.getAttribute("data-md-value")
@@ -42,10 +50,7 @@
                         // post things:
                         fetch("https://version.firefly-iii.org/support/submit_feedback.php", {
                             method: "POST",
-                            body: {
-                                feedback: data,
-                                page: page
-                            },
+                            body: 'feedback=' + data + '&page=' + page,
                         });
 
 
