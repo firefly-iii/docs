@@ -16,6 +16,7 @@
         // enable feedback form
         document.addEventListener("DOMContentLoaded", function () {
             var feedback = document.forms.feedback
+            if(feedback) {
             feedback.hidden = false
 
 
@@ -55,6 +56,7 @@
                 })
             }
             // end
+            }
 
         });
 
