@@ -3,7 +3,7 @@
 Firefly III has several feature that will only work when the cron job is running.
 
 !!! info "Which features need cron jobs?"
-    Automated budgets, recurring transactions, bill warnings and up-to-data currency exchange rate information all need cron jobs to function properly.
+    Automated budgets, recurring transactions, bill warnings and up-to-data currency exchange rate information all need a working cron job to function properly.
 
 ## Calling a command
 
@@ -14,16 +14,7 @@ If you are a bit of a Linux geek you can set up a cron job easily by running `cr
 0 3 * * * /usr/bin/php /var/www/html/artisan firefly-iii:cron
 ```
 
-## Request a page over the web
-
-You can also use a tool called cURL.
-
-```
-# cron job for Firefly III using cURL
-0 3 * * * curl https://demo.firefly-iii.org/api/v1/cron/[token]
-```
-
-The `[token]` value can be found on your `/profile` under the "Command line token" header. This will prevent others from spamming your cron job URL. An alternative to this token value is the `STATIC_CRON_TOKEN` environment variable. You can set this using the `.env` file, or by setting it through Docker. A little ahead on this page the difference is explained.
+The exact path to PHP and the path to Firefly III may be different in your case.
 
 ### Systemd timer
 
@@ -58,9 +49,20 @@ WantedBy=timers.target
 
 Copy these files to `/etc/systemd/system`. You must then enable (`systemctl enable firefly-iii-cron.timer`) and start (`systemctl start firefly-iii-cron.timer`) the timer. Verify the timer is registered with `systemctl --list-timers`. You may also want to run the service once manually to ensure it runs successfully: `systemctl start firefly-iii-cron.service`. You can check the results with `journalctl -u firefly-iii-cron`.
 
+## Request a page over the web
+
+You can also use a tool called cURL.
+
+```
+# cron job for Firefly III using cURL
+0 3 * * * curl https://demo.firefly-iii.org/api/v1/cron/[token]
+```
+
+The `[token]` value can be found on your `/profile` under the "Command line token" header. This will prevent others from spamming your cron job URL. An alternative to this token value is the `STATIC_CRON_TOKEN` environment variable. You can set this using the `.env` file, or by setting it through Docker. A little ahead on this page the difference is explained.
+
 ## Cron jobs in Docker
 
-The Docker image does *not* support cron jobs, but the Docker Compose image includes a cron job container.
+The Docker image does *not* support cron jobs, but the Docker Compose file includes a cron job container. You can see it in [the online docker compose file](https://github.com/firefly-iii/docker/blob/main/docker-compose.yml).
 
 ### Static cron token
 
@@ -68,42 +70,16 @@ The web address for the cron job is protected by a token. You can find this toke
 
 When you use Docker, this can be difficult to configure. So, you can set the `STATIC_CRON_TOKEN` to a string of **exactly** 32 characters. This will also be accepted as cron token.
 
-For example, use `-e STATIC_CRON_TOKEN=klI0JEC7TkDisfFuyjbRsIqATxmH5qRW`.
+For example, use `-e STATIC_CRON_TOKEN=klI0JEC7TkDisfFuyjbRsIqATxmH5qRW` or change your `.env` file to include a generated token.
 
-So there are two kinds of tokens you can use. The personal token from your `/profile` page, or a self-generated 32-character token.
+So there are two kinds of tokens you can use:
 
-```
-# cron job for Firefly III using cURL
-0 3 * * * curl https://demo.firefly-iii.org/api/v1/cron/klI0JEC7TkDisfFuyjbRsIqATxmH5qRW
-```
+1. The personal token from your `/profile` page
+2. A self-generated 32-character token, that you have added to `.env`
 
+Either way, the following instructions apply to Docker.
 
-### Call the cron job from outside the Docker container
-
-Use any tool or system to call the URL. See the preceding documentation.
-
-### Call the cron job from the host system
-
-The command would be something like this:
-
-```
-0 3 * * * docker exec $(docker container ls -a -f name=firefly --format="{{.ID}}") /usr/local/bin/php /var/www/html/artisan firefly-iii:cron
-```
-
-### Run an image that calls the cron job
-
-Here's an example:
-
-```
-docker create --name=FireflyIII-Cronjob alpine \
-    sh -c "echo \"0 3 * * * wget -qO- https://demo.firefly-iii.org/api/v1/cron/[TOKEN]\" | crontab - && crond -f -L /dev/stdout"
-```
-
-The `[token]` value can be found on your `/profile` under the "Command line token" header. Earlier on this page, you can read on the static token as well.
-
-If you do not know the Firefly III URL, you can also use the Docker IP address.
-
-### Expand the docker compose file
+### Docker compose
 
 This is already present in the default Docker compose file.
 
@@ -115,15 +91,46 @@ cron:
 
 The `[token]` value can be found on your `/profile` under the "Command line token" header. Earlier on this page, you can read on the static token as well.
 
-## Extra information
+If you have used the expanded Docker compose file or if you have added the cron container yourself, simply (re)start your stack. The cron job will run automatically. You can see the cron container if you do something like `docker container ls`:
 
-In order to trigger "future" cron jobs, you can call the cron job with `--force --date=YYYY-MM-DD`. This will make Firefly III pretend it's another day. This is useful for recurring transactions. Here is an example of a cron job that is triggered every first day of the month at 3am and pretends it's the tenth day of that month.
+(TODO screenshot)
+
+You can see the logs of the cron container by running `docker logs [container-id]`. Take the exact ID from the previous command.
+
+(TODO screenshot)
+
+In the logs you can see the cron job once it has run.
+
+### From outside the container (http)
+
+If you do not use the cron container, you can simply call your local container over the (local) network to execute the cron job. Check out the preceding documentation, it's no different.
 
 ```
-# cronjob for Firefly III that changes the target date.
-0 3 1 * * /usr/bin/php /var/www/html/artisan firefly-iii:cron --force --date=$(date "+\%Y-\%m-")10
+# cron job for Firefly III using cURL
+0 3 * * * curl http://127.0.0.1:8080/api/v1/cron/klI0JEC7TkDisfFuyjbRsIqATxmH5qRW
 ```
 
+### From outside the container (cli)
+
+You can also talk to the container directly. The command would be something like this:
+
+```
+# cron job for Firefly III using Docker itself
+0 3 * * * docker exec $(docker container ls -a -f name=firefly --format="{{.ID}}") /usr/local/bin/php /var/www/html/artisan firefly-iii:cron
+```
+
+### Run an image that calls the cron job
+
+This is a very fancy solution. It's basically the same solution as the previously mentioned docker compose file expansion, but this time we do it manually. Run the following command:
+
+```
+docker create --name=FireflyIII-Cronjob alpine \
+    sh -c "echo \"0 3 * * * wget -qO- https://demo.firefly-iii.org/api/v1/cron/[TOKEN]\" | crontab - && crond -f -L /dev/stdout"
+```
+
+The `[token]` value can be found on your `/profile` under the "Command line token" header. Earlier on this page, you can read on the static token as well.
+
+If you do not know the Firefly III URL, you can also use the Docker IP address.
 
 ## IFTTT
 
@@ -179,3 +186,11 @@ You will see a final overview
 
 Press Finish, and you're done!
 
+## Extra information
+
+In order to trigger "future" cron jobs, you can call the cron job with `--force --date=YYYY-MM-DD`. This will make Firefly III pretend it's another day. This is useful for recurring transactions. Here is an example of a cron job that is triggered every first day of the month at 3am and pretends it's the tenth day of that month.
+
+```
+# cronjob for Firefly III that changes the target date.
+0 3 1 * * /usr/bin/php /var/www/html/artisan firefly-iii:cron --force --date=$(date "+\%Y-\%m-")10
+```
