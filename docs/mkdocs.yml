@@ -183,6 +183,7 @@ nav:
           - Security: explanation/more-information/security.md
           - License: explanation/more-information/license.md
           - Missing features: explanation/more-information/what-its-not.md
+          - (Security) testing: explanation/more-information/bending-and-breaking.md
       - Other tools: explanation/other-tools.md
       - Support: explanation/support.md
 
