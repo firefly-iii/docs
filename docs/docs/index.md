@@ -5,44 +5,44 @@ hide:
 
 # Firefly III documentation
 
-Welcome. This site contains all the documentation for **Firefly III** and the **Data Importer**. Please follow the links below or use the top bar navigation to go to the section of your choice. When in doubt, please use the search in the top right-hand corner.
+Welcome. This site contains all the documentation for **Firefly III** and the **Data Importer**. Please follow the links below or use the top navigation bar to go to the section of your choice. When in doubt, please use the search in the top right-hand corner.
 
 ## [Tutorials](tutorials/index.md)
 
 Want to learn something new? Check out some excellent [tutorials](tutorials/index.md) for beginners and advanced users, such as:
 
-- Set up your first set of bank accounts
-- Manage your finances using budgets
-- Introduce piggy banks to save money
-- Predict expenses using bills
+- [Set up your first set of bank accounts](tutorials/finances/first-steps.md)
+- [Manage your finances using budgets](how-to/firefly-iii/finances/budgets.md)
+- [Introduce piggy banks to save money](tutorials/finances/piggy-bank.md)
+- [Predict expenses using bills](tutorials/finances/bill.md)
 
-Many more tutorials can be found in the [tutorials](tutorials/index.md)-section.
+More tutorials can be found in the [tutorials](tutorials/index.md) section.
 
 ## [How-to guides](how-to/index.md)
 
 Are you looking to complete specific tasks? Check out the [how-to guides](how-to/index.md), and you will find things such as:
 
-- How to install Firefly III
-- How to install the Data Importer
-- How to use the command line
+- [How to install Firefly III](how-to/firefly-iii/installation/docker.md)
+- [How to install the Data Importer](how-to/data-importer/installation/docker.md)
+- [How to use the command line](how-to/firefly-iii/features/cli.md)
 
 More guides can be found in the [how-to guides](how-to/index.md) section.
 
 ## [References](references/index.md)
 
-There is plenty of knowledge to grasp to understand what Firefly III and the data importer are capable of. Read the references to learn about:
+There is plenty of knowledge to grasp in order to understand what Firefly III and the data importer are capable of, such as:
 
-- The Firefly III API
-- The structure of transactions and accounts
+- [The Firefly III API](references/firefly-iii/api/index.md)
+- The structure of [transactions](references/firefly-iii/transaction-types.md) and [accounts](references/firefly-iii/account-types.md)
 
-Or anything else you can think of: look it up in the [references](references/index.md) section
+More references can be found in the [references](references/index.md) section.
 
 ## [Explanation](explanation/index.md)
 
-To grasp what Firefly III is about you may need some simple information. Find it in the explanation section.
+To grasp what Firefly III is about you may need some simple information, such as:
 
 - Who maintains Firefly III, and why
-- What the financial concepts are behind Firefly III
+- What the financial concepts behind Firefly III are
 
 Find more in the [explanation](explanation/index.md) section.
 
