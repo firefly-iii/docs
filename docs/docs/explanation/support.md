@@ -16,9 +16,9 @@ Check out **[the roadmap](https://roadmap.firefly-iii.org/)** to see the future 
 
 ## Who maintains Firefly III and why?
 
-Firefly III is maintained by James Cole, a software developer from the Netherlands. You can contact him through email on [james@firefly-iii.org](mailto:james@firefly-iii.org).
+Firefly III is built and maintained by James Cole, a software developer from the Netherlands. He started developing Firefly III back in 2012, to manage his own finances.  
 
-His PGP key is mentioned on [Keybase.io](https://keybase.io/jc5). The fingerprint is `02F4 046C 4B23 6E06 0957 1612 B49A 324B 7EAD 6D80`. You can [verify that key](https://gist.github.com/JC5/e5810692bea4513bd80381f57b2ed03a).
+You can contact him through email on [james@firefly-iii.org](mailto:james@firefly-iii.org). His PGP key is mentioned on [Keybase.io](https://keybase.io/jc5). The fingerprint is `02F4 046C 4B23 6E06 0957 1612 B49A 324B 7EAD 6D80`. You can [verify that key](https://gist.github.com/JC5/e5810692bea4513bd80381f57b2ed03a).
 
 ## Security considerations
 
