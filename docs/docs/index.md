@@ -12,7 +12,6 @@ Welcome. This site contains all the documentation for **Firefly III** and the **
 Want to learn something new? Check out some excellent [tutorials](tutorials/index.md) for beginners and advanced users, such as:
 
 - [Set up your first set of bank accounts](tutorials/finances/first-steps.md)
-- [Manage your finances using budgets](how-to/firefly-iii/finances/budgets.md)
 - [Introduce piggy banks to save money](tutorials/finances/piggy-bank.md)
 - [Predict expenses using bills](tutorials/finances/bill.md)
 
@@ -25,6 +24,7 @@ Are you looking to complete specific tasks? Check out the [how-to guides](how-to
 - [How to install Firefly III](how-to/firefly-iii/installation/docker.md)
 - [How to install the Data Importer](how-to/data-importer/installation/docker.md)
 - [How to use the command line](how-to/firefly-iii/features/cli.md)
+- [How to manage budgets](how-to/firefly-iii/finances/budgets.md)
 
 More guides can be found in the [how-to guides](how-to/index.md) section.
 
@@ -35,14 +35,14 @@ There is plenty of knowledge to grasp in order to understand what Firefly III an
 - [The Firefly III API](references/firefly-iii/api/index.md)
 - The structure of [transactions](references/firefly-iii/transaction-types.md) and [accounts](references/firefly-iii/account-types.md)
 
-More references can be found in the [references](references/index.md) section.
+Or anything else you can think of: look it up in the [references](references/index.md) section
 
 ## [Explanation](explanation/index.md)
 
-To grasp what Firefly III is about you may need some simple information, such as:
+To grasp what Firefly III is about you may need some information. Find it in the explanation section.
 
-- Who maintains Firefly III, and why
-- What the financial concepts behind Firefly III are
+- [Who maintains Firefly III, and why](explanation/support.md)
+- [What the financial concepts are behind Firefly III](explanation/financial-concepts/transactions.md)
 
 Find more in the [explanation](explanation/index.md) section.
 

@@ -14,11 +14,11 @@ If you found a bug, have a feature request or another idea for improvements, ple
 
 Check out **[the roadmap](https://roadmap.firefly-iii.org/)** to see the future of Firefly III and the associated tools.
 
-## Contact details
+## Who maintains Firefly III and why?
 
-You can contact me through email on [james@firefly-iii.org](mailto:james@firefly-iii.org).
+Firefly III is maintained by James Cole, a software developer from the Netherlands. You can contact him through email on [james@firefly-iii.org](mailto:james@firefly-iii.org).
 
-My PGP key is mentioned on [Keybase.io](https://keybase.io/jc5). The fingerprint is `02F4 046C 4B23 6E06 0957 1612 B49A 324B 7EAD 6D80`. You can [verify my key](https://gist.github.com/JC5/e5810692bea4513bd80381f57b2ed03a).
+His PGP key is mentioned on [Keybase.io](https://keybase.io/jc5). The fingerprint is `02F4 046C 4B23 6E06 0957 1612 B49A 324B 7EAD 6D80`. You can [verify that key](https://gist.github.com/JC5/e5810692bea4513bd80381f57b2ed03a).
 
 ## Security considerations
 

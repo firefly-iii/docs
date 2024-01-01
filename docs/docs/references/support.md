@@ -14,16 +14,16 @@ If you found a bug, have a feature request or another idea for improvements, ple
 
 Check out **[the roadmap](https://roadmap.firefly-iii.org/)** to see the future of Firefly III and the associated tools.
 
-## Contact details
+## Who maintains Firefly III and why?
 
-You can contact me through email on [james@firefly-iii.org](mailto:james@firefly-iii.org).
+Firefly III is maintained by James Cole, a software developer from the Netherlands. You can contact him through email on [james@firefly-iii.org](mailto:james@firefly-iii.org).
 
-My PGP key is mentioned on [Keybase.io](https://keybase.io/jc5). The fingerprint is `02F4 046C 4B23 6E06 0957 1612 B49A 324B 7EAD 6D80`. You can [verify my key](https://gist.github.com/JC5/e5810692bea4513bd80381f57b2ed03a).
+His PGP key is mentioned on [Keybase.io](https://keybase.io/jc5). The fingerprint is `02F4 046C 4B23 6E06 0957 1612 B49A 324B 7EAD 6D80`. You can [verify that key](https://gist.github.com/JC5/e5810692bea4513bd80381f57b2ed03a).
 
 ## Security considerations
 
 !!! danger
-    If you find a security issue or problem with Firefly III, please check out [how to report security issues](../how-to/general/report-security-issues.md).
+If you find a security issue or problem with Firefly III, please refer to the [Security Policy](https://github.com/firefly-iii/firefly-iii/security/policy).
 
 ## Support the development of Firefly III
 
@@ -89,4 +89,4 @@ Firefly III uses the following libraries and tools:
 
 ## License
 
-Firefly III is licensed under the [GNU Affero General Public License v3.0](https://github.com/firefly-iii/firefly-iii/blob/main/LICENSE) (or later). [Read more about this](../explanation/more-information/license.md).
+Firefly III is licensed under the [GNU Affero General Public License v3.0](https://github.com/firefly-iii/firefly-iii/blob/main/LICENSE) (or later). [Read more about this](more-information/license.md).
