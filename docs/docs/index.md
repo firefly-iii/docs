@@ -8,6 +8,7 @@ hide:
 Welcome. This site contains all the documentation for **Firefly III** and the **Data Importer**. Please follow the links below or use the top navigation bar to go to the section of your choice. When in doubt, please use the search bar in the top right-hand corner.
 
 ## [Tutorials](tutorials/index.md)
+Do you want to learn the basics of how to use **Firefly III** and the **Data Importer**? Check out the [tutorials](tutorials/index.md) section to find such information as:
 
 Do you want to learn the basics of how to use **Firefly III** and the **Data Importer**? Check out the [tutorials](tutorials/index.md) section to find such information as:
 
@@ -32,7 +33,7 @@ More guides can be found in the [how-to guides](how-to/index.md) section.
 
 Do you want to learn what **Firefly III** and the **Data Importer** are capable of? Check out the [references](references/index.md) section to find such information as:
 
-- [The Firefly III API](references/firefly-iii/api/index.md)
+- [How to use the Firefly III API](references/firefly-iii/api/index.md)
 - The structure of [transactions](references/firefly-iii/transaction-types.md) and [accounts](references/firefly-iii/account-types.md)
 
 More references can be found in the [references](references/index.md) section.
@@ -42,7 +43,7 @@ More references can be found in the [references](references/index.md) section.
 Do you want to learn what **Firefly III** is about? Check out the [explanation](explanation/index.md) section to find such information as:
 
 - [Who maintains Firefly III, and why](explanation/support.md)
-- [What the financial concepts are behind Firefly III](explanation/financial-concepts/transactions.md)
+- [What the financial concepts behind Firefly III are](explanation/financial-concepts/transactions.md)
 
 More explanations can be found in the [explanation](explanation/index.md) section.
 
