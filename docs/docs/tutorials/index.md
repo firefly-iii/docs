@@ -13,9 +13,9 @@ The menu on the left will guide you through the tutorial section.
 
 Popular choices are:
 
-1. How to [import a simple CSV file using the Data Importer](data-importer/csv.md)
-2. How to use [piggy banks to save for money](finances/piggy-bank.md)
-3. How to [process refunds](finances/refund.md)
+1. Learn to [import a simple CSV file using the Data Importer](data-importer/csv.md)
+2. Learn to use [piggy banks to save for money](finances/piggy-bank.md)
+3. Learn to [process refunds](finances/refund.md)
 
 More choices are in the menu.
 
