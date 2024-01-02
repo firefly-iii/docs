@@ -4,7 +4,7 @@
 
 ### Download Docker Compose file
 
-Download [the Docker Compose file](https://raw.githubusercontent.com/firefly-iii/docker/main/docker-compose.yml) and place it somewhere convenient. Use a dedicated directory.  To include the Data Importer in your installation, please ready [how to install the data importer](../../data-importer/installation/docker.md).
+Download [the Docker Compose file](https://raw.githubusercontent.com/firefly-iii/docker/main/docker-compose.yml) and place it somewhere convenient. Use a dedicated directory.  To include the Data Importer in your installation, please read [how to install the data importer](../../data-importer/installation/docker.md).
 
 Grab the raw file, and don't copy-paste the text from your browser. The spaces in the file are very important. So use "Save As".
 
