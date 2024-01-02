@@ -8,7 +8,6 @@ hide:
 Welcome. This site contains all the documentation for **Firefly III** and the **Data Importer**. Please follow the links below or use the top navigation bar to go to the section of your choice. When in doubt, please use the search bar in the top right-hand corner.
 
 ## [Tutorials](tutorials/index.md)
-Do you want to learn the basics of how to use **Firefly III** and the **Data Importer**? Check out the [tutorials](tutorials/index.md) section to find such information as:
 
 Do you want to learn the basics of how to use **Firefly III** and the **Data Importer**? Check out the [tutorials](tutorials/index.md) section to find such information as:
 
