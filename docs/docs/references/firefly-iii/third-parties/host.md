@@ -1,6 +1,6 @@
 # Third parties that host Firefly III
 
-!!! warning "These tools are unsupported"
+!!! warning These tools are unsupported
     I can't always offer support for these platforms. There are a lot of them. Feel free to start a [discussion](https://github.com/orgs/firefly-iii/discussions), but you may have to do some exploration to get your issue resolved.
 
 ## AMPPS
