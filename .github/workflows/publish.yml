@@ -30,16 +30,6 @@ jobs:
 
           # also copy security.txt
           cp -r docs/.well-known site/.well-known
-      - name: Upload to Azure Blob Storage
-        env:
-          AZURE_STORAGE_CONNECTION_STRING: ${{ secrets.connectionString }}
-        run: |
-          cd $GITHUB_WORKSPACE/docs
-          pwd
-          az storage blob upload-batch \
-                            -s ./site \
-                            -d 'https://fireflyiiidocs.blob.core.windows.net/$web' \
-                            --overwrite
       - name: Publish to Cloudflare Pages
         uses: cloudflare/pages-action@v1
         with:
