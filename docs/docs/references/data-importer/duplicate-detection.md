@@ -2,6 +2,8 @@
 
 There are two duplicate detection methods: content-based and identifier-based. It's up to you to pick one.
 
+*Please Note* that deleted transactions [are still checked](/how-to/data-importer/import/duplicates/#deleted-but-duplicate) by the duplicate detection.
+
 ### Content-based
 
 Technically speaking, Firefly III handles "content-based" duplicate detection, and it works as follows.
