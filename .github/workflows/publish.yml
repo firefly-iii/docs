@@ -22,6 +22,7 @@ jobs:
       - name: Build documentation
         run: |
           cd $GITHUB_WORKSPACE/docs
+          pwd
           grep -rl '%PHPVERSION' ./ | xargs sed -i 's/%PHPVERSION/8\.3/g'
           grep -rl '%IMPORTERVERSION' ./ | xargs sed -i 's/%IMPORTERVERSION/1\.4\.0/g'
           grep -rl '%FFVERSION' ./ | xargs sed -i 's/%FFVERSION/6\.1\.1/g'
@@ -34,6 +35,7 @@ jobs:
           AZURE_STORAGE_CONNECTION_STRING: ${{ secrets.connectionString }}
         run: |
           cd $GITHUB_WORKSPACE/docs
+          pwd
           az storage blob upload-batch \
                             -s ./site \
                             -d 'https://fireflyiiidocs.blob.core.windows.net/$web' \
