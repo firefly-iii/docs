@@ -1,6 +1,10 @@
 # Duplicate detection
 
-There are two duplicate detection methods: content-based and identifier-based. It's up to you to pick one.
+The data importer will not import the same transaction twice, because that would be annoying for the user. This is accomplished by a trick called "duplicate detection". For each transaction that is about to be imported, the data importer will first see if it exists already in Firefly III. If a duplicate exists, it will not be imported again.
+
+The data importer has two ways of detecting duplicates. They are explained further ahead. Sometimes the first method is better, and sometimes the second one. This depends a little bit on your import. In most cases "content-based" (see ahead) duplicate detection works well enough.
+
+If you run into problems when using duplicate detection, please read [how to manage (missed) duplicates](../../how-to/data-importer/import/duplicates.md).
 
 ### Content-based
 
