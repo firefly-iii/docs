@@ -25,7 +25,7 @@ More choices are in the menu.
 - You think a specific tutorial should be written, and you don't wish to write it.
 - You spotted inaccuracies, improper grammar, or spelling mistakes.
 
-Please open an [issue on GitHub](https://github.com/firefly-iii/firefly-iii/issues/new?assignees=&labels=&projects=&template=fr.yml). Your contributions are appreciated.
+Please start a [discussion](https://github.com/orgs/firefly-iii/discussions/new/choose). Your contributions are appreciated.
 
 ## Would you like to know more?
 
