@@ -24,7 +24,7 @@ In many budgeting tools you assign every coin to a budget until all your money i
 
 The only effective difference with YNAB (and other tools) is that you *don't need to budget all the way to zero*. What you do is, you set a monthly amount that you want to budget (aka spend), like € 1000. You shape a few budgets around that amount, and you start the month with € 1000 on your bank account and like 4 budgets to spend it in. Now you have a monthly financial routine around 1000. You can now shape your budgets and try to spend even less. If you have € 2000 on your savings account you know you can go without a job for two months.
 
-Any income you get over the month you put in your savings account directly, it doesn't need to reside on your bank account: it would only muddle your € 1000. If you want to create specific saving targets for the money in your savings account you use [piggy banks](../../../explanation/financial-concepts/piggies.md).
+Any income you get over the month you put in your savings account directly, it doesn't need to reside on your bank account: it would only muddle your € 1000. If you want to create specific saving targets for the money in your savings account you use [piggy banks](../../../explanation/financial-concepts/piggy-banks.md).
 
 Two differences between zero-sum budgeting and Firefly III:
 

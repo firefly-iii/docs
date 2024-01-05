@@ -20,7 +20,7 @@ If you want to store cash deposits, be sure to read [how to manage cash]((../../
 
 ## Transfers
 
-A transfer is created only between existing asset accounts. Select an asset account for both the source and destination from the free-form fields. Transfers can be linked to [piggy banks](../../how-to/firefly-iii/finances/piggies.md), to automatically add or remove money from the piggy bank you select.
+A transfer is created only between existing asset accounts. Select an asset account for both the source and destination from the free-form fields. Transfers can be linked to [piggy banks](../../how-to/firefly-iii/finances/piggy-banks.md), to automatically add or remove money from the piggy bank you select.
 
 ## Special transaction types
 

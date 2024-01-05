@@ -80,7 +80,7 @@ nav:
               - How to reconcile accounts: how-to/firefly-iii/finances/reconcile.md
               - How to manage liabilities: how-to/firefly-iii/finances/liabilities.md
               - How to use recurring transactions: how-to/firefly-iii/finances/recurring.md
-              - How to use piggy banks: how-to/firefly-iii/finances/piggies.md
+              - How to use piggy banks: how-to/firefly-iii/finances/piggy-banks.md
               - How to read reports: how-to/firefly-iii/finances/reports.md
           - More features:
               - Make it multi-user: how-to/firefly-iii/features/multi-user.md
@@ -159,7 +159,7 @@ nav:
           - Budgets: explanation/financial-concepts/budgets.md
           - Liabilities: explanation/financial-concepts/liabilities.md
           - Currencies: explanation/financial-concepts/currencies.md
-          - Piggy banks: explanation/financial-concepts/piggies.md
+          - Piggy banks: explanation/financial-concepts/piggy-banks.md
           - Bills: explanation/financial-concepts/bills.md
           - Recurring transactions: explanation/financial-concepts/recurring.md
       - Firefly III:

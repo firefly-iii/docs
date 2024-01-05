@@ -3,7 +3,7 @@
 To learn more about piggy banks, check out:
 
 - [Tutorial: Save using a piggy bank](../../tutorials/finances/piggy-bank.md)
-- [How-to manage piggy banks](../../how-to/firefly-iii/finances/piggies.md)
+- [How-to manage piggy banks](../../how-to/firefly-iii/finances/piggy-banks.md)
 
 If you want to buy something expensive, you might need to save for it. You can use piggy banks to save money. You can find them under "Financial Control" > "Piggy banks". A piggy bank is meant to group money on a single asset account together.
 
