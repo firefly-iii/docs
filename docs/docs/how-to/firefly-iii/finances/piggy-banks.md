@@ -1,19 +1,36 @@
 # How to use piggy banks
 
-Piggy banks can be managed from the `/piggy-banks` page. Use them to collect saved money in "bags", one for each purpose.
+Firefly III features "piggy banks". These are a way to divide a savings account in X parts, and divide the money among these parts. You can read more about them on the [page that explains piggy banks](../../../explanation/financial-concepts/piggy-banks.md).
 
-For example, on your savings account on which you have € 500 saved. You want to buy a new digital camera, but you also need some money for a new couch, and you already know your car is going to break down sooner or later. You need *three* piggy banks.
+Piggy banks can be managed from the `/piggy-banks` page.
 
-1. A piggy bank called "New camera", linked to your savings account. The target amount is € 300
-2. A piggy bank called "New couch", linked to your savings account. The target amount is € 400
-3. A piggy bank called "Fix car", linked to your savings account. The target amount is € 1000
+## Create a piggy bank
 
-To do so, use the button to create a new piggy bank. Fill in the details and select the correct asset account. The overview will then show you how your savings are divided over your three piggy banks.
+It's always a good idea to keep piggy banks on a dedicated savings account. Let's assume you have one, with €500 on it. 
 
-## Screenshots
+Click on "Create a new piggy bank" on the `/piggy-banks` page.
+
+![The screen to create a piggy bank is pretty straight forward.](../../../images/how-to/firefly-iii/finances/piggy-bank-create.png)
+
+Enter some details for this piggy bank. The amount is not mandatory, but useful. Here's an example:
+
+- Name: New camera
+- Target amount: €300
+
+You can save some notes (like a link to the camera webshop) and add attachments if you want to. Use the "group" field to group piggy banks together. This is useful if you have a lot of piggy banks.
+
+## Manage the piggy banks
+
+Here are three piggy banks I made:
 
 ![The three piggy banks from the example are listed in Firefly III as you can see here.](../../../images/how-to/firefly-iii/finances/piggies-overview.png)
 
-![The screen to create a piggy bank is pretty straight forward.](../../../images/how-to/firefly-iii/finances/piggies-create.png)
+I can use the \[+\] and \[-\] buttons to add or remove money from these piggy banks. That way I can divide the money on my savings account between the three goals I have.
+
+On the bottom of the page, it shows you how much money you have left on your savings account. You can't add more money to your piggy banks than you have on your savings account.
 
 ![You can see I have divided almost all my savings over these three piggy banks.](../../../images/how-to/firefly-iii/finances/piggies-account.png)
+
+## Adding money to piggy banks
+
+Apart from the \[+\] and \[-\] buttons, you can also link transfers to a piggy bank. The amount of the transaction will be automatically added to, or removed from the piggy bank.
