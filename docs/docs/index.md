@@ -46,7 +46,9 @@ Do you want to learn what **Firefly III** is about? Check out the [explanation](
 
 More explanations can be found in the [explanation](explanation/index.md) section.
 
-## Contact and more information
+<!-- HELP TEXT -->
+
+## Do you need help, or do you want to get in touch?
 
 Do you want to contact me? You can email me at [james@firefly-iii.org](mailto:james@firefly-iii.org) or get in touch through one of the following support channels:
 
@@ -55,6 +57,15 @@ Do you want to contact me? You can email me at [james@firefly-iii.org](mailto:ja
 - [GitHub Issues](https://github.com/firefly-iii/firefly-iii/issues) for bugs and issues
 - <a rel="me" href="https://fosstodon.org/@ff3">Mastodon</a> for news and updates
 
-## Donate
+<!-- END OF HELP TEXT -->
 
-If you feel Firefly III made your life better, please consider contributing as a sponsor. Please check out my [Patreon](https://www.patreon.com/jc5) and [GitHub Sponsors](https://github.com/sponsors/JC5) page for more information. Thank you for your consideration.
+<!-- SPONSOR TEXT -->
+
+## Support the development of Firefly III
+
+If you like Firefly III and if it helps you save lots of money, why not send me a dime for every dollar saved! 🥳
+
+OK that was a joke. If you feel Firefly III made your life better, please consider contributing as a sponsor. Please check out my [Patreon](https://www.patreon.com/jc5) and [GitHub Sponsors](https://github.com/sponsors/JC5) page for more information. You can also [buy me a ☕️ coffee at ko-fi.com](https://ko-fi.com/Q5Q5R4SH1). Thank you for your consideration.
+
+<!-- END OF SPONSOR TEXT -->
+
