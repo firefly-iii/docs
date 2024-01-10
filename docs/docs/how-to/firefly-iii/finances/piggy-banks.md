@@ -1,8 +1,8 @@
 # How to use piggy banks
 
-Firefly III features "piggy banks". These are a way to divide a savings account in X parts, and divide the money among these parts. You can read more about them on the [page that explains piggy banks](../../../explanation/financial-concepts/piggy-banks.md).
+Firefly III features "piggy banks". Piggy banks are a way to divide a savings account in a number of parts, and divide the money among these parts. You can read more about them on the [page that explains piggy banks](../../../explanation/financial-concepts/piggy-banks.md).
 
-Piggy banks can be managed from the `/piggy-banks` page.
+Piggy banks can be managed from the `/piggy-banks` page on your installation.
 
 ## Create a piggy bank
 
@@ -31,6 +31,12 @@ On the bottom of the page, it shows you how much money you have left on your sav
 
 ![You can see I have divided almost all my savings over these three piggy banks.](../../../images/how-to/firefly-iii/finances/piggies-account.png)
 
-## Adding money to piggy banks
+## Adding money to or removing money from piggy banks
 
 Apart from the \[+\] and \[-\] buttons, you can also link transfers to a piggy bank. The amount of the transaction will be automatically added to, or removed from the piggy bank.
+
+When you create a transfer, select the piggy bank from the list!
+
+--- 
+
+That's it! [Would you like to know more?](../../../explanation/financial-concepts/piggy-banks.md)

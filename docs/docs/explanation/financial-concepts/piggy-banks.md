@@ -1,14 +1,17 @@
 # Piggy banks
 
-To learn more about piggy banks, check out:
+To learn how to manage piggy banks, you should read [how to manage piggy banks](../../how-to/firefly-iii/finances/piggy-banks.md).
 
-- [Tutorial: Save using a piggy bank](../../tutorials/finances/piggy-bank.md)
-- [How-to manage piggy banks](../../how-to/firefly-iii/finances/piggy-banks.md)
+## What is a piggy bank in Firefly III?
 
-If you want to buy something expensive, you might need to save for it. You can use piggy banks to save money. You can find them under "Financial Control" > "Piggy banks". A piggy bank is meant to group money on a single asset account together.
+If you want to buy something expensive, you might need to save for it. You can use "piggy banks" to organize your savings. A piggy bank is a way to divide your money in a number of parts. A piggy bank is meant to group money on a single asset account together.
 
-The idea is that you create a piggy bank for the money on your savings account. The money in your savings account can be added and removed to piggy banks freely. You can also transfer money in and out of your savings account and select a piggy bank to be associated with the transfer. The money will be added to (or removed from) the piggy bank as part of the transfer.
+## Where are piggy banks stored?
+
+Piggy banks are stored under the `/pigg-banks`-page in Firefly III. However, each piggy bank is tied to an asset account on which its money is saved. You may have a savings account with three piggy banks, for example.
+
+## And then what?
+
+The money in your savings account can be added and removed to piggy banks freely. You can also transfer money in and out of your savings account and select a piggy bank to be associated with the transfer. The money will be added to (or removed from) the piggy bank as part of the transfer.
 
 You can't create a withdrawal or a deposit and refer to a piggy bank. It only works for transfers.
-
-Basically, a piggy bank is a way to divide a savings account in X parts, and divide the money among these parts.

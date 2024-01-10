@@ -12,7 +12,6 @@ Welcome. This site contains all the documentation for **Firefly III** and the **
 Do you want to learn the basics of how to use **Firefly III** and the **Data Importer**? Check out the [tutorials](tutorials/index.md) section to find such information as:
 
 - [Set up your first set of bank accounts](tutorials/finances/first-steps.md)
-- [Introduce piggy banks to save money](tutorials/finances/piggy-bank.md)
 - [Predict expenses using bills](tutorials/finances/bill.md)
 
 More tutorials can be found in the [tutorials](tutorials/index.md) section.
