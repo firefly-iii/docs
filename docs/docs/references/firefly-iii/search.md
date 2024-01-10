@@ -6,14 +6,14 @@ The search engine will search in the description of transactions only. Other fil
 
 In the future, I hope to make it easier to apply these to your search.
 
-All filters work like this:
+All search filters work like this:
 
-- `name:value` for basic words
-- `name:"long value"` for words with spaces
-- `name:123` for numbers
-- `name:123.45` for numbers with decimals
-- `name:2023-09-17` for dates
-- `-name:value` for negation. Works on all previous examples.
+- `example:value` for basic words
+- `example:"long value"` for words with spaces
+- `example:123` for numbers
+- `exampleame:123.45` for numbers with decimals
+- `example:2023-09-17` for dates
+- `-example:value` for the negation of a search filter. It works on all previous examples too.
 
 ## Description and content
 
@@ -22,9 +22,11 @@ All filters work like this:
 3. Attachment name: `attachment_name_is`, `attachment_name_contains`, `attachment_name_starts`, `attachment_name_ends`
 4. Attachment notes: `attachment_notes_are`, `attachment_notes_contain`, `attachment_notes_start`, `attachment_notes_end`
 
+To negate any of these, just add a `-`. The search would become (for example): "description does not start with".
+
 ## Properties
 
-Properties of the transaction in question.
+These search options search for properties of the transaction in question.
 
 1. Type. Accepts English terms only: "withdrawal", "deposit" or "transfer": `type:withdrawal`
 2. If the transaction is reconciled: `reconciled:true`
@@ -41,23 +43,23 @@ Properties of the transaction in question.
 13. ID of the associated recurring transaction: `recurring_id:123`
 14. If the transaction exists. This particular trigger is always true, and when you inverse it, always false: `exists:true`
 
-When you inverse these triggers, they look for the opposite property.
+When you inverse these search options, they look for the opposite property.
 
 ## Amount
 
-All amount triggers can handle bigger than, less than, exactly, etc.
+All amount search options can handle bigger than, less than, exactly, etc.
 
-1. Amount: `amount:123.45`, `amount_more:123.45`, `amount_less:123.45`
+1. Amount: `amount:123.45`, `more:123.45`, `less:123.45`
 2. Foreign amount: `foreign_amount:123.45`, `foreign_amount_more:123.45`, `foreign_amount_less:123.45`
 
-Also present are filters for the currency of the transaction.
+Also present are search options for the currency of the transaction.
 
 1. Currency is: `currency_is:EUR`
 2. Foreign currency is: `foreign_currency_is:USD`
 
 ## Account
 
-Trigger on the source and/or destination account of the transaction.
+These search for the source and/or destination account of the transaction.
 
 ### Source and/or destination
 
@@ -70,7 +72,7 @@ Trigger on the source and/or destination account of the transaction.
 
 ### Source and/or destination account number (or IBAN)
 
-Same as above, but for the account number or IBAN.
+These search options are the same as above, but for the account number or IBAN.
 
 - `account_nr_is`, triggers on the exact account number.
 - `account_nr_contains`, triggers on any account number that contains the value.
@@ -79,15 +81,15 @@ Same as above, but for the account number or IBAN.
 
 ### Source account
 
-All filters above also work for the source account when you use `source_account_` instead of `account_`.
+All these search options also work for the source account when you use `source_account_` instead of `account_`.
 
 ### Destination account
 
-All filters above also work for the destination account when you use `destination_account_` instead of `account_`.
+All these search options also work for the destination account when you use `destination_account_` instead of `account_`.
 
 ## Meta-data
 
-Meta-data includes all other data related to the transaction. All the following triggers have varieties: starts with, ends on, contains, is exactly.
+Meta-data includes all other data related to the transaction. All the following search options have varieties: starts with, ends on, contains, is exactly.
 
 1. A (any) tag: `tag_is`, `tag_contains`, `tag_starts`, `tag_ends`
 2. SEPA CT: `sepa_ct_is`
@@ -98,10 +100,9 @@ Meta-data includes all other data related to the transaction. All the following 
 7. Internal reference: `internal_reference_is`, `internal_reference_contains`, `internal_reference_starts`, `internal_reference_ends`
 8. External URL: `external_url_is`, `external_url_contains`, `external_url_starts`, `external_url_ends`
 
-
 ## Date and time
 
-All of these date and time triggers can handle "on", "before" and "after" varieties.
+All of these date and time search options can handle "on", "before" and "after" varieties:
 
 1. Transaction date: `date_on`, `date_before`, `date_after`
 2. Interest date: `interest_date_on:2023-01-01`, ...
@@ -115,7 +116,7 @@ All of these date and time triggers can handle "on", "before" and "after" variet
 
 ### Keywords
 
-You can use several keywords for dates:
+You can use several keywords for dates. It may make it easier to search for relative periods.
 
 - `today`, `yesterday` or `tomorrow`
 - `start of this week`, `start of this month`, `start of this quarter` or `start of this year`
@@ -123,7 +124,7 @@ You can use several keywords for dates:
 
 ### Absolute date
 
-You can also use an absolute date, in this form: `YYYY-MM-DD`. So for the 17th of May 2020, you would use `2020-05-17`.
+You can use an absolute date, in this form: `YYYY-MM-DD`. So for the 17th of May 2020, you would use `2020-05-17`.
 
 ### Relative dates
 
@@ -132,21 +133,21 @@ You can also use relative date indicators, like so:
 - `+3d` (in three days)
 - `-2w` (two weeks ago)
 
-You can use `d` for days, `w` for weeks, `m` for months and `y` for years. You can also combine them. To set a date trigger for a year and a half ago, you could do this:
+You can use `d` for days, `w` for weeks, `m` for months and `y` for years. You can also combine them. To creatre a search for a year and a half ago, you could do this:
 
-- `-1y -6m`
+- `date_is:-1y -6m`
 
-Notice the **space** between the two.
+Notice the **space** between the two date indicators.
 
 Likewise, you can mix + and -. To go 11 months back, you could use:
 
 - `-1y +1m`
 
-If your entry is invalid, you can't save the rule.
+If your entry is invalid, the search may not work.
 
 ### Semi specific dates
 
-I wasn't sure what to call this, but the following date triggers can be set:
+I wasn't sure what to call this, but the following date searches can be used:
 
 - On the 10th day of the month
 - In february
@@ -155,22 +156,21 @@ I wasn't sure what to call this, but the following date triggers can be set:
 
 You can do this with the format `xxxx-xx-xx` where you change any set of `xx` into your desired outcome. The format is `year-month-day`. Keep in mind that the other `xx` pairs stay `xx` and need no change. Here are some examples:
 
-- `xxxx-xx-10`. Will trigger on the 10th day of any month.
-- `xxxx-04-xx`. Will trigger for any date in April, no matter the year or the day.
-- `2018-xx-xx`. Will trigger for any date in 2018.
+- `xxxx-xx-10`. Will search for transactions on the 10th day of any month.
+- `xxxx-04-xx`. Will search for transactions on any date in April, no matter the year or the day.
+- `2018-xx-xx`. Will search for transactions on any date in 2018.
 
 You can also make some advanced combinations:
 
-- `2017-xx-03`. Will trigger on the 3rd of the month, but only in 2017.
-- `2018-09-xx`. Will trigger on any day in September 2018.
-- `xxxx-08-07`. Will trigger on August 7th, whatever the year.
+- `2017-xx-03`. Will search for transactions on the 3rd of the month, but only in 2017.
+- `2018-09-xx`. Will search for transactions on any day in September 2018.
+- `xxxx-08-07`. Will search for transactions on August 7th, whatever the year.
 
-So you could say "Transaction date is before" `xxxx-xx-10` and any transaction before the 10th of the month is triggered.
+So you could say "Transaction date is before" `xxxx-xx-10` and any transaction before the 10th of the month is found by the search.
 
 !!! info
-    These semi specific dates are tricky. The `xx`-values will be filled in by the date of the transaction. If your rule trigger has something like "2018-xx-xx" it will never match transactions from any year except 2018.
-
+    These semi specific dates are tricky. The `xx`-values will be filled in by the date of the transaction. If your search has something like "2018-xx-xx" it will never match transactions from any year except 2018.
 
 ## Would you like to know more?
 
-If you are missing a specific trigger, please check out the [support](../support.md) page.
+If you are missing a specific search option, please check out the [support](../support.md) page.
