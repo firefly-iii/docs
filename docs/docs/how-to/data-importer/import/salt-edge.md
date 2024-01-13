@@ -14,9 +14,14 @@ Please read and agree with all the terms that the company may present you with. 
 
 ## Salt Edge's Spectre API
 
-You can sign up for Salt Edge's services on [this page](https://www.saltedge.com/client_users/sign_up).
+You can sign up for Salt Edge's services [on this page](https://www.saltedge.com/client_users/sign_up).
 
 Your account will initially have a "pending" status. In order to get access to real banks, please request "test" access from your Client's dashboard main page and mention you’re a Firefly III user.
+
+An application API key needs to be created for the Data Importer, you can view the steps to do this [on this page](https://docs.saltedge.com/account_information/v5/#create-api-keys).
+
+!!! info "Required API key type"
+    A Service API key must be made, as an App API key blocks the use of the endpoints that the importer requires
 
 ### Limits
 
