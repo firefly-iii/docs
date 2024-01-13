@@ -12,6 +12,7 @@ When you host Firefly III yourself, open your `.env` file and find these lines:
 
 * Line that starts with `APP_DEBUG`. Change it to `APP_DEBUG=true`
 * Line that starts with `APP_LOG_LEVEL`. Change it to `APP_LOG_LEVEL=debug`
+* Line that starts with `LOG_CHANNEL`. Change it to `LOG_CHANNEL=stack`
 
 Go to the map `/firefly-iii/storage/logs`. Delete all files _except_ `.gitignore`.
 
@@ -22,7 +23,7 @@ This will enable debug logging and debug mode.
 When you're using Docker, restart your container with the following parameters:
 
 ```text
--e APP_DEBUG=true -e APP_LOG_LEVEL=debug
+-e APP_DEBUG=true -e APP_LOG_LEVEL=debug -e LOG_CHANNEL=stack
 ```
 
 ### Data Importer
@@ -33,6 +34,7 @@ When you host the data importer yourself, open your `.env` file and find these l
 
 * Line that starts with `APP_DEBUG`. Change it to `APP_DEBUG=true`
 * Line that starts with `LOG_LEVEL`. Change it to `LOG_LEVEL=debug` if not already so
+* Line that starts with `LOG_CHANNEL`. Change it to `LOG_CHANNEL=stack`
 
 Go to the map `/data-importer/storage/logs`. Delete all files _except_ `.gitignore`.
 
@@ -43,7 +45,7 @@ This will enable debug logging and debug mode.
 When you're using Docker, restart your container with the following parameters:
 
 ```text
--e APP_DEBUG=true -e LOG_LEVEL=debug
+-e APP_DEBUG=true -e LOG_LEVEL=debug -e LOG_CHANNEL=stack
 ```
 
 This will enable debug logging and debug mode.
