@@ -12,7 +12,6 @@ site_url: https://docs.firefly-iii.org/
 dev_addr: 10.0.0.15:8000
 plugins:
   - search
-  - optimize
   - social:
       cards_layout_options:
         background_color: "#1e6581"
@@ -24,6 +23,13 @@ plugins:
         remove_comments: true
 markdown_extensions:
   - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
 nav:
   - Home: index.md
   - Tutorials:
@@ -32,7 +38,6 @@ nav:
           - Your finances:
               - My first accounts: tutorials/finances/first-steps.md
               - Create accounts and transactions: tutorials/finances/first-accounts.md
-              - Save using a piggy bank: tutorials/finances/piggy-bank.md
               - Manage a bill: tutorials/finances/bill.md
               - Process a refund: tutorials/finances/refund.md
               - Manage your mortgage: tutorials/finances/mortgage.md
@@ -74,7 +79,7 @@ nav:
               - How to reconcile accounts: how-to/firefly-iii/finances/reconcile.md
               - How to manage liabilities: how-to/firefly-iii/finances/liabilities.md
               - How to use recurring transactions: how-to/firefly-iii/finances/recurring.md
-              - How to use piggy banks: how-to/firefly-iii/finances/piggies.md
+              - How to use piggy banks: how-to/firefly-iii/finances/piggy-banks.md
               - How to read reports: how-to/firefly-iii/finances/reports.md
           - More features:
               - Make it multi-user: how-to/firefly-iii/features/multi-user.md
@@ -82,7 +87,7 @@ nav:
               - How to use webhooks: how-to/firefly-iii/features/webhooks.md
               - How to use the search: how-to/firefly-iii/features/search.md
               - How to use currencies: how-to/firefly-iii/features/currencies.md
-              - How to the CLI: how-to/firefly-iii/features/cli.md
+              - How to use the CLI: how-to/firefly-iii/features/cli.md
               - How to use the API: how-to/firefly-iii/features/api.md
           - Development:
               - Translations: how-to/firefly-iii/development/translations.md
@@ -98,6 +103,7 @@ nav:
               - Using a self-managed server: how-to/data-importer/upgrade/self-managed.md
           - Importing data:
               - How to import CSV or CAMT.053 files: how-to/data-importer/import/csv.md
+              - How to automate the import: how-to/data-importer/import/automated.md
               - How to map data: how-to/data-importer/import/map-data.md
               - How to use Salt Edge: how-to/data-importer/import/salt-edge.md
               - How to use GoCardLess: how-to/data-importer/import/gocardless.md
@@ -139,6 +145,7 @@ nav:
           - Data Importer:
               - General questions: references/faq/data-importer/general.md
               - Common import issues: references/faq/data-importer/import.md
+              - Salt Edge and GoCardless: references/faq/data-importer/salt-edge-gocardless.md
           - Installing and running: references/faq/install.md
           - Development: references/faq/development.md
           - Docker: references/faq/docker.md
@@ -151,7 +158,7 @@ nav:
           - Budgets: explanation/financial-concepts/budgets.md
           - Liabilities: explanation/financial-concepts/liabilities.md
           - Currencies: explanation/financial-concepts/currencies.md
-          - Piggy banks: explanation/financial-concepts/piggies.md
+          - Piggy banks: explanation/financial-concepts/piggy-banks.md
           - Bills: explanation/financial-concepts/bills.md
           - Recurring transactions: explanation/financial-concepts/recurring.md
       - Firefly III:
@@ -174,6 +181,7 @@ nav:
           - Security: explanation/more-information/security.md
           - License: explanation/more-information/license.md
           - Missing features: explanation/more-information/what-its-not.md
+          - (Security) testing: explanation/more-information/bending-and-breaking.md
       - Other tools: explanation/other-tools.md
       - Support: explanation/support.md
 
@@ -184,10 +192,12 @@ theme:
   name: material
   custom_dir: overrides
   features:
-    - navigation.instant
     - navigation.tabs
     - navigation.path
     - content.action.edit
+    - content.code.select
+    - content.code.annotate
+    - content.code.copy
   palette:
     scheme: fireflyiii
   logo: images/logo.png
@@ -219,4 +229,5 @@ extra:
           name: This page could be improved
           data: 0
           note: >-
-            <div data-tf-live="01HHJ4Q8SVJGPQHPDE3V14DHSB"></div><script src="//embed.typeform.com/next/embed.js"></script>
+            <p>Sorry to hear that :(. Please leave your feedback down here <a href="https://github.com/orgs/firefly-iii/discussions">or on GitHub</a>. Thank you!</p>
+            <div id="empty-feedback-form"></div>

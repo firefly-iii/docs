@@ -16,26 +16,25 @@ jobs:
           sudo rm /usr/bin/pip
           sudo ln -s /usr/bin/python3 /usr/bin/python
           sudo ln -s /usr/bin/pip3 /usr/bin/pip
-          pip install git+https://${MKDOCS_TOKEN}@github.com/squidfunk/mkdocs-material-insiders.git
-          pip install mkdocs mkdocs-git-revision-date-plugin mkdocs-redirects mkdocs-minify-plugin pillow cairosvg
+          pip install mkdocs-material mkdocs mkdocs-git-revision-date-plugin mkdocs-redirects mkdocs-minify-plugin pillow cairosvg
         env:
           MKDOCS_TOKEN: ${{ secrets.MKDOCS_TOKEN }}
       - name: Build documentation
         run: |
           cd $GITHUB_WORKSPACE/docs
-          grep -rl '%PHPVERSION' ./ | xargs sed -i 's/%PHPVERSION/8\.2/g'
-          grep -rl '%IMPORTERVERSION' ./ | xargs sed -i 's/%IMPORTERVERSION/1\.3\.9/g'
-          grep -rl '%FFVERSION' ./ | xargs sed -i 's/%FFVERSION/6\.0\.30/g'
+          pwd
+          grep -rl '%PHPVERSION' ./ | xargs sed -i 's/%PHPVERSION/8\.3/g'
+          grep -rl '%IMPORTERVERSION' ./ | xargs sed -i 's/%IMPORTERVERSION/1\.4\.1/g'
+          grep -rl '%FFVERSION' ./ | xargs sed -i 's/%FFVERSION/6\.1\.6/g'
           python -m mkdocs build --clean
 
           # also copy security.txt
           cp -r docs/.well-known site/.well-known
-      - name: Upload to Azure Blob Storage
-        env:
-          AZURE_STORAGE_CONNECTION_STRING: ${{ secrets.connectionString }}
-        run: |
-          cd $GITHUB_WORKSPACE/docs
-          az storage blob upload-batch \
-                            -s ./site \
-                            -d 'https://fireflyiiidocs.blob.core.windows.net/$web' \
-                            --overwrite
+      - name: Publish to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: aaf8eef9dd565a13de210d18c7462092
+          projectName: docs
+          directory: docs/site
+          wranglerVersion: '3'

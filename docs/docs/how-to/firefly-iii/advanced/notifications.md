@@ -39,7 +39,7 @@ Uses the built-in sendmail configuration. If you choose this, you can leave the 
 
 ### mailgun
 
-[Mailgun](https://www.mailgun.com/) is an API that can send emails. Their service allows for 10,000 free messages each month.
+[Mailgun](https://www.mailgun.com/) is an API that can send emails. Their 30-day free trial service allows for 5,000 free messages.
 
 To configure these, fill in the `MAILGUN_DOMAIN`, `MAILGUN_SECRET`, and `MAILGUN_ENDPOINT`  values in your `.env` file. The `MAILGUN_DOMAIN` is the domain you've verified with Mailgun, the `MAILGUN_SECRET` is your Mailgun API key, and the `MAILGUN_ENDPOINT` is the Mailgun API endpoint, `api.mailgun.net`, if you are sending email from Mailgun's U.S. infrastructure, or `api.eu.mailgun.net`, from their EU infrastructure. `MAIL_FROM` must be set to an email address that is from your Mailgun's verified domain.
 

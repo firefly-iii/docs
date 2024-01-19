@@ -1,10 +1,15 @@
 # Support
 
-If you need support using Firefly III or the associated tools, come find us!
+<!-- HELP TEXT -->
 
-- [GitHub Discussions for questions and support](https://github.com/firefly-iii/firefly-iii/discussions/)
-- [Gitter.im for a good chat and a quick answer](https://gitter.im/firefly-iii/firefly-iii)
-- [Follow me around for news and updates on Mastodon](https://fosstodon.org/@ff3)
+Do you want to contact me? You can email me at [james@firefly-iii.org](mailto:james@firefly-iii.org) or get in touch through one of the following support channels:
+
+- [GitHub Discussions](https://github.com/firefly-iii/firefly-iii/discussions/) for questions and support
+- [Gitter.im](https://gitter.im/firefly-iii/firefly-iii) for a good chat and a quick answer
+- [GitHub Issues](https://github.com/firefly-iii/firefly-iii/issues) for bugs and issues
+- <a rel="me" href="https://fosstodon.org/@ff3">Mastodon</a> for news and updates
+
+<!-- END OF HELP TEXT -->
 
 ## Issues
 
@@ -14,22 +19,26 @@ If you found a bug, have a feature request or another idea for improvements, ple
 
 Check out **[the roadmap](https://roadmap.firefly-iii.org/)** to see the future of Firefly III and the associated tools.
 
-## Contact details
+## Who maintains Firefly III and why?
 
-You can contact me through email on [james@firefly-iii.org](mailto:james@firefly-iii.org).
+Firefly III is built and maintained by James Cole, a software developer from the Netherlands. He started developing Firefly III back in 2012, to manage his own finances.  
 
-My PGP key is mentioned on [Keybase.io](https://keybase.io/jc5). The fingerprint is `02F4 046C 4B23 6E06 0957 1612 B49A 324B 7EAD 6D80`. You can [verify my key](https://gist.github.com/JC5/e5810692bea4513bd80381f57b2ed03a).
+You can contact him through email on [james@firefly-iii.org](mailto:james@firefly-iii.org). His PGP key is mentioned on [Keybase.io](https://keybase.io/jc5). The fingerprint is `02F4 046C 4B23 6E06 0957 1612 B49A 324B 7EAD 6D80`. You can [verify that key](https://gist.github.com/JC5/e5810692bea4513bd80381f57b2ed03a).
 
 ## Security considerations
 
 !!! danger
     If you find a security issue or problem with Firefly III, please refer to the [Security Policy](https://github.com/firefly-iii/firefly-iii/security/policy).
 
+<!-- SPONSOR TEXT -->
+
 ## Support the development of Firefly III
 
 If you like Firefly III and if it helps you save lots of money, why not send me a dime for every dollar saved! 🥳
 
-OK that was a joke. If you feel Firefly III made your life better, consider contributing as a sponsor. Please check out my [Patreon](https://www.patreon.com/jc5) and [GitHub Sponsors](https://github.com/sponsors/JC5) page for more information. Thank you for considering donating to Firefly III!
+OK that was a joke. If you feel Firefly III made your life better, please consider contributing as a sponsor. Please check out my [Patreon](https://www.patreon.com/jc5) and [GitHub Sponsors](https://github.com/sponsors/JC5) page for more information. You can also [buy me a ☕️ coffee at ko-fi.com](https://ko-fi.com/Q5Q5R4SH1). Thank you for your consideration.
+
+<!-- END OF SPONSOR TEXT -->
 
 ## Contributing code
 

@@ -4,11 +4,11 @@ Let's assume you managed to install Firefly III using the [how-to guides](../../
 
 In this tutorial you will learn how to set up your first accounts, so they match your bank statements. You will also learn how to create some transactions.
 
-This tutorial assumes you already registered yourself, as it is explained in the [how-to guides](../../how-to/index.md).
+This tutorial assumes you already registered yourself, which is the final step of the installation procedure. As you finish the installation and visit Firefly III for the *first* time, you will see a registration form. Fill it in to create your new account, if you have not already done so.
 
 ## First setup
 
-You will see this screen when you run Firefly III for the first time:
+You will see this screen when you run Firefly III for the first time (after registration):
 
 ![Opening wizard](../../images/tutorials/finances/wizard.png)
 

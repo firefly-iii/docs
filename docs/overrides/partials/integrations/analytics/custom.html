@@ -16,53 +16,61 @@
         // enable feedback form
         document.addEventListener("DOMContentLoaded", function () {
             var feedback = document.forms.feedback
-            feedback.hidden = false
+            if (feedback) {
+                feedback.hidden = false
+                // start
+                /* Send feedback to Analytics */
+                for (var button of feedback.querySelectorAll("[type=submit]")) {
+                    button.addEventListener("click", function (ev) {
+                        ev.preventDefault()
+
+                        // collect some things
+                        var page = document.location.pathname;
+                        var data = this.getAttribute("data-md-value");
+
+                        // post to custom script.
+                        fetch("https://support.firefly-iii.org/submit_feedback.php", {
+                            method: "POST",
+                            body: JSON.stringify({
+                                feedback: data,
+                                page: page,
+                            }),
+                            headers: {
+                                "Content-type": "application/json; charset=UTF-8"
+                            }
+                        });
 
 
-            // start
-            /* Send feedback to Analytics */
-            for (var button of feedback.querySelectorAll("[type=submit]")) {
-                button.addEventListener("click", function (ev) {
-                    ev.preventDefault()
+                        // post to Matomo.
+                        var _paq = window._paq = window._paq || [];
+                        (function () {
+                            _paq.push(['setTrackerUrl', 'https://analytics.firefly-iii.org/matomo.php']);
+                            _paq.push(['setSiteId', '8']);
+                            _paq.push(['trackEvent', 'PageEvents', 'SendFeedback', page, data]);
+                        })();
 
-                    /* Retrieve and send data */
-                    var page = document.location.pathname
-                    var data = this.getAttribute("data-md-value")
-                    var _paq = window._paq = window._paq || [];
-                    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-                    (function() {
-                        var u="https://analytics.firefly-iii.org/";
-                        _paq.push(['setTrackerUrl', u+'matomo.php']);
-                        _paq.push(['setSiteId', '8']);
-                        _paq.push(['trackEvent', 'PageFeedback', page, data]);
-                    })();
-                    if('0' === data) {
-                        console.log('Load form!');
-                        var element = document.getElementById('empty-feedback-form');
-                        element.setAttribute('data-tf-live', '01HHJ4Q8SVJGPQHPDE3V14DHSB');
-                        var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
-                        //g.async = true;
-                        g.src = '//embed.typeform.com/next/embed.js';
-                        s.parentNode.insertBefore(g, s);
+                        if ('0' === data) {
+                            var element = document.getElementById('empty-feedback-form');
+                            element.setAttribute('data-tf-live', '01HHJ4Q8SVJGPQHPDE3V14DHSB');
+                            var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+                            g.src = '//embed.typeform.com/next/embed.js';
+                            s.parentNode.insertBefore(g, s);
+                        }
 
+                        /* Disable form */
+                        feedback.firstElementChild.disabled = true;
 
+                        var note = feedback.querySelector(
+                            ".md-feedback__note [data-md-value='" + data + "']"
+                        )
+                        if (note) {
+                            note.hidden = false
+                        }
 
-                    }
-
-                    console.log(data);
-
-                    console.log({page, data});
-
-                    /* Disable form and show note, if given */
-                    feedback.firstElementChild.disabled = true
-                    var note = feedback.querySelector(
-                        ".md-feedback__note [data-md-value='" + data + "']"
-                    )
-                    if (note)
-                        note.hidden = false
-                })
+                    })
+                }
+                // end
             }
-            // end
 
         });
 

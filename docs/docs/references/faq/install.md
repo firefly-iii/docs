@@ -159,7 +159,7 @@ Open your `.env` file and find the lines that begin with `DB_`. These define you
 DB_CONNECTION=sqlite
 ```
 
-In order to install the database, the file `/storage/database/database.sqlite` must exist. When it does not exist, you can use this command on Linux to create it:
+In order to install the database, the file `./storage/database/database.sqlite` must exist. When it does not exist, you can use this command on Linux to create it:
 
 ```text
 touch ./storage/database/database.sqlite

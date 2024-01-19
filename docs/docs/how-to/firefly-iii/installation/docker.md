@@ -4,7 +4,7 @@
 
 ### Download Docker Compose file
 
-Download [the Docker Compose file](https://raw.githubusercontent.com/firefly-iii/docker/main/docker-compose.yml) and place it somewhere convenient. Use a dedicated directory.  To include the Data Importer in your insallation, please ready [how to install the data importer](../../data-importer/installation/docker.md).
+Download [the Docker Compose file](https://raw.githubusercontent.com/firefly-iii/docker/main/docker-compose.yml) and place it somewhere convenient. Use a dedicated directory.  To include the Data Importer in your installation, please read [how to install the data importer](../../data-importer/installation/docker.md).
 
 Grab the raw file, and don't copy-paste the text from your browser. The spaces in the file are very important. So use "Save As".
 
@@ -68,7 +68,11 @@ docker volume create firefly_iii_upload
 
 ### Start the container
 
-Run this Docker command to start the Firefly III container. Edit the environment variables to match your own database. You should really change the `APP_KEY` as well. It should be a random string of _exactly_ 32 characters. You can generate such a key with the following command: `head /dev/urandom | LC_ALL=C tr -dc 'A-Za-z0-9' | head -c 32 && echo`.
+Run this Docker command to start the Firefly III container. Edit the environment variables to match your own database. You should really change the `APP_KEY` as well. It should be a random string of _exactly_ 32 characters. You can generate such a key with the following command: 
+
+```bash
+head /dev/urandom | LC_ALL=C tr -dc 'A-Za-z0-9' | head -c 32 && echo
+```
 
 ```text
 docker run -d \

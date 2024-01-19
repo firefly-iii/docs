@@ -2,9 +2,98 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
-## 6.1.0 - 2023-12-xx
+## 6.1.6 - 2024-01-07
 
-> This release required **PHP 8.3.0** and will not work on earlier releases of PHP
+### Fixed
+
+- Type validation error
+
+## 6.1.5 - 2024-01-07
+
+### Added
+
+- More audit logs
+- Sanity check in date ranges
+- More uniform length and size validations
+
+### Changed
+
+- Slightly changed text, thanks @maureenferreira!
+
+### Fixed
+
+- [Issue 8328](https://github.com/firefly-iii/firefly-iii/issues/8328) Some extra fixes for non-zero foreign amounts
+- Updated links in `.env.example`, thanks @lemuelroberto!
+
+## 6.1.4 - 2024-01-03
+
+### Fixed
+
+- [Issue 8328](https://github.com/firefly-iii/firefly-iii/issues/8328) Asking for non-zero foreign amount despite not being used
+
+## 6.1.3 - 2024-01-03
+
+### Fixed
+
+- [Issue 8326](https://github.com/firefly-iii/firefly-iii/issues/8326) Asking for non-zero foreign amount despite not being used
+
+## 6.1.2 - 2024-01-03
+
+### Changed
+
+- [Issue 8304](https://github.com/firefly-iii/firefly-iii/issues/8304) Several issues with searching for and displaying of tag-related transactions
+
+### Removed
+
+- Double reference to webhooks in the menu
+
+### Fixed
+
+- [Issue 8297](https://github.com/firefly-iii/firefly-iii/issues/8297) Division by zero
+- [Issue 8320](https://github.com/firefly-iii/firefly-iii/issues/8320) nullpointer in new layout
+- [Issue 8321](https://github.com/firefly-iii/firefly-iii/issues/8321) Networth checkbox for expense and revenue accounts removed
+- Long date ranges will throw an error
+- 
+- Max sizes and reasonable limits for most numbers and strings
+- Links in readme to documentation.
+
+### Security
+
+- Webhooks now properly disabled in the UI.
+- [Issue 8322](https://github.com/firefly-iii/firefly-iii/issues/8322) Duplicate detection did not distinguish between users
+
+## 6.1.1 - 2023-12-27
+
+### Changed
+
+- Rule overview is lower in height.
+
+### Removed
+
+- Removed fixed sidebar again
+
+### Fixed
+
+- Nullpointer in rule trigger render code
+- [Issue 8272](https://github.com/firefly-iii/firefly-iii/issues/8272) The sum for expected bills in a group includes unexpected bills as well
+- [Issue 8273](https://github.com/firefly-iii/firefly-iii/issues/8273) Frontpage preferences indicate all accounts are shown on the frontpage, even when not true
+- [Issue 8274](https://github.com/firefly-iii/firefly-iii/issues/8274) Semi specific dates do not work correctly with the "Transaction date is.." rule trigger
+- [Issue 8277](https://github.com/firefly-iii/firefly-iii/issues/8277) Expected bill next month, but shown as not expected
+- [Issue 8278](https://github.com/firefly-iii/firefly-iii/issues/8278) Net worth is empty in the dashboard due to division by zero
+- [Issue 8281](https://github.com/firefly-iii/firefly-iii/issues/8281) Database CPU utilization after v6.1.0 upgrade
+- [Issue 8291](https://github.com/firefly-iii/firefly-iii/issues/8291) Multiple "Any tag is" (negated or not) rule triggers don't all apply in strict mode
+
+### Security
+
+- HTML Injection Vulnerability in webhooks code, discovered by @stefan-schiller-sonarsource from Sonar. Thanks!
+
+### API
+
+- [Issue 8282](https://github.com/firefly-iii/firefly-iii/issues/8282) Update transaction via API does not update the "updated_at" parameter
+
+## 6.1.0 - 2023-12-17
+
+> ⚠️⚠️ This release required **PHP 8.3.0** and will not work on earlier releases of PHP ⚠️⚠️
 
 ### Added
 
@@ -14,13 +103,14 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Changed
 
-- Requires PHP8.3
+- ⚠️⚠️ Requires PHP8.3 ⚠️⚠️
 - [Issue 8148](https://github.com/firefly-iii/firefly-iii/issues/8148) Slovenian language updates
 - [Issue 8023](https://github.com/firefly-iii/firefly-iii/issues/8023) Top bar is now fixed in place
+- Completely rewrote the documentation.
 
 ### Deprecated
 
-- Support for PHP 8.2
+- ⚠️⚠️ Removed support for PHP 8.2 ⚠️⚠️
 
 ### Fixed
 
@@ -30,6 +120,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 - [Issue 8207](https://github.com/firefly-iii/firefly-iii/issues/8207) Broken links, thanks @Maxco10!
 - [Issue 8138](https://github.com/firefly-iii/firefly-iii/issues/8138) Reconciled transactions can't be "store(d) as new"
 - [Issue 7716](https://github.com/firefly-iii/firefly-iii/issues/7716) Removed bar in budget overview
+- [Issue 8251](https://github.com/firefly-iii/firefly-iii/issues/8251) Removing a budget would not remove available budget
 
 ### API
 
