@@ -50,11 +50,15 @@ Example: you have three rules in a group to add the tag "Groceries" to your groc
 ### Stop processing other triggers
 
 !!! info 
-    This only applies to "non-strict" rules.
+    This only applies to "non-strict" rules, because for strict rules, all triggers need to be hit anyway.
 
-For any trigger, you can also set the "stop processing" option. If you do, and the trigger is hit, it will stop processing other triggers in the rule. Whether the actions get executed depends on how many triggers were fired so far. If you hit 2 out of 2 when "stop processing" was hit, the actions will fire.
+For any trigger in a non-strict rule, you can also set the "stop processing" option. Non-strict rules search for each trigger one by one, independently of one another, and pool the results together. If you search for transactions that start with "A" and transactions that start with "B", two searches are done and the results are presented as one list.
 
-Example: You need to hit any of three tags in your transactions: A, B or C. If you find A, you can stop looking for B or C.
+If you set "stop processing" on any trigger, Firefly III will stop the search as soon as the first trigger finds something. It will not continue with the other triggers unless there are no transactions at all that match the first trigger.
+
+For example, if you create a rule that searches for transactions that start with "A" and transactions that start with "B" and you set the first trigger to "stop processing", no transactions that start with "B" will ever be found, if there are still transactions that start with "A".
+
+"Stop processing other triggers" may lead to unpredictable results. The rule may work as expected when you test it. But rules applied to newly created transactions do not check *other* transactions. In a lot of cases this means that triggers tha would normally fire, do not fire for a single transaction. This is because the rule is applied to the newly created transaction individually, and not to a group of transactions. 
 
 ### Stop processing other actions
 

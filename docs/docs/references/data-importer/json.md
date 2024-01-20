@@ -4,26 +4,6 @@ The data importer generates an import configuration file each time you import da
 
 You can use it to quickly configure your import the way you want to.
 
-## Pre-made import configurations
-
-There's a repository on GitHub with [import configurations](https://github.com/firefly-iii/import-configurations) for common banks and financial institutions.
-
-You can store pre-made configuration files in the data importer. This can be useful if you import regularly.
-
-- Store the files in `storage/configurations`
-- Mount a local directory to the `/var/www/html/storage/configurations` directory in Docker.
-- Change the `JSON_CONFIGURATION_DIR` to any custom directory (mount it if you want to), and place them there.
-
-With Docker:
-
-```
-docker run [..] -v /home/user/configurations:/configurations [..] -e JSON_CONFIGURATION_DIR=/configurations
-```
-
-This will show a dropdown with your JSON files ready to be selected:
-
-![Selecting pre-configured JSON files](../../images/references/data-importer/preselect.png)
-
 ## Example file
 
 This is a typical configuration file with all options:

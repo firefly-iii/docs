@@ -1,6 +1,6 @@
 # How to configure the data importer
 
-The Data Importer communicates with Firefly III over the [API](../../references/firefly-iii/api/index.md).
+The Data Importer communicates with Firefly III over the [API](../../references/firefly-iii/api/index.md). 
 
 On this page you will read how to:
 
@@ -19,6 +19,14 @@ Please also refer to the following guides.
 ## Access to Firefly III
 
 First, you must tell the data importer where to reach Firefly III.
+
+Firefly III can be reached over two URLs at the same time. In most cases this URL is always the same. For Docker installations, these URLs are often different.
+
+The `FIREFLY_III_URL` is the URL that the data importer uses to reach Firefly III. The `VANITY_URL` is the URL that you use to reach Firefly III.
+
+In case of Docker installations, the `FIREFLY_III_URL` is an "internal" URL, often in the form you see below, `http://app:8080`. Because you cannot browse to that URL, there is a second variable, the `VANITY_URL`, which is the URL you use to reach Firefly III. Most often, this is `http://localhost`.
+
+If you are not using Docker, both URLs are the same and you can safely set `FIREFLY_III_URL` only.
 
 | Environment variable | Probable value when Docker | Probable value when not Docker |
 |----------------------|----------------------------|--------------------------------|
