@@ -58,7 +58,7 @@ If you set "stop processing" on any trigger, Firefly III will stop the search as
 
 For example, if you create a rule that searches for transactions that start with "A" and transactions that start with "B" and you set the first trigger to "stop processing", no transactions that start with "B" will ever be found, if there are still transactions that start with "A".
 
-"Stop processing other triggers" may lead to unpredictable results. The rule may work as expected when you test it. But rules applied to newly created transactions do not check *other* transactions. In a lot of cases this means that triggers tha would normally fire, do not fire for a single transaction. This is because the rule is applied to the newly created transaction individually, and not to a group of transactions. 
+"Stop processing other triggers" may lead to unpredictable results. The rule may work as expected when you test it. But rules applied to newly created transactions do not check *other* transactions. In a lot of cases this means that triggers that would normally fire, do not fire for a single transaction. This is because the rule is applied to the newly created transaction individually, and not to a group of transactions. 
 
 ### Stop processing other actions
 
