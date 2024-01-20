@@ -1,6 +1,6 @@
 # How to use different authentication
 
-By default, Firefly III uses the "eloquent" driver that allows users to register and login locally. This is based on the user's email address.
+By default, Firefly III uses a basic system that allows users to register and login locally. This is based on the user's email address.
 
 See also [how to make Firefly III multi-user](../features/multi-user.md).
 

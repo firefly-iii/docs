@@ -1,13 +1,15 @@
 # Process a refund
 
-!!! tip
-    I've not yet finished writing this tutorial. Some items may not be filled in yet. I apologize for the inconvenience. Please refer to the [support page](../../references/support.md) if you have questions.
+How you process refunds is a choice. Basically, you can:
 
-(TODO write tutorial structure, incorporate questions below)
+1. Make the original expense disappear
+2. Keep the original expense, use the money as "income"
+
+This also applies to friends who pay you back (part of) an expense. Do you want to shrink the original expense or do you want to keep the whole expense and use the money as income?
 
 ## What do I do with people who pay me back?
 
-Let's say you have a budget for "Going out", worth € 100. You go out with some friends, and you offer to pay the bill, expecting your friends to pay you back later. The total bill is € 120 with your three friends owing you € 90 in total. So although you spent € 120 (overspending your budget with € 20), your actual costs are a mere € 30. What to do?
+Let's say you have a budget for "Going out", worth 100. You go out with some friends, and you offer to pay the bill, expecting your friends to pay you back later. The total bill is 120 with your three friends, who owe you 90 in total. So although you spent € 120 (overspending your budget with € 20), your actual costs are a mere € 30. What to do?
 
 It's important that Firefly III won't do anything. You can't correct your budget with income, so your budget will appear to have been overspent with € 20. But you can correct this yourself. How exactly is entirely up to you.
 
