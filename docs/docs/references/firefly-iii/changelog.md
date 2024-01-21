@@ -2,6 +2,23 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+### Added
+
+- Layout `v2` has some new features
+- [Issue 8369](https://github.com/firefly-iii/firefly-iii/issues/8369) (Additional reconcile link) reported by @chevdor
+
+### Fixed
+
+- [Issue 8352](https://github.com/firefly-iii/firefly-iii/issues/8352) (Modifying the direction of a transfer between liabilities yields no effect) reported by @Ezwen
+- [Issue 8370](https://github.com/firefly-iii/firefly-iii/pull/8370) (Fix various typos) reported by @luzpaz
+- [Issue 8377](https://github.com/firefly-iii/firefly-iii/issues/8377) (Query on multiple tags returns duplicates) reported by @chevdor
+- [Issue 8374](https://github.com/firefly-iii/firefly-iii/issues/8374) (Error Graph Income vs. expenses Reports page) reported by @nicolopozzato
+- [Issue 8390](https://github.com/firefly-iii/firefly-iii/issues/8390) (Rule with destination_account_is 'not' is never returning a result.) reported by @EricVanCaenenberghe
+- [Issue 8349](https://github.com/firefly-iii/firefly-iii/issues/8349) (Currencies not saving correctly) reported by @r1bas4
+- [Issue 8418](https://github.com/firefly-iii/firefly-iii/issues/8418) (Unable to create rule with trigger having type has_no_budget via the API ) reported by @tailg8nj
+- [Issue 8425](https://github.com/firefly-iii/firefly-iii/issues/8425) (Error from the net-worth endpoint with  `Trailing data`.) reported by @chevdor
+- Various Carbon `createFromFormat` issues fixed.
+
 ## 6.1.6 - 2024-01-07
 
 ### Fixed
