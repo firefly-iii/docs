@@ -153,7 +153,7 @@ location @budget {
 
 ## I want to use SQLite?
 
-Open your `.env` file and find the lines that begin with `DB_`. These define your database connection. Leave `DB_CONNECTION` and set it to `sqlite`. Delete the rest.
+Open your `.env` file and find the lines that begin with `DB_`. These define your database connection. Leave `DB_CONNECTION` and set it to `sqlite`. **Delete the rest of the DB env vars.**
 
 ```text
 DB_CONNECTION=sqlite
