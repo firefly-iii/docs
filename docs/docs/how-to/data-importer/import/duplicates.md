@@ -20,8 +20,7 @@ If you want to reimport duplicate transactions after deleting them:
 
 ## Common causes of false negatives
 
-!!! info
-    You know it's a duplicate, but the Data Importer didn't catch it.
+A **false negative** is when you know it's a duplicate, but the Data Importer didn't catch it.
 
 ### Rounding errors
 
@@ -34,7 +33,7 @@ These numbers may have slight variations. Firefly III will see the difference an
 
 ### Different internal or external ID's
 
-You may find your transaction has a field called `external_id` or `internal_reference`. These fields will sometimes be different. Spectre is known to change these sometimes for no good reason.
+You may find your transaction has a field called `external_id` or `internal_reference`. These fields will sometimes be different. Spectre is known to change these sometimes for no good reason. Nordigen may give pending transactions a different ID from booked transactions.
 
 ### Transfers are imported twice
 
@@ -46,12 +45,15 @@ Learn [how to import transfers between accounts](transfers.md).
 
 ## Common causes of false positives
 
-!!! info
-    You know it's not a duplicate, but the Data Importer believes it is
+A **false positive** happens when you know it's not a duplicate, but the Data Importer believes it is.
 
-This happens mostly when your data source has too little information to go on. For example, a CSV file with only a very few columns.
+This happens mostly when your data source has too little information to go on. For example, a CSV file with only a very few columns. This has very few other solutions.
 
-## Debugging
+## Further debugging
+
+When you are not sure why a duplicate is happening, or when you suspect a bug, please follow these three debugging steps first. I know I'm asking a lot, but in many cases the cause can be found easily enough.
+
+### First debug step
 
 Use the *debug view* to see why a transaction is imported, despite being a duplicate of another transaction. Remember that rules don't influence the (de)duplication process, because rules are applied *after* the duplication check.
 
@@ -70,6 +72,18 @@ Send it to me or [compare it yourself](https://jsoncompare.org/) to see the diff
 - The `created_at` and `updated_at` fields are not used in the comparison by Firefly III.
 - The `import_hash_v2` and `original_source` are not used in the comparison by Firefly III.
 - The `id` and `transaction_journal_id` fields are not used in the comparison by Firefly III.
+
+### Second debug step
+
+More debug information may be found in the debug logs of the data importer. At the end of the import and conversion routines, the data importer submits the transactions to Firefly III.
+
+(TODO example lines)
+
+(TODO more explanation)
+
+### Third debug step
+
+(TODO third step)
 
 ## Other issues?
 
