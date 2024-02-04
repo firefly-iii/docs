@@ -77,17 +77,35 @@ Send it to me or [compare it yourself](https://jsoncompare.org/) to see the diff
 
 More debug information may be found in the debug logs of the data importer. At the end of the import and conversion routines, the data importer submits the transactions to Firefly III.
 
-(TODO example lines)
+Here is an example of what the data importer submits to Firefly III. Warning: it's a lot!
 
-(TODO more explanation)
+```
+local.DEBUG: Submitting to Firefly III: {"group_title":null,"error_if_duplicate_hash":true,"transactions":[{"type":"withdrawal","date":"2017-01-01 00:00:00","currency_id":1,"currency_code":null,"amount":"12.340000000000","description":"Some test transaction 2","source_id":1,"source_name":null,"destination_id":null,"destination_name":"IsNew1123x","original_source":"jc5-data-import-v1.4.3","tags":[],"source_iban":null,"source_number":null,"source_bic":null,"destination_iban":null,"destination_number":null,"destination_bic":null}]}
+```
+
+What you see here is the raw JSON that is submitted. If you look closely, you can see the amount, a description, some metadata and more interesting stuff.
+
+If you compare two of these, you may not see a difference, but online compare tools like [this one](https://jsoncompare.org/) can help you find the differences. 
+
+Some differences aren't entirely visible to the naked eye. For example, if you have a category "Groceries" with ID #1, submitting "Groceries" or "1" will result in the same category. But Firefly III will see this as a difference. This is a silly example as the data importer is consistent about these kinds of things, but it may happen when banks switch from account names to IBANs, for example.
 
 ### Third debug step
 
-(TODO third step)
+If you want to dive even deeper into why a transaction is (not) a duplicate, even though it should (not) be, you can see what the data importer has downloaded from GoCardless or Spectre. This particular step is not possible for users who import CSV or CAMT files.
+
+The data importer connects to GoCardless/Spectre, and will at some point start downloading JSON transactions. Here's a snippet from a GoCardless transaction. Again, these are pretty large blobs of JSON, be warned!
+
+```
+production.DEBUG: Parsed Nordigen transaction "ID HERE". {"type":"withdrawal","date":"2024-02-02T01:47:33+00:00","datetime":"2024-02-02T01:47:33+00:00","amount":"6.500000000000","description":"Long description here","payment_date":"2024-02-01","order":0,"currency_code":"EUR","tags":["booked"],"category_name":null,"category_id":null,"notes":"","external_id":"ID HERE","internal_reference":"","additional-information":"","source_id":2,"destination_name":"Destination name here","destination_number":""}
+```
+
+Here too, you may recognize familiar fields such as the amount and the destination of the transaction.
+
+If you compare two of these, you may not see a difference, but online compare tools like [this one](https://jsoncompare.org/) can help you find the differences. In these cases, it's not always easy to see if a difference is present, so make sure you also check out the previous debug step to see if the data importer is doing strange data conversions.
 
 ## Other issues?
 
 Please open an issue [on GitHub](https://github.com/firefly-iii/firefly-iii/).
 
 !!! info
-    At this point the duplication detection process is 100% correct all the time. If you still believe it's broken, please provide a reproducible example.
+    At this point the duplication detection process is pretty much 100% correct all the time. If you still believe it's broken, please provide a reproducible example.

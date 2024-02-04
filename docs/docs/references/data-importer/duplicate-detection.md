@@ -19,9 +19,8 @@ Submitting to Firefly III: {"group_title":null,"error_if_duplicate_hash":false,"
 The first thing Firefly III will do is generate a hash over this array. You can see this in the Firefly III logs. Remember, Firefly III is doing the duplicate checking:
 
 ```
-Now in TransactionGroupFactory::create()  
-Now in TransactionJournalFactory::create()  
-Start of TransactionJournalFactory::create()  
+Now in TransactionGroupFactory::create()
+...  
 Now creating journal 1/1  
 The hash is: 616290b9c880d9b353e7a1b1c3d23d622a10abf6ec532cdebe966cc3e5151d2d { ... }
 ```
