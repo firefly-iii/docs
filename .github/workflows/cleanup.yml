@@ -2,10 +2,6 @@
 
 name: Prune old builds
 
-# This workflow prunes old workflow runs for an entire repository.
-
-name: Prune old builds
-
 permissions:
   actions: write
 
