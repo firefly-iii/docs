@@ -23,6 +23,19 @@ When the next month arrives, your budget amounts are gone, since they only appli
 
 You can also make Firefly III do this for you. However, it requires that you know [how to run the cron job](../advanced/cron.md).
 
+Auto-budgets are only created on the first day of the period they're set to. If the cron job does not run on that particular moment, the amount will not be set automatically. Hence, the cronjob should run daily.
+
+| Auto-budget period | Moment amount is set     |
+|--------------------|--------------------------|
+| Daily              | Every day                | 
+| Weekly             | Every Monday             | 
+| Monthly            | First day of the month   |
+| Quarterly          | First day of the quarter |
+| Every half year    | June 1st, December 1st   |
+| Yearly             | First day of the year    |
+
+You can't edit or change these moments. They are hard-coded into Firefly III.
+
 ![Basic auto budget](../../../images/how-to/firefly-iii/finances/auto-budget-1.png)
 
 ## Budgets that grow
