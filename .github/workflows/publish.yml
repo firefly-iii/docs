@@ -24,7 +24,7 @@ jobs:
           cd $GITHUB_WORKSPACE/docs
           pwd
           grep -rl '%PHPVERSION' ./ | xargs sed -i 's/%PHPVERSION/8\.3/g'
-          grep -rl '%IMPORTERVERSION' ./ | xargs sed -i 's/%IMPORTERVERSION/1\.4\.2/g'
+          grep -rl '%IMPORTERVERSION' ./ | xargs sed -i 's/%IMPORTERVERSION/1\.4\.3/g'
           grep -rl '%FFVERSION' ./ | xargs sed -i 's/%FFVERSION/6\.1\.8/g'
           python -m mkdocs build --clean
 
