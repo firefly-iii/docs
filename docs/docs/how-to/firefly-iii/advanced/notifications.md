@@ -70,3 +70,12 @@ When you use the Discord webhook URL, you must add `/slack` to the end of the UR
 
 !!! info
     If you are the only user of your Firefly III instance, you must set (the same) Webhook URL in both locations (administration AND preferences).
+
+## Webhooks and ... webhooks?
+
+Firefly III also supports [webhooks](../features/webhooks.md) which will make Firefly III send out transaction events to the outside world. This is not the same as the Discord/Slack URL you've seen previously that also mention "hooks" and "webhooks". It's all called webhooks. 
+
+To make it a little easier to understand, here are some pointers:
+
+- When you are on the `/preferences`- or `/admin`-page you must use the Discord or Slack URL
+- When you are any `/webhooks/*`-page, DO NOT use the Discord or Slack URL
