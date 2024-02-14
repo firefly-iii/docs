@@ -44,4 +44,17 @@ To make this a cron job, run `crontab -e` and add the following line:
 0 22 * * * docker exec firefly_iii_importer php artisan importer:import /import/config.json
 ```
 
-*Credits go to [@ShooTeX](https://github.com/orgs/firefly-iii/discussions/8249#discussioncomment-7850858) for this how-to.*
+This particular cron job will run on the host system. To make the cron job for the data importer a part of the `docker-compose.yml` file as well, you'll need to do something more complex.
+
+Add the following entry to your Docker compose file:
+
+```
+  cron_importer:
+    image: alpine
+    container_name: firefly_iii_import_cron
+    restart: always
+    command: sh -c "echo -e \"0 3 * * * wget -qO- http://app:8080/api/v1/cron/[SECRET]\" > /tmp/crontab_tmp && echo -e \"40 2 * * * wget -qO - --post-data '' --header 'Accept":" application/json' 'http://importer:8080/autoimport?directory=/import&secret=[SECRET]'\" >> /tmp/crontab_tmp && crontab /tmp/crontab_tmp && crond -f -L /dev/stdout && rm /tmp/crontab_tmp"
+    networks:
+      - firefly_iii
+
+```
