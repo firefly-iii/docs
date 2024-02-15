@@ -181,6 +181,7 @@ nav:
           - Architecture: explanation/more-information/architecture.md
           - Security: explanation/more-information/security.md
           - License: explanation/more-information/license.md
+          - Financial contributions: explanation/more-information/money.md
           - Missing features: explanation/more-information/what-its-not.md
           - (Security) testing: explanation/more-information/bending-and-breaking.md
       - Other tools: explanation/other-tools.md
