@@ -6,6 +6,30 @@
 - [Firefly III Data Importer](https://dev.azure.com/Firefly-III/_git/ImportToolImage)
 - [Firefly III shared base image](https://dev.azure.com/Firefly-III/_git/BaseImage?path=/apache-8.3/Dockerfile)
 
+## Which Docker tags are available?
+
+The instructions always assume `fireflyiii/core:latest`. This is the latest stable release. Other tags are:
+
+* `fireflyiii/core:beta`. This tag contains beta releases.
+* `fireflyiii/core:alpha`. This tag contains alpha releases.
+* `fireflyiii/core:develop`. Always the latest develop image. Maybe unstable.
+
+## For which platforms the Firefly III Docker image built?
+
+All Docker tags are built for ARMv7, ARM64 and AMD64. ARMv6 is not included, so these images will *not* work on the Raspberry Pi Zero, Raspberry Pi 1 (A+B) or Raspberry Pi Compute Module.
+
+## It keeps giving me CSP errors
+
+Content Security Policy headers are a security feature, and usually fail when you did not set `TRUSTED_PROXIES=*`.
+
+## All links refer to `http` so forms and charts don't work
+
+This usually happens when you did not set `TRUSTED_PROXIES=*`.
+
+## Which other settings are available for the Docker image?
+
+There are many environment variables that you can set in Firefly III. Just check out the [default env file](https://raw.githubusercontent.com/firefly-iii/firefly-iii/main/.env.example) that lists them all.
+
 ## Can I run it under a reverse proxy from a subdirectory?
 
 Yes. For the standard Docker image, follow [these instructions on GitHub](https://github.com/firefly-iii/firefly-iii/discussions/4892)

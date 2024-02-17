@@ -1,23 +1,28 @@
 # How to install using Docker
 
-This guide will assume you'll want to install both Firefly III and the Data Importer. If you already have a Firefly III installation,
-and you wish to expand it with the data importer, do not worry. You can simply follow this guide again and reinstall Firefly III. You will point to
-the same data volumes and the same databases, so nothing will be lost.
+Firefly III and the Data Importer can be installed using Docker. There are ready-made Docker containers for almost all platforms.
+
+The easiest way to install them is using "Docker compose", which is a Docker tool that allows you to define and run multi-container Docker applications. With Docker compose, you use a YAML file to configure your application's services. Then, with a single command, you create and start all the services from your configuration.
+
+This guide will assume you'll want to install both Firefly III and the Data Importer. If you already have a Firefly III installation, and you wish to expand it with the data importer, do not worry. You can simply follow this guide again and reinstall Firefly III. You will point to the same data volumes and the same databases, so nothing will be lost.
+
+The YAML file and all necessary configuration are provided online for your convenience.
 
 If you happen to include any existing data from Firefly III, please [back this data up first](../../firefly-iii/advanced/backup.md).
 
-## Docker compose
+If you have questions, please refer to [the Docker FAQ](../../../references/faq/docker.md) or contact me using the instructions from the [support page](../../../references/support.md).
+
+## Docker Compose
 
 ### Download files
 
 Grab the **[docker-compose-importer.yml](https://raw.githubusercontent.com/firefly-iii/docker/main/docker-compose-importer.yml)** from GitHub. Download the raw file and store it in a directory of your choice as `docker-compose.yml`.
 
-Then, download the environment variable files:
+Then, download the configuration files:
 
 - Download the `.env.example` file for Firefly III [from the Firefly III repository](https://raw.githubusercontent.com/firefly-iii/firefly-iii/main/.env.example). Save the raw file as `.env` next to the docker compose file.
 - Download the `.env.example` file from the [Data Importer repository](https://raw.githubusercontent.com/firefly-iii/data-importer/main/.env.example) and save it as `.importer.env` next to the other files.
 - The final file (`database.env`) contains the database variables and can be downloaded from [the Docker repository](https://raw.githubusercontent.com/firefly-iii/docker/main/database.env). Save it as a new file called `.db.env`.
-
 
 ### Edit files
 
@@ -84,7 +89,9 @@ You are now ready to go!
 - [Tutorial: Import a basic CSV file](../../../tutorials/data-importer/csv.md)
 - [How-to: import CSV or camt.053 files](../import/csv.md)
 
-## Single installation
+## Plain Docker
+
+You can also use Docker itself, skipping Docker Compose. This allows you to set up a single container, with just the data importer inside of it.
 
 To run the Data Importer as a singular container using the following `run` command. You will start a web server on port 8081 that will allow you to use the data importer.
 
@@ -95,7 +102,7 @@ Follow [how-to get a token](../../firefly-iii/features/api.md). Use the custom i
 
 Note that most people don't use GoCardless *and* Spectre values at the same time.
 
-All environment variables are optional, but convenient. Please note that the NORDIGEN environment variables refer to GoCardless.
+All environment variables are optional, but convenient. Please note that the `NORDIGEN` environment variables refer to GoCardless.
 
 ```bash
 docker run \
@@ -113,4 +120,4 @@ fireflyiii/data-importer:latest
 !!! note "Run in the background"
     Change `docker run` to `docker run -d` so the image runs in the background.
 
-
+If you have questions, please refer to [the Docker FAQ](../../../references/faq/docker.md) or contact me using the instructions from the [support page](../../../references/support.md).
