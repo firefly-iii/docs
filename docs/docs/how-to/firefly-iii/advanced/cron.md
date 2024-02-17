@@ -93,7 +93,7 @@ The `[token]` value can be found on your `/profile` under the "Command line toke
 
 If you have used the expanded Docker compose file or if you have added the cron container yourself, simply (re)start your stack. The cron job will run automatically. You can see the cron container if you do something like `docker container ls`:
 
-(TODO screenshot)
+![Show relevant containers](../../../images/how-to/firefly-iii/advanced/container-list.png)
 
 You can see the logs of the cron container by running `docker logs [container-id]`. Take the exact ID from the previous command.
 
