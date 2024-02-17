@@ -127,3 +127,15 @@ This may happen when importing data.
 2. Run the following command: `php artisan firefly-iii:force-decimal-size`
 
 For Docker, you'll have to put this in front of it: `docker exec -it [container] (command here)`. The container id can be found using `docker container ls`.
+
+## The Host-header does not match the host in the `APP_URL` environment variable?
+
+This happens when you run Firefly III behind a reverse proxy, and the reverse proxy does not send the correct `Host` header. This is usually not really a problem, but some security sensitive pages care about this.
+
+Make sure that the URL you visit Firefly III at is also set in `APP_URL`. Example:
+
+```text
+APP_URL=https://firefly.example.com
+```
+
+Restart your containers (if using Docker) and try again.
