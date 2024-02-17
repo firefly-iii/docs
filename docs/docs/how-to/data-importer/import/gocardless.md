@@ -2,12 +2,12 @@
 
 ## Introduction
 
-The GoCardless API is free-to-use for Firefly III users. The GoCardless products however are paid, and they are commercial organizations. Furthermore, the API access for Firefly III users may be limited.
+The GoCardless API is free-to-use for Firefly III users. The GoCardless product however is paid, and they are a commercial organization. Furthermore, the API access for Firefly III users may be limited.
 
 Please read and agree with all the terms the company may present you with. They have their own data usage and privacy policies, which you must read up on.
 
 !!! info "Disclaimer"
-    As a general disclaimer: GoCardless is a commercial organisations. They may revoke your access or charge money at any moment. I'm grateful for the free access they provide to Firefly III users.
+    As a general disclaimer: GoCardless is a commercial organisation. They may revoke your access or charge money at any moment. I'm grateful for the free access they provide to Firefly III users.
 
 !!! info "About bank availability"
     GoCardless supports very few 🇺🇸 American and Asian banks. There is little I can do about this. You'll have to import CSV files.

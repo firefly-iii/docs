@@ -1,6 +1,6 @@
 # Financial contributions
 
-Firefly III is built by me, for free. It's free software, both in the sense that it doesn't cost anything, and free software in the sense that it's free to edit, change or use it as you wish, under the terms of [the AGPLv3 license](license.md). I am however, not adverse to a donation or a sponsorship.
+Firefly III is built by "James Cole" and all contributors, for free. It's free software, both in the sense that it doesn't cost anything, and free software in the sense that it's free to edit, change or use it as you wish, under the terms of [the AGPLv3 license](license.md). I am however, not adverse to a donation or a sponsorship.
 
 ## Donations
 
