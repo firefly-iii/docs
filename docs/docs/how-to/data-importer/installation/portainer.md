@@ -64,4 +64,4 @@ From this point forward, you can follow these tutorials and guides to help you s
 - [Tutorial: Create accounts and transactions](../../../tutorials/finances/first-steps.md)
 - [Tutorial: My first accounts](../../../tutorials/finances/first-accounts.md)
 - [Tutorial: Import a basic CSV file](../../../tutorials/data-importer/csv.md)
-- 
+
