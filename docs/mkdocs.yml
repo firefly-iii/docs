@@ -58,6 +58,7 @@ nav:
       - Firefly III:
           - How to install:
               - Using Docker: how-to/firefly-iii/installation/docker.md
+              - Using Portainer: how-to/firefly-iii/installation/portainer.md
               - Using Kubernetes: how-to/firefly-iii/installation/kubernetes.md
               - Using a self-managed server: how-to/firefly-iii/installation/self-managed.md
           - How to upgrade:
@@ -94,6 +95,7 @@ nav:
       - Data Importer:
           - How to install:
               - Using Docker: how-to/data-importer/installation/docker.md
+              - Using Portainer: how-to/data-importer/installation/portainer.md
               - Using Kubernetes: how-to/data-importer/installation/kubernetes.md
               - Using a self-managed server: how-to/data-importer/installation/self-managed.md
           - How to configure: how-to/data-importer/how-to-configure.md
