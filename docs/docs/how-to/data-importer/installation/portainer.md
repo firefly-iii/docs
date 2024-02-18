@@ -54,3 +54,14 @@ Press the button to get the stack deployed! After a while, it should run as expe
 ![Portainer stack](../../../images/how-to/data-importer/installation/portainer_stack.png)
 
 ![Portainer final overview](../../../images/how-to/data-importer/installation/portainer_final.png)
+
+The default configuration will run Firefly III on port 80 which means you can visit Firefly III at [http://localhost](http://localhost). If your portainer is running somewhere else, or in a different configuration, the URL will be different of course. 
+
+The data importer (again, in the default configuration) can be reached at [http://localhost:81](http://localhost:81).
+
+From this point forward, you can follow these tutorials and guides to help you set up:
+
+- [Tutorial: Create accounts and transactions](../../../tutorials/finances/first-steps.md)
+- [Tutorial: My first accounts](../../../tutorials/finances/first-accounts.md)
+- [Tutorial: Import a basic CSV file](../../../tutorials/data-importer/csv.md)
+- 
