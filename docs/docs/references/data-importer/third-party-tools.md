@@ -38,7 +38,7 @@ This experimental [Python script](https://gist.github.com/adyanth/20c004869baf33
 - GitHub-user [@dvankley](https://github.com/dvankley) built an alternative Plaid importer tool. [Website and documentation](https://github.com/dvankley/firefly-plaid-connector-2)
 
 !!! warning
-The free Plaid program is meant for testing and your milage may vary.
+    The free Plaid program is meant for testing and your milage may vary.
 
 ## Bank-specific tools
 

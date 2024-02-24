@@ -28,10 +28,10 @@ If you want to update a split transaction, you must know and submit the `transac
 As you can see, the second transaction will not be updated.
 
 !!! warning
-If you do not submit a split, not even its ID, the split will be **deleted**.
+    If you do not submit a split, not even its ID, the split will be **deleted**.
 
 !!! warning
-If you submit changes to a split without submitting the `transaction_journal_id`, it will be created as a new split. The previous split will be deleted.
+    If you submit changes to a split without submitting the `transaction_journal_id`, it will be created as a new split. The previous split will be deleted.
 
 ## Bulk transaction update
 
