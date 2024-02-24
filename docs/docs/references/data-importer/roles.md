@@ -38,7 +38,7 @@ Indicates the amount of the transaction. Use "Amount (negated column)" if the tr
 
 ## Amount (in foreign currency)
 
-Indicates the foreign amount of the transaction. Is always present next to the normal amount.
+Indicates the foreign amount of the transaction. If you select a column that contains the foreign amount, you must also select the "Foreign currency code (ISO 4217)" role. Otherwise, it may not be possible to import a foreign amount.
 
 ## Amount (credit / debit column)
 
