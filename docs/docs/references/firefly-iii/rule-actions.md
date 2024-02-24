@@ -1,6 +1,10 @@
 # Rule actions
 
-Rules, [once triggered](rule-triggers.md) can do a bunch of stuff to your transactions. Most of them are pretty obvious. Here is the full list.
+Rules, [once triggered](rule-triggers.md) can do a bunch of stuff to your transactions. Make sure to also read [how to use rules](../../how-to/firefly-iii/features/rules.md). Here are all rule actions. You can see the full list in Firefly III:
+
+![Rule actions](../../images/references/firefly-iii/rule-actions.png)
+
+Here's a summary of the rule actions you can use. 
 
 ## Set meta data
 
