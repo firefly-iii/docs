@@ -151,7 +151,7 @@ You can also make some advanced combinations:
 So you could say "Transaction date is before" `xxxx-xx-10` and any transaction before the 10th of the month is triggered.
 
 !!! info
-  These semi specific dates are tricky. The `xx`-values will be filled in by the date of the transaction. If your rule trigger has something like "2018-xx-xx" it will never match transactions from any year except 2018.
+   These semi specific dates are tricky. The `xx`-values will be filled in by the date of the transaction. If your rule trigger has something like "2018-xx-xx" it will never match transactions from any year except 2018.
 
 
 ## Would you like to know more?

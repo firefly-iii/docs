@@ -52,7 +52,7 @@ Select this if you want Firefly III to apply your rules to the import. It is use
 When you check this the data importer will add a tag to each imported transaction denoting the import; this groups your import under a tag.
 
 !!! note "Rules"
-If you have rules that remove all tags from a transaction, they will *not* work when you use this option. The tag will always be added. This is not because the data importer uses some magic trick. The tag is added *after* the transaction is created.
+    If you have rules that remove all tags from a transaction, they will *not* work when you use this option. The tag will always be added. This is not because the data importer uses some magic trick. The tag is added *after* the transaction is created.
 
 ### Custom import tag
 
@@ -73,7 +73,7 @@ For GoCardless and Spectre imports, you can select a date range, limiting the im
 Checkout the [FAQ on duplicate transactions](../../how-to/data-importer/import/duplicates.md) and the FAQ on re-importing transactions for more information.
 
 !!! info "Duplicate detection"
-If you're unsure about what setting to use, use content-based duplicate detection.
+    If you're unsure about what setting to use, use content-based duplicate detection.
 
 ## Other options
 

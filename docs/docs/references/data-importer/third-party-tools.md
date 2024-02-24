@@ -24,7 +24,7 @@ There are various scripts and tools you can use, if the Firefly III Data Importe
 [This script](https://github.com/plumped/camt_converter_ISO20022_for_camt) allows you to unzip zip files with camt.053 in them and convert them into CSV for easy processing.
 
 !!! info
-Since the data importer supports camt.053 files, this is no necessary.
+    Since the data importer supports camt.053 files, this is no necessary.
 
 ### GnuCash
 
@@ -66,5 +66,5 @@ These applications allow you to import data from Australian Bank "Up":
 If you're banking with Revolut, you can use the [Revolut importer](https://gitlab.com/ludo444/fireflyrevoluttransactions), which is built by GitLab user [@ludo444](https://gitlab.com/ludo444).
 
 !!! info
-Want your app on this list? Open an [issue on GitHub](https://github.com/firefly-iii/firefly-iii/issues/)!
+    Want your app on this list? Open an [issue on GitHub](https://github.com/firefly-iii/firefly-iii/issues/)!
 

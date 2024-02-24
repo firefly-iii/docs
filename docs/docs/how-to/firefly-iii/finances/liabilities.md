@@ -14,7 +14,7 @@ Credit cards are not considered a liability.
 
 
 !!! info
-Although you can set the interest rate for a liability, Firefly III will not automatically calculate the interest due.
+    Although you can set the interest rate for a liability, Firefly III will not automatically calculate the interest due.
 
 Firefly III has three types of liabilities:
 
