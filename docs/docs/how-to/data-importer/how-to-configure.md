@@ -49,8 +49,10 @@ The `FIREFLY_III_URL` is optional. If you don't set it, the data importer will s
 
 Second, to authenticate with Firefly III you must set ONE of the following variables:
 
-1. Set a Personal Access Token in the `FIREFLY_III_ACCESS_TOKEN` environment variable.
-2. OR Set a Client ID in the `FIREFLY_III_CLIENT_ID` environment variable.
+1. Set a [Personal Access Token](../firefly-iii/features/api.md) in the `FIREFLY_III_ACCESS_TOKEN` environment variable.
+2. OR set a [Client ID](../firefly-iii/features/api.md) in the `FIREFLY_III_CLIENT_ID` environment variable.
+
+You can get these variables by reading [how to talk to the API](../firefly-iii/features/api.md).
 
 !!! note "Authelia and other tools"
     Firefly III combined with [external identity providers](../../how-to/firefly-iii/advanced/authentication.md) such as Authelia can only handle Personal Access Tokens.
