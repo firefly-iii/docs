@@ -14,17 +14,6 @@ Waterfly III is an android app created by @dreautall that connects to your Firef
 - [Website and documentation](https://github.com/dreautall/waterfly-iii)
 - [Google Play Store](https://play.google.com/store/apps/details?id=com.dreautall.waterflyiii)
 
-### Firefly Personal Finance
-
-Firefly Personal Finance is an android app created by @mconway that connects to your Firefly III installation.
-
-!!! warning
-    The further development of this tool stopped in January 2020. It may no longer work as expected.
-
-- [Credits](https://github.com/mconway)
-- [Website and documentation](https://github.com/mconway/firefly-app/)
-- [Google Play Store](https://play.google.com/store/apps/details?id=com.zerobyte.firefly)
-
 ### Photuris III
 
 Photuris III is an android app created by @emansih that connects to your Firefly III installation.
@@ -57,6 +46,17 @@ Lychnos is a simple web front-end for Firefly III made by @davidschlachter, buil
 
 - [Credits](https://github.com/davidschlachter)
 - [Website and documentation](https://github.com/davidschlachter/lychnos)
+
+### Firefly Personal Finance
+
+Firefly Personal Finance is an android app created by @mconway that connects to your Firefly III installation.
+
+!!! warning
+    Development of this tool stopped in January 2020. It may no longer work as expected.
+
+- [Credits](https://github.com/mconway)
+- [Website and documentation](https://github.com/mconway/firefly-app/)
+- [Google Play Store](https://play.google.com/store/apps/details?id=com.zerobyte.firefly)
 
 ## Bots and tools
 

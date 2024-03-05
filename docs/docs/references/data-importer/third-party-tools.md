@@ -11,6 +11,10 @@ There are various scripts and tools you can use, if the Firefly III Data Importe
 
 ## Import tools
 
+### FF3-OFX
+
+[FF3-OFX](https://github.com/pelaxa/ff3-ofx) is a React application that can be used to import transactions using your financial institution's OFX (Money format) exports.
+
 ### Splitwise
 
 "[Splitwise Firefly Sync](https://github.com/adyanth/splitwise-firefly-sync)" syncs the expenses from Splitwise to Firefly III using their respective APIs.
