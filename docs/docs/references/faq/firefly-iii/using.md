@@ -139,3 +139,9 @@ APP_URL=https://firefly.example.com
 ```
 
 Restart your containers (if using Docker) and try again.
+
+## My password is not accepted
+
+Firefly III does not accept short passwords, where short is anything less than 16 characters. If selected, Firefly III will also not accept leaked passwords.
+
+You can opt to allow leaked passwords to be used, but you cannot use passwords less than 16 characters long.
