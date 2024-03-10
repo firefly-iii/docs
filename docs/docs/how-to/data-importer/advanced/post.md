@@ -64,3 +64,46 @@ curl --location --request POST 'https://data-importer.example.com/autoimport?dir
 ```
 
 The data importer will scroll through everything in the `/import` directory and import whatever is there. In other words, the POST command can trigger the import of files already present somewhere in a place where the data importer can read them.
+
+In order to set this up, you need the following environment variables:
+
+```
+CAN_POST_AUTOIMPORT=true
+AUTO_IMPORT_SECRET=YOURSECRETHERE
+IMPORT_DIR_ALLOWLIST=/import
+```
+
+1. You must set `CAN_POST_AUTOIMPORT=true` or the command is disabled and will never work.
+2. Without a 16-character secret in `AUTO_IMPORT_SECRET` it will not work either. [Generate one using this page](https://www.random.org/passwords/?num=1&len=16&format=html&rnd=new).
+3. This denotes the directory from which you are allowed to import. Any subdirectory will also be accepted by the POST command. So, you could set this to `/import` and use the POST command to import from `/import/some/other/directory`.
+
+An optional variable is:
+
+```
+FALLBACK_IN_DIR=false
+```
+
+Each file you import must be accompanied by a JSON file that contains the configuration for the data importer. For example:
+
+```
+bank.csv
+bank.json
+another_csv_file.csv
+another_csv_file.json
+some_xml_file.xml
+some_xml_file.json
+```
+
+BUT, if you set `FALLBACK_IN_DIR=true`, you can create a single `_fallback.json file, and it will be used for all files in the directory that do not have an accompanying JSON file. Example:
+
+```
+_fallback.json
+bank.csv
+another_csv_file.csv
+another_csv_file.json
+no_config.csv
+some_xml_file.xml
+some_xml_file.json
+```
+
+In the list above, both `bank.csv` and `no_config.csv` will be imported using the `_fallback.json` file.
