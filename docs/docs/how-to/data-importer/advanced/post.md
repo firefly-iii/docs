@@ -94,7 +94,7 @@ some_xml_file.xml
 some_xml_file.json
 ```
 
-BUT, if you set `FALLBACK_IN_DIR=true`, you can create a single `_fallback.json file, and it will be used for all files in the directory that do not have an accompanying JSON file. Example:
+BUT, if you set `FALLBACK_IN_DIR=true`, you can create a single `_fallback.json` file, and it will be used for all files in the directory that do not have an accompanying JSON file. Example:
 
 ```
 _fallback.json
