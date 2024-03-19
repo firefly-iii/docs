@@ -48,29 +48,29 @@ You can search the web to find out how to install these modules. Some may be ins
 
 Browse to `/var/www` which is probably the directory where your web server is configured to find its files.
 
-[Download the latest release as a zip file](https://github.com/firefly-iii/firefly-iii/releases/download/%FFVERSION/FireflyIII-%FFVERSION.zip) from GitHub.
+[Download the latest release as a zip file](https://github.com/firefly-iii/firefly-iii/releases/download/v%FFVERSION/FireflyIII-v%FFVERSION.zip) from GitHub.
 
 Unzip it in `firefly-iii` by using the following command.
 
 ```bash
 mkdir /var/www/firefly-iii
-unzip FireflyIII-%FFVERSION.zip -d /var/www/firefly-iii
+unzip FireflyIII-v%FFVERSION.zip -d /var/www/firefly-iii
 ```
 
 Or perhaps:
 
 ```bash
 sudo -u www-data mkdir /var/www/firefly-iii
-sudo -u www-data unzip FireflyIII-%FFVERSION.zip -d /var/www/firefly-iii
+sudo -u www-data unzip FireflyIII-v%FFVERSION.zip -d /var/www/firefly-iii
 ```
 
-%FFVERSION is the [latest version](https://version.firefly-iii.org/).
+v%FFVERSION is the [latest version](https://version.firefly-iii.org/).
 
 If this gives an error because of read/write permissions, prepend the command with `sudo`. Then fix the permissions:
 
 ```bash
 sudo mkdir /var/www/firefly-iii
-sudo unzip FireflyIII-%FFVERSION.zip -d firefly-iii
+sudo unzip FireflyIII-v%FFVERSION.zip -d firefly-iii
 sudo chown -R www-data:www-data /var/www/firefly-iii
 sudo chmod -R 775 /var/www/firefly-iii/storage
 ```

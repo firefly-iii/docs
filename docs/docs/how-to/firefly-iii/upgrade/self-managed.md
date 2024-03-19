@@ -7,73 +7,19 @@ Firefly III can upgrade itself from very old versions, even back from 4.7.x. In 
 
 ## Created using composer "create-project"
 
-The best way to upgrade is to "reinstall" Firefly III using the following command:
-
-```bash
-composer create-project grumpydictator/firefly-iii --no-dev --prefer-dist firefly-iii-updated %FFVERSION
-```
-
-Where `%FFVERSION` is the latest version of Firefly III. This installs Firefly III in a new directory called `firefly-iii-updated`. Assuming your *original* Firefly III installation is in the directory `firefly-iii` you can upgrade by moving over your `.env` file and other stuff:
-
-```bash   
-cp firefly-iii/.env firefly-iii-updated/.env
-cp firefly-iii/storage/upload/* firefly-iii-updated/storage/upload/
-cp firefly-iii/storage/export/* firefly-iii-updated/storage/export/
-```
-
-If you use SQLite as a database system (you will know if you do) copy your database as well. Otherwise, the `.env`-file is enough.
-
-Then, run the following commands to finish the upgrade:
-
-```bash
-cd firefly-iii-updated
-rm -rf bootstrap/cache/*
-php artisan cache:clear
-php artisan migrate --seed
-php artisan firefly-iii:upgrade-database
-php artisan passport:install
-php artisan cache:clear
-cd ..
-```
-
-To ensure your webserver serves you the new Firefly III:
-
-```bash
-mv firefly-iii firefly-iii-old
-mv firefly-iii-updated firefly-iii
-```
-
-If you get 500 errors or other problems, you may have to set the correct access rights:
-
-```bash   
-sudo chown -R www-data:www-data firefly-iii
-sudo chmod -R 775 firefly-iii/storage
-```
-
-Remove any old PHP packages or at least, they must not be used by Apache and/or nginx. To disable old PHP versions in Apache, you can use:
-
-```bash
-# to disable
-sudo a2dismod php7.x 
-# to enable
-sudo a2enmod php7.x
-# restart apache 2
-sudo service apache2 restart
-```
-
-This assumes you run Apache and your OS package manager can handle multiple PHP versions (not all of them do this). Other commands can be found using a search engine.
+The best way to upgrade is to use the "Straight from GitHub" instructions below. In recent times, the deployment of Firefly III has changed and the "create-project" method is no longer recommended. 
 
 ## Straight from GitHub
 
 !!! danger "New instructions"
     These instructions have changed after the release of Firefly III v6.1.11 on 2024-03-20.
 
-[Download the latest release as a zip file](https://github.com/firefly-iii/firefly-iii/releases/download/%FFVERSION/FireflyIII-%FFVERSION.zip) from GitHub.
+[Download the latest release as a zip file](https://github.com/firefly-iii/firefly-iii/releases/download/v%FFVERSION/FireflyIII-v%FFVERSION.zip) from GitHub.
 
 Unzip it into your `/var/www/firefly-iii` directory using the following command.
 
 ```bash
-unzip FireflyIII-%FFVERSION.zip -x "storage/*" -d /var/www/firefly-iii
+unzip FireflyIII-v%FFVERSION.zip -x "storage/*" -d /var/www/firefly-iii
 ```
 
 Use sudo if necessary
