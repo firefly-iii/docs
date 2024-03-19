@@ -65,17 +65,25 @@ This assumes you run Apache and your OS package manager can handle multiple PHP 
 
 ## Straight from GitHub
 
-Back up your entire installation directory, and database. Go to the `firefly-iii` folder and run these commands.
+!!! danger "New instructions"
+    These instructions have changed after the release of Firefly III v6.1.11 on 2024-03-20.
 
-!!! warning
-    The `main` branch also includes alpha and beta releases. The `git pull` command may inadvertently upgrade your Firefly III version to the latest alpha or beta version if it is available. Verify there is no active alpha or beta on [the latest release](https://version.firefly-iii.org/) page.
+[Download the latest release as a zip file](https://github.com/firefly-iii/firefly-iii/releases/download/%FFVERSION/FireflyIII-%FFVERSION.zip) from GitHub.
+
+Unzip it into your `/var/www/firefly-iii` directory using the following command.
 
 ```bash
-git pull
-# alternatively, use:
-# git pull origin [version]
-rm -rf bootstrap/cache/*
-rm -rf vendor/
+unzip FireflyIII-%FFVERSION.zip -x "storage/*" -d /var/www/firefly-iii
+```
+
+Use sudo if necessary
+
+!!! warning "Exclude the storage directory"
+    The `-x "storage/*"` part is important. It prevents the storage directory from being overwritten. If you forget this, you will lose all your uploads and exports.
+
+Then run the following commands:
+
+```bash
 composer install --no-scripts --no-dev
 composer install --no-dev
 php artisan migrate --seed

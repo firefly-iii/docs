@@ -2,6 +2,9 @@
 
 If you have your own (virtual) web server you can use this guide to install Firefly III. You may have some ingredients prepared already.
 
+!!! warning "New instructions"
+    These instructions have changed after the release of Firefly III v6.1.11 on 2024-03-20.
+
 ## Ingredients
 
 You need a working LAMP, LEMP or WAMP stack. Run PHP %PHPVERSION. Here are some Google queries to help you.
@@ -12,7 +15,7 @@ You need a working LAMP, LEMP or WAMP stack. Run PHP %PHPVERSION. Here are some 
 
 You need a (MySQL) database and credentials for a user that has permissions on that database. Firefly III creates its own tables.
 
-Several users have created specific guides for their OS and database combination.
+Several users have created specific guides for their OS and database combination. 
 
 1. [Raspberry Pi 3, with Docker and Docker compose](https://gist.github.com/josephbadow/588c2ae961231fe338c459127c7d835b)
 2. [Firefly III in Ubuntu 20.04 and proxmox](https://gist.github.com/Engr-AllanG/34e77a08e1482284763fff429cdd92fa)
@@ -39,32 +42,26 @@ Install the following PHP modules:
 
 You can search the web to find out how to install these modules. Some may be installed already depending on your system. Use `phpinfo()` to find out.
 
-### Installing composer
-
-If you have sudo rights (try `sudo ls`) you can install composer using the following command:
-
-```bash
-curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
-```
-
-Verify the installation of composer using the following command.
-
-```bash
-composer -v
-```
-
-If you have no sudo rights, you can simply [download composer](https://getcomposer.org/download/) with the instructions under the header "manual download". Use `php composer.phar` instead of `composer` in the instructions ahead.
-
 ## Installing Firefly III
 
 ### Main command
 
 Browse to `/var/www` which is probably the directory where your web server is configured to find its files.
 
-Enter the following command.
+[Download the latest release as a zip file](https://github.com/firefly-iii/firefly-iii/releases/download/%FFVERSION/FireflyIII-%FFVERSION.zip) from GitHub.
+
+Unzip it in `firefly-iii` by using the following command.
 
 ```bash
-composer create-project grumpydictator/firefly-iii --no-dev --prefer-dist firefly-iii %FFVERSION
+mkdir /var/www/firefly-iii
+unzip FireflyIII-%FFVERSION.zip -d /var/www/firefly-iii
+```
+
+Or perhaps:
+
+```bash
+sudo -u www-data mkdir /var/www/firefly-iii
+sudo -u www-data unzip FireflyIII-%FFVERSION.zip -d /var/www/firefly-iii
 ```
 
 %FFVERSION is the [latest version](https://version.firefly-iii.org/).
@@ -72,13 +69,17 @@ composer create-project grumpydictator/firefly-iii --no-dev --prefer-dist firefl
 If this gives an error because of read/write permissions, prepend the command with `sudo`. Then fix the permissions:
 
 ```bash
-sudo chown -R www-data:www-data firefly-iii
-sudo chmod -R 775 firefly-iii/storage
+sudo mkdir /var/www/firefly-iii
+sudo unzip FireflyIII-%FFVERSION.zip -d firefly-iii
+sudo chown -R www-data:www-data /var/www/firefly-iii
+sudo chmod -R 775 /var/www/firefly-iii/storage
 ```
 
 ### Configuration
 
-In the `firefly-iii` directory you will find a `.env` file. Open this file using your favorite editor. There are instructions what to do in this file.
+In the `firefly-iii` directory you will find a `.env.example` file. Rename or copy it to `.env`. Then, open this file using your favorite editor. There are instructions what to do in this file.
+
+Make sure you configure at least the database.
 
 ### Initialize the database
 
