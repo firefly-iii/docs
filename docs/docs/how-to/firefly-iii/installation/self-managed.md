@@ -89,7 +89,7 @@ This step is very important, because Firefly III needs a database to work with, 
 php artisan firefly-iii:upgrade-database
 php artisan firefly-iii:correct-database
 php artisan firefly-iii:report-integrity
-php artisan passport:keys
+php artisan firefly-iii:laravel-passport-keys
 ```
 
 Now you should be able to visit [http://localhost/firefly-iii/public](http://localhost/firefly-iii/public) and see Firefly III.

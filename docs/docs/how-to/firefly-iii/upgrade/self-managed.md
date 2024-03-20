@@ -34,6 +34,6 @@ php artisan migrate --seed
 php artisan firefly-iii:decrypt-all
 php artisan cache:clear
 php artisan firefly-iii:upgrade-database
-php artisan passport:keys
+php artisan firefly-iii:laravel-passport-keys
 php artisan cache:clear
 ```
