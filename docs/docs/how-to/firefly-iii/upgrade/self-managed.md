@@ -22,7 +22,7 @@ Unzip it into your `/var/www/firefly-iii` directory using the following command.
 unzip FireflyIII-v%FFVERSION.zip -x "storage/*" -d /var/www/firefly-iii
 ```
 
-Use sudo if necessary
+Use `sudo` if necessary, but if you do, make sure that you set the ownership of the `/var/www/firefly-iii` directory to `www-data` again.
 
 !!! warning "Exclude the storage directory"
     The `-x "storage/*"` part is important. It prevents the storage directory from being overwritten. If you forget this, you will lose all your uploads and exports.
@@ -30,8 +30,6 @@ Use sudo if necessary
 Then run the following commands:
 
 ```bash
-composer install --no-scripts --no-dev
-composer install --no-dev
 php artisan migrate --seed
 php artisan firefly-iii:decrypt-all
 php artisan cache:clear
