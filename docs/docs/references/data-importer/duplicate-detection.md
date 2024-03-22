@@ -56,7 +56,7 @@ The fields that are available are:
 In all of these cases it's important that you always select the same roles for the same columns, or duplicate detection may not work as expected.
 
 
-##### Nordigen and Salt Edge identifier-based duplicate detection
+#### Nordigen and Salt Edge identifier-based duplicate detection
 
 For Nordigen and Salt Edge only two fields are available to be used for identifier-based duplicate detection, because the API is pretty consistent in what it delivers:
 
