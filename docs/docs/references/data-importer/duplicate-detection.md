@@ -42,4 +42,27 @@ Conversely, it also means that:
 
 Identifier-based duplicate detection is handled by the data importer. Each transaction you wish to import **must** have a unique identifier in a column.
 
-If you select the column and the field it should be stored in, the data importer will search your Firefly III installation for this specific identifier. When Firefly III reports it's been found, the transaction will not be imported (again).
+If you select the column and the field it should be stored in, the data importer will search your Firefly III installation for this specific identifier. When Firefly III reports it's been found, the transaction will not be imported (again). 
+
+#### CSV-based identifier-based duplicate detection
+
+The fields that are available are:
+
+* The notes: The column(s) in your CSV file that you map to the "Notes"-field are compared to spot duplicates.
+* External identifier: The column in your CSV file that you map to the "External identifier"-field is compared to spot duplicates.
+* Transaction description: The column(s) in your CSV file that you map to the "Description"-field are compared to spot duplicates.
+* Internal reference: The column in your CSV file that you map to the "External identifier"-field is compared to spot duplicates.
+
+In all of these cases it's important that you always select the same roles for the same columns, or duplicate detection may not work as expected.
+
+
+##### Nordigen and Salt Edge identifier-based duplicate detection
+
+For Nordigen and Salt Edge only two fields are available to be used for identifier-based duplicate detection, because the API is pretty consistent in what it delivers:
+
+* External identifier: The entry in each downloaded transaction that uniquely defines each transaction. 
+* Additional information: The free format text in each downloaded transaction that contains some extra information of each transaction. 
+
+The external identifier is a given field. If it does not exist, the data importer will add it for you. This is a very reliable way to detect duplicates.
+
+Some users prefer the "additional information"-field. What it contains is different per bank, but sometimes it contains some kind of ID, so it can be used as well.
