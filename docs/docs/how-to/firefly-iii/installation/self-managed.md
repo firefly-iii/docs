@@ -2,18 +2,13 @@
 
 If you have your own (virtual) web server you can use this guide to install Firefly III. You may have some ingredients prepared already.
 
-!!! warning "New instructions"
-    These instructions have changed after the release of Firefly III v6.1.11 on 2024-03-20.
-
 ## Ingredients
 
-You need a working LAMP, LEMP or WAMP stack. Run PHP %PHPVERSION. Here are some Google queries to help you.
+1. You need a working LAMP, LEMP or WAMP stack. Make sure you use PHP %PHPVERSION. How to set this up is outside the scope of this manual, but this is something [you can look up](https://www.google.com/search?q=lamp+stack+php+%PHPVERSION). 
+2. You will also need a (MySQL) database and credentials for a user that has permissions on that database. Firefly III creates its own tables. You can use SQLite if this is difficult to set up. 
+3. In case you want to use one of the languages that Firefly III is equipped with, make sure you install the necessary locales. For Debian / Ubuntu for example, use `sudo apt install language-pack-nl-base && sudo locale-gen`.
 
-1. [Install a LAMP stack with PHP %PHPVERSION](https://www.google.com/search?q=lamp+stack+php+%PHPVERSION)
-2. [Upgrade Ubuntu PHP %PHPVERSION](https://www.google.com/search?q=upgrade+ubuntu+php+%PHPVERSION)
-3. [PHP %PHPVERSION raspberry pi](https://www.google.nl/search?q=PHP+%PHPVERSION+raspberry+pi)
 
-You need a (MySQL) database and credentials for a user that has permissions on that database. Firefly III creates its own tables.
 
 Several users have created specific guides for their OS and database combination. 
 
@@ -21,8 +16,6 @@ Several users have created specific guides for their OS and database combination
 2. [Firefly III in Ubuntu 20.04 and proxmox](https://gist.github.com/Engr-AllanG/34e77a08e1482284763fff429cdd92fa)
 3. [Firefly III scripted installer](https://github.com/runlevel-4/firefly-iii-automation)
 4. [Firefly III Gulp orchestration scripts](https://github.com/sidyes/firefly-iii-gulp)
-
-In case you want to use one of the languages that Firefly III is equipped with, install the necessary locales. For Debian / Ubuntu for example, use `sudo apt install language-pack-nl-base && sudo locale-gen`.
 
 ## Preparing your server
 
@@ -38,7 +31,7 @@ Install the following PHP modules:
 * PHP GD
 * PHP XML
 * PHP MBString
-* PHP whatever database you're gonna use.
+* PHP support for whatever database you're going to use.
 
 You can search the web to find out how to install these modules. Some may be installed already depending on your system. Use `phpinfo()` to find out.
 
@@ -75,15 +68,30 @@ sudo chown -R www-data:www-data /var/www/firefly-iii
 sudo chmod -R 775 /var/www/firefly-iii/storage
 ```
 
-### Configuration
+### Web server configuration
+
+Most servers will serve files from the `/var/www` directory. Firefly III would be served from `/firefly-iii/public`. This is not really what you would want to do.
+
+You can look up for your webserver (Apache or nginx) how to change the root directory or how to set up virtual hosts. 
+
+### Firefly III configuration
 
 In the `firefly-iii` directory you will find a `.env.example` file. Rename or copy it to `.env`. Then, open this file using your favorite editor. There are instructions what to do in this file.
 
-Make sure you configure at least the database.
+Make sure you configure at least the database. For SQLite, you can drop all the configuration except `DB_CONNECTION=sqlite`.
 
 ### Initialize the database
 
-This step is very important, because Firefly III needs a database to work with, and it will tell you whether your configuration is correct. Run the following command in the Firefly III directory.
+This step is very important, because Firefly III needs a database to work with, and it will tell you whether your configuration is correct.
+
+If you decide to use SQLite, make sure you run the following command to create the SQLite database file.
+
+```bash
+# SQLite only!
+touch /var/www/firefly-iii/storage/database/database.sqlite
+```
+
+Either way, in all cases, run these commands to initialize the database:
 
 ```bash
 php artisan firefly-iii:upgrade-database
