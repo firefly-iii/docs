@@ -64,7 +64,7 @@ Run the following command to "tail" the logs and see what's happening:
 docker container logs -f CONTAINER
 ```
 
-The `CONTAINER` variable can be different for everybody, but in a lot of cases it's either `firefly-iii-app-1` or `data-importer-app-1`.
+The `CONTAINER` variable can be different for everybody, but in a lot of cases it's either `firefly-iii-app-1` or `data-importer-1`.
 
 ## How can I safely submit debug information?
 
