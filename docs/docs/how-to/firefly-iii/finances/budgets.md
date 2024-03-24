@@ -6,6 +6,10 @@ Firefly III budgeting works best when you work from the first day of the month t
 
 ![Create a budget](../../../images/how-to/firefly-iii/finances/create-budget.png)
 
+## Changing the date range
+
+The date range for budgets is tied to your view range, and you can change that in Preferences > Layout.
+
 ## Basic budgets
 
 Once you have a few budgets, you can link them to your expenses when you create a transaction. See also, [how to organize transactions](transactions.md).
