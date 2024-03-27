@@ -39,9 +39,22 @@ You can search the web to find out how to install these modules. Some may be ins
 
 ### Main command
 
-[Download the latest release as a zip file](https://github.com/firefly-iii/firefly-iii/releases/download/v%FFVERSION/FireflyIII-v%FFVERSION.zip) from GitHub. v%FFVERSION is the [latest version](https://version.firefly-iii.org/). 
+[Download the latest release as a zip file](https://github.com/firefly-iii/firefly-iii/releases/download/v%FFVERSION/FireflyIII-v%FFVERSION.zip) from GitHub. v%FFVERSION is the [latest version](https://version.firefly-iii.org/).
 
-Unzip the zip file in your web server's root directory, or in a specific directory you want to use.
+### Validate the downloaded zip file
+
+Optionally, you can validate and test the integrity of your zip file by also downloading its [SHA256 checksum file](https://github.com/firefly-iii/firefly-iii/releases/download/v%FFVERSION/FireflyIII-v%FFVERSION.zip.sha256). 
+
+With this SHA256 checksum file, you can verify the integrity of the downloaded zip file by running the following command:
+
+```bash
+# Should return: "FireflyIII-%FFVERSION.zip: OK"
+sha256sum -c FireflyIII-%FFVERSION.zip.sha256
+```
+
+### Extract the zip file
+
+Extract the zip file in your web server's root directory, or in a specific directory you want to use.
 
 ```bash
 # the directory name is up to you, of course:

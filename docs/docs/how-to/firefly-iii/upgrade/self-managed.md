@@ -13,7 +13,20 @@ The best way to upgrade is to use the "Straight from GitHub" instructions below.
 
 [Download the latest release as a zip file](https://github.com/firefly-iii/firefly-iii/releases/download/v%FFVERSION/FireflyIII-v%FFVERSION.zip) from GitHub.
 
-Unzip the new release wherever you've installed Firefly III. In this example, it is `/var/www/firefly-iii`, but it could be anywhere. To do this over the command line, use the following command:
+### Validate the downloaded zip file
+
+Optionally, you can validate and test the integrity of your zip file by also downloading its [SHA256 checksum file](https://github.com/firefly-iii/firefly-iii/releases/download/v%FFVERSION/FireflyIII-v%FFVERSION.zip.sha256).
+
+With this SHA256 checksum file, you can verify the integrity of the downloaded zip file by running the following command:
+
+```bash
+# Should return: "FireflyIII-%FFVERSION.zip: OK"
+sha256sum -c FireflyIII-%FFVERSION.zip.sha256
+```
+
+### Extract the zip file
+
+Extract the zip file with the new release wherever you've installed Firefly III. In this example, it is `/var/www/firefly-iii`, but it could be anywhere. To do this over the command line, use the following command:
 
 ```bash
 # The destination directory can be changed, of course.
