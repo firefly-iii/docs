@@ -29,7 +29,7 @@ Instructions:
 2. Change `MYSQL_PASSWORD` in `.db.env` to the SAME value
 
 !!! note
-    Change the password FIRST. If you change the password *after* you run Firefly III, it will complain about having no access.
+    Change the password FIRST. If you change the password *after* you run Firefly III, it will complain about having no access because the password has been stored in  the database volume.
 
 ### Start the container
 

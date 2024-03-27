@@ -33,40 +33,33 @@ Install the following PHP modules:
 * PHP MBString
 * PHP support for whatever database you're going to use.
 
-You can search the web to find out how to install these modules. Some may be installed already depending on your system. Use `phpinfo()` to find out.
+You can search the web to find out how to install these modules. Some may be installed already depending on your system. Use `phpinfo()` or `php -i` to find out.
 
 ## Installing Firefly III
 
 ### Main command
 
-Browse to `/var/www` which is probably the directory where your web server is configured to find its files.
+[Download the latest release as a zip file](https://github.com/firefly-iii/firefly-iii/releases/download/v%FFVERSION/FireflyIII-v%FFVERSION.zip) from GitHub. v%FFVERSION is the [latest version](https://version.firefly-iii.org/). 
 
-[Download the latest release as a zip file](https://github.com/firefly-iii/firefly-iii/releases/download/v%FFVERSION/FireflyIII-v%FFVERSION.zip) from GitHub.
-
-Unzip it in `firefly-iii` by using the following command.
+Unzip the zip file in your web server's root directory, or in a specific directory you want to use.
 
 ```bash
+# the directory name is up to you, of course:
 mkdir /var/www/firefly-iii
 unzip FireflyIII-v%FFVERSION.zip -d /var/www/firefly-iii
 ```
 
-Or perhaps:
+Some servers require `sudo` to extract or change things in the `/var/www` directory. if this is the case for you, make sure you reset the access rights after wards: 
 
 ```bash
+# the directory name is up to you, of course:
 sudo -u www-data mkdir /var/www/firefly-iii
 sudo -u www-data unzip FireflyIII-v%FFVERSION.zip -d /var/www/firefly-iii
-```
-
-v%FFVERSION is the [latest version](https://version.firefly-iii.org/).
-
-If this gives an error because of read/write permissions, prepend the command with `sudo`. Then fix the permissions:
-
-```bash
-sudo mkdir /var/www/firefly-iii
-sudo unzip FireflyIII-v%FFVERSION.zip -d firefly-iii
 sudo chown -R www-data:www-data /var/www/firefly-iii
 sudo chmod -R 775 /var/www/firefly-iii/storage
 ```
+
+This should get you the entire installation in the directory of your choice.
 
 ### Web server configuration
 
@@ -76,7 +69,9 @@ You can look up for your webserver (Apache or nginx) how to change the root dire
 
 ### Firefly III configuration
 
-In the `firefly-iii` directory you will find a `.env.example` file. Rename or copy it to `.env`. Then, open this file using your favorite editor. There are instructions what to do in this file.
+In the directory where you just unzipped Firefly III you will find a `.env.example` file. Rename or copy it to `.env`. 
+
+Open this file using your favorite editor. There are instructions what to do in this file.
 
 Make sure you configure at least the database. For SQLite, you can drop all the configuration except `DB_CONNECTION=sqlite`.
 
@@ -87,8 +82,9 @@ This step is very important, because Firefly III needs a database to work with, 
 If you decide to use SQLite, make sure you run the following command to create the SQLite database file.
 
 ```bash
-# SQLite only!
-touch /var/www/firefly-iii/storage/database/database.sqlite
+# the directory may be different on your system, at least
+cd /var/www/firefly-iii
+touch ./storage/database/database.sqlite
 ```
 
 Either way, in all cases, run these commands to initialize the database:

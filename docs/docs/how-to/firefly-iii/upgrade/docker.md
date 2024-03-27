@@ -3,7 +3,7 @@
 Firefly III can upgrade itself from very old versions, even back from 4.7.x. In some cases the upgrade process is destructive. It will remove transactions, delete accounts or clean up data.
 
 !!! warning
-    Always make a backup of your database and installation before you upgrade, especially when you upgrade major versions.
+    Always make a backup of your database and volumes before you upgrade, especially when you upgrade major versions.
 
 ## Docker Compose
 
@@ -11,7 +11,6 @@ To update the container run these commands:
 
 ```bash
 docker compose stop
-docker compose rm -f
 docker compose pull
 docker compose -f docker-compose.yml up -d --remove-orphans
 ```
