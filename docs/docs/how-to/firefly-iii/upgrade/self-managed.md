@@ -11,26 +11,42 @@ The best way to upgrade is to use the "Straight from GitHub" instructions below.
 
 ## Straight from GitHub
 
-[Download the latest release as a zip file](https://github.com/firefly-iii/firefly-iii/releases/download/v%FFVERSION/FireflyIII-v%FFVERSION.zip) from GitHub.
+v%FFVERSION is the [latest version](https://version.firefly-iii.org/).
 
-### Validate the downloaded zip file
+- [Download the latest release as a `zip` file](https://github.com/firefly-iii/firefly-iii/releases/download/v%FFVERSION/FireflyIII-v%FFVERSION.zip) from GitHub.
+- [Download the latest release as a `tar.gz` file](https://github.com/firefly-iii/firefly-iii/releases/download/v%FFVERSION/FireflyIII-v%FFVERSION.tar.gz) from GitHub.
 
-Optionally, you can validate and test the integrity of your zip file by also downloading its [SHA256 checksum file](https://github.com/firefly-iii/firefly-iii/releases/download/v%FFVERSION/FireflyIII-v%FFVERSION.zip.sha256).
+It is up to you, if you prefer the `tar.gz` file or the zip file.
 
-With this SHA256 checksum file, you can verify the integrity of the downloaded zip file by running the following command:
+### Validate the downloaded archive
+
+Optionally, you can validate and test the integrity of your download by also downloading the SHA256 checksum file.
+
+- [SHA256 checksum file of the `zip` file](https://github.com/firefly-iii/firefly-iii/releases/download/v%FFVERSION/FireflyIII-v%FFVERSION.zip.sha256).
+- [SHA256 checksum file of the `tar.gz` file](https://github.com/firefly-iii/firefly-iii/releases/download/v%FFVERSION/FireflyIII-v%FFVERSION.tar.gz.sha256).
+
+With this SHA256 checksum file, you can verify the integrity of the download by running the following command:
 
 ```bash
-# Should return: "FireflyIII-%FFVERSION.zip: OK"
-sha256sum -c FireflyIII-%FFVERSION.zip.sha256
+# Should return: "FireflyIII-v%FFVERSION.zip: OK"
+sha256sum -c FireflyIII-v%FFVERSION.zip.sha256
+sha256sum -c FireflyIII-v%FFVERSION.tar.gz.sha256
+
+# alternative command:
+shasum -a 256 -c FireflyIII-v%FFVERSION.zip.sha256
+shasum -a 256 -c FireflyIII-v%FFVERSION.tar.gz.sha256
 ```
 
-### Extract the zip file
+### Extract the archive
 
-Extract the zip file with the new release wherever you've installed Firefly III. In this example, it is `/var/www/firefly-iii`, but it could be anywhere. To do this over the command line, use the following command:
+Extract the archive with the new release wherever you've installed Firefly III. In this example, it is `/var/www/firefly-iii`, but it could be anywhere. To do this over the command line, use the following command:
 
 ```bash
 # The destination directory can be changed, of course.
 unzip -o FireflyIII-v%FFVERSION.zip -x "storage/*" -d /var/www/firefly-iii
+
+# a tar.gz alternative:
+tar -xvf FireflyIII-v%FFVERSION.tar.gz -C /var/www/firefly-iii --exclude='storage'
 ```
 
 Use `sudo` if necessary, but if you do, make sure that you set the ownership of the `/var/www/firefly-iii` directory to `www-data` again:
@@ -43,7 +59,7 @@ sudo chmod -R 775 /var/www/firefly-iii/storage
 
 ### Exclude the storage directory
 
-When unzipping, make sure you do not overwrite the storage directory. That's why the `-x "storage/*"` part is important. It prevents the storage directory from being overwritten. If you forget this, you will lose all your uploads and exports.
+When unpacking, make sure you do not overwrite the storage directory. That's why the `-x "storage/*"` and `--exclude='storage'` part is important. It prevents the storage directory from being overwritten. If you forget this, you will lose all your uploads and exports.
 
 ### Run upgrade commands
 
