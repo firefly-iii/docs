@@ -130,18 +130,18 @@ You can use an absolute date, in this form: `YYYY-MM-DD`. So for the 17th of May
 
 You can also use relative date indicators, like so:
 
-- `+3d` (in three days)
-- `-2w` (two weeks ago)
+- `"+3d"` (in three days)
+- `"-2w"` (two weeks ago)
 
 You can use `d` for days, `w` for weeks, `m` for months and `y` for years. You can also combine them. To creatre a search for a year and a half ago, you could do this:
 
-- `date_is:-1y -6m`
+- `date_is:"-1y -6m"`
 
-Notice the **space** between the two date indicators.
+Notice the **space** between the two date indicators and the added quotes.
 
 Likewise, you can mix + and -. To go 11 months back, you could use:
 
-- `-1y +1m`
+- `"-1y +1m"`
 
 If your entry is invalid, the search may not work.
 
