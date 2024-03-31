@@ -37,9 +37,19 @@ shasum -a 256 -c FireflyIII-v%FFVERSION.zip.sha256
 shasum -a 256 -c FireflyIII-v%FFVERSION.tar.gz.sha256
 ```
 
+### Move the old installation
+
+Move the old installation to a temporary directory, ie `firefly-iii-old`. Example commands:
+
+```bash 
+# moves the entire installation to a backup directory.
+# this also serves as an impromptu backup of your installation
+mv /var/www/firefly-iii /var/www/firefly-iii-old
+```
+
 ### Extract the archive
 
-Extract the archive with the new release wherever you've installed Firefly III. In this example, it is `/var/www/firefly-iii`, but it could be anywhere. To do this over the command line, use the following command:
+Extract the archive with the new release wherever you had installed Firefly III. In this example, it is `/var/www/firefly-iii`, but it could be anywhere. To do this over the command line, use the following command:
 
 ```bash
 # The destination directory can be changed, of course.
@@ -60,6 +70,18 @@ sudo chmod -R 775 /var/www/firefly-iii/storage
 ### Exclude the storage directory
 
 When unpacking, make sure you do not overwrite the storage directory. That's why the `-x "storage/*"` and `--exclude='storage'` part is important. It prevents the storage directory from being overwritten. If you forget this, you will lose all your uploads and exports.
+
+### Copy over files from the old version
+
+Copy the `.env` file and the entire `storage` folder from the old installation to the new one. Example commands:
+
+```bash
+# copy the .env file
+cp /var/www/firefly-iii-old/.env /var/www/firefly-iii/.env
+
+# copy the storage directory
+cp -r /var/www/firefly-iii-old/storage /var/www/firefly-iii
+```
 
 ### Run upgrade commands
 
