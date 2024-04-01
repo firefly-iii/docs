@@ -16,7 +16,7 @@ v%FFVERSION is the [latest version](https://version.firefly-iii.org/).
 - [Download the latest release as a `zip` file](https://github.com/firefly-iii/firefly-iii/releases/download/v%FFVERSION/FireflyIII-v%FFVERSION.zip) from GitHub.
 - [Download the latest release as a `tar.gz` file](https://github.com/firefly-iii/firefly-iii/releases/download/v%FFVERSION/FireflyIII-v%FFVERSION.tar.gz) from GitHub.
 
-It is up to you, if you prefer the `tar.gz` file or the zip file.
+It is up to you, if you prefer the `tar.gz` file or the `zip` file.
 
 ### Validate the downloaded archive
 
@@ -69,7 +69,7 @@ sudo chmod -R 775 /var/www/firefly-iii/storage
 
 ### Exclude the storage directory
 
-When unpacking, make sure you do not overwrite the storage directory. That's why the `-x "storage/*"` and `--exclude='storage'` part is important. It prevents the storage directory from being overwritten. If you forget this, you will lose all your uploads and exports.
+When unpacking, make sure you do not overwrite the storage directory. That's why the `-x "storage/*"` and `--exclude='storage'` part is important. It prevents the default storage directory from being extracted. You will overwrite it anyway from the old installation directory.
 
 ### Copy over files from the old version
 
