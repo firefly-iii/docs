@@ -44,9 +44,13 @@ OK that was a joke. If you feel Firefly III made your life better, please consid
 
 I am always interested in expanding Firefly III's many features, and I always want to fix the many bugs there are.
 
-1. First, see if [an existing issue already exists] related to your contribution. [You can also drop me a line](mailto:james@firefly-iii.org) in case you find anything you want to see fixed.
-2. If you see a bug, and your first reaction is to open a PR, please describe the bug and its fix very carefully. When your fix requires a lot of changes, please let me know beforehand.
-3. I cannot accept new features out of the blue. Please first discuss the change you wish to make via issue, email, or any other method.
+1. Please do not submit solutions for problems that are not already reported in an issue. This helps the development process.
+2. I'm afraid Firefly III can't be your learning experience. If you're new to all of this, please go be new somewhere else, thank you.
+3. Do not open PRs to "discuss" possible solutions or to "get feedback" on your code. I don't have time for that.
+4. Pull requests for the `main` branch will be closed.
+5. DO NOT include translated strings in your PR.
+
+If you see a bug, and your first reaction is to open a PR, please describe the bug and its fix very carefully. When your fix requires a lot of changes, please let me know beforehand. I cannot accept new features out of the blue. Please first discuss the change you wish to make via issue, email, or any other method.
 
 Firefly III is a passion project, and I am only accepting submissions from people who are as passionate as me about this application. Your drive-by resume-filling PR will not be accepted.
 
