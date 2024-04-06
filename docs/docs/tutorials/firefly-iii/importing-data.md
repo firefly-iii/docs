@@ -1,3 +1,8 @@
+---
+hide:
+  - feedback
+---
+
 # Importing data
 
 !!! tip

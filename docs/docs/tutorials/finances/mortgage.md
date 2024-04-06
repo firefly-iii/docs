@@ -1,3 +1,8 @@
+---
+hide:
+  - feedback
+---
+
 # Manage your mortgage
 
 !!! tip
