@@ -2,6 +2,8 @@
 
 Firefly III features budgets as a powerful way to manage your finances. To get started, visit the `/budgets` page and create your first budget. Just enter a name for now, nothing else.
 
+To learn more about how budgets work in Firefly III, you should read about [budgets in Firefly III](../../../explanation/financial-concepts/budgets.md).
+
 Firefly III budgeting works best when you work from the first day of the month to the last. This is even true when you get paid weekly or 13 times a year (4-weekly). It's also true when you get paid some random moment in a month. For more information on this, read [the explanation on managing your personal finances](../../../explanation/firefly-iii/background/personal-finances.md).
 
 ![Create a budget](../../../images/how-to/firefly-iii/finances/create-budget.png)
