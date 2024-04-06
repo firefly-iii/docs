@@ -1,4 +1,4 @@
-# How to set up notifications
+# How to set up notifications and emails
 
 The data importer can email you the results of the import. This is useful for cron jobs.
 

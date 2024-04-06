@@ -7,6 +7,8 @@ How you process refunds is a choice. Basically, you can:
 
 This also applies to friends who pay you back (part of) an expense. Do you want to shrink the original expense or do you want to keep the whole expense and use the money as income?
 
+Firefly III does not offer the option to automatically merge two a refund into the original transaction. It's also different whether you create your transactions manually, or if you use the data importer to do this for you.
+
 ## What do I do with people who pay me back?
 
 Let's say you have a budget for "Going out", worth 100. You go out with some friends, and you offer to pay the bill, expecting your friends to pay you back later. The total bill is 120 with your three friends, who owe you 90 in total. So although you spent € 120 (overspending your budget with € 20), your actual costs are a mere € 30. What to do?
