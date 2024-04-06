@@ -1,3 +1,9 @@
+---
+hide:
+  - feedback
+---
+
+
 # Import from GoCardless
 
 !!! tip
