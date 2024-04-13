@@ -37,8 +37,8 @@ You can sign up for the GoCardless API on [their website](https://bankaccountdat
 
 1. Go to [gocardless.com/bank-account-data](https://gocardless.com/bank-account-data/) and press "Get API keys".
 2. Click Sign Up
-3Follow the instructions
-4Profit!
+3. Follow the instructions
+4. Profit!
 
 GoCardless supports [many PSD2-compliant banks in the EU and the UK](https://nordigen.com/en/coverage/), making it an alternative for Salt Edge's Spectre API, if you happen to live in these regions.
 
