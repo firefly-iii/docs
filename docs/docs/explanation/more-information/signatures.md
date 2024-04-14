@@ -32,7 +32,7 @@ This allows you to verify that you have downloaded the file right. It's not much
 To make sure that the files aren't actually changed by a nefarious hacker, you can also verify the digital signature of the release.
 
 ```bash
-gpg --verify FireflyIII-v%FFVERSION.zip.asc
+gpg --verify FireflyIII-v%FFVERSION.zip.asc FireflyIII-v%FFVERSION.zip
 ```
 
 It should say `Good signature`.
