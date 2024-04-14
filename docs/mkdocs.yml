@@ -188,6 +188,7 @@ nav:
           - Financial contributions: explanation/more-information/money.md
           - Missing features: explanation/more-information/what-its-not.md
           - (Security) testing: explanation/more-information/bending-and-breaking.md
+          - Digital signatures: explanation/more-information/signatures.md
       - Other tools: explanation/other-tools.md
       - Support: explanation/support.md
 
