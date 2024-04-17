@@ -25,7 +25,7 @@ v%IMPORTERVERSION is the [latest version](https://version.firefly-iii.org/).
 - [Download the latest release as a `zip` file](https://github.com/firefly-iii/data-importer/releases/download/v%IMPORTERVERSION/DataImporter-v%IMPORTERVERSION.zip) from GitHub.
 - [Download the latest release as a `tar.gz` file](https://github.com/firefly-iii/data-importer/releases/download/v%IMPORTERVERSION/DataImporter-v%IMPORTERVERSION.tar.gz) from GitHub.
 
-It is up to you, if you prefer the `tar.gz` file or the zip file.
+It is up to you, if you prefer the `tar.gz` file or the `zip` file.
 
 ### Validate the downloaded file
 
@@ -94,7 +94,7 @@ Make your life easier by configuring the `FIREFLY_III_URL` and possibly the `FIR
 
 To run the data importer behind a reverse proxy, set the `TRUSTED_PROXIES` environment variable to either `*` or the IP address of your reverse proxy.
 
-Now you should be able to visit [http://localhost/firefly-iii/public](http://localhost/firefly-iii/public) and see Firefly III.
+Now you should be able to visit [http://localhost/data-importer/public](http://localhost/data-importer/public) and see the Firefly III data importer.
 
 ### It doesn't work!
 
