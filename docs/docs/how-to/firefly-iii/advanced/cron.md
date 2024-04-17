@@ -16,6 +16,16 @@ If you are a bit of a Linux geek you can set up a cron job easily by running `cr
 
 The exact path to PHP and the path to Firefly III may be different in your case.
 
+### Extra information
+
+In order to trigger "future" cron jobs, you can call the cron job with `--force --date=YYYY-MM-DD`. This will make Firefly III pretend it's another day. This is useful for recurring transactions. Here is an example of a cron job that is triggered every first day of the month at 3am and pretends it's the tenth day of that month.
+
+```
+# cronjob for Firefly III that changes the target date.
+0 3 1 * * /usr/bin/php /var/www/html/artisan firefly-iii:cron --force --date=$(date "+\%Y-\%m-")10
+```
+
+
 ### Systemd timer
 
 You can use `systemd` to run the jobs on a recurring schedule similar to cron. You will need to create two files: a unit file and a timer file.
@@ -185,12 +195,3 @@ You will see a final overview
 ![Overview](../../../images/how-to/firefly-iii/advanced/ifttt-overview.png)
 
 Press Finish, and you're done!
-
-## Extra information
-
-In order to trigger "future" cron jobs, you can call the cron job with `--force --date=YYYY-MM-DD`. This will make Firefly III pretend it's another day. This is useful for recurring transactions. Here is an example of a cron job that is triggered every first day of the month at 3am and pretends it's the tenth day of that month.
-
-```
-# cronjob for Firefly III that changes the target date.
-0 3 1 * * /usr/bin/php /var/www/html/artisan firefly-iii:cron --force --date=$(date "+\%Y-\%m-")10
-```

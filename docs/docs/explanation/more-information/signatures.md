@@ -9,7 +9,7 @@ Each release is offered in two variants: A `zip` and a `tar.gz` file. These file
 
 ## Verify the hash
 
-Available with each release is a file that ends with `.sha256`. There is one such file for both the `zip` and the `tar.gz` file. This file contains the SHA256 hash of the release file. This allows you to verify the releases integrity.
+Available with each release is a file that ends with `.sha256`. There is one such file for both the `zip` and the `tar.gz` file. This file contains the SHA256 hash of the release file. This allows you to verify the release's integrity.
 
 To do so, download both the release file and the `.sha256` file. Then, run the following command:
 
@@ -17,11 +17,13 @@ To do so, download both the release file and the `.sha256` file. Then, run the f
 # Should return: "FireflyIII-v%FFVERSION.zip: OK"
 sha256sum -c FireflyIII-v%FFVERSION.zip.sha256
 
-# alternative command:
-shasum -a 256 -c FireflyIII-v%FFVERSION.zip.sha256
-```
+# Should return: "DataImporter-v%IMPORTERVERSION.zip: OK"
+sha256sum -c DataImporter-v%IMPORTERVERSION.zip.sha256
 
-Of course, this command is slightly different for the data importer, or for the `tar.gz` file. But I'm sure you get the idea.
+# alternative commands:
+shasum -a 256 -c FireflyIII-v%FFVERSION.zip.sha256
+shasum -a 256 -c DataImporter-v%IMPORTERVERSION.zip.sha256
+```
 
 ### Why should I verify the integrity?
 

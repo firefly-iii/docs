@@ -31,6 +31,18 @@ Instructions:
 !!! note
     Change the password FIRST. If you change the password *after* you run Firefly III, it will complain about having no access because the password has been stored in  the database volume.
 
+#### Change to PostgreSQL
+
+Users running `arm/v7` (some Raspberry Pi) users may have to switch to PostgreSQL, because reliable containers running MariaDB and MySQL are not available for these platforms. To do this, change the following lines in the `.env` file.
+
+```text
+DB_CONNECTION=pgsql
+DB_HOST=db
+DB_PORT=5432
+```
+
+Change the `docker-compose.yml` file to point to `postgres` instead of `mariadb:lts`.
+
 ### Start the container
 
 Run the following command in the directory where both `docker-compose.yml` and all configuration files are present.

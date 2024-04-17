@@ -11,6 +11,9 @@ The best way to upgrade is to use the "Straight from GitHub" instructions below.
 
 ## Straight from GitHub
 
+!!! warning "Upgrading by pulling the remote repository"
+    It's no longer possible to upgrade Firefly III by simply pulling the code from the `main` or `develop` branch of the repository. Generated (JS) code and other dependencies are not in the repository, so your upgraded installation may not work as expected.
+
 v%FFVERSION is the [latest version](https://version.firefly-iii.org/).
 
 - [Download the latest release as a `zip` file](https://github.com/firefly-iii/firefly-iii/releases/download/v%FFVERSION/FireflyIII-v%FFVERSION.zip) from GitHub.

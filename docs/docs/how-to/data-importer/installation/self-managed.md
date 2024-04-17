@@ -1,61 +1,115 @@
 # Self-managed server
 
-In order to run the data importer you need a working LAMP, LEMP or WAMP-stack running PHP %PHPVERSION and access to the command line. Here are some Google queries to help you.
+If you have your own (virtual) web server you can use this guide to install the Firefly III Data Importer. You may have some ingredients prepared already.
 
-1. [Install a LAMP stack with PHP %PHPVERSION](https://www.google.com/search?q=lamp+stack+php+%PHPVERSION)
-2. [Upgrade Ubuntu PHP %PHPVERSION](https://www.google.com/search?q=upgrade+ubuntu+php+%PHPVERSION)
-3. [PHP %PHPVERSION raspberry pi](https://www.google.nl/search?q=PHP+%PHPVERSION+raspberry+pi)
+Please [install Firefly III first](../../firefly-iii/installation/self-managed.md).
 
-Also remember these Gists, which may help in case you run into issues:
+## Ingredients
 
-1. [Firefly-III CSV-Importer Ubuntu 20.04 Proxmox Installation Guide](https://gist.github.com/Engr-AllanG/e87f827092e3a6b876b912cd897428ae). Remember to change 'CSV' to 'data' where necessary.
-
-!!! warning
-    The data importer will not work properly when installed or accessed through a subdirectory on your web server. If you run the data importer from `/fidi`, `/importer` or a similar subdirectory your mileage may vary and I can't support you.
-
-## Install extra packages
-
-Install the following PHP modules:
+These PHP packages should already be installed, because you installed Firefly III. Nevertheless, here they are:
 
 * PHP BCMath Arbitrary Precision Mathematics
 * PHP JSON
 
-## Install composer
+You can search the web to find out how to install these modules. Some may be installed already depending on your system. Use `phpinfo()` or `php -i` to find out.
 
-You need to [install composer](https://getcomposer.org/doc/00-intro.md) or [download composer](https://getcomposer.org/download/).
+## Installing the Data Importer
 
-## Main command
+!!! warning "Installing by pulling the remote repository"
+    It's no longer possible to install the data importer by simply pulling the code from the `main` or `develop` branch of the repository. Generated (JS) code and other dependencies are not in the repository, so your new installation may not work as expected.
 
-The assumption is that you will install the data importer in `/var/www`. Go to the installation directory.
+### Main command
+
+v%IMPORTERVERSION is the [latest version](https://version.firefly-iii.org/).
+
+- [Download the latest release as a `zip` file](https://github.com/firefly-iii/data-importer/releases/download/v%IMPORTERVERSION/DataImporter-v%IMPORTERVERSION.zip) from GitHub.
+- [Download the latest release as a `tar.gz` file](https://github.com/firefly-iii/data-importer/releases/download/v%IMPORTERVERSION/DataImporter-v%IMPORTERVERSION.tar.gz) from GitHub.
+
+It is up to you, if you prefer the `tar.gz` file or the zip file.
+
+### Validate the downloaded file
+
+Optionally, you can validate and test the integrity of your download by also downloading the SHA256 checksum file.
+
+- [SHA256 checksum file of the `zip` file](https://github.com/firefly-iii/data-importer/releases/download/v%IMPORTERVERSION/DataImporter-v%IMPORTERVERSION.zip.sha256).
+- [SHA256 checksum file of the `tar.gz` file](https://github.com/firefly-iii/data-importer/releases/download/v%IMPORTERVERSION/DataImporter-v%IMPORTERVERSION.tar.gz.sha256).
+
+With this SHA256 checksum file, you can verify the integrity of the download by running the following command:
 
 ```bash
-cd /var/www && \
-composer create-project firefly-iii/data-importer \
-    --no-dev --prefer-dist data-importer %IMPORTERVERSION
+# Should return: "DataImporter-v%IMPORTERVERSION.zip: OK"
+sha256sum -c DataImporter-v%IMPORTERVERSION.zip.sha256
+sha256sum -c DataImporter-v%IMPORTERVERSION.tar.gz.sha256
+
+# alternative command:
+shasum -a 256 -c DataImporter-v%IMPORTERVERSION.zip.sha256
+shasum -a 256 -c DataImporter-v%IMPORTERVERSION.tar.gz.sha256
+```
+### Extract the file
+
+Extract the downloaded file in your web server's root directory, or in a specific directory you want to use.
+
+```bash
+# the directory name is up to you, of course:
+mkdir /var/www/data-importer
+unzip DataImporter-v%IMPORTERVERSION.zip -d /var/www/data-importer
+
+# the tar.gz file extracts with the following command.
+tar -xvf DataImporter-v%IMPORTERVERSION.tar.gz -C /var/www/data-importer
 ```
 
-If this gives an error because of access rights, you can be lazy. Use `sudo`. Then, fix the access rights:
+Some servers require `sudo` to extract or change things in the `/var/www` directory. if this is the case for you, make sure you reset the access rights after wards:
 
-```bash   
-sudo chown -R www-data:www-data data-importer
-sudo chmod -R 775 data-importer/storage
+```bash
+# the directory name is up to you, of course:
+sudo -u www-data mkdir /var/www/data-importer
+sudo -u www-data unzip DataImporter-v%IMPORTERVERSION.zip -d /var/www/data-importer
+
+# alternative command for the tar.gz file:
+sudo tar -xvf DataImporter-v%IMPORTERVERSION.tar.gz -C /var/www/data-importer
+
+sudo chown -R www-data:www-data /var/www/data-importer
+sudo chmod -R 775 /var/www/data-importer/storage
 ```
 
-## Configuration
+This should get you the entire installation in the directory of your choice.
 
-In the `data-importer` directory you will find a `.env` file. There are instructions what to do in this file. If you can't find this file, copy `.env.example` into `.env`.
+### Web server configuration
 
-## Reverse proxies
+Most servers will serve files from the `/var/www` directory. The data importer would be served from `/data-importer/public`. This is not really what you would want to do.
+
+You can look up for your webserver (Apache or nginx) how to change the root directory or how to set up virtual hosts.
+
+### Data Importer configuration
+
+In the directory where you just unzipped Firefly III you will find a `.env.example` file. Rename or copy it to `.env`.
+
+```bash
+cp .env.example .env
+```
+
+Open this file using your favorite editor. There are instructions what to do in this file.
+
+Make your life easier by configuring the `FIREFLY_III_URL` and possibly the `FIREFLY_III_ACCESS_TOKEN` variable.
 
 To run the data importer behind a reverse proxy, set the `TRUSTED_PROXIES` environment variable to either `*` or the IP address of your reverse proxy.
 
-## TLS
+Now you should be able to visit [http://localhost/firefly-iii/public](http://localhost/firefly-iii/public) and see Firefly III.
 
+### It doesn't work!
+
+This manual can't list all the possible exceptions and errors you may run into. Some common issues are documented [in the FAQ](../../../references/faq/install.md).
+
+Look in these directions when you're running into problems:
+
+* Apache may not have mod_rewrite enabled or the htaccess file isn't activated (`AllowOverride`).
+* Nginx may not have the correct `try_files` instruction in the `location` block.
 To enable TLS in the data importer, your reverse proxy must be configured correctly. Find more information in the [Frequently Asked Questions](../../../references/faq/install.md).
 
-## Accessing the data importer
 
-You can access the data importer at [http://localhost/](http://localhost/). If this URL is taken by Firefly III already, validate your server configuration accepts both. This is called a "virtual host", and out of the scope of this installation guide.
+## Visiting the data importer
+
+Check out [the tutorial on how to import CSV files](../../../tutorials/data-importer/csv.md).
 
 ![Opening screen of the data importer.](../../../images/how-to/data-importer/installation/ready_to_go.png)
 

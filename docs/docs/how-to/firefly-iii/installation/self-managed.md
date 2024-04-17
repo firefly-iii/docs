@@ -8,8 +8,6 @@ If you have your own (virtual) web server you can use this guide to install Fire
 2. You will also need a (MySQL) database and credentials for a user that has permissions on that database. Firefly III creates its own tables. You can use SQLite if this is difficult to set up. 
 3. In case you want to use one of the languages that Firefly III is equipped with, make sure you install the necessary locales. For Debian / Ubuntu for example, use `sudo apt install language-pack-nl-base && sudo locale-gen`.
 
-
-
 Several users have created specific guides for their OS and database combination. 
 
 1. [Raspberry Pi 3, with Docker and Docker compose](https://gist.github.com/josephbadow/588c2ae961231fe338c459127c7d835b)
@@ -36,6 +34,9 @@ Install the following PHP modules:
 You can search the web to find out how to install these modules. Some may be installed already depending on your system. Use `phpinfo()` or `php -i` to find out.
 
 ## Installing Firefly III
+
+!!! warning "Installing by pulling the remote repository"
+    It's no longer possible to install Firefly III by simply pulling the code from the `main` or `develop` branch of the repository. Generated (JS) code and other dependencies are not in the repository, so your new installation may not work as expected.
 
 ### Main command
 
@@ -147,3 +148,4 @@ Look in these directions when you're running into problems:
 ## Visiting Firefly III
 
 Check out [the tutorial on creating accounts and transactions](../../../tutorials/finances/first-steps.md).
+

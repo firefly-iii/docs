@@ -18,6 +18,10 @@ The instructions always assume `fireflyiii/core:latest`. This is the latest stab
 
 All Docker tags are built for ARMv7, ARM64 and AMD64. ARMv6 is not included, so these images will *not* work on the Raspberry Pi Zero, Raspberry Pi 1 (A+B) or Raspberry Pi Compute Module.
 
+## How do I set TLS in Firefly III or the data importer?
+
+See [this question](install.md#how-do-i-set-tls-in-firefly-iii-or-the-data-importer).
+
 ## It keeps giving me CSP errors
 
 Content Security Policy headers are a security feature, and usually fail when you did not set `TRUSTED_PROXIES=*`.
