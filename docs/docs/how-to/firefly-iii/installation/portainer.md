@@ -16,7 +16,7 @@ You will need to download and save the following configuration files:
 Open the docker compose file in your favorite editor, and change all references under `env_file:` to say `env_file: stack.env`.
 
 !!! tip
-All `env_file:` references must be pointing to exactly `stack.env`. Nothing else.
+    All `env_file:` references must be pointing to exactly `stack.env`. Nothing else.
 
 ### Edit stack.env
 
