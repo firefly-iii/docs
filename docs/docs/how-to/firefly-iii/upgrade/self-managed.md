@@ -94,7 +94,7 @@ Run the following commands to upgrade the database and the application:
 php artisan migrate --seed
 php artisan firefly-iii:decrypt-all
 php artisan cache:clear
+php artisan view:clear
 php artisan firefly-iii:upgrade-database
 php artisan firefly-iii:laravel-passport-keys
-php artisan cache:clear
 ```

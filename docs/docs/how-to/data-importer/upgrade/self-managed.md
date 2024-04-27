@@ -87,6 +87,7 @@ Run the following commands to upgrade the database and the application:
 
 ```bash
 php artisan cache:clear
+php artisan view:clear
 ```
 
 And you're done!
