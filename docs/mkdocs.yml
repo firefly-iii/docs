@@ -195,7 +195,6 @@ nav:
 extra_css:
   - stylesheets/extra.css
 theme:
-  font: false
   name: material
   custom_dir: overrides
   features:
