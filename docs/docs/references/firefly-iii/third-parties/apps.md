@@ -6,6 +6,13 @@ Be sure to also check out [the list of import tools](../../data-importer/third-p
 
 ## Mobile applications
 
+### Firefly-Pico
+
+Firefly-Pico is a web app, optimized for mobile phones, with a focus on clean UI and fast expense tracking.
+
+- [Credits](https://github.com/cioraneanu)
+- [Website and documentation](https://github.com/cioraneanu/firefly-pico)
+
 ### Waterfly III
 
 Waterfly III is an android app created by @dreautall that connects to your Firefly III installation.
