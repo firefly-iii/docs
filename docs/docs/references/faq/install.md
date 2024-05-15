@@ -1,5 +1,21 @@
 # General installation and running questions
 
+## Can I switch from or to SQLite, PostgreSQL or MySQL?
+
+Yes, any combination is possible. BUT, this is not something that Firefly III supports natively. The export function isn't "database complete", not all data from your installation will be exposed when you export data, so importing it is very tricky.
+
+Instead, use a search engine to find the right guidance to migrate from A to B, whichever databases A and B may be.
+
+## Can I connect to PostgreSQL using a socket?
+
+Yes. Set `DB_HOST` to the `unix_socket_directory` of PostgreSQL.
+
+```text
+DB_CONNECTION=pgsql
+DB_HOST=/run/postgresql
+DB_PORT=5432
+```
+
 ## How do I set TLS in Firefly III or the data importer?
 
 If you wish to enable SSL as well, both apps respects the HTTP header `X-Forwarded-Proto`.

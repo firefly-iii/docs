@@ -4,7 +4,23 @@ There are a lot of interesting tools and apps built around the [Firefly III API]
 
 Be sure to also check out [the list of import tools](../../data-importer/third-party-tools.md).
 
+## Home Assistant
+
+### Firefly III HA integration
+
+The Firefly III Home Assistant integration is a custom component for Home Assistant that allows you to interact with your Firefly III installation.
+
+- [Credits](https://github.com/soloam)
+- [Website and documentation](https://github.com/soloam/ha-fireflyiii-integration)
+
 ## Mobile applications
+
+### iPhone SMS to Firefly III transaction
+
+This is a tool that allows you to create transactions in Firefly III by sending an SMS from your iPhone.
+
+- [Credits](https://github.com/mrahmadt)
+- [Receiver](https://github.com/mrahmadt/SMSReceiver-iOS)
 
 ### Waterfly III
 
