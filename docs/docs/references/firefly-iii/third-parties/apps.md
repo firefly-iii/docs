@@ -22,6 +22,13 @@ This is a tool that allows you to create transactions in Firefly III by sending 
 - [Credits](https://github.com/mrahmadt)
 - [Receiver](https://github.com/mrahmadt/SMSReceiver-iOS)
 
+### Firefly-Pico
+
+Firefly-Pico is a web app, optimized for mobile phones, with a focus on clean UI and fast expense tracking.
+
+- [Credits](https://github.com/cioraneanu)
+- [Website and documentation](https://github.com/cioraneanu/firefly-pico)
+
 ### Waterfly III
 
 Waterfly III is an android app created by @dreautall that connects to your Firefly III installation.
