@@ -21,6 +21,7 @@ This is a tool that allows you to create transactions in Firefly III by sending 
 
 - [Credits](https://github.com/mrahmadt)
 - [Receiver](https://github.com/mrahmadt/SMSReceiver-iOS)
+- [Backend](https://github.com/mrahmadt/smartMoney)
 
 ### Firefly-Pico
 
