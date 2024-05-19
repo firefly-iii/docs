@@ -25,7 +25,7 @@ jobs:
           pwd
           grep -rl '%PHPVERSION' ./ | xargs sed -i 's/%PHPVERSION/8\.3/g'
           grep -rl '%IMPORTERVERSION' ./ | xargs sed -i 's/%IMPORTERVERSION/1\.5\.2/g'
-          grep -rl '%FFVERSION' ./ | xargs sed -i 's/%FFVERSION/6\.1\.15/g'
+          grep -rl '%FFVERSION' ./ | xargs sed -i 's/%FFVERSION/6\.1\.16/g'
           python -m mkdocs build --clean
 
           # also copy security.txt
