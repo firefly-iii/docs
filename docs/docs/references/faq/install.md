@@ -1,5 +1,12 @@
 # General installation and running questions
 
+## Error "class \[auth\] does not exist"
+
+Some users run into this issue when upgrading. Several things may work:
+
+- Start a new `.env` file instead of copying over the old one.
+- Make sure the `storage` directory, and all subfolders are writable, and NOT owned by `root`.
+
 ## Can I switch from or to SQLite, PostgreSQL or MySQL?
 
 Yes, any combination is possible. BUT, this is not something that Firefly III supports natively. The export function isn't "database complete", not all data from your installation will be exposed when you export data, so importing it is very tricky.
