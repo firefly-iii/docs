@@ -28,6 +28,8 @@ IMPORT_DIR_ALLOWLIST=/your/directory
 
 ## Uploading files and importing them
 
+All of these commands require a working Personal Access token (`Authorization: Bearer ey....`). Read more about this in the [API documentation](../../firefly-iii/features/api.md) under "Personal Access Tokens".
+
 ### CSV and camt.053
 
 You can upload a file and a JSON file to the data importer to have it imported into your Firefly III installation automatically. To illustrate how this works, here's a CURL request that works.
@@ -44,7 +46,7 @@ curl --location --request POST 'https://data-importer.example.com/autoupload?sec
 
 ### GoCardless and Spectre
 
-You can also import from GoCardless or Spectre, in which case a JSON file is enough:
+You can also import from GoCardless or Spectre, in which case a JSON file is enough.
 
 ```bash
 curl --location --request POST 'https://data-importer.example.com/autoupload?secret=YOURSECRETHERE' \
