@@ -76,6 +76,19 @@ Just so you know, the Firefly III rule engine is supposed to be basic. That's th
 * Regular expressions.
 * Math
 
+## For some reason my balance is off by one cent?
+
+Backup your database. Then run this command:
+
+```text 
+# docker users
+docker exec -it [yourcontainer] php artisan firefly-iii:force-decimal-size
+
+# self-managed users
+cd /your/firefly-iii/directory
+php artisan firefly-iii:force-decimal-size
+```
+
 ## I lost my password, but resetting doesn't work
 
 There are two reasons why resetting your password may not work.
