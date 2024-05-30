@@ -1,7 +1,7 @@
 # How to reconcile accounts
 
-Firefly III has a "reconciliation" view which allows you to verify your firefly transactions exactly match your account statement.
-This is an easy way to have peace of mind that your bank or credit card company is (hopefully) honest. This can also help to resolve incorrect balances after importing a large set of historical transactions into Firefly III.
+Firefly III has a "reconciliation" view which allows you to verify that your transactions exactly match your account statement.
+This can also help to resolve incorrect balances after importing a large set of historical transactions into Firefly III.
 
 Open the reconcile view from either the Asset Accounts Listing (/accounts/asset) "actions" drop down menu, "Reconcile this account".
 
@@ -25,7 +25,7 @@ Firefly III will show you the transactions from this range, plus a few previous 
 
 For each transaction line on your account statement, find the matching transaction in Firefly III and check the box next to the amount column. Your goal is to verify that your Firefly III transactions exactly match your account statement. Go over your entire bank statement and check each transaction in Firefly III.  
 
-If you find duplicate transactions, you can click on the transaction description to enter view mode, and from that view you can delete the transaction. After deletion, you will be returned to the reconcile view.
+If you find duplicate transactions, you can click on the transaction description to view the transaction, and from that page you can delete the transaction. After deletion, you will be returned to the reconcile page.
 
 If you find incorrect transactions, you can click the "edit" pencil icon, to go into edit mode. After edited, you will be returned to the reconcile view.
 
