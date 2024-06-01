@@ -1,35 +1,38 @@
 # How to reconcile accounts
 
-Firefly III has a "reconciliation" view which allows you to verify that your transactions exactly match your account statement.
-This can also help to resolve incorrect balances after importing a large set of historical transactions into Firefly III.
+Although more and more people use online banking, a lot of users still receive paper bank statements in the mail, every week or every month. Firefly III has a "reconciliation" view that allows you to verify that your transactions exactly match your bank statement. This can also help to resolve incorrect balances after importing a large set of transactions into Firefly III.
 
-Open the reconcile view from either the Asset Accounts Listing (/accounts/asset) "actions" drop down menu, "Reconcile this account".
+## Open the reconciliation page
 
-![reconcile-account-index](https://github.com/firefly-iii/docs/assets/206041/8a433655-d430-4f83-b5e9-2ccc2b69e05f)
-![The button is shown in your list of accounts](../../../images/how-to/firefly-iii/finances/reconcile-account-index.png)
+Open the page from either the list of asset accounts, or from a single asset account page.
 
-or from the Asset Account Home view (/accounts/show/123) 3 dot drop down menu, "Reconcile this account".
-![reconcile-account-home](https://github.com/firefly-iii/docs/assets/206041/497887b3-afb6-46e7-a681-d0155aadf224)
+From a single account:
 
-First, enter a date range and set the opening and closing balance as it shows on your account statement. 
+![The button is at the top of the chart](../../../images/how-to/firefly-iii/finances/reconcile-account-home.png)
+
+From the account overview:
+
+![The button is in the menu on the right](../../../images/how-to/firefly-iii/finances/reconcile-account-index.png)
+
+## Start reconciling
+
+First, enter a date range and set the opening and closing balance as it shows on your bank statement. 
+
 ![These dates and amounts must match your bank statement.](../../../images/how-to/firefly-iii/finances/reconcile-set-amounts.png)
 
 For example:
 
 * Start date: January 1st, 2018. Balance: € 120
-* Ending date: January 31st, 2018. Balance: € 788
+* End date: January 31st, 2018. Balance: € 788
 
 Next, press **Start reconciling** to continue.
 
-Firefly III will show you the transactions from this range, plus a few previous and later dated transactions in case the transaction date differs from the account posted date.
+Firefly III will show you the transactions from this range, plus a few earlier and later dated transactions. For each transaction line on your bank statement, find the matching transaction in Firefly III and check the box next to the amount column. Your goal is to verify that your Firefly III transactions exactly match your bank statement. Go over your entire statement and check each transaction in Firefly III.  
 
-For each transaction line on your account statement, find the matching transaction in Firefly III and check the box next to the amount column. Your goal is to verify that your Firefly III transactions exactly match your account statement. Go over your entire bank statement and check each transaction in Firefly III.  
+- If you find duplicate transactions, you can click on the transaction description to view the transaction, and from that page you can delete the transaction. After deletion, you will be returned to the reconcile page. Previously checked transactions will be checked again.
+- If you find incorrect transactions, you can click the "edit" pencil icon, to go into edit mode. After edited, you will be returned to the reconcile view. Previously checked transactions will be checked again.
 
-If you find duplicate transactions, you can click on the transaction description to view the transaction, and from that page you can delete the transaction. After deletion, you will be returned to the reconcile page.
-
-If you find incorrect transactions, you can click the "edit" pencil icon, to go into edit mode. After edited, you will be returned to the reconcile view.
-
-After you have all the transactions matched (all boxes in the statement date range are checked), look at the amount at the top of the screen in the secito labeled "Reconciliation options". 
+After you have matched all transactions, look at the amount at the top of the screen in the section labeled "Reconciliation options". 
 
 ### Amount under "Reconciliation options" is less than zero
 
@@ -45,9 +48,6 @@ This means that your Firefly III asset account has more money in it than it shou
 
 ### Amount under "Reconciliation options" is exactly zero!
 
-Congrats! This means that your Firefly III transactions exactly match your account statement. You can now press "Store reconciliation" to mark the checkmarked transactions as reconciled.
+Congrats! This means that your Firefly III transactions exactly match your bank statement. You can now press "Store reconciliation" to mark the checkmarked transactions as reconciled.
 
 ![When there is no mismatch between your bank statements and Firefly III, you don't need to do anything.](../../../images/how-to/firefly-iii/finances/reconcile-neutral-action.png)
-
-When you press the "Store reconciliation" button, Firefly III will present you with an overview of what you have just selected and ask you which action to take. You can let Firefly III generate a corrective transaction, or you can choose to ignore the difference. 
-
