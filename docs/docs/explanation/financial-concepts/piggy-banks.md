@@ -8,7 +8,7 @@ If you want to buy something expensive, you might need to save for it. You can u
 
 ## Where are piggy banks stored?
 
-Piggy banks are stored under the `/pigg-banks`-page in Firefly III. Each piggy bank is tied to an asset account on which its money is saved. You may have a savings account with three piggy banks, for example.
+Piggy banks are stored under the `/piggy-banks`-page in Firefly III. Each piggy bank is tied to an asset account on which its money is saved. You may have a savings account with three piggy banks, for example.
 
 ## And then what?
 
