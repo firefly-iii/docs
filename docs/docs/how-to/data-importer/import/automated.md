@@ -6,6 +6,7 @@ First, do this:
 
 1. [How to install the Data Importer](../installation/docker.md)
 2. [How to import using the CLI](../advanced/cli.md)
+3. [How to import using HTTP POST](../advanced/post.md)
 
 ## Configuration
 
@@ -48,12 +49,13 @@ This particular cron job will run on the host system. To make the cron job for t
 
 Add the following entry to your Docker compose file:
 
+
 ```
   cron_importer:
     image: alpine
     container_name: firefly_iii_import_cron
     restart: always
-    command: sh -c "echo -e \"0 3 * * * wget -qO- http://app:8080/api/v1/cron/[SECRET]\" > /tmp/crontab_tmp && echo -e \"40 2 * * * wget -qO - --post-data '' --header 'Accept":" application/json' 'http://importer:8080/autoimport?directory=/import&secret=[SECRET]'\" >> /tmp/crontab_tmp && crontab /tmp/crontab_tmp && crond -f -L /dev/stdout && rm /tmp/crontab_tmp"
+    command: sh -c "echo -e \"0 3 * * * wget -qO- http://app:8080/api/v1/cron/[SECRET]\" > /tmp/crontab_tmp && echo -e \"40 2 * * * wget -qO - --post-data '' --header 'Accept":" application/json' 'http://importer:8080/autoupload?directory=/import&secret=[SECRET]'\" >> /tmp/crontab_tmp && crontab /tmp/crontab_tmp && crond -f -L /dev/stdout && rm /tmp/crontab_tmp"
     networks:
       - firefly_iii
 
