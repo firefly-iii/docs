@@ -15,3 +15,5 @@ Piggy banks are stored under the `/piggy-banks`-page in Firefly III. Each piggy 
 The money in your savings account can be added and removed to piggy banks freely. You can also transfer money in and out of your savings account and select a piggy bank to be associated with the transfer. The money will be added to (or removed from) the piggy bank as part of the transfer.
 
 You can't create a withdrawal or a deposit and refer to a piggy bank. It only works for transfers.
+
+Adding money to piggy banks, or removing money from them, will not influence their balance. If you want to see how much money is left for piggy banks, see the bottom of the `/piggy-banks`-page.

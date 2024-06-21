@@ -6,6 +6,7 @@ First, do this:
 
 1. [How to install the Data Importer](../installation/docker.md)
 2. [How to import using the CLI](../advanced/cli.md)
+3. [How to import using HTTP POST](../advanced/post.md)
 
 ## Configuration
 

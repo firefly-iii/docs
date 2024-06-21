@@ -1,6 +1,6 @@
 # How to install Firefly III using Docker
 
-Firefly III can be installed using Docker. There are ready-made Docker containers for almost all platforms.
+Firefly III can be installed using Docker. There are ready-made Docker containers for almost all platforms. If you've never used Docker before, please first read into it yourself.
 
 The easiest way to install Firefly III is using "Docker compose", which is a Docker tool that allows you to define and run multi-container Docker applications. With Docker compose, you use a YAML file to configure your application's services. Then, with a single command, you create and start all the services from your configuration.
 
