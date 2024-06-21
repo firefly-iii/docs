@@ -11,8 +11,8 @@ The best way to upgrade is to use the "Straight from GitHub" instructions below.
 
 v%IMPORTERVERSION is the [latest version](https://version.firefly-iii.org/).
 
-- [Download the latest release as a `zip` file](https://github.com/firefly-iii/data-importer/releases/download/v%IMPORTERVERSION/FireflyIII-v%IMPORTERVERSION.zip) from GitHub.
-- [Download the latest release as a `tar.gz` file](https://github.com/firefly-iii/data-importer/releases/download/v%IMPORTERVERSION/FireflyIII-v%IMPORTERVERSION.tar.gz) from GitHub.
+- [Download the latest release as a `zip` file](https://github.com/firefly-iii/data-importer/releases/download/v%IMPORTERVERSION/DataImporter-v%IMPORTERVERSION.zip) from GitHub.
+- [Download the latest release as a `tar.gz` file](https://github.com/firefly-iii/data-importer/releases/download/v%IMPORTERVERSION/DataImporter-v%IMPORTERVERSION.tar.gz) from GitHub.
 
 It is up to you, if you prefer the `tar.gz` file or the `zip` file.
 
@@ -20,8 +20,8 @@ It is up to you, if you prefer the `tar.gz` file or the `zip` file.
 
 Optionally, you can validate and test the integrity of your download by also downloading the SHA256 checksum file.
 
-- [SHA256 checksum file of the `zip` file](https://github.com/firefly-iii/data-importer/releases/download/v%IMPORTERVERSION/FireflyIII-v%IMPORTERVERSION.zip.sha256).
-- [SHA256 checksum file of the `tar.gz` file](https://github.com/firefly-iii/data-importer/releases/download/v%IMPORTERVERSION/FireflyIII-v%IMPORTERVERSION.tar.gz.sha256).
+- [SHA256 checksum file of the `zip` file](https://github.com/firefly-iii/data-importer/releases/download/v%IMPORTERVERSION/DataImporter-v%IMPORTERVERSION.zip.sha256).
+- [SHA256 checksum file of the `tar.gz` file](https://github.com/firefly-iii/data-importer/releases/download/v%IMPORTERVERSION/DataImporter-v%IMPORTERVERSION.tar.gz.sha256).
 
 With this SHA256 checksum file, you can verify the integrity of the download by running the following command:
 
