@@ -53,7 +53,7 @@ Models are stored in [`Models/`](https://github.com/firefly-iii/firefly-iii/tree
 
 ### Views
 
-All the views are stored in [`views/`](https://github.com/firefly-iii/firefly-iii/tree/main/resources/views). There is a v1 and a v2 folder. The v1 folder contains the HTML-based views you know and love. The v2 folder contains the views for the new layout, which will be a Vue app. As such the v2 views are fairly basic (empty). Views are Twig files.
+All the views are stored in [`views/`](https://github.com/firefly-iii/firefly-iii/tree/main/resources/views). The v2 folder contains the views for the new layout, which will be a AlpineJS app. As such the v2 views are fairly basic (empty). Views are Twig files, but v2 views are Blade files.
 
 ### Controllers
 

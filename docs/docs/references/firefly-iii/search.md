@@ -2,6 +2,8 @@
 
 The search engine will search in the description of transactions only. Other filters are possible, and are listed below.
 
+The search does not support `OR`, all queries are joined as `AND` queries (A and B and C).
+
 ## How it works
 
 In the future, I hope to make it easier to apply these to your search.
