@@ -1,4 +1,4 @@
-# How to tack cash
+# How to track cash
 
 There are a few ways to manage your cash transactions in Firefly III. On this page you can read about them.
 
