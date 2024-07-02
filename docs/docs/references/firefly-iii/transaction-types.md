@@ -16,7 +16,7 @@ When you wish to create a deposit, select a revenue account first, as the source
 
 Although the form allows you to free-type a destination account as well, this may fail and the transaction can't be saved.
 
-If you want to store cash deposits, be sure to read [how to manage cash]((../../how-to/firefly-iii/finances/cash.md).
+If you want to store cash deposits, be sure to read [how to manage cash](../../how-to/firefly-iii/finances/cash.md).
 
 ## Transfers
 
