@@ -27,7 +27,7 @@ Note that Spectre does not offer the possibility of connecting to financial inst
 
 Since access to the Spectre API is limited to raw data only, you may have to do data cleanup yourself. You can use Firefly III [rules](../../../how-to/firefly-iii/features/rules.md) or build something yourself.
 
-You can see if your bank is supported [on this page](https://www.saltedge.com/products/spectre/countries?channel%5B%5D=non_regulated).
+You can see if your bank is supported [on this page](https://www.saltedge.com/products/spectre/countries?channel=non_regulated).
 
 ## GoCardless Bank Account Data API
 
