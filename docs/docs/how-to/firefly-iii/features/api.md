@@ -84,4 +84,4 @@ Many things can go wrong when you try to talk to the API. Even the data importer
 
 If you are trying to get the data importer to work, please [check out the FAQ](../../../references/faq/data-importer/general.md).
 
-For other questions, use [the support page](../../../references/support.md) to contact me or open a discussion on GitHub.
+For other questions, use [the support page](../../../explanation/support.md) to contact me or open a discussion on GitHub.

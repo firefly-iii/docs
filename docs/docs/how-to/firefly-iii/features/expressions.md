@@ -66,4 +66,4 @@ This allows for more useful combinations. Some of my own transactions always end
 
 ## Other methods
 
-There are no other methods yet, but they can be added. Are you looking for anything in particular? [Let me know](../../../references/support.md).
+There are no other methods yet, but they can be added. Are you looking for anything in particular? [Let me know](../../../explanation/support.md).

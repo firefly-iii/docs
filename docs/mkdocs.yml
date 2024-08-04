@@ -154,7 +154,7 @@ nav:
           - Installing and running: references/faq/install.md
           - Development: references/faq/development.md
           - Docker: references/faq/docker.md
-      - Support: references/support.md
+      - Support: explanation/support.md
   - Explanation:
       - Home: explanation/index.md
       - Financial concepts:

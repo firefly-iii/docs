@@ -6,7 +6,7 @@ The easiest way to install Firefly III is using "Docker compose", which is a Doc
 
 The YAML file and all necessary configuration are provided online for your convenience.
 
-If you have questions, please refer to [the Docker FAQ](../../../references/faq/docker.md) or contact me using the instructions from the [support page](../../../references/support.md).
+If you have questions, please refer to [the Docker FAQ](../../../references/faq/docker.md) or contact me using the instructions from the [support page](../../../explanation/support.md).
 
 ## Docker Compose
 
@@ -104,4 +104,4 @@ Firefly III assumes that you're using MySQL. If you use PostgreSQL, change the f
 
 When executed this command will fire up a Docker container with Firefly III inside of it. It may take some time to start. If the database is set up properly it will automatically migrate and install a default database, and you should be able to surf to your container (usually located at [localhost](http://localhost)) to use Firefly III.
 
-If you have questions, please refer to [the Docker FAQ](../../../references/faq/docker.md) or contact me using the instructions from the [support page](../../../references/support.md).
+If you have questions, please refer to [the Docker FAQ](../../../references/faq/docker.md) or contact me using the instructions from the [support page](../../../explanation/support.md).

@@ -175,4 +175,4 @@ So you could say "Transaction date is before" `xxxx-xx-10` and any transaction b
 
 ## Would you like to know more?
 
-If you are missing a specific search option, please check out the [support](../support.md) page.
+If you are missing a specific search option, please check out the [support](../../explanation/support.md) page.

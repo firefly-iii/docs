@@ -23,4 +23,4 @@ Please open an [issue on GitHub](https://github.com/firefly-iii/firefly-iii/issu
 
 ## Would you like to know more?
 
-Check out the [support page](support.md).
+Check out the [support page](../explanation/support.md).

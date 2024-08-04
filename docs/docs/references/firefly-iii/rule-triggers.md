@@ -1,6 +1,6 @@
 # Rule triggers
 
-The Firefly III rule engine can trigger on a number of things. If you are missing a specific trigger, please check out the [support](../support.md) page.
+The Firefly III rule engine can trigger on a number of things. If you are missing a specific trigger, please check out the [support](../../explanation/support.md) page.
 
 If you want to know more, please check out [how to create a rule](../../how-to/firefly-iii/features/rules.md).
 
@@ -156,4 +156,4 @@ So you could say "Transaction date is before" `xxxx-xx-10` and any transaction b
 
 ## Would you like to know more?
 
-If you are missing a specific trigger, please check out the [support](../support.md) page.
+If you are missing a specific trigger, please check out the [support](../../explanation/support.md) page.

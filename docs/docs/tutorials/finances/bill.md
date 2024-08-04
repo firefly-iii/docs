@@ -1,7 +1,7 @@
 # Manage a bill
 
 !!! tip
-    I've not yet finished writing this tutorial. Some items may not be filled in yet. I apologize for the inconvenience. Please refer to the [support page](../../references/support.md) if you have questions.
+    I've not yet finished writing this tutorial. Some items may not be filled in yet. I apologize for the inconvenience. Please refer to the [support page](../../explanation/support.md) if you have questions.
 
 You can use bills to track regular income from your accounts to any third party. To read more about bills, see also:
 

@@ -4,7 +4,7 @@ First of all, thank you for taking the time to help get Firefly III translated i
 
 ## Target language
 
-Ensure the language you want to translate in is listed [on this page](https://crowdin.com/project/firefly-iii). If not, [see the instructions on the Support page](../../../references/support.md).
+Ensure the language you want to translate in is listed [on this page](https://crowdin.com/project/firefly-iii). If not, [see the instructions on the Support page](../../../explanation/support.md).
 
 If you contact me, tell me what your language is called _in your language_. For example, Dutch in Dutch is `Nederlands`.
 
@@ -52,4 +52,4 @@ Once the files are in place, you can start editing them directly. If you refresh
 
 ![The result in Firefly III](../../../images/how-to/firefly-iii/development/result.png)
 
-Once you're done with a file, send the file [to me](../../../references/support.md), so I can upload the results to Crowdin.
+Once you're done with a file, send the file [to me](../../../explanation/support.md), so I can upload the results to Crowdin.

@@ -10,7 +10,7 @@ The YAML file and all necessary configuration are provided online for your conve
 
 If you happen to include any existing data from Firefly III, please [back this data up first](../../firefly-iii/advanced/backup.md).
 
-If you have questions, please refer to [the Docker FAQ](../../../references/faq/docker.md) or contact me using the instructions from the [support page](../../../references/support.md).
+If you have questions, please refer to [the Docker FAQ](../../../references/faq/docker.md) or contact me using the instructions from the [support page](../../../explanation/support.md).
 
 ## Docker Compose
 
@@ -120,4 +120,4 @@ fireflyiii/data-importer:latest
 !!! note "Run in the background"
     Change `docker run` to `docker run -d` so the image runs in the background.
 
-If you have questions, please refer to [the Docker FAQ](../../../references/faq/docker.md) or contact me using the instructions from the [support page](../../../references/support.md).
+If you have questions, please refer to [the Docker FAQ](../../../references/faq/docker.md) or contact me using the instructions from the [support page](../../../explanation/support.md).

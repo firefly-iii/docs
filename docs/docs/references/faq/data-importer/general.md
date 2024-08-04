@@ -6,4 +6,4 @@ Make sure you set the environment variable `VANITY_URL` and make sure it points 
 
 ## I have another question?
 
-Come [find us for some support](../../support.md), so we can add your question!
+Come [find us for some support](../../../explanation/support.md), so we can add your question!

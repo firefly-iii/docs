@@ -90,4 +90,4 @@ The import process consists of two steps. First a conversion and data validation
 
 Press "Start Job" to start the conversion and validation process. If this is successful, you can press "Start Job" after a few moments to import the data.
 
-Each step can run into plenty of errors. Most of them are documented in [this FAQ](../../../references/faq/data-importer/import.md), but I'm pretty sure I missed a few. Please refer to the [support page](../../../references/support.md) if you need help.
+Each step can run into plenty of errors. Most of them are documented in [this FAQ](../../../references/faq/data-importer/import.md), but I'm pretty sure I missed a few. Please refer to the [support page](../../../explanation/support.md) if you need help.

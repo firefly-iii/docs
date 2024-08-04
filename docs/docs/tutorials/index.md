@@ -28,4 +28,4 @@ Please start a [discussion](https://github.com/orgs/firefly-iii/discussions/new/
 
 ## Would you like to know more?
 
-Check out the [support page](../references/support.md).
+Check out the [support page](../explanation/support.md).

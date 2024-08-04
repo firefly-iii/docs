@@ -42,26 +42,24 @@ OK that was a joke. If you feel Firefly III made your life better, please consid
 
 ## Contributing code
 
-I am always interested in expanding Firefly III's many features, and I always want to fix the many bugs there are.
+I am always interested in expanding Firefly III's many features, and I always want to fix the many bugs there are. Please keep the following rules in mind, so we can both save a lot of time.
 
-1. Please do not submit solutions for problems that are not already reported in an issue. This helps the development process.
-2. I'm afraid Firefly III can't be your learning experience. If you're new to all of this, please go be new somewhere else, thank you.
-3. Do not open PRs to "discuss" possible solutions or to "get feedback" on your code. I don't have time for that.
-4. Pull requests for the `main` branch will be closed.
-5. DO NOT include translated strings in your PR.
+### Rules
 
-If you see a bug, and your first reaction is to open a PR, please describe the bug and its fix very carefully. When your fix requires a lot of changes, please let me know beforehand. I cannot accept new features out of the blue. Please first discuss the change you wish to make via issue, email, or any other method.
+1. If you see a bug, and your first reaction is to open a PR, please describe the bug and its fix very carefully. When your fix requires a lot of changes, please let me know beforehand. I cannot accept new features out of the blue. Please first discuss the change you wish to make via issue, email, or any other method.
+2. For some people, getting a PR merged is like a badge of honour. Low effort PRs that fix spelling errors or change a single broken HTML tag will not be accepted.
+3. I'm afraid Firefly III can't be your learning experience. If you're new to all of this, please go be new somewhere else, thank you.
+4. Do not open PRs to "discuss" possible solutions or to "get feedback" on your code. I don't have time for that.
+5. Pull requests for the `main` branch will be closed automatically.
+6. DO NOT include translated strings in your PR, your PR will be closed automatically.
+
+Your code will be licensed under [the current Firefly III license](https://github.com/firefly-iii/firefly-iii/blob/main/LICENSE).
 
 Firefly III is a passion project, and I am only accepting submissions from people who are as passionate as me about this application. Your drive-by resume-filling PR will not be accepted.
 
 ### Developer certificate of origin
 
 Please read [the developer certificate of origin](https://developercertificate.org/) and agree and comply with it.
-
-### Rules
-
-- I can only accept pull requests against the `develop` branch, never the `main` branch. If a repository does not have a `develop` branch, this rule does not apply,
-- Your code will be licensed under [the current Firefly III license](https://github.com/firefly-iii/firefly-iii/blob/main/LICENSE).
 
 ## Contributing text and documentation
 
