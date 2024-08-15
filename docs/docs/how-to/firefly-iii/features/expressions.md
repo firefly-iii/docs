@@ -1,5 +1,8 @@
 # How to use expressions in rules?
 
+!!! warn Firefly III v6.1.20
+    This feature is enabled in Firefly III v6.1.20 and later
+
 ## Introduction
 
 
