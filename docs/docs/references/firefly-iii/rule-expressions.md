@@ -1,5 +1,8 @@
 # Rule expressions
 
+!!! warning Firefly III v6.1.20
+    This feature is enabled in Firefly III v6.1.20 and later
+
 Firefly III features a powerful [rule engine](../../how-to/firefly-iii/features/rules.md) that comes with an [expression language](../../how-to/firefly-iii/features/expressions.md) to execute actions on your transactions.
 
 !!! info "Full syntax"
