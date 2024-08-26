@@ -43,6 +43,8 @@ DB_PORT=5432
 
 Change the `docker-compose.yml` file to point to `postgres` instead of `mariadb:lts`.
 
+Then, change the mount point of the database under volumes (`firefly_iii_db`) to `/var/lib/postgresql/data`.
+
 ### Start the container
 
 Run the following command in the directory where both `docker-compose.yml` and all configuration files are present.
