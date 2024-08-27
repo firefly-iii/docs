@@ -82,7 +82,7 @@ You can look up for your webserver (Apache or nginx) how to change the root dire
 
 ### Data Importer configuration
 
-In the directory where you just unzipped Firefly III you will find a `.env.example` file. Rename or copy it to `.env`.
+In the directory where you just unzipped the data importer you will find a `.env.example` file. Rename or copy it to `.env`.
 
 ```bash
 cp .env.example .env
