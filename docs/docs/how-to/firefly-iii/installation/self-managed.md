@@ -128,6 +128,7 @@ touch ./storage/database/database.sqlite
 Either way, in all cases, run these commands to initialize the database:
 
 ```bash
+php artisan migrate --seed
 php artisan firefly-iii:upgrade-database
 php artisan firefly-iii:correct-database
 php artisan firefly-iii:report-integrity
