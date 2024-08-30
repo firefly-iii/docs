@@ -111,7 +111,7 @@ cp .env.example .env
 
 Open this file using your favorite editor. There are instructions what to do in this file.
 
-Make sure you configure at least the database. For SQLite, you can drop all the configuration except `DB_CONNECTION=sqlite`.
+Make sure you configure at least the database. For SQLite, you must drop all the configuration except `DB_CONNECTION=sqlite`.
 
 ### Initialize the database
 
