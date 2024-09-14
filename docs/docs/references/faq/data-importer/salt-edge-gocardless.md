@@ -20,4 +20,10 @@ This is no something the data importer can prevent, but you can automatically re
 
 ## I am rate limited by GoCardless!
 
-Recently, GoCardless introduced rate limits. You can read about it on [their website](https://bankaccountdata.zendesk.com/hc/en-gb/articles/11529584398236-Bank-API-Rate-Limits-and-Rate-Limit-Headers). I cannot fix this for you, and the data importer is as sparse with requests as it can possibly be. Please do not open issues about this. The data importer, version v1.5.6 and up can handle the rate limits, but that also mean you may run into the data limits if you run the importer too often. How often? This depends on the number of accounts you have and the number of banks you import from.
+Recently, GoCardless introduced rate limits. You can read about it on [their website](https://bankaccountdata.zendesk.com/hc/en-gb/articles/11529584398236-Bank-API-Rate-Limits-and-Rate-Limit-Headers). Depending on the number of banks, and the number of accounts you want to import from you will run into the rate limits.
+
+I cannot fix this for you. The data importer tries to use as few requests as possible. Please do not open issues about this. The data importer (v1.5.6 and up) can handle the rate limits. Other versions may give you cryptic errors.
+
+When this feature was introduced, it was possible to see some weird things, like rate limits not resetting or the rate limit reset time being a negative number of hours. These are all issues with GoCardless, not with the data importer. Please contact GoCardless support if you run into these issues. 
+
+Generally speaking, the time you need to wait is correct. If the time to wait is less than 5 minutes, the data importer will wait for you. If it will take longer, the data importer cannot "wait it out" for you. You must wait yourself for the rate limit to reset. If you keep hammering GoCardless, you may be banned.
