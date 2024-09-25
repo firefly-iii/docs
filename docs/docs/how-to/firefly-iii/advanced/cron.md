@@ -113,7 +113,7 @@ In the logs you can see the cron job once it has run.
 
 ### From outside the container (http)
 
-If you do not use the cron container, you can simply call your local container over the (local) network to execute the cron job. Check out the preceding documentation, it's no different.
+If you do not use the cron container, you can call your local container over the (local) network to execute the cron job. Check out the preceding documentation, it's no different.
 
 ```
 # cron job for Firefly III using cURL
