@@ -2,7 +2,7 @@
 
 The Firefly III API is a REST-based JSON API that you can use to talk to (almost) every aspect of Firefly III. If you're interested you can read [the full spec](https://api-docs.firefly-iii.org/).
 
-Talking to the API can be done with any tool like Postman of simply cURL. Keep in mind that the [demo site](../../../explanation/firefly-iii/about/demo.md) of Firefly III will probably block your requests (this is to protect against script kiddies). Your own installation should work fine, however.
+Talking to the API can be done with any tool like Postman or cURL. Keep in mind that the [demo site](../../../explanation/firefly-iii/about/demo.md) of Firefly III will probably block your requests (this is to protect against script kiddies). Your own installation should work fine, however.
 
 Firefly III offers the following end points that can be used in applications that support the OAuth2 workflow.
 
