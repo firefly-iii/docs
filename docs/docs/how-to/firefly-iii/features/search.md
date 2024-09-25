@@ -4,7 +4,7 @@ You can search for transactions using the box in the left top of the page. The s
 
 ## A basic search
 
-Simply type in a word (or words), and Firefly III will search in the descriptions of transactions for what you're looking for.
+Enter a word (or words), and Firefly III will search in the descriptions of transactions for what you're looking for.
 
 ![A basic search](../../../images/how-to/firefly-iii/features/search-basic.png)
 
