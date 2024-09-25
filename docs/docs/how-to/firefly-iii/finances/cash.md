@@ -10,7 +10,7 @@ To do this in Firefly III, whenever you withdraw cash you leave the "destination
 
 ![Making a new transaction for the (cash) account.](../../../images/how-to/firefly-iii/finances/cash_built_in_1.png)
 
-When you do this the transaction will simply mention _(cash)_ and the money is one big withdrawal:
+When you do this the transaction will mention _(cash)_ and the money is one big withdrawal:
 
 ![View a transaction for the (cash) account.](../../../images/how-to/firefly-iii/finances/cash_built_in_2.png)
 
