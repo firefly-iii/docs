@@ -30,7 +30,7 @@ If the date of the transaction should repeat is in the weekend, Firefly III can 
 - Skip the transaction altogether.
 - Create the transaction on the Friday before instead. Please note that your recurring transaction will appear to fire a day early.
 - Create the transaction on the Monday after instead. Please note that your recurring transaction will appear to fire a day late.
-- Simply create the transaction in the weekend.
+- Create the transaction in the weekend.
 
 ## Information for the transaction itself
 
