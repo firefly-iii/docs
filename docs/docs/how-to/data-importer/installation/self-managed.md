@@ -16,7 +16,7 @@ You can search the web to find out how to install these modules. Some may be ins
 ## Installing the Data Importer
 
 !!! warning "Installing by pulling the remote repository"
-    It's no longer possible to install the data importer by simply pulling the code from the `main` or `develop` branch of the repository. Generated (JS) code and other dependencies are not in the repository, so your new installation may not work as expected.
+    It's no longer possible to install the data importer by pulling the code from the `main` or `develop` branch of the repository. Generated (JS) code and other dependencies are not in the repository, so your new installation may not work as expected.
 
 ### Main command
 
