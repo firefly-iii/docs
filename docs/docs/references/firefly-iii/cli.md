@@ -21,7 +21,7 @@ This command will apply your rules and rule groups on a selection of your transa
 * `--accounts[=ACCOUNTS]`. A comma-separated list of asset accounts or liabilities to apply your rules to.
 * `--rule_groups[=RULE_GROUPS]`. A comma-separated list of rule groups to apply. Take the ID's of these rule groups from the Firefly III interface.
 * `--rules[=RULES]`. A comma-separated list of rules to apply. Take the ID's of these rules from the Firefly III interface. Using this option overrules the option that selects rule groups.
-* `--all_rules`. If set, will overrule both settings and simply apply ALL of your rules.
+* `--all_rules`. If set, will overrule both settings and apply ALL of your rules.
 * `--start_date[=START_DATE]`. The date of the earliest transaction to be included (inclusive). If omitted, will be your very first transaction ever. Format: YYYY-MM-DD
 * `--end_date[=END_DATE]`. The date of the latest transaction to be included (inclusive). If omitted, will be your latest transaction ever. Format: YYYY-MM-DD
 
