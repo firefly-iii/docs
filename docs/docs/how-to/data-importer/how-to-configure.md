@@ -40,7 +40,7 @@ If you do not use Docker, the `FIREFLY_III_URL` is probably your localhost or th
 
 The `VANITY_URL` is rarely used outside of Docker containers. It contains the URL of Firefly III as you see it in your address bar. This is often not the same as the `FIREFLY_III_URL`.
 
-The `FIREFLY_III_URL` is optional. If you don't set it, the data importer will simply ask for the URL. If you do not set it, the `VANITY_URL` will be ignored.
+The `FIREFLY_III_URL` is optional. If you don't set it, the data importer will ask for the URL. If you do not set it, the `VANITY_URL` will be ignored.
 
 !!! warning "Docker and 127.0.0.1"
     Docker cannot connect to a Firefly III installation using `http://localhost` or `http://127.0.0.1` because this address refers to the Docker container itself, and not Firefly III.
