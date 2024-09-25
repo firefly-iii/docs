@@ -22,7 +22,7 @@ There is also a [Firefly III API](../../../references/firefly-iii/api/index.md) 
 
 If your bank delivers terrible files, or when the GoCardless / Salt Edge import is exceptionally messy, there is not much I can do about it.
 
-There are simply too many banks and financial institutions in the world for me to manage exceptions or options for. If you run into a data quality issue, the best place to get it addressed is at the source: your bank.
+There aretoo many banks and financial institutions in the world for me to manage exceptions or options for. If you run into a data quality issue, the best place to get it addressed is at the source: your bank.
 
 ### Will manually entered transactions match with imported bank transactions?
 
