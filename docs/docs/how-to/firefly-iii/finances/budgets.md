@@ -46,7 +46,7 @@ You can't edit or change these moments. They are hard-coded into Firefly III.
 
 ## Budgets that grow
 
-You can also simply add money to the budget every month. That way, it grows every period. You start at 25, and if you spend nothing it grows to 50, 75, etc. every month.
+You can also add money to the budget every month. That way, it grows every period. You start at 25, and if you spend nothing it grows to 50, 75, etc. every month.
 
 ![Growing auto budget](../../../images/how-to/firefly-iii/finances/auto-budget-2.png)
 
