@@ -44,7 +44,7 @@ The Firefly III financial concepts such as accounts, transactions and what-not a
 
 On [GitHub](https://github.com/firefly-iii/firefly-iii/issues) there have been several discussions on this topic. It's important to know, before you start another one, that the core concepts and possibilities within Firefly III will not change. This includes those weird concepts that make it difficult to manage returns and refunds. "It's not a bug, it's a feature." The developer of Firefly III is well aware of the idiosyncrasies of the system, and pointing them out will not really change their mind. Sorry.
 
-Right now, Firefly III has a lot of history and a lot of work yet to be done to make it ready for the future. Although better support for some common accountancy concepts is one of them, it is not particularly high on the list. Especially not, since this would also break the fundamental concepts of Firefly III as they are right now, even if they are wrong.
+Right now, Firefly III has a lot of history and a lot of work yet to be done to make it ready for the future. Although better support for some common accountancy concepts is one of them, it is not particularly high on the list. Especially since this would also break the fundamental concepts of Firefly III as they are right now, even if they are wrong.
 
 Since this is open source software however, you are in luck. If you feel there is room for "Firefly III - The Accountant Edition", feel free [to fork the project and build it](https://github.com/firefly-iii/firefly-iii/fork). The developer will happily link to your project from the Firefly III website and documentation. 
 
