@@ -2,7 +2,7 @@
 
 ## Is it multi-user?
 
-Yes. For security reasons Firefly III opens up the registration form only for the first user. See also [how to make Firefly III mult-user](../../../how-to/firefly-iii/features/multi-user.md). Keep in mind that you won't be able to _share_ your administration. This is a work in progress.
+Yes. For security reasons Firefly III opens up the registration form only for the first user. See also [how to make Firefly III multi-user](../../../how-to/firefly-iii/features/multi-user.md). Keep in mind that you won't be able to _share_ your administration. This is a work in progress.
 
 ## Can I share one administration with multiple users?
 
@@ -32,6 +32,21 @@ Two differences between zero-sum budgeting and Firefly III:
 - You separate the income from the budgeting and spending process
 
 When I built Firefly III I was over 5K in debt and this helped me pay it off in less than a year: a monthly budget routine separated from my income, fixed amounts at the start of each month, all income to the savings account. Firefly III is geared towards predetermining your budgets, allocating funds to those budgets *only* and then spend it.
+
+See [personal finances](../../../explanation/firefly-iii/background/personal-finances.md) for more information.
+
+## Why does Firefly III not support accounting feature X?
+
+* Why isn't Firefly III correct, when it comes to expense accounts, revenues and other monetary concepts?
+* Why do you say you support double-entry accounting, when technically you don't?
+
+The Firefly III financial concepts such as accounts, transactions and what-not are based on what the developer thought was good financial practice when they built Firefly III. It's not entirely (or at all) based on what you would learn in accounting school. The developer is not an accountant, although he kind of pretends to be one. But many things an accountant would expect or find reasonable, may not work or may not be present in Firefly III.
+
+On [GitHub](https://github.com/firefly-iii/firefly-iii/issues) there have been several discussions on this topic. It's important to know, before you start another one, that the core concepts and possibilities within Firefly III will not change. This includes those weird concepts that make it difficult to manage returns and refunds. "It's not a bug, it's a feature." The developer of Firefly III is well aware of the idiosyncrasies of the system, and pointing them out will not really change their mind. Sorry.
+
+Right now, Firefly III has a lot of history and a lot of work yet to be done to make it ready for the future. Although better support for some common accountancy concepts is one of them, it is not particularly high on the list. Especially not, since this would also break the fundamental concepts of Firefly III as they are right now, even if they are wrong.
+
+Since this is open source software however, you are in luck. If you feel there is room for "Firefly III - The Accountant Edition", feel free [to fork the project and build it](https://github.com/firefly-iii/firefly-iii/fork). The developer will happily link to your project from the Firefly III website and documentation. 
 
 See [personal finances](../../../explanation/firefly-iii/background/personal-finances.md) for more information.
 
