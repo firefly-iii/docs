@@ -8,9 +8,6 @@ If you want to know more, please check out [how to create a rule](../../how-to/f
     All triggers can be inverted. By checking the "NOT"-box on the rule creation page, the trigger will do the opposite, i.e. NOT match on a description.
 
 
-!!! info "PostgreSQL"
-    PostgreSQL databases are generally case-sensitive, and so will these triggers also be case-sensitive.
-
 ## Description and content
 
 Triggers that match on textual content. All triggers have varieties: starts with, ends on, contains, is exactly.

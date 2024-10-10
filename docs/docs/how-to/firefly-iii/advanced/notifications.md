@@ -43,7 +43,11 @@ To configure these, fill in the `MAILGUN_DOMAIN`, `MAILGUN_SECRET`, and `MAILGUN
 
 ### `sparkpost`
 
-[Sparkpost](https://www.sparkpost.com/) is another paid service. Find the `SPARKPOST_SECRET` to configure sending email over Sparkpost. Note that I haven't actually tested this. 
+[Sparkpost](https://www.sparkpost.com/) is another paid service. Find the `SPARKPOST_SECRET` to configure sending email over Sparkpost. Note that I haven't actually tested this.
+
+### `mailersend`
+
+[Mailersend](https://www.mailersend.com/) is another paid service, but it includes free tiers. Find the `MAILERSEND_API_KEY` to configure sending email over Mailersend.
 
 ## Slack
 

@@ -17,8 +17,6 @@ A rule must spring into action at the right time! This is decided by triggers th
 
 For a full list of triggers please check out [this reference of all rule triggers](../../../references/firefly-iii/rule-triggers.md).
 
-Most triggers are case-insensitive, but depending on your database the triggers may be case-sensitive.
-
 Rules can be set to be "strict" or not. If a rule is set to be strict, ALL triggers must match for the rule to fire. If a rule is not strict, ANY trigger is enough.
 
 This can be useful if you wish to match multiple descriptions in one same rule, for example. If your transactions are described "groceries" or "went shopping" or "got food" then a *non-strict* rule could match all of them by adding 3 triggers with different content.

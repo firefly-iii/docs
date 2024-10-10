@@ -1,13 +1,5 @@
 # Using Firefly III, questions
 
-## Auto complete is case-sensitive?
-
-This happens when the underlying database is Postgres, which is case-sensitive by default. You may run into this when searching for `FLO` doesn't yield `flower`.
-
-There's not much I can do about this. When the auto-complete searches in your database for entries, it may do so in a case-sensitive manner.
-
-The good news is that once the search is over, the result is cached by your browser. These cached entries will be searched for in a case-**in**sensitive manner.
-
 ## Firefly III can't tell the difference between `a` and `ä`
 
 This happens because by default MySQL can't see the difference. At the moment, I cannot fix this.
