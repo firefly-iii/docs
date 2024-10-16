@@ -70,7 +70,7 @@ Download the [firefly-iii-backuper.sh](https://gist.github.com/dawid-czarnecki/8
 Create a cron job that will run regularly, like so. This will create the necessary backups in the `.tar` file, named after the current date.
 
 ```bash
-1 01 * * * bash /home/myname/backuper.sh backup /home/backup/$(date '+%F').tar
+1 01 * * * bash /home/myname/backuper.sh backup /home/backup/$(date '+\%F').tar
 ```
 
 The same script can also restore the Docker configuration and the database, getting you up and running again. You can run this on the command line:
