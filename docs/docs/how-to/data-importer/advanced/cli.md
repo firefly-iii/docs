@@ -103,3 +103,4 @@ By default, the importer also dumps the debug logs in the console. This can be u
 | 70        | The importable file cannot be found                        |
 | 71        | The importable file cannot be read                         |
 | 72        | Too many errors processing the data in the importable file |
+| 73        | Nothing was imported during this run                       |
