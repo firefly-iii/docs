@@ -13,7 +13,7 @@ Firefly III is featured in [Cloudron](https://cloudron.io/). You can install a C
 
 ## Umbrel
 
-Firefly III is featured in the [Umbrel app store](https://umbrel.com/).
+Firefly III is featured in the [Umbrel app store](https://apps.umbrel.com/app/firefly-iii).
 
 ## Unraid
 
@@ -21,7 +21,7 @@ There are [templates](https://forums.unraid.net/topic/124146-support-smartphonel
 
 ## Yunohost
 
-Firefly III is featured on [Yunohost](https://yunohost.org/#/app_firefly-iii).
+Firefly III is featured on [Yunohost](https://apps.yunohost.org/app/firefly-iii).
 
 ## Softaculous
 
