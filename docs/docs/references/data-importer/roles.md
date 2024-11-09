@@ -16,9 +16,24 @@ This sets the main date of the transaction. This date will be used for sorting t
 
 It's important to be consistent about the date you use. Especially when your CSV has several date fields. Choose the date closest to the actual transaction.
 
+Example data includes:
+
+```text
+2024-01-01
+03/31/2024
+2024-01-01 12:34:56
+```
+
 ## Description
 
 The description of the transaction. If you select multiple columns to be the description of the transaction, the columns will be concatenated together.
+
+Example data includes:
+
+```text
+VB/000002628 INGDDEFFXXX DE94500105175185646536
+Vishandel Hilvertshof HILVERSUM	Card 1234
+```
 
 ## Asset account (\*)
 
@@ -26,15 +41,31 @@ These roles (several variations) are used to indicate the asset account in the t
 
 The "asset account" role and the "opposing account" role (see ahead) will be automatically switched by the data importer when the transaction is the other way around.
 
+The variations for this field are as follows:
+
+- IBAN: represents the IBAN of the asset account
+- Number: represents the account number, for when your bank does not use the IBAN system.
+- ID matching FF3: represents the ID of the asset account as it already exists in Firefly III. Banks don't generally know this ID, but you can map data to this value.
+- Name: represents the name of the asset account as it is saved in Firefly III. Banks don't use this name, but you can map data to this value.
+- BIC: represents the BIC value of this account
+
 ## Opposing account (\*)
 
 These roles (in several variations) are used to indicate the opposing account. Usually these are stores or shops or opposing account details. Think of these columns as the "payee" column, the person or account receiving the money.
 
 The "asset account" role and the "opposing account" role (see earlier) will be automatically switched by the data importer when the transaction is the other way around.
 
+The variations for this field are as follows:
+
+- IBAN: represents the IBAN of the opposing account
+- Number: represents the account number, for when your bank does not use the IBAN system.
+- ID matching FF3: represents the ID (see the URL) of the opposing account as it already exists in Firefly III. Banks don't generally know this ID, but you can map data to this value.
+- Name: represents the name of the opposing account as it is saved in Firefly III. Banks don't use this name, but you can map data to this value.
+- BIC: represents the BIC value of this opposing account
+
 ## Amount
 
-Indicates the amount of the transaction. Use "Amount (negated column)" if the transactions get imported the wrong way around.
+Indicates the amount of the transaction. Most of the time, the amount is stored both positive and negative. The data importer can handle this automatically. Use "Amount (negated column)" if the transactions get imported the wrong way around.
 
 ## Amount (in foreign currency)
 
@@ -42,31 +73,57 @@ Indicates the foreign amount of the transaction. If you select a column that con
 
 ## Amount (credit / debit column)
 
-Some banks split the amount in two columns. One for debits, one for credits. Use this column type for either field.
+Some banks split the amount in two columns. One for debits, one for credits. Use this column type for either field. This is relevant when you see TWO columns with amount data in your CSV file.
+
+```csv
+description;debit;credit
+You buy groceries;12.34;
+You get a refund;;12.34
+
+```
 
 ## Bank specific credit/debit indicator
 
 Some banks use a column with a magic letter or word to indicate if the transaction is an expense or income. The data importer has a role for such columns, and [most letters are recognized](https://github.com/firefly-iii/data-importer/blob/main/app/Services/CSV/Converter/BankDebitCredit.php#L51).
 
+This is useful when your data is something like this:
+
+```csv
+12.34;CR;
+56.78;DR;
+```
+
 ## Bill
 
-Use this field to link the transaction to the right bill.
+Use this field to link the transaction to the right bill. You can use the bill name or the bill ID. Few banks deliver enough data to deduce the Firefly III bill, so this field is not used often by users. However, if your bank happens to classify transactions for you, you may be able to use it.
+
+- Bill name: expects the content of the field to be the literal bill name in Firefly III
+- Bill ID: expects the content of the field to be the literal bill ID (see the URL) in Firefly III
+
+The content of this field can be mapped, so "SOMEVAL" can be mapped to "Some Value" in Firefly III.
 
 ## Budget
 
-Use this field to link the transaction to the right budget.
+Use this field to link the transaction to the right budget. Few banks deliver enough data to deduce the Firefly III budget, so this field is not used often by users. However, if your bank happens to classify transactions for you, you may be able to use it.
+
+- Budget name: expects the content of the field to be the literal budget name in Firefly III
+- Budget ID: expects the content of the field to be the literal budget ID (see the URL) in Firefly III
+
+- The content of this field can be mapped, so "SOMEVAL" can be mapped to "Some Value" in Firefly III.
 
 ## Category
 
-Use this field to link the transaction to the right category.
+Use this field to link the transaction to the right category. Although few banks actually do this, some banks give your transactions categories, if only what type of expense (like wether it was by card, check or touchless payment). The content of this field can be mapped, so "SOMEVAL" can be mapped to "Some Value" in Firefly III.
 
 ## Currency code / name / symbol
 
-Use this field to set the currency of the transaction.
+Use this field to set the currency of the transaction. The currency ID must match the Firefly III currency IDs. This is never the case of course.
+
+The content of this field can be mapped, so "E" can be mapped to "Euro" in Firefly III.
 
 ## Foreign currency code (ISO 4217)
 
-Use this field to set the currency code of the foreign amount of the transaction.
+Use this field to set the currency code of the foreign amount of the transaction. This works the same as the normal currency fields.
 
 ## Meta date fields
 
@@ -79,19 +136,17 @@ Consists of:
 - Transaction payment date
 - Transaction invoice date
 
-These are meta-dates related to the transaction you can set. Import these dates so data isn't lost.
+These are meta-dates related to the transaction you can set. Import these dates so data isn't lost. Most people use the date that is closest to the actual transaction date as the main date (see earlier in the text about the "date" field). The other dates can be stored pretty much as you wish. When reconciling transactions it might be useful to select the processing date of the bank as the date.
 
-Most people use the date that is closest to the actual transaction date as the main date (see earlier in the text about the "date" field). The other dates can be stored pretty much as you wish.
-
-When reconciling transactions it might be useful to select the processing date of the bank as the date.
+If you are importing, always make sure you have at least one "Transaction date" field configured, or your transactions will not be imported with the correct date.
 
 ## External ID / Internal reference
 
-Some banks give transactions their own ID's. Use this field to track them.
+Some banks give transactions their own ID's. Often, you can find these values in the first column of your CSV file. If you are reasonably sure this number is unique, store it in either the external ID or internal reference field (this is up to you). Firefly III can use these values to check for duplicates.
 
 ## Tags
 
-The Firefly III can import space and comma separated tags.
+The Firefly III can import space and comma separated tags. This can be useful when your bank submits automated tags with your transactions. The tags will be split and stored in Firefly III.
 
 ## Note(s)
 
@@ -109,10 +164,6 @@ Multilines notes spanning to more than one line can be imported, just remember t
 In Firefly III you'll see the notes this way:
 
 ![How your notes will be presented in Firefly III](../../images/references/data-importer/multiline-notes-sample.png)
-
-## Debit/credit indicator
-
-The CSV importer supports the use of fields like "D" and "C" or "debit" and "credit" to indicate if the amount should be positive or negative.
 
 ## SEPA fields
 
