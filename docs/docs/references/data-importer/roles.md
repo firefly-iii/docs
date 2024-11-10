@@ -24,6 +24,16 @@ Example data includes:
 2024-01-01 12:34:56
 ```
 
+The data importer needs your help to convert this date. The content is parsed using a special format. Read more about the format in the [PHP documentation](https://www.php.net/manual/en/datetime.format.php).
+
+Here are some examples:
+
+* `Ymd`. Will convert `20210318`
+* `F/j/Y`. Will convert `January/17/2021`
+* `nl:d F Y`. Will convert Dutch date `5 mei 2021`
+
+![Date configuration value "Ymd" is necessary to parse this file](../../images/tutorials/data-importer/date.png "Date configuration value 'Ymd' is necessary to parse this file")
+
 ## Description
 
 The description of the transaction. If you select multiple columns to be the description of the transaction, the columns will be concatenated together.
@@ -67,6 +77,14 @@ The variations for this field are as follows:
 
 Indicates the amount of the transaction. Most of the time, the amount is stored both positive and negative. The data importer can handle this automatically. Use "Amount (negated column)" if the transactions get imported the wrong way around.
 
+Example data includes:
+
+```csv
+12.34
+-56.78
+99.99
+```
+
 ## Amount (in foreign currency)
 
 Indicates the foreign amount of the transaction. If you select a column that contains the foreign amount, you must also select the "Foreign currency code (ISO 4217)" role. Otherwise, it may not be possible to import a foreign amount.
@@ -76,10 +94,9 @@ Indicates the foreign amount of the transaction. If you select a column that con
 Some banks split the amount in two columns. One for debits, one for credits. Use this column type for either field. This is relevant when you see TWO columns with amount data in your CSV file.
 
 ```csv
-description;debit;credit
-You buy groceries;12.34;
-You get a refund;;12.34
-
+description,debit,credit
+You buy groceries,12.34,
+You get a refund,,12.34
 ```
 
 ## Bank specific credit/debit indicator
@@ -90,7 +107,7 @@ This is useful when your data is something like this:
 
 ```csv
 12.34;CR;
-56.78;DR;
+56.78;DB;
 ```
 
 ## Bill
