@@ -166,6 +166,7 @@ nav:
           - Piggy banks: explanation/financial-concepts/piggy-banks.md
           - Bills: explanation/financial-concepts/bills.md
           - Recurring transactions: explanation/financial-concepts/recurring.md
+          - Exchange rates: explanation/financial-concepts/exchange-rates.md
       - Firefly III:
           - About Firefly III:
               - Introduction and features: explanation/firefly-iii/about/introduction.md
@@ -185,7 +186,7 @@ nav:
           - Architecture: explanation/more-information/architecture.md
           - Security: explanation/more-information/security.md
           - License: explanation/more-information/license.md
-          - Financial contributions: explanation/more-information/money.md
+          - Donations: explanation/more-information/donations.md
           - Missing features: explanation/more-information/what-its-not.md
           - (Security) testing: explanation/more-information/bending-and-breaking.md
           - Digital signatures: explanation/more-information/signatures.md

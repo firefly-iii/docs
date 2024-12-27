@@ -8,7 +8,7 @@ I talk about the ability to donate on the introduction page of each repository, 
 
 Donations are a great way to support me and the work I do. Many people have donated to me over the years, and I'm very grateful for that. It's a great way to show your appreciation for the work I do. The money goes towards hosting costs, domain names, and various other expenses. It also goes towards the time I spend on the project. 
 
-If you feel Firefly III made your life better, please consider contributing as a sponsor. Please check out my [Patreon](https://www.patreon.com/jc5) and [GitHub Sponsors](https://github.com/sponsors/JC5) page for more information. You can also [buy me a ☕️ coffee at ko-fi.com](https://ko-fi.com/Q5Q5R4SH1). 
+If you feel Firefly III made your life better, please consider contributing as a sponsor. Please check out my **[Patreon](https://www.patreon.com/jc5)** and **[GitHub Sponsors](https://github.com/sponsors/JC5)** page for more information. You can also **[buy me a ☕️ coffee](https://ko-fi.com/Q5Q5R4SH1)** at ko-fi.com. 
 
 Donations are the only form of compensation I receive, apart of course from all your compliments and support. 
 
