@@ -61,7 +61,7 @@ For Apache, use something like:
 </VirtualHost>
 ```
 
-## I can't seem to get https working with Caddy
+## I can't seem to get https working
 
 Set `TRUSTED_PROXIES` to `*`. See also [this issue](https://github.com/firefly-iii/firefly-iii/issues/1632) on GitHub.
 
