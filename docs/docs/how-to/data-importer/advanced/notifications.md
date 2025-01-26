@@ -24,7 +24,7 @@ Update the settings to match your email configuration. The first thing you'll wa
 
 ## log
 
-The default value will store messages in your log files instead of sending them.
+Set `APP_LOG_LEVEL=debug`, and the system will store messages in your log files instead of sending them. Since this is not really secure, the log level is `notice` by default.
 
 ## smtp
 
