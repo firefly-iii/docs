@@ -92,7 +92,6 @@ Run the following commands to upgrade the database and the application:
 
 ```bash
 php artisan migrate --seed
-php artisan firefly-iii:decrypt-all
 php artisan cache:clear
 php artisan view:clear
 php artisan firefly-iii:upgrade-database

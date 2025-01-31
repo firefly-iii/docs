@@ -4,6 +4,8 @@
 
 The Data Importer can import from the command line. Either by calling [the Docker container](../installation/docker.md), or by using your [self-managed instance](../installation/self-managed.md).
 
+If you use the data importer just to import data (and the web interface is unused), please read the considerations below.
+
 ### Configuration
 
 The following environment variable need to be set. This value must match the local directory. If you're using Docker, set it to `/import`.
@@ -14,8 +16,6 @@ IMPORT_DIR_ALLOWLIST=/your/directory
 
 !!! note "Command line and Docker"
     When you're using Docker validate that you've mounted a directory with your files in it. This is something you must have done when you launched the Docker container, using for example `-v /path/to/my/files:/import`.
-
-
 
 ### Importing CSV, camt.053 files and JSON files
 
@@ -67,7 +67,10 @@ docker exec -it [container-id] php artisan importer:auto-import /import
 
 ## Automatic imports using Docker
 
-The following command will run the data importer. It will try to import whatever it finds in the current directory. This is fully automated. It works by mounting the current directory to `/import` and importing all files.
+The following command will run the data importer once. It will try to import whatever it finds in the current directory, and then exit. This is fully automated. It works by mounting the current directory to `/import` and importing all files.
+
+!!! warning "Different image"
+    Notice how this command uses the `latest-cli` image. This is a different image than the `latest` image. If you start this with the wrong tag, t will start the web server as well, and it will never exit.
 
 ```bash
 docker run \
@@ -77,7 +80,7 @@ docker run \
 -e IMPORT_DIR_ALLOWLIST=/import \
 -e FIREFLY_III_URL= \
 -e WEB_SERVER=false \
-fireflyiii/data-importer:latest
+fireflyiii/data-importer:latest-cli
 ```
 
 !!! info "Personal Access Token"

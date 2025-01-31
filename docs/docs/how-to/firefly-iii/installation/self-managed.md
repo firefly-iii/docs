@@ -10,10 +10,9 @@ If you have your own (virtual) web server you can use this guide to install Fire
 
 Several users have created specific guides for their OS and database combination. 
 
-1. [Raspberry Pi 3, with Docker and Docker compose](https://gist.github.com/josephbadow/588c2ae961231fe338c459127c7d835b)
-2. [Firefly III in Ubuntu 20.04 and proxmox](https://gist.github.com/Engr-AllanG/34e77a08e1482284763fff429cdd92fa)
-3. [Firefly III scripted installer](https://github.com/runlevel-4/firefly-iii-automation)
-4. [Firefly III Gulp orchestration scripts](https://github.com/sidyes/firefly-iii-gulp)
+1. [Firefly III in Ubuntu 20.04 and proxmox](https://gist.github.com/Engr-AllanG/34e77a08e1482284763fff429cdd92fa)
+2. [Firefly III scripted installer](https://github.com/runlevel-4/firefly-iii-automation)
+3. [Firefly III Gulp orchestration scripts](https://github.com/sidyes/firefly-iii-gulp)
 
 ## Preparing your server
 
