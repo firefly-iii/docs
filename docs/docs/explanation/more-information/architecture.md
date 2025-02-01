@@ -47,6 +47,12 @@ Webhooks have a related object called the "webhook message" that contains the co
 
 Firefly III is based on [Laravel](https://laravel.com/), and uses the MVC model. There is a number of design patterns used throughout the code. Listed here are the most important *directories* and what they contain. Some design patterns use more directories than what you see here, so be sure to also check out the [Design Patterns](#design-patterns) below.
 
+## Why PHP%PHPVERSION and not (some earlier version)?
+
+Many operating systems and web hosters provide earlier or even old versions of PHP. So, why not stick to something stable, like PHP (minus two versions ago)? The answer is simple: I like the new features, syntax and possibilities. I've spent a lot of time in my professional life maintaining old apps written in PHP5, and never again. Thanks to containerization tools like Docker, individual PHP versions matter less than they used to do. 
+
+Especially the last few years, PHP has added a lot of cool stuff that I am eager to learn and work with. And I believe it helps to push the rest of the community away from old versions. I really do appreciate the stability other distros offer, but that's not for me.
+
 ### Models
 
 Models are stored in [`Models/`](https://github.com/firefly-iii/firefly-iii/tree/main/app/Models). Everything in the Firefly III database has an associated model. Most models also have a `routeBinder` function that tells if a URL parameter is valid. Some tables in the database are used to link data together, which means they don't have a model.
