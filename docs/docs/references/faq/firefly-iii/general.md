@@ -50,6 +50,14 @@ Since this is open source software however, you are in luck. If you feel there i
 
 See [personal finances](../../../explanation/firefly-iii/background/personal-finances.md) for more information.
 
+## When will you release version (the next version)?
+
+As a rule, I do not comment on the release date of future version. I do this for free in my spare time, so it is difficult to predict when the next version will be released. I do have a [roadmap](https://roadmap.firefly-iii.org), that you can use to guesstimate when the next release will be out.
+
+On the roadmap, find either Firefly III or the data importer. For the next patch, minor or major version, see if the GitHub tickets that you see (bugs, enhancements or features) are tagged with "fixed". If there are many, a new release is probably coming soon.
+
+It is also common that a new release is followed by several smaller releases, to fix issues.
+
 ## Will Firefly III support PSD2?
 
 * Will Firefly III have PSD2 integration?
@@ -89,3 +97,4 @@ If you want to, feel free to host Firefly III yourself and sell user accounts. I
 This excludes all the (legal) work you'll need to have in place to manage other people's finances hassle-free.
 
 Personally, right now I'm just not interested in turning this into a business. I'm as happy I can be with the way things are right now. Thank you.
+

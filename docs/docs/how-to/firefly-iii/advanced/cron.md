@@ -4,6 +4,12 @@ Firefly III has several feature that will only work when the cron job is running
 
 You should read up on [budgets](../finances/budgets.md) if you want to use cron jobs for auto-budgets. There are some interesting details to know about.
 
+## Cron authentication
+
+To run the cron job, you must do so on the command line, or over the web. If you try to access the cron job over the web, you have to provide an access token. This token can be found on your `/profile` page under the "Command line token" header. This will prevent others from spamming your cron job URL. An alternative to this token value is the `STATIC_CRON_TOKEN` environment variable. You can set this using the `.env` file, or by setting it through Docker. A little ahead on this page the difference is explained.
+
+If you have multiple users that use your Firefly III installation, it is only necessary for one user to set up the cron job. The cron job will run for all users. It is OK if multiple users set up multiple runs of the cron job.
+
 
 ## Calling a command
 
@@ -69,6 +75,11 @@ You can also use a tool called cURL.
 ```
 
 The `[token]` value can be found on your `/profile` under the "Command line token" header. This will prevent others from spamming your cron job URL. An alternative to this token value is the `STATIC_CRON_TOKEN` environment variable. You can set this using the `.env` file, or by setting it through Docker. A little ahead on this page the difference is explained.
+
+If you have multiple users that use your Firefly III installation, it is only necessary for one user to set up the cron job. The cron job will run for all users. It is OK if multiple users set up multiple runs of the cron job. 
+
+But, it is not necessary to configure a run of the cron job for all users. So, it does not matter which access token you use: that of any user, or the `STATIC_CRON_TOKEN`.
+
 
 ## Cron jobs in Docker
 
