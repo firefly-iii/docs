@@ -21,9 +21,11 @@ New currencies added through this form will be enabled for use.
 
 ![This screen allows you to create a new currency. Pretty straight-forward.](../../../images/how-to/firefly-iii/features/currency-create.png)
 
-## Set the default currency
+## Set the native currency
 
-Firefly III support multiple currencies, and each user sets a default currency. When you install Firefly III this is the Euro. You can change this if you want to.
+Firefly III support multiple currencies, and each administration has a native currency. When you install Firefly III this is the Euro. You can change this if you want to.
+
+TODO this screenshot is old, because this is now configured under "/administrations".
 
 ![In this instance of Firefly III, the default currency is the British Pound.](../../../images/how-to/firefly-iii/features/currency-default.png)
 

@@ -7,7 +7,7 @@ Firefly III supports many currencies, and you can add custom currencies as well.
 
 ## View available currencies
 
-Go to Options > Currencies in the left-hand menu. Here you can see all available and enabled currencies. By default, only one currency is enabled. Press the "Enable" button to enable a currency. You can also make another currency the default currency. Keep in mind this will not change existing transactions.
+Go to Options > Currencies in the left-hand menu. Here you can see all available and enabled currencies. By default, only one currency is enabled. Press the "Enable" button to enable a currency.
 
 (TODO add screenshot of currency overview)
 
