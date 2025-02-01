@@ -18,6 +18,8 @@ Firefly III supports two options that allow you to use native amounts and exchan
 
 If you turn this on, native amounts will automatically be calculated whenever necessary. This happens when Firefly III boots. However, you may want to initialize this yourself if you want to. 
 
+By default, Firefly III ships with one or two sets of exchange rates, which you are free to add yourself.
+
 ## Recalculate native amounts
 
 Use the following command to recalculate all native amounts. This may take some time if you have a lot of transactions in other currencies than your default currency.
@@ -56,6 +58,8 @@ Firefly III transactions also have a "foreign amount"-field. If you set a foreig
     This only works for the default system provided currencies because free exchange rate data is hard to come by.
 
 Make sure that `ENABLE_EXTERNAL_RATES=true` and run the [cron job](../../how-to/firefly-iii/advanced/cron.md) daily.
+
+Firefly III will download new rates about every week. You should see the list of available rates expand slowly.
 
 ## Setting your own rates
 
