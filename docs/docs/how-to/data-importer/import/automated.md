@@ -59,3 +59,10 @@ Add the following entry to your Docker compose file:
       - firefly_iii
 
 ```
+
+You also need to change 2 variables in you .env file from ```false``` to ```true```
+
+```
+- CAN_POST_AUTOIMPORT=true
+- CAN_POST_FILES=true
+```
