@@ -96,6 +96,8 @@ This is an error that happens on Synology boxes with an old kernel. I'm sorry, t
 
 If you start the database container with a `MYSQL_PASSWORD` that you change later, it won't change in the database. Destroy the volume + container and start over.
 
+This also happens when you start Firefly III for the first time, "to see if it works", and then decide to configure a more secure password.
+
 ## I get 'failed to open stream: Permission denied' on log files
 
 This is caused by a permissions issue. Often, this is caused by cron jobs running under root, not `www-data`.
