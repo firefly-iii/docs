@@ -14,6 +14,10 @@ The instructions always assume `fireflyiii/core:latest`. This is the latest stab
 * `fireflyiii/core:alpha`. This tag contains alpha releases.
 * `fireflyiii/core:develop`. Always the latest develop image. Maybe unstable.
 
+## Can I use Docker secrets?
+
+Yes, but keep in mind that Docker (Swarm) secrets may not work because the container does not run as root. A possible solution is outlined [in this Docker Community Forums discussion](https://forums.docker.com/t/only-root-user-has-access-to-the-secret/102774) and detailed [in this GitHub discussion](https://github.com/orgs/firefly-iii/discussions/9788).
+
 ## For which platforms the Firefly III Docker image built?
 
 All Docker tags are built for ARMv7, ARM64 and AMD64. ARMv6 is not included, so these images will *not* work on the Raspberry Pi Zero, Raspberry Pi 1 (A+B) or Raspberry Pi Compute Module.

@@ -25,7 +25,11 @@ New currencies added through this form will be enabled for use.
 
 Firefly III support multiple currencies, and each administration has a native currency. When you install Firefly III this is the Euro. You can change this if you want to.
 
-TODO this screenshot is old, because this is now configured under "/administrations".
+Go to Options > Financial administrations (or `/administrations`) and under Actions, click "Edit". Here you can set the native currency for your current financial administration.
+
+![In this instance of Firefly III, the default currency is the British Pound.](../../../images/how-to/firefly-iii/features/currency-native.png)
+
+On the overview of your currencies at `/currencies` you can see ALL currencies (disabled en enabled):
 
 ![In this instance of Firefly III, the default currency is the British Pound.](../../../images/how-to/firefly-iii/features/currency-default.png)
 
