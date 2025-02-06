@@ -69,6 +69,8 @@ All secrets in use by Firefly III are stored in environment variables. These are
 
 Firefly III supports the use of files for secrets (see the `.env.example` file). Sensitive information used to run Firefly III should not be stored in plaintext. Check out [Docker secrets](https://docs.docker.com/engine/swarm/secrets/).
 
+Yes, but keep in mind that Docker (Swarm) secrets may not work because the container does not run as root. A possible solution is outlined [in this Docker Community Forums discussion](https://forums.docker.com/t/only-root-user-has-access-to-the-secret/102774) and detailed [in this GitHub discussion](https://github.com/orgs/firefly-iii/discussions/9788).
+
 ## XSRF and XSS
 
 Each form in Firefly III is protected by a token preventing cross site request forging. All javascript on Firefly III pages must also be called with a special token to prevent cross-site scripting.
