@@ -48,6 +48,6 @@ Keep in mind that weekly subscriptions may fall outside your expected range. At 
 
 Individual subscriptions will end up looking like this picture:
 
-![Overview of a bill](../../../images/how-to/firefly-iii/finances/bills-show.png)
+![Overview of a subscription](../../../images/how-to/firefly-iii/finances/subscriptions-show.png)
 
 You see here the most important data of a bill, plus the transactions associated with a bill.
