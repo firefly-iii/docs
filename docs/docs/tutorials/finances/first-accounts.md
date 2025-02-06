@@ -38,7 +38,7 @@ Just keep pressing that \(+\) button to create more transactions. Keep the follo
 1. New deposits need a new source account, the "[revenue account](../../references/firefly-iii/account-types.md)". To create it, just type the source of the money in the Source Account field. The account will be automatically created. For example, just type "My job" and the account will be created. The destination account must be your main asset account.
 2. Transfers between accounts can be recorded by making the source AND destination accounts point to one of your asset accounts.
 
-You are free to add tags or set a category, but bills, budgets and piggy banks need more work. We'll get to that later.
+You are free to add tags or set a category, but subscriptions, budgets and piggy banks need more work. We'll get to that later.
 
 ## Validate balance
 

@@ -60,7 +60,7 @@ You can split your entire groceries-receipt into small "sub"-transactions. Or yo
 
 It's important to realise the following constraints when dealing with split transactions.
 
-* When making an expense (withdrawal), you can only split the destination accounts, not the source accounts. You can't create one expense that originates from two or three asset accounts. But you can divide a withdrawal over several expense accounts. You can split your groceries over several departments, but you can't pay a bill from two asset accounts.
+* When making an expense (withdrawal), you can only split the destination accounts, not the source accounts. You can't create one expense that originates from two or three asset accounts. But you can divide a withdrawal over several expense accounts. You can split your groceries over several departments, but you can't pay a subscription from two asset accounts.
 * Deposits must end up in one asset account. You can't make a deposit from one revenue accounts and split it over separate asset accounts. Your salary, when divided over different splits, must end up in one asset account.
 * Transfers can be split, but all splits must have the same source + destination.
 

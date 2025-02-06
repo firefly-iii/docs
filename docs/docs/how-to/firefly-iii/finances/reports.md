@@ -48,7 +48,7 @@ The reports that are currently available are:
 
 ### Default financial report
 
-The default report gives you a general overview of your finances. It lists your account balances with summaries, plus your expenses and incomes. It will also list your budgets, categories and bills, giving you insight in your current financial situation. You can click on the screenshot below for a large version.
+The default report gives you a general overview of your finances. It lists your account balances with summaries, plus your expenses and incomes. It will also list your budgets, categories and subscriptions, giving you insight in your current financial situation. You can click on the screenshot below for a large version.
 
 Each table you see in the screenshot can be sorted by name, by amount, in reverse, etc. The charts have little hover-texts for added clarity and the (i)-buttons will give show more detailed information.
 

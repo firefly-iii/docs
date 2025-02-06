@@ -1,6 +1,6 @@
 # Cron jobs
 
-Firefly III has several feature that will only work when the cron job is running.  Automated budgets, recurring transactions, bill warnings and up-to-data currency exchange rate information all need a working cron job to function properly.
+Firefly III has several feature that will only work when the cron job is running.  Automated budgets, recurring transactions, subscription warnings and up-to-data currency exchange rate information all need a working cron job to function properly.
 
 You should read up on [budgets](../finances/budgets.md) if you want to use cron jobs for auto-budgets. There are some interesting details to know about.
 

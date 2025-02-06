@@ -133,8 +133,8 @@ Below is a list of possible roles:
 | amount_debit          | Amount (debit column)                    |
 | amount_foreign        | Amount (in foreign currency)             |
 | amount_negated        | Amount (negated column)                  |
-| bill-id               | Bill ID (matching FF3)                   |
-| bill-name             | Bill name                                |
+| subscription-id               | Subscription ID (matching FF3)                   |
+| bill-name             | Subscription name                                |
 | budget-id             | Budget ID (matching FF3)                 |
 | budget-name           | Budget name                              |
 | category-id           | Category ID (matching FF3)               |

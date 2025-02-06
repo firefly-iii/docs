@@ -35,7 +35,7 @@ These search options search for properties of the transaction in question.
 3. If it has any attachments: `has_attachments:true`
 4. If it has a (any) category: `has_any_category:true`
 5. If it has a (any) budget: `has_any_budget:true`
-6. If it has a (any) bill: `has_any_bill:true`
+6. If it has a (any) subscription: `has_any_subscription:true`
 7. If it has a (any) tag: `has_any_tag:true`
 8. If it has (any) notes: `has_any_notes:true`
 9. If it has an external URL: `has_any_external_url:true`
@@ -97,7 +97,7 @@ Meta-data includes all other data related to the transaction. All the following 
 2. SEPA CT: `sepa_ct_is`
 3. Category: `category_is`, `category_contains`, `category_starts`, `category_ends`
 4. Budget: `budget_is`, `budget_contains`, `budget_starts`, `budget_ends`
-5. Bill: `bill_is`, `bill_contains`, `bill_starts`, `bill_ends`
+5. Subscription: `subscription_is`, `subscription_contains`, `subscription_starts`, `subscription_ends`
 6. External ID: `external_id_is`, `external_id_contains`, `external_id_starts`, `external_id_ends`
 7. Internal reference: `internal_reference_is`, `internal_reference_contains`, `internal_reference_starts`, `internal_reference_ends`
 8. External URL: `external_url_is`, `external_url_contains`, `external_url_starts`, `external_url_ends`

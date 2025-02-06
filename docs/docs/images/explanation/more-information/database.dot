@@ -17,7 +17,7 @@ digraph G {
     "budget"       [shape = box,style=filled,fillcolor="#a9dfbf",label = "Budget"];
     "category"     [shape = box,style=filled,fillcolor="#a9dfbf",label = "Category"];
     "currency"     [shape = box,style=filled,fillcolor="#f9e79f",label = "Currency"];
-    "bill"         [shape = box,style=filled,fillcolor="#a9dfbf",label = "Bill"];
+    "subscription"         [shape = box,style=filled,fillcolor="#a9dfbf",label = "Subscription"];
     "piggy"        [shape = box,style=filled,fillcolor="#a9dfbf",label = "Piggy Bank"];
     "piggy_event"  [shape = box,style=filled,fillcolor="#f5cba7",label = "Piggy Bank Event"];
     "tag"          [shape = box,style=filled,fillcolor="#a9dfbf",label = "Tag"];
@@ -41,7 +41,7 @@ digraph G {
     // meta data voor journal:
     tj -> budget [arrowhead = none];
     tj -> category [arrowhead = none];
-    tj -> bill [arrowhead = none];
+    tj -> subscription [arrowhead = none];
     tj -> tag [arrowhead = none];
 
     // journal and account have a currency
@@ -59,17 +59,17 @@ digraph G {
     budget -> budget_limit [arrowhead = none];
     budget -> auto_budget [arrowhead = none];
 
-    {rank = same; tj; type; budget; category; bill; tag}
+    {rank = same; tj; type; budget; category; subscription; tag}
     {rank = same; dst_account; account_type;}
 
 
     //
     //
     //type -> tj  [arrowhead = none];
-    
+
     // budget -> tj [arrowhead = none];
     // category -> tj  [arrowhead = none];
-    // bill -> tj [arrowhead = none];
+    // subscription -> tj [arrowhead = none];
     // currency -> tj [arrowhead = none];
     // currency -> tj [arrowhead = none];
     // currency -> account [arrowhead = none];

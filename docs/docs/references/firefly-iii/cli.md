@@ -52,7 +52,7 @@ Allows you to export all Firefly III data. To use it, add the following paramete
 * `--export-tags`. Create a file with all your tags and some metadata.
 * `--export-recurring`. Create a file with all your recurring transactions and some metadata.
 * `--export-rules`. Create a file with all your rules and some metadata.
-* `--export-bills`. Create a file with all your bills and some metadata.
+* `--export-subscriptions`. Create a file with all your subscriptions and some metadata.
 * `--export-piggies`. Create a file with all your piggy banks and some metadata.
 * `--force`. Force overwriting of previous exports if found.
 

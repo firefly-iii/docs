@@ -110,12 +110,12 @@ This is useful when your data is something like this:
 56.78;DB;
 ```
 
-## Bill
+## Subscription
 
-Use this field to link the transaction to the right bill. You can use the bill name or the bill ID. Few banks deliver enough data to deduce the Firefly III bill, so this field is not used often by users. However, if your bank happens to classify transactions for you, you may be able to use it.
+Use this field to link the transaction to the right subscription. You can use the subscription name or the subscription ID. Few banks deliver enough data to deduce the Firefly III subscription, so this field is not used often by users. However, if your bank happens to classify transactions for you, you may be able to use it.
 
-- Bill name: expects the content of the field to be the literal bill name in Firefly III
-- Bill ID: expects the content of the field to be the literal bill ID (see the URL) in Firefly III
+- Subscription name: expects the content of the field to be the literal subscription name in Firefly III
+- Subscription ID: expects the content of the field to be the literal subscription ID (see the URL) in Firefly III
 
 The content of this field can be mapped, so "SOMEVAL" can be mapped to "Some Value" in Firefly III.
 

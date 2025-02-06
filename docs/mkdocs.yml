@@ -38,7 +38,7 @@ nav:
           - Your finances:
               - My first accounts: tutorials/finances/first-steps.md
               - Create accounts and transactions: tutorials/finances/first-accounts.md
-              - Manage a bill: tutorials/finances/bill.md
+              - Manage a subscription: tutorials/finances/subscription.md
               - Process a refund: tutorials/finances/refund.md
               - Manage your mortgage: tutorials/finances/mortgage.md
               - Manage multiple currencies: tutorials/finances/currencies.md
@@ -76,7 +76,7 @@ nav:
               - How to manage budgets: how-to/firefly-iii/finances/budgets.md
               - How to organize transactions: how-to/firefly-iii/finances/transactions.md
               - How to track cash: how-to/firefly-iii/finances/cash.md
-              - How to use bills: how-to/firefly-iii/finances/bills.md
+              - How to use subscriptions: how-to/firefly-iii/finances/subscriptions.md
               - How to reconcile accounts: how-to/firefly-iii/finances/reconcile.md
               - How to manage liabilities: how-to/firefly-iii/finances/liabilities.md
               - How to use recurring transactions: how-to/firefly-iii/finances/recurring.md
@@ -158,13 +158,14 @@ nav:
   - Explanation:
       - Home: explanation/index.md
       - Financial concepts:
+          - Administrations: explanation/financial-concepts/administrations.md
           - Transactions: explanation/financial-concepts/transactions.md
           - Accounts: explanation/financial-concepts/accounts.md
           - Budgets: explanation/financial-concepts/budgets.md
           - Liabilities: explanation/financial-concepts/liabilities.md
           - Currencies: explanation/financial-concepts/currencies.md
           - Piggy banks: explanation/financial-concepts/piggy-banks.md
-          - Bills: explanation/financial-concepts/bills.md
+          - Subscriptions: explanation/financial-concepts/subscriptions.md
           - Recurring transactions: explanation/financial-concepts/recurring.md
           - Exchange rates: explanation/financial-concepts/exchange-rates.md
       - Firefly III:

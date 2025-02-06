@@ -8,7 +8,7 @@ Here's a summary of the rule actions you can use.
 
 ## Set meta data
 
-Set the category, budget or tag(s). Link to a bill or a piggy bank.
+Set the category, budget or tag(s). Link to a subscription or a piggy bank.
 
 ## Clear meta data
 

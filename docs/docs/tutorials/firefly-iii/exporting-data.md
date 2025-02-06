@@ -39,7 +39,7 @@ You can set what to export using the following flags:
 * `--export-tags`. Creates a separate file with all your tags and some metadata.
 * `--export-recurring`. Creates a separate file with all your recurring transactions and some metadata.
 * `--export-rules`. Creates a separate file with all your rules and some metadata.
-* `--export-bills`. Creates a separate file with all your bills and some metadata.
+* `--export-subscriptions`. Creates a separate file with all your subscriptions and some metadata.
 * `--export-piggies`. Creates a separate file with all your piggy banks and some metadata.
 * `--export-transactions`. Creates a separate file with all your transactions and some metadata.
 
