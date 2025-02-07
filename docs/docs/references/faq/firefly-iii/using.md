@@ -25,6 +25,10 @@ That should solve it.
 
 The minimum password length can't be changed. [NIST](https://pages.nist.gov/800-63-3/sp800-63b.html) recommendations prevail.
 
+## Can I sort tables on amount or name?
+
+No, sorry. This is something I hope to fix in a new layout.
+
 ## I'm running Internet Explorer or Edge and nothing works?
 
 Some (older) browsers may not work with Firefly III. I have no plans to add support.
