@@ -4,7 +4,7 @@
 
 - [Firefly III](https://dev.azure.com/Firefly-III/_git/MainImage?path=/Dockerfile)
 - [Firefly III Data Importer](https://dev.azure.com/Firefly-III/_git/ImportToolImage)
-- [Firefly III shared base image](https://dev.azure.com/Firefly-III/_git/BaseImage?path=/apache-8.3/Dockerfile)
+- [Firefly III shared base image \(web\)](https://dev.azure.com/Firefly-III/_git/BaseImage?path=/Dockerfile.web) and [Firefly III shared base image \(cli\)](https://dev.azure.com/Firefly-III/_git/BaseImage?path=/Dockerfile.cli)
 
 ## Which Docker tags are available?
 
