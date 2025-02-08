@@ -31,17 +31,18 @@ This allows you to verify that you have downloaded the file right. It's not much
 
 ## Verify the signature
 
-To make sure that the files aren't actually changed by a nefarious hacker, you can also verify the digital signature of the release.
+To make sure that the files aren't actually changed by a nefarious hacker, you can also verify the digital signature of the release. To do so, first download the relevant `.asc`-file, like `FireflyIII-v%FFVERSION.zip.asc`.
 
 ```bash
 gpg --verify FireflyIII-v%FFVERSION.zip.asc FireflyIII-v%FFVERSION.zip
+gpg --verify DataImporter-v%IMPORTERVERSION.zip.asc DataImporter-v%IMPORTERVERSION.zip
 ```
 
 It should say `Good signature`.
 
 ### Why should I verify the signature?
 
-This allows you to verify that the file is actually from the Firefly III project. This is a more secure way of verifying the integrity of the release. It's already harder to change both the release and the hash file, but if an attacker has access to the GitHub CDN, it's not impossible. However, forging a fake signature is impossible. 
+This allows you to verify that the file is actually from the Firefly III project. This is a more secure way of verifying the integrity of the release. It's already harder to change both the release and the hash file, but if an attacker has access to the GitHub CDN, it's not impossible. However, forging a signature is impossible. 
 
 ## Releases (public key)
 
