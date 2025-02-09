@@ -17,9 +17,10 @@ MAIL_FROM=changeme@example.com
 MAIL_USERNAME=null
 MAIL_PASSWORD=null
 MAIL_ENCRYPTION=null
+SITE_OWNER=you@example.com
 ```
 
-*Always* change the `MAIL_FROM` address. If this is wrong, mail might never work.
+*Always* change the `MAIL_FROM` and `SITE_OWNER` email addresses. If these are wrong, mail will never work.
 
 The `MAIL_MAILER`-setting indicates the system that is used for mailing. Firefly III supports the following mail systems: smtp, sendmail, mailgun, mandrill, sparkpost and log. Here is an explanation about each MAIL_MAILER option:
 
