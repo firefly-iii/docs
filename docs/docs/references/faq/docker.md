@@ -20,7 +20,7 @@ Yes, but keep in mind that Docker (Swarm) secrets may not work because the conta
 
 ## For which platforms the Firefly III Docker image built?
 
-All Docker tags are built for ARMv7, ARM64 and AMD64. ARMv6 is not included, so these images will *not* work on the Raspberry Pi Zero, Raspberry Pi 1 (A+B) or Raspberry Pi Compute Module.
+All Docker tags are built for `linux/amd64` and `linux/arm64`. Others, like `linux/386`, `linux/arm/v6` and `linux/arm/v7` are no longer supported, so these images will *not* work on the Raspberry Pi Zero, Raspberry Pi 1 (A+B) or Raspberry Pi Compute Module.
 
 ## How do I set TLS in Firefly III or the data importer?
 
