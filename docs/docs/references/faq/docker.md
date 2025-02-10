@@ -100,9 +100,17 @@ This is an error that happens on Synology boxes with an old kernel. I'm sorry, t
 
 ## The database password is wrong, but I'm 100% sure it's correct
 
-If you start the database container with a `MYSQL_PASSWORD` that you change later, it won't change in the database. Destroy the volume + container and start over.
+If you start the database container with a `MYSQL_PASSWORD` that you change later, it won't change in the database. Destroy the volume + container and start over. This also happens when you start Firefly III for the first time, "to see if it works", and then decide to configure a more secure password.
 
-This also happens when you start Firefly III for the first time, "to see if it works", and then decide to configure a more secure password.
+If this happens to you there is no easy way to fix this unless you happen to have saved the random root password that the database generated when it first started, and nobody does that. 
+
+What you must do to fix this:
+
+- Stop and remove all Firefly III containers: database, cron, Firefly III, the Data Importer
+- Remove all related volumes: upload, db and perhaps others.
+- Restart the Docker Compose file or restart your container(s).
+
+This should regenerate everything, and use the correct passwords.
 
 ## I get 'failed to open stream: Permission denied' on log files
 
