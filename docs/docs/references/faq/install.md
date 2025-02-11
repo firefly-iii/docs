@@ -326,3 +326,11 @@ If you're using Docker, this may also happen when you run "php artisan" commands
 
 If the problem persists run your cron job as the "www-data" user so the cache directory doesn't get mixed up: `sudo -u www-data php artisan [..]`.
 
+## Key path "oauth-public.key" does not exist or is not readable
+
+This happens on some Docker installations and sometimes in Proxmox. I still don't know the exact root cause for this, but the solution could be to run the following command, either on the command line (where you installed Firefly III) or inside the container that is running Firefly III
+
+* `php artisan firefly-iii:laravel-passport-keys`
+* `docker exec -it (container) php artisan firefly-iii:laravel-passport-keys`
+
+Without those files in place and readable, Firefly III will not be able to function properly.
