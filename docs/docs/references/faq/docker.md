@@ -40,6 +40,10 @@ This usually happens when you did not set `TRUSTED_PROXIES=*`.
 
 There are many environment variables that you can set in Firefly III. Just check out the [default env file](https://raw.githubusercontent.com/firefly-iii/firefly-iii/main/.env.example) that lists them all.
 
+## Allowed memory size of xxx bytes exhausted?
+
+Start the container with `PHP_MEMORY_LIMIT=512M` or more.
+
 ## Can I run it under a reverse proxy from a subdirectory?
 
 Yes. For the standard Docker image, follow [these instructions on GitHub](https://github.com/firefly-iii/firefly-iii/discussions/4892)
