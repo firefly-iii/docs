@@ -1,5 +1,28 @@
 # General installation and running questions
 
+## Key path oauth-private.key does not exist or is not readable?
+
+If this file does not exist, you can run the following command:
+
+```bash
+php artisan passport:install
+```
+
+Afterwards, you can run the following commands to fix the permissions.
+
+```bash
+php artisan config:clear
+php artisan key:generate
+php artisan config:clear
+```
+
+And then:
+
+```bash
+sudo chown www-data:www-data storage/oauth-*.key
+sudo chmod 600 storage/oauth-*.key
+```
+
 ## Error "class \[auth\] does not exist"
 
 Some users run into this issue when upgrading. Several things may work:
