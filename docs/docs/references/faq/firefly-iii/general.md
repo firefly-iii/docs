@@ -37,7 +37,7 @@ See [personal finances](../../../explanation/firefly-iii/background/personal-fin
 
 ## Will you add AI to Firefly III?
 
-The short answer is no. The long answer is also no. 
+The short answer is no.
 
 I've been playing around with AI and Firefly III extensively. Due to the hallucinatory nature of large language models it's absolutely impossible to get this to work reliably and accurately. Which are the two things I want Firefly III to be. 
 
