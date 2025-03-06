@@ -25,10 +25,13 @@ sudo chmod 600 storage/oauth-*.key
 
 ## Error "class \[auth\] does not exist"
 
+- Target class \[hash\] does not exist.
+
 Some users run into this issue when upgrading. Several things may work:
 
 - Start a new `.env` file instead of copying over the old one.
 - Make sure the `storage` directory, and all subfolders are writable, and NOT owned by `root`.
+- Remove all PHP files from the `bootstrap/cache` directory: `rm bootstrap/cache/*.php`.
 
 ## Can I switch from or to SQLite, PostgreSQL or MySQL?
 
