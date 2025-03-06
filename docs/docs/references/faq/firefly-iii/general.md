@@ -35,6 +35,24 @@ When I built Firefly III I was over 5K in debt and this helped me pay it off in 
 
 See [personal finances](../../../explanation/firefly-iii/background/personal-finances.md) for more information.
 
+## Will you add AI to Firefly III?
+
+The short answer is no. The long answer is also no. 
+
+I've been playing around with AI and Firefly III extensively. Due to the hallucinatory nature of large language models it's absolutely impossible to get this to work reliably and accurately. Which are the two things I want Firefly III to be. 
+
+I see of course the added value of trying to categorize transactions based on the data they contain. But this involves either sending your data to the cloud or running a model locally. The first option will not be added to Firefly III, and the second option is not feasible for many people.
+
+Also, it would be nice to formulate [custom rules](../../../how-to/firefly-iii/features/rules.md) in natural language, but the hard work of parsing the language into a set of database entries that Firefly III can handle still comes to the developer. Unless of course, I accept that the system may hallucinate and do something else entirely. I've also been playing with this it seems very difficult to get AI to build complex rules, which is the only thing you would want to use it for in the first place.
+
+Similarly, it is not impossible to get an AI to generate the search query you need based on your natural language input. But I don't need to add something to Firefly III to do that: you can build that using any AI tool yourself. 
+
+Predicting financial records is notoriously difficult. Firefly III used to have a prediction engine, but it requires financial data (which LLMs can't use anyway) and more meta-data, which Firefly III does not save. Incidental expenses and holiday trips will always mess up the predictions, and there is a lot of data needed to get a feel for somebody's "life rhythm". AI's can't predict any better than a human can if the data is not there.
+
+Apart from the death/hype spiral that AI is in right now, I do not believe that feeding Firefly III data into a large language model will add quality to the system. It will only add complexity and confusion.
+
+Of course, you can still do this yourself. The Firefly III [API](../../../how-to/firefly-iii/features/api.md) and [webhooks](../../../how-to/firefly-iii/features/webhooks.md) feature allow you to feed anything into anything, and get results back. It should not be hard to add a suggestion engine to Firefly III by simply using a webhook to feed you the suggestions back.
+
 ## Why does Firefly III not support accounting feature X?
 
 * Why isn't Firefly III correct, when it comes to expense accounts, revenues and other monetary concepts?
