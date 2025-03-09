@@ -33,6 +33,10 @@ Some users run into this issue when upgrading. Several things may work:
 - Make sure the `storage` directory, and all subfolders are writable, and NOT owned by `root`.
 - Remove all PHP files from the `bootstrap/cache` directory: `rm bootstrap/cache/*.php`.
 
+## Charts are not loading, and `email-decode.min.js` refuses to load?
+
+You are using Cloudflare as a CDN. Please disable "email obfuscation".
+
 ## Can I switch from or to SQLite, PostgreSQL or MySQL?
 
 Yes, any combination is possible. BUT, this is not something that Firefly III supports natively. The export function isn't "database complete", not all data from your installation will be exposed when you export data, so importing it is very tricky.
