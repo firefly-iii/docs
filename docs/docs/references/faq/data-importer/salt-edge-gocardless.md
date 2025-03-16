@@ -6,6 +6,14 @@ Yes, this is possible. In both cases, you'll have to run the data importer a few
 
 If the data importer caches something, please make sure to press "Start Over" before you import from the next bank.
 
+## Tags added by the data importer
+
+When importing from GoCardless the data importer may add superfluous tags to your transactions. These tags contain the merchant information. This happens when you already have a destination account for the IBAN or account number of the merchant, but the name is different.
+
+In many cases, you pay to a generic account number, used by (for example) Stripe or Adyen. If you have such an expense account already saved in Firefly III, you'll notice that you transactions are linked to an expense account with a different name. Instead of having all your transactions go to that expense account, the tag can help you (or help your rules) to distinguish them. 
+
+You can remove these tags manually or create a rule that removes them.
+
 ## GoCardless imports weird transactions?
 
 This question covers the issue of GoCardless doing something weird. First, it imports transactions
