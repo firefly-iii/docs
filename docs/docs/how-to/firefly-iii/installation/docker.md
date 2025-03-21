@@ -40,6 +40,7 @@ DB_CONNECTION=pgsql
 DB_HOST=db
 DB_PORT=5432
 ```
+Also change variable names in `.db.env` file from MYSQL\_\* to POSTGRES\_\*. MYSQL_RANDOM_ROOT_PASSWORD can be removed.
 
 Change the `docker-compose.yml` file to point to `postgres` instead of `mariadb:lts`.
 
