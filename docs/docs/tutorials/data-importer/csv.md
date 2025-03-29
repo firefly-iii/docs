@@ -3,9 +3,12 @@
 !!! tip
     I've not yet finished writing this tutorial. Some items may not be filled in yet. I apologize for the inconvenience. Please refer to the [support page](../../explanation/support.md) if you have questions.
 
-## Select a data source
+You can use the data importer in two ways:
 
-- Link to how to install the data importer
+1. Use [the public importer](../../references/data-importer/public/) at [data-importer.firefly-iii.org](https://data-importer.firefly-iii.org/)
+2. [Install the importer locally](https://docs.firefly-iii.org/how-to/data-importer/installation/docker/), which can then be found at `http://localhost:81`
+
+## Select a data source
 
 Browse to importer, select CSV, upload a CSV file.
 
