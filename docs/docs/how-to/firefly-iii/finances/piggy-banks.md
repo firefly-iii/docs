@@ -37,11 +37,7 @@ Apart from the \[+\] and \[-\] buttons, you can also link transfers to a piggy b
 
 When you create a transfer, select the piggy bank from the list!
 
-### Behavior when piggy banks reach their maximum limit
-
-When a piggy bank reaches its maximum limit, any additional funds from automated transfers will not be allocated to the piggy bank. The money will still be transferred to your account as usual, but won't be tracked within the piggy bank.
-
-A warning will appear when a rule attempts to add money to a full piggy bank. You will need to monitor your piggy bank status yourself.
+When assigning a piggy bank to a newly created transfer, funds will be added only until the piggy bank reaches its limit. Any excess amount will still be transferred to the account but remain unassigned to the piggy bank. This applies to the automatically created transactions as well (recurring transactions assigned to a piggy bank). While adding money to full piggy banks, a warning appears. For other cases, you must track piggy bank limits yourself.
 
 --- 
 
