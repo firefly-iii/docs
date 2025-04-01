@@ -35,9 +35,12 @@ On the bottom of the page, it shows you how much money you have left on your sav
 
 Apart from the \[+\] and \[-\] buttons, you can also link transfers to a piggy bank. The amount of the transaction will be automatically added to, or removed from the piggy bank.
 
-When you create a transfer, select the piggy bank from the list!
+When you create a transfer, you can select a piggy bank from the available list.
 
-When assigning a piggy bank to a newly created transfer, funds will be added only until the piggy bank reaches its limit. Any excess amount will still be transferred to the account but remain unassigned to the piggy bank. This applies to the automatically created transactions as well (recurring transactions assigned to a piggy bank). While adding money to full piggy banks, a warning appears. For other cases, you must track piggy bank limits yourself.
+- If the piggy bank is linked to the destination account of the transfer, the money from the transaction will be added to then piggy bank.
+- If the piggy bank is linked to the source account of the transfer, the money will be removed from the piggy bank.
+
+The transfer will _always_ be created. If the piggy bank is full, the piggy bank will not be changed. In other cases, the money will be added until the piggy bank is filled up. Any money left will still be transferred, but will not be added to a piggy bank.
 
 --- 
 
