@@ -37,6 +37,8 @@ Apart from the \[+\] and \[-\] buttons, you can also link transfers to a piggy b
 
 When you create a transfer, select the piggy bank from the list!
 
+When assigning a piggy bank to a newly created transfer, funds will be added only until the piggy bank reaches its limit. Any excess amount will still be transferred to the account but remain unassigned to the piggy bank. This applies to the automatically created transactions as well (recurring transactions assigned to a piggy bank). While adding money to full piggy banks, a warning appears. For other cases, you must track piggy bank limits yourself.
+
 --- 
 
 That's it! [Would you like to know more?](../../../explanation/financial-concepts/piggy-banks.md)
