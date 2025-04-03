@@ -126,7 +126,17 @@ If you have used the expanded Docker compose file or if you have added the cron 
 
 You can see the logs of the cron container by running `docker logs [container-id]`. Take the exact ID from the previous command.
 
-In the logs you can see the cron job once it has run.
+In the logs you can see the cron job once it has run. This is what it looks like:
+
+```
+fetch https://dl-cdn.alpinelinux.org/alpine/v3.21/main/x86_64/APKINDEX.tar.gz
+fetch https://dl-cdn.alpinelinux.org/alpine/v3.21/community/x86_64/APKINDEX.tar.gz
+(1/1) Installing tzdata (2025b-r0)
+OK: 7 MiB in 16 packages
+crond: crond (busybox 1.37.0) started, log level 8
+crond: USER root pid  11 cmd wget -qO- http://app:8080/api/v1/cron/REPLACEME;echo
+{"recurring_transactions":{"job_fired":true,"job_succeeded":true,"job_errored":false,"message":"Recurring transactions cron job fired successfully."},"auto_budgets":{"job_fired":true,"job_succeeded":true,"job_errored":false,"message":"Auto-budget cron job fired successfully."},"exchange_rates":{"job_fired":true,"job_succeeded":true,"job_errored":false,"message":"Exchange rates cron job fired successfully."},"bill_notifications":{"job_fired":true,"job_succeeded":true,"job_errored":false,"message":"Bill notification cron job fired successfully."}}
+```
 
 ### From outside the container (http)
 
