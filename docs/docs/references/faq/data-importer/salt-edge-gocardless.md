@@ -1,5 +1,11 @@
 # Salt Edge and GoCardless
 
+## When I delete a transaction, it is imported again?
+
+The data importer will check first if the transaction with a specific "external ID" already exists. When it does, it will not be imported again. Not even when you deleted. However, this check on deleted transactions may fail. Or rather, you may have inadvertently turned it off. But you can turn it on again!
+
+Check out your configuration file. You have a line that says `"ignore_duplicate_transactions":`. Make sure that the value is `true`.
+
 ## Is it possible to import from multiple banks?
 
 Yes, this is possible. In both cases, you'll have to run the data importer a few times (once for each bank) and save the configuration file. Make sure you rename it to something useful like "your-bank.json". Use the file during your next run of the data importer.
