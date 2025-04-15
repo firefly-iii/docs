@@ -4,6 +4,11 @@
 
 This happens because by default MySQL can't see the difference. At the moment, I cannot fix this.
 
+## Why is the report page showing so many years of presets? It goes back to the year 0025!
+
+This happens when you have one or more transactions imported as "25" instead of "2025". Firefly III auto-generates the list of reports for you. This list starts with the oldest transaction, and continues until the newest one.
+
+Look at your transactions and correct the oldest one. This will fix it.
 
 ## I keep getting redirected to the index after editing something
 
