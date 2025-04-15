@@ -1,5 +1,9 @@
 # Common data import issues and questions
 
+## Firefly III gives a page that says "Empty", and nothing else
+
+Make sure you **uncheck** the "Confidential" checkbox in your OAuth Client settings.
+
 ## All transactions are imported as today?
 
 Make sure that the date field in your CSV file (`2023-09-17`) is marked as the "Transaction" date, and make sure the format (`Y-m-d`) matches the actual content in the file. Follow the format in [this table](https://www.php.net/manual/en/datetime.format.php).
