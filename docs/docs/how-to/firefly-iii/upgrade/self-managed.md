@@ -56,9 +56,11 @@ Extract the archive with the new release wherever you had installed Firefly III.
 
 ```bash
 # The destination directory can be changed, of course.
+mkdir /var/www/firefly-iii
 unzip -o FireflyIII-v%FFVERSION.zip -x "storage/*" -d /var/www/firefly-iii
 
 # a tar.gz alternative:
+mkdir /var/www/firefly-iii
 tar -xvf FireflyIII-v%FFVERSION.tar.gz -C /var/www/firefly-iii --exclude='storage'
 ```
 
