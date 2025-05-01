@@ -30,6 +30,8 @@ So changing your locale in Firefly III on Windows may not work as you had expect
 
 Keep in mind some Linux installations only have `nl_NL.iso-8859-1` while Firefly III will always look for `nl_NL.utf8`.
 
+If the user your system is running under is jailed, it may not have access to the necessary locales.
+
 ### Missing translations or format instructions
 
 You'll notice the formatting of the date is American, ie `septembre 17, 2020` even though you've set your locale and language to something else.
