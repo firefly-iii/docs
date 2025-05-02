@@ -8,7 +8,7 @@ This is disabled by default: most users install Firefly III for themselves, so a
 
 The first user that registers itself automatically becomes the "owner". This user can enable multi-user mode.
 
-To enable registrations again, go to `/admin` and click "Configuration options for Firefly III". Then, unselect "Disable user registration" and press "Store configuration".
+To enable registrations again, go to `/settings` and click "Configuration options for Firefly III". Then, unselect "Disable user registration" and press "Store configuration".
 
 ## Can I share my administration with other users?
 
