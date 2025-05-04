@@ -18,6 +18,14 @@ The instructions always assume `fireflyiii/core:latest`. This is the latest stab
 
 Yes, but keep in mind that Docker (Swarm) secrets may not work because the container does not run as root. A possible solution is outlined [in this Docker Community Forums discussion](https://forums.docker.com/t/only-root-user-has-access-to-the-secret/102774) and detailed [in this GitHub discussion](https://github.com/orgs/firefly-iii/discussions/9788).
 
+# I get "Auth driver \[remote_user_guard\] for guard \[remote_user_guard\] is not defined"
+
+Please make sure your `APP_KEY` is exactly 32 characters long. You can generate such a key with the following command:
+
+```bash 
+head /dev/urandom | LC_ALL=C tr -dc 'A-Za-z0-9' | head -c 32 && echo
+```
+
 ## For which platforms the Firefly III Docker image built?
 
 All Docker tags are built for `linux/amd64` and `linux/arm64`. Others, like `linux/386`, `linux/arm/v6` and `linux/arm/v7` are no longer supported, so these images will *not* work on the Raspberry Pi Zero, Raspberry Pi 1 (A+B) or Raspberry Pi Compute Module.
