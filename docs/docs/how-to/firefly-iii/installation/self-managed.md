@@ -65,7 +65,7 @@ shasum -a 256 -c FireflyIII-v%FFVERSION.zip.sha256
 shasum -a 256 -c FireflyIII-v%FFVERSION.tar.gz.sha256
 ```
 
-If you also want to verify the digital signature of the release, please follow the instructions under "Verify the signature" on [the page about signatures](../../../explanation/more-information/signatures.md).
+If you also want to verify the digital signature of the release, please follow the instructions under "Verify the signature" on [the page about signatures](../../../explanation/more-information/signatures.md#verify-the-signature).
 
 ### Extract the file
 
