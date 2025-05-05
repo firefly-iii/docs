@@ -22,6 +22,16 @@ And then:
 sudo chown www-data:www-data storage/oauth-*.key
 sudo chmod 600 storage/oauth-*.key
 ```
+## I want to build the Firefly III release myself
+
+If you want to build the Firefly III release yourself, you can use the following commands. Clone the repository, and then run this. These commands will install all necessary dependencies and build the generated JS code.
+
+```bash
+composer install --no-dev
+npm install
+npm run prod  --workspace=v1
+npm run build --workspace=v2
+```
 
 ## Error "class \[auth\] does not exist"
 
