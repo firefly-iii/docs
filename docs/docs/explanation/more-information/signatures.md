@@ -46,7 +46,7 @@ This allows you to verify that the file is actually from the Firefly III project
 
 ## Releases (public key)
 
-Here is the public key with which the releases are signed. It is also available [on a key server](https://keys.openpgp.org/search?q=910CF2B5E8B6CC6E).
+Here is the public key with which the releases are signed. It is also available [on a key server](https://keys.openpgp.org/search?q=A9D6BE866CEE3775854B1F96910CF2B5E8B6CC6E).
 
 ```plaintext
 -----BEGIN PGP PUBLIC KEY BLOCK-----
