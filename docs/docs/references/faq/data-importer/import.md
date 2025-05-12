@@ -2,7 +2,8 @@
 
 ## Firefly III gives a page that says "Empty", and nothing else
 
-Make sure you **uncheck** the "Confidential" checkbox in your OAuth Client settings.
+1. Make sure you **uncheck** the "Confidential" checkbox in your OAuth Client settings.
+2. Make sure the port is also present in the `VANITY_URL`, so `http://localhost:9001` (example)
 
 ## All transactions are imported as today?
 
