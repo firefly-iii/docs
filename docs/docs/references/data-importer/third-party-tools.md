@@ -11,6 +11,10 @@ There are various scripts and tools you can use, if the Firefly III Data Importe
 
 ## Import tools
 
+## TrueLayer to Firefly III
+
+[truelayer2firefly](https://erwindouna.github.io/truelayer2firefly/) can import transactions from the TrueLayer-platform into Firefly III. TrueLayer is comparable to Salt Edge and GoCardless.
+
 ### FF3-OFX
 
 [FF3-OFX](https://github.com/pelaxa/ff3-ofx) is a React application that can be used to import transactions using your financial institution's OFX (Money format) exports.
