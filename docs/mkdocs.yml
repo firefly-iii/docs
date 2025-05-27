@@ -41,7 +41,6 @@ nav:
               - Manage a subscription: tutorials/finances/subscription.md
               - Process a refund: tutorials/finances/refund.md
               - Manage your mortgage: tutorials/finances/mortgage.md
-              - Manage multiple currencies: tutorials/finances/currencies.md
           - Data management:
               - Importing data: tutorials/firefly-iii/importing-data.md
               - Exporting data: tutorials/firefly-iii/exporting-data.md

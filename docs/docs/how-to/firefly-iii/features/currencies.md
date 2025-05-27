@@ -1,6 +1,12 @@
 # How to use currencies 
 
-Most currencies are disabled by default, meaning that you cannot use them when creating asset accounts or transactions. You must enable them first.
+Firefly III has support for multiple currencies.
+
+See also:
+
+- [Explanation: exchange rates](../../../explanation/financial-concepts/exchange-rates.md)
+
+Most currencies are disabled by default, meaning that you cannot use just any currency when creating asset accounts or transactions. You must enable them first.
 
 Under Options &gt; Preferences you will find the "Currencies" page. When you are an admin, you will see the button "Create a new currency". You should enter some details such as the name, the symbol of the currency and of course the currency code (preferably according to the [ISO 4217](https://www.currency-iso.org/dam/downloads/lists/list_one.xml) standard).
 

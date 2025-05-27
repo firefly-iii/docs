@@ -1,15 +1,12 @@
 # Manage multiple currencies
 
-!!! tip
-    I've not yet finished writing this tutorial. Some items may not be filled in yet. I apologize for the inconvenience. Please refer to the [support page](../../explanation/support.md) if you have questions.
-
 Firefly III supports many currencies, and you can add custom currencies as well. This tutorial explains something about it and also shows you the system's quirks when doing so.
 
 ## View available currencies
 
 Go to Options > Currencies in the left-hand menu. Here you can see all available and enabled currencies. By default, only one currency is enabled. Press the "Enable" button to enable a currency.
 
-(TODO add screenshot of currency overview)
+
 
 ## Add a custom currency
 
