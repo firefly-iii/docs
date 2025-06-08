@@ -14,6 +14,9 @@ Donations are the only form of compensation I receive, apart of course from all 
 
 ## VC money and capital injections from commercial organizations
 
+!!! info
+    TL;DR: I will not be accepting VC money and capital injections from commercial organizations
+
 A few companies have approached me about turning (a part of) Firefly III into a commercial venture, a start-up. The "personal finances"-space such as it is, is rife with opportunity. Many people struggle financially and that's an interesting bandwagon to jump on. Getting people into your finance related platform has some advantages over other platforms (i.e. social media, calendar management, etc.):
 
 - You get loyal customers instantly, because if they trust YOU with their finances, they're not apt to switch quickly.
