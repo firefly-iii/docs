@@ -9,7 +9,7 @@ This is useful for some of the charts that Firefly III shows you. All monetary a
 
 ## Configuration
 
-Firefly III supports two options that allow you to use native amounts and exchange rates in the application. The following variables are `false` by default.
+Firefly III supports three options that allow you to use native amounts and exchange rates in the application. The following variables are `false` by default.
 
 1. `ENABLE_EXCHANGE_RATES=true`. This environment variable enables the feature in the first place. It will not be available otherwise. Because this feature is fairly new, it is disabled by default.
 2. `ENABLE_EXTERNAL_RATES=true`. Firefly III will not download exchange rates from the internet unless you allow it to. Exchange rates can only be downloaded for the default currencies in Firefly III. They will be downloaded from a Firefly III Azure bucket.
