@@ -13,6 +13,7 @@ Firefly III supports two options that allow you to use native amounts and exchan
 
 1. `ENABLE_EXCHANGE_RATES=true`. This environment variable enables the feature in the first place. It will not be available otherwise. Because this feature is fairly new, it is disabled by default.
 2. `ENABLE_EXTERNAL_RATES=true`. Firefly III will not download exchange rates from the internet unless you allow it to. Exchange rates can only be downloaded for the default currencies in Firefly III. They will be downloaded from a Firefly III Azure bucket.
+3. In your preferences (`/preferences`) set the checkbox at "Display amounts in your native currency".
 
 ## Initialization
 
