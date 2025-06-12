@@ -59,7 +59,9 @@ jobs:
 
             const workflows = [
               'cleanup.yml',
-              'publish.yml'
+              'publish.yml',
+              'label.yml',
+              'transfer.yml'
             ]
 
             let runs_to_delete = [];
