@@ -1,0 +1,21 @@
+name: Documentation issue
+description: Report a problem with the documentation
+body:
+  - type: checkboxes
+    attributes:
+      label: Support guidelines
+      description: Please read the support guidelines before proceeding.
+      options:
+        - label: I've read the [support guidelines](https://github.com/firefly-iii/firefly-iii/blob/main/.github/support.md)
+          required: true
+  - type: textarea
+    attributes:
+      label: Description
+      description: Please provide a brief description of the issue in 1-2 sentences.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Additional info
+      description: Please provide any additional information that seems useful.
