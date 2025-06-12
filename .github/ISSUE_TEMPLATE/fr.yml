@@ -1,0 +1,25 @@
+name: Add new documentation
+description: Request new documentation or clarification
+body:
+  - type: textarea
+    attributes:
+      label: Description
+      description: Please describe your request
+      placeholder: |
+        - I would like the documentation to explain (thing).
+        - I need to know how to do (feature here)
+        - Firefly III doesn't work as the documentation says it does
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Solution
+      description: Describe what you would like to see in the documentation
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Additional context
+      description: Add any other context or screenshots about the feature request here.
