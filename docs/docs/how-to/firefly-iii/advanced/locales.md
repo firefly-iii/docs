@@ -14,6 +14,8 @@ sudo apt-get install -y language-pack-nl-base
 sudo locale-gen
 ```
 
+On a debian server, edit `/etc/locale.gen` and remove the `#` in front of every entry you're interested in.
+
 You can see which locales your system has by running
 
 ```text
