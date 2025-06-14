@@ -16,6 +16,11 @@ sudo locale-gen
 
 On a debian server, edit `/etc/locale.gen` and remove the `#` in front of every entry you're interested in.
 
+```
+sudo nano /etc/locale.gen
+sudo locale-gen
+```
+
 You can see which locales your system has by running
 
 ```text
