@@ -36,6 +36,16 @@ I started Firefly III with a single customer (me) and I will probably end up wit
 
 I've considered opening up the floor for commercial support. I.e. you pay me and I help you faster. But it's not something I get joy from, so that's probably not going to happen. I'll keep doing it for free on my own pace.
 
+## Free stuff
+
+Because I work on open source software, several organisations give me access to products and product tiers which are usually reserved for paying customers.
+
+- Jetbrains gives me [an open source license for PHPStorm](https://www.jetbrains.com/community/opensource/)
+- GitHub gives me [free access to CoPilot](https://docs.github.com/en/copilot/managing-copilot/managing-copilot-as-an-individual-subscriber/getting-started-with-copilot-on-your-personal-account/getting-free-access-to-copilot-pro-as-a-student-teacher-or-maintainer#accessing-copilot-pro-for-free)
+- I am part of the [Docker Sponsored Open Source Program](https://www.docker.com/community/open-source/application/)
+
+Thank you all, for your support :-).
+
 ## More questions?
 
 If you have more questions about this, please [let me know](../support.md).
