@@ -50,15 +50,31 @@ To make this a cron job, run `crontab -e` and add the following line:
 
 This particular cron job will run on the host system. To make the cron job for the data importer a part of the `docker-compose.yml` file as well, you'll need to do something more complex.
 
-Add the following entry to your Docker compose file:
+1. Specify the `AUTO_IMPORT_SECRET=` in your .env file to some string of at least 16 characters. Visit this [page](https://www.random.org/passwords/?num=1&len=16&format=html&rnd=new) for inspiration. 
+
+2. Replace [SECRET] with STATIC_CRON_TOKEN value from your .env file and [AUTO_IMPORT_SECRET] with whatever you specified above. Then, replace the firefly_iii_cron container entry with the following entry in your Docker compose file:  
 
 ```
   cron_importer:
     image: alpine
-    container_name: firefly_iii_import_cron
+    container_name: firefly_iii_cron
     restart: always
-    command: sh -c "echo -e \"0 3 * * * wget -qO- http://app:8080/api/v1/cron/[SECRET]\" > /tmp/crontab_tmp && echo -e \"40 2 * * * wget -qO - --post-data '' --header 'Accept":" application/json' 'http://importer:8080/autoimport?directory=/import&secret=[SECRET]'\" >> /tmp/crontab_tmp && crontab /tmp/crontab_tmp && crond -f -L /dev/stdout && rm /tmp/crontab_tmp"
+    command: sh -c "
+      apk add tzdata
+      && ln -s /usr/share/zoneinfo/${TZ} /etc/localtime
+      && echo \"0 3 * * * wget -qO- http://app:8080/api/v1/cron/[SECRET];echo\" > /tmp/crontab_tmp 
+      && echo -e \"40 2 * * * wget -qO - --post-data '' --header 'Accept":" application/json' 'http://importer:8080/autoimport?directory=/import&secret=[AUTO_IMPORT_SECRET]'\" >> /tmp/crontab_tmp 
+      && crontab /tmp/crontab_tmp
+      && rm /tmp/crontab_tmp
+      && crond -f -L /dev/stdout"
     networks:
       - firefly_iii
 
+```
+
+3. Optionally, if your using Portainer, because the secrets are present in stack.env you can let Portainer replace the [] for you with: 
+
+```
+      && echo \"0 3 * * * wget -qO- http://app:8080/api/v1/cron/$STATIC_CRON_TOKEN;echo\" > /tmp/crontab_tmp 
+      && echo -e \"40 2 * * * wget -qO - --post-data '' --header 'Accept":" application/json' 'http://importer:8080/autoimport?directory=/import&secret=$AUTO_IMPORT_SECRET'\" >> /tmp/crontab_tmp 
 ```
