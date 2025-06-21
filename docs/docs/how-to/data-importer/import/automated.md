@@ -50,9 +50,9 @@ To make this a cron job, run `crontab -e` and add the following line:
 
 This particular cron job will run on the host system. To make the cron job for the data importer a part of the `docker-compose.yml` file as well, you'll need to do something more complex.
 
-1. Specify the `AUTO_IMPORT_SECRET=` in the your .env file to some string of at least 16 characters. Visit this page for inspiration: https://www.random.org/passwords/?num=1&len=16&format=html&rnd=new. 
+1. Specify the `AUTO_IMPORT_SECRET=` in your .env file to some string of at least 16 characters. Visit this [page](https://www.random.org/passwords/?num=1&len=16&format=html&rnd=new) for inspiration. 
 
-2. Replace [SECRET] with STATIC_CRON_TOKEN from .env files and [AUTO_IMPORT_SECRET] with whatever you specified above. Then, add the following entry to your Docker compose file:  
+2. Replace [SECRET] with STATIC_CRON_TOKEN value from your .env file and [AUTO_IMPORT_SECRET] with whatever you specified above. Then, replace the firefly_iii_cron container entry with the following entry to your Docker compose file:  
 
 ```
   cron_importer:
