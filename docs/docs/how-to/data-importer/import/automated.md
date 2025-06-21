@@ -17,6 +17,7 @@ Then, in the `.importer.env`-file:
 - Add `NORDIGEN` or `SPECTRE` credentials (`NORDIGEN` is used for GoCardless).
 - Set `CAN_POST_AUTOIMPORT=true`
 - Set `CAN_POST_FILES=true`
+- Set `AUTO_IMPORT_SECRET` using a random string of at least 16 characters. This is used to secure the auto-import endpoint. Visit [this page on random.org](https://www.random.org/passwords/?num=1&len=16&format=html&rnd=new) for inspiration.
 
 
 And in the Docker Compose file from the installer, mount a local directory to `/import` in the container:
@@ -50,9 +51,10 @@ To make this a cron job, run `crontab -e` and add the following line:
 
 This particular cron job will run on the host system. To make the cron job for the data importer a part of the `docker-compose.yml` file as well, you'll need to do something more complex.
 
-1. Specify the `AUTO_IMPORT_SECRET=` in your .env file to some string of at least 16 characters. Visit this [page](https://www.random.org/passwords/?num=1&len=16&format=html&rnd=new) for inspiration. 
-
-2. Replace [SECRET] with STATIC_CRON_TOKEN value from your .env file and [AUTO_IMPORT_SECRET] with whatever you specified above. Then, replace the firefly_iii_cron container entry with the following entry in your Docker compose file:  
+1. Specify the `AUTO_IMPORT_SECRET` in your `.importer.env` file. This value must be at least 16 characters. Visit [this page on random.org](https://www.random.org/passwords/?num=1&len=16&format=html&rnd=new) for inspiration.
+2. In the code below, replace \[AUTO_IMPORT_SECRET\] with the same value. 
+3. In the code below, replace \[STATIC_CRON_TOKEN\] with `STATIC_CRON_TOKEN` value from your `.env` file. 
+4. Replace the `firefly_iii_cron`-container entry in your compose file with the resulting code:  
 
 ```
   cron_importer:
@@ -62,7 +64,7 @@ This particular cron job will run on the host system. To make the cron job for t
     command: sh -c "
       apk add tzdata
       && ln -s /usr/share/zoneinfo/${TZ} /etc/localtime
-      && echo \"0 3 * * * wget -qO- http://app:8080/api/v1/cron/[SECRET];echo\" > /tmp/crontab_tmp 
+      && echo \"0 3 * * * wget -qO- http://app:8080/api/v1/cron/STATIC_CRON_TOKEN;echo\" > /tmp/crontab_tmp 
       && echo -e \"40 2 * * * wget -qO - --post-data '' --header 'Accept":" application/json' 'http://importer:8080/autoimport?directory=/import&secret=[AUTO_IMPORT_SECRET]'\" >> /tmp/crontab_tmp 
       && crontab /tmp/crontab_tmp
       && rm /tmp/crontab_tmp
@@ -72,9 +74,9 @@ This particular cron job will run on the host system. To make the cron job for t
 
 ```
 
-3. Optionally, if your using Portainer, because the secrets are present in stack.env you can let Portainer replace the [] for you with: 
+Portainer uses may also use the following lines. This will make Portainer do the replacement automatically. This will not work on other systems.
 
 ```
-      && echo \"0 3 * * * wget -qO- http://app:8080/api/v1/cron/$STATIC_CRON_TOKEN;echo\" > /tmp/crontab_tmp 
-      && echo -e \"40 2 * * * wget -qO - --post-data '' --header 'Accept":" application/json' 'http://importer:8080/autoimport?directory=/import&secret=$AUTO_IMPORT_SECRET'\" >> /tmp/crontab_tmp 
+&& echo \"0 3 * * * wget -qO- http://app:8080/api/v1/cron/$STATIC_CRON_TOKEN;echo\" > /tmp/crontab_tmp 
+&& echo -e \"40 2 * * * wget -qO - --post-data '' --header 'Accept":" application/json' 'http://importer:8080/autoimport?directory=/import&secret=$AUTO_IMPORT_SECRET'\" >> /tmp/crontab_tmp 
 ```
