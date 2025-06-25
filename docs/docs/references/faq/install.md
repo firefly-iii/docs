@@ -45,7 +45,7 @@ npm run build --workspace=v2
 
 ## Unexplainable 431 errors
 
-First, make sure that your reverse proxy has a large enough maximum header size, or specific actions (such as logging in) fail. If you run something like Authelia, make sure the buffer size is set to at least 4096 bytes.
+First, make sure that your reverse proxy has a large enough maximum header size, or specific actions (such as logging in) fail. If you run something like Authelia, make sure the buffer size is set to at least 8192.
 
 ## Error "class \[auth\] does not exist"
 
