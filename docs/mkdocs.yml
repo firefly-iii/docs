@@ -49,6 +49,7 @@ nav:
               - Import a basic CSV file: tutorials/data-importer/csv.md
           - Data providers:
               - Import from GoCardless: tutorials/data-importer/gocardless.md
+              - Import from SimpleFIN: tutorials/data-importer/simplefin.md
   - How-to guides:
       - Home: how-to/index.md
       - General:
@@ -110,6 +111,7 @@ nav:
               - How to map data: how-to/data-importer/import/map-data.md
               - How to use Salt Edge: how-to/data-importer/import/salt-edge.md
               - How to use GoCardLess: how-to/data-importer/import/gocardless.md
+              - How to use SimpleFIN: how-to/data-importer/import/simplefin.md
               - How to import transfers between accounts: how-to/data-importer/import/transfers.md
               - How to handle (missed) duplicates: how-to/data-importer/import/duplicates.md
           - Advanced things:
@@ -179,6 +181,7 @@ nav:
           - About the Data Importer:
               - Introduction and features: explanation/data-importer/about/introduction.md
               - GoCardless and Salt Edge: explanation/data-importer/about/gocardless-salt-edge.md
+              - GoCardless and Salt Edge: explanation/data-importer/about/simplefin.md
           - Separate tool: explanation/data-importer/separate-tool.md
           - Ignored values: explanation/data-importer/ignored-values.md
       - More information:

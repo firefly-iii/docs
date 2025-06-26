@@ -3,12 +3,16 @@
 The Firefly III data importer can be used to import data into Firefly III. It is a [separate tool](../separate-tool.md) from Firefly III with 
 its own [installation guide](../../../how-to/data-importer/installation/docker.md).
 
-The importer can import CSV files and CAMT.053 files. It can also connect to banks using third party services, namely [Salt Edge's Spectre API and GoCardless' bank API](gocardless-salt-edge.md).
+The importer can import CSV files and CAMT.053 files. It can also connect to banks using third party services:
+
+- [Salt Edge's Spectre API and GoCardless' bank API](gocardless-salt-edge.md).
+- [SimpleFIN](simplefin.md).
 
 Importing transactions can be complicated, so be sure to check out the following pages:
 
 - [Tutorial: Import a basic CSV file](../../../tutorials/data-importer/csv.md)
 - [Tutorial: Import from GoCardless](../../../tutorials/data-importer/gocardless.md)
+- [Tutorial: Import from SimpleFIN](../../../tutorials/data-importer/simplefin.md)
 - [How to install using Docker](../../../how-to/data-importer/installation/docker.md)
 - [How to configure the data imporer](../../../how-to/data-importer/how-to-configure.md)
 

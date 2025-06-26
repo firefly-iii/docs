@@ -7,6 +7,7 @@ On this page you will read how to:
 1. Configure access to the Firefly III API.
 2. Configure GoCardless (optional)
 3. Configure Spectre (optional)
+4. Configure SimpleFIN (optional)
 
 Please also refer to the following guides.
 
@@ -14,6 +15,7 @@ Please also refer to the following guides.
 - [How to install the data importer on your own server](installation/self-managed.md)
 - [General introduction to the data importer](../../explanation/data-importer/about/introduction.md)
 - [Explanation about GoCardless and Salt Edge Spectre](../../explanation/data-importer/about/gocardless-salt-edge.md)
+- [Explanation about SimpleFIN](../../explanation/data-importer/about/simplefin.md)
 - [How to get a personal access token](../../how-to/firefly-iii/features/api.md)
 
 ## Access to Firefly III
@@ -77,6 +79,13 @@ Third, optionally, if you wish to use Spectre, please [read about Spectre](../..
 * `SPECTRE_SECRET` is your Spectre / Salt Edge Client secret
 
 If you do not set these, the data importer will ask for them.
+
+## Configure SimpleFIN
+
+The SimpleFIN connection can be set up through the UI, but you can also set the following environment variables:
+
+- `SIMPLEFIN_TOKEN` is your SimpleFIN connection token.
+- `SIMPLEFIN_CORS_ORIGIN_URL` is the URL of the data importer, which is used to set the CORS origin header. This is necessary for the data importer to connect to SimpleFIN.
 
 ## Where to set the configuration?
 
