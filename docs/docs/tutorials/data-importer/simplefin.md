@@ -1,4 +1,27 @@
 # SimpleFIN imports using the data importer
 
-!!! tip
-    I've not yet finished writing this tutorial. Some items may not be filled in yet. I apologize for the inconvenience. Please refer to the [support page](../../explanation/support.md) if you have questions.
+## Introduction
+
+SimpleFIN is a service that allows you to import financial data from various banks into Firefly III. You can read more about SimpleFIN on their [website](https://www.simplefin.org/).
+
+## Configuring the importer
+
+![Configuration](../../images/how-to/data-importer/import/simplefin-config.png)
+
+In the UI, enter the connection details from your bank. If you have set the necessary environment variables, the data importer will automatically use these values. If you have not set the environment variables, the data importer will ask you for the connection details.
+
+## Select the accounts
+
+![Configuration](../../images/how-to/data-importer/import/simplefin-account-selection.png)
+
+Select the accounts you wish to import data from. If they do not exist yet, you can have them created for you.
+
+## Configure the import
+
+![Configuration](../../images/how-to/data-importer/import/simplefin-more-config.png)
+
+Any other options can be set at your leisure.
+
+## Import the data
+
+You can click through the rest of the import process. The data importer will process your data and import it into Firefly III.
