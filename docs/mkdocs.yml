@@ -181,7 +181,7 @@ nav:
           - About the Data Importer:
               - Introduction and features: explanation/data-importer/about/introduction.md
               - GoCardless and Salt Edge: explanation/data-importer/about/gocardless-salt-edge.md
-              - GoCardless and Salt Edge: explanation/data-importer/about/simplefin.md
+              - Simplefin: explanation/data-importer/about/simplefin.md
           - Separate tool: explanation/data-importer/separate-tool.md
           - Ignored values: explanation/data-importer/ignored-values.md
       - More information:
