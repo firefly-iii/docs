@@ -1,6 +1,6 @@
 # Ignored values
 
-The data importer wil sometimes ignore data from Spectre. In the notes of the transaction, you will see something like this:
+The data importer wil sometimes ignore data from Spectre or GoCardless. In the notes of the transaction, you will see something like this:
 
 ![An example error message](../../images/explanation/data-importer/ignored.png)
 
