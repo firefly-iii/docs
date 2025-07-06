@@ -20,10 +20,10 @@ You can search the web to find out how to install these modules. Some may be ins
 
 ### Main command
 
-v%IMPORTERVERSION is the [latest version](https://version.firefly-iii.org/).
+%IMPORTERVERSION is the [latest version](https://version.firefly-iii.org/).
 
-- [Download the latest release as a `zip` file](https://github.com/firefly-iii/data-importer/releases/download/v%IMPORTERVERSION/DataImporter-v%IMPORTERVERSION.zip) from GitHub.
-- [Download the latest release as a `tar.gz` file](https://github.com/firefly-iii/data-importer/releases/download/v%IMPORTERVERSION/DataImporter-v%IMPORTERVERSION.tar.gz) from GitHub.
+- [Download the latest release as a `zip` file](https://github.com/firefly-iii/data-importer/releases/download/%IMPORTERVERSION/DataImporter-%IMPORTERVERSION.zip) from GitHub.
+- [Download the latest release as a `tar.gz` file](https://github.com/firefly-iii/data-importer/releases/download/%IMPORTERVERSION/DataImporter-%IMPORTERVERSION.tar.gz) from GitHub.
 
 It is up to you, if you prefer the `tar.gz` file or the `zip` file.
 
@@ -31,19 +31,19 @@ It is up to you, if you prefer the `tar.gz` file or the `zip` file.
 
 Optionally, you can validate and test the integrity of your download by also downloading the SHA256 checksum file.
 
-- [SHA256 checksum file of the `zip` file](https://github.com/firefly-iii/data-importer/releases/download/v%IMPORTERVERSION/DataImporter-v%IMPORTERVERSION.zip.sha256).
-- [SHA256 checksum file of the `tar.gz` file](https://github.com/firefly-iii/data-importer/releases/download/v%IMPORTERVERSION/DataImporter-v%IMPORTERVERSION.tar.gz.sha256).
+- [SHA256 checksum file of the `zip` file](https://github.com/firefly-iii/data-importer/releases/download/%IMPORTERVERSION/DataImporter-%IMPORTERVERSION.zip.sha256).
+- [SHA256 checksum file of the `tar.gz` file](https://github.com/firefly-iii/data-importer/releases/download/%IMPORTERVERSION/DataImporter-%IMPORTERVERSION.tar.gz.sha256).
 
 With this SHA256 checksum file, you can verify the integrity of the download by running the following command:
 
 ```bash
-# Should return: "DataImporter-v%IMPORTERVERSION.zip: OK"
-sha256sum -c DataImporter-v%IMPORTERVERSION.zip.sha256
-sha256sum -c DataImporter-v%IMPORTERVERSION.tar.gz.sha256
+# Should return: "DataImporter-%IMPORTERVERSION.zip: OK"
+sha256sum -c DataImporter-%IMPORTERVERSION.zip.sha256
+sha256sum -c DataImporter-%IMPORTERVERSION.tar.gz.sha256
 
 # alternative command:
-shasum -a 256 -c DataImporter-v%IMPORTERVERSION.zip.sha256
-shasum -a 256 -c DataImporter-v%IMPORTERVERSION.tar.gz.sha256
+shasum -a 256 -c DataImporter-%IMPORTERVERSION.zip.sha256
+shasum -a 256 -c DataImporter-%IMPORTERVERSION.tar.gz.sha256
 ```
 ### Extract the file
 
@@ -52,10 +52,10 @@ Extract the downloaded file in your web server's root directory, or in a specifi
 ```bash
 # the directory name is up to you, of course:
 mkdir /var/www/data-importer
-unzip DataImporter-v%IMPORTERVERSION.zip -d /var/www/data-importer
+unzip DataImporter-%IMPORTERVERSION.zip -d /var/www/data-importer
 
 # the tar.gz file extracts with the following command.
-tar -xvf DataImporter-v%IMPORTERVERSION.tar.gz -C /var/www/data-importer
+tar -xvf DataImporter-%IMPORTERVERSION.tar.gz -C /var/www/data-importer
 ```
 
 Some servers require `sudo` to extract or change things in the `/var/www` directory. if this is the case for you, make sure you reset the access rights after wards:
@@ -63,10 +63,10 @@ Some servers require `sudo` to extract or change things in the `/var/www` direct
 ```bash
 # the directory name is up to you, of course:
 sudo -u www-data mkdir /var/www/data-importer
-sudo -u www-data unzip DataImporter-v%IMPORTERVERSION.zip -d /var/www/data-importer
+sudo -u www-data unzip DataImporter-%IMPORTERVERSION.zip -d /var/www/data-importer
 
 # alternative command for the tar.gz file:
-sudo tar -xvf DataImporter-v%IMPORTERVERSION.tar.gz -C /var/www/data-importer
+sudo tar -xvf DataImporter-%IMPORTERVERSION.tar.gz -C /var/www/data-importer
 
 sudo chown -R www-data:www-data /var/www/data-importer
 sudo chmod -R 775 /var/www/data-importer/storage

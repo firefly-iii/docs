@@ -17,12 +17,12 @@ To do so, download both the release file and the `.sha256` file. Then, run the f
 # Should return: "FireflyIII-%FFVERSION.zip: OK"
 sha256sum -c FireflyIII-%FFVERSION.zip.sha256
 
-# Should return: "DataImporter-v%IMPORTERVERSION.zip: OK"
-sha256sum -c DataImporter-v%IMPORTERVERSION.zip.sha256
+# Should return: "DataImporter-%IMPORTERVERSION.zip: OK"
+sha256sum -c DataImporter-%IMPORTERVERSION.zip.sha256
 
 # alternative commands:
 shasum -a 256 -c FireflyIII-%FFVERSION.zip.sha256
-shasum -a 256 -c DataImporter-v%IMPORTERVERSION.zip.sha256
+shasum -a 256 -c DataImporter-%IMPORTERVERSION.zip.sha256
 ```
 
 ### Why should I verify the integrity?
@@ -35,7 +35,7 @@ To make sure that the files aren't actually changed by a nefarious hacker, you c
 
 ```bash
 gpg --verify FireflyIII-%FFVERSION.zip.asc FireflyIII-%FFVERSION.zip
-gpg --verify DataImporter-v%IMPORTERVERSION.zip.asc DataImporter-v%IMPORTERVERSION.zip
+gpg --verify DataImporter-%IMPORTERVERSION.zip.asc DataImporter-%IMPORTERVERSION.zip
 ```
 
 It should say `Good signature`.

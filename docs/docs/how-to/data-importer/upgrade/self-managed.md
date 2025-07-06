@@ -9,10 +9,10 @@ The best way to upgrade is to use the "Straight from GitHub" instructions below.
 !!! warning "Upgrading by pulling the remote repository"
     It's no longer possible to upgrade the data importer by pulling the code from the `main` or `develop` branch of the repository. Generated (JS) code and other dependencies are not in the repository, so your upgraded installation may not work as expected.
 
-v%IMPORTERVERSION is the [latest version](https://version.firefly-iii.org/).
+%IMPORTERVERSION is the [latest version](https://version.firefly-iii.org/).
 
-- [Download the latest release as a `zip` file](https://github.com/firefly-iii/data-importer/releases/download/v%IMPORTERVERSION/DataImporter-v%IMPORTERVERSION.zip) from GitHub.
-- [Download the latest release as a `tar.gz` file](https://github.com/firefly-iii/data-importer/releases/download/v%IMPORTERVERSION/DataImporter-v%IMPORTERVERSION.tar.gz) from GitHub.
+- [Download the latest release as a `zip` file](https://github.com/firefly-iii/data-importer/releases/download/%IMPORTERVERSION/DataImporter-%IMPORTERVERSION.zip) from GitHub.
+- [Download the latest release as a `tar.gz` file](https://github.com/firefly-iii/data-importer/releases/download/%IMPORTERVERSION/DataImporter-%IMPORTERVERSION.tar.gz) from GitHub.
 
 It is up to you, if you prefer the `tar.gz` file or the `zip` file.
 
@@ -20,19 +20,19 @@ It is up to you, if you prefer the `tar.gz` file or the `zip` file.
 
 Optionally, you can validate and test the integrity of your download by also downloading the SHA256 checksum file.
 
-- [SHA256 checksum file of the `zip` file](https://github.com/firefly-iii/data-importer/releases/download/v%IMPORTERVERSION/DataImporter-v%IMPORTERVERSION.zip.sha256).
-- [SHA256 checksum file of the `tar.gz` file](https://github.com/firefly-iii/data-importer/releases/download/v%IMPORTERVERSION/DataImporter-v%IMPORTERVERSION.tar.gz.sha256).
+- [SHA256 checksum file of the `zip` file](https://github.com/firefly-iii/data-importer/releases/download/%IMPORTERVERSION/DataImporter-%IMPORTERVERSION.zip.sha256).
+- [SHA256 checksum file of the `tar.gz` file](https://github.com/firefly-iii/data-importer/releases/download/%IMPORTERVERSION/DataImporter-%IMPORTERVERSION.tar.gz.sha256).
 
 With this SHA256 checksum file, you can verify the integrity of the download by running the following command:
 
 ```bash
-# Should return: "DataImporter-v%IMPORTERVERSION.zip: OK"
-sha256sum -c DataImporter-v%IMPORTERVERSION.zip.sha256
-sha256sum -c DataImporter-v%IMPORTERVERSION.tar.gz.sha256
+# Should return: "DataImporter-%IMPORTERVERSION.zip: OK"
+sha256sum -c DataImporter-%IMPORTERVERSION.zip.sha256
+sha256sum -c DataImporter-%IMPORTERVERSION.tar.gz.sha256
 
 # alternative command:
-shasum -a 256 -c DataImporter-v%IMPORTERVERSION.zip.sha256
-shasum -a 256 -c DataImporter-v%IMPORTERVERSION.tar.gz.sha256
+shasum -a 256 -c DataImporter-%IMPORTERVERSION.zip.sha256
+shasum -a 256 -c DataImporter-%IMPORTERVERSION.tar.gz.sha256
 ```
 
 ### Move the old installation
@@ -51,10 +51,10 @@ Extract the archive with the new release wherever you had installed the Firefly 
 
 ```bash
 # The destination directory can be changed, of course.
-unzip -o DataImporter-v%IMPORTERVERSION.zip -x "storage/*" -d /var/www/data-importer
+unzip -o DataImporter-%IMPORTERVERSION.zip -x "storage/*" -d /var/www/data-importer
 
 # a tar.gz alternative:
-tar -xvf FireflyIII-v%IMPORTERVERSION.tar.gz -C /var/www/data-importer --exclude='storage'
+tar -xvf FireflyIII-%IMPORTERVERSION.tar.gz -C /var/www/data-importer --exclude='storage'
 ```
 
 Use `sudo` if necessary, but if you do, make sure that you set the ownership of the `/var/www/data-importer` directory to `www-data` again:
