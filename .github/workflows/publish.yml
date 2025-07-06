@@ -19,13 +19,19 @@ jobs:
           sudo pip install mkdocs-material mkdocs mkdocs-git-revision-date-plugin mkdocs-redirects mkdocs-minify-plugin pillow cairosvg
         env:
           MKDOCS_TOKEN: ${{ secrets.MKDOCS_TOKEN }}
+      - id: ff3version
+        uses: pozetroninc/github-action-get-latest-release@master
+        with:
+          owner: firefly-iii
+          repo: firefly-iii
+          excludes: prerelease, draft
       - name: Build documentation
         run: |
           cd $GITHUB_WORKSPACE/docs
-          pwd
+          echo "Latest Firefly III release is ${{ steps.ff3version.outputs.release }}"
           grep -rl '%PHPVERSION' ./ | xargs sed -i 's/%PHPVERSION/8\.4/g'
           grep -rl '%IMPORTERVERSION' ./ | xargs sed -i 's/%IMPORTERVERSION/1\.7\.1/g'
-          grep -rl '%FFVERSION' ./ | xargs sed -i 's/%FFVERSION/6\.2\.20/g'
+          grep -rl '%FFVERSION' ./ | xargs sed -i 's/%FFVERSION/${{ steps.ff3version.outputs.release }}/g'
           python -m mkdocs build --clean
 
           # also copy security.txt
