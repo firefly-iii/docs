@@ -39,10 +39,10 @@ You can search the web to find out how to install these modules. Some may be ins
 
 ### Main command
 
-v%FFVERSION is the [latest version](https://version.firefly-iii.org/).
+%FFVERSION is the [latest version](https://version.firefly-iii.org/).
 
-- [Download the latest release as a `zip` file](https://github.com/firefly-iii/firefly-iii/releases/download/v%FFVERSION/FireflyIII-v%FFVERSION.zip) from GitHub.
-- [Download the latest release as a `tar.gz` file](https://github.com/firefly-iii/firefly-iii/releases/download/v%FFVERSION/FireflyIII-v%FFVERSION.tar.gz) from GitHub.
+- [Download the latest release as a `zip` file](https://github.com/firefly-iii/firefly-iii/releases/download/%FFVERSION/FireflyIII-%FFVERSION.zip) from GitHub.
+- [Download the latest release as a `tar.gz` file](https://github.com/firefly-iii/firefly-iii/releases/download/%FFVERSION/FireflyIII-%FFVERSION.tar.gz) from GitHub.
 
 It is up to you, if you prefer the `tar.gz` file or the zip file.
 
@@ -50,19 +50,19 @@ It is up to you, if you prefer the `tar.gz` file or the zip file.
 
 Optionally, you can validate and test the integrity of your download by also downloading the SHA256 checksum file. 
 
-- [SHA256 checksum file of the `zip` file](https://github.com/firefly-iii/firefly-iii/releases/download/v%FFVERSION/FireflyIII-v%FFVERSION.zip.sha256).
-- [SHA256 checksum file of the `tar.gz` file](https://github.com/firefly-iii/firefly-iii/releases/download/v%FFVERSION/FireflyIII-v%FFVERSION.tar.gz.sha256).
+- [SHA256 checksum file of the `zip` file](https://github.com/firefly-iii/firefly-iii/releases/download/%FFVERSION/FireflyIII-%FFVERSION.zip.sha256).
+- [SHA256 checksum file of the `tar.gz` file](https://github.com/firefly-iii/firefly-iii/releases/download/%FFVERSION/FireflyIII-%FFVERSION.tar.gz.sha256).
 
 With this SHA256 checksum file, you can verify the integrity of the download by running the following command:
 
 ```bash
-# Should return: "FireflyIII-v%FFVERSION.zip: OK"
-sha256sum -c FireflyIII-v%FFVERSION.zip.sha256
-sha256sum -c FireflyIII-v%FFVERSION.tar.gz.sha256
+# Should return: "FireflyIII-%FFVERSION.zip: OK"
+sha256sum -c FireflyIII-%FFVERSION.zip.sha256
+sha256sum -c FireflyIII-%FFVERSION.tar.gz.sha256
 
 # alternative command:
-shasum -a 256 -c FireflyIII-v%FFVERSION.zip.sha256
-shasum -a 256 -c FireflyIII-v%FFVERSION.tar.gz.sha256
+shasum -a 256 -c FireflyIII-%FFVERSION.zip.sha256
+shasum -a 256 -c FireflyIII-%FFVERSION.tar.gz.sha256
 ```
 
 If you also want to verify the digital signature of the release, please follow the instructions under "Verify the signature" on [the page about signatures](../../../explanation/more-information/signatures.md#verify-the-signature).
@@ -74,10 +74,10 @@ Extract the downloaded file in your web server's root directory, or in a specifi
 ```bash
 # the directory name is up to you, of course:
 mkdir /var/www/firefly-iii
-unzip FireflyIII-v%FFVERSION.zip -d /var/www/firefly-iii
+unzip FireflyIII-%FFVERSION.zip -d /var/www/firefly-iii
 
 # the tar.gz file extracts with the following command.
-tar -xvf FireflyIII-v%FFVERSION.tar.gz -C /var/www/firefly-iii
+tar -xvf FireflyIII-%FFVERSION.tar.gz -C /var/www/firefly-iii
 ```
 
 Some servers require `sudo` to extract or change things in the `/var/www` directory. if this is the case for you, make sure you reset the access rights after wards: 
@@ -85,10 +85,10 @@ Some servers require `sudo` to extract or change things in the `/var/www` direct
 ```bash
 # the directory name is up to you, of course:
 sudo -u www-data mkdir /var/www/firefly-iii
-sudo -u www-data unzip FireflyIII-v%FFVERSION.zip -d /var/www/firefly-iii
+sudo -u www-data unzip FireflyIII-%FFVERSION.zip -d /var/www/firefly-iii
 
 # alternative command for the tar.gz file:
-sudo tar -xvf FireflyIII-v%FFVERSION.tar.gz -C /var/www/firefly-iii
+sudo tar -xvf FireflyIII-%FFVERSION.tar.gz -C /var/www/firefly-iii
 
 sudo chown -R www-data:www-data /var/www/firefly-iii
 sudo chmod -R 775 /var/www/firefly-iii/storage

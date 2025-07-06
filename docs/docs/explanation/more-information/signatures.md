@@ -14,14 +14,14 @@ Available with each release is a file that ends with `.sha256`. There is one suc
 To do so, download both the release file and the `.sha256` file. Then, run the following command:
 
 ```bash
-# Should return: "FireflyIII-v%FFVERSION.zip: OK"
-sha256sum -c FireflyIII-v%FFVERSION.zip.sha256
+# Should return: "FireflyIII-%FFVERSION.zip: OK"
+sha256sum -c FireflyIII-%FFVERSION.zip.sha256
 
 # Should return: "DataImporter-v%IMPORTERVERSION.zip: OK"
 sha256sum -c DataImporter-v%IMPORTERVERSION.zip.sha256
 
 # alternative commands:
-shasum -a 256 -c FireflyIII-v%FFVERSION.zip.sha256
+shasum -a 256 -c FireflyIII-%FFVERSION.zip.sha256
 shasum -a 256 -c DataImporter-v%IMPORTERVERSION.zip.sha256
 ```
 
@@ -31,10 +31,10 @@ This allows you to verify that you have downloaded the file right. It's not much
 
 ## Verify the signature
 
-To make sure that the files aren't actually changed by a nefarious hacker, you can also verify the digital signature of the release. To do so, first download the relevant `.asc`-file, like `FireflyIII-v%FFVERSION.zip.asc`.
+To make sure that the files aren't actually changed by a nefarious hacker, you can also verify the digital signature of the release. To do so, first download the relevant `.asc`-file, like `FireflyIII-%FFVERSION.zip.asc`.
 
 ```bash
-gpg --verify FireflyIII-v%FFVERSION.zip.asc FireflyIII-v%FFVERSION.zip
+gpg --verify FireflyIII-%FFVERSION.zip.asc FireflyIII-%FFVERSION.zip
 gpg --verify DataImporter-v%IMPORTERVERSION.zip.asc DataImporter-v%IMPORTERVERSION.zip
 ```
 

@@ -3,6 +3,8 @@ on:
   push:
     branches: [ main ]
   workflow_dispatch:
+  schedule:
+    - cron: "12 9 * * *"
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -25,12 +27,19 @@ jobs:
           owner: firefly-iii
           repo: firefly-iii
           excludes: prerelease, draft
+      - id: importerversion
+        uses: pozetroninc/github-action-get-latest-release@master
+        with:
+          owner: firefly-iii
+          repo: data-importer
+          excludes: prerelease, draft
       - name: Build documentation
         run: |
           cd $GITHUB_WORKSPACE/docs
           echo "Latest Firefly III release is ${{ steps.ff3version.outputs.release }}"
+          echo "Latest Data Importer release is ${{ steps.importerversion.outputs.release }}"
           grep -rl '%PHPVERSION' ./ | xargs sed -i 's/%PHPVERSION/8\.4/g'
-          grep -rl '%IMPORTERVERSION' ./ | xargs sed -i 's/%IMPORTERVERSION/1\.7\.1/g'
+          grep -rl '%IMPORTERVERSION' ./ | xargs sed -i 's/%IMPORTERVERSION/${{ steps.importerversion.outputs.release }}/g'
           grep -rl '%FFVERSION' ./ | xargs sed -i 's/%FFVERSION/${{ steps.ff3version.outputs.release }}/g'
           python -m mkdocs build --clean
 
