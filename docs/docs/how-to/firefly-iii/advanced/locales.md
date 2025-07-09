@@ -47,7 +47,7 @@ This is caused by missing translations. Let me know where you run into this issu
 
 ### Browsers
 
-When set to English (US) browsers will always format the date input fields as `09/17/2020`. Use a localized browser to fix this.
+When set to English (US) browsers will always format the date input fields as `09/17/2020`. Use a localized browser to fix this. Changing your Firefly III settings will not change the date input fields.
 
 ### Missing packages or configuration
 
