@@ -99,3 +99,216 @@ php artisan view:clear
 php artisan firefly-iii:upgrade-database
 php artisan firefly-iii:laravel-passport-keys
 ```
+
+# 🔄 Firefly III Upgrade Script
+
+A bash script to **automate the upgrade process** of [Firefly III](https://firefly-iii.org/), with logging, rollback protection, and interactive or automatic execution.
+Just put this file in the root of yout webserver. 
+For example, on the folder htdocs assuming that you have your firefly instalation under htdocs/firefly-iii
+
+---
+
+## 📦 Features
+
+- ✅ Download a specific Firefly III version from GitHub
+- 📂 Backup current installation (`your-dir` → `your-dir-old`)
+- 📤 Extract new version while preserving `.env` and `storage/`
+- 🧼 Automatically clean up ZIP files after upgrade
+- 🛠️ Run Laravel upgrade commands
+- 🧾 Logs everything to a timestamped `.log` file
+- 🔁 **Automatic rollback** if validation fails
+
+---
+
+## 🚀 Usage
+
+### 🔧 Preparation
+
+1. Backup your **database** (e.g. via phpMyAdmin)
+2. Ensure PHP is installed:
+   ```bash
+   php -v
+   ```
+3. Make the script executable:
+   ```bash
+   chmod +x upgrade-firefly.sh
+   ```
+
+---
+
+### ✅ Run the Script
+
+#### 🔹 Auto Mode (non-interactive)
+
+```bash
+./upgrade-firefly.sh --auto v6.2.20 firefly-iii
+```
+
+- `v6.2.20`: new Firefly III version
+- `firefly-iii`: name of your current installation directory
+
+#### 🔹 Interactive Mode (prompt-based)
+
+```bash
+./upgrade-firefly.sh
+```
+
+The script will ask for:
+- The new version to install
+- The name of the current Firefly III directory
+
+---
+
+## 📄 Logging
+
+Each run creates a log file like:
+
+```
+upgrade-firefly-2025-07-13_11-02.log
+```
+
+It contains a full trace of the process: commands, output, errors, duration.
+
+---
+
+## 🔄 Automatic Rollback
+
+If critical files (e.g. `artisan`, `vendor/`, `bootstrap/`) are missing after extraction:
+- The new folder is deleted
+- The previous backup is restored
+- Error is logged, and the process is aborted safely
+
+---
+
+```bash
+#!/bin/bash
+
+# === Auto mode if --auto argument is passed ===
+AUTO_MODE=false
+if [[ "$1" == "--auto" ]]; then
+    AUTO_MODE=true
+    shift
+fi
+
+# === Start log ===
+START_TIME=$(date +%s)
+TIMESTAMP=$(date +"%Y-%m-%d_%H-%M")
+LOGFILE="upgrade-firefly-${TIMESTAMP}.log"
+exec > >(tee -a "$LOGFILE") 2>&1
+
+echo "=== Firefly III Upgrade Started @ $(date) ==="
+echo "Log: $LOGFILE"
+echo
+
+# === Get inputs ===
+if [ "$AUTO_MODE" = true ]; then
+    NEW_VERSION="$1"
+    INSTALL_DIR="$2"
+    if [ -z "$NEW_VERSION" ] || [ -z "$INSTALL_DIR" ]; then
+        echo "❌ In auto mode, you must provide: version and directory"
+        echo "   Example: ./upgrade-firefly.sh --auto v6.2.20 firefly-iii"
+        exit 1
+    fi
+else
+    echo "⚠️  WARNING: Make sure you've backed up the database using phpMyAdmin before continuing."
+    read -p "Press Enter to continue..."
+    read -p "Enter the new Firefly III version (e.g. v6.2.20): " NEW_VERSION
+    read -p "Enter the name of the current installation directory (e.g. firefly-iii): " INSTALL_DIR
+fi
+
+ZIP_FILE="FireflyIII-${NEW_VERSION}.zip"
+DOWNLOAD_URL="https://github.com/firefly-iii/firefly-iii/releases/download/${NEW_VERSION}/${ZIP_FILE}"
+BACKUP_DIR="${INSTALL_DIR}-old"
+NEW_DIR="${INSTALL_DIR}"
+
+# === Check required commands ===
+if ! command -v php &>/dev/null; then
+    echo "❌ Error: 'php' is not installed or not in the PATH."
+    exit 1
+fi
+
+# === Check if the directory exists ===
+if [ ! -d "$INSTALL_DIR" ]; then
+    echo "❌ Error: directory '$INSTALL_DIR' does not exist."
+    exit 1
+fi
+
+# === Download zip file ===
+echo "→ Downloading ${ZIP_FILE}..."
+curl -L -o "$ZIP_FILE" "$DOWNLOAD_URL"
+if [ $? -ne 0 ]; then
+    echo "❌ Error downloading the file!"
+    exit 1
+fi
+
+# === Backup current installation ===
+echo "→ Moving '${INSTALL_DIR}' to '${BACKUP_DIR}'..."
+mv "$INSTALL_DIR" "$BACKUP_DIR"
+
+# === Extract new version ===
+echo "→ Extracting new version to '${NEW_DIR}'..."
+mkdir "$NEW_DIR"
+unzip -o "$ZIP_FILE" -x "storage/*" -d "$NEW_DIR"
+
+# === Validate extracted structure ===
+MISSING_ITEMS=()
+[ -f "${NEW_DIR}/artisan" ]    || MISSING_ITEMS+=("artisan")
+[ -d "${NEW_DIR}/bootstrap" ]  || MISSING_ITEMS+=("bootstrap/")
+[ -d "${NEW_DIR}/vendor" ]     || MISSING_ITEMS+=("vendor/")
+
+if [ ${#MISSING_ITEMS[@]} -ne 0 ]; then
+    echo "❌ The new installation in '${NEW_DIR}' is incomplete. Missing:"
+    for item in "${MISSING_ITEMS[@]}"; do
+        echo "   - $item"
+    done
+
+    echo "🛠️  Performing rollback..."
+    if [ -d "$NEW_DIR" ]; then
+        rm -rf "$NEW_DIR"
+        echo "→ Directory '${NEW_DIR}' removed."
+    fi
+    if [ -d "$BACKUP_DIR" ]; then
+        mv "$BACKUP_DIR" "$NEW_DIR"
+        echo "→ Directory '${BACKUP_DIR}' restored as '${NEW_DIR}'."
+    else
+        echo "⚠️  Backup '${BACKUP_DIR}' not found!"
+    fi
+
+    echo "❌ Rollback completed. Upgrade cancelled."
+    exit 1
+fi
+
+# === Copy .env and storage ===
+echo "→ Copying .env and storage from previous installation..."
+sudo cp "${BACKUP_DIR}/.env" "${NEW_DIR}/.env"
+sudo cp -r "${BACKUP_DIR}/storage" "${NEW_DIR}/storage"
+
+# === Set correct permissions ===
+echo "→ Setting permissions..."
+sudo chown -R www-data:www-data "$NEW_DIR"
+sudo chmod -R 775 "$NEW_DIR/storage"
+
+# === Run Laravel upgrade commands ===
+echo "→ Running Laravel upgrade commands..."
+cd "$NEW_DIR" || exit
+php artisan migrate --seed
+php artisan cache:clear
+php artisan view:clear
+php artisan firefly-iii:upgrade-database
+php artisan firefly-iii:laravel-passport-keys
+
+# === Cleanup zip file ===
+echo "→ Removing zip file '${ZIP_FILE}'..."
+rm "../${ZIP_FILE}" 2>/dev/null || rm "${ZIP_FILE}"
+
+# === Show duration ===
+END_TIME=$(date +%s)
+DURATION=$((END_TIME - START_TIME))
+MIN=$((DURATION / 60))
+SEC=$((DURATION % 60))
+
+echo
+echo "✅ Upgrade to ${NEW_VERSION} completed successfully!"
+echo "📄 Log saved to: $LOGFILE"
+echo "⏱️  Total duration: ${MIN}m ${SEC}s"
+```
