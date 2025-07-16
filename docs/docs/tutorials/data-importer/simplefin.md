@@ -13,7 +13,6 @@ In the UI, enter the connection details from your bank. If you have set the nece
 Environment variables are set in the `.env` file, or as Docker environment variables. The data importer will use the following environment variables:
 
 * `SIMPLEFIN_TOKEN`: Your SimpleFIN API token.
-* `SIMPLEFIN_CORS_ORIGIN_URL`. The URL of your Firefly III data importer instance.
 
 ## Select the accounts
 
