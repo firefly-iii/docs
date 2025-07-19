@@ -99,3 +99,7 @@ php artisan view:clear
 php artisan firefly-iii:upgrade-database
 php artisan firefly-iii:laravel-passport-keys
 ```
+
+## Alternatives
+
+GitHub user @igoptx has created [this script](https://gist.github.com/igoptx/423dbf83c9bbd8285f30059b735eb13a) that can do the upgrade automatically. Please use this at your own risk.
