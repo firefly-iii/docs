@@ -110,6 +110,12 @@ In the directory where you just unzipped Firefly III you will find a `.env.examp
 cp .env.example .env
 ```
 
+If your web root is owned by `www-data`, then use this command:
+
+```bash
+sudo -u www-data cp .env.example .env
+```
+
 Open this file using your favorite editor. There are instructions what to do in this file.
 
 Make sure you configure at least the database. For SQLite, you must drop all the configuration except `DB_CONNECTION=sqlite`.
@@ -126,6 +132,14 @@ cd /var/www/firefly-iii
 touch ./storage/database/database.sqlite
 ```
 
+If your web root is owned by `www-data`, then use this command:
+
+```bash
+# the directory may be different on your system:
+cd /var/www/firefly-iii
+sudo -u www-data touch ./storage/database/database.sqlite
+```
+
 Either way, in all cases, run these commands to initialize the database:
 
 ```bash
@@ -133,6 +147,15 @@ php artisan firefly-iii:upgrade-database
 php artisan firefly-iii:correct-database
 php artisan firefly-iii:report-integrity
 php artisan firefly-iii:laravel-passport-keys
+```
+
+Similarly, if your web root is owned by `www-data`, then execute these commands instead to ensure that all the files in your web-root have the same permissions:
+
+```bash
+sudo -u www-data php artisan firefly-iii:upgrade-database
+sudo -u www-data php artisan firefly-iii:correct-database
+sudo -u www-data php artisan firefly-iii:report-integrity
+sudo -u www-data php artisan firefly-iii:laravel-passport-keys
 ```
 
 Now you should be able to visit [http://localhost/firefly-iii/public](http://localhost/firefly-iii/public) and see Firefly III.
