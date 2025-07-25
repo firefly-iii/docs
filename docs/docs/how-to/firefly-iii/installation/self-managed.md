@@ -2,11 +2,19 @@
 
 If you have your own (virtual) web server you can use this guide to install Firefly III. You may have some ingredients prepared already.
 
+!!! note
+    Some of these commands use the `sudo` or `sudo -u www-data` command. These are only available when you have the necessary privileges. If you do not have these privileges, you may need to ask your system administrator to run these commands for you.
+
 ## Ingredients
 
-1. You need a working LAMP, LEMP or WAMP stack. Make sure you use PHP %PHPVERSION. How to set this up is outside the scope of this manual, but this is something [you can look up](https://www.google.com/search?q=lamp+stack+php+%PHPVERSION). 
-2. You will also need a (MySQL) database and credentials for a user that has permissions on that database. Firefly III creates its own tables. You can use SQLite if this is difficult to set up. 
-3. In case you want to use one of the languages that Firefly III is equipped with, make sure you install the necessary locales. For Debian / Ubuntu for example, use `sudo apt install language-pack-nl-base && sudo locale-gen`.
+You need a working LAMP, LEMP or WAMP (1) stack. Make sure you use PHP %PHPVERSION. How to set this up is outside the scope of this manual, but this is something [you can look up](https://www.google.com/search?q=lamp+stack+php+%PHPVERSION).
+{ .annotate }
+
+1. Linux, Apache, MySQL, PHP (LAMP) or Linux, Nginx, MySQL, PHP (LEMP) or Windows, Apache, MySQL, PHP (WAMP).
+
+You will also need a (MySQL) database and credentials for a user that has permissions on that database. Firefly III creates its own tables. You can use SQLite if this is difficult to set up. 
+
+In case you want to use one of the languages that Firefly III is equipped with, make sure you install the necessary locales. For Debian / Ubuntu for example, use `sudo apt install language-pack-nl-base && sudo locale-gen`.
 
 Several users have created specific guides for their OS and database combination. 
 
@@ -71,6 +79,9 @@ If you also want to verify the digital signature of the release, please follow t
 
 Extract the downloaded file in your web server's root directory, or in a specific directory you want to use.
 
+!!! tip
+    Some servers require `sudo` to extract or change things in the `/var/www` directory, because the directory is owned by a dedicated user (e.g. `www-data` on Debian/Ubuntu). If this is the case for you, make sure to prefix the commands in this document with `sudo -u www-data` (replace `www-data` with this username) to ensure that all of your files have the same permissions.
+
 ```bash
 # the directory name is up to you, of course:
 mkdir /var/www/firefly-iii
@@ -80,23 +91,8 @@ unzip FireflyIII-%FFVERSION.zip -d /var/www/firefly-iii
 tar -xvf FireflyIII-%FFVERSION.tar.gz -C /var/www/firefly-iii
 ```
 
-#### NOTE: Is your web root owned by www-data or some other dedicated web user?
----
-Some servers require `sudo` to extract or change things in the `/var/www` directory. Some web roots may be owned by a dedicated user (e.g. www-data on Debian/Ubuntu). If this is the case for you, make sure to prefix the commands in this document with `sudo -u www-data` (replace `www-data` with your web-root username) to ensure that all of your web-root files have the same permissions. For example, prefixing `sudo -u www-data` to the above commands would be: 
 
-```bash
-# the directory name is up to you, of course:
-sudo -u www-data mkdir /var/www/firefly-iii
-sudo -u www-data unzip FireflyIII-%FFVERSION.zip -d /var/www/firefly-iii
 
-# alternative command for the tar.gz file:
-sudo -u www-data tar -xvf FireflyIII-%FFVERSION.tar.gz -C /var/www/firefly-iii
-
-# change file ownership and permissions manually
-sudo chown -R www-data:www-data /var/www/firefly-iii
-sudo chmod -R 775 /var/www/firefly-iii/storage
-```
----
 This should get you the entire installation in the directory of your choice.
 
 ### Web server configuration
