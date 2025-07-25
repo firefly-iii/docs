@@ -97,6 +97,9 @@ This should get you the entire installation in the directory of your choice.
 
 ### Web server configuration
 
+!!! info
+    Since this is very specific to each system, there are no instructions how to do this.
+
 Most servers will serve files from the `/var/www` directory. Firefly III would be served from `/firefly-iii/public`. This is not really what you would want to do.
 
 You can look up for your webserver (Apache or nginx) how to change the root directory or how to set up virtual hosts. 
@@ -134,7 +137,7 @@ php artisan firefly-iii:report-integrity
 php artisan firefly-iii:laravel-passport-keys
 ```
 
-Now you should be able to visit [http://localhost/firefly-iii/public](http://localhost/firefly-iii/public) and see Firefly III.
+Now you should be able to visit [http://localhost](http://localhost) and see Firefly III.
 
 ### It doesn't work!
 
