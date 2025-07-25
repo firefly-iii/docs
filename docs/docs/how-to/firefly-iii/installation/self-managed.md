@@ -80,7 +80,9 @@ unzip FireflyIII-%FFVERSION.zip -d /var/www/firefly-iii
 tar -xvf FireflyIII-%FFVERSION.tar.gz -C /var/www/firefly-iii
 ```
 
-Some servers require `sudo` to extract or change things in the `/var/www` directory. if this is the case for you, make sure you reset the access rights after wards: 
+#### NOTE: Is your web root owned by www-data or some other dedicated web user?
+---
+Some servers require `sudo` to extract or change things in the `/var/www` directory. Some web roots may be owned by a dedicated user (e.g. www-data on Debian/Ubuntu). If this is the case for you, make sure to prefix the commands in this document with `sudo -u www-data` (replace `www-data` with your web-root username) to ensure that all of your web-root files have the same permissions. For example, prefixing `sudo -u www-data` to the above commands would be: 
 
 ```bash
 # the directory name is up to you, of course:
@@ -88,12 +90,13 @@ sudo -u www-data mkdir /var/www/firefly-iii
 sudo -u www-data unzip FireflyIII-%FFVERSION.zip -d /var/www/firefly-iii
 
 # alternative command for the tar.gz file:
-sudo tar -xvf FireflyIII-%FFVERSION.tar.gz -C /var/www/firefly-iii
+sudo -u www-data tar -xvf FireflyIII-%FFVERSION.tar.gz -C /var/www/firefly-iii
 
+# change file ownership and permissions manually
 sudo chown -R www-data:www-data /var/www/firefly-iii
 sudo chmod -R 775 /var/www/firefly-iii/storage
 ```
-
+---
 This should get you the entire installation in the directory of your choice.
 
 ### Web server configuration
