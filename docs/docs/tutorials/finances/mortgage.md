@@ -17,7 +17,7 @@ You can pay off your mortgage in several ways. Here are the most used ones.
 To manage a mortgage payment that is entirely interest, you have three options. 
 
 1. Create a withdrawal from an asset account to your bank's expense account. This is useful when you pay the interest entirely out of your own pocket. The transaction will not be recorded under your mortgage but the amount due of your mortgage will also not decrease (or increase).
-2. Send the interest payment as a withdrawal from your asset account to your mortgage, and then from your mortgage to the bank. The difference with the previous method is that the transaction is *also* recorded under your mortgage account.
+2. Send the interest payment as a withdrawal from your asset account to your mortgage, and then create a second withdrawal from your mortgage to the bank. The difference with the previous method is that the transaction is *also* recorded under your mortgage account.
 3. Send the interest payment as a withdrawal directly from your mortgage to your bank. This essentially results in a higher "amount due", but you can always correct this later (as detailed in item 2).
 
 Depending on your own goals of tracking and granularity, you can either use a shared expense account for all interest payments (of all your liabilities) or create a unique expense account for this particular liability. You would be able to track this over time either way.
