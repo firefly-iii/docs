@@ -9,3 +9,17 @@ Firefly III features a JSON API.
 Please visit the [dedicated Swagger documentation](https://api-docs.firefly-iii.org/) where you can read and try the API. [A PHP library](https://github.com/StanSoftBG/oauth2-firefly-iii) was developed by [StanSoft.BG Ltd.](https://github.com/StanSoftBG) that you can use to talk to Firefly III in PHP.
 
 The API is slated to become the only way to talk to Firefly III: even the UI would use the API exclusively. Alas, this is a work in progress.
+
+## Currencies in the API
+
+Most relevant objects have `currency_*` attributes. They refer to the currency set in the object. Most objects (accounts, transactions, etc.) carry their own currency settings.
+
+There are also `primary_currency_*` attributes. These refer to the primary currency of the financial administration. They may be different from the currency set in the object. For example, a transaction may be in USD, but the primary currency is EUR. This is important for conversions and exchange rates.
+
+Amounts, balances and collections of expenses (such as `spent` or `earned` arrays) will always be in the currency of the associated object. For example, a transaction in USD will have amounts in USD, even when the primary currency is EUR.
+
+The API also returns all of these fields as `pc_*` attributes. These are the "converted to **p**rimary **c**urrency" attributes. If the user enables "convert to primary", these fields will contain the amounts converted to the primary currency of the financial administration, using the exchange rate set in Firefly III.
+
+If the user does NOT enable "convert to primary", all `pc_*` attributes will be `null`. This means that the API will not convert amounts to the primary currency.
+
+If the currency of the object is the same as the primary currency, the `pc_*` attributes will be the same as the regular attributes. For example, a transaction in EUR with a primary currency of EUR will have `amount` and `pc_amount` set to the same value.
