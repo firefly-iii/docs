@@ -12,7 +12,9 @@ The API is slated to become the only way to talk to Firefly III: even the UI wou
 
 ## Currencies in the API
 
-Most relevant objects have `currency_*` attributes. They refer to the currency set in the object. Most objects (accounts, transactions, etc.) carry their own currency settings.
+All objects where currency is relevant have `currency_*` attributes. They refer to the currency set in the object. Most objects (accounts, transactions, etc.) carry their own currency settings. For example, a bill or a piggy bank has its own currency, regardless of the primary currency of the administration. Expect something like this:
+
+(image)
 
 There are also `primary_currency_*` attributes. These refer to the primary currency of the financial administration. They may be different from the currency set in the object. For example, a transaction may be in USD, but the primary currency is EUR. This is important for conversions and exchange rates.
 
