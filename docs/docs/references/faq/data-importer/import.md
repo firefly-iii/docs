@@ -11,7 +11,7 @@ Make sure that the date field in your CSV file (`2023-09-17`) is marked as the "
 
 ## I get 504 Gateway Timeout errors
 
-When you use the web interface of the data importer, the web page will time out after abou 600 seconds. Your reverse proxy (if present) may even be more strict. Although the import process continues in the background, the page is "lost" and you will not get status updates anymore. Please use smaller batches when importing data so the page does not time out.
+When you use the web interface of the data importer, the web page will time out after about 600 seconds. Your reverse proxy (if present) may even be more strict. Although the import process continues in the background, the page is "lost" and you will not get status updates anymore. Please use smaller batches when importing data so the page does not time out.
 
 ## Mixed content
 
