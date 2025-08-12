@@ -106,19 +106,27 @@ This is already present in the [default Docker compose file](https://github.com/
 
 ```
   cron:
+    #
+    # To make this work, set STATIC_CRON_TOKEN in your .env file or as an environment variable
+    # The STATIC_CRON_TOKEN must be *exactly* 32 characters long
+    #
     image: alpine
     restart: always
     container_name: firefly_iii_cron
     env_file: .env
     command: sh -c "
-      apk add tzdata
-      && ln -s /usr/share/zoneinfo/${TZ} /etc/localtime
-      | echo \"0 3 * * * wget -qO- http://app:8080/api/v1/cron/REPLACEME;echo\" 
-      | crontab - 
-      && crond -f -L /dev/stdout"
+      apk add tzdata && \
+      ln -fs /usr/share/zoneinfo/$$TZ /etc/localtime && \
+      echo \"0 3 * * * wget -qO- http://app:8080/api/v1/cron/$$STATIC_CRON_TOKEN;echo\"
+      | crontab - && \
+      crond -f -L /dev/stdout"
+    networks:
+      - firefly_iii
+    depends_on:
+      - app
 ```
 
-The `REPLACEME` value can be found on your `/profile` under the "Command line token" header. Earlier on this page, you can read on the static token as well.
+The `$$STATIC_CRON_TOKEN` variable (and yes, the double `$$` is **correct**) refers to the `STATIC_CRON_TOKEN=` line in your `.env` file.
 
 If you have used the expanded Docker compose file or if you have added the cron container yourself, (re)start your stack. The cron job will run automatically. You can see the cron container if you do something like `docker container ls`:
 
