@@ -10,6 +10,8 @@ Although the form allows you to free-type a destination account as well, this ma
 
 If you want to store cash withdrawals, be sure to read [how to manage cash](../../how-to/firefly-iii/finances/cash.md).
 
+Transactions from asset accounts to expense accounts or liabilities are considered withdrawals.
+
 ## Deposits
 
 When you wish to create a deposit, select a revenue account first, as the source account. When it doesn't exist yet, free-type your own input, and it will be created for you. Then, select an [asset account](account-types.md) or a [liability](account-types.md) as the destination account. If the source account already exists the form will recognize that you're creating a deposit, and the "budget"-selector will disappear.
@@ -18,9 +20,13 @@ Although the form allows you to free-type a destination account as well, this ma
 
 If you want to store cash deposits, be sure to read [how to manage cash](../../how-to/firefly-iii/finances/cash.md).
 
+Transactions from revenue accounts or from liabilities TO asset accounts are considered deposits.
+
 ## Transfers
 
-A transfer is created only between existing asset accounts. Select an asset account for both the source and destination from the free-form fields. Transfers can be linked to [piggy banks](../../how-to/firefly-iii/finances/piggy-banks.md), to automatically add or remove money from the piggy bank you select.
+A transfer is created only between existing asset accounts or liabilities. Select an asset account for both the source and destination from the free-form fields. Transfers can be linked to [piggy banks](../../how-to/firefly-iii/finances/piggy-banks.md), to automatically add or remove money from the piggy bank you select.
+
+Transactions between asset accounts or between liabilities are considered transfers. So, from one asset account to another, that's a transfer. From one liability to another, the same.
 
 ## Special transaction types
 
