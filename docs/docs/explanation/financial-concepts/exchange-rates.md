@@ -1,9 +1,8 @@
-# Exchange rates
+# Exchange rate
 
-!!! warning
-    This feature is available in Firefly III v6.2.0 and later
+Firefly III can dynamically convert amounts from one currency into another using exchange rates. You can set the exchange rates yourself or allow Firefly III to download a selection for you. 
 
-Firefly III can dynamically convert amounts from one currency into another using exchange rates. You can set the exchange rates yourself or allow Firefly III to download them for you. 
+Firefly III can only download the exchange rates of the standard, built-in currencies. 
 
 This is useful for some of the charts that Firefly III shows you. All monetary amounts will be calculated back to your base currency.
 
