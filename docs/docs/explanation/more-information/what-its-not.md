@@ -48,6 +48,10 @@ Firefly III is a multi-user environment. But each user is strictly separated fro
 
 A month goes from the 1st to the last day of the month. You can't tell Firefly III to go from the 23rd to the 22nd of the next month.
 
+### Bi-weekly or four-weekly periods
+
+This will not be added, sorry. The logic necessary to match whatever 2-week or 4-week period you need is to complex. If you get paid in 2 or 4-week intervals, consider changing your financial system to be monthly instead, instead of having your pay stubs determin your financial cadence.
+
 ### More complicated rules, like Boolean logic, copy/pasting values, etc
 
 The rule engine could be a lot more complex. Things like conditional rules, if-then-else, regular expressions or variables. These are all technically possible. However, the rule engine must also be usable and easy to be introduced to. Most rule engines, even the filters in GMail, are very complex because of user demands and as a result, nobody uses them anymore.
