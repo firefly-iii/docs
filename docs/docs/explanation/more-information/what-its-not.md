@@ -28,7 +28,13 @@ Firefly III won't support the ability to predict expenses, give you a look into 
 
 ### Expand budget amounts by assigning deposits to budgets
 
-It is not be possible to increase budgets by assigning a deposit to them. For example, if you get a refund.
+Let's say you have a budget of € 200,-. You spend the entire amount on PlayStation5 games, but you regret your purchase and return all of them. The money is returned to you as a deposit. You cannot assign the deposit to the budget and increase the budget so you have € 200,- available again. This is by design, and will not change.
+
+It is up to you to (manually) decide if:
+
+1. You want to increase the budget to have the original amount available again.
+2. You want to change the original withdrawal so it is no longer tied to the budget, freeing the money.
+3. Deleting the original withdrawal to clear up the budget.
 
 ### Sub-categories, sub-budgets, sub-accounts
 
