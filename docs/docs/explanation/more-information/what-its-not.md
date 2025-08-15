@@ -26,11 +26,9 @@ Some features from advanced programs like GNUCash don't work in Firefly III. It'
 
 Firefly III won't support the ability to predict expenses, give you a look into the future or do financial planning. The present is hard enough to manage. Although features like recurring transactions and some smart calculations would help, I find that quickly doing some math in Excel or Google Sheets works a lot better than whatever I could come up with.
 
-### Automated currency conversion so everything is in Euro's or dollars
+### Expand budget amounts by assigning deposits to budgets
 
-It won't be possible to see multi-currency transactions or accounts in a single default currency, by using exchange rates to convert the amounts. The result will always be inaccurate because banks often have steeper rates than the market. That makes Firefly III inaccurate and I hate that. So, if you submit a transaction in multiple currencies (this is possible) Firefly III won't convert the rates for you.
-
-I am looking for ways to make it easier to look at charts with multiple currencies, where one currency is worth a lot compared to the other one.
+It is not be possible to increase budgets by assigning a deposit to them. For example, if you get a refund.
 
 ### Sub-categories, sub-budgets, sub-accounts
 
