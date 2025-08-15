@@ -1,8 +1,9 @@
 # Exchange rate
 
-Firefly III can dynamically convert amounts from one currency into another using exchange rates. You can set the exchange rates yourself or allow Firefly III to download a selection for you. 
+Firefly III can dynamically convert amounts from one currency into another using exchange rates. You can set the exchange rates yourself or allow Firefly III to download exchange rates for you. 
 
-Firefly III can only download the exchange rates of the standard, built-in currencies. 
+!!! warning
+    Firefly III can only download the exchange rates of [the standard, built-in currencies](https://github.com/firefly-iii/firefly-iii/blob/main/database/seeders/TransactionCurrencySeeder.php#L38).
 
 This is useful for some of the charts that Firefly III shows you. All monetary amounts will be calculated back to your base currency.
 
@@ -11,14 +12,14 @@ This is useful for some of the charts that Firefly III shows you. All monetary a
 Firefly III supports three options that allow you to use native amounts and exchange rates in the application. The following variables are `false` by default.
 
 1. `ENABLE_EXCHANGE_RATES=true`. This environment variable enables the feature in the first place. It will not be available otherwise. Because this feature is fairly new, it is disabled by default.
-2. `ENABLE_EXTERNAL_RATES=true`. Firefly III will not download exchange rates from the internet unless you allow it to. Exchange rates can only be downloaded for the default currencies in Firefly III. They will be downloaded from a Firefly III Azure bucket.
+2. `ENABLE_EXTERNAL_RATES=true`. Firefly III will not download exchange rates unless you allow it to. Exchange rates can only be downloaded for the default currencies in Firefly III. They will be downloaded from a Firefly III Azure bucket.
 3. In your preferences (`/preferences`) set the checkbox at "Display amounts in your native currency".
 
 ## Initialization
 
 If you turn this on, native amounts will automatically be calculated whenever necessary. This happens when Firefly III boots. However, you may want to initialize this yourself if you want to. 
 
-By default, Firefly III ships with one or two sets of exchange rates, which you are free to add yourself.
+By default, Firefly III ships with one or two sets of exchange rates for the built-in currencies. You can add new exchange rates yourself.
 
 ## Recalculate native amounts
 
@@ -34,11 +35,11 @@ docker exec -it [container-id] php artisan correction:recalculate-native-amounts
 
 ## Changing your base (default) currency
 
-Firefly III only converts amounts back to your base (default) currency. You can set this currency on the `/currencies` page. Other conversions are not supported. For example, if your base currency is the Euro, you cannot see your British Pounds in US Dollars. The conversion will go back to the Euro only.
+Firefly III only converts amounts back to your base (default) currency. You can set this currency on the `/administrations` page. Other conversions are not supported. For example, if your base currency is the Euro, you cannot see your British Pounds in US Dollars. The conversion will go back to the Euro only.
 
 If you change your default currency, all amounts will have to be recalculated. This may take some time if you have a lot of transactions in other currencies than your default currencies. 
 
-You can do this manually too using the command mentioned earlier.
+You can do this manually as well, using the command mentioned earlier.
 
 ## Default exchange rate
 
@@ -59,7 +60,7 @@ Firefly III transactions also have a "foreign amount"-field. If you set a foreig
 
 Make sure that `ENABLE_EXTERNAL_RATES=true` and run the [cron job](../../how-to/firefly-iii/advanced/cron.md) daily.
 
-Firefly III will download new rates about every week. You should see the list of available rates expand slowly.
+Firefly III will download new rates about every week. You should see the list of available rates expand slowly. Firefly III will not download historical rates, ie. the rates for last year or last month.
 
 ## Setting your own rates
 
