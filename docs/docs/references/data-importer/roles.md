@@ -6,6 +6,8 @@ These options do not just apply to CSV files. Camt.053 files and Spectre and GoC
 
 The roles for data importer from Spectre and GoCardless cannot be configured. Those are pre-set by the developer. 
 
+![Role selection in the data importer](../../images/tutorials/data-importer/role-selection.png "Role selection in the data importer")
+
 ## (ignore this column)
 
 Select this role to ignore the content of the column.
@@ -47,7 +49,7 @@ Vishandel Hilvertshof HILVERSUM	Card 1234
 
 ## Asset account (\*)
 
-These roles (several variations) are used to indicate the asset account in the transaction, usually your own. Think of these columns as the "payer" column, the person or account paying the money.
+These roles (\*several variations) are used to indicate the asset account in the transaction, usually your own. Think of these columns as the "payer" column, the person or account paying the money.
 
 The "asset account" role and the "opposing account" role (see ahead) will be automatically switched by the data importer when the transaction is the other way around.
 
@@ -61,7 +63,7 @@ The variations for this field are as follows:
 
 ## Opposing account (\*)
 
-These roles (in several variations) are used to indicate the opposing account. Usually these are stores or shops or opposing account details. Think of these columns as the "payee" column, the person or account receiving the money.
+These roles (\*in several variations) are used to indicate the opposing account. Usually these are stores or shops or opposing account details. Think of these columns as the "payee" column, the person or account receiving the money.
 
 The "asset account" role and the "opposing account" role (see earlier) will be automatically switched by the data importer when the transaction is the other way around.
 
