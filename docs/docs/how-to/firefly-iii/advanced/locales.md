@@ -29,6 +29,10 @@ locale -a
 
 Depending on your language, a specific list of locales is tried by Firefly III. They can be found on [GitHub](https://github.com/firefly-iii/firefly-iii/tree/main/resources/lang). Open the directory of your language, then open `config.php` and look for the line `locale`.
 
+## Locale settings in Docker
+
+The Docker container cannot be extended with locales. Please see [this issue on GitHub](https://github.com/firefly-iii/firefly-iii/issues/9070) for instructions.
+
 ## Locale settings on Windows and Linux
 
 Windows usually recognizes locale strings like these: `English` or `english`. Linux mostly looks for strings like these: `en_US` or `nl_NL`. Sometimes you see stuff like this: `en_US.utf8` which means that it's not just English (US), but also UTF8 (a special encoding).
