@@ -2,6 +2,8 @@
 
 Portainer is a well known container management tool for Docker. It can help you manage your containers, networks and volumes.
 
+These instructions are for the CE edition.
+
 You can add Firefly III and the Data Importer as a "stack" using the instructions below.
 
 ## Preparation
