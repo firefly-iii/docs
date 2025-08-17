@@ -29,3 +29,11 @@ Amounts, balances and collections of expenses (such as `spent` or `earned` array
 
 If the user does NOT enable "convert to primary", all `pc_*` attributes will be `null`. This means that the API will not convert amounts to the primary currency. If the currency of the object is the same as the primary currency, the `pc_*` attributes will be the same as the regular attributes. For example, a transaction in EUR with a primary currency of EUR will have `amount` and `pc_amount` set to the same value.
 
+## Configuration values
+
+The endpoint `/api/v1/configuration` returns a variety of static and dynamic configuration values of Firefly III.
+
+There are two sets of configuration values that you can retrieve through this endpoint.
+
+1. Static values. You cannot edit these. The source code of Firefly III has [the full list of options](https://github.com/firefly-iii/firefly-iii/blob/main/app/Support/Binder/EitherConfigKey.php#L35).
+2. Dynamic values. These can be changed. The source code of Firefly III has [the full list of options](https://github.com/firefly-iii/firefly-iii/blob/main/app/Support/Binder/DynamicConfigKey.php#L35).
