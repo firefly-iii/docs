@@ -37,3 +37,19 @@ There are two sets of configuration values that you can retrieve through this en
 
 1. Static values. You cannot edit these. The source code of Firefly III has [the full list of options](https://github.com/firefly-iii/firefly-iii/blob/main/app/Support/Binder/EitherConfigKey.php#L35).
 2. Dynamic values. These can be changed. The source code of Firefly III has [the full list of options](https://github.com/firefly-iii/firefly-iii/blob/main/app/Support/Binder/DynamicConfigKey.php#L35).
+
+## Webhooks
+
+Firefly III supports webhooks, which you can read more about on the page about [webhooks](../../../how-to/firefly-iii/features/webhooks.md).
+
+A webhook needs a title and a URL to work, and three important things.
+
+1. A set of triggers. Use `GET api/v1/configuration/webhook.triggers` to get the available values. This may change in the future.
+2. A response. Use `GET api/v1/configuration/webhook.responses` to see what is available. New responses may be added in the future.
+3. A delivery format. Use `GET api/v1/configuration/webhook.deliveries` to see what is available. This is only `JSON` right now.
+
+When you create a webhook you can choose webhook-specific data to be the response. For example, you trigger your webhook on the creation of a new transaction, and the response is the transaction details.
+
+However, when you create a webhook that ALSO triggers on the creation of a new budget, you cannot set the transaction details as the expected response. In that case, you must select the option "The relevant details" (`RELEVANT`) which will automatically select the correct data to send as response.
+
+The reason this is complicated is because some webhook triggers come with multiple possible responses, so it is always up to you to select what you need. However, for some trigger combinations `RELEVANT` is the only possible response. 
