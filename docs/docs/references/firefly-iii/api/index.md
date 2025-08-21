@@ -10,6 +10,10 @@ Please visit the [dedicated Swagger documentation](https://api-docs.firefly-iii.
 
 The API is slated to become the only way to talk to Firefly III: even the UI would use the API exclusively. Alas, this is a work in progress.
 
+## Developing with the Firefly III API
+
+If you want to keep up with changes to the Firefly III API, be sure to sign up to [the Firefly III dev mailing list](https://firefly-iii.kit.com/dev). It's free and low-frequency.
+
 ## Currencies in the API
 
 All objects where currency is relevant have `currency_*` attributes. They refer to the currency set in the object. Most objects (accounts, transactions, etc.) carry their own currency settings. For example, a bill or a piggy bank has its own currency, regardless of the primary currency of the administration. Expect something like this:
