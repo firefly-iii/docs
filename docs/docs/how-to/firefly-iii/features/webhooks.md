@@ -6,27 +6,38 @@ A webhook is a custom callback. Triggered by events in Firefly III a message wil
 
 Webhooks need to be enabled before they work. Set `ALLOW_WEBHOOKS=true`, either in your `.env` file or in your Docker environment variables.
 
+![Creating a new webhook](../../../images/how-to/firefly-iii/features/webhooks-create.png "Date configuration value 'Ymd' is necessary to parse this file")
+
 ## Triggers
 
-There are currently three available triggers for webhooks in Firefly III:
+There are a bunch of triggers for webhooks in Firefly III:
 
-- When a transaction is created
-- When a transaction is updated
-- When a transaction is deleted
+- When a transaction is created, updated or removed
+- When a budget is created, updated or removed
+- (some other trigger)
+- When any of the above happens
 
-A webhook can only respond to one trigger. If you want multiple triggers for the same webhook URL, you must set up multiple webhooks.
+A webhook can respond to multiple triggers. BUT, you cannot combine the  "After any event" with other triggers, it would have to be the only trigger. I hope this makes sense, because "After any event" already includes everything.
 
 ## Responses
 
 When triggered, Firefly III will respond by sending a data package to the URL of your choice. The response can be configured, depending on the trigger.
 
-### Transaction create / update / delete
+A webhook can only send one thing. If you want multiple responses to be sent for the same webhook, you must set up multiple webhooks.
 
-- Send the transaction involved
-- Send the accounts involved
-- Send nothing
+### Relevant details
 
-A webhook can only send one thing. If you want multiple things to be sent for the same webhook, you must set up multiple webhooks.
+If you select "Relevant details" as the response, Firefly III will send the relevant data for the trigger. This is up to Firefly III to decide. For example, if you trigger on a transaction creation, the response will be the transaction itself. If you trigger on a budget, the response will be the budget itself.
+
+It is mandatory to select "Relevant details" when you select "After any event" as the trigger. This is because "After any event" can trigger on many different events, and Firefly III cannot know what you want to receive. Therefore, it will always send the relevant details for the event that triggered the webhook.
+
+### Transaction details
+
+You can choose to receive the transaction details for transaction related events.
+
+### Account details
+
+You can choose to receive the account details for account AND transaction related events.
 
 ## Delivery
 
@@ -38,7 +49,7 @@ All webhook responses will be delivered in JSON. This is the only option:
 
 You can manage webhooks using [the webhook API endpoints](https://api-docs.firefly-iii.org/#/webhooks) or on the page `/webhooks/index`.
 
-## Secret
+## Webhook secret
 
 Each webhook comes with a secret when created. The secret is used to generate the signature (see below). You can regenerate the secret, but you can't set a value yourself.
 
@@ -46,7 +57,7 @@ Each webhook comes with a secret when created. The secret is used to generate th
 
 You must give webhooks a unique title.
 
-It's not possible to send *two* or more responses *at the same time*, for example the transactions AND the accounts. To do this, you must create two separate webhooks. These will have two separate secrets.
+It's not possible to send *two* or more responses *at the same time*, for example the transactions AND the accounts in response to ONE trigger. To do this, you must create two separate webhooks. These will have two separate secrets.
 
 ## Payload
 
