@@ -48,7 +48,7 @@ Firefly III supports webhooks, which you can read more about on the page about [
 
 A webhook needs a title and a URL to work, and three important things.
 
-1. A set of triggers. Use `GET api/v1/configuration/webhook.triggers` to get the available values. This may change in the future.
+1. A set of triggers. Use `GET api/v1/configuration/webhook.triggers` to get the available values, because they may change in the future.
 2. A response. Use `GET api/v1/configuration/webhook.responses` to see what is available. New responses may be added in the future.
 3. A delivery format. Use `GET api/v1/configuration/webhook.deliveries` to see what is available. This is only `JSON` right now.
 

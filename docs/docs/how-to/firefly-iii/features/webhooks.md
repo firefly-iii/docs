@@ -12,9 +12,9 @@ Webhooks need to be enabled before they work. Set `ALLOW_WEBHOOKS=true`, either 
 
 There are a bunch of triggers for webhooks in Firefly III:
 
-- When a transaction is created, updated or removed
+- When a transaction is created, updated or removed.
 - When a budget is created, updated or removed
-- (some other trigger)
+- When a budget amount is set or changed
 - When any of the above happens
 
 A webhook can respond to multiple triggers. BUT, you cannot combine the  "After any event" with other triggers, it would have to be the only trigger. I hope this makes sense, because "After any event" already includes everything.
@@ -30,6 +30,12 @@ A webhook can only send one thing. If you want multiple responses to be sent for
 If you select "Relevant details" as the response, Firefly III will send the relevant data for the trigger. This is up to Firefly III to decide. For example, if you trigger on a transaction creation, the response will be the transaction itself. If you trigger on a budget, the response will be the budget itself.
 
 It is mandatory to select "Relevant details" when you select "After any event" as the trigger. This is because "After any event" can trigger on many different events, and Firefly III cannot know what you want to receive. Therefore, it will always send the relevant details for the event that triggered the webhook.
+
+Relevant details consist of:
+
+- For transaction related events: the transaction itself
+- For budget related events: the budget itself
+- For budget amount related events: the "budget limit", i.e. the amount for that particular period.
 
 ### Transaction details
 
