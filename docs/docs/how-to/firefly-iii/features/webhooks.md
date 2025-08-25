@@ -39,6 +39,10 @@ If you select "Relevant details" as the response, Firefly III will send the "rel
 
 It is mandatory to select "Relevant details" when you select "After any event" as the trigger. This is because "After any event" can trigger on many different events, and Firefly III cannot know what you want to receive. Therefore, it will always send the relevant details for the event that triggered the webhook.
 
+It is also mandatory to select "Relevant details" when you combine certain webhook triggers. For example, when you combine budget and transaction events in a single webhook, you must select "Relevant details". Firefly III will warn you when this is the case. 
+
+You cannot combine "Relevant details" with other responses. It must be the single response selected.
+
 Relevant details consist of:
 
 - For transaction related events: the transaction itself
