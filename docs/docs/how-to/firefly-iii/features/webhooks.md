@@ -15,7 +15,7 @@ There are a bunch of triggers for webhooks in Firefly III:
 - When a transaction is created, updated or removed.
 - When a budget is created, updated or removed
 - When a budget amount is set or changed
-- When any of the above happens
+- When any of the above happens ("After any event")
 
 A webhook can respond to multiple triggers. BUT, you cannot combine the  "After any event" with other triggers, it would have to be the only trigger. I hope this makes sense, because "After any event" already includes everything.
 
