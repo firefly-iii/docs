@@ -25,9 +25,17 @@ When triggered, Firefly III will respond by sending a data package to the URL of
 
 A webhook can only send one thing. If you want multiple responses to be sent for the same webhook, you must set up multiple webhooks.
 
+Possible options are:
+
+- Transaction details
+- Account details
+- Budget details
+- Budget amount details
+- Relevant details (see ahead for more information)
+
 ### Relevant details
 
-If you select "Relevant details" as the response, Firefly III will send the relevant data for the trigger. This is up to Firefly III to decide. For example, if you trigger on a transaction creation, the response will be the transaction itself. If you trigger on a budget, the response will be the budget itself.
+If you select "Relevant details" as the response, Firefly III will send the "relevant" data for the trigger. This is up to Firefly III to decide. For example, if you trigger on a transaction creation, the response will be the transaction itself. If you trigger on a budget, the response will be the budget itself.
 
 It is mandatory to select "Relevant details" when you select "After any event" as the trigger. This is because "After any event" can trigger on many different events, and Firefly III cannot know what you want to receive. Therefore, it will always send the relevant details for the event that triggered the webhook.
 
