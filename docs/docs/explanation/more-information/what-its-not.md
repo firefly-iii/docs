@@ -48,6 +48,8 @@ Firefly III is a multi-user environment. But each user is strictly separated fro
 
 A month goes from the 1st to the last day of the month. You can't tell Firefly III to go from the 23rd to the 22nd of the next month.
 
+For more information on this, see also the page on [time periods](../firefly-iii/background/time-periods.md) and [personal finances](../firefly-iii/background/personal-finances.md).
+
 ### Bi-weekly or four-weekly periods
 
 This will not be added, sorry. The logic necessary to match whatever 2-week or 4-week period you need is to complex. If you get paid in 2 or 4-week intervals, consider changing your financial system to be monthly instead, instead of having your pay stubs determin your financial cadence.

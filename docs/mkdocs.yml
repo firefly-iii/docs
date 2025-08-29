@@ -179,11 +179,12 @@ nav:
           - Background information:
               - Personal finances: explanation/firefly-iii/background/personal-finances.md
               - Zero based budgeting: explanation/firefly-iii/background/zero-based-budgeting.md
+              - Time periods: explanation/firefly-iii/background/time-periods.md
       - Data Importer:
           - About the Data Importer:
               - Introduction and features: explanation/data-importer/about/introduction.md
               - GoCardless and Salt Edge: explanation/data-importer/about/gocardless-salt-edge.md
-              - Simplefin: explanation/data-importer/about/simplefin.md
+              - SimpleFIN: explanation/data-importer/about/simplefin.md
           - Separate tool: explanation/data-importer/separate-tool.md
           - Ignored values: explanation/data-importer/ignored-values.md
       - More information:
