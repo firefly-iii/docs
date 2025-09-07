@@ -11,6 +11,10 @@ There are various scripts and tools you can use, if the Firefly III Data Importe
 
 ## Import tools
 
+## Firemerge
+
+[A customizable tool](https://github.com/lvu/firemerge) for semi-automated (not automated!) transaction entry for Firefly III.
+
 ## TrueLayer to Firefly III
 
 [truelayer2firefly](https://erwindouna.github.io/truelayer2firefly/) can import transactions from the TrueLayer-platform into Firefly III. TrueLayer is comparable to Salt Edge and GoCardless.
