@@ -57,3 +57,11 @@ When you create a webhook you can choose webhook-specific data to be the respons
 However, when you create a webhook that ALSO triggers on the creation of a new budget, you cannot set the transaction details as the expected response. In that case, you must select the option "The relevant details" (`RELEVANT`) which will automatically select the correct data to send as response.
 
 The reason this is complicated is because some webhook triggers come with multiple possible responses, so it is always up to you to select what you need. However, for some trigger combinations `RELEVANT` is the only possible response. 
+
+## Differences between version.
+
+I've not always kept a log of all changes between API versions, but for v6.4.0 onwards this is done in the diff files listed below.
+
+- [Diff between v6.3.0 and v6.4.0](https://api-docs.firefly-iii.org/differences/v6.3.0-v6.4.0)
+<!-- - [Diff between v6.4.0 and v6.4.1](https://api-docs.firefly-iii.org/differences/v6.4.0-v6.4.1) -->
+
