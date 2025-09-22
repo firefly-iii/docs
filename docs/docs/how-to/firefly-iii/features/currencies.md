@@ -27,29 +27,29 @@ New currencies added through this form will be enabled for use.
 
 ![This screen allows you to create a new currency. Pretty straight-forward.](../../../images/how-to/firefly-iii/features/currency-create.png)
 
-## Set the native currency
+## Set the primary currency
 
-Firefly III support multiple currencies, and each administration has a native currency. When you install Firefly III this is the Euro. You can change this if you want to.
+Firefly III support multiple currencies, and each administration has a primary currency. When you install Firefly III this is the Euro. You can change this if you want to.
 
-Go to Options > Financial administrations (or `/administrations`) and under Actions, click "Edit". Here you can set the native currency for your current financial administration.
+Go to Options > Financial administrations (or `/administrations`) and under Actions, click "Edit". Here you can set the primary currency for your current financial administration.
 
-![In this instance of Firefly III, the default currency is the British Pound.](../../../images/how-to/firefly-iii/features/currency-native.png)
+![In this instance of Firefly III, the primary currency is the British Pound.](../../../images/how-to/firefly-iii/features/currency-native.png)
 
 On the overview of your currencies at `/currencies` you can see ALL currencies (disabled en enabled):
 
-![In this instance of Firefly III, the default currency is the British Pound.](../../../images/how-to/firefly-iii/features/currency-default.png)
+![In this instance of Firefly III, the primary currency is the British Pound.](../../../images/how-to/firefly-iii/features/currency-default.png)
 
 ## Set currency for asset accounts
 
 Asset accounts have one main currency. My personal bank accounts are in Euro. But I have a credit card in USD. You can set this when you create or edit an asset account. This is important when you create or import transactions.
 
-![Each account has its own default currency.](../../../images/how-to/firefly-iii/features/currency-asset.png)
+![Each account has its own currency.](../../../images/how-to/firefly-iii/features/currency-asset.png)
 
 ## Creating transactions
 
 When you try to create a transaction in Euro's on an asset account that in US Dollars, you must set the amount in both USD and EUR.
 
-![When you withdraw an amount in a &quot;foreign&quot; currency, Firefly III needs to know the amount in the native currency.](../../../images/how-to/firefly-iii/features/currency-withdrawal.png)
+![When you withdraw an amount in a &quot;foreign&quot; currency, Firefly III needs to know the amount in the primary currency.](../../../images/how-to/firefly-iii/features/currency-withdrawal.png)
 
 ## Creating transfers
 

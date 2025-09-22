@@ -6,7 +6,7 @@ Naturally, this means that you can share a financial administration, so two or m
 
 ## Administration settings
 
-For now, under the "Financial administrations" entry in the left hand menu (or `/administrations`), you can set the native currency for your administration. This is the currency that all your accounts and transactions will be in by default. You can also create transactions in any other currency, but this will be the default.
+For now, under the "Financial administrations" entry in the left hand menu (or `/administrations`), you can set the primary currency for your administration. This is the currency that all your accounts and transactions will be in by default. You can also create transactions in any other currency, but this will be the default.
 
 This setting, for those of you who are familiar with it, replaces the "default currency"  setting that was places under [Currencies](currencies.md) (`/currencies`).
 
