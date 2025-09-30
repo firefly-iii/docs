@@ -21,9 +21,9 @@ IMPORT_DIR_ALLOWLIST=/your/directory
 
 Importing CSV or camt.053 data requires two separate files: the actual content (CSV or XML) and a JSON configuration file. You have get this configuration file *first*, by doing a single import through the UI. Once you have the JSON configuration file you can use it to import any file from your bank, assuming the structure of the file is the same.
 
-### Importing from GoCardless and Salt Edge
+### Importing from GoCardless
 
-If you import from GoCardless or Salt Edge, you just need the JSON configuration file from the data importer. This can be a little confusing because GoCardless also offers JSON downloads of your raw transactions. All you need to import is the JSON file from the data importer itself. This will contain enough information to download everything from GoCardless or Salt Edge.
+If you import from GoCardless, you just need the JSON configuration file from the data importer. This can be a little confusing because GoCardless also offers JSON downloads of your raw transactions. All you need to import is the JSON file from the data importer itself. This will contain enough information to download everything from GoCardless.
 
 ## Commands
 

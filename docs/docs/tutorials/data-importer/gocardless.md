@@ -21,7 +21,7 @@ Browse to importer, select CSV, upload a CSV file.
 
 If you import from GoCardless, you can also optionally upload a GoCardless configuration file. Also, you may have to enter your GoCardless ID and GoCardless Key, if they are not part of the data importer's environment variables.
 
-Read the page about [GoCardless and Spectre](../../explanation/data-importer/about/gocardless-salt-edge.md) for more information about GoCardless.
+Read the page about [GoCardless](../../explanation/data-importer/about/gocardless.md) for more information about GoCardless.
 
 ![GoCardless identifiers](../../images/tutorials/data-importer/nordigen-info.png "GoCardless identifiers")
 

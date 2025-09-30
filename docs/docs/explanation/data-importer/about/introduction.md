@@ -5,8 +5,11 @@ its own [installation guide](../../../how-to/data-importer/installation/docker.m
 
 The importer can import CSV files and CAMT.053 files. It can also connect to banks using third party services:
 
-- [Salt Edge's Spectre API and GoCardless' bank API](gocardless-salt-edge.md).
+- [GoCardless' bank API](gocardless.md).
 - [SimpleFIN](simplefin.md).
+
+!!! warning
+    As of October 31st, 2025 Salt Edge no longer offers free-tier access for Firefly III users. To prevent disappointment, the instructions for Salt Edge have been removed and in due time, Salt Edge support will be removed from the data importer.
 
 Importing transactions can be complicated, so be sure to check out the following pages:
 
@@ -18,13 +21,13 @@ Importing transactions can be complicated, so be sure to check out the following
 
 ### Can the data importer sync with my bank?
 
-Yes. The data importer uses Spectre and GoCardless to connect to over 6000 banks. Please see the [configuration page](../../../how-to/data-importer/how-to-configure.md) for more details and read up on [GoCardless and Salt Edge / Spectre](gocardless-salt-edge.md).
+Yes. The data importer uses Spectre and GoCardless to connect to over 6000 banks. Please see the [configuration page](../../../how-to/data-importer/how-to-configure.md) for more details and read up on [GoCardless](gocardless.md).
 
 There is also a [Firefly III API](../../../references/firefly-iii/api/index.md) that you can connect to \[YOUR BANK HERE\], if you are clever enough to build something in your favorite programming language.
 
 ### Can you clean-up the transactions from \[my bank\]?
 
-If your bank delivers terrible files, or when the GoCardless / Salt Edge import is exceptionally messy, there is not much I can do about it.
+If your bank delivers terrible files, or when the GoCardless import is exceptionally messy, there is not much I can do about it.
 
 There aretoo many banks and financial institutions in the world for me to manage exceptions or options for. If you run into a data quality issue, the best place to get it addressed is at the source: your bank.
 

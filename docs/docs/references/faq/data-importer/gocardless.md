@@ -1,4 +1,4 @@
-# Salt Edge and GoCardless
+# GoCardless
 
 ## When I delete a transaction, it is imported again?
 

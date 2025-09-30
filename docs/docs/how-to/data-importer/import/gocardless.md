@@ -26,6 +26,6 @@ You can sign up for the GoCardless API on [their website](https://bankaccountdat
      5. Follow the instructions
      6. Profit!
 
-GoCardless supports [many PSD2-compliant banks in the EU and the UK](https://nordigen.com/en/coverage/), making it an alternative for Salt Edge's Spectre API, if you happen to live in these regions.
+GoCardless supports [many PSD2-compliant banks in the EU and the UK](https://nordigen.com/en/coverage/) if you happen to live in these regions.
 
 Access to the GoCardless API is limited to raw data only, which means you may have to do data cleanup yourself. You can use Firefly III [rules](../../firefly-iii/features/rules.md) or build something yourself.

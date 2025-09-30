@@ -56,9 +56,9 @@ The fields that are available are:
 In all of these cases it's important that you always select the same roles for the same columns, or duplicate detection may not work as expected.
 
 
-#### Nordigen and Salt Edge identifier-based duplicate detection
+#### Nordigen identifier-based duplicate detection
 
-For Nordigen and Salt Edge only two fields are available to be used for identifier-based duplicate detection, because the API is pretty consistent in what it delivers:
+For Nordigen only two fields are available to be used for identifier-based duplicate detection, because the API is pretty consistent in what it delivers:
 
 * External identifier: The entry in each downloaded transaction that uniquely defines each transaction. 
 * Additional information: The free format text in each downloaded transaction that contains some extra information of each transaction. 

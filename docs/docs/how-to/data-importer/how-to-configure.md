@@ -14,7 +14,7 @@ Please also refer to the following guides.
 - [How to install the data importer using Docker](installation/docker.md)
 - [How to install the data importer on your own server](installation/self-managed.md)
 - [General introduction to the data importer](../../explanation/data-importer/about/introduction.md)
-- [Explanation about GoCardless and Salt Edge Spectre](../../explanation/data-importer/about/gocardless-salt-edge.md)
+- [Explanation about GoCardless](../../explanation/data-importer/about/gocardless.md)
 - [Explanation about SimpleFIN](../../explanation/data-importer/about/simplefin.md)
 - [How to get a personal access token](../../how-to/firefly-iii/features/api.md)
 
@@ -63,7 +63,7 @@ These variables are mutually exclusive. If you set both, the data importer will 
 
 ## Configure GoCardless
 
-If you wish to use GoCardless, please [read about GoCardless](../../explanation/data-importer/about/gocardless-salt-edge.md) first. Then, set the following variables. This is necessary if you wish to connect to your bank through GoCardless.
+If you wish to use GoCardless, please [read about GoCardless](../../explanation/data-importer/about/gocardless.md) first. Then, set the following variables. This is necessary if you wish to connect to your bank through GoCardless.
 
 * `NORDIGEN_ID` is your GoCardless Client ID
 * `NORDIGEN_KEY` is your GoCardless Client Secret
@@ -73,12 +73,8 @@ If you do not set these, the data importer will ask for them.
 
 ## Configure Spectre
 
-Third, optionally, if you wish to use Spectre, please [read about Spectre](../../explanation/data-importer/about/gocardless-salt-edge.md) first. Then, set the following variables. This is necessary if you wish to connect to your bank through Spectre.
-
-* `SPECTRE_APP_ID` is your Spectre / Salt Edge Client ID
-* `SPECTRE_SECRET` is your Spectre / Salt Edge Client secret
-
-If you do not set these, the data importer will ask for them.
+!!! warning
+    As of October 31st, 2025 Salt Edge no longer offers free-tier access for Firefly III users. To prevent disappointment, the instructions for Salt Edge have been removed and in due time, Salt Edge support will be removed from the data importer.
 
 ## Configure SimpleFIN
 

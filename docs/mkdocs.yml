@@ -111,7 +111,6 @@ nav:
               - How to automate the import: how-to/data-importer/import/automated.md
               - How to manage JSON: how-to/data-importer/import/json.md
               - How to map data: how-to/data-importer/import/map-data.md
-              - How to use Salt Edge: how-to/data-importer/import/salt-edge.md
               - How to use GoCardLess: how-to/data-importer/import/gocardless.md
               - How to use SimpleFIN: how-to/data-importer/import/simplefin.md
               - How to import transfers between accounts: how-to/data-importer/import/transfers.md
@@ -153,7 +152,7 @@ nav:
           - Data Importer:
               - General questions: references/faq/data-importer/general.md
               - Common import issues: references/faq/data-importer/import.md
-              - Salt Edge and GoCardless: references/faq/data-importer/salt-edge-gocardless.md
+              - GoCardless: references/faq/data-importer/gocardless.md
           - Installing and running: references/faq/install.md
           - Development: references/faq/development.md
           - Docker: references/faq/docker.md
@@ -183,7 +182,7 @@ nav:
       - Data Importer:
           - About the Data Importer:
               - Introduction and features: explanation/data-importer/about/introduction.md
-              - GoCardless and Salt Edge: explanation/data-importer/about/gocardless-salt-edge.md
+              - GoCardless: explanation/data-importer/about/gocardless.md
               - SimpleFIN: explanation/data-importer/about/simplefin.md
           - Separate tool: explanation/data-importer/separate-tool.md
           - Ignored values: explanation/data-importer/ignored-values.md

@@ -34,7 +34,7 @@ All of these commands require a working Personal Access token (`Authorization: B
 
 You can upload a file and a JSON file to the data importer to have it imported into your Firefly III installation automatically. To illustrate how this works, here's a CURL request that works.
 
-The file and the JSON file will both be uploaded, after which the result will be a log of import attempt. Remember that the JSON file is a reference to the data importer configuration file. You do not need to download transactions from GoCardless or Salt Edge. The `Bearer ` value is static and must not be changed, but `ey....` must be replaced with a Personal Access Token.
+The file and the JSON file will both be uploaded, after which the result will be a log of import attempt. Remember that the JSON file is a reference to the data importer configuration file. You do not need to download transactions from GoCardless or other external providers. The `Bearer ` value is static and must not be changed, but `ey....` must be replaced with a Personal Access Token.
 
 ```bash
 curl --location --request POST 'https://data-importer.example.com/autoupload?secret=YOURSECRETHERE' \
