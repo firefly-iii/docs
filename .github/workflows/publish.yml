@@ -8,9 +8,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      deployments: write
     steps:
       - uses: actions/checkout@v5
       - name: Install packages
@@ -50,10 +47,11 @@ jobs:
 
           # also copy security.txt
           cp -r docs/.well-known site/.well-known
-      - name: Deploy
-        uses: cloudflare/wrangler-action@v3
+      - name: Publish to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: aaf8eef9dd565a13de210d18c7462092
           projectName: docs
-          workingDirectory: docs/site
+          directory: docs/site
+          wranglerVersion: '3'
