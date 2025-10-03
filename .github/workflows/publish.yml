@@ -53,5 +53,5 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: aaf8eef9dd565a13de210d18c7462092
           projectName: docs
-          directory: docs/site
+          workingDirectory: docs/site
           wranglerVersion: '3'
