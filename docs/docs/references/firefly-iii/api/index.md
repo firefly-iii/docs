@@ -63,5 +63,5 @@ The reason this is complicated is that some webhook triggers come with multiple 
 I've not always kept a log of all changes between API versions, but for v6.4.0 onwards this is done in the diff files listed below.
 
 - [Diff between v6.3.0 and v6.4.0](https://api-docs.firefly-iii.org/differences/v6.3.0-v6.4.0)
-<!-- - [Diff between v6.4.0 and v6.4.1](https://api-docs.firefly-iii.org/differences/v6.4.0-v6.4.1) -->
+- [Diff between v6.4.0 and v6.4.1](https://api-docs.firefly-iii.org/differences/v6.4.0-v6.4.1)
 
