@@ -8,6 +8,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
     steps:
       - uses: actions/checkout@v5
       - name: Install packages
@@ -54,4 +57,3 @@ jobs:
           accountId: aaf8eef9dd565a13de210d18c7462092
           projectName: docs
           workingDirectory: docs/site
-          wranglerVersion: '3'
