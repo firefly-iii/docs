@@ -48,6 +48,7 @@ jobs:
           # also copy security.txt
           cp -r docs/.well-known site/.well-known
       - uses: cloudflare/wrangler-action@v3
+        name: Publish to Cloudflare
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: aaf8eef9dd565a13de210d18c7462092
