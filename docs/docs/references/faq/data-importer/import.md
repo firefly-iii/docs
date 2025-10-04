@@ -25,6 +25,10 @@ Some banks will insert an extra header-row (`Source,Amount,Destination`) every 1
 
 If you don't specifically configure the importer to import non-unique rows, open the file in Excel or Numbers and add a row with a basic sequence: 1,2,3,4 etc. That should be enough to make the rows unique.
 
+## How do I do mass import for each account with individual config for each account?
+
+You can do this by using different directories with a `_fallback.json` in each, and triggering the importer with POST requests, including the desired directory in each request.
+
 ## Missing data?
 
 Some banks do not deliver enough data to make decent imports. You can see this when the following things happen:
