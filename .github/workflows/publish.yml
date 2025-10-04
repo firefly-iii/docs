@@ -52,4 +52,4 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: aaf8eef9dd565a13de210d18c7462092
           command: |
-            pages deploy docs/site --project-name=docs
+            pages deploy docs/site --project-name=docs --commit-dirty=true
