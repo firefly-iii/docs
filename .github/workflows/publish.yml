@@ -51,8 +51,5 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: aaf8eef9dd565a13de210d18c7462092
-          projectName: docs
-          directory: docs/site
           command: |
-            pages project list
             pages deploy docs/site --project-name=docs
