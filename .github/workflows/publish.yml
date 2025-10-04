@@ -47,11 +47,12 @@ jobs:
 
           # also copy security.txt
           cp -r docs/.well-known site/.well-known
-      - name: Publish to Cloudflare Pages
-        uses: cloudflare/pages-action@v1
+      - uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: aaf8eef9dd565a13de210d18c7462092
           projectName: docs
           directory: docs/site
-          wranglerVersion: '3'
+          command: |
+            pages project list
+            pages deploy docs/site --project-name=docs
