@@ -64,14 +64,6 @@ mkdir /var/www/firefly-iii
 tar -xvf FireflyIII-%FFVERSION.tar.gz -C /var/www/firefly-iii --exclude='storage'
 ```
 
-Use `sudo` if necessary, but if you do, make sure that you set the ownership of the `/var/www/firefly-iii` directory to `www-data` again:
-
-```bash
-# The destination directory can be changed, of course.
-sudo chown -R www-data:www-data /var/www/firefly-iii
-sudo chmod -R 775 /var/www/firefly-iii/storage
-```
-
 ### Exclude the storage directory
 
 When unpacking, make sure you do not overwrite the storage directory. That's why the `-x "storage/*"` and `--exclude='storage'` part is important. It prevents the default storage directory from being extracted. You will overwrite it anyway from the old installation directory.
@@ -98,6 +90,16 @@ php artisan cache:clear
 php artisan view:clear
 php artisan firefly-iii:upgrade-database
 php artisan firefly-iii:laravel-passport-keys
+```
+
+### Restore file permissions
+
+Use `sudo` if necessary, but if you do, make sure that you set the ownership of the `/var/www/firefly-iii` directory to `www-data` again:
+
+```bash
+# The destination directory can be changed, of course.
+sudo chown -R www-data:www-data /var/www/firefly-iii
+sudo chmod -R 775 /var/www/firefly-iii/storage
 ```
 
 ## Alternatives
