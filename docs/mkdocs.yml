@@ -50,8 +50,15 @@ nav:
           - Files:
               - Import a basic CSV file: tutorials/data-importer/csv.md
           - Data providers:
+              - What are data providers?: tutorials/data-importer/data-providers.md
+              - import from basiq.io: tutorials/data-importer/basiq.md
+              - Import from Enable Banking: tutorials/data-importer/eb.md
+              - Import from FinTS: tutorials/data-importer/fints.md
               - Import from GoCardless: tutorials/data-importer/gocardless.md
+              - Import from Lunch Flow: tutorials/data-importer/lunchflow.md
+              - Import from Open Banking/HBCI: tutorials/data-importer/open-banking.md
               - Import from SimpleFIN: tutorials/data-importer/simplefin.md
+              - Import from teller.io: tutorials/data-importer/teller.md
   - How-to guides:
       - Home: how-to/index.md
       - General:
