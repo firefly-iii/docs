@@ -56,7 +56,7 @@ nav:
               - Import from FinTS: tutorials/data-importer/fints.md
               - Import from GoCardless: tutorials/data-importer/gocardless.md
               - Import from Lunch Flow: tutorials/data-importer/lunchflow.md
-              - Import from Open Banking/HBCI: tutorials/data-importer/open-banking.md
+              - Import from Open Banking/HBCI: tutorials/data-importer/obg.md
               - Import from SimpleFIN: tutorials/data-importer/simplefin.md
               - Import from teller.io: tutorials/data-importer/teller.md
   - How-to guides:
@@ -118,8 +118,7 @@ nav:
               - How to automate the import: how-to/data-importer/import/automated.md
               - How to manage JSON: how-to/data-importer/import/json.md
               - How to map data: how-to/data-importer/import/map-data.md
-              - How to use GoCardLess: how-to/data-importer/import/gocardless.md
-              - How to use SimpleFIN: how-to/data-importer/import/simplefin.md
+              - How to use data providers: how-to/data-importer/import/third-party-providers.md
               - How to import transfers between accounts: how-to/data-importer/import/transfers.md
               - How to handle (missed) duplicates: how-to/data-importer/import/duplicates.md
           - Advanced things:

@@ -5,17 +5,14 @@ The Data Importer communicates with Firefly III over the [API](../../references/
 On this page you will read how to:
 
 1. Configure access to the Firefly III API.
-2. Configure GoCardless (optional)
-3. Configure Spectre (optional)
-4. Configure SimpleFIN (optional)
+2. Configure third party data providers (optional)
 
 Please also refer to the following guides.
 
 - [How to install the data importer using Docker](installation/docker.md)
 - [How to install the data importer on your own server](installation/self-managed.md)
 - [General introduction to the data importer](../../explanation/data-importer/about/introduction.md)
-- [Explanation about GoCardless](../../explanation/data-importer/about/gocardless.md)
-- [Explanation about SimpleFIN](../../explanation/data-importer/about/simplefin.md)
+- [What are third party data providers?](../../tutorials/data-importer/data-providers.md)
 - [How to get a personal access token](../../how-to/firefly-iii/features/api.md)
 
 ## Access to Firefly III
@@ -61,7 +58,23 @@ You can get these variables by reading [how to talk to the API](../firefly-iii/f
 
 These variables are mutually exclusive. If you set both, the data importer will use the Personal Access Token. If you set neither, the data importer will ask for the client ID.
 
-## Configure GoCardless
+## Configure third party data providers (optional)
+
+The following steps are also listed on the [page about data providers under the tutorials section](../../tutorials/data-importer/data-providers.md), but here are just the connection instructions for each provider the data provider supports. And also, the instructions for data importers not yet supported. Sorry about that, I am working hard to get them integrated into the data importer!
+
+### basiq.io
+
+Not yet supported. Stay tuned!
+
+### Enable Banking
+
+Not yet supported. Stay tuned!
+
+### FinTS
+
+Not yet supported. Stay tuned!
+
+### GoCardless
 
 If you wish to use GoCardless, please [read about GoCardless](../../explanation/data-importer/about/gocardless.md) first. Then, set the following variables. This is necessary if you wish to connect to your bank through GoCardless.
 
@@ -71,27 +84,38 @@ If you wish to use GoCardless, please [read about GoCardless](../../explanation/
 
 If you do not set these, the data importer will ask for them.
 
-## Configure Spectre
+### Lunch Flow
 
-!!! warning
-    As of October 31st, 2025 Salt Edge no longer offers free-tier access for Firefly III users. To prevent disappointment, the instructions for Salt Edge have been removed and in due time, Salt Edge support will be removed from the data importer.
+Not yet supported. Stay tuned!
 
-## Configure SimpleFIN
+### Open Banking/HBCI
+
+Not yet supported. Stay tuned!
+
+### SimpleFIN
 
 The SimpleFIN connection can be set up through the UI, but you can also set the following environment variables:
 
 - `SIMPLEFIN_TOKEN` is your SimpleFIN connection token.
 - `SIMPLEFIN_CORS_ORIGIN_URL` is the URL of the data importer, which is used to set the CORS origin header. This is necessary for the data importer to connect to SimpleFIN.
 
+### teller.io
+
+Not yet supported. Stay tuned!
+
+### Configure Spectre
+
+!!! warning
+    As of October 31st, 2025 Salt Edge no longer offers free-tier access for Firefly III users. To prevent disappointment, the instructions for Salt Edge have been removed and in due time, Salt Edge support will be removed from the data importer.
+
+
 ## Where to set the configuration?
 
-All the configuration values mentioned on this page are stored in environment variables:
+All the configuration values mentioned on this page are stored in environment variables. For example:
 
 * `FIREFLY_III_URL`
 * `FIREFLY_III_ACCESS_TOKEN`
 * `FIREFLY_III_CLIENT_ID`
-* `NORDIGEN_ID` and `NORDIGEN_KEY` (for GoCardless)
-* `SPECTRE_APP_ID` and `SPECTRE_SECRET`
 
 You can use the `.env` file to store them, use Docker's `-e` flag to set them or use your operating system to set these values. This depends on your installation method, [Docker](installation/docker.md) or [self-managed](installation/self-managed.md).
 
