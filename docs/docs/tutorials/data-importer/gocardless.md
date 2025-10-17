@@ -1,19 +1,11 @@
----
-hide:
-  - feedback
----
-
-
 # Import from GoCardless
 
-!!! tip
-    I've not yet finished writing this tutorial. Some items may not be filled in yet. I apologize for the inconvenience. Please refer to the [support page](../../explanation/support.md) if you have questions.
+!!! note
+    GoCardless is "shifting away" from their Bank Account Data products (aka the service you need for this to work). These instructions are only here for users who still have access to their GoCardless account.
 
-## Select a data source
+## Select GoCardless
 
-- Link to how to install the data importer
-
-Browse to importer, select CSV, upload a CSV file.
+My apologies, in this screenshot it is still called "Nordigen".
 
 ![Select import routine](../../images/tutorials/data-importer/selection-camt.png "Nordigen is called GoCardless nowadays")
 
@@ -35,9 +27,9 @@ If you continue, you will end up at the configuration screen.
 
 After uploading a file, you'll be presented with a list of options. Some options are specific to a way of importing, like CSV or camt.053 files, GoCardless or Spectre. We start from the top and go down the page.
 
-## GoCardless and Spectre import options
+## GoCardless import options
 
-For GoCardless and Spectre you must first select the accounts to import from, and indicate in which account the data must be imported.
+For GoCardless you must first select the accounts to import from, and indicate in which account the data must be imported.
 
 Your selection may be limited: if the IBAN matches you have no choice. If the currency matches, only accounts with that currency can be selected.
 
@@ -64,11 +56,9 @@ When you check this the data importer will add a tag to each imported transactio
 
 You can set a custom import tag if you do not like the default one. To learn more about the possibilities, read the [FAQ on custom import tags](../../how-to/data-importer/advanced/custom-import-tag.md).
 
- 
-
 ### Date range
 
-For GoCardless and Spectre imports, you can select a date range, limiting the import. Options are as follows:
+For GoCardless imports, you can select a date range, limiting the import. Options are as follows:
 
 - Import everything.
 - Go back a number of days, weeks, months or years.
