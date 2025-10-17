@@ -20,9 +20,12 @@ This data provider is not yet supported, so there are no instructions yet. Stay 
 
 ## GoCardless
 
+!!! note
+    GoCardless is "shifting away" from their Bank Account Data products (aka the service you need for this to work). These instructions are only here for users who still have access to their GoCardless account.
+
 GoCardless API access is paid, and they are a commercial organization. Please read and agree with all the terms the company may present you with. They have their own data usage and privacy policies, which you must read up on.
 
-You can sign up for the GoCardless API on [their website](https://bankaccountdata.gocardless.com/signup). 
+In the past, you could sign up for the GoCardless API on [their website](https://bankaccountdata.gocardless.com/signup). 
 
 GoCardless supports [many PSD2-compliant banks in the EU and the UK](https://nordigen.com/en/coverage/) if you happen to live in these regions.
 
