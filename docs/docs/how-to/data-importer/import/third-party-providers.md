@@ -31,7 +31,7 @@ GoCardless supports [many PSD2-compliant banks in the EU and the UK](https://nor
 
 ## Lunch Flow
 
-This data provider is not yet supported, so there are no instructions yet. Stay tuned!
+[Lunch Flow](https://www.lunchflow.app/) is a paid provider that can connect to many banks through a bunch of APIs they maintain. You can register on their website.
 
 ## Open Banking/HBCI
 
