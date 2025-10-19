@@ -5,3 +5,6 @@ pip install mkdocs mkdocs-material mkdocs-git-revision-date-plugin mkdocs-redire
 mkdocs serve
 
 mkdocs serve --dirtyreload
+
+
+mkdocs serve --dirty -a 192.168.96.162:8000
