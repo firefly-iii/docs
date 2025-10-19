@@ -8,6 +8,12 @@ In your dashboard, under "Connections", click "New Connection" and follow the in
 
 ![Create Connection](../../images/tutorials/data-importer/lunchflow-create-connection.png "Create a new connection")
 
+### Customize the connection
+
+On the page of your new connection, open the dropdown that says "X Accounts". Under the tabs "Details", "Payee", "Notes" and "Balances" you can set various options that will reflect in Firefly III. Adjust them to your liking.
+
+Keep in mind that the "Notes" field ends up in the transaction description in Firefly III.
+
 ## Create an API key
 
 Next, go to "Destinations" and click "Add Destination". Select "API" as the destination type. Give your new destination the name "Firefly III".
