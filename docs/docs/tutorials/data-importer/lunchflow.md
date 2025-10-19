@@ -10,9 +10,11 @@ In your dashboard, under "Connections", click "New Connection" and follow the in
 
 ### Customize the connection
 
-On the page of your new connection, open the dropdown that says "X Accounts". Under the tabs "Details", "Payee", "Notes" and "Balances" you can set various options that will reflect in Firefly III. Adjust them to your liking.
+On the page of your new connection, open the dropdown that says "X Accounts". Under the tabs "Details", "Payee", "Notes" and "Balances" you can set various options that will reflect in Firefly III. Adjust them to your liking, but make sure that the "Notes" value contains something. I suggest "Remittance Information Unstructured".
 
-Keep in mind that the "Notes" field ends up in the transaction description in Firefly III.
+!!! note
+    The "Notes" field ends up in the transaction description in Firefly III, and if you leave it empty, all transactions end up as "(no description)", which is not very useful.
+
 
 ## Create an API key
 
