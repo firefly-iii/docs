@@ -13,7 +13,7 @@ All search filters work like this:
 - `example:value` for basic words
 - `example:"long value"` for words with spaces
 - `example:123` for numbers
-- `exampleame:123.45` for numbers with decimals
+- `example:123.45` for numbers with decimals
 - `example:2023-09-17` for dates
 - `-example:value` for the negation of a search filter. It works on all previous examples too.
 
