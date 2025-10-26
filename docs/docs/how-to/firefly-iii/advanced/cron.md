@@ -230,3 +230,11 @@ You will see a final overview
 ![Overview](../../../images/how-to/firefly-iii/advanced/ifttt-overview.png)
 
 Press Finish, and you're done!
+
+## Force the cron job to run
+
+Depending on your setup (see earlier on this page), you can force the cron job to run using:
+
+```
+php artisan firefly-iii:cron --force
+```
