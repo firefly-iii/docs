@@ -2,6 +2,9 @@
 
 ## Introduction
 
+!!! warning
+    GoCardless is sunsetting this free service and registration is unfortunately closed. There is nothing I can do about this. 
+
 The GoCardless API is free-to-use for Firefly III users. The GoCardless product however is paid, and they are a commercial organization. Furthermore, the API access for Firefly III users may be limited.
 
 Please read and agree with all the terms the company may present you with. They have their own data usage and privacy policies, which you must read up on.
