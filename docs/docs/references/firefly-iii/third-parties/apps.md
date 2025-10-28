@@ -149,6 +149,10 @@ David built a tool to send you a monthly overview of your expenses by category.
 - [Credits](https://github.com/davidschlachter)
 - [Website and documentation](https://github.com/davidschlachter/firefly-iii-email-summary)
 
+Yemzikk forked and enhanced this project with a **modern UI**, **improved formatting**, **clearer summary messages**, and an **added budget summary section** for a more complete monthly financial overview.
+
+- [Enhanced version by Yemzikk](https://github.com/yemzikk/firefly-iii-email-summary)
+
 ## Import tools
 
 All import related tools are listed [on the page on importing data](../../data-importer/third-party-tools.md).
