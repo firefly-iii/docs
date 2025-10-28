@@ -11,7 +11,7 @@ Please also refer to the following guides.
 
 - [How to install the data importer using Docker](installation/docker.md)
 - [How to install the data importer on your own server](installation/self-managed.md)
-- [General introduction to the data importer](../../explanation/data-importer/about/introduction.md)
+- [General introduction to the data importer](../../explanation/data-importer/introduction.md)
 - [What are third party data providers?](../../tutorials/data-importer/data-providers.md)
 - [How to get a personal access token](../../how-to/firefly-iii/features/api.md)
 

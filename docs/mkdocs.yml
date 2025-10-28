@@ -114,7 +114,7 @@ nav:
               - Using Kubernetes: how-to/data-importer/upgrade/kubernetes.md
               - Using a self-managed server: how-to/data-importer/upgrade/self-managed.md
           - Importing data:
-              - How to import CSV or CAMT.053 files: how-to/data-importer/import/csv.md
+              - How to import files: how-to/data-importer/import/file.md
               - How to automate the import: how-to/data-importer/import/automated.md
               - How to manage JSON: how-to/data-importer/import/json.md
               - How to map data: how-to/data-importer/import/map-data.md
@@ -186,10 +186,7 @@ nav:
               - Zero based budgeting: explanation/firefly-iii/background/zero-based-budgeting.md
               - Time periods: explanation/firefly-iii/background/time-periods.md
       - Data Importer:
-          - About the Data Importer:
-              - Introduction and features: explanation/data-importer/about/introduction.md
-              - GoCardless: explanation/data-importer/about/gocardless.md
-              - SimpleFIN: explanation/data-importer/about/simplefin.md
+          - About: explanation/data-importer/about/introduction.md
           - Separate tool: explanation/data-importer/separate-tool.md
           - Ignored values: explanation/data-importer/ignored-values.md
       - More information:
