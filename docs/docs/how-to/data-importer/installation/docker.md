@@ -85,9 +85,8 @@ You should get back on the Data Importer index:
 
 You are now ready to go!
 
-- [Tutorial: Import from GoCardless](../../../tutorials/data-importer/gocardless.md)
-- [Tutorial: Import a basic CSV file](../../../tutorials/data-importer/csv.md)
-- [How-to: import CSV or camt.053 files](../import/csv.md)
+- [Tutorial: Import from a third party data provider](../../../tutorials/data-importer/data-providers.md)
+- [How-to: import a data file](../import/file.md)
 
 ## Plain Docker
 

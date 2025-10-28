@@ -24,7 +24,7 @@ There may be a standard configuration file for your bank in **[this GitHub repos
 
 ## Configure the import
 
-The options on this page are explained on the page [how to import a CSV file](../../how-to/data-importer/import/csv.md). The most important options are:
+The options on this page are explained on the page [how to import a file](../../how-to/data-importer/import/file.md). The most important options are:
 
 - The delimiter (comma's, semicolons or something else)
 - Headers, yes or no?

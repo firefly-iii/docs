@@ -13,7 +13,7 @@ My apologies, in this screenshot it is still called "Nordigen".
 
 If you import from GoCardless, you can also optionally upload a GoCardless configuration file. Also, you may have to enter your GoCardless ID and GoCardless Key, if they are not part of the data importer's environment variables.
 
-Read the page about [GoCardless](../../explanation/data-importer/about/gocardless.md) for more information about GoCardless.
+Read the page about [the data importer](../../explanation/data-importer/introduction.md) for more information about GoCardless.
 
 ![GoCardless identifiers](../../images/tutorials/data-importer/nordigen-info.png "GoCardless identifiers")
 

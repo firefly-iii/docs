@@ -7,7 +7,7 @@ The importer can import [a number of file types](../../how-to/data-importer/impo
 
 ### Can the data importer sync with my bank?
 
-Yes. The data importer uses Spectre and GoCardless to connect to over 6000 banks. Please see the [configuration page](../../how-to/data-importer/how-to-configure.md) for more details and read up on [GoCardless](about/gocardless.md).
+Yes. The data importer uses several [third party data providers](../../how-to/data-importer/import/third-party-providers.md) to connect to a range of banks world wide. Please see the [configuration page](../../how-to/data-importer/how-to-configure.md) for configuration details.
 
 There is also a [Firefly III API](../../references/firefly-iii/api/index.md) that you can connect to \[YOUR BANK HERE\], if you are clever enough to build something in your favorite programming language.
 
@@ -15,7 +15,7 @@ There is also a [Firefly III API](../../references/firefly-iii/api/index.md) tha
 
 If your bank delivers terrible files, or when the GoCardless import is exceptionally messy, there is not much I can do about it.
 
-There aretoo many banks and financial institutions in the world for me to manage exceptions or options for. If you run into a data quality issue, the best place to get it addressed is at the source: your bank.
+There are too many banks and financial institutions in the world for me to manage exceptions or options for. If you run into a data quality issue, the best place to get it addressed is at the source: your bank.
 
 ### Will manually entered transactions match with imported bank transactions?
 

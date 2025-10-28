@@ -76,7 +76,7 @@ Not yet supported. Stay tuned!
 
 ### GoCardless
 
-If you wish to use GoCardless, please [read about GoCardless](../../explanation/data-importer/about/gocardless.md) first. Then, set the following variables. This is necessary if you wish to connect to your bank through GoCardless.
+This is necessary if you wish to connect to your bank through GoCardless.
 
 * `NORDIGEN_ID` is your GoCardless Client ID
 * `NORDIGEN_KEY` is your GoCardless Client Secret
@@ -86,7 +86,13 @@ If you do not set these, the data importer will ask for them.
 
 ### Lunch Flow
 
-Not yet supported. Stay tuned!
+This is necessary to set if you want to connect to Lunch Flow:
+
+Set the following environment variable. It depends a little bit on how you run the data importer how you must do this. You may have to edit `.importer.env` or set it in your Docker configuration.
+
+```
+LUNCH_FLOW_API_KEY=your_api_key_here
+```
 
 ### Open Banking/HBCI
 
@@ -94,10 +100,9 @@ Not yet supported. Stay tuned!
 
 ### SimpleFIN
 
-The SimpleFIN connection can be set up through the UI, but you can also set the following environment variables:
+The SimpleFIN connection can be set up through the UI, but you can also set the following environment variable:
 
 - `SIMPLEFIN_TOKEN` is your SimpleFIN connection token.
-- `SIMPLEFIN_CORS_ORIGIN_URL` is the URL of the data importer, which is used to set the CORS origin header. This is necessary for the data importer to connect to SimpleFIN.
 
 ### teller.io
 
@@ -107,7 +112,6 @@ Not yet supported. Stay tuned!
 
 !!! warning
     As of October 31st, 2025 Salt Edge no longer offers free-tier access for Firefly III users. To prevent disappointment, the instructions for Salt Edge have been removed and in due time, Salt Edge support will be removed from the data importer.
-
 
 ## Where to set the configuration?
 
