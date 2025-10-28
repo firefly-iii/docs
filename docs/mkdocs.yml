@@ -186,7 +186,7 @@ nav:
               - Zero based budgeting: explanation/firefly-iii/background/zero-based-budgeting.md
               - Time periods: explanation/firefly-iii/background/time-periods.md
       - Data Importer:
-          - About: explanation/data-importer/about/introduction.md
+          - About: explanation/data-importer/introduction.md
           - Separate tool: explanation/data-importer/separate-tool.md
           - Ignored values: explanation/data-importer/ignored-values.md
       - More information:
