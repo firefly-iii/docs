@@ -6,18 +6,6 @@ On this page, you will find instructions on how to register for each data provid
 
 After you have registered, your best bet is to check out the [list of tutorials about data providers](../../../tutorials/data-importer/data-providers.md) and find your data provider to continue the import process.
 
-## basiq.io
-
-This data provider is not yet supported, so there are no instructions yet. Stay tuned!
-
-## Enable Banking
-
-This data provider is not yet supported, so there are no instructions yet. Stay tuned!
-
-## FinTS
-
-This data provider is not yet supported, so there are no instructions yet. Stay tuned!
-
 ## GoCardless
 
 !!! note
@@ -44,5 +32,17 @@ SimpleFIN is a service that allows you to import financial data from various ban
 Your bank should provide you with the necessary credentials to use SimpleFIN. You can then use these credentials to connect to SimpleFIN and import your financial data into Firefly III.
 
 ## teller.io
+
+This data provider is not yet supported, so there are no instructions yet. Stay tuned!
+
+## basiq.io
+
+This data provider is not yet supported, so there are no instructions yet. Stay tuned!
+
+## Enable Banking
+
+This data provider is not yet supported, so there are no instructions yet. Stay tuned!
+
+## FinTS
 
 This data provider is not yet supported, so there are no instructions yet. Stay tuned!
