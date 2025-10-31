@@ -6,6 +6,10 @@ Rules, [once triggered](rule-triggers.md) can do a bunch of stuff to your transa
 
 Here's a summary of the rule actions you can use. 
 
+## Expression engine
+
+For most rule actions, you can also use the [expression engine](../../how-to/firefly-iii/features/expressions.md) to join text together, split text or do other creative stuff. 
+
 ## Set meta data
 
 Set the category, budget or tag(s). Link to a subscription or a piggy bank.
@@ -16,7 +20,7 @@ Clear the category, budget, all tags or a specific tag.
 
 ## Description and notes
 
-Set the description, or set notes. Append to the description or prepend to the description or notes. Also possible: swap notes and description, copy or move the notes and the description (and vice versa). You can also clear the notes entirely
+Set the description, or set notes.
 
 ## Accounts
 

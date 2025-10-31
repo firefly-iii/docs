@@ -33,7 +33,7 @@ When the triggers are hit (either ALL or ANY, see the "strict" option), Firefly 
 
 Combined, this gives you a lot of power over your financial data. There is [a reference to the full list of actions](../../../references/firefly-iii/rule-actions.md).
 
-<!-- If the list of actions is not enough, you can use the [expression engine](expressions.md) to create more complex actions. -->
+If the list of actions is not enough, you can use the [expression engine](expressions.md) to create more complex actions.
 
 You cannot fire other rules from a rule.
 
