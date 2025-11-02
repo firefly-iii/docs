@@ -133,6 +133,15 @@ FFIIITC is a tool that allows you to automatically categorize your transactions 
 - [Credits](https://github.com/akopulko)
 - [Website](https://github.com/akopulko/ffiiitc)
 
+### Firefly III - Sankey Diagram Generator
+
+**Firefly III - Sankey Diagram Generator** is a powerful command-line tool that generates Sankey diagrams from your
+Firefly III financial data. Visualize your money flows with ease: see where your income comes from and where your
+expenses go, all in a beautiful, interactive diagram.
+
+- [Credits](https://github.com/barreeeiroo)
+- [Website](https://github.com/barreeeiroo/Firefly-III-Sankey)
+
 ## Reporting
 
 ### Prometheus Exporter
