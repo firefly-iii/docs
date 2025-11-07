@@ -6,12 +6,19 @@ Be sure to also check out [the list of import tools](../../data-importer/third-p
 
 ## Home Assistant
 
-### Firefly III HA integration
+### Firefly III Core integration
 
-The Firefly III Home Assistant integration is a custom component for Home Assistant that allows you to interact with your Firefly III installation.
+A core integration that allows you to integrate Firefly III, shipped with Home Assistant sinve version 2025.11.
+
+- [Credits](https://github.com/erwindouna)
+- [Documentation](https://www.home-assistant.io/integrations/firefly_iii)
+
+### Firefly III HACS integration
+
+A custom integration, developed by community, that allows you to integrate Firefly III into Home Assistant.
 
 - [Credits](https://github.com/soloam)
-- [Website and documentation](https://github.com/soloam/ha-fireflyiii-integration)
+- [Documentation](https://github.com/soloam/ha-fireflyiii-integration)
 
 ## Mobile applications
 
