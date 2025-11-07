@@ -8,7 +8,7 @@ Be sure to also check out [the list of import tools](../../data-importer/third-p
 
 ### Firefly III Core integration
 
-A core integration that allows you to integrate Firefly III, shipped with Home Assistant sinve version 2025.11.
+A core integration that allows you to integrate Firefly III, shipped with Home Assistant since version 2025.11.
 
 - [Credits](https://github.com/erwindouna)
 - [Documentation](https://www.home-assistant.io/integrations/firefly_iii)
