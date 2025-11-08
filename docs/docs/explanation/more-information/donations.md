@@ -43,6 +43,7 @@ Because I work on open source software, several organisations give me access to 
 - Jetbrains gives me [an open source license for PHPStorm](https://www.jetbrains.com/community/opensource/)
 - GitHub gives me [free access to CoPilot](https://docs.github.com/en/copilot/managing-copilot/managing-copilot-as-an-individual-subscriber/getting-started-with-copilot-on-your-personal-account/getting-free-access-to-copilot-pro-as-a-student-teacher-or-maintainer#accessing-copilot-pro-for-free)
 - I am part of the [Docker Sponsored Open Source Program](https://www.docker.com/community/open-source/application/)
+- [LambdaTest](https://www.lambdatest.com/?utm_source=fireflyiii&utm_medium=sponsor) sponsors me and gives me free access to their features.
 
 Thank you all, for your support :-).
 
