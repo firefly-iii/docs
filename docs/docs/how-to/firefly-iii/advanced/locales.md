@@ -53,6 +53,8 @@ This is caused by missing translations. Let me know where you run into this issu
 
 When set to English (US) browsers will always format the date input fields as `09/17/2020`. Use a localized browser to fix this. Changing your Firefly III settings will not change the date input fields.
 
+![Date format in US browser](../../../images/how-to/firefly-iii/advanced/date-us.png)
+
 ### Missing packages or configuration
 
 If your server is missing the required packages, Firefly III won't be able to show the locale. You will see missing dots in numbers and other weird stuff.
