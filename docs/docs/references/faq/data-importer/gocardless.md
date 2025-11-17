@@ -12,14 +12,6 @@ Yes, this is possible. In both cases, you'll have to run the data importer a few
 
 If the data importer caches something, please make sure to press "Start Over" before you import from the next bank.
 
-## Tags added by the data importer
-
-When importing from GoCardless the data importer may add superfluous tags to your transactions. These tags contain the merchant information. This happens when you already have a destination account for the IBAN or account number of the merchant, but the name is different.
-
-In many cases, you pay to a generic account number, used by (for example) Stripe or Adyen. If you have such an expense account already saved in Firefly III, you'll notice that you transactions are linked to an expense account with a different name. Instead of having all your transactions go to that expense account, the tag can help you (or help your rules) to distinguish them. 
-
-You can remove these tags manually or create a rule that removes them.
-
 ## GoCardless imports weird transactions?
 
 This question covers the issue of GoCardless doing something weird. First, it imports transactions
@@ -31,6 +23,16 @@ This question covers the issue of GoCardless doing something weird. First, it im
 ... or with other strange details. Then, at a later moment, it comes around and imports the correct version of those particular transactions. This leaves you with double transactions and missing details.
 
 This is no something the data importer can prevent, but you can automatically remove those transactions by creating a rule that deletes all transactions that have the `pending`-tag. The [rules page](../../../how-to/firefly-iii/features/rules.md) has more details about rules.
+
+## I have a rule that does not work on imported transactions
+
+There is one [rule action](../../firefly-iii/rule-actions.md) that may not work as expected in combination with the data importer. Any rule action that responds to tags will not respond to the "custom import tag" that you can set during your import configuration.
+
+If you have a [rule](../../../how-to/firefly-iii/features/rules.md) that checks if a tag has a specific value, the custom import tag will be ignored.
+
+This is because the "custom import tag" is not present when a transaction is created by the data importer. It is added later. Since the tag is not yet there when the rule runs, it can't see it and it will be ignored.
+
+This is by design, and this behavior cannot be changed.
 
 ## I am rate limited by GoCardless!
 

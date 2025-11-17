@@ -142,6 +142,16 @@ This may happen when importing data.
 
 For Docker, you'll have to put this in front of it: `docker exec -it [container] (command here)`. The container id can be found using `docker container ls`.
 
+## I have a rule that does not work on imported transactions
+
+There is one [rule action](../../firefly-iii/rule-actions.md) that may not work as expected in combination with the data importer. Any rule action that responds to tags will not respond to the "custom import tag" that you can set during your import configuration. 
+
+If you have a [rule](../../../how-to/firefly-iii/features/rules.md) that checks if a tag has a specific value, the custom import tag will be ignored. 
+
+This is because the "custom import tag" is not present when a transaction is created by the data importer. It is added later. Since the tag is not yet there when the rule runs, it can't see it and it will be ignored. 
+
+This is by design, and this behavior cannot be changed.
+
 ## The Host-header does not match the host in the `APP_URL` environment variable?
 
 This happens when you run Firefly III behind a reverse proxy, and the reverse proxy does not send the correct `Host` header. This is usually not really a problem, but some security sensitive pages care about this.
