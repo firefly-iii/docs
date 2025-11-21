@@ -1,5 +1,9 @@
 # General installation and running questions
 
+## I cannot reach Firefly III directly using its ipv6 address!
+
+No you cannot. URLs in the form of `http(s)://[ab:cd:etc]/` are not parsed correctly by Laravel and they refuse to fix this. I am working on a hack, but don't hold your breath.
+
 ## Key path oauth-private.key does not exist or is not readable?
 
 If this file does not exist, you can run the following command:
