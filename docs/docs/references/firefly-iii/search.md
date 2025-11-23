@@ -42,7 +42,7 @@ These search options search for properties of the transaction in question.
 10. If it has an external ID: `has_any_external_id:true`
 11. ID of the transaction: `id:123`
 12. ID of the transaction journal: `journal_id:123`
-13. ID of the associated recurring transaction: `recurring_id:123`
+13. ID of the associated recurring transaction: `recurrence_id:123`
 14. If the transaction exists. This particular trigger is always true, and when you inverse it, always false: `exists:true`
 
 When you inverse these search options, they look for the opposite property.
