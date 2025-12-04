@@ -5,6 +5,10 @@
 1. Make sure you **uncheck** the "Confidential" checkbox in your OAuth Client settings.
 2. Make sure the port is also present in the `VANITY_URL`, so `http://localhost:9001` (example)
 
+## The data importer cannot deal with the amounts in my CSV file.
+
+If your bank formats numbers like `3.000` (for "three thousand") and like this: `3.123,12` (for "three thousand one hundred..."), you can set `FALLBACK_LOCALE=de_DE` in your environment variables. This should allow the data importer to recognize the numbers properly.
+
 ## All transactions are imported as today?
 
 Make sure that the date field in your CSV file (`2023-09-17`) is marked as the "Transaction" date, and make sure the format (`Y-m-d`) matches the actual content in the file. Follow the format in [this table](https://www.php.net/manual/en/datetime.format.php).
