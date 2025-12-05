@@ -44,7 +44,10 @@ Also change variable names in `.db.env` file from MYSQL\_\* to POSTGRES\_\*. MYS
 
 Change the `docker-compose.yml` file to point to `postgres` instead of `mariadb:lts`.
 
-Then, change the mount point of the database under volumes (`firefly_iii_db`) to `/var/lib/postgresql/data`.
+Then, change the mount point of the database under volumes (`firefly_iii_db`) to `/var/lib/postgresql`.
+
+!!! note
+    Pointing the image to `postgres` will install PostgreSQL-18. If you wish to use a lower version, ensure the mount point of the volumes (`firefly_iii_db`) is `/var/lib/postgresql/data`.
 
 ### Start the container
 
