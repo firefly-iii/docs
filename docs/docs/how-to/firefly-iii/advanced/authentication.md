@@ -31,6 +31,8 @@ A very popular tool that can do this [Authelia](https://www.authelia.com/docs/).
 !!! warning 
     When Firefly III is set up for remote user authentication, it will do absolutely **NO** checks on the validity of the header or the contents. Firefly III will not ask for passwords, it won't check for MFA, nothing. All authentication is delegated to the authentication proxy and Firefly III just doesn't care anymore.
 
+Be sure to turn off MFA in Firefly III, because that will remain in place.
+
 ### Enable the remote user option
 
 To enable this function change the `AUTHENTICATION_GUARD` environment variable to `remote_user_guard`.
