@@ -33,7 +33,7 @@ Instructions:
 
 #### Change to PostgreSQL
 
-Users running `arm/v7` (some Raspberry Pi) users may have to switch to PostgreSQL, because reliable containers running MariaDB and MySQL are not available for these platforms. To do this, change the following lines in the `.env` file.
+Users running `arm/v7` (some Raspberry Pi users) may have to switch to PostgreSQL, because reliable containers running MariaDB and MySQL are not available for these platforms. To do this, change the following lines in the `.env` file.
 
 ```text
 DB_CONNECTION=pgsql
