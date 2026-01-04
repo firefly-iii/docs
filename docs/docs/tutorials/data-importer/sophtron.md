@@ -1,5 +1,7 @@
 # Sophtron
 
+Sophtron is a platform that offers (among many other things) a collection of financial data aggregation APIs, that connect you to a large collection of US, Canadian and Mexican banks. Sophtron is free for individual developers and personal use, as is detailed in their [developer agreement](https://sophtron.com/developerAgreement). The Sophtron API is available to you free of charge for personal, non-commercial use under this agreement. Although there are no usage limitations, a fair use policy is implemented.
+
 ## Registration at Sophtron
 
 To use Sophtron, register a new account [on their website](https://sophtron.com/account/register). Make sure you read and understand their user / developer agreement.
