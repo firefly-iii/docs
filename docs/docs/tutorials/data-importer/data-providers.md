@@ -1,6 +1,6 @@
 # What are data providers?
 
-When you are managing your finances with Firefly III, you don't want to enter all your transactions manually. The data importer can help you with that. It can [import CSV files](csv.md) which are provided by most (if not all) banks to import data into Firefly III.
+When you are managing your finances with Firefly III, you don't want to enter all your transactions manually. The data importer can help you with that. It can import [CSV files](csv.md) and [CAMT.05x files](camt.md) which are provided by most (if not all) banks to import data into Firefly III.
 
 ## But I want more automation!
 

@@ -74,7 +74,7 @@ Finally, press "Submit ->" to continue.
 
 This step will convert Lunch Flow data to Firefly III data. It will take a moment to run. Press "Start Job ->" and wait.
 
-![Lunch Flow map data option](../../images/tutorials/data-importer/lunchflow-map-data.png "Select a range to import")
+![Lunch Flow convert data](../../images/tutorials/data-importer/lunchflow-map-data.png "Convert data")
 
 ## Map data to existing accounts
 
