@@ -31,6 +31,8 @@ You can do two things.
 
 Either way, when you click "Sophtron" on the home page of the Firefly III data importer, you should either get the question about your User ID and Access Key, or you can continue to the upload.
 
+![Select Sophtron](../../images/tutorials/data-importer/sophtron-select.png "Select Sophtron")
+
 ### Upload a configuration file
 
 If you have a configuration file you can upload it now. If you have no idea what it is, just press Next.
