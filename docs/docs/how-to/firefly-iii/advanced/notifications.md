@@ -59,7 +59,7 @@ To create a Slack Webhook URL, you have to go "Setting and Administration" of th
 Finally, click "Incoming Webhooks" and activate the feature. At the bottom of the page you can then create a new webhook. Select the channel in which you want the app (and by extension, Firefly III) to post. The URL you receive is the URL required for Firefly III. It starts with `https://hooks.slack.com/services`.
 
 !!! info
-If you are the only user of your Firefly III instance, you must set (the same) Webhook URL in both locations ("Options" > "System settings" > "Settings for notifications" AND "Options" > "Preferences").
+    If you are the only user of your Firefly III instance, you must set (the same) Webhook URL in both locations ("Options" > "System settings" > "Settings for notifications" AND "Options" > "Preferences").
 
 ## Discord and Mattermost
 
@@ -68,7 +68,7 @@ Firefly III can also send the notifications to a Discord or Mattermost channel. 
 When you use the Discord/Mattermost webhook URL, you must add `/slack` to the end of the URL. So if your Discord webhook URL is `https://discord.com/api/webhooks/123456789/ABCdefgh`, you must use `https://discord.com/api/webhooks/123456789/ABCdefgh/slack` in Firefly III. The same applies to Mattermost URLs.
 
 !!! info
-If you are the only user of your Firefly III instance, you must set (the same) Webhook URL in both locations ("Options" > "System settings" > "Settings for notifications" AND "Options" > "Preferences").
+    If you are the only user of your Firefly III instance, you must set (the same) Webhook URL in both locations ("Options" > "System settings" > "Settings for notifications" AND "Options" > "Preferences").
 
 ## Webhooks and ... webhooks?
 
