@@ -52,7 +52,7 @@ To configure these, fill in the `MAILGUN_DOMAIN`, `MAILGUN_SECRET`, and `MAILGUN
 
 ## Slack
 
-Firefly III can also send notifications to a Slack channel. Administrators can set an "Incoming Webhook URL" under `//settings/notifications`. Users can set an "Incoming Webhook URL" under `/preferences`.
+Firefly III can also send notifications to a Slack channel. Administrators can set an "Incoming Webhook URL" under `/settings/notifications`. Users can set an "Incoming Webhook URL" under `/preferences`.
 
 To create a Slack Webhook URL, you have to go "Setting and Administration" of the workspace in which you want to receive notifications. Click "Configure Apps", then "Build" in the top-right corner. Click "Create New App", and select "From Scratch". Give the app a nice name and select a workspace.
 
