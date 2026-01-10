@@ -1,11 +1,11 @@
 # How to set up notifications and emails
 
-Firefly III can send notifications for specific events. Check out `/admin` and  `/preferences` for a set of notifications
+Firefly III can send notifications for specific events. Check out `/settings/notifications` and `/preferences` for a set of notifications
 you can receive.
 
 ## Email
 
-The Firefly III administration pages (located at `/admin`) contain a test button that will send a test email message.
+The Firefly III notification setting page (located at `/settings/notifications`) contain a test button that will send a test email message.
 
 The configuration values for email are in the `.env`-file.
 
@@ -52,14 +52,14 @@ To configure these, fill in the `MAILGUN_DOMAIN`, `MAILGUN_SECRET`, and `MAILGUN
 
 ## Slack
 
-Firefly III can also send notifications to a Slack channel. Administrators can set an "Incoming Webhook URL" under `/admin`. Users can set  an "Incoming Webhook URL" under `/preferences`.
+Firefly III can also send notifications to a Slack channel. Administrators can set an "Incoming Webhook URL" under `/settings/notifications`. Users can set an "Incoming Webhook URL" under `/preferences`.
 
 To create a Slack Webhook URL, you have to go "Setting and Administration" of the workspace in which you want to receive notifications. Click "Configure Apps", then "Build" in the top-right corner. Click "Create New App", and select "From Scratch". Give the app a nice name and select a workspace.
 
 Finally, click "Incoming Webhooks" and activate the feature. At the bottom of the page you can then create a new webhook. Select the channel in which you want the app (and by extension, Firefly III) to post. The URL you receive is the URL required for Firefly III. It starts with `https://hooks.slack.com/services`.
 
 !!! info
-    If you are the only user of your Firefly III instance, you must set (the same) Webhook URL in both locations (administration AND preferences).
+    If you are the only user of your Firefly III instance, you must set (the same) Webhook URL in both locations ("Options" > "System settings" > "Settings for notifications" AND "Options" > "Preferences").
 
 ## Discord and Mattermost
 
@@ -68,7 +68,7 @@ Firefly III can also send the notifications to a Discord or Mattermost channel. 
 When you use the Discord/Mattermost webhook URL, you must add `/slack` to the end of the URL. So if your Discord webhook URL is `https://discord.com/api/webhooks/123456789/ABCdefgh`, you must use `https://discord.com/api/webhooks/123456789/ABCdefgh/slack` in Firefly III. The same applies to Mattermost URLs.
 
 !!! info
-    If you are the only user of your Firefly III instance, you must set (the same) Webhook URL in both locations (administration AND preferences).
+    If you are the only user of your Firefly III instance, you must set (the same) Webhook URL in both locations ("Options" > "System settings" > "Settings for notifications" AND "Options" > "Preferences").
 
 ## Webhooks and ... webhooks?
 
@@ -76,5 +76,5 @@ Firefly III also supports [webhooks](../features/webhooks.md) which will make Fi
 
 To make it a little easier to understand, here are some pointers:
 
-- When you are on the `/preferences`- or `/admin`-page you must use the Discord or Slack URL
+- When you are on the `/preferences`- or `/settings/notifications`-page you must use the Discord or Slack URL
 - When you are any `/webhooks/*`-page, DO NOT use the Discord or Slack URL

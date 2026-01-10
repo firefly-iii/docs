@@ -19,7 +19,7 @@ Up until [Firefly III v4.7.9](https://github.com/firefly-iii/firefly-iii/release
 
 Sessions are not tied to an IP address. Use 2FA when you can, which is a feature of Firefly III. There is a button on the `/profile` page that allows you to logout other sessions, so you can ensure there's a limited number of logged-in sessions out there.
 
-After the first user has registered themselves, future registrations are blocked. It can be enabled again under `/admin`. Each user is strictly separated from other users. Users can't see or detect other users, although they can infer their existence through their user ID (see the preceding text).
+After the first user has registered themselves, future registrations are blocked. It can be enabled again under `/settings/configuration`. Each user is strictly separated from other users. Users can't see or detect other users, although they can infer their existence through their user ID (see the preceding text).
 
 The very first user who registers on your instance of Firefly III gets assigned the "owner"-role. Users with the "owner" role can block other users, make them owner as well, but also change their password and/or email address.
 
