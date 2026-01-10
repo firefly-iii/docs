@@ -41,15 +41,15 @@ You can use some simple mathematics, for example on the `amount`-field, to subtr
 
 ## Text
 
-You can join strings together using the tilde. This allows you to join two fields together, or add a prefix or suffix to a field. Here is the description added to the notes _twice_.
+You can join text together using the tilde. This allows you to join two fields together, or add a prefix or suffix to a field. Here is the description added to the notes _twice_.
 
 ![Twice](../../../images/how-to/firefly-iii/features/expression-twice.png)
 
 `=description~description`
 
-## Substrings and string length
+## Cutting text and text length
 
-You can use `strlen` to get the length of a value, and you can use `substr` to cut a part of a value out. For example, this would set the notes to however long the description is. And yes, the notes will say `6` if the description is six characters long. Not very useful, but you can see that this could be very powerful in other combinations.
+You can use `strlen` to get the length of a value, and you can use `substr` to cut a part of a value out. You can find a particular piece of text using `strpos`. 
 
 ![Strlen](../../../images/how-to/firefly-iii/features/expression-strlen.png)
 
@@ -65,7 +65,13 @@ This allows for more useful combinations. Some of my own transactions always end
 
 ![Last four](../../../images/how-to/firefly-iii/features/expression-complex.png)
 
-`substr(description, 0, strlen(description) - strlen(destination_name))`
+`substr(description, 0, strlen(description) - strlen(destination_account_name))`
+
+You can also find a particular piece of text in your description, and remove the rest. For example, if an expense is made through a third party payment provider the destination account name could be "Webshop via Adyen". To fix that, use:
+
+`=substr(destination_account_name, 0, strpos(destination_account_name,'via'))`
+
+You see how `strpos` uses two arguments. The field it searches in, and the text to search for. 
 
 ## Other methods
 
