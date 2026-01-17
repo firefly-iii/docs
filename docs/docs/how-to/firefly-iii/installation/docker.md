@@ -89,6 +89,8 @@ Run this Docker command to start the Firefly III container. Edit the environment
 head /dev/urandom | LC_ALL=C tr -dc 'A-Za-z0-9' | head -c 32 && echo
 ```
 
+Avoid special characters like `=`, `#` and others in the `APP_KEY` variable.
+
 ```text
 docker run -d \
 -v firefly_iii_upload:/var/www/html/storage/upload \
