@@ -9,10 +9,10 @@ This is useful for some of the charts that Firefly III shows you. All monetary a
 
 ## Configuration
 
-Firefly III supports three options that allow you to use exchange rates in the application. The following variables are `false` by default.
+Firefly III supports three options that allow you to use exchange rates in the application. The following settings are disabled by default. You can change them on the `/settings/configuration`-page of your Firefy III installation.
 
-1. `ENABLE_EXCHANGE_RATES=true`. This environment variable enables the feature in the first place. It will not be available otherwise. Because this feature is fairly new, it is disabled by default.
-2. `ENABLE_EXTERNAL_RATES=true`. Firefly III will not download exchange rates unless you allow it to. Exchange rates can only be downloaded for the default currencies in Firefly III. They will be downloaded from a Firefly III Azure bucket.
+1. "Enable exchange rates." This setting enables the feature in the first place. It will not be available otherwise.
+2. "Download exchange rates from the web." Firefly III will not download exchange rates unless you allow it to. Exchange rates can only be downloaded for the default currencies in Firefly III. They will be downloaded from a Firefly III Azure bucket.
 3. In your preferences (`/preferences`) set the checkbox at "Display amounts in your primary currency".
 
 ## Initialization
@@ -58,7 +58,7 @@ Firefly III transactions also have a "foreign amount"-field. If you set a foreig
 !!! info
     This only works for the default system provided currencies because free exchange rate data is hard to come by.
 
-Make sure that `ENABLE_EXTERNAL_RATES=true` and run the [cron job](../../how-to/firefly-iii/advanced/cron.md) daily.
+Make sure that you have enabled the settings at `/settings/configuration`, and run the [cron job](../../how-to/firefly-iii/advanced/cron.md) daily.
 
 Firefly III will download new rates about every week. You should see the list of available rates expand slowly. Firefly III will not download historical rates, ie. the rates for last year or last month.
 
