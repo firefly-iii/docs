@@ -147,6 +147,12 @@ Firefly III - Sankey Diagram Generator is a command-line tool that generates San
 - [Credits](https://github.com/barreeeiroo)
 - [Website](https://github.com/barreeeiroo/Firefly-III-Sankey)
 
+### Toolbox for Firefly III
+
+Web automation suite for Firefly III. Includes tools for duplicate detection, subscription analysis, AI-powered categorization, bank imports and transaction enrichment via Amazon/PayPal exports.
+
+- [Website](https://github.com/xenolphthalein/toolbox-for-firefly-iii)
+
 ## Reporting
 
 ### Prometheus Exporter
