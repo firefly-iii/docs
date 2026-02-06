@@ -1,5 +1,9 @@
 # Using Firefly III, questions
 
+## Attempt to read property 'user' on null
+
+Make sure your `APP_KEY` is exactly 32 characters. Weird errors may appear otherwise.
+
 ## Firefly III can't tell the difference between `a` and `ä`
 
 This happens because by default MySQL can't see the difference. At the moment, I cannot fix this.
