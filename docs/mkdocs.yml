@@ -167,6 +167,9 @@ nav:
       - Support: explanation/support.md
   - Explanation:
       - Home: explanation/index.md
+      - Data organization:
+          - Best practices: explanation/data-classification/best-practices.md
+          - Organizing transactions: explanation/data-classification/what-to-use.md
       - Financial concepts:
           - Administrations: explanation/financial-concepts/administrations.md
           - Transactions: explanation/financial-concepts/transactions.md
