@@ -10,6 +10,10 @@ Personally, I make separate *expense accounts* for each store and merchant I buy
 
 Optionally, you can lump all these expenses together under one expense account called "Daily shopping expenses", it's up to you.
 
+I do the same thing for revenue accounts, to track where my money is coming from: "JobGiver Inc.", "GitHub", and friends that pay me back are all separate revenue accounts. 
+
+One personal exception: I lump together all payments from payment request services. Famous ones include "Tikkie" and "Venmo". I organized a goodbye party for a colleague from work and I didn't really feel like creating or managing dozens of one-time revenue accounts. So now I just have one revenue account called "Tikkie".
+
 ## Budgets
 
 Budgets are the only option you have that allows you to set an upper limit on your spending. So, track money in broad strokes using budgets: groceries, cost-of-living (rent etc), going out, car.
