@@ -44,6 +44,25 @@ Content Security Policy headers are a security feature, and usually fail when yo
 
 This usually happens when you did not set `TRUSTED_PROXIES=*`.
 
+## For some reason one of the database migrations didn't "take" and now it's broken
+
+Sometimes, Firefly III thinks all database tables are in place, but they're actually not. 
+
+From Firefly III v6.4.19 and onwards, you can use the following command to remove the latest migration entry. This does not change your database.
+
+```
+docker exec -it [container] php artisan correction:rollback-single-migration
+```
+
+Then, you can run:
+
+
+```
+docker exec -it [container] php artisan migrate
+```
+
+If it doesn't work, run the first command three or four times to remove more migrations.
+
 ## Which other settings are available for the Docker image?
 
 There are many environment variables that you can set in Firefly III. Just check out the [default env file](https://raw.githubusercontent.com/firefly-iii/firefly-iii/main/.env.example) that lists them all.
