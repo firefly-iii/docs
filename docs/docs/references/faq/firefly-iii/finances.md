@@ -2,15 +2,17 @@
 
 ## The "running balance" column isn't correct
 
-Sorry, this may some times happen. While I try to find the bug, you can correct it by running the following command:
+Sorry, this may happen sometimes. While I try to find the bug, you can correct it by running the following command:
 
 ```bash
 # bash and shell:
 php artisan firefly-iii:refresh-running-balance --force
 
 # Docker
-docker exec -it firefly-iii-app-1 php artisan firefly-iii:refresh-running-balance --force
+docker exec -it <firefly container name> php artisan firefly-iii:refresh-running-balance --force
 ```
+
+Note: For the Docker command replace `<firefly container name>` with the correct container name.
 
 ## What should I do when I close a real life asset account?
 
