@@ -71,6 +71,14 @@ update users set mfa_secret = NULL where email = "your@email.com"
 
 That should allow you to login again without having to submit a 2FA token.
 
+If you are using Docker, you can try the following command.
+
+```bash
+docker exec -it CONTAINERNAME mariadb -ufirefly -p firefly -e 'update users set mfa_secret = NULL where email = "your@email.com"'
+```
+
+The password you need is set in your `.env` file. There is no space between `-u` and `firefly`. If your username or database names are different, make sure you replace them.
+
 
 ## I want the rules to do something they currently don't support.
 
