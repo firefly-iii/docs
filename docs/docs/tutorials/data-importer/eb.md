@@ -67,7 +67,7 @@ This is expected and indicates that the application is limited to pre-authorized
 
 ![Link Accounts](../../images/tutorials/data-importer/eb-link-accounts.png "Link your bank accounts")
 
-## Step 4: Configure the data importer
+## Configure the data importer
 
 You have two options for providing your Enable Banking credentials to the Data Importer.
 
@@ -106,7 +106,7 @@ the PEM file directly. This works but is less convenient as you need to provide 
 
 ![Select Enable Banking](../../images/tutorials/data-importer/eb-select.png "Select Enable Banking as import method")
 
-## Step 6: Select country and bank
+## Select country and bank
 
 1. Select your country from the dropdown list
 2. Select your bank from the list of available institutions
@@ -116,7 +116,7 @@ is not listed, it may not be supported by Enable Banking in your region.
 
 ![Select Bank](../../images/tutorials/data-importer/eb-select-bank.png "Select your country and bank")
 
-## Step 7: Authorize access
+## Authorize access
 
 After selecting your bank, you will be redirected through two authorization steps:
 
