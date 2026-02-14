@@ -12,14 +12,14 @@ portal. This is perfect for personal finance management with Firefly III.
     In restricted mode, you will **only** be able to access bank accounts that you have explicitly linked in the
     Enable Banking portal. If you skip the account linking step, no accounts will be returned during import.
 
-## Step 1: Create an Enable Banking Account
+## Create an Enable Banking account
 
 1. Go to [enablebanking.com](https://enablebanking.com/) and click "Get Started"
 2. Fill in the registration form with your details
 3. Wait for a confirmation email from Enable Banking (this may take some time)
 4. Once you receive the email, follow the instructions to access your Enable Banking Control Panel
 
-## Step 2: Create an Application
+## Create an application
 
 In the Enable Banking Control Panel, you need to create an application that will be used to connect to your bank
 accounts.
@@ -41,18 +41,15 @@ accounts.
     Importer's root URL as a placeholder.
 
 !!! note "Redirect URL Requirements"
-    - **Production environment** requires HTTPS
-    - **Sandbox environment** works with HTTP
-    - Replace `<YOUR_DATA_IMPORTER_URL>` with your actual Data Importer URL, for example:
-      `https://importer.example.com/eb-callback`
+    **Production environment** requires HTTPS, but the **Sandbox environment** works with HTTP. Replace `<YOUR_DATA_IMPORTER_URL>` with your actual Data Importer URL, for example: `https://importer.example.com/eb-callback`. You can find your callback URL on the `/authenticate-flow/eb` page of your data importer.
 
-4. Upon submission, your browser will automatically download a **PEM file** containing your private key.
+3. Upon submission, your browser will automatically download a **PEM file** containing your private key.
    **Save this file securely**; you will need it later.
-5. Note your **Application ID** (also called Client ID); this is displayed in the Control Panel.
+4. Note your **Application ID** (also called Client ID); this is displayed in the Control Panel.
 
 ![Create Application](../../images/tutorials/data-importer/eb-create-app.png "Create a new Enable Banking application")
 
-## Step 3: Link Your Bank Accounts (Required for Free Plan)
+## Link your bank accounts (required for free plan)
 
 This is the most important step for using the free restricted mode.
 
@@ -70,11 +67,11 @@ This is expected and indicates that the application is limited to pre-authorized
 
 ![Link Accounts](../../images/tutorials/data-importer/eb-link-accounts.png "Link your bank accounts")
 
-## Step 4: Configure the Data Importer
+## Step 4: Configure the data importer
 
 You have two options for providing your Enable Banking credentials to the Data Importer.
 
-### Option A: Environment Variables
+### Option A: environment variables
 
 Set the following environment variables in your Data Importer configuration. Depending on your setup, you may need
 to edit `.importer.env` or configure them in Docker.
@@ -89,18 +86,18 @@ your_private_key_contents_here
 To get the PEM contents, open the downloaded PEM file with a text editor and copy the entire contents, including
 the `BEGIN` and `END` lines.
 
-!!! tip "Multi-line Environment Variable"
+!!! tip "Multi-line environment variable"
     If your environment does not support multi-line values, you can often use `\n` to represent newlines, or store
     the PEM file path instead and mount it as a volume in Docker.
 
-### Option B: Enter Credentials in the UI
+### Option B: Enter credentials in the UI
 
 When you select Enable Banking as the import method in the Data Importer, you can enter the Client ID and upload
 the PEM file directly. This works but is less convenient as you need to provide these each time.
 
 ![Enter Credentials](../../images/tutorials/data-importer/eb-enter-credentials.png "Enter Enable Banking credentials")
 
-## Step 5: Start the Import
+## Start the import
 
 1. Open the Data Importer and authenticate with Firefly III if prompted
 2. Select **Enable Banking** as the import method
@@ -109,7 +106,7 @@ the PEM file directly. This works but is less convenient as you need to provide 
 
 ![Select Enable Banking](../../images/tutorials/data-importer/eb-select.png "Select Enable Banking as import method")
 
-## Step 6: Select Country and Bank
+## Step 6: Select country and bank
 
 1. Select your country from the dropdown list
 2. Select your bank from the list of available institutions
@@ -119,7 +116,7 @@ is not listed, it may not be supported by Enable Banking in your region.
 
 ![Select Bank](../../images/tutorials/data-importer/eb-select-bank.png "Select your country and bank")
 
-## Step 7: Authorize Access
+## Step 7: Authorize access
 
 After selecting your bank, you will be redirected through two authorization steps:
 
@@ -132,16 +129,16 @@ After completing both authorizations, you will be redirected back to the Data Im
     If you are redirected back but no bank accounts appear, this is because the accounts were not pre-authorized
     in Step 3. Go back to the Enable Banking portal and link your accounts first.
 
-## Step 8: Configure the Import
+## Configure the import
 
-### Select Accounts
+### Select accounts
 
 Choose which bank accounts to import from and map them to your Firefly III asset accounts. If an IBAN matches an
 existing account, the selection may be automatic.
 
 ![Account Selection](../../images/tutorials/data-importer/eb-account-selection.png "Select accounts to import")
 
-### Date Range
+### Date range
 
 You can limit the import to a specific date range:
 
@@ -149,14 +146,14 @@ You can limit the import to a specific date range:
 - **Go back a number of days/weeks/months**: Only import recent transactions
 - **Select a specific range**: Define exact start and end dates
 
-### Import Options
+### Import options
 
 - **Rules**: Enable this to apply your Firefly III rules to imported transactions
 - **Import tag**: Add a tag to group all transactions from this import
 - **Duplicate detection**: Choose how to handle potential duplicate transactions (content-based detection is
   recommended)
 
-## Step 9: Map Data (Optional)
+## Map data (Optional)
 
 If you enabled data mapping, you can connect the merchants and payees from your transactions to existing accounts
 in Firefly III. This is useful when:
@@ -164,7 +161,7 @@ in Firefly III. This is useful when:
 - You already have expense accounts set up in Firefly III
 - You have transfers between your own accounts that should be linked correctly
 
-## Step 10: Submit to Firefly III
+## Submit to Firefly III
 
 Click "Start Job" to submit the transactions to Firefly III. The import process will run, and you will see a
 summary when complete.
