@@ -56,6 +56,35 @@ In order to make these browsers work, you _may_ change the following environment
 
 You do this entirely at your own risk, of course.
 
+## I get errors about missing tables, how do I fix this?
+
+A quick check to correct this is to run the following command:
+
+```bash
+# Using Docker?
+docker exec -it CONTAINERNAME php artisan migrate
+
+# Self managed?
+php artisan migrate
+```
+
+If that does not work, or it says "nothing" to migrate" but fails to repair anything, you can try the following two command(s):
+
+```bash
+# Using Docker?
+docker exec -it CONTAINERNAME php artisan correction:rollback-single-migration
+docker exec -it CONTAINERNAME php artisan migrate
+
+# Self managed?
+php artisan correction:rollback-single-migration
+php artisan migrate
+```
+
+This will make Firefly III forget it ever tried to execute the last database change, which means it will try again. If the migration was never successfully executed you will see an error. Otherwise, Firefly III will silently skip over the migration.
+
+You can even do this three or four times, going back a few migrations to find the issue.
+
+If this does not work, [please see this discussion on GitHub](https://github.com/orgs/firefly-iii/discussions/11672) for a possible solution.
 
 ## I lost my 2FA token generator, or 2FA has stopped working.
 
