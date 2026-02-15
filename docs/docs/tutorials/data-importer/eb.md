@@ -77,14 +77,47 @@ Set the following environment variables in your Data Importer configuration. Dep
 to edit `.importer.env` or configure them in Docker.
 
 ```
+#
+# example content if your .importer.env
+#
 ENABLE_BANKING_APP_ID=your_application_id_here
-ENABLE_BANKING_PRIVATE_KEY=-----BEGIN PRIVATE KEY-----
-your_private_key_contents_here
------END PRIVATE KEY-----
+ENABLE_BANKING_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\n.......your_private_key_contents_here.....\n-----END PRIVATE KEY-----"
 ```
 
 To get the PEM contents, open the downloaded PEM file with a text editor and copy the entire contents, including
-the `BEGIN` and `END` lines.
+the `BEGIN` and `END` lines. To make sure it works in your `.importer.env`, follow these instructions. You will end up with your key just like the example earlier
+
+First, remove ALL newlines from the private key, so it becomes one long line and two dividers. Do not add `\n` or whatever. Make it one big continuous long string:
+
+```
+#
+# Intermediate step, this is not the final result.
+#
+-----BEGIN PRIVATE KEY-----
+......................................................................etc
+-----END PRIVATE KEY-----
+```
+
+Then, add `\n`, two times. One **after** `-----BEGIN PRIVATE KEY-----` and one **before** `-----END PRIVATE KEY-----`. Also remove the actual enters. This should be the result:
+
+```
+#
+# Intermediate step, see how it is one line combines with 2x \n now?
+#
+-----BEGIN PRIVATE KEY-----\n................\n-----END PRIVATE KEY-----
+```
+
+Add this line to your environment variables. If you use the `.importer.env` file, **add "quotes" around it**.
+
+```
+#
+# See how the "quotes" and newlines are combined to create a key. Instead of the dots it's your key of course.
+#
+ENABLE_BANKING_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\n................\n-----END PRIVATE KEY-----"
+```
+
+Let me know if this works!
+
 
 !!! tip "Multi-line environment variable"
     If your environment does not support multi-line values, you can often use `\n` to represent newlines, or store
