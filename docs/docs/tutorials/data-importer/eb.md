@@ -41,7 +41,7 @@ accounts.
     Importer's root URL as a placeholder.
 
 !!! note "Redirect URL Requirements"
-    **Production environment** requires HTTPS, but the **Sandbox environment** works with HTTP. Replace `<YOUR_DATA_IMPORTER_URL>` with your actual Data Importer URL, for example: `https://importer.example.com/eb-callback`. You can find your callback URL on the `/authenticate-flow/eb` page of your data importer.
+    **Production environment** requires HTTPS, but the **Sandbox environment** works with HTTP. Replace `<YOUR_DATA_IMPORTER_URL>` with your actual Data Importer URL, for example: `https://importer.example.com/eb-callback`. You can find your callback URL on the `/authenticate-flow/eb` page of your data importer. The URL does not have to be public.
 
 3. Upon submission, your browser will automatically download a **PEM file** containing your private key.
    **Save this file securely**; you will need it later.
