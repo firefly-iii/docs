@@ -40,7 +40,7 @@ jobs:
           cd $GITHUB_WORKSPACE/docs
           echo "Latest Firefly III release is ${{ steps.ff3version.outputs.release }}"
           echo "Latest Data Importer release is ${{ steps.importerversion.outputs.release }}"
-          grep -rl '%PHPVERSION' ./ | xargs sed -i 's/%PHPVERSION/8\.4/g'
+          grep -rl '%PHPVERSION' ./ | xargs sed -i 's/%PHPVERSION/8\.5/g'
           grep -rl '%IMPORTERVERSION' ./ | xargs sed -i 's/%IMPORTERVERSION/${{ steps.importerversion.outputs.release }}/g'
           grep -rl '%FFVERSION' ./ | xargs sed -i 's/%FFVERSION/${{ steps.ff3version.outputs.release }}/g'
           python -m mkdocs build --clean
