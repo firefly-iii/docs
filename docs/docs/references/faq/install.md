@@ -253,6 +253,17 @@ php artisan migrate --seed
 php artisan firefly-iii:upgrade-database
 ```
 
+Docker Compose users may remove the entire "db" block from their `docker-compose.yml`-file, since it is no longer necessary. However, they must ADD the following line to their `docker-compose.yml` file OR to whatever Docker configuration they have:
+
+```
+    volumes:
+      - firefly_iii_upload:/var/www/html/storage/upload
+      - firefly_iii_database:/var/www/html/storage/database
+```
+
+The line that says "upload" may exist already. 
+
+
 ## I want to use PostgreSQL?
 
 In your `.env` file, change the `DB_CONNECTION` to `pgsql`. Update the other `DB_*` settings to match your database settings. The default port for PostgreSQL is 5432.
@@ -263,6 +274,18 @@ Then you are ready to install the database in PostgreSQL:
 php artisan migrate --seed
 php artisan firefly-iii:upgrade-database
 ```
+
+Docker Compose users must also take care to update the Docker compose file to use the correct PostgreSQL image. For example:
+
+```
+  db:
+    image: postgres:18
+    hostname: db
+```
+
+If you already have a PostgreSQL server running, you may remove the entire "db" block from your `docker-compose.yml` file.
+
+If you use PostgreSQL instead of MySQL you must also take care to update the environment variables in `.db.env`.
 
 Check out [this GitHub discussion](https://github.com/orgs/firefly-iii/discussions/7698#discussioncomment-6546883) for a guide to migrate.
 
