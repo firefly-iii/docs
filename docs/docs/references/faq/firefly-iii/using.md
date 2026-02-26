@@ -1,5 +1,9 @@
 # Using Firefly III, questions
 
+## All amounts are zero?
+
+Press the little red icon in the top menu bar, or disable "Hidden amounts" in your `/preferences`.
+
 ## Attempt to read property 'user' on null
 
 Make sure your `APP_KEY` is exactly 32 characters. Weird errors may appear otherwise.
