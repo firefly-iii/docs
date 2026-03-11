@@ -54,7 +54,7 @@ Extract the archive with the new release wherever you had installed the Firefly 
 unzip -o DataImporter-%IMPORTERVERSION.zip -x "storage/*" -d /var/www/data-importer
 
 # a tar.gz alternative:
-tar -xvf FireflyIII-%IMPORTERVERSION.tar.gz -C /var/www/data-importer --exclude='storage'
+tar -xvf DataImporter-%IMPORTERVERSION.tar.gz -C /var/www/data-importer --exclude='storage'
 ```
 
 Use `sudo` if necessary, but if you do, make sure that you set the ownership of the `/var/www/data-importer` directory to `www-data` again:
