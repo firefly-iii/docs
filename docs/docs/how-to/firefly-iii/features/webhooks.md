@@ -4,9 +4,9 @@ A webhook is a custom callback. Triggered by events in Firefly III a message wil
 
 ## Enable webhooks
 
-Webhooks need to be enabled before they work. Set `ALLOW_WEBHOOKS=true`, either in your `.env` file or in your Docker environment variables.
+Webhooks need to be enabled before they work. Go to `/settings/configuration` to enable them.
 
-![Creating a new webhook](../../../images/how-to/firefly-iii/features/webhooks-create.png "Date configuration value 'Ymd' is necessary to parse this file")
+![Creating a new webhook](../../../images/how-to/firefly-iii/features/webhooks-create.png "Create a new webhook")
 
 ## Triggers
 
