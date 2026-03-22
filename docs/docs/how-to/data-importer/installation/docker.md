@@ -32,6 +32,8 @@ If you save all example files and change nothing, it will NOT YET work. You must
 2. Also change `MYSQL_PASSWORD` in `.db.env` to the SAME value
 3. Change `FIREFLY_III_URL` in `.importer.env` to `http://app:8080`
 4. Change `VANITY_URL` in `.importer.env` to the URL you use to reach Firefly III. For example: `http://localhost` (this is probably different in your case).
+5. Set `TRUSTED_PROXIES=*` (yes, with an asterisk) when you have a reverse proxy like nginx or Traefik
+
 
 !!! note
     Change the password FIRST. If you change the password *after* you started Docker, it will complain about having no access.

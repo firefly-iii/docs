@@ -28,6 +28,7 @@ You must do a few things:
 2. Also change `MYSQL_PASSWORD` in `stack.env` to the SAME value (it's at the bottom)
 3. Change `FIREFLY_III_URL` in `stack.env` to `http://app:8080`
 4. Change `VANITY_URL` in `stack.env` to `http://localhost`
+5. Set `TRUSTED_PROXIES=*` (yes, with an asterisk) when you have a reverse proxy like nginx or Traefik
 
 ## Installation
 

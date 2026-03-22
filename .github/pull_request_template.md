@@ -1,22 +1,48 @@
 <!--
-Thank you for submitting new code to Firefly III, or any of the related projects. Please read the following rules carefully.
 
-- Please do not submit solutions for problems that are not already reported in an issue.
-- Unfortunately, Firefly III can't be your learning experience. If you're new to all of this, please open an issue first.
-- Please do not open PRs to "discuss" possible solutions or to "get feedback" on your code. I simply don't have time for that.
-- DO NOT include translated strings in your PR.
-- PRs (or parts thereof) that only fix issues inside code comments will not be accepted.
+🙌 Thanks for contributing a pull request. 
 
-If it feels necessary to open an issue first, please do so, before you open a PR.
+Spelling or grammar corrections are always welcome. So are new screenshots or improved text.
 
-See also: https://docs.firefly-iii.org/explanation/support/#contributing-code
+Here are the rules:
+
+1. It is "Firefly III", never "Firefly" or "firefly".
+2. Avoid the words "just" or "simply" when explaining things.
+3. Avoid exclamation marks, bold text or italics to catch the reader's attention.
+4. Always refer to other documents with a link. 
+
+👀 Please ensure you have taken a look at the contribution guidelines:
+https://docs.firefly-iii.org/explanation/support/#contributing-code
 
 -->
-    
-This PR fixes issue # (if relevant).
 
-Changes in this pull request:
+#### Reference issues and PRs
+<!--
+Example: Fixes #1234. See also #3456. Only when relevant.
+-->
 
--
--
--
+#### What does this implement/fix? Explain your changes.
+
+
+
+#### AI usage disclosure
+<!--
+If AI tools were involved in creating this PR, please check all boxes that apply
+below and make sure that you adhere to our Automated Contributions Policy:
+https://docs.firefly-iii.org/explanation/support/#automated-contributions-policy
+-->
+I used AI assistance for:
+- [ ] Code generation (e.g., when writing an implementation or fixing a bug)
+- [ ] Test/benchmark generation
+- [ ] Documentation (including examples)
+- [ ] Research and understanding
+
+
+#### Any other comments?
+
+<!--
+Thanks for contributing!
+-->
+
+@JC5
+
