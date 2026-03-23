@@ -33,7 +33,7 @@ Install the following PHP modules:
 * PHP Internationalization extension
 * PHP Curl
 * PHP Zip
-* PHP Sodium
+* PHP libsodium
 * PHP GD
 * PHP XML
 * PHP MBString
