@@ -91,6 +91,13 @@ Firefly Personal Finance is an android app created by @mconway that connects to 
 
 ## Bots and tools
 
+### Universal Firefly III AI Bridge (MCP Server)
+
+A professional-grade, AI-agnostic Model Context Protocol (MCP) server providing exhaustive 100% API coverage. It allows you to manage your accounts, transactions, budgets, rules, and attachments using natural language via Gemini, Claude, and ChatGPT.
+
+- [Credits](https://github.com/fabianonetto)
+- [Repository and documentation](https://github.com/fabianonetto/mcp-server-firefly-iii)
+
 ### Firefly III CLI
 
 Firefly III Command Line Interface is a tool made by @afonsoc12 that allows you to interact with Firefly III over the command line.
