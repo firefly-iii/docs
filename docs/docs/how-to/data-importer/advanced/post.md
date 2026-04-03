@@ -5,7 +5,7 @@
 You can use the data importer's POST commands to import data. This page assumes you're self-managing the data importer, although these commands also work when using Docker.
 
 !!! info "Personal Access Token required"
-    The POST commands only work when you're using a Personal Access Token to authenticate, set in your `.env`-file or environment variables. You add this token to the Authentication header.
+    The POST commands only work when you're using a Personal Access Token to authenticate, set in your `.env`-file or environment variables. You can also add this token to the Authentication header: `Authentication: Bearer [token here]`.
 
 !!! info "GoCardless or Spectre information"
     You cannot submit GoCardless or Spectre information using the POST commands, the data importer must already be configured with them.
