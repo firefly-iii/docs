@@ -8,6 +8,14 @@ body:
       options:
         - label: I've read the [support guidelines](https://github.com/firefly-iii/firefly-iii/blob/main/.github/support.md)
           required: true
+  - type: checkboxes
+    attributes:
+      label: Use of AI
+      description: AI agents like Claude and CoPilot are not reliable tools. Do not use them.
+      options:
+        - label: I'm a real person and wrote this bug without assistance from AI.
+          required: true
+
   - type: textarea
     attributes:
       label: Description

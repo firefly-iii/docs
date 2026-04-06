@@ -16,6 +16,7 @@ body:
     attributes:
       label: Solution
       description: Describe what you would like to see in the documentation
+      placeholder: Please DO NOT use AI / LLM to fill this form.
     validations:
       required: true
 
@@ -23,3 +24,4 @@ body:
     attributes:
       label: Additional context
       description: Add any other context or screenshots about the feature request here.
+      placeholder: Please DO NOT use AI / LLM to fill this form.
