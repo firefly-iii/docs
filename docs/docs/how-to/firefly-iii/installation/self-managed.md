@@ -121,6 +121,8 @@ Make sure you configure at least the database. For SQLite, you must drop all the
 
 This step is very important, because Firefly III needs a database to work with, and it will tell you whether your configuration is correct.
 
+#### SQLite
+
 If you decide to use SQLite, make sure you run the following command to create the SQLite database file.
 
 ```bash
@@ -128,6 +130,20 @@ If you decide to use SQLite, make sure you run the following command to create t
 cd /var/www/firefly-iii
 touch ./storage/database/database.sqlite
 ```
+
+#### MariaDB
+
+Install Mariadb, create a user and a database for Firefly-III, and grant all privileges to that new user for this database
+
+Example-setup for a locally installed MariaDB database on the same server as the webserver where Firefly App resides in.
+
+```bash
+CREATE USER firefly3@localhost IDENTIFIED BY 'firefly3';
+create database firefly3;
+grant all privileges on firefly3.* to 'firefly3'@'localhost';
+```
+
+#### General
 
 Either way, in all cases, run these commands to initialize the database:
 
