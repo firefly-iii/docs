@@ -40,6 +40,9 @@ When you inverse these triggers, they look for the opposite property.
 
 ## Amount
 
+!!! warning
+    Always write amounts with **dots**, not commas. This also applies when your own language (like Dutch or German) would normally use commas.
+
 All amount triggers can handle bigger than, less than, exactly, etc.
 
 1. Amount
