@@ -91,6 +91,13 @@ Firefly Personal Finance is an android app created by @mconway that connects to 
 
 ## Bots and tools
 
+### A TypeScript SDK
+
+A TypeScript SDK for Firefly III, automatically generated from the official OpenAPI specification.
+
+- [Credits](https://github.com/Billos)
+- [NPM package](https://www.npmjs.com/package/@billos/firefly-iii-sdk)
+
 ### Universal Firefly III AI Bridge (MCP Server)
 
 A professional-grade, AI-agnostic Model Context Protocol (MCP) server providing exhaustive 100% API coverage. It allows you to manage your accounts, transactions, budgets, rules, and attachments using natural language via Gemini, Claude, and ChatGPT.
