@@ -37,12 +37,16 @@ You can still select the budget for transactions, and Firefly III will not compl
 
 ## Budgets and foreign currencies
 
-Budgeting can get complex when you use multiple budgets, and multiple currencies. As a rule, budgets will only count the main currency of a transaction, and never the "foreign" amount of a transaction. That means a few things.
+Budgeting can get complex when you use multiple budgets, and multiple currencies. As a rule, budgets will only count the main currency of a transaction, and *never* the "foreign" amount of a transaction. That means a few things.
 
 - A budget with the amount set to EUR 100 will not be influenced by transactions in USD, even when those transactions are linked to the budget. To do so, you must set a second amount for the same budget in USD, and those transactions will be counted towards that particular amount.
 - A budget with the amount set to USD 100 will **not** be influenced by a transaction with a *foreign amount* in USD.
 
 In short, only the main amount of a transaction will influence the budget. The foreign amount is not used for budgeting.
+
+## Budgets and displaying amounts in your primary currency
+
+Even when you convert all your amounts to your primary currency, the behavior of budgets does not change. 
 
 ## Budgets and income
 
