@@ -7,6 +7,9 @@ Setting up the right "locale" is about:
 
 The locale you want to use is identified by a little piece of text, like this: `en`, `English`, `en_US.utf8`.
 
+!!! note
+    If your browser is set to "English (US)", the date input fields will show "mm/dd/yyyy" (which is the American way of formatting dates). There is no setting in Firefly III that can change that.
+
 In order to make the demo site work (it’s an Ubuntu server) I run these commands:
 
 ```text
