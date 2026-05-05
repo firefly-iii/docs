@@ -204,6 +204,8 @@ nav:
           - (Security) testing: explanation/more-information/bending-and-breaking.md
           - Digital signatures: explanation/more-information/signatures.md
       - Other tools: explanation/other-tools.md
+      - Code of conduct: explanation/code-of-conduct.md
+      - Contribution guidelines: explanation/contributing.md
       - Support: explanation/support.md
 
 extra_css:
