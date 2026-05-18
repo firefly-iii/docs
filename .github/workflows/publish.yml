@@ -47,7 +47,7 @@ jobs:
 
           # also copy security.txt
           cp -r docs/.well-known site/.well-known
-      - uses: cloudflare/wrangler-action@v3
+      - uses: cloudflare/wrangler-action@v4
         name: Publish to Cloudflare
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
