@@ -89,6 +89,13 @@ Firefly Personal Finance is an android app created by @mconway that connects to 
 - [Website and documentation](https://github.com/mconway/firefly-app/)
 - [Google Play Store](https://play.google.com/store/apps/details?id=com.zerobyte.firefly)
 
+### Firefly Ledger PWA
+
+A client-side Progressive Web App for recording and tracking transactions on your Firefly III instance. Works offline, supports multi-currency with auto-conversion, and includes accounts overview with transaction history. Everything runs locally in your browser, no servers, no cloud, no data leaves your device.
+
+- [Credits](https://github.com/mcardielo)
+- [Website and documentation](https://github.com/mcardielo/fireflyiii-pwa)
+
 ## Bots and tools
 
 ### A TypeScript SDK
