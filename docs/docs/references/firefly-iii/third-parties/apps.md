@@ -98,6 +98,14 @@ A client-side Progressive Web App for recording and tracking transactions on you
 
 ## Bots and tools
 
+### fireflyiii-mcp
+
+A TypeScript MCP server for Firefly III with 140 tools across 14 groups (accounts, transactions, budgets, categories, bills, piggy banks, rules, recurring transactions, attachments, currencies, exports, object groups, transaction links, and reports). Supports full CRUD, Personal Access Token and OAuth 2.0 authentication, and tool filtering via presets or group selection.
+
+- [Credits](https://github.com/daften)
+- [Repository](https://github.com/daften/fireflyiii-mcp)
+- [npm package](https://www.npmjs.com/package/@daften/fireflyiii-mcp)
+
 ### A TypeScript SDK
 
 A TypeScript SDK for Firefly III, automatically generated from the official OpenAPI specification.
