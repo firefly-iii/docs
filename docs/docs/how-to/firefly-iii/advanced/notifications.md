@@ -30,7 +30,7 @@ The default value will store messages in your log files instead of sending them.
 
 ### `smtp`
 
-SMTP is the de-facto standard for sending email. If you want to use GMail or Outlook as mail system, set the mailer to `smtp`. Change the host, port and credentials. `MAIL_ENCRYPTION` must be `null`, `ssl` or `tls`, depending on your provider.
+SMTP is the de-facto standard for sending email. If you want to use GMail or Outlook as mail system, set the mailer to `smtp`. Change the host, port and credentials. `MAIL_ENCRYPTION` must be `null`, `ssl`, `starttls` or `tls`, depending on your provider.
 
 ### `sendmail`
 
