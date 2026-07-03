@@ -1,7 +1,11 @@
 # install packages and mkdocs
 pip install mkdocs mkdocs-material mkdocs-git-revision-date-plugin mkdocs-redirects mkdocs-minify-plugin testresources
-
-# serve docs locally
+dsad
+asd
+as
+das
+dasd
+# serve docs locally\
 mkdocs serve
 
 mkdocs serve --dirtyreload
