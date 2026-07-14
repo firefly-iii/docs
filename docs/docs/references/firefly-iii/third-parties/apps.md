@@ -202,13 +202,13 @@ Yemzikk forked and enhanced this project with some cool new features:
 
 - [Enhanced version by Yemzikk](https://github.com/yemzikk/firefly-iii-email-summary)
 
-### FF3 Entropy
+### Entropy for Firefly III 
 
 A read-only forecast view for Firefly III that flags recurring transactions that were due but never turned up.
 
 - [Credits](https://github.com/4242labs)
-- [Source](https://github.com/4242labs/ff3-entropy)
-- [Demo](https://ff3-entropy.42labs.io)
+- [Source](https://github.com/4242labs/ff3e)
+- [Demo](https://ff3e.42labs.io)
 
 ## Import tools
 
