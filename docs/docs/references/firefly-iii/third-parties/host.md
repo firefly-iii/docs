@@ -3,6 +3,12 @@
 !!! warning These tools are unsupported
     I can't always offer support for these platforms. There are a lot of them. Feel free to start a [discussion](https://github.com/orgs/firefly-iii/discussions), but you may have to do some exploration to get your issue resolved.
 
+## Zenith
+
+Firefly III is featured on [Zenith](https://zenith.hosting/host/firefly-iii), which runs the instance for you in one click. Storage, backups, email and a free subdomain are included, and a share of every subscription goes back to Firefly III.
+
+[![Deploy with Zenith](https://cdn.zenith.hosting/buttons/deploy-with-zenith.svg)](https://zenith.hosting/host/firefly-iii)
+
 ## AMPPS
 
 Firefly III is featured in [AMPPS](https://www.ampps.com/). You can download AMPPS for Windows, Linux and Mac and Firefly III will be available as a package there.
