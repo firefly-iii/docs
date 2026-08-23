@@ -31,6 +31,10 @@ There are various scripts and tools you can use, if the Firefly III Data Importe
 
 "[Firefly III FinTS importer](https://github.com/bnw/firefly-iii-fints-importer)" allows you to import using FinTS, a bank-independent protocol for online banking, developed and used by German banks.
 
+### FinTS console
+
+"[Firefly III FinTS console importer](https://github.com/Gared/firefly-iii-fints-console-importer)" allows you to import using FinTS similar to the previous importer, but operates entirely via the command line and enables automated imports.
+
 ### CAMT (ISO 20022)
 
 [This script](https://github.com/plumped/camt_converter_ISO20022_for_camt) allows you to unzip zip files with camt.053 in them and convert them into CSV for easy processing.
