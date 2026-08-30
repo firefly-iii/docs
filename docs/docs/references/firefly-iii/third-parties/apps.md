@@ -106,6 +106,14 @@ A TypeScript MCP server for Firefly III with 140 tools across 14 groups (account
 - [Repository](https://github.com/daften/fireflyiii-mcp)
 - [npm package](https://www.npmjs.com/package/@daften/fireflyiii-mcp)
 
+### Firefly III MCP Server
+
+A security-first MCP server for Firefly III, for use with Claude Code, Claude Desktop and ChatGPT. It exposes 152 Firefly III operations through 5 MCP tools, split into separate read, write and destructive surfaces so a host can annotate and confirm each risk level. Writes support dry-run previews, bulk writes are guarded by an explicit match limit, and it runs over stdio or authenticated HTTP with OAuth 2.1. Published on npm and in the official MCP registry.
+
+- [Credits](https://github.com/YakupEmreYerli)
+- [Repository and documentation](https://github.com/YakupEmreYerli/mcp-firefly-iii)
+- [npm package](https://www.npmjs.com/package/@yakupemreyerli/firefly-mcp)
+
 ### A TypeScript SDK
 
 A TypeScript SDK for Firefly III, automatically generated from the official OpenAPI specification.
