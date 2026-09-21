@@ -69,6 +69,15 @@ When the installation is done, Firefly III will thank you for installing it. Onc
 
 You can now visit Firefly III at [http://localhost](http://localhost) or [http://docker-ip:port](http://docker-ip:port) if it is running on a custom port. To continue, read [the tutorial on how to create accounts and transactions](../../../tutorials/finances/first-steps.md).
 
+## Easypanel
+
+If you'd rather not manage the containers yourself, [Easypanel](https://easypanel.io) is a self-hosted deployment platform with a one-click Firefly III template:
+
+[![Deploy on Easypanel][easypanel-btn]][easypanel-deploy]
+
+[easypanel-btn]: https://easypanel.io/img/deploy-on-easypanel-40.svg
+[easypanel-deploy]: https://easypanel.io/templates/fireflyiii
+
 ## Plain Docker
 
 You can also use Docker itself, skipping Docker Compose. This allows you to set up a single container, with just Firefly III inside of it. If you do this, you should already have a MySQL or a Postgres database running somewhere. Without such a database container, Firefly III will not work.
