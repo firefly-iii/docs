@@ -1,7 +1,7 @@
 # How to use expressions in rules?
 
-!!! warning "Firefly III v6.1.20"
-    This feature is enabled in Firefly III v6.1.20 and later
+!!! warning "Use of Expressions"
+    This feature requires 6.1.20 or later and must be manually enabled in 'System Settings - FireFly III Configuration - Enable expression engine' with versions > 6.7.x
 
 ## Introduction
 
