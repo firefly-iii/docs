@@ -1,7 +1,7 @@
 # Rule expressions
 
-!!! warning "Firefly III v6.1.20"
-    This feature is enabled in Firefly III v6.1.20 and later
+!!! warning "Use of Expressions"
+    This feature requires 6.1.20 or later and must be manually enabled in 'System Settings - Firefly III Configuration - Enable expression engine' with versions > 6.7.x
 
 Firefly III features a powerful [rule engine](../../how-to/firefly-iii/features/rules.md) that comes with an [expression language](../../how-to/firefly-iii/features/expressions.md) to execute actions on your transactions.
 
