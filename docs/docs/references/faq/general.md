@@ -1,5 +1,7 @@
 # General questions and answers
 
-## Bla bla bla question?
+Some questions don't really fit anywhere, so I have put them in this section.
 
-Answser.
+## Why are there no questions yet?
+
+I've not written any.
