@@ -161,6 +161,7 @@ nav:
               - General questions: references/faq/data-importer/general.md
               - Common import issues: references/faq/data-importer/import.md
               - GoCardless: references/faq/data-importer/gocardless.md
+          - General questions: references/faq/general.md
           - Installing and running: references/faq/install.md
           - Development: references/faq/development.md
           - Docker: references/faq/docker.md
