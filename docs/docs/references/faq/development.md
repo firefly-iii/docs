@@ -9,8 +9,7 @@ Please read the [contribution rules](../../explanation/support.md) and please al
 ### Firefly III
 
 - Firefly III is written in PHP %PHPVERSION.
-- The current, v1-layout uses Twig templates (HTML + PHP dialect), Vue2 and plain Javascript
-- The new, v2-layout uses Blade (PHP) and AlpineJS.
+- The current, v3-layout uses Blade (PHP) and AlpineJS. Several parts of this layout still use vanilla JS
 
 ### Data Importer
 
@@ -37,7 +36,7 @@ The code structure for the backend is explained on the [architecture](../../expl
 
 ### API
 
-Firefly III has an API. The code is in the `/app/API`-directory. The routes and structure of the API are listed in `routes/api.php`. 
+Firefly III has an API. The code is in the `/app/Api`-directory. The routes and structure of the API are listed in `routes/api.php`. 
 
 ## Building Firefly III
 
@@ -45,8 +44,7 @@ To build the frontend of Firefly III, run the following commands.
 
 ```text
 npm install
-npm run prod  --workspace=v1
-npm run build --workspace=v2
+npm run build --workspace=v3
 ```
 
 To install the dependencies, run:
