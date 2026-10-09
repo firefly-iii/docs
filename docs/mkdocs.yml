@@ -72,6 +72,7 @@ nav:
               - Using Portainer: how-to/firefly-iii/installation/portainer.md
               - Using Kubernetes: how-to/firefly-iii/installation/kubernetes.md
               - Using a self-managed server: how-to/firefly-iii/installation/self-managed.md
+              - Third party hosting: how-to/firefly-iii/installation/hosted.md
           - How to upgrade:
               - Using Docker: how-to/firefly-iii/upgrade/docker.md
               - Using Kubernetes: how-to/firefly-iii/upgrade/kubernetes.md
