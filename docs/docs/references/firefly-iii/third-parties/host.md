@@ -3,11 +3,23 @@
 !!! warning These tools are unsupported
     I can't always offer support for these platforms. There are a lot of them. Feel free to start a [discussion](https://github.com/orgs/firefly-iii/discussions), but you may have to do some exploration to get your issue resolved.
 
+## Hostinger
+
+Firefly III is available on [Hostinger](https://www.hostg.xyz/aff_c?offer_id=815&aff_id=243699&url_id=6810).
+
+## PikaPods
+
+Firefly III is available on [PikaPods](https://www.pikapods.com/pods?run=firefly-iii)
+
+## LumaDock
+
+Firefly III is available as a one-click installation on LumaDock.
+
+[![Deploy on LumaDock](https://lumadock.com/badges/deploy-on-lumadock.svg)](https://lumadock.com/vps-hosting/firefly-iii)
+
 ## Zenith
 
-Firefly III is featured on [Zenith](https://zenith.hosting/host/firefly-iii), which runs the instance for you in one click. Storage, backups, email and a free subdomain are included, and a share of every subscription goes back to Firefly III.
-
-[![Deploy with Zenith](https://cdn.zenith.hosting/buttons/deploy-with-zenith.svg)](https://zenith.hosting/host/firefly-iii)
+Firefly III is featured on [Zenith](https://zenith.hosting/host/firefly-iii), which runs the instance for you in one click. Storage, backups, email and a free subdomain are included.
 
 ## AMPPS
 
