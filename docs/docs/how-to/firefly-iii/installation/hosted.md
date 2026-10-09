@@ -8,7 +8,7 @@ There are several parties that offer Firefly III hosting. This is of course very
 
 ## [PikaPods](https://www.pikapods.com/pods?run=firefly-iii)
 
-[PikaPods](https://www.pikapods.com/pods?run=firefly-iii) is a hosting provider that offers Firefly III hosting as well. It is a paid service, and it offers a lot of features and support.
+[PikaPods](https://www.pikapods.com/pods?run=firefly-iii) is a hosting provider that offers Firefly III hosting as well. It is a paid service, and it offers a lot of features and support. Also there's a kickback for the developer of Firefly III. Nice, right?
 
 ## [LumaDock](https://lumadock.com/vps-hosting/firefly-iii)
 
