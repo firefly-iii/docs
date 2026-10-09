@@ -1,8 +1,5 @@
 # Third parties that host Firefly III
 
-!!! warning These tools are unsupported
-    I can't always offer support for these platforms. There are a lot of them. Feel free to start a [discussion](https://github.com/orgs/firefly-iii/discussions), but you may have to do some exploration to get your issue resolved.
-
 ## Hostinger
 
 Firefly III is available on [Hostinger](https://www.hostg.xyz/aff_c?offer_id=815&aff_id=243699&url_id=6810).
