@@ -1,5 +1,13 @@
 # Firefly III personal finance questions
 
+## I can't set the piggy bank when editing a transaction, only when creating it
+
+This is not a bug, this is the correct behavior. Adding money to a piggy bank based on a transaction is a one-time action. It cannot be repeated. If you edit the transaction, the action will not be repeated.
+
+## Editing a transaction that is linked to a piggy bank does not change the amount in the piggy bank
+
+The one-time action of adding money to a piggy bank during the creation of the transaction cannot be edited or changed. If you need to put more or less money in the piggy bank, you must do this yourself by going to `/piggy-banks`. If you edit the transaction after you created it, you cannot trigger this action again.
+
 ## The "running balance" column isn't correct
 
 Sorry, this may happen sometimes. While I try to find the bug, you can correct it by running the following command:
