@@ -133,9 +133,9 @@ touch ./storage/database/database.sqlite
 
 #### MariaDB
 
-Install Mariadb, create a user and a database for Firefly-III, and grant all privileges to that new user for this database
+Install Mariadb, create a user and a database for Firefly III, and grant all privileges to that new user for this database
 
-Example-setup for a locally installed MariaDB database on the same server as the webserver where Firefly App resides in.
+Example-setup for a locally installed MariaDB database on the same server as the webserver where Firefly App resides.
 
 ```bash
 CREATE USER firefly3@localhost IDENTIFIED BY 'firefly3';
