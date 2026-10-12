@@ -96,6 +96,13 @@ A client-side Progressive Web App for recording and tracking transactions on you
 - [Credits](https://github.com/mcardielo)
 - [Website and documentation](https://github.com/mcardielo/fireflyiii-pwa)
 
+### Money
+
+Money is a mobile-friendly web app that runs next to your Firefly III server in a small nginx container. It covers most Firefly III features and adds a customizable dashboard, quick add in plain words and a safe-to-spend forecast. Your access token stays on the server.
+
+- [Credits](https://github.com/Muffy0906)
+- [Website and documentation](https://github.com/Muffy0906/firefly-money)
+
 ## Bots and tools
 
 ### fireflyiii-mcp
