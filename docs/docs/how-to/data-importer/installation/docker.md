@@ -28,7 +28,7 @@ Then, download the configuration files:
 
 If you save all example files and change nothing, it will NOT YET work. You must do a few things:
 
-1. Change `DB_PASSWORD` in `.env` to something else. Pick a nice password.
+1. Change `DB_PASSWORD` in `.env` to something else. Pick a nice password (some special characters such as $ may need to be escaped e.g. $$).
 2. Also change `MYSQL_PASSWORD` in `.db.env` to the SAME value
 3. Change `FIREFLY_III_URL` in `.importer.env` to `http://app:8080`
 4. Change `VANITY_URL` in `.importer.env` to the URL you use to reach Firefly III. For example: `http://localhost` (this is probably different in your case).
