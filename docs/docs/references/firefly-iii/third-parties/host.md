@@ -10,9 +10,7 @@ Firefly III is available on [PikaPods](https://www.pikapods.com/pods?run=firefly
 
 ## LumaDock
 
-Firefly III is available as a one-click installation on LumaDock.
-
-[![Deploy on LumaDock](https://lumadock.com/badges/deploy-on-lumadock.svg)](https://lumadock.com/vps-hosting/firefly-iii)
+Firefly III is available as a one-click installation [on LumaDock](https://lumadock.com/vps-hosting/firefly-iii).
 
 ## Zenith
 
@@ -20,9 +18,7 @@ Firefly III is featured on [Zenith](https://zenith.hosting/host/firefly-iii), wh
 
 ## Hostim
 
-Firefly III is available as a one-click template on Hostim, a container hosting platform in Germany. The template runs Firefly III with a managed MySQL database, a volume for uploads and a free subdomain with HTTPS. See the [setup guide](https://hostim.dev/docs/templates/firefly-iii) for the cron job.
-
-[![Deploy on Hostim](https://hostim.dev/img/deploy-button.svg)](https://console.hostim.dev/dashboard?preview=1&modal=1&template=firefly-iii)
+Firefly III is available [as a one-click template on Hostim](https://console.hostim.dev/dashboard?preview=1&modal=1&template=firefly-iii), a container hosting platform in Germany. The template runs Firefly III with a managed MySQL database, a volume for uploads and a free subdomain with HTTPS. See the [setup guide](https://hostim.dev/docs/templates/firefly-iii) for the cron job.
 
 ## AMPPS
 
