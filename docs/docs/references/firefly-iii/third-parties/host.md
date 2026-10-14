@@ -18,6 +18,12 @@ Firefly III is available as a one-click installation on LumaDock.
 
 Firefly III is featured on [Zenith](https://zenith.hosting/host/firefly-iii), which runs the instance for you in one click. Storage, backups, email and a free subdomain are included.
 
+## Hostim
+
+Firefly III is available as a one-click template on Hostim, a container hosting platform in Germany. The template runs Firefly III with a managed MySQL database, a volume for uploads and a free subdomain with HTTPS. See the [setup guide](https://hostim.dev/docs/templates/firefly-iii) for the cron job.
+
+[![Deploy on Hostim](https://hostim.dev/img/deploy-button.svg)](https://console.hostim.dev/dashboard?preview=1&modal=1&template=firefly-iii)
+
 ## AMPPS
 
 Firefly III is featured in [AMPPS](https://www.ampps.com/). You can download AMPPS for Windows, Linux and Mac and Firefly III will be available as a package there.
