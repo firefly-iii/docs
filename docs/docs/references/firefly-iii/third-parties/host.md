@@ -20,6 +20,10 @@ Firefly III is featured on [Zenith](https://zenith.hosting/host/firefly-iii), wh
 
 Firefly III is available [as a one-click template on Hostim](https://console.hostim.dev/dashboard?preview=1&modal=1&template=firefly-iii), a container hosting platform in Germany. The template runs Firefly III with a managed MySQL database, a volume for uploads and a free subdomain with HTTPS. See the [setup guide](https://hostim.dev/docs/templates/firefly-iii) for the cron job.
 
+## Pethost
+
+Firefly III is available [as a one-click template on Pethost](https://console.pethost.dev/?template=firefly-iii). The template runs Firefly III with PostgreSQL, a volume for uploads and a subdomain with HTTPS, and calls the daily cron job for you.
+
 ## AMPPS
 
 Firefly III is featured in [AMPPS](https://www.ampps.com/). You can download AMPPS for Windows, Linux and Mac and Firefly III will be available as a package there.
