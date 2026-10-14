@@ -22,7 +22,7 @@ Firefly III is available [as a one-click template on Hostim](https://console.hos
 
 ## Pethost
 
-Firefly III is available [as a one-click template on Pethost](https://console.pethost.dev/?template=firefly-iii). The template runs Firefly III with PostgreSQL, a volume for uploads and a subdomain with HTTPS, and calls the daily cron job for you.
+Firefly III is available [as a one-click template on Pethost](https://pethost.dev/templates/firefly-iii/). The template runs Firefly III with PostgreSQL, a volume for uploads and a subdomain with HTTPS, and calls the daily cron job for you.
 
 ## AMPPS
 
