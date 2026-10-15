@@ -240,20 +240,22 @@ Open your `.env` file and find the lines that begin with `DB_`. These define you
 DB_CONNECTION=sqlite
 ```
 
-In order to install the database, the file `./storage/database/database.sqlite` must exist. When it does not exist, you can use this command on Linux to create it:
+The Docker container will fix the database file for you. If you are not using Docker, you must make sure the file exists. For example:
 
 ```text
+# do NOT do this when you are using Docker or Podman or whatever.
 touch ./storage/database/database.sqlite
 ```
 
-Then you are ready to install the database in SQLite:
+The Docker container will install the database for you. If you are not using Docker, you must do this yourself.
 
 ```text
+# only if not on Docker
 php artisan migrate --seed
 php artisan firefly-iii:upgrade-database
 ```
 
-Docker Compose users may remove the entire "db" block from their `docker-compose.yml`-file, since it is no longer necessary. However, they must ADD the following line to their `docker-compose.yml` file OR to whatever Docker configuration they have:
+Docker Compose users must remove the entire "db" block from their `docker-compose.yml`-file, since it is no longer necessary. However, they must ADD the following line to their `docker-compose.yml` file OR to whatever Docker configuration they have:
 
 ```
     volumes:
@@ -262,6 +264,13 @@ Docker Compose users may remove the entire "db" block from their `docker-compose
 ```
 
 The line that says "upload" may exist already. 
+
+Also remove the dependency on the `db` container:
+
+```
+    depends_on:
+      - db
+```
 
 
 ## I want to use PostgreSQL?
