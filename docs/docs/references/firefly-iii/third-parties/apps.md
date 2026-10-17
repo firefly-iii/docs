@@ -103,6 +103,13 @@ Money is a mobile-friendly web app that runs next to your Firefly III server in 
 - [Credits](https://github.com/Muffy0906)
 - [Website and documentation](https://github.com/Muffy0906/firefly-money)
 
+### FireFlow
+ 
+FireFlow is a native iPhone and Apple Watch app created by @antonkrall that connects to your Firefly III installation. You can add transactions with Siri, widgets or receipt scanning, including while offline, and they sync when you reconnect. Your data only goes to your own server.
+ 
+- [Credits](https://antonkrall.github.io/fireflow-site/)
+- [App Store](https://apps.apple.com/app/id6806560719)
+
 ## Bots and tools
 
 ### fireflyiii-mcp
