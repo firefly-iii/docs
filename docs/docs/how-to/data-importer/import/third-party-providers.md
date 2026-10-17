@@ -31,6 +31,14 @@ GoCardless supports [many PSD2-compliant banks in the EU and the UK](https://nor
 
 [Lunch Flow](https://www.lunchflow.app/) is a paid provider that can connect to many banks through a bunch of APIs they maintain. You can register on their website.
 
+## open-banking.io
+
+[open-banking.io](https://open-banking.io) is an affordable, certificate-free European open banking API. It gives you direct access to your own bank accounts and transactions across the EU from a few euros a month, without PSD2/eIDAS certificates or enterprise contracts. This makes it a practical replacement for users who can no longer open new **GoCardless** Bank Account Data accounts.
+
+To get started, create an account at [open-banking.io](https://open-banking.io), connect your bank(s) in the app, then export your **credentials bundle** (`credentials.json` — your API key and a private key). On the Data Importer's authentication screen for open-banking.io, paste the contents of that file.
+
+open-banking.io uses **zero-knowledge encryption**: the service returns encrypted data that only you can read. The Data Importer decrypts it locally with the private key from your credentials bundle — the key never leaves your importer, and open-banking.io never sees your plaintext bank data.
+
 ## Open Banking/HBCI
 
 This data provider is not yet supported, so there are no instructions yet. Stay tuned!
