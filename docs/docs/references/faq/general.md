@@ -4,11 +4,11 @@ Some questions don't really fit anywhere, so I have put them in this section.
 
 ## My feature or change request is too niche, what do you mean by that?
 
-Sometimes there is a feature request for Firefly III that could be a great addition to Firefly III, but it is just to "niche". That means it is a request for a feature that is used by too few people, or that is so specific that it is not useful for a reasonable number of users.
+Sometimes there is a feature request for Firefly III that could be a great addition to Firefly III, but it is just too "niche". That means it is a request for a feature that is used by too few people, or that is so specific that it is not useful for a reasonable number of users.
 
 It is also possible that such a request solves a very specific problem for a small group of users.
 
-Such requests are generally not honored. The requested change will not be made, and I will also not accept a PR to fix it.
+I must apologize, but such requests are generally not honored. The requested change will not be made, and I will also not accept a PR to fix it.
 
 In this FAQ answer, allow me to explain when a feature request is too niche. 
 
