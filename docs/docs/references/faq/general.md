@@ -10,7 +10,7 @@ It is also possible that such a request solves a very specific problem for a sma
 
 I must apologize, but such requests are generally not honored. The requested change will not be made, and I will also not accept a PR to fix it.
 
-In this FAQ answer, allow me to explain when a feature request is too niche. 
+In this FAQ answer, allow me to explain when a feature request is too niche:
 
 As a general rule, a feature or an enhancement has to make peoples lives better by virtue of existing. For example, Firefly III allows you to quick-select a quarterly report range. The data importer connects to a variety of third party importers. That is useful. Even if you don't use it. You know what it does and why it is there. Opposed to that, many requested features or changes follow this pattern:
 
