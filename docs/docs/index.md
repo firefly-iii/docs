@@ -16,6 +16,10 @@ Do you want to learn the basics of how to use **Firefly III** and the **Data Imp
 
 More tutorials can be found in the [tutorials](tutorials/index.md) section.
 
+## [Firefly III hosting](references/firefly-iii/third-parties/host.md)
+
+If you need a place to host Firefly III, check out the list of [third party hosting providers](references/firefly-iii/third-parties/host.md).
+
 ## [How-to guides](how-to/index.md)
 
 Do you want to learn how to do specific tasks? Check out the [how-to guides](how-to/index.md) section to find such information as:
