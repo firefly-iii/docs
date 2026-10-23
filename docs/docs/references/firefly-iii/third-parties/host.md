@@ -1,6 +1,6 @@
 # Third parties that host Firefly III
 
-There are several companies that can host Firefly III for you. Thanks to the magic of Docker images this is safe and reliable, and you don't need to share your data(base) with anybody else. Providers with a 🇪🇺-icon are based in the EU. 
+There are several companies that can host Firefly III for you. Thanks to the magic of Docker images this is safe and reliable, and you don't need to share your data(base) with anybody else. Providers with a 🇪🇺-icon are based in the EU. They all offer hosting in the EU, but you may consider that to be a different thing. If you want to host Firefly III yourself, check out the [installation guide for Docker](../../../how-to/firefly-iii/installation/docker.md) or [for self-managed systems](../../../how-to/firefly-iii/installation/self-managed.md).
 
 !!! tip
     If you see this icon: 💰, it means that the hosting provider is a sponsor of Firefly III. If you want to support the development of Firefly III, consider using one of these providers.
