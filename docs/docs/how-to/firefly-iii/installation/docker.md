@@ -28,8 +28,9 @@ Instructions:
 1. Change `DB_PASSWORD` in `.env` to something else. Pick a nice password.
 2. Change `MYSQL_PASSWORD` in `.db.env` to the SAME value
 
-!!! note
-    Change the password FIRST. If you change the password *after* you run Firefly III, it will complain about having no access because the password has been stored in  the database volume.
+:::note
+Change the password FIRST. If you change the password *after* you run Firefly III, it will complain about having no access because the password has been stored in  the database volume.
+:::
 
 #### Change to PostgreSQL
 
@@ -46,8 +47,9 @@ Change the `docker-compose.yml` file to point to `postgres` instead of `mariadb:
 
 Then, change the mount point of the database under volumes (`firefly_iii_db`) to `/var/lib/postgresql`.
 
-!!! note
-    Pointing the image to `postgres` will install PostgreSQL-18. If you wish to use a lower version, ensure the mount point of the volumes (`firefly_iii_db`) is `/var/lib/postgresql/data`.
+:::note
+Pointing the image to `postgres` will install PostgreSQL-18. If you wish to use a lower version, ensure the mount point of the volumes (`firefly_iii_db`) is `/var/lib/postgresql/data`.
+:::
 
 ### Start the container
 
@@ -81,7 +83,7 @@ This volume is used to persistently store uploaded files.
 docker volume create firefly_iii_upload
 ```
 
-### Start the container
+### Start the container {#start-the-container_1}
 
 Run this Docker command to start the Firefly III container. Edit the environment variables to match your own database. You should really change the `APP_KEY` as well. It should be a random string of _exactly_ 32 characters. You can generate such a key with the following command: 
 
@@ -107,8 +109,9 @@ fireflyiii/core:latest
 
 Firefly III assumes that you're using MySQL. If you use PostgreSQL, change the following environment variable in the command: `DB_CONNECTION=pgsql` and change the port, `DB_PORT=5432`.
 
-!!! note
-    To connect to a database on your host machine from Firefly III running in Docker, set `DB_HOST=host.docker.internal`. For Linux users, you'll need to include the `--add-host=host.docker.internal:host-gateway` option.
+:::note
+To connect to a database on your host machine from Firefly III running in Docker, set `DB_HOST=host.docker.internal`. For Linux users, you'll need to include the `--add-host=host.docker.internal:host-gateway` option.
+:::
 
 When executed this command will fire up a Docker container with Firefly III inside of it. It may take some time to start. If the database is set up properly it will automatically migrate and install a default database, and you should be able to surf to your container (usually located at [localhost](http://localhost)) to use Firefly III.
 

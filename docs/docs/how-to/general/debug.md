@@ -28,7 +28,7 @@ When you're using Docker, restart your container with the following parameters:
 
 ### Data Importer
 
-#### Self-managed
+#### Self-managed {#self-managed_1}
 
 When you host the data importer yourself, open your `.env` file and find these lines:
 
@@ -40,7 +40,7 @@ Go to the map `/data-importer/storage/logs`. Delete all files _except_ `.gitigno
 
 This will enable debug logging and debug mode.
 
-#### Docker
+#### Docker {#docker_1}
 
 When you're using Docker, restart your container with the following parameters:
 
@@ -52,11 +52,11 @@ This will enable debug logging and debug mode.
 
 ## Where do I find the logs?
 
-### Self-managed
+### Self-managed {#self-managed_2}
 
 Check the folder `storage/logs` for a daily stream of log files.
 
-### Docker
+### Docker {#docker_2}
 
 Run the following command to "tail" the logs and see what's happening:
 
@@ -70,8 +70,9 @@ The `CONTAINER` variable can be different for everybody, but in a lot of cases i
 
 A lot of data files contain private information. You should **never** share these files on GitHub. They are very hard to remove.
 
-!!! warning "Uploading files to GitHub"
-    Do not upload CSV files or CAMT.053 to GitHub directly without censoring them first.
+:::warning[Uploading files to GitHub]
+Do not upload CSV files or CAMT.053 to GitHub directly without censoring them first.
+:::
 
 Upload as few lines or blocks of data as is necessary to reproduce the error. Removing private information from the remaining data consists of (your choice):
 
@@ -79,7 +80,8 @@ Upload as few lines or blocks of data as is necessary to reproduce the error. Re
 - Replace IBANs with [fake IBANs](https://fakeiban.org/);
 - Replace amounts with fake amounts
 
-!!! note "Consistency is important"
-    Try to remove as little data as you dare. Try to replace data consistently, always replacing IBAN "ABC" for the same (fake) IBAN for example.
+:::note[Consistency is important]
+Try to remove as little data as you dare. Try to replace data consistently, always replacing IBAN "ABC" for the same (fake) IBAN for example.
+:::
 
 You may always send your data file to me personally at [james@firefly-iii.org](mailto:james@firefly-iii.org). That leaks your personal data to a single person at least. I cannot guarantee nobody will ever hack me, but your files will be removed once the issue is closed.

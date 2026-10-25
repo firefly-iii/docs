@@ -22,8 +22,9 @@ This is not very useful yet. So, on the `/budgets` page you  can set the maximum
 
 ## Automated budgets
 
-!!! note
-    I'm talking about months here, but this works equally well for weeks or quarters.
+:::note
+I'm talking about months here, but this works equally well for weeks or quarters.
+:::
 
 When the next month arrives, your budget amounts are gone, since they only applied to the previous month. You can set them again based on your experience from the previous month.
 

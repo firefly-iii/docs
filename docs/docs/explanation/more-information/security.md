@@ -2,8 +2,9 @@
 
 Because Firefly III stores personal financial information it's important to know how Firefly III is secured, and how it's not.
 
-!!! danger
-    If you find a security issue or problem with Firefly III, please refer to the [Security Policy](https://github.com/firefly-iii/firefly-iii/security/policy).
+:::danger
+If you find a security issue or problem with Firefly III, please refer to the [Security Policy](https://github.com/firefly-iii/firefly-iii/security/policy).
+:::
 
 ## Database
 
@@ -91,8 +92,9 @@ Even logging just error information may leak data.
 
 ## Security bugs and issues
 
-!!! danger
-    If you find a security issue or problem with Firefly III, please refer to the [Security Policy](https://github.com/firefly-iii/firefly-iii/security/policy).
+:::danger
+If you find a security issue or problem with Firefly III, please refer to the [Security Policy](https://github.com/firefly-iii/firefly-iii/security/policy).
+:::
 
 ## Other stuff
 

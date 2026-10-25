@@ -6,8 +6,9 @@ The best way to upgrade is to use the "Straight from GitHub" instructions below.
 
 ## Straight from GitHub
 
-!!! warning "Upgrading by pulling the remote repository"
-    It's no longer possible to upgrade the data importer by pulling the code from the `main` or `develop` branch of the repository. Generated (JS) code and other dependencies are not in the repository, so your upgraded installation may not work as expected.
+:::warning[Upgrading by pulling the remote repository]
+It's no longer possible to upgrade the data importer by pulling the code from the `main` or `develop` branch of the repository. Generated (JS) code and other dependencies are not in the repository, so your upgraded installation may not work as expected.
+:::
 
 %IMPORTERVERSION is the [latest version](https://version.firefly-iii.org/).
 

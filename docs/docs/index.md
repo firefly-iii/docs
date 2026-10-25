@@ -1,6 +1,5 @@
 ---
-hide:
-  - feedback
+feedback: false
 ---
 
 # Firefly III documentation
@@ -49,6 +48,10 @@ Do you want to learn what **Firefly III** is about? Check out the [explanation](
 
 More explanations can be found in the [explanation](explanation/index.md) section.
 
+## [API reference](/api/)
+
+Do you want to talk to **Firefly III** from your own code? The [API reference](/api/) documents every endpoint of the Firefly III API, with requests you can try against your own installation. Start with [how to use the API](how-to/firefly-iii/features/api.md) to set up access.
+
 <!-- HELP TEXT -->
 
 ## Do you need help, or do you want to get in touch?
@@ -77,7 +80,7 @@ Firefly III is sponsored by TestMu AI. Their support allows me to test Firefly I
 Browser testing via TestMu AI:
 
 <a href="https://www.testmuai.com/?utm_source=fireflyiii&utm_medium=sponsor" target="_blank">
-<img src="/images/testmu.png" alt="TestMu AI" style="vertical-align: middle;" width="250" />
+<img src="./images/testmu.png" alt="TestMu AI" style="vertical-align: middle;" width="250" />
 </a>
 
 <!-- END OF SPONSOR TEXT -->

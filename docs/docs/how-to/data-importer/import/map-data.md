@@ -26,8 +26,9 @@ Here is a screenshot of an import where many names need to be mapped. I have tak
 
 In the third column you see how the data importer would just import everything as-is. If you don't want that, use the dropdown to select the correct opposing expense, revenue or asset account that the value needs to be linked to instead.
 
-!!! tip "This is my first import, I don't have those accounts yet"
-    You can go to Firefly III (in another tab) and create the accounts you're missing. If you refresh the page, they will be visible and selectable.
+:::tip[This is my first import, I don't have those accounts yet]
+You can go to Firefly III (in another tab) and create the accounts you're missing. If you refresh the page, they will be visible and selectable.
+:::
 
 Here's an example where I mapped all weird "Albert Heijn"-transactions to a single expense account called "Albert Heijn".
 

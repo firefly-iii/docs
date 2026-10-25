@@ -4,8 +4,9 @@ The Firefly III rule engine can trigger on a number of things. If you are missin
 
 If you want to know more, please check out [how to create a rule](../../how-to/firefly-iii/features/rules.md).
 
-!!! info "Trigger inversion"
-    All triggers can be inverted. By checking the "NOT"-box on the rule creation page, the trigger will do the opposite, i.e. NOT match on a description.
+:::info[Trigger inversion]
+All triggers can be inverted. By checking the "NOT"-box on the rule creation page, the trigger will do the opposite, i.e. NOT match on a description.
+:::
 
 
 ## Description and content
@@ -40,8 +41,9 @@ When you inverse these triggers, they look for the opposite property.
 
 ## Amount
 
-!!! warning
-    Always write amounts with **dots**, not commas. This also applies when your own language (like Dutch or German) would normally use commas.
+:::warning
+Always write amounts with **dots**, not commas. This also applies when your own language (like Dutch or German) would normally use commas.
+:::
 
 All amount triggers can handle bigger than, less than, exactly, etc.
 
@@ -150,7 +152,8 @@ You can also make some advanced combinations:
 
 So you could say "Transaction date is before" `xxxx-xx-10` and any transaction before the 10th of the month is triggered.
 
-!!! info
+:::info
+:::
    These semi specific dates are tricky. The `xx`-values will be filled in by the date of the transaction. If your rule trigger has something like "2018-xx-xx" it will never match transactions from any year except 2018.
 
 

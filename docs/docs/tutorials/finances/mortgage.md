@@ -6,8 +6,9 @@ There are multiple ways to manage your mortgage in Firefly III. The method illus
 
 Your mortgage loans should be created as a liability account. You can do that on the Liabilities page. For more information, see [how to manage liabilities](../../how-to/firefly-iii/finances/liabilities.md).
 
-!!! tip
-    At this point it's optional but smart to buy a house to pay a mortgage on.
+:::tip
+At this point it's optional but smart to buy a house to pay a mortgage on.
+:::
 
 ## Paying your mortgage
 

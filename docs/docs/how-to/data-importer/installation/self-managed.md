@@ -15,8 +15,9 @@ You can search the web to find out how to install these modules. Some may be ins
 
 ## Installing the Data Importer
 
-!!! warning "Installing by pulling the remote repository"
-    It's no longer possible to install the data importer by pulling the code from the `main` or `develop` branch of the repository. Generated (JS) code and other dependencies are not in the repository, so your new installation may not work as expected.To do so manually, please [review this FAQ question](../../../references/faq/install.md#i-want-to-build-the-data-importer-release-myself)
+:::warning[Installing by pulling the remote repository]
+It's no longer possible to install the data importer by pulling the code from the `main` or `develop` branch of the repository. Generated (JS) code and other dependencies are not in the repository, so your new installation may not work as expected.To do so manually, please [review this FAQ question](../../../references/faq/install.md#i-want-to-build-the-data-importer-release-myself)
+:::
 
 ### Main command
 
@@ -113,5 +114,6 @@ Check out [the tutorial on how to import CSV files](../../../tutorials/data-impo
 
 ![Opening screen of the data importer.](../../../images/how-to/data-importer/installation/ready_to_go.png)
 
-!!! question "Need help?"
-    If something did not go as expected, please browse to the [Frequently Asked Questions](../../../references/faq/install.md) or the [Support](../../../explanation/support.md) pages.
+:::info[Need help?]
+If something did not go as expected, please browse to the [Frequently Asked Questions](../../../references/faq/install.md) or the [Support](../../../explanation/support.md) pages.
+:::

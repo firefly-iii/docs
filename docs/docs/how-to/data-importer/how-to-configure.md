@@ -41,8 +41,9 @@ The `VANITY_URL` is rarely used outside of Docker containers. It contains the UR
 
 The `FIREFLY_III_URL` is optional. If you don't set it, the data importer will ask for the URL. If you do not set it, the `VANITY_URL` will be ignored.
 
-!!! warning "Docker and 127.0.0.1"
-    Docker cannot connect to a Firefly III installation using `http://localhost` or `http://127.0.0.1` because this address refers to the Docker container itself, and not Firefly III.
+:::warning[Docker and 127.0.0.1]
+Docker cannot connect to a Firefly III installation using `http://localhost` or `http://127.0.0.1` because this address refers to the Docker container itself, and not Firefly III.
+:::
 
 ## Authenticate to Firefly III
 
@@ -53,8 +54,9 @@ Second, to authenticate with Firefly III you must set ONE of the following varia
 
 You can get these variables by reading [how to talk to the API](../firefly-iii/features/api.md).
 
-!!! note "Authelia and other tools"
-    Firefly III combined with [external identity providers](../../how-to/firefly-iii/advanced/authentication.md) such as Authelia can only handle Personal Access Tokens.
+:::note[Authelia and other tools]
+Firefly III combined with [external identity providers](../../how-to/firefly-iii/advanced/authentication.md) such as Authelia can only handle Personal Access Tokens.
+:::
 
 These variables are mutually exclusive. If you set both, the data importer will use the Personal Access Token. If you set neither, the data importer will ask for the client ID.
 
@@ -110,8 +112,9 @@ Not yet supported. Stay tuned!
 
 ### Configure Spectre
 
-!!! warning
-    As of October 31st, 2025 Salt Edge no longer offers free-tier access for Firefly III users. To prevent disappointment, the instructions for Salt Edge have been removed and in due time, Salt Edge support will be removed from the data importer.
+:::warning
+As of October 31st, 2025 Salt Edge no longer offers free-tier access for Firefly III users. To prevent disappointment, the instructions for Salt Edge have been removed and in due time, Salt Edge support will be removed from the data importer.
+:::
 
 ## Where to set the configuration?
 
@@ -123,5 +126,6 @@ All the configuration values mentioned on this page are stored in environment va
 
 You can use the `.env` file to store them, use Docker's `-e` flag to set them or use your operating system to set these values. This depends on your installation method, [Docker](installation/docker.md) or [self-managed](installation/self-managed.md).
 
-!!! important "Cookie warning"
-    You may need to clear your cookies, browse to `/flush` or press \[Reauthenticate\] after changing these values.
+:::tip[Cookie warning]
+You may need to clear your cookies, browse to `/flush` or press \[Reauthenticate\] after changing these values.
+:::

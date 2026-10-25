@@ -18,8 +18,9 @@ To get started, go to [enablebanking.com](https://enablebanking.com/) and click 
 
 ## GoCardless
 
-!!! note
-    GoCardless is "shifting away" from their Bank Account Data products (aka the service you need for this to work). These instructions are only here for users who still have access to their GoCardless account.
+:::note
+GoCardless is "shifting away" from their Bank Account Data products (aka the service you need for this to work). These instructions are only here for users who still have access to their GoCardless account.
+:::
 
 GoCardless API access is paid, and they are a commercial organization. Please read and agree with all the terms the company may present you with. They have their own data usage and privacy policies, which you must read up on.
 

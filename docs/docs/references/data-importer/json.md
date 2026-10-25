@@ -72,8 +72,9 @@ This is a typical configuration file with all options:
 
 ## Fields and values
 
-!!! info
-    Some options only apply to CSV files, others are exclusive to camt.053 files.
+:::info
+Some options only apply to CSV files, others are exclusive to camt.053 files.
+:::
 
 ### date
 

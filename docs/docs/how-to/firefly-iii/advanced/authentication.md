@@ -28,8 +28,9 @@ Firefly III supports [RFC 3875](https://tools.ietf.org/html/rfc3875#section-4.1.
 
 A very popular tool that can do this [Authelia](https://www.authelia.com/docs/).
 
-!!! warning 
-    When Firefly III is set up for remote user authentication, it will do absolutely **NO** checks on the validity of the header or the contents. Firefly III will not ask for passwords, it won't check for MFA, nothing. All authentication is delegated to the authentication proxy and Firefly III just doesn't care anymore.
+:::warning
+When Firefly III is set up for remote user authentication, it will do absolutely **NO** checks on the validity of the header or the contents. Firefly III will not ask for passwords, it won't check for MFA, nothing. All authentication is delegated to the authentication proxy and Firefly III just doesn't care anymore.
+:::
 
 Be sure to turn off MFA in Firefly III, because that will remain in place.
 

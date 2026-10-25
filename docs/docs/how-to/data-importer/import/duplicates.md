@@ -107,5 +107,6 @@ If you compare two of these, you may not see a difference, but online compare to
 
 Please open an issue [on GitHub](https://github.com/firefly-iii/firefly-iii/).
 
-!!! info
-    At this point the duplication detection process is pretty much 100% correct all the time. If you still believe it's broken, please provide a reproducible example.
+:::info
+At this point the duplication detection process is pretty much 100% correct all the time. If you still believe it's broken, please provide a reproducible example.
+:::

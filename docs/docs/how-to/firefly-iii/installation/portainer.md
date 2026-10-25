@@ -15,8 +15,9 @@ You will need to download and save the following configuration files:
 
 First, open the docker compose file in your favorite editor, and change all references under `env_file:` to say `env_file: stack.env`.
 
-!!! tip
-    All `env_file:` references must be pointing to exactly `stack.env`. Nothing else.
+:::tip
+All `env_file:` references must be pointing to exactly `stack.env`. Nothing else.
+:::
 
 Second, update line 60, the that says `PLEASE_REPLACE_WITH_32_CHAR_CODE` and change it to a 32-character code. You need a random string at this point. If you don't want to make one up, [create one on this page](https://www.random.org/strings/?num=1&len=32&digits=on&upperalpha=on&loweralpha=on&unique=on&format=html&rnd=new). This 32-character code is used to secure the cron job.
 

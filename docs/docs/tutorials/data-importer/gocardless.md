@@ -1,7 +1,8 @@
 # Import from GoCardless
 
-!!! note
-    GoCardless is "shifting away" from their Bank Account Data products (aka the service you need for this to work). These instructions are only here for users who still have access to their GoCardless account.
+:::note
+GoCardless is "shifting away" from their Bank Account Data products (aka the service you need for this to work). These instructions are only here for users who still have access to their GoCardless account.
+:::
 
 ## Select GoCardless
 
@@ -9,7 +10,7 @@ My apologies, in this screenshot it is still called "Nordigen".
 
 ![Select import routine](../../images/tutorials/data-importer/selection-camt.png "Nordigen is called GoCardless nowadays")
 
-## Import from GoCardless
+## Import from GoCardless {#import-from-gocardless_1}
 
 If you import from GoCardless, you can also optionally upload a GoCardless configuration file. Also, you may have to enter your GoCardless ID and GoCardless Key, if they are not part of the data importer's environment variables.
 
@@ -49,8 +50,9 @@ Select this if you want Firefly III to apply your rules to the import. It is use
 
 When you check this the data importer will add a tag to each imported transaction denoting the import; this groups your import under a tag.
 
-!!! note "Rules"
-    If you have rules that remove all tags from a transaction, they will *not* work when you use this option. The tag will always be added. This is not because the data importer uses some magic trick. The tag is added *after* the transaction is created.
+:::note[Rules]
+If you have rules that remove all tags from a transaction, they will *not* work when you use this option. The tag will always be added. This is not because the data importer uses some magic trick. The tag is added *after* the transaction is created.
+:::
 
 ### Custom import tag
 
@@ -68,8 +70,9 @@ For GoCardless imports, you can select a date range, limiting the import. Option
 
 Checkout the [FAQ on duplicate transactions](../../how-to/data-importer/import/duplicates.md) and the FAQ on re-importing transactions for more information.
 
-!!! info "Duplicate detection"
-    If you're unsure about what setting to use, use content-based duplicate detection.
+:::info[Duplicate detection]
+If you're unsure about what setting to use, use content-based duplicate detection.
+:::
 
 ## Other options
 

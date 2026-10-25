@@ -8,7 +8,7 @@ Press the little red icon in the top menu bar, or disable "Hidden amounts" in yo
 
 Make sure your `APP_KEY` is exactly 32 characters. Weird errors may appear otherwise.
 
-## Firefly III can't tell the difference between `a` and `ä`
+## Firefly III can't tell the difference between `a` and `ä` {#firefly-iii-cant-tell-the-difference-between-a-and-a}
 
 This happens because by default MySQL can't see the difference. At the moment, I cannot fix this.
 

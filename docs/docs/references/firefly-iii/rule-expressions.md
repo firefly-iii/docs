@@ -1,12 +1,14 @@
 # Rule expressions
 
-!!! warning "Use of Expressions"
-    This feature requires 6.1.20 or later and must be manually enabled in 'System Settings - Firefly III Configuration - Enable expression engine' with versions > 6.7.x
+:::warning[Use of Expressions]
+This feature requires 6.1.20 or later and must be manually enabled in 'System Settings - Firefly III Configuration - Enable expression engine' with versions > 6.7.x
+:::
 
 Firefly III features a powerful [rule engine](../../how-to/firefly-iii/features/rules.md) that comes with an [expression language](../../how-to/firefly-iii/features/expressions.md) to execute actions on your transactions.
 
-!!! info "Full syntax"
-    The full syntax of the expression language is documented in the [Symfony documentation](https://symfony.com/doc/current/reference/formats/expression_language.html).
+:::info[Full syntax]
+The full syntax of the expression language is documented in the [Symfony documentation](https://symfony.com/doc/current/reference/formats/expression_language.html).
+:::
 
 The expression language features something called "variables" that you can use in your expression. For example:
 

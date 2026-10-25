@@ -1,6 +1,5 @@
 ---
-hide:
-  - feedback
+feedback: false
 ---
 
 # basiq.io

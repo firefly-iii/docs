@@ -2,8 +2,9 @@
 
 Firefly III can upgrade itself from very old versions, even back from 4.7.x. In some cases the upgrade process is destructive. It will remove transactions, delete accounts or clean up data.
 
-!!! warning
-    Always make a backup of your database and `storage` before you upgrade, especially when you upgrade major versions.
+:::warning
+Always make a backup of your database and `storage` before you upgrade, especially when you upgrade major versions.
+:::
 
 ## Created using composer "create-project"
 
@@ -11,8 +12,9 @@ The best way to upgrade is to use the "Straight from GitHub" instructions below.
 
 ## Straight from GitHub
 
-!!! warning "Upgrading by pulling the remote repository"
-    It's no longer possible to upgrade Firefly III by pulling the code from the `main` or `develop` branch of the repository. Generated (JS) code and other dependencies are not in the repository, so your upgraded installation may not work as expected.
+:::warning[Upgrading by pulling the remote repository]
+It's no longer possible to upgrade Firefly III by pulling the code from the `main` or `develop` branch of the repository. Generated (JS) code and other dependencies are not in the repository, so your upgraded installation may not work as expected.
+:::
 
 %FFVERSION is the [latest version](https://version.firefly-iii.org/).
 

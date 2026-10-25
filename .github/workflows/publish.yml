@@ -10,17 +10,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
-      - name: Install packages
-        run: |
-          sudo apt update -y
-          sudo apt install -y pngquant python3-pip python3-setuptools python3-dev python3-venv python3-wheel libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev
-          sudo rm /usr/bin/python
-          sudo rm /usr/bin/pip
-          sudo ln -s /usr/bin/python3 /usr/bin/python
-          sudo ln -s /usr/bin/pip3 /usr/bin/pip
-          sudo pip install mkdocs-material mkdocs mkdocs-git-revision-date-plugin mkdocs-redirects mkdocs-minify-plugin pillow cairosvg
-        env:
-          MKDOCS_TOKEN: ${{ secrets.MKDOCS_TOKEN }}
+        with:
+          # The whole history, so each page is dated by its file's last commit.
+          fetch-depth: 0
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: docs/package-lock.json
       - id: ff3version
         uses: pozetroninc/github-action-get-latest-release@master
         with:
@@ -36,17 +33,22 @@ jobs:
           excludes: prerelease, draft
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Build documentation
+        env:
+          # The header's GitHub button reads the latest release, stars and forks with the workflow's token.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           cd $GITHUB_WORKSPACE/docs
           echo "Latest Firefly III release is ${{ steps.ff3version.outputs.release }}"
           echo "Latest Data Importer release is ${{ steps.importerversion.outputs.release }}"
-          grep -rl '%PHPVERSION' ./ | xargs sed -i 's/%PHPVERSION/8\.5/g'
-          grep -rl '%IMPORTERVERSION' ./ | xargs sed -i 's/%IMPORTERVERSION/${{ steps.importerversion.outputs.release }}/g'
-          grep -rl '%FFVERSION' ./ | xargs sed -i 's/%FFVERSION/${{ steps.ff3version.outputs.release }}/g'
-          python -m mkdocs build --clean
+          grep -rl '%PHPVERSION' ./docs | xargs sed -i 's/%PHPVERSION/8\.5/g'
+          grep -rl '%IMPORTERVERSION' ./docs | xargs sed -i 's/%IMPORTERVERSION/${{ steps.importerversion.outputs.release }}/g'
+          grep -rl '%FFVERSION' ./docs | xargs sed -i 's/%FFVERSION/${{ steps.ff3version.outputs.release }}/g'
+          npm ci
+          npm run build
 
-          # also copy security.txt
-          cp -r docs/.well-known site/.well-known
+          # also copy security.txt, beside the discovery files the build writes there
+          mkdir -p site/.well-known
+          cp -r docs/.well-known/. site/.well-known/
       - uses: cloudflare/wrangler-action@v4
         name: Publish to Cloudflare
         with:

@@ -49,8 +49,9 @@ Example: you have three rules in a group to add the tag "Groceries" to your groc
 
 ### Stop processing other triggers
 
-!!! info 
-    This only applies to "non-strict" rules, because for strict rules, all triggers need to be hit anyway.
+:::info
+This only applies to "non-strict" rules, because for strict rules, all triggers need to be hit anyway.
+:::
 
 For any trigger in a non-strict rule, you can also set the "stop processing" option. Non-strict rules search for each trigger one by one, independently of one another, and pool the results together. If you search for transactions that start with "A" and transactions that start with "B", two searches are done and the results are presented as one list.
 

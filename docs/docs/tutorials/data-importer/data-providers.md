@@ -6,5 +6,6 @@ When you are managing your finances with Firefly III, you don't want to enter al
 
 You're in luck! In the navigation (on most devices you will find this on the left side of your screen), you will find menu items for all currently supported data providers and how to use them to import data into Firefly III.
 
-!!! warning
-    I have not finished all tutorials yet, my apologies for the wait.
+:::warning
+I have not finished all tutorials yet, my apologies for the wait.
+:::

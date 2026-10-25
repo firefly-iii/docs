@@ -1,7 +1,8 @@
 # How to use expressions in rules?
 
-!!! warning "Use of Expressions"
-    This feature requires 6.1.20 or later and must be manually enabled in 'System Settings - FireFly III Configuration - Enable expression engine' with versions > 6.7.x
+:::warning[Use of Expressions]
+This feature requires 6.1.20 or later and must be manually enabled in 'System Settings - FireFly III Configuration - Enable expression engine' with versions > 6.7.x
+:::
 
 ## Introduction
 
@@ -10,8 +11,9 @@ Once you've learned [how to use rules](rules.md), you may think that rule *actio
 
 Thanks to GitHub user [@michaelhthomas](https://github.com/michaelhthomas) the rule actions now support the Symfony expression engine. This means that you can write a complicate "expression" that result in a new piece of text, or a new value. Depending on the action that you choose, you can do some pretty cool things.
 
-!!! info "Full syntax"
-    The full syntax of the expression language is documented in the [Symfony documentation](https://symfony.com/doc/current/reference/formats/expression_language.html).
+:::info[Full syntax]
+The full syntax of the expression language is documented in the [Symfony documentation](https://symfony.com/doc/current/reference/formats/expression_language.html).
+:::
 
 You can read about the fields you can use in the [expression reference](../../../references/firefly-iii/rule-expressions.md).
 

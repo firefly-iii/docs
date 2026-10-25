@@ -1,6 +1,5 @@
 ---
-hide:
-  - feedback
+feedback: false
 ---
 
 # teller.io
