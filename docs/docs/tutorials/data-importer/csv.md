@@ -1,7 +1,8 @@
 # Import a basic CSV file
 
-!!! tip
-    I've not yet finished writing this tutorial. Some items may not be filled in yet. I apologize for the inconvenience. Please refer to the [support page](../../explanation/support.md) if you have questions.
+:::tip
+I've not yet finished writing this tutorial. Some items may not be filled in yet. I apologize for the inconvenience. Please refer to the [support page](../../explanation/support.md) if you have questions.
+:::
 
 ## Select a data source
 
@@ -15,8 +16,9 @@ Browse to importer, select CSV, upload a CSV file.
 
 You have to upload the file you wish to import. 
 
-!!! info "A note when importing CSV files"
-    If the file contains any lines before the data starts, you must remove them manually. If there are extra headers (for example every 100 rows) you'll have to delete those too.
+:::info[A note when importing CSV files]
+If the file contains any lines before the data starts, you must remove them manually. If there are extra headers (for example every 100 rows) you'll have to delete those too.
+:::
 
 There may be a standard configuration file for your bank in **[this GitHub repository](https://github.com/firefly-iii/import-configurations)**. If not, it is OK to continue without a configuration file.
 

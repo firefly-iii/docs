@@ -82,8 +82,9 @@ Lychnos is a simple web front-end for Firefly III made by @davidschlachter, buil
 
 Firefly Personal Finance is an android app created by @mconway that connects to your Firefly III installation.
 
-!!! warning
-    Development of this tool stopped in January 2020. It may no longer work as expected.
+:::warning
+Development of this tool stopped in January 2020. It may no longer work as expected.
+:::
 
 - [Credits](https://github.com/mconway)
 - [Website and documentation](https://github.com/mconway/firefly-app/)

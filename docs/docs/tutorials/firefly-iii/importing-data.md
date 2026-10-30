@@ -1,18 +1,18 @@
 ---
-hide:
-  - feedback
+feedback: false
 ---
 
 # Importing data
 
-!!! tip
-    I've not yet finished writing this tutorial. Some items may not be filled in yet. I apologize for the inconvenience. Please refer to the [support page](../../explanation/support.md) if you have questions.
+:::tip
+I've not yet finished writing this tutorial. Some items may not be filled in yet. I apologize for the inconvenience. Please refer to the [support page](../../explanation/support.md) if you have questions.
+:::
 
 # Introduction
 
 (TODO link to other tutorials)
 
-In order to import transactions into Firefly III, you'll have to install the Firefly III Data Importer. This app connects to the [Firefly III API](https://api-docs.firefly-iii.org/).
+In order to import transactions into Firefly III, you'll have to install the Firefly III Data Importer. This app connects to the [Firefly III API](/api/).
 
 Firefly III and the Data Importer are two different applications.
 

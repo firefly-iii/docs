@@ -65,7 +65,7 @@ All webhook responses will be delivered in JSON. This is the only option:
 
 ## Create or edit webhooks using the API
 
-You can manage webhooks using [the webhook API endpoints](https://api-docs.firefly-iii.org/#/webhooks) or on the page `/webhooks/index`.
+You can manage webhooks using [the webhook API endpoints](/api/#tag-webhooks) or on the page `/webhooks/index`.
 
 ## Webhook secret
 

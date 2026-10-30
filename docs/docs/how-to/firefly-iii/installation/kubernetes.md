@@ -4,5 +4,6 @@ In the [GitHub repository](https://github.com/firefly-iii/kubernetes) you will f
 
 You can find more [instructions on GitHub](https://firefly-iii.github.io/kubernetes/). 
 
-!!! note 
-    These instructions aren't very long, and I'm sorry about that. Most stuff is documented on the GitHub page and I just don't know very much about Kubernetes myself. If you feel you can expand this page, please press the edit button next to the title
+:::note
+These instructions aren't very long, and I'm sorry about that. Most stuff is documented on the GitHub page and I just don't know very much about Kubernetes myself. If you feel you can expand this page, please press the edit button next to the title
+:::

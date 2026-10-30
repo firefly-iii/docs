@@ -45,8 +45,9 @@ When you spend money, you do so at a store, online or maybe using cash. Each of 
 
 Another type of account is the revenue account. A revenue account belongs to anyone or any company that sends you money. These may be your employer, parents or friends. Possibly these are clients or the government.
 
-!!! info
-    Expense and revenue accounts may share the same name. If you get a refund from Amazon, you will have both an expense account and a revenue account called "Amazon".
+:::info
+Expense and revenue accounts may share the same name. If you get a refund from Amazon, you will have both an expense account and a revenue account called "Amazon".
+:::
 
 ## Cash accounts
 

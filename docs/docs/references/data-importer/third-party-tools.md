@@ -2,8 +2,9 @@
 
 There are various scripts and tools you can use, if the Firefly III Data Importer does not fit your use case.
 
-!!! info
-    These are all developed by other users, feel free to contact them if you have support questions.
+:::info
+These are all developed by other users, feel free to contact them if you have support questions.
+:::
 
 ## Transaction classification
 
@@ -39,8 +40,9 @@ There are various scripts and tools you can use, if the Firefly III Data Importe
 
 [This script](https://github.com/plumped/camt_converter_ISO20022_for_camt) allows you to unzip zip files with camt.053 in them and convert them into CSV for easy processing.
 
-!!! info
-    Since the data importer supports camt.053 files, this is no necessary.
+:::info
+Since the data importer supports camt.053 files, this is no necessary.
+:::
 
 ### GnuCash
 
@@ -53,8 +55,9 @@ This experimental [Python script](https://gist.github.com/adyanth/20c004869baf33
 - GitLab-user [@GeorgeHahn](https://gitlab.com/GeorgeHahn) built a tool to import from Plaid. [Website and documentation](https://gitlab.com/GeorgeHahn/firefly-plaid-connector)
 - GitHub-user [@dvankley](https://github.com/dvankley) built an alternative Plaid importer tool. [Website and documentation](https://github.com/dvankley/firefly-plaid-connector-2)
 
-!!! warning
-    The free Plaid program is meant for testing and your milage may vary.
+:::warning
+The free Plaid program is meant for testing and your milage may vary.
+:::
 
 ## Bank-specific tools
 
@@ -81,6 +84,7 @@ These applications allow you to import data from Australian Bank "Up":
 
 If you're banking with Revolut, you can use the [Revolut importer](https://gitlab.com/ludo444/fireflyrevoluttransactions), which is built by GitLab user [@ludo444](https://gitlab.com/ludo444).
 
-!!! info
-    Want your app on this list? Open an [issue on GitHub](https://github.com/firefly-iii/firefly-iii/issues/)!
+:::info
+Want your app on this list? Open an [issue on GitHub](https://github.com/firefly-iii/firefly-iii/issues/)!
+:::
 

@@ -2,8 +2,9 @@
 
 Firefly III does not come with a built-in backup routine. Using your native OS tools is way more useful and faster. 
 
-!!! warning "Do not use the export function as a backup mechanism"
-    The export function of Firefly III is *not* a backup mechanism
+:::warning[Do not use the export function as a backup mechanism]
+The export function of Firefly III is *not* a backup mechanism
+:::
 
 GitHub user [@ddyykk](https://github.com/ddyykk) has written excellent [this backup guide](https://github.com/orgs/firefly-iii/discussions/9960) with some scripts too. Check it out!
 
@@ -51,10 +52,11 @@ docker run --rm -v "firefly_iii_db:/recover" \
     ubuntu tar -xvf /backup/firefly_db.tar -C /recover --strip 1
 ```
 
-!!! warning 
-    Check that the volume exists **before** trying to back it up. If a named volume doesn't exist Docker will create an empty one, and the command will backup that empty volume. This *wipes out the existing backup*.
+:::warning
+Check that the volume exists **before** trying to back it up. If a named volume doesn't exist Docker will create an empty one, and the command will backup that empty volume. This *wipes out the existing backup*.
 
-    To get a better idea of how this works, see Docker's [official documentation](https://docs.docker.com/storage/volumes/#backup-restore-or-migrate-data-volumes).
+To get a better idea of how this works, see Docker's [official documentation](https://docs.docker.com/storage/volumes/#backup-restore-or-migrate-data-volumes).
+:::
 
 After you made a backup this way, the *first* thing you must do is restore it, to make sure it actually worked.
 

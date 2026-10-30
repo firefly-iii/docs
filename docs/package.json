@@ -1,0 +1,12 @@
+{
+  "name": "firefly-iii-docs",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "sourcey dev",
+    "build": "sourcey build -o site"
+  },
+  "dependencies": {
+    "sourcey": "^3.9.2"
+  }
+}

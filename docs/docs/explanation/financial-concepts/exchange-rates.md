@@ -2,8 +2,9 @@
 
 Firefly III can dynamically convert amounts from one currency into another using exchange rates. You can set the exchange rates yourself or allow Firefly III to download exchange rates for you. 
 
-!!! warning
-    Firefly III can only download the exchange rates of [the standard, built-in currencies](https://github.com/firefly-iii/firefly-iii/blob/main/database/seeders/TransactionCurrencySeeder.php#L38).
+:::warning
+Firefly III can only download the exchange rates of [the standard, built-in currencies](https://github.com/firefly-iii/firefly-iii/blob/main/database/seeders/TransactionCurrencySeeder.php#L38).
+:::
 
 This is useful for some of the charts that Firefly III shows you. All monetary amounts will be calculated back to your base currency.
 
@@ -55,8 +56,9 @@ Firefly III transactions also have a "foreign amount"-field. If you set a foreig
 
 ## Downloading exchange rates
 
-!!! info
-    This only works for the default system provided currencies because free exchange rate data is hard to come by.
+:::info
+This only works for the default system provided currencies because free exchange rate data is hard to come by.
+:::
 
 Make sure that you have enabled the settings at `/settings/configuration`, and run the [cron job](../../how-to/firefly-iii/advanced/cron.md) daily.
 

@@ -1,0 +1,155 @@
+overlay: 1.0.0
+info:
+  title: Firefly III's API for your own installation, in reader order
+  version: 1.0.0
+actions:
+  # The reference sits in the docs now, so its introduction links the guides it
+  # relied on instead of pointing at Swagger's Authorize button. Its title drops
+  # the version the reference shows beside it, and the text names no version or
+  # date, since the specification it reads moves with each release.
+  - target: $.info
+    update:
+      title: Firefly III API
+      description: |
+        The Firefly III REST API: every endpoint of the latest release. Requests go to `/api` on your own installation. [How to use the API](/how-to/firefly-iii/features/api/) shows how to create the OAuth client or Personal Access Token they need, and the [API reference guide](/references/firefly-iii/api/) explains the currency fields, configuration values and webhooks.
+
+        Please keep in mind that the demo site does **not** accept requests from `curl`, `colly`, `wget`, etc. You must use a browser or a tool like Insomnia to make your test requests.
+
+        Please report any bugs or issues on [GitHub](https://github.com/firefly-iii/firefly-iii/issues).
+  # Readers call their own installation, which the guides say works where the demo
+  # site refuses scripts. The demo stays as the second server; the internal
+  # development server, marked "do not use", goes.
+  - target: $
+    update:
+      servers:
+        - url: https://{installation}/api
+          description: Your Firefly III installation
+          variables:
+            installation:
+              default: firefly.example.com
+              description: Your installation's host.
+        - url: https://demo.firefly-iii.org/api
+          description: Firefly III demo site (refuses command-line clients)
+  - target: $.components.securitySchemes.firefly_iii_auth
+    update:
+      description: OAuth2 authorization code flow. Create a client on your installation's `/profile` page; it authorizes at `/oauth/authorize` and issues tokens at `/oauth/token` there. The URLs below are the demo site's. [How to use the API](/how-to/firefly-iii/features/api/) walks through it.
+  - target: $.components.securitySchemes.local_bearer_auth
+    update:
+      description: A Personal Access Token, sent as a bearer token. Create one on your installation under Options > Profile > OAuth > Personal Access Tokens.
+  # Links into the docs stay on the site, at the section they mean. A summary is
+  # an operation's name in the navigation, so its link moves to the description.
+  - target: $.paths['/v1/data/bulk/transactions'].post
+    update:
+      summary: Bulk update transaction properties
+      description: |
+        Allows you to update transactions in bulk. For more information, see [Bulk transaction update](/references/firefly-iii/api/specials/#bulk-transaction-update).
+  - target: $.paths['/v1/transactions/{id}'].put
+    update:
+      summary: Update existing transaction
+      description: Update an existing transaction. For more information, see [Transaction update](/references/firefly-iii/api/specials/#transaction-update).
+  - target: $.paths['/v1/search/transactions'].get.externalDocs
+    update:
+      url: /how-to/firefly-iii/features/search/
+  - target: $.components.schemas.UserGroupReadRole
+    update:
+      description: The possible roles of the user in this user group are documented in the [API reference guide](/references/firefly-iii/api/).
+  # The spec lists its tags alphabetically by machine name (`bills`, `piggy_banks`).
+  # Each gets the name the guides use, and the ones that belong to a larger
+  # resource nest beneath it (OpenAPI 3.2 `parent`), in the order a reader meets
+  # them: the installation, accounts and transactions, budgeting, organizing,
+  # automation, reporting, search, then data and administration. Descriptions are
+  # the spec's own, with its HTML entities written as characters.
+  - target: $
+    update:
+      tags:
+        - name: about
+          summary: System
+          description: These endpoints deliver general system information, version- and meta information.
+        - name: configuration
+          summary: Configuration
+          parent: about
+          description: These endpoints allow you to manage and update the Firefly III configuration. You need to have the "owner" role to update configuration.
+        - name: accounts
+          summary: Accounts
+          description: Endpoints that deliver all of the user's asset, expense and other accounts (and the metadata) together with related transactions, piggy banks and other objects. Also delivers endpoints for CRUD operations for accounts.
+        - name: piggy_banks
+          summary: Piggy banks
+          parent: accounts
+          description: Endpoints to control and manage all of the user's piggy banks and related objects and information.
+        - name: transactions
+          summary: Transactions
+          description: The most-used endpoints in Firefly III, these endpoints are used to manage the user's transactions.
+        - name: links
+          summary: Transaction links
+          parent: transactions
+          description: Endpoints to manage links between transactions, and manage the type of links available.
+        - name: attachments
+          summary: Attachments
+          description: Endpoints to manage the attachments of the authenticated user, including up- and downloading of the files.
+        - name: budgets
+          summary: Budgets
+          description: Endpoints to manage a user's budgets and get info on the related objects, like limits.
+        - name: available_budgets
+          summary: Available budgets
+          parent: budgets
+          description: Endpoints to manage the total available amount that the user has made available to themselves. Used in periodic budgeting.
+        - name: bills
+          summary: Subscriptions
+          description: Endpoints to manage a user's bills and all related objects.
+        - name: recurrences
+          summary: Recurring transactions
+          description: Use these endpoints to manage the user's recurring transactions, trigger the creation of transactions and manage the settings.
+        - name: categories
+          summary: Categories
+          description: Endpoints to manage a user's categories and get information on transactions and other related objects.
+        - name: tags
+          summary: Tags
+          description: This endpoint manages all of the user's tags.
+        - name: object_groups
+          summary: Object groups
+          description: Endpoints to control and manage all of the user's object groups. Can only be created in conjunction with another object (for example a piggy bank) and will auto-delete when no other items are linked to it.
+        - name: currencies
+          summary: Currencies
+          description: Endpoints to manage the currencies in Firefly III. Depending on the user's role you can also disable and enable them, or add new ones.
+        - name: currency_exchange_rates
+          summary: Exchange rates
+          parent: currencies
+          description: All currency exchange rates.
+        - name: rules
+          summary: Rules
+          description: These endpoints can be used to manage all of the user's rules. Also includes triggers to execute or test rules and individual triggers.
+        - name: rule_groups
+          summary: Rule groups
+          parent: rules
+          description: Manage all of the user's groups of rules and trigger the execution of entire groups.
+        - name: webhooks
+          summary: Webhooks
+          description: These endpoints can be used to manage the user's webhooks and triggers them if necessary.
+        - name: insight
+          summary: Insight
+          description: The "insight" endpoints try to deliver sums, balances and insightful information in the broadest sense of the word.
+        - name: summary
+          summary: Summary
+          description: These endpoints deliver summaries, like sums, lists of numbers and other processed information. Mainly used for the main dashboard and pretty specific for Firefly III itself.
+        - name: charts
+          summary: Charts
+          description: The "charts" endpoints deliver optimised data for charts and graphs.
+        - name: search
+          summary: Search
+          description: Endpoints that allow you to search through the user's financial data. Different from the autocomplete endpoints, the search accepts more advanced arguments.
+        - name: autocomplete
+          summary: Autocomplete
+          parent: search
+          description: Auto-complete endpoints show basic information about Firefly III models, like the name and maybe some amounts. They all support a search query and can be used to autocomplete data in forms. Autocomplete return values always have a "name"-field.
+        - name: data
+          summary: Data
+          description: The "data"-endpoints manage generic Firefly III and user-specific data.
+        - name: preferences
+          summary: Preferences
+          description: These endpoints can be used to manage the user's preferences, including some hidden ones.
+        - name: user_groups
+          summary: Financial administrations
+          description: User groups are the objects around which "financial administrations" are built.
+        - name: users
+          summary: Users
+          description: Use these endpoints to manage the users registered within Firefly III. You need to have the "owner" role to access these endpoints.

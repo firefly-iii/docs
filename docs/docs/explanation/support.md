@@ -27,8 +27,9 @@ You can contact him through email on [james@firefly-iii.org](mailto:james@firefl
 
 ## Security considerations
 
-!!! danger
-    If you find a security issue or problem with Firefly III, please refer to the [Security Policy](https://github.com/firefly-iii/firefly-iii/security/policy).
+:::danger
+If you find a security issue or problem with Firefly III, please refer to the [Security Policy](https://github.com/firefly-iii/firefly-iii/security/policy).
+:::
 
 <!-- SPONSOR TEXT -->
 
@@ -45,7 +46,7 @@ Firefly III is sponsored by TestMu AI. Their support allows me to test Firefly I
 Browser testing via TestMu AI:
 
 <a href="https://www.testmuai.com/?utm_source=fireflyiii&utm_medium=sponsor" target="_blank">
-<img src="/images/testmu.png" alt="TestMu AI" style="vertical-align: middle;" width="250" />
+<img src="../images/testmu.png" alt="TestMu AI" style="vertical-align: middle;" width="250" />
 </a>
 
 <!-- END OF SPONSOR TEXT -->

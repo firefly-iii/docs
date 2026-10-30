@@ -14,8 +14,9 @@ The following environment variable need to be set. This value must match the loc
 IMPORT_DIR_ALLOWLIST=/your/directory
 ```
 
-!!! note "Command line and Docker"
-    When you're using Docker validate that you've mounted a directory with your files in it. This is something you must have done when you launched the Docker container, using for example `-v /path/to/my/files:/import`.
+:::note[Command line and Docker]
+When you're using Docker validate that you've mounted a directory with your files in it. This is something you must have done when you launched the Docker container, using for example `-v /path/to/my/files:/import`.
+:::
 
 ### Importing CSV, camt.053 files and JSON files
 
@@ -69,8 +70,9 @@ docker exec -it [container-id] php artisan importer:auto-import /import
 
 The following command will run the data importer once. It will try to import whatever it finds in the current directory, and then exit. This is fully automated. It works by mounting the current directory to `/import` and importing all files.
 
-!!! warning "Different image"
-    Notice how this command uses the `latest-cli` image. This is a different image than the `latest` image. If you start this with the wrong tag, t will start the web server as well, and it will never exit.
+:::warning[Different image]
+Notice how this command uses the `latest-cli` image. This is a different image than the `latest` image. If you start this with the wrong tag, t will start the web server as well, and it will never exit.
+:::
 
 ```bash
 docker run \
@@ -83,11 +85,13 @@ docker run \
 fireflyiii/data-importer:latest-cli
 ```
 
-!!! info "Personal Access Token"
-    This little trick only works when you use a [personal access token](../how-to-configure.md) (as you can see in the command).
+:::info[Personal Access Token]
+This little trick only works when you use a [personal access token](../how-to-configure.md) (as you can see in the command).
+:::
 
-!!! info "GoCardless or Spectre information"
-    If necessary, expand this command with the necessary GoCardless or Spectre keys and ID's.
+:::info[GoCardless or Spectre information]
+If necessary, expand this command with the necessary GoCardless or Spectre keys and ID's.
+:::
 
 ## Exit codes and troubleshooting
 

@@ -1,3 +1,4 @@
 docs/site
 docs/.cache
 docs/.venv
+docs/node_modules

@@ -13,8 +13,9 @@ Firefly III has two types of liabilities.
 Credit cards are not considered a liability.
 
 
-!!! info
-    Although you can set the interest rate for a liability, Firefly III will not automatically calculate the interest due.
+:::info
+Although you can set the interest rate for a liability, Firefly III will not automatically calculate the interest due.
+:::
 
 Firefly III has three types of liabilities:
 
@@ -54,7 +55,7 @@ Create a deposit from your generous benefactor to the liability
 
 Use the "new liability"-form to create a new liability.
 
-### Initial amount
+### Initial amount {#initial-amount_1}
 
 If necessary, set an amount under "I am owed amount". The amount you set here will be the amount you are owed. There is no transaction history for this amount, the debt you're owed is just there.
 

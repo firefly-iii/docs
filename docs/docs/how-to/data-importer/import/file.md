@@ -9,8 +9,9 @@ The data importer can import the following file types:
 
 Other file types are not yet supported, but I am working on them.
 
-!!! note
-    PDF files will never be supported. Sorry about that.
+:::note
+PDF files will never be supported. Sorry about that.
+:::
 
 Follow these steps to import your file. The flow is almost the same for each file type, but exceptions are noted clearly.
 
@@ -83,8 +84,9 @@ Here are some examples:
 - **Import tag**: When you check this the data importer will add a tag to each imported transaction denoting the import; this groups your import under a tag.
 - **Date range**: The date options are explained on the page itself, and other options should be fairly clear. There's also a guide on [how to map data](map-data.md), if you want to link your CSV data to Firefly III data more easily.
 
-!!! note "Rules"
-    If you have rules that remove all tags from a transaction, they will *not* work when you use this option. The tag will always be added. This is not because the data importer uses some magic trick. The tag is added *after* the transaction is created.
+:::note[Rules]
+If you have rules that remove all tags from a transaction, they will *not* work when you use this option. The tag will always be added. This is not because the data importer uses some magic trick. The tag is added *after* the transaction is created.
+:::
 
 ### Custom import tag
 

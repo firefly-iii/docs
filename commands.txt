@@ -1,10 +1,8 @@
-# install packages and mkdocs
-pip install mkdocs mkdocs-material mkdocs-git-revision-date-plugin mkdocs-redirects mkdocs-minify-plugin testresources
+# install packages (from the docs directory)
+npm install
 
 # serve docs locally
-mkdocs serve
+npm run dev
 
-mkdocs serve --dirtyreload
-
-
-mkdocs serve --dirty -a 192.168.96.162:8000
+# build the site into docs/site
+npm run build

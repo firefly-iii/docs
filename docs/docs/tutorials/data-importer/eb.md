@@ -8,9 +8,10 @@ Enable Banking offers a **free restricted mode** that allows you to access your 
 subscription. In this mode, you can only access accounts that you have previously linked in the Enable Banking
 portal. This is perfect for personal finance management with Firefly III.
 
-!!! warning "Restricted Mode Limitations"
-    In restricted mode, you will **only** be able to access bank accounts that you have explicitly linked in the
-    Enable Banking portal. If you skip the account linking step, no accounts will be returned during import.
+:::warning[Restricted Mode Limitations]
+In restricted mode, you will **only** be able to access bank accounts that you have explicitly linked in the
+Enable Banking portal. If you skip the account linking step, no accounts will be returned during import.
+:::
 
 ## Create an Enable Banking account
 
@@ -36,12 +37,14 @@ accounts.
     - **Privacy Policy URL**: Enter your Data Importer root URL (e.g., `https://<YOUR_DATA_IMPORTER_URL>/`)
     - **Terms of Service URL**: Enter your Data Importer root URL (e.g., `https://<YOUR_DATA_IMPORTER_URL>/`)
 
-!!! tip "Privacy and Terms URLs"
-    In Restricted mode, the Privacy Policy and Terms of Service URLs are not validated. You can use your Data
-    Importer's root URL as a placeholder.
+:::tip[Privacy and Terms URLs]
+In Restricted mode, the Privacy Policy and Terms of Service URLs are not validated. You can use your Data
+Importer's root URL as a placeholder.
+:::
 
-!!! note "Redirect URL Requirements"
-    **Production environment** requires HTTPS, but the **Sandbox environment** works with HTTP. Replace `<YOUR_DATA_IMPORTER_URL>` with your actual Data Importer URL, for example: `https://importer.example.com/eb-callback`. You can find your callback URL on the `/authenticate-flow/eb` page of your data importer. The URL does not have to be public.
+:::note[Redirect URL Requirements]
+**Production environment** requires HTTPS, but the **Sandbox environment** works with HTTP. Replace `<YOUR_DATA_IMPORTER_URL>` with your actual Data Importer URL, for example: `https://importer.example.com/eb-callback`. You can find your callback URL on the `/authenticate-flow/eb` page of your data importer. The URL does not have to be public.
+:::
 
 3. Upon submission, your browser will automatically download a **PEM file** containing your private key.
    **Save this file securely**; you will need it later.
@@ -57,10 +60,11 @@ This is the most important step for using the free restricted mode.
 2. Click the "Link accounts" button
 3. Connect to your bank and authorize access to your accounts
 
-!!! danger "Do Not Skip This Step"
-    If you do not link your bank accounts in the Enable Banking portal **before** attempting to import, the Data
-    Importer will not receive any accounts. Enable Banking will NOT return bank accounts in restricted mode which
-    have not been previously authorized.
+:::danger[Do Not Skip This Step]
+If you do not link your bank accounts in the Enable Banking portal **before** attempting to import, the Data
+Importer will not receive any accounts. Enable Banking will NOT return bank accounts in restricted mode which
+have not been previously authorized.
+:::
 
 After linking your accounts, your application will show as **"Restricted"** but **"Active"** in the Control Panel.
 This is expected and indicates that the application is limited to pre-authorized accounts only, but you are good to go.
@@ -119,9 +123,10 @@ ENABLE_BANKING_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\n................\n-----
 Let me know if this works!
 
 
-!!! tip "Multi-line environment variable"
-    If your environment does not support multi-line values, you can often use `\n` to represent newlines, or store
-    the PEM file path instead and mount it as a volume in Docker.
+:::tip[Multi-line environment variable]
+If your environment does not support multi-line values, you can often use `\n` to represent newlines, or store
+the PEM file path instead and mount it as a volume in Docker.
+:::
 
 ### Option B: Enter credentials in the UI
 
@@ -158,9 +163,10 @@ After selecting your bank, you will be redirected through two authorization step
 
 After completing both authorizations, you will be redirected back to the Data Importer.
 
-!!! warning "No Accounts Returned?"
-    If you are redirected back but no bank accounts appear, this is because the accounts were not pre-authorized
-    in Step 3. Go back to the Enable Banking portal and link your accounts first.
+:::warning[No Accounts Returned?]
+If you are redirected back but no bank accounts appear, this is because the accounts were not pre-authorized
+in Step 3. Go back to the Enable Banking portal and link your accounts first.
+:::
 
 ## Configure the import
 

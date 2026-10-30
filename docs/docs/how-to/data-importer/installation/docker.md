@@ -35,8 +35,9 @@ If you save all example files and change nothing, it will NOT YET work. You must
 5. Set `TRUSTED_PROXIES=*` (yes, with an asterisk) when you have a reverse proxy like nginx or Traefik
 
 
-!!! note
-    Change the password FIRST. If you change the password *after* you started Docker, it will complain about having no access.
+:::note
+Change the password FIRST. If you change the password *after* you started Docker, it will complain about having no access.
+:::
 
 ### Run the compose file
 
@@ -118,7 +119,8 @@ fireflyiii/data-importer:latest
 
 ```
 
-!!! note "Run in the background"
-    Change `docker run` to `docker run -d` so the image runs in the background.
+:::note[Run in the background]
+Change `docker run` to `docker run -d` so the image runs in the background.
+:::
 
 If you have questions, please refer to [the Docker FAQ](../../../references/faq/docker.md) or contact me using the instructions from the [support page](../../../explanation/support.md).

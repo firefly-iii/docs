@@ -2,15 +2,15 @@
 
 If you have your own (virtual) web server you can use this guide to install Firefly III. You may have some ingredients prepared already.
 
-!!! note
-    Some of these commands use the `sudo` or `sudo -u www-data` command. These are only available when you have the necessary privileges. If you do not have these privileges, you may need to ask your system administrator to run these commands for you.
+:::note
+Some of these commands use the `sudo` or `sudo -u www-data` command. These are only available when you have the necessary privileges. If you do not have these privileges, you may need to ask your system administrator to run these commands for you.
+:::
 
 ## Ingredients
 
-You need a working LAMP, LEMP or WAMP (1) stack. Make sure you use PHP %PHPVERSION. How to set this up is outside the scope of this manual, but this is something [you can look up](https://www.google.com/search?q=lamp+stack+php+%PHPVERSION).
-{ .annotate }
+You need a working LAMP, LEMP or WAMP[^1] stack. Make sure you use PHP %PHPVERSION. How to set this up is outside the scope of this manual, but this is something [you can look up](https://www.google.com/search?q=lamp+stack+php+%PHPVERSION).
 
-1. Linux, Apache, MySQL, PHP (LAMP) or Linux, Nginx, MySQL, PHP (LEMP) or Windows, Apache, MySQL, PHP (WAMP).
+[^1]: Linux, Apache, MySQL, PHP (LAMP) or Linux, Nginx, MySQL, PHP (LEMP) or Windows, Apache, MySQL, PHP (WAMP).
 
 You will also need a (MySQL) database and credentials for a user that has permissions on that database. Firefly III creates its own tables. You can use SQLite if this is difficult to set up. 
 
@@ -42,8 +42,9 @@ You can search the web to find out how to install these modules. Some may be ins
 
 ## Installing Firefly III
 
-!!! warning "Installing by pulling the remote repository"
-    It's no longer possible to install Firefly III by pulling the code from the `main` or `develop` branch of the repository. Generated (JS) code and other dependencies are not in the repository, so your new installation may not work as expected. To do so manually, please [review this FAQ question](../../../references/faq/install.md#i-want-to-build-the-firefly-iii-release-myself)
+:::warning[Installing by pulling the remote repository]
+It's no longer possible to install Firefly III by pulling the code from the `main` or `develop` branch of the repository. Generated (JS) code and other dependencies are not in the repository, so your new installation may not work as expected. To do so manually, please [review this FAQ question](../../../references/faq/install.md#i-want-to-build-the-firefly-iii-release-myself)
+:::
 
 ### Main command
 
@@ -79,8 +80,9 @@ If you also want to verify the digital signature of the release, please follow t
 
 Extract the downloaded file in your web server's root directory, or in a specific directory you want to use.
 
-!!! tip
-    Some servers require `sudo` to extract or change things in the `/var/www` directory, because the directory is owned by a dedicated user (e.g. `www-data` on Debian/Ubuntu). If this is the case for you, make sure to prefix the commands in this document with `sudo -u www-data` (replace `www-data` with this username) to ensure that all of your files have the same permissions.
+:::tip
+Some servers require `sudo` to extract or change things in the `/var/www` directory, because the directory is owned by a dedicated user (e.g. `www-data` on Debian/Ubuntu). If this is the case for you, make sure to prefix the commands in this document with `sudo -u www-data` (replace `www-data` with this username) to ensure that all of your files have the same permissions.
+:::
 
 ```bash
 # the directory name is up to you, of course:
@@ -97,8 +99,9 @@ This should get you the entire installation in the directory of your choice.
 
 ### Web server configuration
 
-!!! info
-    Since this is very specific to each system, there are no instructions how to do this.
+:::info
+Since this is very specific to each system, there are no instructions how to do this.
+:::
 
 Most servers will serve files from the `/var/www` directory. Firefly III would be served from `/firefly-iii/public`. This is not really what you would want to do.
 
