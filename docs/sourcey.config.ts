@@ -2,10 +2,10 @@ import { defineConfig, markdown, openapi } from "sourcey";
 
 // The API reference reads the newest specification Firefly III publishes in firefly-iii/api-docs,
 // the one api-docs.firefly-iii.org opens on, so it follows each release of the API with no copy kept here.
-const apiDocs = "https://raw.githubusercontent.com/firefly-iii/api-docs/main/dist";
-const swagger = await fetch(`${apiDocs}/index.html`);
-const newestSpec = swagger.ok ? /"url": "\.\\\/(firefly-iii-v?\d+\.\d+\.\d+-v1\.yaml)"/.exec(await swagger.text())?.[1] : undefined;
-if (!newestSpec) throw new Error(`${apiDocs}/index.html names no released specification (answered ${swagger.status})`);
+// const apiDocs = "https://raw.githubusercontent.com/firefly-iii/api-docs/main/dist";
+// const swagger = await fetch(`${apiDocs}/index.html`);
+// const newestSpec = swagger.ok ? /"url": "\.\\\/(firefly-iii-v?\d+\.\d+\.\d+-v1\.yaml)"/.exec(await swagger.text())?.[1] : undefined;
+// if (!newestSpec) throw new Error(`${apiDocs}/index.html names no released specification (answered ${swagger.status})`);
 
 export default defineConfig({
   // The product's name beside its mark and in each title. MkDocs' site_name, "Firefly III
@@ -755,15 +755,7 @@ export default defineConfig({
             },
           ],
         }),
-      },
-      {
-        id: "api",
-        tab: "API Reference",
-        slug: "api",
-        source: openapi({ spec: `${apiDocs}/${newestSpec}`, overlays: ["./firefly-iii.overlay.yaml"] }),
-        // Its size gives a page per operation: 244 operations on one page would be 40 MB of HTML.
-        reference: { operations: "{operationId}" },
-      },
+      }
     ],
   },
   changelog: false,
