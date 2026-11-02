@@ -13,7 +13,7 @@ jobs:
         with:
           # The whole history, so each page is dated by its file's last commit.
           fetch-depth: 0
-      - uses: actions/setup-node@v6
+      - uses: actions/setup-node@v7
         with:
           node-version: 24
           cache: npm
