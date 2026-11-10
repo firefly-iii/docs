@@ -34,6 +34,10 @@ Firefly III is available [as a one-click template on Hostim](https://console.hos
 
 Firefly III is available [as a one-click template on Pethost](https://pethost.dev/templates/firefly-iii/). The template runs Firefly III with PostgreSQL, a volume for uploads and a subdomain with HTTPS, and calls the daily cron job for you.
 
+## Simafri
+
+Firefly III can be installed on a [Simafri managed VPS](https://www.simafri.com/en/managed-vps/) by following [this guide](https://www.simafri.com/en/guides/self-host-firefly-iii/), which uses the official Docker images and sets up the daily cron job. Simafri applies the system and security updates, monitors the server and keeps encrypted nightly backups off the machine; you keep root access.
+
 ## AMPPS
 
 Firefly III is featured in [AMPPS](https://www.ampps.com/). You can download AMPPS for Windows, Linux and Mac and Firefly III will be available as a package there.
