@@ -473,135 +473,6 @@ export default defineConfig({
               ],
             },
             {
-              group: "Reference guides",
-              id: "reference-guides",
-              pages: [
-                { page: "references", label: "Overview" },
-                {
-                  group: "Firefly III",
-                  id: "reference-guides/firefly-iii",
-                  collapsed: true,
-                  pages: [
-                    { page: "references/firefly-iii/cli", label: "The CLI" },
-                    { page: "references/firefly-iii/account-types", label: "Account types" },
-                    {
-                      page: "references/firefly-iii/transaction-types",
-                      label: "Transaction types",
-                    },
-                    { page: "references/firefly-iii/search", label: "All search options" },
-                    {
-                      page: "references/firefly-iii/rule-triggers",
-                      label: "All rule triggers",
-                    },
-                    {
-                      page: "references/firefly-iii/rule-actions",
-                      label: "All rule actions",
-                    },
-                    {
-                      page: "references/firefly-iii/rule-expressions",
-                      label: "Expressions",
-                    },
-                    {
-                      group: "API",
-                      id: "reference-guides/firefly-iii/api",
-                      collapsed: true,
-                      pages: [
-                        { page: "references/firefly-iii/api", label: "The API" },
-                        {
-                          page: "references/firefly-iii/api/specials",
-                          label: "Special endpoints",
-                        },
-                      ],
-                    },
-                    {
-                      group: "Third parties",
-                      id: "reference-guides/firefly-iii/third-parties",
-                      collapsed: true,
-                      pages: [
-                        {
-                          page: "references/firefly-iii/third-parties/host",
-                          label: "Third parties that host Firefly III",
-                        },
-                        {
-                          page: "references/firefly-iii/third-parties/apps",
-                          label: "Third-party tools",
-                        },
-                      ],
-                    },
-                    { page: "references/firefly-iii/changelog", label: "Full changelog" },
-                  ],
-                },
-                {
-                  group: "Data Importer",
-                  id: "reference-guides/data-importer",
-                  collapsed: true,
-                  pages: [
-                    {
-                      page: "references/data-importer/json",
-                      label: "JSON configuration file",
-                    },
-                    { page: "references/data-importer/roles", label: "Data field roles" },
-                    {
-                      page: "references/data-importer/third-party-tools",
-                      label: "Third-party tools",
-                    },
-                    {
-                      page: "references/data-importer/public",
-                      label: "Public installation",
-                    },
-                    {
-                      page: "references/data-importer/duplicate-detection",
-                      label: "Duplicate detection",
-                    },
-                    { page: "references/data-importer/changelog", label: "Full changelog" },
-                  ],
-                },
-                {
-                  group: "Frequently Asked Questions",
-                  id: "reference-guides/frequently-asked-questions",
-                  collapsed: true,
-                  pages: [
-                    {
-                      group: "Firefly III",
-                      id: "reference-guides/frequently-asked-questions/firefly-iii",
-                      collapsed: true,
-                      pages: [
-                        {
-                          page: "references/faq/firefly-iii/general",
-                          label: "General questions",
-                        },
-                        { page: "references/faq/firefly-iii/using", label: "Using and running" },
-                        {
-                          page: "references/faq/firefly-iii/finances",
-                          label: "Financial management",
-                        },
-                      ],
-                    },
-                    {
-                      group: "Data Importer",
-                      id: "reference-guides/frequently-asked-questions/data-importer",
-                      collapsed: true,
-                      pages: [
-                        {
-                          page: "references/faq/data-importer/general",
-                          label: "General questions",
-                        },
-                        {
-                          page: "references/faq/data-importer/import",
-                          label: "Common import issues",
-                        },
-                        { page: "references/faq/data-importer/gocardless", label: "GoCardless" },
-                      ],
-                    },
-                    { page: "references/faq/general", label: "General questions" },
-                    { page: "references/faq/install", label: "Installing and running" },
-                    { page: "references/faq/development", label: "Development" },
-                    { page: "references/faq/docker", label: "Docker" },
-                  ],
-                },
-              ],
-            },
-            {
               group: "Explanation",
               id: "explanation",
               pages: [
@@ -751,6 +622,135 @@ export default defineConfig({
                 { page: "explanation/code-of-conduct", label: "Code of conduct" },
                 { page: "explanation/contributing", label: "Contribution guidelines" },
                 { page: "explanation/support", hidden: true },
+              ],
+            },
+            {
+              group: "Reference guides",
+              id: "reference-guides",
+              pages: [
+                { page: "references", label: "Overview" },
+                {
+                  group: "Firefly III",
+                  id: "reference-guides/firefly-iii",
+                  collapsed: true,
+                  pages: [
+                    { page: "references/firefly-iii/cli", label: "The CLI" },
+                    { page: "references/firefly-iii/account-types", label: "Account types" },
+                    {
+                      page: "references/firefly-iii/transaction-types",
+                      label: "Transaction types",
+                    },
+                    { page: "references/firefly-iii/search", label: "All search options" },
+                    {
+                      page: "references/firefly-iii/rule-triggers",
+                      label: "All rule triggers",
+                    },
+                    {
+                      page: "references/firefly-iii/rule-actions",
+                      label: "All rule actions",
+                    },
+                    {
+                      page: "references/firefly-iii/rule-expressions",
+                      label: "Expressions",
+                    },
+                    {
+                      group: "API",
+                      id: "reference-guides/firefly-iii/api",
+                      collapsed: true,
+                      pages: [
+                        { page: "references/firefly-iii/api", label: "The API" },
+                        {
+                          page: "references/firefly-iii/api/specials",
+                          label: "Special endpoints",
+                        },
+                      ],
+                    },
+                    {
+                      group: "Third parties",
+                      id: "reference-guides/firefly-iii/third-parties",
+                      collapsed: true,
+                      pages: [
+                        {
+                          page: "references/firefly-iii/third-parties/host",
+                          label: "Third parties that host Firefly III",
+                        },
+                        {
+                          page: "references/firefly-iii/third-parties/apps",
+                          label: "Third-party tools",
+                        },
+                      ],
+                    },
+                    { page: "references/firefly-iii/changelog", label: "Full changelog" },
+                  ],
+                },
+                {
+                  group: "Data Importer",
+                  id: "reference-guides/data-importer",
+                  collapsed: true,
+                  pages: [
+                    {
+                      page: "references/data-importer/json",
+                      label: "JSON configuration file",
+                    },
+                    { page: "references/data-importer/roles", label: "Data field roles" },
+                    {
+                      page: "references/data-importer/third-party-tools",
+                      label: "Third-party tools",
+                    },
+                    {
+                      page: "references/data-importer/public",
+                      label: "Public installation",
+                    },
+                    {
+                      page: "references/data-importer/duplicate-detection",
+                      label: "Duplicate detection",
+                    },
+                    { page: "references/data-importer/changelog", label: "Full changelog" },
+                  ],
+                },
+                {
+                  group: "Frequently Asked Questions",
+                  id: "reference-guides/frequently-asked-questions",
+                  collapsed: true,
+                  pages: [
+                    {
+                      group: "Firefly III",
+                      id: "reference-guides/frequently-asked-questions/firefly-iii",
+                      collapsed: true,
+                      pages: [
+                        {
+                          page: "references/faq/firefly-iii/general",
+                          label: "General questions",
+                        },
+                        { page: "references/faq/firefly-iii/using", label: "Using and running" },
+                        {
+                          page: "references/faq/firefly-iii/finances",
+                          label: "Financial management",
+                        },
+                      ],
+                    },
+                    {
+                      group: "Data Importer",
+                      id: "reference-guides/frequently-asked-questions/data-importer",
+                      collapsed: true,
+                      pages: [
+                        {
+                          page: "references/faq/data-importer/general",
+                          label: "General questions",
+                        },
+                        {
+                          page: "references/faq/data-importer/import",
+                          label: "Common import issues",
+                        },
+                        { page: "references/faq/data-importer/gocardless", label: "GoCardless" },
+                      ],
+                    },
+                    { page: "references/faq/general", label: "General questions" },
+                    { page: "references/faq/install", label: "Installing and running" },
+                    { page: "references/faq/development", label: "Development" },
+                    { page: "references/faq/docker", label: "Docker" },
+                  ],
+                },
               ],
             },
           ],
