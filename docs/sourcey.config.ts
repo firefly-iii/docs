@@ -29,7 +29,7 @@ export default defineConfig({
   navbar: {
     links: [
       // Where to get help, which the Reference guides and Explanation tabs both listed, from every page.
-      { type: "link", href: "/explanation/support/", label: "Support" },
+      { type: "link", href: "/support/", label: "Support" },
       { type: "github", href: "https://github.com/firefly-iii/firefly-iii", stats: true },
     ],
   },
@@ -72,46 +72,56 @@ export default defineConfig({
                 { page: "index", label: "Home" },
               ],
             },
+
+          ],
+        }),
+      },
+      {
+        "tab": "Tutorials",
+        "slug": "tutorials",
+        "source": markdown({
+          root: "docs/tutorials",
+          groups: [
             {
-              group: "Tutorials",
-              id: "tutorials",
+              group: "tutorials",
+              id: "ungrouped-2",
               pages: [
-                { page: "tutorials", label: "Overview" },
+                { page: "index", label: "Tutorials" },
                 {
                   group: "Firefly III",
-                  id: "tutorials/firefly-iii",
-                  collapsed: true,
+                  id: "firefly-iii",
+                  collapsed: false,
                   pages: [
                     {
                       group: "Your finances",
-                      id: "tutorials/firefly-iii/your-finances",
-                      collapsed: true,
+                      id: "firefly-iii/your-finances",
+                      collapsed: false,
                       pages: [
-                        { page: "tutorials/finances/first-steps", label: "My first accounts" },
+                        { page: "finances/first-steps", label: "My first accounts" },
                         {
-                          page: "tutorials/finances/first-accounts",
+                          page: "finances/first-accounts",
                           label: "Create accounts and transactions",
                         },
                         {
-                          page: "tutorials/finances/subscription",
+                          page: "finances/subscription",
                           label: "Manage a subscription",
                         },
-                        { page: "tutorials/finances/refund", label: "Process a refund" },
-                        { page: "tutorials/finances/mortgage", label: "Manage your mortgage" },
-                        { page: "tutorials/finances/currencies", hidden: true },
+                        { page: "finances/refund", label: "Process a refund" },
+                        { page: "finances/mortgage", label: "Manage your mortgage" },
+                        { page: "finances/currencies", hidden: true },
                       ],
                     },
                     {
                       group: "Data management",
-                      id: "tutorials/firefly-iii/data-management",
-                      collapsed: true,
+                      id: "firefly-iii/data-management",
+                      collapsed: false,
                       pages: [
                         {
-                          page: "tutorials/firefly-iii/importing-data",
+                          page: "firefly-iii/importing-data",
                           label: "Importing data",
                         },
                         {
-                          page: "tutorials/firefly-iii/exporting-data",
+                          page: "firefly-iii/exporting-data",
                           label: "Exporting data",
                         },
                       ],
@@ -120,58 +130,58 @@ export default defineConfig({
                 },
                 {
                   group: "Data Importer",
-                  id: "tutorials/data-importer",
-                  collapsed: true,
+                  id: "data-importer",
+                  collapsed: false,
                   pages: [
                     {
                       group: "Files",
-                      id: "tutorials/data-importer/files",
-                      collapsed: true,
+                      id: "data-importer/files",
+                      collapsed: false,
                       pages: [
-                        { page: "tutorials/data-importer/csv", label: "Import a CSV file" },
+                        { page: "data-importer/csv", label: "Import a CSV file" },
                         {
-                          page: "tutorials/data-importer/camt",
+                          page: "data-importer/camt",
                           label: "Import a CAMT.05x file",
                         },
                       ],
                     },
                     {
                       group: "Data providers",
-                      id: "tutorials/data-importer/data-providers",
-                      collapsed: true,
+                      id: "data-importer/data-providers",
+                      collapsed: false,
                       pages: [
                         {
-                          page: "tutorials/data-importer/data-providers",
+                          page: "data-importer/data-providers",
                           label: "What are data providers?",
                         },
-                        { page: "tutorials/data-importer/basiq", label: "import from basiq.io" },
+                        { page: "data-importer/basiq", label: "import from basiq.io" },
                         {
-                          page: "tutorials/data-importer/eb",
+                          page: "data-importer/eb",
                           label: "Import from Enable Banking",
                         },
-                        { page: "tutorials/data-importer/fints", label: "Import from FinTS" },
+                        { page: "data-importer/fints", label: "Import from FinTS" },
                         {
-                          page: "tutorials/data-importer/gocardless",
+                          page: "data-importer/gocardless",
                           label: "Import from GoCardless",
                         },
                         {
-                          page: "tutorials/data-importer/sophtron",
+                          page: "data-importer/sophtron",
                           label: "Import from Sophtron",
                         },
                         {
-                          page: "tutorials/data-importer/lunchflow",
+                          page: "data-importer/lunchflow",
                           label: "Import from Lunch Flow",
                         },
                         {
-                          page: "tutorials/data-importer/obg",
+                          page: "data-importer/obg",
                           label: "Import from Open Banking/HBCI",
                         },
                         {
-                          page: "tutorials/data-importer/simplefin",
+                          page: "data-importer/simplefin",
                           label: "Import from SimpleFIN",
                         },
                         {
-                          page: "tutorials/data-importer/teller",
+                          page: "data-importer/teller",
                           label: "Import from teller.io",
                         },
                       ],
@@ -180,395 +190,435 @@ export default defineConfig({
                 },
               ],
             },
+          ]
+        }),
+      },
+      {
+        "tab": "How-to guides",
+        "slug":"how-to",
+        "source": markdown({
+          root: "docs/how-to",
+          groups: [
             {
-              group: "How-to guides",
-              id: "how-to-guides",
+              group: "",
+              id: "ungrouped-3",
               pages: [
-                { page: "how-to", label: "Overview" },
+                { page: "index", label: "How-to" },
                 {
                   group: "General",
-                  id: "how-to-guides/general",
-                  collapsed: true,
+                  id: "general",
+                  collapsed: false,
                   pages: [
-                    { page: "how-to/general/debug", label: "How to debug things" },
+                    { page: "general/debug", label: "How to debug things" },
                     {
-                      page: "how-to/general/report-security-issues",
+                      page: "general/report-security-issues",
                       label: "How to report security issues",
                     },
                   ],
                 },
                 {
-                  group: "Firefly III",
-                  id: "how-to-guides/firefly-iii",
-                  collapsed: true,
+                  group: "How to install",
+                  id: "how-to-guides/firefly-iii/how-to-install",
+                  collapsed: false,
                   pages: [
                     {
-                      group: "How to install",
-                      id: "how-to-guides/firefly-iii/how-to-install",
-                      collapsed: true,
-                      pages: [
-                        {
-                          page: "how-to/firefly-iii/installation/docker",
-                          label: "Using Docker",
-                        },
-                        {
-                          page: "how-to/firefly-iii/installation/portainer",
-                          label: "Using Portainer",
-                        },
-                        {
-                          page: "how-to/firefly-iii/installation/kubernetes",
-                          label: "Using Kubernetes",
-                        },
-                        {
-                          page: "how-to/firefly-iii/installation/self-managed",
-                          label: "Using a self-managed server",
-                        },
-                        {
-                          page: "how-to/firefly-iii/installation/hosted",
-                          label: "Third party hosting",
-                        },
-                      ],
+                      page: "firefly-iii/installation/docker",
+                      label: "Using Docker",
                     },
                     {
-                      group: "How to upgrade",
-                      id: "how-to-guides/firefly-iii/how-to-upgrade",
-                      collapsed: true,
-                      pages: [
-                        { page: "how-to/firefly-iii/upgrade/docker", label: "Using Docker" },
-                        {
-                          page: "how-to/firefly-iii/upgrade/kubernetes",
-                          label: "Using Kubernetes",
-                        },
-                        {
-                          page: "how-to/firefly-iii/upgrade/self-managed",
-                          label: "Using a self-managed server",
-                        },
-                      ],
+                      page: "firefly-iii/installation/portainer",
+                      label: "Using Portainer",
                     },
                     {
-                      group: "Advanced installation",
-                      id: "how-to-guides/firefly-iii/advanced-installation",
-                      collapsed: true,
-                      pages: [
-                        {
-                          page: "how-to/firefly-iii/advanced/notifications",
-                          label: "How to set up notifications",
-                        },
-                        {
-                          page: "how-to/firefly-iii/advanced/authentication",
-                          label: "How to use different authentication",
-                        },
-                        {
-                          page: "how-to/firefly-iii/advanced/backup",
-                          label: "How to make a backup",
-                        },
-                        {
-                          page: "how-to/firefly-iii/advanced/locales",
-                          label: "How to set up your local language",
-                        },
-                        {
-                          page: "how-to/firefly-iii/advanced/cron",
-                          label: "How to configure cron jobs",
-                        },
-                      ],
+                      page: "firefly-iii/installation/kubernetes",
+                      label: "Using Kubernetes",
                     },
                     {
-                      group: "Your finances",
-                      id: "how-to-guides/firefly-iii/your-finances",
-                      collapsed: true,
-                      pages: [
-                        {
-                          page: "how-to/firefly-iii/finances/accounts",
-                          label: "How to manage accounts",
-                        },
-                        {
-                          page: "how-to/firefly-iii/finances/budgets",
-                          label: "How to manage budgets",
-                        },
-                        {
-                          page: "how-to/firefly-iii/finances/transactions",
-                          label: "How to organize transactions",
-                        },
-                        { page: "how-to/firefly-iii/finances/cash", label: "How to track cash" },
-                        {
-                          page: "how-to/firefly-iii/finances/subscriptions",
-                          label: "How to use subscriptions",
-                        },
-                        {
-                          page: "how-to/firefly-iii/finances/reconcile",
-                          label: "How to reconcile accounts",
-                        },
-                        {
-                          page: "how-to/firefly-iii/finances/liabilities",
-                          label: "How to manage liabilities",
-                        },
-                        {
-                          page: "how-to/firefly-iii/finances/recurring",
-                          label: "How to use recurring transactions",
-                        },
-                        {
-                          page: "how-to/firefly-iii/finances/piggy-banks",
-                          label: "How to use piggy banks",
-                        },
-                        {
-                          page: "how-to/firefly-iii/finances/reports",
-                          label: "How to read reports",
-                        },
-                      ],
+                      page: "firefly-iii/installation/self-managed",
+                      label: "Using a self-managed server",
                     },
                     {
-                      group: "More features",
-                      id: "how-to-guides/firefly-iii/more-features",
-                      collapsed: true,
-                      pages: [
-                        {
-                          page: "how-to/firefly-iii/features/multi-user",
-                          label: "Make it multi-user",
-                        },
-                        { page: "how-to/firefly-iii/features/rules", label: "How to use rules" },
-                        {
-                          page: "how-to/firefly-iii/features/expressions",
-                          label: "How to use expressions",
-                        },
-                        {
-                          page: "how-to/firefly-iii/features/webhooks",
-                          label: "How to use webhooks",
-                        },
-                        {
-                          page: "how-to/firefly-iii/features/search",
-                          label: "How to use the search",
-                        },
-                        {
-                          page: "how-to/firefly-iii/features/currencies",
-                          label: "How to use currencies",
-                        },
-                        { page: "how-to/firefly-iii/features/cli", label: "How to use the CLI" },
-                        { page: "how-to/firefly-iii/features/api", label: "How to use the API" },
-                      ],
-                    },
-                    {
-                      group: "Development",
-                      id: "how-to-guides/firefly-iii/development",
-                      collapsed: true,
-                      pages: [
-                        {
-                          page: "how-to/firefly-iii/development/translations",
-                          label: "Translations",
-                        },
-                      ],
+                      page: "firefly-iii/installation/hosted",
+                      label: "Third party hosting",
                     },
                   ],
                 },
                 {
-                  group: "Data Importer",
-                  id: "how-to-guides/data-importer",
-                  collapsed: true,
+                  group: "How to upgrade",
+                  id: "how-to-guides/firefly-iii/how-to-upgrade",
+                  collapsed: false,
+                  pages: [
+                    { page: "firefly-iii/upgrade/docker", label: "Using Docker" },
+                    {
+                      page: "firefly-iii/upgrade/kubernetes",
+                      label: "Using Kubernetes",
+                    },
+                    {
+                      page: "firefly-iii/upgrade/self-managed",
+                      label: "Using a self-managed server",
+                    },
+                  ],
+                },
+                {
+                  group: "Advanced installation",
+                  id: "how-to-guides/firefly-iii/advanced-installation",
+                  collapsed: false,
                   pages: [
                     {
-                      group: "How to install",
-                      id: "how-to-guides/data-importer/how-to-install",
-                      collapsed: true,
-                      pages: [
-                        {
-                          page: "how-to/data-importer/installation/docker",
-                          label: "Using Docker",
-                        },
-                        {
-                          page: "how-to/data-importer/installation/portainer",
-                          label: "Using Portainer",
-                        },
-                        {
-                          page: "how-to/data-importer/installation/kubernetes",
-                          label: "Using Kubernetes",
-                        },
-                        {
-                          page: "how-to/data-importer/installation/self-managed",
-                          label: "Using a self-managed server",
-                        },
-                      ],
+                      page: "firefly-iii/advanced/notifications",
+                      label: "How to set up notifications",
                     },
                     {
-                      page: "how-to/data-importer/how-to-configure",
-                      label: "How to configure",
+                      page: "firefly-iii/advanced/authentication",
+                      label: "How to use different authentication",
                     },
                     {
-                      group: "How to upgrade",
-                      id: "how-to-guides/data-importer/how-to-upgrade",
-                      collapsed: true,
-                      pages: [
-                        { page: "how-to/data-importer/upgrade/docker", label: "Using Docker" },
-                        {
-                          page: "how-to/data-importer/upgrade/kubernetes",
-                          label: "Using Kubernetes",
-                        },
-                        {
-                          page: "how-to/data-importer/upgrade/self-managed",
-                          label: "Using a self-managed server",
-                        },
-                      ],
+                      page: "firefly-iii/advanced/backup",
+                      label: "How to make a backup",
                     },
                     {
-                      group: "Importing data",
-                      id: "how-to-guides/data-importer/importing-data",
-                      collapsed: true,
-                      pages: [
-                        {
-                          page: "how-to/data-importer/import/file",
-                          label: "How to import files",
-                        },
-                        {
-                          page: "how-to/data-importer/import/automated",
-                          label: "How to automate the import",
-                        },
-                        {
-                          page: "how-to/data-importer/import/json",
-                          label: "How to manage JSON",
-                        },
-                        {
-                          page: "how-to/data-importer/import/map-data",
-                          label: "How to map data",
-                        },
-                        {
-                          page: "how-to/data-importer/import/third-party-providers",
-                          label: "How to use data providers",
-                        },
-                        {
-                          page: "how-to/data-importer/import/transfers",
-                          label: "How to import transfers between accounts",
-                        },
-                        {
-                          page: "how-to/data-importer/import/duplicates",
-                          label: "How to handle (missed) duplicates",
-                        },
-                        { page: "how-to/data-importer/import/gocardless", hidden: true },
-                        { page: "how-to/data-importer/import/salt-edge", hidden: true },
-                        { page: "how-to/data-importer/import/simplefin", hidden: true },
-                      ],
+                      page: "firefly-iii/advanced/locales",
+                      label: "How to set up your local language",
                     },
                     {
-                      group: "Advanced things",
-                      id: "how-to-guides/data-importer/advanced-things",
-                      collapsed: true,
-                      pages: [
-                        {
-                          page: "how-to/data-importer/advanced/cli",
-                          label: "How to import using CLI",
-                        },
-                        {
-                          page: "how-to/data-importer/advanced/post",
-                          label: "How to import using POST",
-                        },
-                        {
-                          page: "how-to/data-importer/advanced/notifications",
-                          label: "How to set up notifications",
-                        },
-                        {
-                          page: "how-to/data-importer/advanced/custom-import-tag",
-                          label: "How to set a custom import tag",
-                        },
-                      ],
+                      page: "firefly-iii/advanced/cron",
+                      label: "How to configure cron jobs",
+                    },
+                  ],
+                },
+                {
+                  group: "Your finances",
+                  id: "how-to-guides/firefly-iii/your-finances",
+                  collapsed: false,
+                  pages: [
+                    {
+                      page: "firefly-iii/finances/accounts",
+                      label: "How to manage accounts",
+                    },
+                    {
+                      page: "firefly-iii/finances/budgets",
+                      label: "How to manage budgets",
+                    },
+                    {
+                      page: "firefly-iii/finances/transactions",
+                      label: "How to organize transactions",
+                    },
+                    { page: "firefly-iii/finances/cash", label: "How to track cash" },
+                    {
+                      page: "firefly-iii/finances/subscriptions",
+                      label: "How to use subscriptions",
+                    },
+                    {
+                      page: "firefly-iii/finances/reconcile",
+                      label: "How to reconcile accounts",
+                    },
+                    {
+                      page: "firefly-iii/finances/liabilities",
+                      label: "How to manage liabilities",
+                    },
+                    {
+                      page: "firefly-iii/finances/recurring",
+                      label: "How to use recurring transactions",
+                    },
+                    {
+                      page: "firefly-iii/finances/piggy-banks",
+                      label: "How to use piggy banks",
+                    },
+                    {
+                      page: "firefly-iii/finances/reports",
+                      label: "How to read reports",
+                    },
+                  ],
+                },
+                {
+                  group: "More features",
+                  id: "how-to-guides/firefly-iii/more-features",
+                  collapsed: false,
+                  pages: [
+                    {
+                      page: "firefly-iii/features/multi-user",
+                      label: "Make it multi-user",
+                    },
+                    { page: "firefly-iii/features/rules", label: "How to use rules" },
+                    {
+                      page: "firefly-iii/features/expressions",
+                      label: "How to use expressions",
+                    },
+                    {
+                      page: "firefly-iii/features/webhooks",
+                      label: "How to use webhooks",
+                    },
+                    {
+                      page: "firefly-iii/features/search",
+                      label: "How to use the search",
+                    },
+                    {
+                      page: "firefly-iii/features/currencies",
+                      label: "How to use currencies",
+                    },
+                    { page: "firefly-iii/features/cli", label: "How to use the CLI" },
+                    { page: "firefly-iii/features/api", label: "How to use the API" },
+                  ],
+                },
+                {
+                  group: "Development",
+                  id: "how-to-guides/firefly-iii/development",
+                  collapsed: false,
+                  pages: [
+                    {
+                      page: "firefly-iii/development/translations",
+                      label: "Translations",
                     },
                   ],
                 },
               ],
             },
+          ],
+        }),
+      },
+      {
+        "tab": "Reference guides",
+        "slug":"references",
+        "source": markdown({
+          root: "docs/references",
+          groups: [
             {
-              group: "Explanation",
-              id: "explanation",
-              pages: [
-                { page: "explanation", label: "Overview" },
+              "group": "",
+              "id": "ungrouped-4",
+              "pages": [
+                { page: "index", label: "Reference guides" },
+                {
+                  group: "Firefly III",
+                  id: "reference-guides/firefly-iii",
+                  collapsed: false,
+                  pages: [
+                    { page: "firefly-iii/cli", label: "The CLI" },
+                    { page: "firefly-iii/account-types", label: "Account types" },
+                    {
+                      page: "firefly-iii/transaction-types",
+                      label: "Transaction types",
+                    },
+                    { page: "firefly-iii/search", label: "All search options" },
+                    {
+                      page: "firefly-iii/rule-triggers",
+                      label: "All rule triggers",
+                    },
+                    {
+                      page: "firefly-iii/rule-actions",
+                      label: "All rule actions",
+                    },
+                    {
+                      page: "firefly-iii/rule-expressions",
+                      label: "Expressions",
+                    },
+                    {
+                      group: "API",
+                      id: "reference-guides/firefly-iii/api",
+                      collapsed: false,
+                      pages: [
+                        { page: "firefly-iii/api", label: "The API" },
+                        {
+                          page: "firefly-iii/api/specials",
+                          label: "Special endpoints",
+                        },
+                      ],
+                    },
+                    {
+                      group: "Third parties",
+                      id: "reference-guides/firefly-iii/third-parties",
+                      collapsed: false,
+                      pages: [
+                        {
+                          page: "firefly-iii/third-parties/host",
+                          label: "Third parties that host Firefly III",
+                        },
+                        {
+                          page: "firefly-iii/third-parties/apps",
+                          label: "Third-party tools",
+                        },
+                      ],
+                    },
+                    { page: "firefly-iii/changelog", label: "Full changelog" },
+                  ],
+                },
+                {
+                  group: "Data Importer",
+                  id: "reference-guides/data-importer",
+                  collapsed: false,
+                  pages: [
+                    {
+                      page: "data-importer/json",
+                      label: "JSON configuration file",
+                    },
+                    { page: "data-importer/roles", label: "Data field roles" },
+                    {
+                      page: "data-importer/third-party-tools",
+                      label: "Third-party tools",
+                    },
+                    {
+                      page: "data-importer/public",
+                      label: "Public installation",
+                    },
+                    {
+                      page: "data-importer/duplicate-detection",
+                      label: "Duplicate detection",
+                    },
+                    { page: "data-importer/changelog", label: "Full changelog" },
+                  ],
+                },
+                {
+                  group: "Frequently Asked Questions",
+                  id: "reference-guides/frequently-asked-questions",
+                  collapsed: false,
+                  pages: [
+                    {
+                      group: "Firefly III",
+                      id: "reference-guides/frequently-asked-questions/firefly-iii",
+                      collapsed: false,
+                      pages: [
+                        {
+                          page: "faq/firefly-iii/general",
+                          label: "General questions",
+                        },
+                        { page: "faq/firefly-iii/using", label: "Using and running" },
+                        {
+                          page: "faq/firefly-iii/finances",
+                          label: "Financial management",
+                        },
+                      ],
+                    },
+                    {
+                      group: "Data Importer",
+                      id: "reference-guides/frequently-asked-questions/data-importer",
+                      collapsed: false,
+                      pages: [
+                        {
+                          page: "faq/data-importer/general",
+                          label: "General questions",
+                        },
+                        {
+                          page: "faq/data-importer/import",
+                          label: "Common import issues",
+                        },
+                        { page: "faq/data-importer/gocardless", label: "GoCardless" },
+                      ],
+                    },
+                    { page: "faq/general", label: "General questions" },
+                    { page: "faq/install", label: "Installing and running" },
+                    { page: "faq/development", label: "Development" },
+                    { page: "faq/docker", label: "Docker" },
+                  ],
+                },
+
+                  ]
+            }
+          ],
+        }),
+      },
+
+      {
+        "tab": "Explanation",
+        "slug": "explanation",
+        "source": markdown({
+          root: "docs/explanation",
+          groups: [
+            {
+              "group": "",
+              "id": "ungrouped-5",
+              "pages": [
+                  { page: "index", label: "Explanation" },
                 {
                   group: "Data organization",
-                  id: "explanation/data-organization",
+                  id: "data-organization",
                   collapsed: true,
                   pages: [
                     {
-                      page: "explanation/data-classification/best-practices",
+                      page: "data-classification/best-practices",
                       label: "Best practices",
                     },
                     {
-                      page: "explanation/data-classification/what-to-use",
+                      page: "data-classification/what-to-use",
                       label: "Organizing transactions",
                     },
                   ],
                 },
                 {
                   group: "Financial concepts",
-                  id: "explanation/financial-concepts",
+                  id: "financial-concepts",
                   collapsed: true,
                   pages: [
                     {
-                      page: "explanation/financial-concepts/administrations",
+                      page: "financial-concepts/administrations",
                       label: "Administrations",
                     },
                     {
-                      page: "explanation/financial-concepts/transactions",
+                      page: "financial-concepts/transactions",
                       label: "Transactions",
                     },
-                    { page: "explanation/financial-concepts/accounts", label: "Accounts" },
-                    { page: "explanation/financial-concepts/budgets", label: "Budgets" },
+                    { page: "financial-concepts/accounts", label: "Accounts" },
+                    { page: "financial-concepts/budgets", label: "Budgets" },
                     {
-                      page: "explanation/financial-concepts/liabilities",
+                      page: "financial-concepts/liabilities",
                       label: "Liabilities",
                     },
                     {
-                      page: "explanation/financial-concepts/currencies",
+                      page: "financial-concepts/currencies",
                       label: "Currencies",
                     },
                     {
-                      page: "explanation/financial-concepts/piggy-banks",
+                      page: "financial-concepts/piggy-banks",
                       label: "Piggy banks",
                     },
                     {
-                      page: "explanation/financial-concepts/subscriptions",
+                      page: "financial-concepts/subscriptions",
                       label: "Subscriptions",
                     },
                     {
-                      page: "explanation/financial-concepts/recurring",
+                      page: "financial-concepts/recurring",
                       label: "Recurring transactions",
                     },
                     {
-                      page: "explanation/financial-concepts/exchange-rates",
+                      page: "financial-concepts/exchange-rates",
                       label: "Exchange rates",
                     },
                   ],
                 },
                 {
                   group: "Firefly III",
-                  id: "explanation/firefly-iii",
+                  id: "firefly-iii",
                   collapsed: true,
                   pages: [
                     {
                       group: "About Firefly III",
-                      id: "explanation/firefly-iii/about-firefly-iii",
+                      id: "firefly-iii/about-firefly-iii",
                       collapsed: true,
                       pages: [
                         {
-                          page: "explanation/firefly-iii/about/introduction",
+                          page: "firefly-iii/about/introduction",
                           label: "Introduction and features",
                         },
                         {
-                          page: "explanation/firefly-iii/about/screenshots",
+                          page: "firefly-iii/about/screenshots",
                           label: "Screenshots",
                         },
-                        { page: "explanation/firefly-iii/about/demo", label: "Demo website" },
+                        { page: "firefly-iii/about/demo", label: "Demo website" },
                       ],
                     },
                     {
                       group: "Background information",
-                      id: "explanation/firefly-iii/background-information",
+                      id: "firefly-iii/background-information",
                       collapsed: true,
                       pages: [
                         {
-                          page: "explanation/firefly-iii/background/personal-finances",
+                          page: "firefly-iii/background/personal-finances",
                           label: "Personal finances",
                         },
                         {
-                          page: "explanation/firefly-iii/background/zero-based-budgeting",
+                          page: "firefly-iii/background/zero-based-budgeting",
                           label: "Zero based budgeting",
                         },
                         {
-                          page: "explanation/firefly-iii/background/time-periods",
+                          page: "firefly-iii/background/time-periods",
                           label: "Time periods",
                         },
                       ],
@@ -577,186 +627,61 @@ export default defineConfig({
                 },
                 {
                   group: "Data Importer",
-                  id: "explanation/data-importer",
+                  id: "data-importer",
                   collapsed: true,
                   pages: [
-                    { page: "explanation/data-importer/introduction", label: "About" },
+                    { page: "data-importer/introduction", label: "About" },
                     {
-                      page: "explanation/data-importer/separate-tool",
+                      page: "data-importer/separate-tool",
                       label: "Separate tool",
                     },
                     {
-                      page: "explanation/data-importer/ignored-values",
+                      page: "data-importer/ignored-values",
                       label: "Ignored values",
                     },
                   ],
                 },
                 {
                   group: "More information",
-                  id: "explanation/more-information",
+                  id: "more-information",
                   collapsed: true,
                   pages: [
-                    { page: "explanation/more-information/logo", label: "Logo and name" },
+                    { page: "more-information/logo", label: "Logo and name" },
                     {
-                      page: "explanation/more-information/architecture",
+                      page: "more-information/architecture",
                       label: "Architecture",
                     },
-                    { page: "explanation/more-information/security", label: "Security" },
-                    { page: "explanation/more-information/license", label: "License" },
-                    { page: "explanation/more-information/donations", label: "Donations" },
+                    { page: "more-information/security", label: "Security" },
+                    { page: "more-information/license", label: "License" },
+                    { page: "more-information/donations", label: "Donations" },
                     {
-                      page: "explanation/more-information/what-its-not",
+                      page: "more-information/what-its-not",
                       label: "Missing features",
                     },
                     {
-                      page: "explanation/more-information/bending-and-breaking",
+                      page: "more-information/bending-and-breaking",
                       label: "(Security) testing",
                     },
                     {
-                      page: "explanation/more-information/signatures",
+                      page: "more-information/signatures",
                       label: "Digital signatures",
                     },
                   ],
                 },
-                { page: "explanation/other-tools", label: "Other tools" },
-                { page: "explanation/code-of-conduct", label: "Code of conduct" },
-                { page: "explanation/contributing", label: "Contribution guidelines" },
-                { page: "explanation/support", hidden: true },
-              ],
-            },
-            {
-              group: "Reference guides",
-              id: "reference-guides",
-              pages: [
-                { page: "references", label: "Overview" },
-                {
-                  group: "Firefly III",
-                  id: "reference-guides/firefly-iii",
-                  collapsed: true,
-                  pages: [
-                    { page: "references/firefly-iii/cli", label: "The CLI" },
-                    { page: "references/firefly-iii/account-types", label: "Account types" },
-                    {
-                      page: "references/firefly-iii/transaction-types",
-                      label: "Transaction types",
-                    },
-                    { page: "references/firefly-iii/search", label: "All search options" },
-                    {
-                      page: "references/firefly-iii/rule-triggers",
-                      label: "All rule triggers",
-                    },
-                    {
-                      page: "references/firefly-iii/rule-actions",
-                      label: "All rule actions",
-                    },
-                    {
-                      page: "references/firefly-iii/rule-expressions",
-                      label: "Expressions",
-                    },
-                    {
-                      group: "API",
-                      id: "reference-guides/firefly-iii/api",
-                      collapsed: true,
-                      pages: [
-                        { page: "references/firefly-iii/api", label: "The API" },
-                        {
-                          page: "references/firefly-iii/api/specials",
-                          label: "Special endpoints",
-                        },
-                      ],
-                    },
-                    {
-                      group: "Third parties",
-                      id: "reference-guides/firefly-iii/third-parties",
-                      collapsed: true,
-                      pages: [
-                        {
-                          page: "references/firefly-iii/third-parties/host",
-                          label: "Third parties that host Firefly III",
-                        },
-                        {
-                          page: "references/firefly-iii/third-parties/apps",
-                          label: "Third-party tools",
-                        },
-                      ],
-                    },
-                    { page: "references/firefly-iii/changelog", label: "Full changelog" },
-                  ],
-                },
-                {
-                  group: "Data Importer",
-                  id: "reference-guides/data-importer",
-                  collapsed: true,
-                  pages: [
-                    {
-                      page: "references/data-importer/json",
-                      label: "JSON configuration file",
-                    },
-                    { page: "references/data-importer/roles", label: "Data field roles" },
-                    {
-                      page: "references/data-importer/third-party-tools",
-                      label: "Third-party tools",
-                    },
-                    {
-                      page: "references/data-importer/public",
-                      label: "Public installation",
-                    },
-                    {
-                      page: "references/data-importer/duplicate-detection",
-                      label: "Duplicate detection",
-                    },
-                    { page: "references/data-importer/changelog", label: "Full changelog" },
-                  ],
-                },
-                {
-                  group: "Frequently Asked Questions",
-                  id: "reference-guides/frequently-asked-questions",
-                  collapsed: true,
-                  pages: [
-                    {
-                      group: "Firefly III",
-                      id: "reference-guides/frequently-asked-questions/firefly-iii",
-                      collapsed: true,
-                      pages: [
-                        {
-                          page: "references/faq/firefly-iii/general",
-                          label: "General questions",
-                        },
-                        { page: "references/faq/firefly-iii/using", label: "Using and running" },
-                        {
-                          page: "references/faq/firefly-iii/finances",
-                          label: "Financial management",
-                        },
-                      ],
-                    },
-                    {
-                      group: "Data Importer",
-                      id: "reference-guides/frequently-asked-questions/data-importer",
-                      collapsed: true,
-                      pages: [
-                        {
-                          page: "references/faq/data-importer/general",
-                          label: "General questions",
-                        },
-                        {
-                          page: "references/faq/data-importer/import",
-                          label: "Common import issues",
-                        },
-                        { page: "references/faq/data-importer/gocardless", label: "GoCardless" },
-                      ],
-                    },
-                    { page: "references/faq/general", label: "General questions" },
-                    { page: "references/faq/install", label: "Installing and running" },
-                    { page: "references/faq/development", label: "Development" },
-                    { page: "references/faq/docker", label: "Docker" },
-                  ],
-                },
-              ],
-            },
-          ],
+                { page: "other-tools", label: "Other tools" },
+                { page: "code-of-conduct", label: "Code of conduct" },
+                { page: "contributing", label: "Contribution guidelines" },
+                { page: "support", label: "Support", hidden: false },
+
+
+                ]
+            }
+          ]
         }),
       }
-    ],
+
+        ]
   },
-  changelog: false,
-});
+  changelog: false
+    }
+);
