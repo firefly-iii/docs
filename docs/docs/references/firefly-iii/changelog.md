@@ -2100,7 +2100,7 @@ be stable!
 - To make sure your Docker instance logs everything to `stdout`, make sure
   you set the environment variable `LOG_CHANNEL` to `docker_out`. This is now
   default behavior for new installations that use the `.env` file to launch
-  Firefly III (using Docker compose), but if you use environment variables
+  Firefly III (using Docker Compose), but if you use environment variables
   you may have to set this yourself. This is not a mandatory change but will
   make debugging easier.
 - The Docker image is now also available in AArch64.

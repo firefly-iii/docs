@@ -2,7 +2,7 @@
 
 This page gives you instructions on how to upgrade your Data Importer installation.
 
-## Upgrade Docker compose
+## Upgrade Docker Compose
 
 The default installation refers to Docker Compose. To upgrade, do this in the directory where you stored all the Docker Compose and environment files.
 

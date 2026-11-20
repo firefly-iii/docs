@@ -10,7 +10,7 @@ You can add Firefly III and the Data Importer as a "stack" using the instruction
 
 You will need to download and save the following configuration files:
 
-1. [Docker compose](https://raw.githubusercontent.com/firefly-iii/docker/main/docker-compose-importer.yml) file
+1. [Docker Compose](https://raw.githubusercontent.com/firefly-iii/docker/main/docker-compose-importer.yml) file
 2. This [stack.env](https://support.firefly-iii.org/composed.php) file with all the environment variables. Save it as `stack.env`.
 
 ### Edit docker compose file

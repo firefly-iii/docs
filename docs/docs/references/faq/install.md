@@ -284,7 +284,7 @@ php artisan migrate --seed
 php artisan firefly-iii:upgrade-database
 ```
 
-Docker Compose users must also take care to update the Docker compose file to use the correct PostgreSQL image. For example:
+Docker Compose users must also take care to update the Docker Compose file to use the correct PostgreSQL image. For example:
 
 ```
   db:

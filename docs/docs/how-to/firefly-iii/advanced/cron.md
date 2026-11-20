@@ -100,9 +100,9 @@ So there are two kinds of tokens you can use:
 
 Either way, the following instructions apply to Docker.
 
-### Docker compose
+### Docker Compose
 
-This is already present in the [default Docker compose file](https://github.com/firefly-iii/docker/blob/main/docker-compose.yml).
+This is already present in the [default Docker Compose file](https://github.com/firefly-iii/docker/blob/main/docker-compose.yml).
 
 ```
   cron:
@@ -128,7 +128,7 @@ This is already present in the [default Docker compose file](https://github.com/
 
 The `$$STATIC_CRON_TOKEN` variable (and yes, the double `$$` is **correct**) refers to the `STATIC_CRON_TOKEN=` line in your `.env` file.
 
-If you have used the expanded Docker compose file or if you have added the cron container yourself, (re)start your stack. The cron job will run automatically. You can see the cron container if you do something like `docker container ls`:
+If you have used the expanded Docker Compose file or if you have added the cron container yourself, (re)start your stack. The cron job will run automatically. You can see the cron container if you do something like `docker container ls`:
 
 ![Show relevant containers](../../../images/how-to/firefly-iii/advanced/container-list.png)
 

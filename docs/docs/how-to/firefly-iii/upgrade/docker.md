@@ -16,7 +16,7 @@ docker compose pull
 docker compose -f docker-compose.yml up -d --remove-orphans
 ```
 
-If you re-download `docker-compose.yml`, keep in mind that the database version in the Docker composer may have been updated and that this version is not compatible with your current version (ie MariaDB 10 vs MariaDB 11).
+If you re-download `docker-compose.yml`, keep in mind that the database version in the Docker Compose file may have been updated and that this version is not compatible with your current version (ie MariaDB 10 vs MariaDB 11).
 
 ## Straight from Docker Hub
 

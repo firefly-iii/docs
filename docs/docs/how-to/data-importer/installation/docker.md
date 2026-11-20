@@ -2,7 +2,7 @@
 
 Firefly III and the Data Importer can be installed using Docker. There are ready-made Docker containers for almost all platforms. If you've never used Docker before, please first read into it yourself.
 
-The easiest way to install them is using "Docker compose", which is a Docker tool that allows you to define and run multi-container Docker applications. With Docker compose, you use a YAML file to configure your application's services. Then, with a single command, you create and start all the services from your configuration.
+The easiest way to install them is using "Docker Compose", which is a Docker tool that allows you to define and run multi-container Docker applications. With Docker Compose, you use a YAML file to configure your application's services. Then, with a single command, you create and start all the services from your configuration.
 
 This guide will assume you'll want to install both Firefly III and the Data Importer. If you already have a Firefly III installation, and you wish to expand it with the data importer, do not worry. You can follow this guide again and reinstall Firefly III. You will point to the same data volumes and the same databases, so nothing will be lost.
 
