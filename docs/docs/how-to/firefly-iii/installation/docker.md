@@ -21,7 +21,7 @@ There are two configuration files you need to run this Docker Compose file. Down
 - The first file contains Firefly III variables and can be downloaded from [the Firefly III repository](https://raw.githubusercontent.com/firefly-iii/firefly-iii/main/.env.example). Save it as a new file called `.env`.
 - The second file contains the database variables and can be downloaded from [the Docker repository](https://raw.githubusercontent.com/firefly-iii/docker/main/database.env). Save it as a new file called `.db.env`.
 
-It is **important** that you rename the file as instructed here. You can see in the Docker compose file why this is. There is a reference to it: `env_file:`. If you don't name it as it is in the Docker Compose file, you must edit the Docker compose file to match the file names.
+It is **important** that you rename the file as instructed here. You can see in the Docker Compose file why this is. There is a reference to it: `env_file:`. If you don't name it as it is in the Docker Compose file, you must edit the Docker Compose file to match the file names.
 
 Instructions:
 
