@@ -27,6 +27,8 @@ Instructions:
 
 1. Change `DB_PASSWORD` in `.env` to something else. Pick a nice password.
 2. Change `MYSQL_PASSWORD` in `.db.env` to the SAME value
+3. Set `APP_KEY` in `.env` to a random string of _exactly_ 32 characters. Firefly III will not start without it. You can generate one with `head /dev/urandom | LC_ALL=C tr -dc 'A-Za-z0-9' | head -c 32 && echo`. Never reuse a key from an example or a guide.
+4. Set `STATIC_CRON_TOKEN` in `.env` to another random string of 32 characters (same command). The `cron` service in the Docker Compose file uses it to run the daily cron job.
 
 :::note
 Change the password FIRST. If you change the password *after* you run Firefly III, it will complain about having no access because the password has been stored in  the database volume.

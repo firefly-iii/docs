@@ -33,7 +33,7 @@ If you save all example files and change nothing, it will NOT YET work. You must
 3. Change `FIREFLY_III_URL` in `.importer.env` to `http://app:8080`
 4. Change `VANITY_URL` in `.importer.env` to the URL you use to reach Firefly III. For example: `http://localhost` (this is probably different in your case).
 5. Set `TRUSTED_PROXIES=*` (yes, with an asterisk) when you have a reverse proxy like nginx or Traefik
-
+6. Set `APP_KEY` and `STATIC_CRON_TOKEN` in `.env` to two different random strings of _exactly_ 32 characters, as explained in [the Firefly III installation guide](../../firefly-iii/installation/docker.md). Firefly III will not start without `APP_KEY`.
 
 :::note
 Change the password FIRST. If you change the password *after* you started Docker, it will complain about having no access.
